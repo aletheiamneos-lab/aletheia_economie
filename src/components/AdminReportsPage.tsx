@@ -1,6 +1,6 @@
 import { useMemo, useState, type FormEvent } from 'react'
 import {
-  Ban, CheckCircle2, Download, Eye, FileText, LockKeyhole, LogOut, Mail,
+  Ban, CheckCircle2, Database, Download, Eye, FileText, HardDrive, LockKeyhole, LogOut, Mail,
   RefreshCw, Search, ShieldCheck, Trash2, Unlock, UserPlus, Users, Wifi, X,
 } from 'lucide-react'
 import { downloadAdmissionReport, emailAdmissionReport, type AdmissionReportData } from '../admissionReport'
@@ -24,6 +24,13 @@ function formatDate(value: string | null) {
   return new Intl.DateTimeFormat('ro-RO', {
     day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit',
   }).format(new Date(value))
+}
+
+function formatBytes(bytes: number) {
+  if (bytes >= 1024 ** 3) return `${(bytes / 1024 ** 3).toFixed(2)} GB`
+  if (bytes >= 1024 ** 2) return `${(bytes / 1024 ** 2).toFixed(1)} MB`
+  if (bytes >= 1024) return `${Math.round(bytes / 1024)} KB`
+  return `${bytes} B`
 }
 
 function formatDuration(seconds: number) {
@@ -81,7 +88,9 @@ async function createReportData(report: StudentTestReport): Promise<AdmissionRep
 }
 
 export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
-  const { students, activity, reports, lastSync, loadError } = adminDataApi
+  const { students, activity, reports, lastSync, loadError, usage, usageError } = adminDataApi
+  const [selectedReports, setSelectedReports] = useState<string[]>([])
+  const [reportDeleteTarget, setReportDeleteTarget] = useState<string[] | null>(null)
   const [reportFilter, setReportFilter] = useState<ReportFilter>('all')
   const [search, setSearch] = useState('')
   const [preview, setPreview] = useState<StudentTestReport | null>(null)
@@ -142,6 +151,22 @@ export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
     notify('Elevul a primit acces la platformă.')
   }
 
+  const visibleIds = visibleReports.map((report) => report.id)
+  const allVisibleSelected = visibleIds.length > 0 && visibleIds.every((id) => selectedReports.includes(id))
+  const toggleReport = (id: string) => setSelectedReports((current) => current.includes(id) ? current.filter((item) => item !== id) : [...current, id])
+  const toggleAllVisible = () => setSelectedReports((current) => allVisibleSelected
+    ? current.filter((id) => !visibleIds.includes(id))
+    : Array.from(new Set([...current, ...visibleIds])))
+
+  const confirmDeleteReports = async () => {
+    if (!reportDeleteTarget) return
+    const ids = reportDeleteTarget
+    setReportDeleteTarget(null)
+    const error = await adminDataApi.deleteReports(ids)
+    if (!error) setSelectedReports((current) => current.filter((id) => !ids.includes(id)))
+    notify(error ?? (ids.length === 1 ? 'Raportul a fost șters.' : `${ids.length} rapoarte au fost șterse.`))
+  }
+
   const removeStudent = async () => {
     if (!deleteTarget) return
     const target = deleteTarget
@@ -167,10 +192,36 @@ export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
         <article><span className="admin-kpi-icon"><CheckCircle2 size={18}/></span><div><b>{average}%</b><small>medie generală</small></div></article>
       </section>
 
+      <section className="admin-section admin-usage-section" aria-labelledby="usage-title">
+        <header className="admin-section-head">
+          <div><span className="page-kicker">Supabase · plan gratuit</span><h2 id="usage-title">Spațiu folosit</h2><p>Baza de date a economiei, separată de cea a logicii. Șterge rapoartele vechi ca să eliberezi spațiu.</p></div>
+          <button className="admin-quiet-button" onClick={() => { void adminDataApi.refreshUsage().then(() => notify('Utilizarea a fost recalculată.')) }}><RefreshCw size={14}/> Recalculează <small>{usage ? new Date(usage.measuredAt).toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' }) : '—'}</small></button>
+        </header>
+        {usageError && <div className="admin-empty" role="alert">{usageError}</div>}
+        {usage && <div className="admin-usage-grid">
+          {([
+            { key: 'db', icon: <Database size={18}/>, title: 'Bază de date', meter: usage.database, detail: `${usage.database.rows} rânduri` },
+            { key: 'storage', icon: <HardDrive size={18}/>, title: 'Fișiere (manuale PDF)', meter: usage.storage, detail: `${usage.storage.files} fișiere` },
+          ]).map((item) => {
+            const level = item.meter.percent >= 90 ? 'danger' : item.meter.percent >= 70 ? 'warning' : 'ok'
+            return <article key={item.key} className={`admin-usage-card ${level}`}>
+              <header><span className="admin-kpi-icon">{item.icon}</span><div><b>{item.title}</b><small>{item.detail}</small></div><strong>{item.meter.percent.toFixed(1)}%</strong></header>
+              <div className="admin-usage-bar" role="progressbar" aria-label={`${item.title} folosit`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(item.meter.percent)}><i style={{ width: `${Math.min(100, Math.max(1, item.meter.percent))}%` }}/></div>
+              <p><b>{formatBytes(item.meter.usedBytes)}</b> din {formatBytes(item.meter.limitBytes)} · mai ai <b>{formatBytes(item.meter.remainingBytes)}</b></p>
+            </article>
+          })}
+          <article className="admin-usage-card tables">
+            <header><div><b>Pe tabele</b><small>date active</small></div></header>
+            <ul>{usage.tables.map((table) => <li key={table.name}><span>{table.label}</span><small>{table.rows} rânduri</small><b>{formatBytes(table.bytes)}</b></li>)}</ul>
+          </article>
+        </div>}
+      </section>
+
       <section className="admin-section admin-live-section">
         <header className="admin-section-head">
           <div><span className="page-kicker">Monitorizare curentă</span><h2>Activitatea elevilor</h2><p>Starea sesiunii, testul curent și ultima interacțiune înregistrată.</p></div>
-          <button className="admin-quiet-button" onClick={() => { void adminDataApi.refresh().then(() => notify('Datele au fost reîmprospătate.')) }}><RefreshCw size={14}/> Actualizează <small>{lastSync ? lastSync.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' }) : '—'}</small></button>
+          <div className="admin-head-actions"><button className="admin-quiet-button" onClick={() => void perform(() => adminDataApi.clearFinishedActivity(), 'Activitățile finalizate au fost curățate.')}><Trash2 size={14}/> Curăță finalizate</button>
+          <button className="admin-quiet-button" onClick={() => { void adminDataApi.refresh().then(() => notify('Datele au fost reîmprospătate.')) }}><RefreshCw size={14}/> Actualizează <small>{lastSync ? lastSync.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' }) : '—'}</small></button></div>
         </header>
         <div className="admin-table-frame">
           <div className="admin-table-scroll">
@@ -204,13 +255,15 @@ export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
             <button className={reportFilter === 'recap' ? 'active' : ''} onClick={() => setReportFilter('recap')}>Recapitulative</button>
             <button className={reportFilter === 'admission' ? 'active' : ''} onClick={() => setReportFilter('admission')}>Admitere</button>
           </div>
+          {selectedReports.length > 0 && <button className="admin-quiet-button danger" onClick={() => setReportDeleteTarget(selectedReports)}><Trash2 size={14}/> Șterge selectate ({selectedReports.length})</button>}
           <label className="admin-search"><Search size={15}/><input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Caută elev, test sau cod…" aria-label="Caută rapoarte"/></label>
         </div>
         <div className="admin-table-frame">
           <div className="admin-table-scroll">
             <table className="admin-table reports-table">
-              <thead><tr><th>Elev</th><th>Test</th><th>Trimis</th><th>Scor</th><th>Tip</th><th>Cod</th><th>Acțiuni</th></tr></thead>
-              <tbody>{visibleReports.map((report) => <tr key={report.id}>
+              <thead><tr><th className="admin-check-cell"><input type="checkbox" checked={allVisibleSelected} onChange={toggleAllVisible} aria-label="Selectează toate rapoartele afișate"/></th><th>Elev</th><th>Test</th><th>Trimis</th><th>Scor</th><th>Tip</th><th>Cod</th><th>Acțiuni</th></tr></thead>
+              <tbody>{visibleReports.map((report) => <tr key={report.id} className={selectedReports.includes(report.id) ? 'is-selected' : ''}>
+                <td className="admin-check-cell"><input type="checkbox" checked={selectedReports.includes(report.id)} onChange={() => toggleReport(report.id)} aria-label={`Selectează ${report.testName} · ${report.studentName}`}/></td>
                 <td data-label="Elev"><b>{report.studentName}</b><small>{report.studentEmail}</small></td>
                 <td data-label="Test"><b>{report.testName}</b><small>{formatDuration(report.elapsedSeconds)}</small></td>
                 <td data-label="Trimis">{formatDate(report.submittedAt)}</td>
@@ -221,6 +274,7 @@ export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
                   <button onClick={() => setPreview(report)} aria-label={`Preview ${report.testName}`}><Eye size={14}/> Preview</button>
                   <button disabled={busyReport === report.id} onClick={() => exportReport(report, 'download')} aria-label={`Descarcă PDF ${report.testName}`}><Download size={14}/> PDF</button>
                   <button disabled={busyReport === report.id} onClick={() => exportReport(report, 'email')} aria-label={`Trimite prin e-mail ${report.testName}`}><Mail size={14}/> E-mail</button>
+                  <button className="danger" onClick={() => setReportDeleteTarget([report.id])} aria-label={`Șterge ${report.testName}`}><Trash2 size={14}/> Șterge</button>
                 </span></td>
               </tr>)}</tbody>
             </table>
@@ -283,6 +337,11 @@ export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
           </div>
           <footer><button onClick={() => setPreview(null)}>Închide</button><button onClick={() => exportReport(preview, 'email')}><Mail size={14}/> E-mail</button><button className="primary" onClick={() => exportReport(preview, 'download')}><Download size={14}/> Descarcă PDF</button></footer>
         </section>
+      </div>}
+
+      {reportDeleteTarget && <div className="admin-modal-layer" role="dialog" aria-modal="true" aria-labelledby="delete-report-title">
+        <button className="admin-modal-scrim" onClick={() => setReportDeleteTarget(null)} aria-label="Anulează ștergerea"/>
+        <section className="admin-confirm-modal"><span><Trash2 size={19}/></span><h2 id="delete-report-title">{reportDeleteTarget.length === 1 ? 'Ștergi raportul?' : `Ștergi ${reportDeleteTarget.length} rapoarte?`}</h2><p>Rezultatele și răspunsurile se șterg definitiv din baza de date. Descarcă PDF-ul înainte, dacă vrei să-l păstrezi.</p><div><button onClick={() => setReportDeleteTarget(null)}>Anulează</button><button className="danger" onClick={() => void confirmDeleteReports()}>Șterge definitiv</button></div></section>
       </div>}
 
       {deleteTarget && <div className="admin-modal-layer" role="dialog" aria-modal="true" aria-labelledby="delete-student-title">

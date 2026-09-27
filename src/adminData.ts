@@ -52,6 +52,21 @@ export interface StudentTestReport {
   answers?: Record<string, string>
 }
 
+export interface UsageMeter {
+  usedBytes: number
+  limitBytes: number
+  remainingBytes: number
+  percent: number
+}
+
+export interface AdminUsage {
+  plan: string
+  database: UsageMeter & { activeDataBytes: number; rows: number }
+  storage: UsageMeter & { files: number }
+  tables: Array<{ name: string; label: string; rows: number; bytes: number }>
+  measuredAt: string
+}
+
 interface AdminOverview {
   students: StudentAccessRecord[]
   reports: StudentTestReport[]
@@ -72,8 +87,20 @@ export function useAdminData(enabled: boolean) {
   const [lastSync, setLastSync] = useState<Date | null>(null)
   const [loadError, setLoadError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [usage, setUsage] = useState<AdminUsage | null>(null)
+  const [usageError, setUsageError] = useState('')
   const enabledRef = useRef(enabled)
   enabledRef.current = enabled
+
+  const refreshUsage = useCallback(async () => {
+    if (!enabledRef.current) return
+    try {
+      setUsage(await apiRequest<AdminUsage>('/api/admin/usage'))
+      setUsageError('')
+    } catch (reason) {
+      setUsageError(messageOf(reason))
+    }
+  }, [])
 
   const refresh = useCallback(async () => {
     if (!enabledRef.current) return
@@ -99,17 +126,19 @@ export function useAdminData(enabled: boolean) {
       setReports([])
       setActivity([])
       setLastSync(null)
+      setUsage(null)
       return
     }
     void refresh()
+    void refreshUsage()
     const timer = window.setInterval(() => void refresh(), REFRESH_INTERVAL_MS)
     return () => window.clearInterval(timer)
-  }, [enabled, refresh])
+  }, [enabled, refresh, refreshUsage])
 
   const run = useCallback(async (action: () => Promise<unknown>) => {
     try {
       await action()
-      await refresh()
+      await Promise.all([refresh(), refreshUsage()])
       return null
     } catch (reason) {
       return messageOf(reason)
@@ -122,7 +151,10 @@ export function useAdminData(enabled: boolean) {
   const disconnectStudent = useCallback((studentId: string) => run(() => apiRequest(`/api/admin/students/${studentId}/disconnect`, { body: {} })), [run])
   const removeStudent = useCallback((studentId: string) => run(() => apiRequest(`/api/admin/students/${studentId}`, { method: 'DELETE' })), [run])
 
-  return { students, activity, reports, lastSync, loadError, loading, refresh, addStudent, setBlocked, setAllBlocked, disconnectStudent, removeStudent }
+  const deleteReports = useCallback((ids: string[]) => run(() => apiRequest('/api/admin/reports/delete', { body: { ids } })), [run])
+  const clearFinishedActivity = useCallback(() => run(() => apiRequest('/api/admin/activity/clear', { body: {} })), [run])
+
+  return { students, activity, reports, usage, usageError, refreshUsage, deleteReports, clearFinishedActivity, lastSync, loadError, loading, refresh, addStudent, setBlocked, setAllBlocked, disconnectStudent, removeStudent }
 }
 
 export type AdminDataApi = ReturnType<typeof useAdminData>

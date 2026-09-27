@@ -171,3 +171,25 @@ def test_hidden_library_files_are_blocked_for_students(client, admin_headers, st
     assert client.get("/api/library/manual-alternativ-1.pdf", headers=student_headers).status_code == 404
     assert client.get("/api/library/manual-alternativ-1.pdf", headers=admin_headers).status_code == 200
     assert client.put("/api/admin/library/visibility", headers=student_headers, json={"hidden": []}).status_code == 403
+
+
+def test_admin_sees_usage_and_deletes_reports(client, admin_headers, student_headers):
+    first = client.post("/api/student/reports", headers=student_headers, json=report_payload()).json()
+    client.post("/api/student/reports", headers=student_headers, json=report_payload())
+    usage = client.get("/api/admin/usage", headers=admin_headers).json()
+    assert usage["database"]["limitBytes"] == 500 * 1024 * 1024
+    assert usage["storage"]["limitBytes"] == 1024 * 1024 * 1024
+    assert any(t["name"] == "test_reports" and t["rows"] == 2 and t["label"] == "Rapoarte teste" for t in usage["tables"])
+    deleted = client.post("/api/admin/reports/delete", headers=admin_headers, json={"ids": [first["id"]]})
+    assert deleted.json() == {"deleted": 1}
+    assert len(client.get("/api/admin/overview", headers=admin_headers).json()["reports"]) == 1
+    assert client.post("/api/admin/reports/delete", headers=student_headers, json={"ids": [first["id"]]}).status_code == 403
+    assert client.get("/api/admin/usage", headers=student_headers).status_code == 403
+
+
+def test_admin_clears_finished_activity(client, admin_headers, student_headers):
+    client.post("/api/student/activity", headers=student_headers, json={"activity_key": "a", "test_name": "A", "progress": 100, "state": "finished"})
+    client.post("/api/student/activity", headers=student_headers, json={"activity_key": "b", "test_name": "B", "progress": 20})
+    assert client.post("/api/admin/activity/clear", headers=admin_headers).json() == {"deleted": 1}
+    activity = client.get("/api/admin/overview", headers=admin_headers).json()["activity"]
+    assert [a["currentTest"] for a in activity] == ["B"]

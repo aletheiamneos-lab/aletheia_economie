@@ -216,6 +216,75 @@ def remove_student(student_id: str, _: AdminSession) -> dict:
     return {"ok": True}
 
 
+FREE_DATABASE_LIMIT_BYTES = 500 * 1024 * 1024
+FREE_STORAGE_LIMIT_BYTES = 1024 * 1024 * 1024
+TABLE_LABELS = {
+    "test_reports": "Rapoarte teste",
+    "test_activity": "Activitate live",
+    "auth_sessions": "Sesiuni de autentificare",
+    "allowed_students": "Elevi autorizați",
+    "app_settings": "Setări",
+}
+
+
+@admin_router.get("/usage")
+def admin_usage(_: AdminSession) -> dict:
+    try:
+        raw = _store().database_usage()
+    except Exception as error:  # noqa: BLE001 - provider errors are reported to the admin
+        raise HTTPException(status_code=502, detail="Utilizarea Supabase nu a putut fi citită.") from error
+    used = max(0, int(raw.get("database_size_bytes") or 0))
+    storage = max(0, int(raw.get("storage_size_bytes") or 0))
+    stats = raw.get("table_stats") if isinstance(raw.get("table_stats"), dict) else {}
+    tables = sorted(
+        (
+            {
+                "name": name,
+                "label": TABLE_LABELS.get(name, name),
+                "rows": int(info.get("row_count") or 0),
+                "bytes": int(info.get("active_data_size_bytes") or 0),
+            }
+            for name, info in stats.items()
+        ),
+        key=lambda item: item["bytes"],
+        reverse=True,
+    )
+    return {
+        "plan": "Free",
+        "database": {
+            "usedBytes": used,
+            "limitBytes": FREE_DATABASE_LIMIT_BYTES,
+            "remainingBytes": max(0, FREE_DATABASE_LIMIT_BYTES - used),
+            "percent": round(used / FREE_DATABASE_LIMIT_BYTES * 100, 2),
+            "activeDataBytes": int(raw.get("active_data_size_bytes") or 0),
+            "rows": int(raw.get("active_rows_count") or 0),
+        },
+        "storage": {
+            "usedBytes": storage,
+            "limitBytes": FREE_STORAGE_LIMIT_BYTES,
+            "remainingBytes": max(0, FREE_STORAGE_LIMIT_BYTES - storage),
+            "percent": round(storage / FREE_STORAGE_LIMIT_BYTES * 100, 2),
+            "files": int(raw.get("storage_objects_count") or 0),
+        },
+        "tables": tables,
+        "measuredAt": utc_now(),
+    }
+
+
+class DeleteReportsRequest(BaseModel):
+    ids: list[str] = Field(min_length=1, max_length=1000)
+
+
+@admin_router.post("/reports/delete")
+def delete_reports(payload: DeleteReportsRequest, _: AdminSession) -> dict:
+    return {"deleted": _store().delete_reports(payload.ids)}
+
+
+@admin_router.post("/activity/clear")
+def clear_activity(_: AdminSession) -> dict:
+    return {"deleted": _store().delete_finished_activity()}
+
+
 # ---------------------------------------------------------------- student reports and activity
 
 

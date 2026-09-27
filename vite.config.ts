@@ -13,15 +13,7 @@ export default defineConfig({
     strictPort: true,
     open: false,
     proxy: {
-      '/api/game-service': {
-        target: 'http://127.0.0.1:8000',
-        changeOrigin: true,
-      },
-      '/api/report-service': {
-        target: 'http://127.0.0.1:8000',
-        changeOrigin: true,
-      },
-      '/api/game-results': {
+      '/api': {
         target: 'http://127.0.0.1:8000',
         changeOrigin: true,
       },

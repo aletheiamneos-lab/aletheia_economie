@@ -160,6 +160,25 @@ export async function apiRequest<T>(path: string, options: { method?: string; bo
   if (path === '/api/admin/overview') {
     return { students: state.students, reports: state.reports, activity: state.activity, syncedAt: new Date().toISOString() } as T
   }
+  if (path === '/api/admin/usage') {
+    return {
+      plan: 'Free',
+      database: { usedBytes: 12 * 1024 * 1024, limitBytes: 500 * 1024 * 1024, remainingBytes: 488 * 1024 * 1024, percent: 2.4, activeDataBytes: 40960, rows: state.reports.length },
+      storage: { usedBytes: 70 * 1024 * 1024, limitBytes: 1024 ** 3, remainingBytes: 954 * 1024 * 1024, percent: 6.84, files: 26 },
+      tables: [{ name: 'test_reports', label: 'Rapoarte teste', rows: state.reports.length, bytes: state.reports.length * 900 }],
+      measuredAt: new Date().toISOString(),
+    } as T
+  }
+  if (path === '/api/admin/reports/delete') {
+    const ids = body.ids as string[]
+    const before = state.reports.length
+    state.reports = state.reports.filter((report) => !ids.includes(report.id))
+    return { deleted: before - state.reports.length } as T
+  }
+  if (path === '/api/admin/activity/clear') {
+    state.activity = state.activity.filter((entry) => entry.state === 'În lucru')
+    return { deleted: 0 } as T
+  }
   if (path === '/api/admin/library/visibility') {
     state.hidden = body.hidden as string[]
     return { hidden: state.hidden } as T

@@ -42,6 +42,9 @@ class Store(Protocol):
     # test_reports
     def insert_report(self, row: dict) -> dict: ...
     def list_reports(self, limit: int = 1000) -> list[dict]: ...
+    def delete_reports(self, ids: list[str]) -> int: ...
+    def delete_finished_activity(self) -> int: ...
+    def database_usage(self) -> dict: ...
     # test_activity
     def upsert_activity(self, row: dict) -> dict: ...
     def list_activity(self, limit: int = 200) -> list[dict]: ...
@@ -143,6 +146,22 @@ class SupabaseStore:
 
     def list_reports(self, limit: int = 1000) -> list[dict]:
         return self._table("test_reports").select("*").order("submitted_at", desc=True).limit(limit).execute().data or []
+
+    def delete_reports(self, ids: list[str]) -> int:
+        if not ids:
+            return 0
+        rows = self._table("test_reports").delete().in_("id", ids).execute().data or []
+        return len(rows)
+
+    def delete_finished_activity(self) -> int:
+        rows = self._table("test_activity").delete().in_("state", ["finished", "abandoned"]).execute().data or []
+        return len(rows)
+
+    def database_usage(self) -> dict:
+        data = self.client.rpc("get_database_usage").execute().data
+        if isinstance(data, list):
+            data = data[0] if data else {}
+        return data if isinstance(data, dict) else {}
 
     # test_activity
     def upsert_activity(self, row: dict) -> dict:
@@ -249,6 +268,27 @@ class MemoryStore:
 
     def list_reports(self, limit: int = 1000) -> list[dict]:
         return sorted((copy.deepcopy(r) for r in self.reports), key=lambda r: r["submitted_at"], reverse=True)[:limit]
+
+    def delete_reports(self, ids: list[str]) -> int:
+        before = len(self.reports)
+        self.reports = [r for r in self.reports if r["id"] not in set(ids)]
+        return before - len(self.reports)
+
+    def delete_finished_activity(self) -> int:
+        before = len(self.activity)
+        self.activity = {k: v for k, v in self.activity.items() if v.get("state", "in_progress") == "in_progress"}
+        return before - len(self.activity)
+
+    def database_usage(self) -> dict:
+        tables = {
+            "allowed_students": len(self.students), "auth_sessions": len(self.sessions),
+            "test_reports": len(self.reports), "test_activity": len(self.activity), "app_settings": len(self.settings),
+        }
+        stats = {name: {"row_count": count, "active_data_size_bytes": count * 400} for name, count in tables.items()}
+        active = sum(item["active_data_size_bytes"] for item in stats.values())
+        return {"database_size_bytes": 9_000_000 + active, "active_data_size_bytes": active,
+                "active_rows_count": sum(tables.values()), "table_stats": stats,
+                "storage_size_bytes": 1024 * len(self.library_files), "storage_objects_count": len(self.library_files)}
 
     def upsert_activity(self, row: dict) -> dict:
         key = (row["student_email"], row["activity_key"])

@@ -327,6 +327,18 @@ describe('application flow', () => {
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
 
+  it('shows Supabase usage and deletes a report after confirmation', async () => {
+    await renderAdminApp()
+    expect(await screen.findByRole('heading', { name: 'Spațiu folosit' })).toBeInTheDocument()
+    expect(await screen.findByText(/din 500\.0 MB/)).toBeInTheDocument()
+    expect(screen.getByRole('progressbar', { name: /bază de date folosit/i })).toHaveAttribute('aria-valuenow', '2')
+    fireEvent.click(await screen.findByRole('button', { name: /șterge test final · piața monetară/i }))
+    expect(screen.getByRole('dialog', { name: /ștergi raportul/i })).toBeInTheDocument()
+    fireEvent.click(screen.getByRole('button', { name: 'Șterge definitiv' }))
+    expect(await screen.findByText('Raportul a fost șters.')).toBeInTheDocument()
+    await waitFor(() => expect(screen.queryByRole('button', { name: /preview test final · piața monetară/i })).not.toBeInTheDocument())
+  })
+
   it('shows library visibility controls only to the administrator', async () => {
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => libraryManifest } as Response)))
     await renderAdminApp()
