@@ -193,3 +193,10 @@ def test_admin_clears_finished_activity(client, admin_headers, student_headers):
     assert client.post("/api/admin/activity/clear", headers=admin_headers).json() == {"deleted": 1}
     activity = client.get("/api/admin/overview", headers=admin_headers).json()["activity"]
     assert [a["currentTest"] for a in activity] == ["B"]
+
+
+def test_cors_allows_the_amentor_start_page(client):
+    response = client.options("/api/auth/student-login", headers={"Origin": "https://amentor.ro", "Access-Control-Request-Method": "POST", "Access-Control-Request-Headers": "content-type"})
+    assert response.headers.get("access-control-allow-origin") == "https://amentor.ro"
+    other = client.options("/api/auth/student-login", headers={"Origin": "https://rau.example", "Access-Control-Request-Method": "POST"})
+    assert other.headers.get("access-control-allow-origin") is None

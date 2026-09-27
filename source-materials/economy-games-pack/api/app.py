@@ -1,5 +1,6 @@
 from typing import Dict, Any
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from shared.models import Session
 from shared.registry import get_engine, GAME_DIRS
@@ -9,6 +10,13 @@ from api.auth import router as auth_router
 from api.platform_routes import admin_router, library_router, student_router
 
 app = FastAPI(title="Economie by A mentor — API", version="1.1.0")
+# Pagina comună amentor.ro trimite logarea direct la acest server.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://amentor.ro", "https://www.amentor.ro", "http://localhost:8765"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
+)
 app.include_router(report_email_router)
 app.include_router(auth_router)
 app.include_router(admin_router)

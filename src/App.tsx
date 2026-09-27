@@ -1,8 +1,8 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { AppShell } from './components/AppShell'
 import { Dashboard } from './components/Dashboard'
 import { LoginPage, type LoginRequest } from './components/LoginPage'
-import { ApiError, loginAdmin, loginStudent, logoutSession, restoreSession, SESSION_EXPIRED_EVENT, type ApiUser } from './api'
+import { ApiError, consumeLoginHandoff, loginAdmin, loginStudent, logoutSession, restoreSession, SESSION_EXPIRED_EVENT, type ApiUser } from './api'
 import { NotesDrawer } from './components/NotesDrawer'
 import { DemoLockPage } from './components/DemoLockPage'
 import { ProfilePage } from './components/ProfilePage'
@@ -90,6 +90,9 @@ export function App() {
   const appearanceApi = useAppearance()
   const [authChecked, setAuthChecked] = useState(false)
   const [loginNotice, setLoginNotice] = useState('')
+  // Citit o singură dată (și în modul strict), înainte de restaurarea sesiunii.
+  const handoffRef = useRef<ReturnType<typeof consumeLoginHandoff> | undefined>(undefined)
+  if (handoffRef.current === undefined) handoffRef.current = consumeLoginHandoff()
 
   const activeChapterNumber = route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment'
     ? route.chapter
@@ -114,9 +117,22 @@ export function App() {
   // Restaurează sesiunea salvată (după reîncărcarea paginii).
   useEffect(() => {
     let active = true
+    const handoff = handoffRef.current
+    if (handoff === 'demo') {
+      sessionApi.login({ name: 'Vizitator Demo', email: '', role: 'student', demo: true })
+      setRoute(parseRoute('#/'))
+      setAuthChecked(true)
+      return () => { active = false }
+    }
     restoreSession()
       .then((user) => {
-        if (active && user) sessionApi.login(user)
+        if (!active || !user) return
+        sessionApi.login(user)
+        if (handoff === 'session') {
+          const target = user.role === 'admin' ? '#/admin/rapoarte' : '#/'
+          window.history.replaceState(null, '', target)
+          setRoute(parseRoute(target))
+        }
       })
       .catch(() => {
         if (active) setLoginNotice('Serverul nu răspunde momentan. Încearcă din nou peste câteva momente.')

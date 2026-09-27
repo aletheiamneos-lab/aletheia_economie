@@ -8,7 +8,7 @@ import lessonOneIntegration from '../public/graph-lab/integration/lesson_01.inte
 import admissionManifest from '../public/admission-tests/manifest.json'
 import admissionTest2025 from '../public/admission-tests/data/Grila_G1_23iulie2025.json'
 import libraryManifest from '../public/library/manifest.json'
-import { resetFakeBackend, TEST_ADMIN_PASSWORD } from './test/fakeApi'
+import { fakeBackend, resetFakeBackend, TEST_ADMIN_PASSWORD } from './test/fakeApi'
 
 vi.mock('./api', () => import('./test/fakeApi'))
 
@@ -96,6 +96,34 @@ describe('application flow', () => {
     window.location.hash = '#/capitol/1'
     window.dispatchEvent(new HashChangeEvent('hashchange'))
     expect(await screen.findByRole('heading', { name: 'Introducere în economie', level: 1 }, { timeout: 5000 })).toBeInTheDocument()
+  })
+
+  it('opens directly after logging in on amentor.ro (handoff) and in demo', async () => {
+    fakeBackend.state.sessions.set('token-portal', { role: 'student', name: 'Andrei Popescu', email: 'andrei@exemplu.ro' })
+    window.location.hash = '#/intrare/token-portal'
+    render(<App />)
+    expect(await screen.findByRole('navigation', { name: 'Navigare principală' })).toBeInTheDocument()
+    expect(window.location.hash).toBe('#/')
+    cleanup()
+
+    resetFakeBackend()
+    fakeBackend.state.sessions.set('token-admin', { role: 'admin', name: 'Administrator', email: '' })
+    window.location.hash = '#/intrare/token-admin'
+    render(<App />)
+    expect(await screen.findByRole('heading', { name: 'Rapoarte și activitate', level: 1 })).toBeInTheDocument()
+    cleanup()
+
+    resetFakeBackend()
+    window.location.hash = '#/intrare/demo'
+    render(<App />)
+    expect(await screen.findByRole('navigation', { name: 'Navigare principală' })).toBeInTheDocument()
+    expect(screen.getAllByText(/demo/i).length).toBeGreaterThan(0)
+    cleanup()
+
+    resetFakeBackend()
+    window.location.hash = '#/intrare/token-fals'
+    render(<App />)
+    expect(await screen.findByRole('tab', { name: 'Elev' })).toBeInTheDocument()
   })
 
   it('rejects a wrong administrator password', async () => {

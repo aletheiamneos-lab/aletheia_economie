@@ -40,6 +40,16 @@ export function setSessionToken(token: string | null) {
   }
 }
 
+/** Autentificare venită de pe pagina comună amentor.ro: #/intrare/<token> sau #/intrare/demo. */
+export function consumeLoginHandoff(): 'demo' | 'session' | null {
+  const match = window.location.hash.match(/^#\/intrare\/([A-Za-z0-9_%-]+)$/)
+  if (!match) return null
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#/`)
+  if (match[1] === 'demo') return 'demo'
+  setSessionToken(decodeURIComponent(match[1]))
+  return 'session'
+}
+
 export function sessionHeaders(): Record<string, string> {
   const token = getSessionToken()
   return token ? { [SESSION_HEADER]: token } : {}

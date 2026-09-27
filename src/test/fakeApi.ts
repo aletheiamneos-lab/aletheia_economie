@@ -58,6 +58,15 @@ export function setSessionToken(token: string | null) {
   fakeBackend.state.token = token
 }
 
+export function consumeLoginHandoff(): 'demo' | 'session' | null {
+  const match = window.location.hash.match(/^#\/intrare\/([A-Za-z0-9_%-]+)$/)
+  if (!match) return null
+  window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#/`)
+  if (match[1] === 'demo') return 'demo'
+  fakeBackend.state.token = decodeURIComponent(match[1])
+  return 'session'
+}
+
 export function sessionHeaders(): Record<string, string> {
   return fakeBackend.state.token ? { [SESSION_HEADER]: fakeBackend.state.token } : {}
 }

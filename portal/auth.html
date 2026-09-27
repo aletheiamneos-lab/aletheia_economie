@@ -5,98 +5,57 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Administrare — A mentor</title>
 <meta name="robots" content="noindex">
-<meta name="description" content="Platformele de studiu A mentor: Logică și Economie.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 id=%22Layer_1%22 data-name=%22Layer 1%22 viewBox=%220 0 24 24%22 width=%22512%22 height=%22512%22%3E%3Cpath d=%22M24,11c0-1.568-.752-3.04-2-3.978v-.022c0-1.897-1.327-3.489-3.102-3.898-.409-1.774-2.001-3.102-3.898-3.102-1.194,0-2.266,.526-3,1.357-.734-.832-1.806-1.357-3-1.357-1.897,0-3.489,1.327-3.898,3.102-1.774,.409-3.102,2.001-3.102,3.898v.022c-1.248,.938-2,2.41-2,3.978,0,.886,.235,1.737,.686,2.5-.45,.763-.686,1.614-.686,2.5,0,1.686,.858,3.244,2.267,4.166,.718,2.279,2.812,3.834,5.233,3.834,1.858,0,3.504-.926,4.5-2.341,.996,1.415,2.642,2.341,4.5,2.341,2.422,0,4.515-1.556,5.234-3.834,1.408-.921,2.266-2.48,2.266-4.166,0-.886-.235-1.737-.686-2.5,.45-.763,.686-1.614,.686-2.5ZM7.5,22c-1.634,0-3.033-1.115-3.401-2.712l-.103-.443-.4-.214c-.985-.527-1.597-1.535-1.597-2.631,0-.675,.234-1.322,.678-1.872l.508-.628-.508-.628c-.444-.549-.678-1.196-.678-1.872,0-1.07,.591-2.067,1.543-2.603l.62-.348s-.163-.93-.163-1.049c0-1.103,.897-2,2-2h1v-1c0-1.103,.897-2,2-2s2,.897,2,2v4h-2.268c-.346-.598-.992-1-1.732-1-1.105,0-2,.895-2,2s.895,2,2,2c.74,0,1.386-.402,1.732-1h2.268v5h-2.268c-.346-.598-.992-1-1.732-1-1.105,0-2,.895-2,2s.895,2,2,2c.74,0,1.386-.402,1.732-1h2.268v1.5c0,1.93-1.57,3.5-3.5,3.5Zm13.822-7.872c.444,.549,.678,1.196,.678,1.872,0,1.096-.612,2.104-1.596,2.631l-.4,.214-.102,.442c-.369,1.597-1.768,2.712-3.402,2.712-1.93,0-3.5-1.57-3.5-3.5v-4.5h5v-3.268c.598-.346,1-.992,1-1.732,0-1.105-.895-2-2-2s-2,.895-2,2c0,.74,.402,1.386,1,1.732v1.268h-3V4c0-1.103,.897-2,2-2s2,.897,2,2v1h1c1.103,0,2,.897,2,2,0,.12-.163,1.049-.163,1.049l.62,.348c.952,.535,1.543,1.532,1.543,2.603,0,.675-.234,1.322-.678,1.872l-.508,.628,.508,.628Z%22/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2a4 4 0 0 0-4 4v.1A4 4 0 0 0 5 10a4 4 0 0 0 .7 2.2A4 4 0 0 0 7 19a4 4 0 0 0 5 2 4 4 0 0 0 5-2 4 4 0 0 0 1.3-6.8A4 4 0 0 0 19 10a4 4 0 0 0-3-3.9V6a4 4 0 0 0-4-4Z' fill='%231f2937'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Newsreader:ital,opsz,wght@1,6..72,500&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#f5f3ee; --ink:#15283a; --muted:#5b6876; --line:#e0ddd4; --card:#fff;
-    --logic:#335f91; --logic-soft:#edf3fb; --econ:#1f7a74; --econ-soft:#e8f4f2; --accent:#d9735f;
-  }
-  *{box-sizing:border-box;margin:0}
-  html,body{min-height:100%}
-  body{font-family:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);
-    display:flex;flex-direction:column;min-height:100vh;-webkit-font-smoothing:antialiased}
-  body::before{content:"";position:fixed;inset:0;pointer-events:none;
-    background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
-    background-size:44px 44px;opacity:.45;mask-image:radial-gradient(ellipse at 50% 30%,#000 10%,transparent 70%)}
-  header,main,footer{position:relative;width:100%;max-width:980px;margin:0 auto;padding:0 20px}
-  header{display:flex;align-items:center;gap:10px;padding-top:28px}
-  .mark{width:34px;height:34px;border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;
-    font:700 18px Georgia,serif}
-  .brand b{display:block;font-size:15px;letter-spacing:-.01em}
-  .brand small{color:var(--muted);font-size:12px}
-  main{flex:1;display:flex;flex-direction:column;justify-content:center;padding-top:56px;padding-bottom:56px}
-  .kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-  h1{margin-top:12px;font-size:clamp(32px,6vw,54px);line-height:1.05;letter-spacing:-.035em;font-weight:800;max-width:14ch}
-  h1 em{font-family:Newsreader,Georgia,serif;font-style:italic;font-weight:500;letter-spacing:-.02em}
-  .lead{margin-top:16px;color:var(--muted);font-size:17px;line-height:1.55;max-width:46ch}
-  .choices{margin-top:40px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-  .choice{--c:var(--logic);--soft:var(--logic-soft);position:relative;display:flex;flex-direction:column;gap:14px;
-    padding:26px;border:1px solid var(--line);border-radius:18px;background:var(--card);color:inherit;text-decoration:none;
-    box-shadow:0 1px 0 rgba(21,40,58,.04),0 18px 40px -28px rgba(21,40,58,.35);
-    transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-  .choice.econ{--c:var(--econ);--soft:var(--econ-soft)}
-  .choice:hover{transform:translateY(-3px);border-color:var(--c);box-shadow:0 1px 0 rgba(21,40,58,.04),0 26px 50px -28px rgba(21,40,58,.45)}
-  .choice:focus-visible{outline:3px solid var(--c);outline-offset:3px}
-  .icon{width:52px;height:52px;border-radius:14px;background:var(--soft);color:var(--c);display:grid;place-items:center}
-  .icon svg{width:26px;height:26px}
-  .choice h2{font-size:26px;letter-spacing:-.02em}
-  .choice p{color:var(--muted);line-height:1.55;font-size:15px}
-  .tags{display:flex;flex-wrap:wrap;gap:6px}
-  .tags span{font-size:12px;font-weight:700;color:var(--c);background:var(--soft);padding:5px 9px;border-radius:999px}
-  .go{margin-top:auto;padding-top:6px;display:flex;align-items:center;justify-content:space-between;font-weight:800;color:var(--c)}
-  .go svg{width:20px;height:20px;transition:transform .2s ease}
-  .choice:hover .go svg{transform:translateX(4px)}
-  footer{padding-bottom:26px;color:var(--muted);font-size:13px}
-  @media (max-width:680px){
-    header{padding-top:20px} main{padding-top:36px}
-    .choices{grid-template-columns:1fr} .choice{padding:22px}
-  }
-  @media (prefers-reduced-motion:reduce){.choice,.go svg{transition:none}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/portal.css">
 </head>
-<body>
-<header>
-  <span class="mark" aria-hidden="true">A</span>
-  <span class="brand"><b>A mentor</b><small>Platforme de studiu</small></span>
-</header>
+<body data-mode="admin">
+<div class="brand" aria-label="A mentor">
+  <i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a4 4 0 0 0-4 4v.1A4 4 0 0 0 5 10a4 4 0 0 0 .7 2.2A4 4 0 0 0 7 19a4 4 0 0 0 5 2 4 4 0 0 0 5-2 4 4 0 0 0 1.3-6.8A4 4 0 0 0 19 10a4 4 0 0 0-3-3.9V6a4 4 0 0 0-4-4Z"/></svg></i>
+  A mentor <small>· administrare</small>
+</div>
 
-<main>
-  <span class="kicker">Administrare</span>
-  <h1>Intră ca <em>profesor.</em></h1>
-  <p class="lead">Alege platforma pe care vrei să o administrezi. Vei introduce parola de administrator pe pagina următoare.</p>
+<main class="stage">
+  <div class="seam" aria-hidden="true"><b>sau</b></div>
 
-  <nav class="choices" aria-label="Administrare platforme">
-    <a class="choice" href="https://logica.amentor.ro/auth">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.99.13A4 4 0 0 0 4 12a4 4 0 0 0 2 6.5A3.5 3.5 0 0 0 12 19Z"/><path d="M12 5a3 3 0 1 1 5.99.13A4 4 0 0 1 20 12a4 4 0 0 1-2 6.5A3.5 3.5 0 0 1 12 19Z"/><path d="M12 5v14"/></svg>
-      </span>
-      <h2>Logică</h2>
-      <p>Elevi autorizați, teste integrate, monitorizare și rapoarte.</p>
-      <span class="go">Administrează Logica
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </span>
-    </a>
-    <a class="choice econ" href="https://economie.amentor.ro/#/auth">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-7"/><path d="M16 7h4v4"/></svg>
-      </span>
-      <h2>Economie</h2>
-      <p>Elevi autorizați, activitate live, rapoarte și bibliotecă.</p>
-      <span class="go">Administrează Economia
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </span>
-    </a>
-  </nav>
+  <section class="side logic" aria-labelledby="logic-title">
+    <div class="inner head">
+      <div class="lockup">
+        <svg class="folder" viewBox="0 0 64 54" aria-hidden="true"><path d="M5 9a4 4 0 0 1 4-4h16l6 7h24a4 4 0 0 1 4 4v29a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z"/><text x="32" y="38" text-anchor="middle">L</text></svg>
+        <div><h2 id="logic-title">Logica</h2><small>administrare</small></div>
+      </div>
+      <p class="desc">Elevi autorizați, teste integrate, monitorizare live și rapoarte.</p>
+    </div>
+    <div class="inner card" data-app="logica">
+      <form data-panel="admin" novalidate>
+        <label><span>Parolă administrator</span><input name="password" type="password" autocomplete="current-password" placeholder="Introdu parola" required></label>
+        <button class="submit" type="submit"><span class="t">Administrează Logica</span><span class="a">→</span></button>
+      </form>
+      <p class="msg" role="alert" hidden></p>
+    </div>
+  </section>
+
+  <section class="side econ" aria-labelledby="econ-title">
+    <div class="inner head">
+      <div class="lockup">
+        <svg class="folder" viewBox="0 0 64 54" aria-hidden="true"><path d="M5 9a4 4 0 0 1 4-4h16l6 7h24a4 4 0 0 1 4 4v29a4 4 0 0 1-4 4H9a4 4 0 0 1-4-4Z"/><text x="32" y="38" text-anchor="middle">E</text></svg>
+        <div><h2 id="econ-title">Economie</h2><small>administrare</small></div>
+      </div>
+      <p class="desc">Elevi autorizați, activitate live, rapoarte, spațiu Supabase și bibliotecă.</p>
+    </div>
+    <div class="inner card" data-app="economie">
+      <form data-panel="admin" novalidate>
+        <label><span>Parolă administrator</span><input name="password" type="password" autocomplete="current-password" placeholder="Introdu parola" required></label>
+        <button class="submit" type="submit"><span class="t">Administrează Economia</span><span class="a">→</span></button>
+      </form>
+      <p class="msg" role="alert" hidden></p>
+    </div>
+  </section>
 </main>
 
-<footer><a href="/" style="color:inherit">← Înapoi la pagina elevilor</a></footer>
-<script>
-  // Trezește serverele gratuite (Render) cât timp utilizatorul alege materia.
-  ["https://aletheia-logica.onrender.com/health","https://aletheia-economie-api.onrender.com/health"].forEach(function(u){try{fetch(u,{mode:"no-cors",cache:"no-store"}).catch(function(){})}catch(e){}});
-</script>
+<p class="footer"><a href="/">← Înapoi la pagina elevilor</a></p>
+<script src="/portal.js"></script>
 </body>
 </html>

@@ -2,6 +2,12 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "redirects": [
-    { "source": "/:path((?!index$|index\\.html$|auth$|auth\\.html$).+)", "destination": "https://logica.amentor.ro/:path", "permanent": false }
+    { "source": "/:path((?!index$|index\\.html$|auth$|auth\\.html$|portal\\.css$|portal\\.js$).+)", "destination": "https://logica.amentor.ro/:path", "permanent": false }
+  ],
+  "headers": [
+    { "source": "/(.*)", "headers": [
+      { "key": "X-Content-Type-Options", "value": "nosniff" },
+      { "key": "Referrer-Policy", "value": "no-referrer" }
+    ] }
   ]
 }
