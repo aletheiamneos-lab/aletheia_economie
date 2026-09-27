@@ -74,3 +74,17 @@
 }
 .sidebar-demo-badge{display:inline-flex;align-items:center;margin-left:5px;padding:2px 5px;border-radius:999px;color:#a84e3c;background:#fff0ec;text-transform:uppercase;letter-spacing:.08em;font:700 6px "DM Mono";font-style:normal}
 .nav-demo-lock{display:inline-block;vertical-align:-2px;margin-left:3px;color:#aa5a49}
+
+/* Selecția din meniu: fără bara laterală, cu o pastilă discretă și iconița evidențiată.
+   Folosește culorile temei, deci arată bine în toate cele 6 teme. */
+.primary-nav button{position:relative;transition:background-color .18s ease,color .18s ease,box-shadow .18s ease}
+.primary-nav button>svg{box-sizing:content-box;padding:6px;margin:-6px 0;border-radius:9px;transition:background-color .18s ease,color .18s ease}
+.primary-nav button:hover:not(.active){background:color-mix(in srgb,var(--navy,#163a59) 4%,transparent)}
+.primary-nav button.active{
+  color:var(--navy,#112b48);
+  background:color-mix(in srgb,var(--navy,#163a59) 6%,var(--paper,#fff));
+  box-shadow:0 0 0 1px color-mix(in srgb,var(--navy,#163a59) 9%,transparent),0 8px 18px -14px color-mix(in srgb,var(--navy,#163a59) 55%,transparent);
+}
+.primary-nav button.active>svg{color:#fff;background:var(--navy,#163a59);box-shadow:0 4px 10px -4px color-mix(in srgb,var(--navy,#163a59) 60%,transparent)}
+.primary-nav button.active .nav-copy b{color:var(--navy,#112b48)}
+.primary-nav button.active .nav-copy small{color:color-mix(in srgb,var(--navy,#163a59) 62%,#8a9aa6)}
