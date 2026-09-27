@@ -1,0 +1,365 @@
+{
+  "capitol": {
+    "numar": 10,
+    "titlu": "Banii. Piața monetară",
+    "obiective": [
+      "Să explici funcțiile banilor și formele lor de existență",
+      "Să calculezi masa monetară, folosind ecuația schimbului",
+      "Să înțelegi cererea și oferta de monedă, și rolul dobânzii",
+      "Să calculezi dobânda simplă și dobânda compusă",
+      "Să distingi tipurile de credit și rolul pieței monetare"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "piata-monetara",
+      "nr": "1",
+      "titlu": "Piața monetară: caracterizare generală",
+      "text": [
+        "Piața monetară reflectă spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de monedă, formându-se prețul tranzacțiilor, numit rata dobânzii. Este o piață cu concurență imperfectă, de tip oligopol.",
+        "Cererea de monedă (credite) provine de la debitori: firme, populație, trezoreria statului, administrații locale. Oferta de monedă provine de la creditori: banca centrală, băncile comerciale și alte instituții financiare, care mobilizează disponibilitățile bănești din economie."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Participanții la piața monetară",
+          "categorii": [
+            {
+              "nume": "Debitorii",
+              "definitie": "exponenții cererii de monedă - firme, populație, trezoreria statului"
+            },
+            {
+              "nume": "Creditorii",
+              "definitie": "exponenții ofertei de monedă - banca centrală, băncile comerciale"
+            },
+            {
+              "nume": "Intermediarii",
+              "definitie": "băncile, casele de economii și pensii, societățile de asigurări"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Rolul pieței monetare: acoperă deficitul de monedă al unor agenți cu excedentul altora (de regulă, pe termen scurt) și reglează masa monetară din economie",
+        "Operații active (acordarea de credite) și operații pasive (colectarea și gestionarea economiilor, sub formă de depozite la vedere și la termen)"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "banii-functii",
+      "nr": "2",
+      "titlu": "Banii: geneza, evoluția și funcțiile lor",
+      "text": [
+        "Banii reprezintă instrumentul social, general acceptat ca etalon al valorii, ca mijloc de plată, de schimb și de rezervă, într-un spațiu economic dat. Au apărut din nevoia de a depăși limitele trocului (schimbul direct, marfă contra marfă) - schimbul mijlocit de bani (marfă → bani → marfă) a simplificat și fluidizat tranzacțiile.",
+        "Formele banilor au evoluat istoric: de la bunuri-marfă (animale, blănuri, bucăți de metal), la metale prețioase și monede, apoi la bancnote (bilete de bancă, sec. al XVII-lea), bani scripturali/de cont (sfârșitul sec. al XIX-lea) și, în final, bani electronici (cardul, sfârșitul sec. al XX-lea)."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Mijloc de schimb și de plată",
+          "descriere": "mijlocesc vânzarea-cumpărarea și sting obligațiile (ex. plata unui impozit)"
+        },
+        {
+          "termen": "Etalon universal de măsurare a valorii",
+          "descriere": "permit evaluarea și compararea bunurilor între ele, prin preț"
+        },
+        {
+          "termen": "Mijloc de rezervă (economisire)",
+          "descriere": "forma sub care se constituie și se păstrează rezervele firmelor și populației"
+        },
+        {
+          "termen": "Bani universali",
+          "descriere": "monede liber utilizabile în tranzacții internaționale (euro, dolar, lira)"
+        }
+      ],
+      "exemple": [
+        "Prețul unui suc este de 2 u.m., iar al unei cafele, 1 u.m. Comparând cele două prețuri, vedem că valoarea bănească a sucului e de două ori mai mare decât a cafelei - exact rolul banilor de etalon universal de măsurare a valorii."
+      ],
+      "formule": []
+    },
+    {
+      "id": "masa-monetara",
+      "nr": "3",
+      "titlu": "Masa monetară și ecuația schimbului",
+      "text": [
+        "Cantitatea de bani aflată în circulație într-o economie reprezintă masa monetară. Ea cuprinde numerarul (bancnotele și moneda metalică) și moneda scripturală (banii de cont - cecul, cardul, depozitele la vedere/termen); în economiile contemporane, majoritatea masei monetare circulă sub formă de monedă scripturală.",
+        "Nivelul necesar al masei monetare rezultă din ecuația schimbului (Irving Fisher): masa monetară, înmulțită cu viteza ei de rotație, trebuie să fie egală cu volumul valoric al bunurilor și serviciilor tranzacționate."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Creșterea volumului valoric al tranzacțiilor (P×Q)",
+          "descriere": "influențează direct proporțional masa monetară necesară"
+        },
+        {
+          "termen": "Scăderea vitezei de circulație a banilor (V)",
+          "descriere": "influențează invers proporțional masa monetară necesară"
+        }
+      ],
+      "exemple": [
+        "Într-o economie se produc doar mere: 100 kg/an, la un preț mediu de 2,5 u.m./kg, cu o viteză de rotație a banilor de 10 rotații/an. Masa monetară necesară este M = (100 × 2,5)/10 = 25 u.m."
+      ],
+      "formule": [
+        {
+          "nume": "Ecuația schimbului (Fisher)",
+          "formula": "M x V = P x Q  →  M = (P x Q) / V"
+        }
+      ],
+      "calculator": "masaMonetara"
+    },
+    {
+      "id": "dobanda",
+      "nr": "4",
+      "titlu": "Cererea și oferta de monedă. Dobânda",
+      "text": [
+        "Rata dobânzii (d’) reprezintă prețul plătit de debitor creditorului, pentru 100 de unități monetare împrumutate timp de un an. Dobânda (D) este suma de bani plătită de debitor creditorului pentru folosirea banilor împrumutați, până la restituirea lor.",
+        "Dobânda simplă se aplică atunci când perioada creditului (sau a economisirii) este mai mică de 1 an. Dobânda compusă (capitalizată) se aplică atunci când perioada e mai mare de 1 an - dobânda de la sfârșitul fiecărui an se adaugă la capital și, la rândul ei, aduce dobândă în anii următori."
+      ],
+      "exemple": [
+        "Un credit de 200.000 u.m., acordat pe 3 luni, cu rata dobânzii 30%/an: D = 200.000 × 0,30 × (3/12) = 15.000 u.m., iar suma finală SF = 15.000 + 200.000 = 215.000 u.m. Pentru un depozit de 10 u.m., cu dobândă compusă de 20%/an, timp de 2 ani: SF = 10 × (1,2)² = 14,4 u.m."
+      ],
+      "formule": [
+        {
+          "nume": "Rata dobânzii",
+          "formula": "d’ = (D/C) x 100"
+        },
+        {
+          "nume": "Dobânda simplă (perioadă sub 1 an)",
+          "formula": "D = C x d’ x n,  SF = D + C"
+        },
+        {
+          "nume": "Dobânda compusă (perioadă peste 1 an)",
+          "formula": "SF = C x (1 + d’)^n,  DC = SF - C"
+        }
+      ],
+      "calculator": "dobanda",
+      "notaLegatura": {
+        "href": "#sect-explorator-dobanda",
+        "text": "Explorează interactiv cum crește o sumă în timp, la dobândă simplă vs. compusă, în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "credit-putere-cumparare",
+      "nr": "5",
+      "titlu": "Creditul și puterea de cumpărare a banilor",
+      "text": [
+        "Puterea de cumpărare a banilor reflectă cantitatea de bunuri economice care poate fi achiziționată cu o unitate monetară sau cu o anumită sumă de bani, la un moment dat. Convertibilitatea reflectă însușirea legală a unei monede de a putea fi schimbată liber cu moneda altei țări, la un preț numit curs valutar."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Categoriile de credit",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Creditul bancar",
+              "definitie": "acordat de bănci firmelor sau populației"
+            },
+            {
+              "nume": "Creditul comercial",
+              "definitie": "acordat sub formă de marfă, între firme"
+            },
+            {
+              "nume": "Creditul obligatar",
+              "definitie": "între instituții de stat și investitorii în obligațiuni"
+            },
+            {
+              "nume": "Creditul ipotecar",
+              "definitie": "destinat activităților imobiliare"
+            },
+            {
+              "nume": "Creditul de consum",
+              "definitie": "acordat populației pentru achiziționarea de mărfuri"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Puterea de cumpărare (a unei unități monetare)",
+          "formula": "PCB = 1 / I_P"
+        },
+        {
+          "nume": "Puterea de cumpărare (a unei sume M)",
+          "formula": "PCM = M / I_P"
+        }
+      ]
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Când rata dobânzii crește, cererea de monedă:",
+      "optiuni": [
+        "crește",
+        "scade",
+        "nu se modifică",
+        "depinde de rata inflației"
+      ],
+      "corect": 1,
+      "explicatie": "Un credit mai scump (dobândă mai mare) descurajează împrumuturile, deci cererea de monedă scade."
+    },
+    {
+      "intrebare": "Masa monetară crește atunci când:",
+      "optiuni": [
+        "viteza de rotație a banilor crește",
+        "valoarea bunurilor supuse tranzacției scade",
+        "volumul valoric al tranzacțiilor crește",
+        "ieșirile de valută sunt mai mari decât intrările"
+      ],
+      "corect": 2,
+      "explicatie": "Din M=(P×Q)/V: dacă valoarea tranzacțiilor (P×Q) crește, e nevoie de mai multă monedă în circulație, la aceeași viteză de rotație."
+    },
+    {
+      "intrebare": "Rata dobânzii reprezintă:",
+      "optiuni": [
+        "un cost pentru creditor",
+        "un venit pentru debitor",
+        "prețul creditului",
+        "un mijloc de economisire pentru debitor"
+      ],
+      "corect": 2,
+      "explicatie": "Rata dobânzii e prețul plătit de debitor creditorului pentru folosirea banilor împrumutați - deci prețul creditului."
+    },
+    {
+      "intrebare": "Masa monetară scade atunci când:",
+      "optiuni": [
+        "viteza de rotație a banilor crește",
+        "valoarea bunurilor supuse tranzacției crește",
+        "rata rezervelor obligatorii scade",
+        "ieșirile de valută sunt mai mici decât intrările"
+      ],
+      "corect": 0,
+      "explicatie": "Din M=(P×Q)/V: dacă viteza de rotație (V) crește, la aceleași P și Q, masa monetară necesară scade."
+    },
+    {
+      "intrebare": "Dobânda compusă se aplică atunci când:",
+      "optiuni": [
+        "perioada creditului este mai mică de 1 an",
+        "perioada creditului este mai mare de 1 an",
+        "creditul e acordat de banca centrală",
+        "rata dobânzii e mai mică de 10%"
+      ],
+      "corect": 1,
+      "explicatie": "Dobânda compusă (capitalizată) se folosește pentru perioade mai mari de 1 an - dobânda anuală se adaugă la capital și aduce, la rândul ei, dobândă."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Dacă rata dobânzii crește, se scumpesc creditele.",
+      "corect": true,
+      "explicatie": "Da - o rată a dobânzii mai mare înseamnă un cost mai mare pentru cel care se împrumută."
+    },
+    {
+      "enunt": "Persoana care se împrumută devine debitor.",
+      "corect": true,
+      "explicatie": "Da - debitorul e cel care beneficiază de împrumut și are obligația să-l restituie, cu dobândă."
+    },
+    {
+      "enunt": "Pentru creditor, dobânda este un preț pentru folosirea banilor.",
+      "corect": true,
+      "explicatie": "Da - dobânda reprezintă, pentru creditor, venitul încasat pentru faptul că a renunțat temporar la folosirea propriilor bani."
+    },
+    {
+      "enunt": "Cecul nu este o formă a banilor.",
+      "corect": false,
+      "explicatie": "Cecul este monedă scripturală - o formă modernă a banilor, alături de card și depozitele la vedere."
+    },
+    {
+      "enunt": "Majoritatea masei monetare, în economiile contemporane, circulă sub formă de numerar.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - majoritatea masei monetare circulă sub formă de monedă scripturală (bani de cont), nu numerar."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Ana contractează un împrumut de 100.000 u.m., la o rată a dobânzii de 10%/an. Ce sumă va trebui să returneze băncii, dacă perioada creditului este de 6 luni?",
+      "unitate": "u.m.",
+      "corect": 105000,
+      "toleranta": 100,
+      "explicatie": "D = C×d’×n = 100.000×0,10×(6/12) = 5.000 u.m. SF = 100.000+5.000 = 105.000 u.m."
+    },
+    {
+      "enunt": "Același împrumut de 100.000 u.m., la aceeași rată a dobânzii de 10%/an, dar pentru o perioadă de 2 ani (dobândă compusă). Ce sumă va trebui returnată?",
+      "unitate": "u.m.",
+      "corect": 121000,
+      "toleranta": 200,
+      "explicatie": "SF = C×(1+d’)^n = 100.000×(1,1)² = 100.000×1,21 = 121.000 u.m."
+    },
+    {
+      "enunt": "Masa monetară crește cu 50%, cantitatea de bunuri tranzacționate crește cu 30%, iar viteza de circulație a banilor scade cu 10%. Calculați indicele general al prețurilor (Ip, %).",
+      "unitate": "%",
+      "corect": 103.8,
+      "toleranta": 1,
+      "explicatie": "Din M×V=P×Q rezultă Ip = (IM×IV)/IQ = (1,5×0,9)/1,3×100 = 103,8%."
+    },
+    {
+      "enunt": "O bancă are un capital de 100.000 u.m. (depozite = credite). Rata dobânzii încasate este 25%, iar cea plătită, 15%. Cheltuielile de funcționare reprezintă 70% din câștigul bancar. Calculați profitul băncii.",
+      "unitate": "u.m.",
+      "corect": 3000,
+      "toleranta": 50,
+      "explicatie": "Câștigul bancar = 100.000×(0,25-0,15) = 10.000 u.m. Cheltuielile = 70%×10.000 = 7.000 u.m. Profitul = 10.000-7.000 = 3.000 u.m."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Masa monetară"
+        },
+        {
+          "id": "t2",
+          "text": "Rata dobânzii"
+        },
+        {
+          "id": "t3",
+          "text": "Creditul bancar"
+        },
+        {
+          "id": "t4",
+          "text": "Puterea de cumpărare a banilor"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Cantitatea de bani aflată în circulație într-o economie"
+        },
+        {
+          "id": "o_b",
+          "text": "Prețul plătit pentru 100 de unități monetare împrumutate timp de un an"
+        },
+        {
+          "id": "o_c",
+          "text": "Credit acordat de bănci firmelor sau populației"
+        },
+        {
+          "id": "o_d",
+          "text": "Cantitatea de bunuri ce poate fi achiziționată cu o unitate monetară"
+        },
+        {
+          "id": "o_e",
+          "text": "Numărul de tranzacții mijlocite de o unitate monetară într-un an"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, viteza de circulație a banilor - un concept diferit, care nu apare în coloana din stânga."
+    }
+  ]
+}

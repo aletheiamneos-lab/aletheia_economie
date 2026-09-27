@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "basePath": "/games/",
+  "games": [
+    {"id": "01_market_maker", "file": "01_market_maker.html", "title": "Piața cafelei", "topic": "Cerere, ofertă și echilibrul pieței", "chapters": [8], "steps": 7, "maxCoins": 23},
+    {"id": "02_consumer_lab", "file": "02_consumer_lab.html", "title": "Banii de weekend", "topic": "Utilitatea totală și marginală, optimul consumatorului", "chapters": [3], "steps": 3, "maxCoins": 15},
+    {"id": "03_factory_master", "file": "03_factory_master.html", "title": "Fabrica", "topic": "Productivitate, costuri și profit", "chapters": [5, 6, 7], "steps": 4, "maxCoins": 20},
+    {"id": "04_inflation_detective", "file": "04_inflation_detective.html", "title": "Detectivul inflației", "topic": "Cauzele inflației, IPC, puterea de cumpărare", "chapters": [11], "steps": 4, "maxCoins": 28},
+    {"id": "05_central_bank", "file": "05_central_bank.html", "title": "Banca centrală", "topic": "Dobânda de politică monetară, dobânda reală, inflația", "chapters": [10, 11], "steps": 8, "maxCoins": 10},
+    {"id": "06_job_market", "file": "06_job_market.html", "title": "Recensământul cartierului", "topic": "Populația activă, rata și tipurile șomajului", "chapters": [13, 14], "steps": 3, "maxCoins": 23},
+    {"id": "07_wall_street_lab", "file": "07_wall_street_lab.html", "title": "La bursă", "topic": "Cursul obligațiunilor și acțiunilor, randamentul", "chapters": [12], "steps": 5, "maxCoins": 17},
+    {"id": "08_global_trader", "file": "08_global_trader.html", "title": "Carpați Trade", "topic": "Cursul de revenire la export și import, cursul de schimb", "chapters": [18], "steps": 5, "maxCoins": 19},
+    {"id": "09_economic_pulse", "file": "09_economic_pulse.html", "title": "Pulsul economiei", "topic": "Fazele ciclului economic și politicile anticiclice", "chapters": [16], "steps": 4, "maxCoins": 16},
+    {"id": "10_president", "file": "10_president.html", "title": "Președinte pentru 4 ani", "topic": "Bugetul de stat, deficitul, politica fiscală", "chapters": [17], "steps": 4, "maxCoins": 10}
+  ]
+}

@@ -1,0 +1,329 @@
+{
+  "capitol": {
+    "numar": 16,
+    "titlu": "Creștere și dezvoltare economică. Ciclicitatea în economie",
+    "obiective": [
+      "Să explici ce reprezintă creșterea și dezvoltarea economică",
+      "Să identifici sursele (factorii) care stau la baza creșterii economice",
+      "Să distingi creșterea extensivă de cea intensivă",
+      "Să înțelegi importanța dezvoltării umane durabile",
+      "Să calculezi și să interpretezi evoluția PIB-ului pe locuitor"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "cresterea-economica",
+      "nr": "1",
+      "titlu": "Creșterea economică",
+      "text": [
+        "Creșterea economică reflectă evoluția ascendentă, pe termen lung, a potențialului productiv al unei țări - respectiv a unui indicator macroeconomic real pe locuitor (de regulă, PIB real/locuitor). Se măsoară cel mai adesea prin creșterea reală a PIB și creșterea reală a PIB pe locuitor."
+      ],
+      "puncteCheie": [
+        "Este un proces macroeconomic, la nivelul întregii economii naționale",
+        "Se desfășoară pe termen lung, dar nu evoluează liniar - pot exista perioade de regres sau oscilații conjuncturale",
+        "Reflectă creșteri reale (nu doar nominale) ale producției",
+        "Este preponderent cantitativă, dar nu exclude transformările structurale"
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de creștere economică, după relația PIB real/locuitor - populație",
+          "categorii": [
+            {
+              "nume": "Pozitivă",
+              "definitie": "I(PIBr/loc) > I(populației) - raportul PIB/locuitor crește"
+            },
+            {
+              "nume": "Negativă (declin economic)",
+              "definitie": "I(PIBr/loc) < I(populației) - raportul PIB/locuitor scade"
+            },
+            {
+              "nume": "Zero",
+              "definitie": "I(PIB) = I(populației) - raportul PIB/locuitor rămâne constant"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "PIB real pe locuitor",
+          "formula": "PIB.r/loc = (PIB.n/loc) / I_GP"
+        }
+      ],
+      "calculator": "pibPeLocuitor"
+    },
+    {
+      "id": "dezvoltare-progres",
+      "nr": "2",
+      "titlu": "Dezvoltarea și progresul economic",
+      "text": [
+        "Dezvoltarea economică exprimă ansamblul schimbărilor preponderent pozitive - cantitative, calitative și structurale - la nivel economic, social, tehnic, științific, ecologic, reflectate în niveluri superioare ale indicatorilor macroeconomici față de perioadele anterioare. Se bazează pe creșterea economică, dar este mai complexă decât ea.",
+        "Progresul economic reflectă esența evoluției unei economii naționale - ameliorarea performanțelor globale (viața economică, calitatea vieții, nivelul de civilizație), ca urmare a efectelor pozitive ale creșterii și dezvoltării economice. Este sinteza și finalitatea rezultatelor creșterii și dezvoltării, dar și premisa lor viitoare."
+      ],
+      "puncteCheie": [
+        "Creșterea economică este o componentă, o premisă a dezvoltării economice",
+        "Dezvoltarea economică este baza, premisa progresului economic",
+        "Cele trei procese (creștere, dezvoltare, progres) nu se opun și nici nu se suprapun - se influențează și se condiționează reciproc, fiind toate procese macroeconomice, pe termen lung, evolutive dar nu liniare"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "factorii-cresterii",
+      "nr": "3",
+      "titlu": "Factorii creșterii economice",
+      "text": [
+        "Creșterea economică este determinată de o multitudine de factori - unii cu acțiune directă asupra potențialului productiv, alții cu acțiune indirectă, prin intermediul cererii și al condițiilor economice generale."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Factorii creșterii economice",
+          "categorii": [
+            {
+              "nume": "Direcți",
+              "definitie": "resursele umane, resursele naturale, stocul de capital tehnic, progresul tehnic"
+            },
+            {
+              "nume": "Indirecți",
+              "definitie": "cererea agregată, economiile și investițiile, mediul internațional, exportul/importul, creditul"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "crestere-extensiva-intensiva",
+      "nr": "4",
+      "titlu": "Creșterea extensivă și intensivă",
+      "text": [
+        "În funcție de contribuția factorilor direcți la sporirea producției, creșterea economică poate fi extensivă, intensivă sau intermediară - o distincție esențială pentru calitatea și sustenabilitatea creșterii pe termen lung."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de creștere economică, după contribuția factorilor",
+          "categorii": [
+            {
+              "nume": "Extensivă",
+              "definitie": "contribuție preponderent cantitativă a factorilor de producție (mai mulți muncitori, mai mult capital, mai multe resurse)"
+            },
+            {
+              "nume": "Intensivă",
+              "definitie": "contribuție preponderent calitativă (productivitate mai mare, eficiență, progres tehnic)"
+            },
+            {
+              "nume": "Intermediară",
+              "definitie": "contribuție relativ egală, cantitativă și calitativă"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "dezvoltare-umana-durabila",
+      "nr": "5",
+      "titlu": "Dezvoltarea umană durabilă",
+      "text": [
+        "Dezvoltarea umană durabilă este un proces complex, mondial, care presupune satisfacerea nevoilor umane curente fără a compromite capacitatea generațiilor viitoare de a-și satisface propriile nevoi, în condițiile protecției mediului înconjurător - pune în centru omul și protecția mediului natural.",
+        "Utilizarea exclusivă a PIB-ului pe locuitor este o măsură incompletă a dezvoltării, pentru că nu surprinde aspectele calitative și structurale ale evoluției economice - de aceea se folosesc indicatori compoziți, precum indicatorul dezvoltării umane (IDU)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Componentele IDU (indicatorul dezvoltării umane)",
+          "categorii": [
+            {
+              "nume": "Sănătatea",
+              "definitie": "exprimată prin speranța de viață la naștere"
+            },
+            {
+              "nume": "Educația",
+              "definitie": "exprimată prin rata de instruire a adulților și numărul mediu de ani de studiu"
+            },
+            {
+              "nume": "Standardul de viață",
+              "definitie": "exprimat prin PIB real pe locuitor"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "\"Limitele creșterii economice\" (conceptul Clubului de la Roma) iau în considerare impactul ecologic al creșterii - multe activități economice folosesc resurse neregenerabile, cu impact puternic asupra ecosistemului. De aici a apărut conceptul de creștere și dezvoltare economică durabilă."
+      ],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Creșterea economică intensivă:",
+      "optiuni": [
+        "presupune creșterea calității și eficienței utilizării factorilor de producție",
+        "este singura cale de extindere a producției naționale",
+        "este sinonimă cu dezvoltarea durabilă",
+        "exclude progresul tehnic"
+      ],
+      "corect": 0,
+      "explicatie": "Creșterea intensivă se bazează pe contribuția preponderent calitativă a factorilor (productivitate, eficiență), spre deosebire de cea extensivă (cantitativă)."
+    },
+    {
+      "intrebare": "Printre sursele (factorii direcți) de creștere economică se numără:",
+      "optiuni": [
+        "progresul economic",
+        "capitalul (stocul de capital tehnic)",
+        "cererea agregată",
+        "creditul"
+      ],
+      "corect": 1,
+      "explicatie": "Factorii direcți includ resursele umane, resursele naturale, stocul de capital tehnic și progresul tehnic; cererea agregată, creditul etc. sunt factori indirecți."
+    },
+    {
+      "intrebare": "Dezvoltarea economică:",
+      "optiuni": [
+        "se bazează exclusiv pe schimbările cantitative ale PIB",
+        "este sinonimă cu progresul economic",
+        "nu se poate realiza în lipsa unui proces de creștere economică susținută",
+        "exclude schimbările structurale"
+      ],
+      "corect": 2,
+      "explicatie": "Dezvoltarea economică se bazează pe creșterea economică, dar e mai complexă decât ea - include și schimbări calitative și structurale."
+    },
+    {
+      "intrebare": "Creșterea economică este pozitivă atunci când:",
+      "optiuni": [
+        "PIB real crește mai încet decât populația",
+        "PIB real crește mai repede decât populația",
+        "PIB real și populația cresc în același ritm",
+        "populația scade, indiferent de PIB"
+      ],
+      "corect": 1,
+      "explicatie": "Creșterea economică e pozitivă când raportul PIB/locuitor crește - adică PIB real crește mai repede decât populația."
+    },
+    {
+      "intrebare": "Indicatorul dezvoltării umane (IDU) NU include:",
+      "optiuni": [
+        "speranța de viață la naștere",
+        "rata de instruire a populației",
+        "PIB real pe locuitor",
+        "rata inflației"
+      ],
+      "corect": 3,
+      "explicatie": "IDU e un indicator compozit format din 3 componente: sănătate (speranța de viață), educație (rata de instruire) și standard de viață (PIB real/locuitor) - nu include rata inflației."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Dezvoltarea economică presupune o împletire a proceselor de creștere economică și progres economic.",
+      "corect": true,
+      "explicatie": "Da - dezvoltarea economică se bazează pe creșterea economică, iar rezultatul lor comun e progresul economic."
+    },
+    {
+      "enunt": "Existența creșterii economice presupune eliminarea poluării.",
+      "corect": false,
+      "explicatie": "Nu neapărat - multe activități care contribuie la creșterea economică folosesc resurse neregenerabile și pot afecta mediul; de aceea a apărut conceptul de dezvoltare durabilă."
+    },
+    {
+      "enunt": "Indicele dezvoltării umane evidențiază exclusiv modificările cantitative ale producției naționale.",
+      "corect": false,
+      "explicatie": "Nu - IDU e un indicator compozit care include și sănătatea (speranța de viață) și educația (rata de instruire), nu doar producția."
+    },
+    {
+      "enunt": "Pe termen scurt, creșterea economică poate conduce la pierderea locurilor de muncă pentru anumite categorii de persoane.",
+      "corect": true,
+      "explicatie": "Da - de exemplu, prin restructurări sau modernizări tehnologice, unele categorii de lucrători pot fi afectate, chiar dacă economia crește per ansamblu."
+    },
+    {
+      "enunt": "Creșterea economică extensivă se bazează pe sporirea calității factorilor de producție.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - creșterea extensivă se bazează pe sporirea CANTITATIVĂ a factorilor (mai mulți muncitori, mai mult capital), nu pe calitate."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Într-o țară, PIB real în t0 a fost 250.000 mld. u.m., iar populația, 25 milioane locuitori. În t1, PIB real a crescut la 275.000 mld. u.m. Care este modificarea absolută a PIB real (mld. u.m.)?",
+      "unitate": "mld. u.m.",
+      "corect": 25000,
+      "toleranta": 200,
+      "explicatie": "ΔPIBr = 275.000-250.000 = 25.000 mld. u.m."
+    },
+    {
+      "enunt": "Aceeași țară: PIB real T0=250.000 mld. u.m., populație T0=25 milioane. Care este PIB/locuitor în T0 (u.m./locuitor)?",
+      "unitate": "u.m./loc.",
+      "corect": 10000,
+      "toleranta": 100,
+      "explicatie": "PIB/loc(T0) = 250.000 mld./25 mil. = 10.000 u.m./locuitor."
+    },
+    {
+      "enunt": "PIB real ajunge la 275.000 mld. u.m. în T1, în condițiile în care populația scade cu 5% față de cei 25 milioane inițiali. Care este PIB/locuitor în T1 (u.m./locuitor)?",
+      "unitate": "u.m./loc.",
+      "corect": 11579,
+      "toleranta": 100,
+      "explicatie": "Populația T1 = 25 mil. x 0,95 = 23,75 mil. PIB/loc(T1) = 275.000 mld./23,75 mil. ≈ 11.579 u.m./locuitor - o creștere pozitivă față de T0 (10.000)."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Creșterea economică"
+        },
+        {
+          "id": "t2",
+          "text": "Dezvoltarea economică"
+        },
+        {
+          "id": "t3",
+          "text": "Progresul economic"
+        },
+        {
+          "id": "t4",
+          "text": "Dezvoltarea umană durabilă"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Expansiune pe termen lung a potențialului productiv, măsurată prin PIB real/locuitor"
+        },
+        {
+          "id": "o_b",
+          "text": "Ansamblul schimbărilor cantitative, calitative și structurale la nivel economic și social"
+        },
+        {
+          "id": "o_c",
+          "text": "Ameliorarea performanțelor globale ale unei economii - sinteza creșterii și dezvoltării"
+        },
+        {
+          "id": "o_d",
+          "text": "Satisfacerea nevoilor actuale, fără a compromite capacitatea generațiilor viitoare de a le satisface pe ale lor"
+        },
+        {
+          "id": "o_e",
+          "text": "Fenomen manifestat pe piața muncii, prin utilizarea parțială a ofertei de muncă"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, șomajul - un concept dintr-un alt capitol, care nu apare aici."
+    }
+  ]
+}

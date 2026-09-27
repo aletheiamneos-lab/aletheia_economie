@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0",
+  "packageVersion": "5.4.0",
+  "lesson": 9,
+  "title": "Mecanismul concurențial",
+  "files": {
+    "configJson": "data/lesson_09.json",
+    "configJs": "data/lesson_09.js",
+    "modularHtml": "lessons/lesson_09.html",
+    "standaloneHtml": "standalone/lectia_09_standalone.html",
+    "engine": "assets/graph-engine.js",
+    "styles": "assets/graph-lab.css"
+  },
+  "integration": {
+    "mountTarget": "#content",
+    "moduleSelector": "#moduleSelect",
+    "stateKeyPattern": "eco_graph_l9_{moduleId}_v1",
+    "themeKey": "eco_graph_theme_v1",
+    "adminKey": "eco_graph_admin_v1",
+    "resetCurrent": "resetCurrent()",
+    "resetLesson": "resetLesson()"
+  },
+  "sourceAudit": {
+    "lesson": 9,
+    "title": "Mecanismul concurențial",
+    "source": "Capitolul 9 - Mecanismul Concurential_ex.pdf",
+    "moduleCount": 2,
+    "evidence": "Concurență perfectă/imperfectă, structuri de piață și condiția de eficiență marginală utilizată didactic.",
+    "modules": [
+      {
+        "id": "firma_concurenta",
+        "title": "Firma în concurență perfectă: P = Cmg",
+        "kind": "firm_optimum",
+        "status": "B",
+        "formulas": [
+          "Profit maxim pe termen scurt: Cmg = Vmg = P"
+        ]
+      },
+      {
+        "id": "structuri_piata",
+        "title": "Comparatorul structurilor de piață",
+        "kind": "market_structure",
+        "status": "C",
+        "formulas": []
+      }
+    ]
+  },
+  "config": {
+    "lesson": 9,
+    "title": "Mecanismul concurențial",
+    "source": "Capitolul 9 - Mecanismul concurențial",
+    "modules": [
+      {
+        "id": "firma_concurenta",
+        "title": "Firma în concurență perfectă: P = Cmg",
+        "kind": "firm_optimum",
+        "defaults": {
+          "price": 30,
+          "mcAlpha": 0.5,
+          "mcBeta": 5,
+          "q": 40
+        },
+        "formulas": [
+          "Profit maxim pe termen scurt: Cmg = Vmg = P"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 9 - Mecanismul Concurential_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Concurență perfectă/imperfectă, structuri de piață și condiția de eficiență marginală utilizată didactic."
+        }
+      },
+      {
+        "id": "structuri_piata",
+        "title": "Comparatorul structurilor de piață",
+        "kind": "market_structure",
+        "defaults": {
+          "sellers": 80,
+          "buyers": 80,
+          "differentiation": 10,
+          "pricePower": 5,
+          "entryBarriers": 5
+        },
+        "provenance": {
+          "status": "C",
+          "statusLegend": "vizualizare deterministă a unui concept textual din material",
+          "primarySource": "Capitolul 9 - Mecanismul Concurential_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Concurență perfectă/imperfectă, structuri de piață și condiția de eficiență marginală utilizată didactic."
+        }
+      }
+    ],
+    "themeDefaults": {
+      "graphBg": "#ffffff",
+      "grid": "#edf1f6",
+      "axes": "#667085",
+      "line1": "#2f63d5",
+      "line2": "#13865f",
+      "line3": "#7458d8",
+      "line4": "#b46b00",
+      "line5": "#d04f5f",
+      "line6": "#0f8f9b",
+      "t0": "#667085",
+      "probe": "#b42318"
+    },
+    "auditVersion": "5.4-complet",
+    "sourcePolicy": "Nu se introduce o formulă economică nouă dacă nu este susținută de material; vizualizările C sunt marcate ca schematice/didactice."
+  }
+}

@@ -1,0 +1,60 @@
+.admission-report-panel{
+  display:grid;
+  grid-template-columns:minmax(270px,.85fr) minmax(390px,1.15fr);
+  gap:48px;
+  margin-top:30px;
+  padding:30px 4px 31px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:transparent;
+}
+.admission-report-copy{display:flex;align-items:flex-start;gap:16px}
+.admission-report-icon{
+  width:44px;
+  height:44px;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+  border:1px solid #cfe2e3;
+  border-radius:50%;
+  color:var(--teal);
+  background:#f1f8f8;
+}
+.admission-report-copy h2{margin:7px 0 8px;color:var(--ink);font:800 22px/1.18 Manrope;letter-spacing:-.6px}
+.admission-report-copy p{max-width:470px;margin:0;color:var(--muted);font-size:10px;line-height:1.6}
+.admission-report-form{display:grid;grid-template-columns:1fr 1fr;gap:13px 11px}
+.admission-report-form>label{display:grid;gap:7px}
+.admission-report-form>label:only-of-type{grid-column:1/-1}
+.admission-report-form>label>span{color:#71818e;text-transform:uppercase;letter-spacing:.09em;font:700 7.5px "DM Mono"}
+.admission-report-form input{
+  width:100%;
+  height:44px;
+  padding:0 13px;
+  border:1px solid #d7e0e5;
+  border-radius:8px;
+  color:var(--ink);
+  background:#fff;
+  font-size:11px;
+  transition:border-color .18s ease,box-shadow .18s ease;
+}
+.admission-report-form input:focus{border-color:#87afb9;box-shadow:0 0 0 3px rgba(57,142,145,.09);outline:0}
+.admission-report-form input::placeholder{color:#a3adb5}
+.admission-report-actions{grid-column:1/-1;display:flex;gap:8px;margin-top:3px}
+.admission-report-actions .button{min-width:174px;border-radius:8px;box-shadow:none}
+.admission-email-button{color:#fff;border-color:var(--navy);background:var(--navy)}
+.admission-email-button:hover:not(:disabled){background:#225779}
+.admission-report-feedback{grid-column:1/-1;margin:0;padding:9px 11px;border-radius:7px;font-size:9px;line-height:1.45}
+.admission-report-feedback.error{color:var(--red);background:var(--red-soft)}
+.admission-report-feedback.success{color:var(--green);background:var(--green-soft)}
+.admission-email-note{grid-column:1/-1;color:#87939f;font-size:8px;line-height:1.5}
+
+@media(max-width:900px){
+  .admission-report-panel{grid-template-columns:1fr;gap:28px}
+  .admission-report-copy p{max-width:650px}
+}
+@media(max-width:600px){
+  .admission-report-panel{padding:25px 0}
+  .admission-report-form{grid-template-columns:1fr}
+  .admission-report-actions{flex-direction:column}
+  .admission-report-actions .button{width:100%}
+}

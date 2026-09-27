@@ -1,0 +1,670 @@
+.math-workspace-shell .app-main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.math-workspace-page {
+  width: min(1320px, 100%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  padding: 16px clamp(20px, 2.6vw, 40px) 18px;
+}
+
+.math-workspace-intro {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 50px;
+}
+
+.math-intro-icon {
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  display: grid;
+  place-items: center;
+  border-radius: 13px;
+  color: #fff;
+  background: linear-gradient(145deg, var(--coral), #bf4b2c);
+  box-shadow: 0 8px 20px rgba(217, 90, 56, .16);
+}
+
+.math-workspace-intro h1 {
+  margin: 3px 0 0;
+  color: var(--ink);
+  font: 800 clamp(22px, 2.4vw, 31px)/1.08 Manrope, sans-serif;
+  letter-spacing: -1px;
+}
+
+.math-save-state {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  color: #377c72;
+  font-size: 9px;
+  white-space: nowrap;
+}
+
+.math-composer-toolbar {
+  flex: 0 0 auto;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  overflow-x: auto;
+  border: 1px solid var(--line-soft);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, .88);
+  box-shadow: var(--shadow-sm);
+  scrollbar-width: thin;
+}
+
+.math-composer-toolbar > span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 10px 0 3px;
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.math-composer-toolbar button {
+  flex: 0 0 auto;
+  min-width: 36px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 10px;
+  border: 1px solid #e1dfd8;
+  border-radius: 8px;
+  color: var(--ink);
+  background: #fff;
+  font: 700 11px Manrope, sans-serif;
+  cursor: pointer;
+}
+
+.math-composer-toolbar button:hover {
+  color: var(--coral-dark);
+  border-color: #e8b7a8;
+  background: #fff9f6;
+}
+
+.fraction-tool > span {
+  width: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font: 9px/10px Georgia, serif;
+}
+
+.fraction-tool i {
+  font-style: normal;
+  text-align: center;
+}
+
+.fraction-tool i:first-child {
+  border-bottom: 1px solid currentColor;
+}
+
+.script-tool > span {
+  min-width: 18px;
+  font: italic 15px Georgia, serif;
+}
+
+.script-tool sub,
+.script-tool sup {
+  font-size: 9px;
+  font-style: normal;
+}
+
+.math-workspace-grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: minmax(350px, .82fr) minmax(500px, 1.18fr);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.math-editor-card,
+.math-preview-card {
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, .78);
+  box-shadow: 0 8px 28px rgba(25, 58, 67, .05);
+}
+
+.math-card-heading {
+  flex: 0 0 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--line-soft);
+  background: #faf9f6;
+}
+
+.math-card-heading > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.math-card-heading > div:first-child > span {
+  width: 29px;
+  height: 29px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--coral-dark);
+  background: var(--coral-soft);
+  font: 650 8px "DM Mono", monospace;
+}
+
+.math-card-heading b,
+.math-card-heading small {
+  display: block;
+}
+
+.math-card-heading b {
+  font: 800 11px Manrope, sans-serif;
+}
+
+.math-card-heading small {
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 8px;
+}
+
+.math-syntax-hint {
+  max-width: 150px;
+  color: var(--muted);
+  font: 500 7.5px/1.35 "DM Mono", monospace;
+  text-align: right;
+}
+
+.math-title-field {
+  flex: 0 0 auto;
+  display: block;
+  padding: 12px 15px 0;
+}
+
+.math-content-field {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 11px 15px 0;
+}
+
+.math-title-field > span,
+.math-content-field > span {
+  flex: 0 0 auto;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font: 600 7.5px "DM Mono", monospace;
+}
+
+.math-title-field input,
+.math-content-field textarea {
+  width: 100%;
+  border: 1px solid #deddd6;
+  border-radius: 9px;
+  outline: none;
+  color: var(--ink);
+  background-color: #fff;
+}
+
+.math-title-field input:focus,
+.math-content-field textarea:focus {
+  border-color: #74aaa3;
+  box-shadow: 0 0 0 3px rgba(72, 151, 140, .09);
+}
+
+.math-title-field input {
+  height: 39px;
+  padding: 0 12px;
+  font: 750 11px Manrope, sans-serif;
+}
+
+.math-content-field textarea {
+  flex: 1 1 auto;
+  min-height: 160px;
+  resize: none;
+  padding: 15px;
+  font: 500 12.5px/26px "DM Mono", monospace;
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 25px, #e6ebe7 25px, #e6ebe7 26px);
+  background-position: 0 14px;
+  background-attachment: local;
+  tab-size: 2;
+}
+
+.math-editor-tip {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  margin: 10px 15px 13px;
+  padding: 9px 10px;
+  border: 1px solid #e8dec1;
+  border-radius: 8px;
+  color: #75623d;
+  background: #fffaf0;
+  font-size: 8.5px;
+  line-height: 1.45;
+}
+
+.math-editor-tip svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #b58424;
+}
+
+.math-preview-card {
+  background: #e9ece9;
+}
+
+.math-preview-heading {
+  background: #faf9f6;
+}
+
+.math-preview-heading > div:first-child > span {
+  color: #26766a;
+  background: #e8f5f1;
+}
+
+.math-preview-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.math-preview-actions button {
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 0 10px;
+  border: 1px solid #cbd8d5;
+  border-radius: 8px;
+  color: #236b63;
+  background: #fff;
+  font-size: 8.5px;
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.math-preview-actions button:first-child {
+  color: #fff;
+  border-color: var(--navy);
+  background: var(--navy);
+}
+
+.math-preview-actions button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.math-preview-scroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  padding: 12px;
+  scrollbar-width: thin;
+}
+
+.math-paper {
+  width: min(100%, 690px);
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 32px clamp(28px, 3.3vw, 50px) 24px;
+  border: 1px solid #e4e2db;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(22, 45, 50, .08);
+}
+
+.math-paper-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.math-paper-mark,
+.math-paper-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--teal);
+}
+
+.math-paper-mark {
+  font: 600 7.5px "DM Mono", monospace;
+  letter-spacing: .13em;
+}
+
+.math-paper-date {
+  color: #778789;
+  font: 500 7px "DM Mono", monospace;
+  text-transform: capitalize;
+}
+
+.math-paper > h1 {
+  margin: 10px 0 14px;
+  color: #152f38;
+  font: 800 clamp(20px, 2vw, 27px)/1.2 Manrope, sans-serif;
+  letter-spacing: -.7px;
+}
+
+.math-paper-rule {
+  height: 3px;
+  margin-bottom: 21px;
+  background: linear-gradient(90deg, var(--coral) 0 42px, #dfe6e4 42px);
+}
+
+.math-paper-content {
+  color: #1d3036;
+}
+
+.math-paper-content h2 {
+  margin: 20px 0 9px;
+  font: 800 14px/1.35 Manrope, sans-serif;
+}
+
+.math-paper-content h2:first-child {
+  margin-top: 0;
+}
+
+.math-prose-line {
+  margin: 7px 0;
+  color: #52636a;
+  font-size: 10.5px;
+  line-height: 1.6;
+}
+
+.math-equation-line {
+  margin: 12px 0;
+  color: #102f38;
+  font: 500 clamp(15px, 1.5vw, 19px)/1.75 Georgia, "Times New Roman", serif;
+}
+
+.math-equation-line sup,
+.math-equation-line sub,
+.rendered-fraction sup,
+.rendered-fraction sub {
+  font-size: .65em;
+  line-height: 0;
+}
+
+.math-equation-line sup,
+.rendered-fraction sup {
+  vertical-align: .65em;
+}
+
+.math-equation-line sub,
+.rendered-fraction sub {
+  vertical-align: -.25em;
+}
+
+.rendered-fraction {
+  display: inline-grid;
+  grid-template-rows: auto auto;
+  min-width: 1.45em;
+  margin: 0 .18em;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 1.15;
+  transform: translateY(-.06em);
+}
+
+.rendered-fraction > span {
+  padding: 0 .22em;
+}
+
+.rendered-fraction > span:first-child {
+  padding-bottom: .1em;
+  border-bottom: 1.4px solid currentColor;
+}
+
+.rendered-fraction > span:last-child {
+  padding-top: .1em;
+}
+
+.math-preview-space {
+  height: 6px;
+}
+
+.math-explanation {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 13px 0;
+  padding: 10px 12px;
+  border-left: 3px solid #deb258;
+  color: #6f5b35;
+  background: #fff9ec;
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.math-explanation svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+
+.math-bullet {
+  display: flex;
+  gap: 8px;
+  margin: 6px 0;
+  color: #52636a;
+  font-size: 10.5px;
+}
+
+.math-bullet > span {
+  color: var(--coral);
+}
+
+.math-bullet p {
+  margin: 0;
+}
+
+.math-paper footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #e8ecea;
+  color: #8b9697;
+  font: 500 7px "DM Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+@media (max-width: 1080px) {
+  .math-workspace-shell .app-main {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .math-workspace-page {
+    height: auto;
+    padding-top: 74px;
+  }
+
+  .math-workspace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .math-editor-card,
+  .math-preview-card {
+    height: auto;
+  }
+
+  .math-content-field textarea {
+    min-height: 330px;
+  }
+
+  .math-paper {
+    min-height: 560px;
+  }
+}
+
+@media (max-width: 650px) {
+  .math-workspace-page {
+    padding-inline: 10px;
+  }
+
+  .math-workspace-intro {
+    padding-left: 55px;
+  }
+
+  .math-intro-icon {
+    display: none;
+  }
+
+  .math-workspace-intro h1 {
+    font-size: 23px;
+  }
+
+  .math-composer-toolbar button {
+    min-width: 44px;
+    height: 44px;
+  }
+
+  .math-save-state {
+    align-self: flex-start;
+    margin-top: 4px;
+  }
+
+  .math-card-heading {
+    align-items: center;
+  }
+
+  .math-syntax-hint {
+    display: none;
+  }
+
+  .math-preview-actions button {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    font-size: 0;
+  }
+
+  .math-preview-actions button svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .math-preview-scroll {
+    padding: 7px;
+  }
+
+  .math-paper {
+    padding: 27px 20px;
+  }
+
+  .math-paper-topline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .math-equation-line {
+    font-size: 15px;
+  }
+
+  .math-paper footer {
+    flex-direction: column;
+  }
+}
+
+@media print {
+  body {
+    background: #fff !important;
+  }
+
+  .main-sidebar,
+  .mobile-menu-button,
+  .math-workspace-intro,
+  .math-composer-toolbar,
+  .math-editor-card,
+  .math-preview-heading {
+    display: none !important;
+  }
+
+  .math-workspace-shell .app-main,
+  .app-main {
+    height: auto !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  .math-workspace-page {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .math-workspace-grid {
+    display: block;
+  }
+
+  .math-preview-card,
+  .math-preview-scroll {
+    display: block;
+    overflow: visible;
+    border: 0;
+    padding: 0;
+    background: #fff;
+    box-shadow: none;
+  }
+
+  .math-paper {
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 14mm 16mm;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .math-paper > h1 {
+    font-size: 25pt;
+  }
+
+  .math-equation-line {
+    font-size: 15pt;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}

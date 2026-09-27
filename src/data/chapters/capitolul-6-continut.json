@@ -1,0 +1,408 @@
+{
+  "capitol": {
+    "numar": 6,
+    "titlu": "Costul producției",
+    "obiective": [
+      "Să explici rolul, structura și tipurile de costuri practicate",
+      "Să calculezi costul fix mediu, costul variabil mediu, costul total mediu și costul marginal",
+      "Să înțelegi relația dintre costul marginal și costul mediu total",
+      "Să evidențiezi importanța și efectele reducerii costurilor asupra eficienței economice",
+      "Să rezolvi probleme privind determinarea diferitelor tipuri de costuri"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "esenta-cost",
+      "nr": "1",
+      "titlu": "Esența și rolul costului",
+      "text": [
+        "Costul reflectă, în expresie bănească, consumul factorilor de producție necesar producerii și desfacerii de bunuri economice destinate pieței. Consumul fiecărui factor se exprimă diferit - de la unități fizice la unități valorice - motiv pentru care evidențierea lor unitară se face prin cost, în expresie bănească."
+      ],
+      "puncteCheie": [
+        "Fundamentează deciziile privind alegerea factorilor de producție, combinarea lor eficientă și volumul/structura optimă a producției",
+        "Reflectă calitatea și eficiența activității economice, prin intermediul profitului (a cărui mărime o influențează invers proporțional)",
+        "Stă la baza stabilirii prețului de vânzare: prețul include costul mediu și profitul unitar"
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Cum se exprimă consumul fiecărui factor de producție",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Munca",
+              "definitie": "unități fizice (timp de muncă, număr de lucrători) și valorice (cheltuieli salariale)"
+            },
+            {
+              "nume": "Natura/Pământul",
+              "definitie": "de regulă, doar unități valorice (cheltuieli de achiziție și întreținere)"
+            },
+            {
+              "nume": "Capitalul fix",
+              "definitie": "doar valoric - prin amortizare"
+            },
+            {
+              "nume": "Capitalul circulant",
+              "definitie": "unități fizice și valorice - consumul specific/tehnologic"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Prețul de vânzare",
+          "formula": "P = CMT + Pr/u.p.  sau  P = VT/Q"
+        }
+      ]
+    },
+    {
+      "id": "tipologie-cost",
+      "nr": "2",
+      "titlu": "Tipologia și structura costului",
+      "text": [
+        "Fundamentarea deciziei firmei privind reducerea cheltuielilor depinde de cunoașterea tipurilor de costuri practicate - identificate după mai multe criterii."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "După natura activității economice generatoare de cheltuieli",
+          "categorii": [
+            {
+              "nume": "Cost de producție (CP)",
+              "definitie": "cheltuielile determinate de producerea propriu-zisă a bunurilor"
+            },
+            {
+              "nume": "Cost de desfacere/distribuție (CD)",
+              "definitie": "transport, ambalare, sortare, depozitare, reclamă"
+            }
+          ]
+        },
+        {
+          "criteriu": "După natura cheltuielilor de producție",
+          "categorii": [
+            {
+              "nume": "Costuri materiale (Cmat)",
+              "definitie": "amortizarea capitalului fix + achiziția capitalului circulant"
+            },
+            {
+              "nume": "Costuri salariale (Cs)",
+              "definitie": "salarii directe (Sd) + salarii indirecte (Si)"
+            },
+            {
+              "nume": "Alte cheltuieli (a.c.)",
+              "definitie": "impozite, dobânzi, amenzi, taxe"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Costul total (după natura activității)",
+          "formula": "CT = CP + CD"
+        },
+        {
+          "nume": "Costul total (după natura cheltuielilor)",
+          "formula": "CT = Cmat + Cs + a.c."
+        }
+      ]
+    },
+    {
+      "id": "costuri-fixe-variabile",
+      "nr": "3",
+      "titlu": "Costurile fixe și variabile",
+      "text": [
+        "Pe termen scurt, reacția costurilor la variația producției le împarte în fixe și variabile - o distincție esențială pentru deciziile de producție pe termen scurt."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "După reacția la variația producției (termen scurt)",
+          "categorii": [
+            {
+              "nume": "Costuri fixe (CF)",
+              "definitie": "nu depind de volumul producției (amortizare, taxe, impozite, salarii administrative)"
+            },
+            {
+              "nume": "Costuri variabile (CV)",
+              "definitie": "se modifică odată cu volumul producției (materii prime, energie, salarii directe)"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Costul total",
+          "formula": "CT = CF + CV"
+        }
+      ]
+    },
+    {
+      "id": "cost-mediu-marginal",
+      "nr": "4",
+      "titlu": "Costul mediu și costul marginal",
+      "text": [
+        "Costurile se pot calcula pe întreaga producție (CT, CF, CV), pe unitate de produs (costuri medii) sau pentru ultima unitate obținută (costul marginal).",
+        "Evoluția costului marginal (Cmg) și a costului total mediu (CTM) e influențată de aceeași lege a randamentelor neproporționale întâlnită la productivitate (capitolul anterior) - de fapt, costurile sunt \"oglinda\" productivității: când productivitatea crește, costurile pe unitate scad, și invers."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Când Cmg < CTM",
+          "descriere": "CTM scade, iar productivitatea medie crește"
+        },
+        {
+          "termen": "Când Cmg = CTM",
+          "descriere": "CTM este minim și constant, iar productivitatea medie este maximă"
+        },
+        {
+          "termen": "Când Cmg > CTM",
+          "descriere": "CTM crește, iar productivitatea medie scade"
+        }
+      ],
+      "exemple": [
+        "Dacă CT0 = 100 u.m. la Q0 = 10 buc., iar producția crește de 3 ori (Q1 = 30 buc.) în timp ce CT crește cu 50% (CT1 = 150 u.m.), costul marginal este Cmg = ΔCT/ΔQ = (150-100)/(30-10) = 50/20 = 2,5 u.m."
+      ],
+      "formule": [
+        {
+          "nume": "Costul fix mediu",
+          "formula": "CFM = CF/Q"
+        },
+        {
+          "nume": "Costul variabil mediu",
+          "formula": "CVM = CV/Q"
+        },
+        {
+          "nume": "Costul total mediu",
+          "formula": "CTM = CT/Q = CFM + CVM"
+        },
+        {
+          "nume": "Costul marginal",
+          "formula": "Cmg = ΔCT/ΔQ"
+        }
+      ],
+      "calculator": "costMediu",
+      "notaLegatura": {
+        "href": "#sect-explorator-costuri",
+        "text": "Explorează interactiv graficul celor 4 curbe de cost în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "reducere-costuri",
+      "nr": "5",
+      "titlu": "Reducerea costurilor și eficiența economică",
+      "text": [
+        "Reducerea costurilor este una din principalele căi de creștere a eficienței economice: la același preț de vânzare, un cost mai mic înseamnă profit mai mare (Pr = VT - CT) și o poziție competitivă mai bună pe piață. Practica economică arată că elementul comun tuturor firmelor de succes este inovarea - produse noi, tehnologii moderne, tehnici manageriale și de comercializare noi."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Reducerea costurilor materiale",
+          "descriere": "prin achiziționarea mai ieftină a factorilor, perfecționarea tehnologiilor, reducerea rebuturilor și a stocurilor, modernizarea utilajelor"
+        },
+        {
+          "termen": "Creșterea productivității muncii",
+          "descriere": "cea mai importantă cale - reduce simultan costurile salariale și cele materiale, pe unitate de produs"
+        },
+        {
+          "termen": "Diminuarea cheltuielilor administrative",
+          "descriere": "optimizarea cheltuielilor de aprovizionare, desfacere și publicitate"
+        }
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Efectele reducerii costurilor (fără afectarea calității)",
+          "orientare": "vertical",
+          "categorii": [
+            "Sporirea producției, ofertei și a profitului",
+            "Creșterea capacității firmei de a face față concurenței",
+            "Sporirea capacității de autofinanțare, extindere și modernizare",
+            "Micșorarea prețului bunurilor economice",
+            "Creșterea cererii și a gradului de satisfacere a nevoilor sociale",
+            "Economisirea și utilizarea rațională a resurselor limitate",
+            "Protecția mediului înconjurător și a echilibrului ecologic"
+          ]
+        }
+      ],
+      "exemple": [
+        "O firmă produce și vinde 10 bucăți dintr-un bun, cu următoarele cheltuieli: materii prime și materiale=50, combustibil=6, energie=8, amortizare=7, salarii directe=10, salarii indirecte=7, desfacere - cheltuieli fixe=4, desfacere - cheltuieli variabile=8. Costurile materiale (Cmat) = 50+6+8+7 = 71; costurile salariale (Cs) = 10+7 = 17; costul de producție (CP) = Cmat+Cs = 88; costul de desfacere (CD) = 4+8 = 12; costul total (CT) = CP+CD = 100, deci CTM=10, CFM=1,8 și CVM=8,2 (CFM+CVM=CTM)."
+      ],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Ce se întâmplă cu diferitele costuri dacă o firmă nu produce nimic (Q = 0)?",
+      "optiuni": [
+        "CF = CV",
+        "CF = 0",
+        "CV = 0",
+        "CT = CV"
+      ],
+      "corect": 2,
+      "explicatie": "La Q=0, costurile variabile sunt zero (nu se consumă materii prime etc.), dar costurile fixe rămân - deci CT = CF."
+    },
+    {
+      "intrebare": "Sunt, în același timp, costuri materiale și variabile, costurile cu:",
+      "optiuni": [
+        "iluminatul firmei",
+        "amortizarea",
+        "plata salariaților productivi",
+        "materii prime, materiale, combustibil"
+      ],
+      "corect": 3,
+      "explicatie": "Materiile prime, materialele și combustibilul sunt costuri materiale (consum de capital circulant) și, în același timp, variabile (depind de volumul producției)."
+    },
+    {
+      "intrebare": "Cea mai importantă cale de reducere a costurilor este:",
+      "optiuni": [
+        "promovarea progresului tehnic",
+        "achiziționarea mai ieftină a factorilor de producție",
+        "perfecționarea pregătirii profesionale",
+        "creșterea productivității muncii"
+      ],
+      "corect": 3,
+      "explicatie": "Creșterea productivității muncii înseamnă mai multă producție cu același consum de factori, ceea ce reduce costul pe unitate de produs."
+    },
+    {
+      "intrebare": "Consumul capitalului fix este inclus:",
+      "optiuni": [
+        "în costurile materiale variabile",
+        "numai în costurile unitare",
+        "doar în costurile fixe unitare",
+        "în costurile materiale, fixe, unitare și totale"
+      ],
+      "corect": 3,
+      "explicatie": "Amortizarea (consumul KF) e o cheltuială fixă și materială - regăsită atât în costul total, cât și în cel unitar."
+    },
+    {
+      "intrebare": "Formula prețului de vânzare al unui bun, în funcție de cost și profit, este:",
+      "optiuni": [
+        "P = CTM - Pr/u.p.",
+        "P = CTM + Pr/u.p.",
+        "P = CTM x Pr/u.p.",
+        "P = CTM/Pr/u.p."
+      ],
+      "corect": 1,
+      "explicatie": "P = CMT + Pr/u.p. - prețul acoperă costul mediu (unitar) și include și profitul pe unitate de produs."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "La baza reducerii costurilor stă procesul inovării.",
+      "corect": true,
+      "explicatie": "Da - promovarea progresului tehnic (inovarea) e una din căile principale de reducere a costurilor."
+    },
+    {
+      "enunt": "Pragul de rentabilitate reflectă nivelul producției la care profitul este zero.",
+      "corect": true,
+      "explicatie": "Da - la pragul de rentabilitate, VT = CT, deci profitul total (sau unitar) e nul."
+    },
+    {
+      "enunt": "După natura cheltuielilor de producție, există costuri fixe și variabile.",
+      "corect": false,
+      "explicatie": "Costurile fixe și variabile sunt clasificate după reacția la variația producției, nu după natura cheltuielilor (care dă costuri materiale, salariale și alte cheltuieli)."
+    },
+    {
+      "enunt": "Consumul specific (tehnologic) se exprimă numai în unități fizice.",
+      "corect": false,
+      "explicatie": "Consumul specific se exprimă atât în unități fizice, cât și în unități monetare (valorice)."
+    },
+    {
+      "enunt": "Costul marginal reflectă sporul costului total determinat de obținerea unei unități suplimentare de produs.",
+      "corect": true,
+      "explicatie": "Da - Cmg = ΔCT/ΔQ, exact sporul costului pentru ultima unitate produsă."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "În perioada anterioară, CT0 = 100 u.m. și a crescut cu 50%, în condițiile sporirii producției de 3 ori față de perioada anterioară, când era de 10 buc. Care este costul marginal?",
+      "unitate": "u.m.",
+      "corect": 2.5,
+      "toleranta": 0.05,
+      "explicatie": "CT1 = 100 x 1,5 = 150 u.m.; Q1 = 10 x 3 = 30 buc. Cmg = ΔCT/ΔQ = (150-100)/(30-10) = 50/20 = 2,5 u.m."
+    },
+    {
+      "enunt": "Funcția costului total este C = 4Q² + 10Q + 50. Când Q = 5, cât este costul fix mediu (CFM)?",
+      "unitate": "u.m.",
+      "corect": 10,
+      "toleranta": 0.1,
+      "explicatie": "Termenul constant (50) e costul fix (CF); CFM = CF/Q = 50/5 = 10 u.m."
+    },
+    {
+      "enunt": "Dacă pragul de rentabilitate este de 15 buc., iar prețul de vânzare P = 100 u.m., care este costul total (CT) la acest nivel al producției?",
+      "unitate": "u.m.",
+      "corect": 1500,
+      "toleranta": 5,
+      "explicatie": "La pragul de rentabilitate, VT = CT. VT = P x Q = 100 x 15 = 1.500 u.m., deci CT = 1.500 u.m."
+    },
+    {
+      "enunt": "KF = 600 u.m., iar amortizarea anuală e de 20% din KF. Dacă Cmat = 75% din CT, iar Kc = 20% din Cmat, cât sunt costurile salariale (Cs)?",
+      "unitate": "u.m.",
+      "corect": 50,
+      "toleranta": 1,
+      "explicatie": "A = 20% x 600 = 120 u.m. Din Kc = Cmat - A și Kc = 20% x Cmat rezultă Cmat = 150 u.m. CT = Cmat/0,75 = 200 u.m., deci Cs = CT - Cmat = 50 u.m."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Cost fix"
+        },
+        {
+          "id": "t2",
+          "text": "Cost variabil"
+        },
+        {
+          "id": "t3",
+          "text": "Cost marginal"
+        },
+        {
+          "id": "t4",
+          "text": "Prag de rentabilitate"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Nu depinde de volumul producției, pe termen scurt"
+        },
+        {
+          "id": "o_b",
+          "text": "Se modifică odată cu volumul producției"
+        },
+        {
+          "id": "o_c",
+          "text": "Sporul costului total determinat de ultima unitate produsă"
+        },
+        {
+          "id": "o_d",
+          "text": "Nivelul producției la care profitul total este zero"
+        },
+        {
+          "id": "o_e",
+          "text": "Costul total, împărțit la cantitatea produsă"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, costul mediu (CTM) - un concept diferit, care nu apare în coloana din stânga."
+    }
+  ]
+}

@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 7 · Profitul și renta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 16px; margin-top: 16px; font-family: var(--font-mono); flex-wrap: wrap; }
+.simulator__citire strong { color: var(--accent); font-size: 17px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 11px; }
+.legenda { display: flex; gap: 16px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  capitol: {
+    numar: 7,
+    titlu: 'Profitul și renta',
+    obiective: [
+      'Să utilizezi corect conceptul de profit și să-i înțelegi funcțiile',
+      'Să calculezi profitul brut, net, unitar și marginal',
+      'Să distingi profitul normal de cel economic și de supraprofit',
+      'Să calculezi ratele profitului și să identifici factorii care îl influențează',
+      'Să înțelegi conceptul de rentă economică și rentă funciară diferențiată'
+    ]
+  },
+  teorie: [
+    {
+      id: 'esenta-profit', nr: '1', titlu: 'Esența și funcțiile profitului',
+      text: [
+        'Profitul reprezintă câștigul sau avantajul în formă bănească obținut de unitățile economice ce desfășoară eficient activități cu scop lucrativ - generic, excedentul veniturilor încasate prin vânzarea bunurilor economice, peste costurile efectuate.',
+        'Profitul poate fi privit din mai multe unghiuri: recompensă pentru riscul asumat de întreprinzător, recompensă pentru abilitatea antreprenorială, venitul factorului de producție capital, principala sursă de motivare a întreprinzătorului și principala sursă de finanțare a activității economice.'
+      ],
+      puncteCheie: [
+        'Maximizarea profitului este un obiectiv major al oricărui întreprinzător',
+        'Stimulează investițiile, eficiența economică, economisirea și dezvoltarea afacerii',
+        'Stimulează concurența dintre agenții economici și dezvoltarea economico-socială generală',
+        'Este sursă principală de autofinanțare a firmei',
+        'Este un mijloc de alocare eficientă a resurselor și de selecție a agenților economici pe piață'
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'masurarea-profitului', nr: '2', titlu: 'Cum se măsoară profitul',
+      text: [
+        'Profitul se determină ca diferență între încasările (cifra de afaceri) și costul total ocazionat de obținerea producției. Profitul obținut astfel se numește profit brut; după plata impozitului pe profit, rămâne profitul net (admis).',
+        'Profitul adus de fiecare unitate vândută se numește profit unitar (mediu). Profitul marginal reflectă profitul suplimentar încasat prin vânzarea ultimei unități de produs.'
+      ],
+      exemple: [
+        'Cifra de afaceri a firmei "ABC" este de 1.000 u.m., costurile totale sunt de 500 u.m., iar impozitul pe profit e 15%. Profitul brut = 1.000 - 500 = 500 u.m. Profitul net = 500 - 0,15 x 500 = 425 u.m.'
+      ],
+      formule: [
+        { nume: 'Cifra de afaceri', formula: 'CA = P x Q' },
+        { nume: 'Profitul brut (total)', formula: 'Pr = CA - CT' },
+        { nume: 'Profitul net', formula: 'Prnet = Pr - X% x Pr' },
+        { nume: 'Profitul unitar (mediu)', formula: 'Pr/u.p. = P - CMT = Pr.T/Q' },
+        { nume: 'Profitul marginal', formula: 'Pr.mg = ΔPr.T/ΔQ = Vmg - Cmg' }
+      ],
+      calculator: 'profitBrutNet'
+    },
+    {
+      id: 'formele-profitului', nr: '3', titlu: 'Formele profitului',
+      text: [
+        'Profitul normal (PrN) reprezintă nivelul minim de profit pe care o firmă trebuie să-l obțină pentru a supraviețui pe piață - de fapt, un cost de oportunitate al capitalului investit (dacă întreprinzătorul nu și-ar fi făcut propria afacere, ar fi obținut acest venit altfel: ca salariat, din dobânzi, din chirii).',
+        'Profitul economic (sau pur, Pre) este excedentul peste profitul normal, obținut ca urmare a riscului asumat - cel mai important pentru întreprinzător, calculat ca diferență între profitul net și profitul normal.',
+        'Supraprofitul (profitul de monopol) depășește profitul economic și apare din conjuncturi favorabile sau din puterea economică de piață a firmei (de ex. un furnizor unic de apă pentru un oraș).'
+      ],
+      clasificari: [
+        { criteriu: 'Formele profitului, după poziția în cifra de afaceri', categorii: [
+          { nume: 'Profit normal', definitie: 'nivelul minim, echivalent cu costul de oportunitate' },
+          { nume: 'Profit economic (pur)', definitie: 'excedentul peste profitul normal, din asumarea riscului' },
+          { nume: 'Supraprofit (de monopol)', definitie: 'excedentul peste profitul economic, din putere de piață' }
+        ] },
+        { criteriu: 'Formele profitului, după respectarea reglementărilor', categorii: [
+          { nume: 'Profit legitim', definitie: 'obținut cu respectarea legilor în vigoare' },
+          { nume: 'Profit nelegitim', definitie: 'obținut prin încălcarea lor (ex. muncă "la negru")' }
+        ] }
+      ],
+      exemple: [
+        'Jean investește 50.000 € (dobândă 3%) într-o afacere; anterior era salariat cu 19.000 €/an și închiria apartamentul unde stă acum firma cu 10.000 €/an. Profitul normal = 1.500 + 19.000 + 10.000 = 30.500 €/an - suma minimă pe care Jean trebuie s-o obțină, altfel ar face mai bine să rămână salariat. Dacă firma sa are CA=50.000 €, salarii=10.000 €, cheltuieli materiale=5.000 € și impozit=10%: profit brut=35.000 €, profit net=31.500 €, iar profitul economic = 31.500 - 30.500 = 1.000 €.'
+      ],
+      formule: [
+        { nume: 'Profitul economic', formula: 'Pre = Prnet - PrN' }
+      ],
+      calculator: 'profitNormalEconomic'
+    },
+    {
+      id: 'factori-rate-profit', nr: '4', titlu: 'Factorii care influențează profitul și ratele profitului',
+      text: [
+        'Obținerea unui profit cât mai mare nu este un scop în sine, ci și un mijloc prin care firma își consolidează poziția pe piață: o parte din profit - numit profit reinvestit - este folosit pentru dezvoltarea, modernizarea și diversificarea activității.',
+        'Profitul total crește atunci când cresc prețul, producția, viteza de rotație a capitalului și calitatea factorilor de producție utilizați; scade atunci când cresc costul total și durata de rotație a capitalului.',
+        'Ratele profitului (mărimi relative, procentuale) arată cât de eficientă e firma - cu cât sunt mai mari, cu atât firma e mai eficientă.'
+      ],
+      clasificari: [
+        { criteriu: 'Factorii care influențează profitul', orientare: 'vertical', categorii: [
+          { nume: 'Prețul', definitie: 'relație directă - preț mai mare, profit mai mare' },
+          { nume: 'Producția', definitie: 'relație directă - la costuri date, mai multă producție, mai mult profit' },
+          { nume: 'Costul unitar', definitie: 'relație inversă - cost mai mare, profit mai mic' },
+          { nume: 'Viteza de rotație a capitalului', definitie: 'relație directă - mai multe rotații/an, mai mult profit' },
+          { nume: 'Calitatea factorilor de producție', definitie: 'relație directă - echipamente și organizare mai bune, profit mai mare' }
+        ] }
+      ],
+      exemple: [
+        'Firma "SIMONA": capital tehnic K=1.000 u.m. (din care 50% capital fix, amortizat în 5 ani), cheltuieli salariale=100 u.m., preț P=10 u.m., producție Q=100 buc. KF=500, KC=500, A=100, deci Cmat=600 și CT=700 u.m. CA=1.000 u.m., profit=300 u.m. Rata profitului la capital=30%, la costul total=42,85%, la cifra de afaceri=30%.'
+      ],
+      formule: [
+        { nume: 'Rata profitului la cost (rentabilitatea)', formula: 'RPr/CT = (Pr.T/CT) x 100' },
+        { nume: 'Rata profitului la capitalul tehnic', formula: 'RPr/KT = (Pr.T/KT) x 100' },
+        { nume: 'Rata profitului la cifra de afaceri', formula: 'RPr/CA = (Pr.T/CA) x 100' },
+        { nume: 'Pragul de rentabilitate', formula: 'Pr.T = 0  →  CT = VT = CA' }
+      ],
+      calculator: 'rateProfit'
+    },
+    {
+      id: 'renta', nr: '5', titlu: 'Renta',
+      text: [
+        'Venitul încasat de proprietarul unei suprafețe de pământ atras în activitatea economică se numește rentă funciară - forma inițială a rentei economice. Ea apare pentru că pământul e un factor de producție limitat, iar oferta lui e foarte puțin sensibilă la preț.',
+        'Renta funciară diferențiată apare din diferența de fertilitate și de poziție dintre suprafețele agricole. Prețul pieței e determinat de terenurile cu cea mai slabă fertilitate; diferența dintre acest preț și costul efectiv al proprietarilor terenurilor mai fertile reprezintă renta lor.',
+        'Renta economică, în sens larg, este venitul obținut de proprietarii unor factori de producție cu calități și randamente deosebite, greu substituibili pe termen scurt, a căror ofertă e inelastică - de exemplu, talentul rar al unui pictor consacrat.'
+      ],
+      exemple: [
+        'Pe 3 terenuri (A, B, C) se cultivă porumb, cu același cost de 500 u.m., dar producții diferite (fertilitate diferită): QA=100t, QB=80t, QC=60t. Costurile medii sunt CTMA=5, CTMB=6,25, CTMC=8,33 u.m./t. Prețul pieței se formează după terenul C, cel mai puțin fertil: 8,33 u.m./t. Proprietarul terenului A obține o rentă de 3,33 u.m./t, iar cel al terenului B, 2,08 u.m./t.'
+      ],
+      formule: [
+        { nume: 'Prețul pământului', formula: 'PP = Rf / d\u2019' }
+      ],
+      notaLegatura: { href: '#sect-explorator-renta', text: 'Explorează interactiv renta funciară diferențiată în secțiunea V, mai jos.' }
+    }
+  ],
+  grila: [
+    { intrebare: 'Printre factorii care influențează invers proporțional profitul enumerăm:', optiuni: ['prețul de vânzare', 'producția', 'durata de rotație a capitalului', 'încasările firmei'], corect: 2, explicatie: 'Cu cât durata unei rotații a capitalului e mai mare, cu atât firma obține profit mai rar - relație inversă. Prețul, producția și încasările au relație directă cu profitul.' },
+    { intrebare: 'Profitul NU poate fi considerat:', optiuni: ['recompensă pentru riscul asumat de întreprinzător', 'venitul factorului de producție pământ', 'recompensă pentru abilitatea antreprenorială', 'venitul factorului de producție capital'], corect: 1, explicatie: 'Venitul factorului de producție pământ este renta, nu profitul. Profitul e, în schimb, venitul capitalului și recompensa riscului/abilității antreprenoriale.' },
+    { intrebare: 'Cu cât terenul cultivat de un fermier este mai fertil, cu atât:', optiuni: ['renta funciară va fi mai mare', 'renta funciară va fi mai mică', 'productivitatea marginală a terenului va fi mai mică', 'costul total mediu al producției agricole va fi mai mare'], corect: 0, explicatie: 'Un teren mai fertil produce mai mult cu același cost, deci are un CTM mai mic - iar diferența față de prețul pieței (dat de cel mai puțin fertil teren), adică renta, va fi mai mare.' },
+    { intrebare: 'Profitul normal:', optiuni: ['este egal cu costul de oportunitate', 'este egal cu profitul economic', 'este mai mare decât profitul economic', 'este egal cu costul explicit'], corect: 0, explicatie: 'Profitul normal reprezintă chiar costul de oportunitate al capitalului investit de întreprinzător - nivelul minim pentru a rămâne pe piață.' },
+    { intrebare: 'Pragul de rentabilitate este nivelul producției la care:', optiuni: ['profitul este maxim', 'profitul total este zero', 'costul marginal este minim', 'prețul este maxim'], corect: 1, explicatie: 'La pragul de rentabilitate, VT = CT (sau P = CMT), deci profitul total sau unitar e nul.' }
+  ],
+  af: [
+    { enunt: 'Profitul este un venit care nu se impozitează.', corect: false, explicatie: 'Profitul brut se impozitează - din el rezultă profitul net (Prnet = Pr - impozit% x Pr).' },
+    { enunt: 'Profitul normal este egal cu costul de oportunitate.', corect: true, explicatie: 'Da - profitul normal reprezintă exact costul de oportunitate al capitalului investit de întreprinzător.' },
+    { enunt: 'Viteza de rotație a capitalului influențează direct proporțional profitul.', corect: true, explicatie: 'Da - cu cât capitalul se rotește mai des (mai multe rotații/an), cu atât firma obține profit mai des, deci mai mult profit total.' },
+    { enunt: 'Profitul nu depinde de abilitatea întreprinzătorului.', corect: false, explicatie: 'Dimpotrivă - profitul e chiar o recompensă pentru abilitatea antreprenorială și inovațiile întreprinzătorului.' },
+    { enunt: 'Renta economică apare la factori de producție cu ofertă puțin sensibilă la preț (inelastică).', corect: true, explicatie: 'Da - exact asta descrie renta economică: venitul unor factori cu calități deosebite, greu substituibili, a căror ofertă e inelastică.' }
+  ],
+  probleme: [
+    { enunt: 'Prețul unitar al bunului X este 100 u.m., iar costul unitar reprezintă 20% din preț. Dacă costul unitar crește cu 10% (prețul rămâne constant), cu cât se modifică profitul unitar?', unitate: 'u.m.', corect: -2, toleranta: 0.1, explicatie: 'Cost inițial=20 u.m., cost nou=22 u.m. Profit inițial=100-20=80 u.m., profit nou=100-22=78 u.m. Modificare = 78-80 = -2 u.m. (scade cu 2 u.m.)' },
+    { enunt: 'Firma "MARA": cifra de afaceri=700 u.m., cheltuielile materiale reprezintă 80% din costul total, cheltuielile salariale=100 u.m., durata de funcționare a capitalului fix=5 ani, amortizarea=100 u.m. Calculați rata profitului față de capitalul tehnic (RPr/K), în %.', unitate: '%', corect: 25, toleranta: 0.5, explicatie: 'CT = Cs/0,2 = 500 u.m.; Pr = CA-CT = 700-500 = 200 u.m.; KF = A x T = 100 x 5 = 500 u.m.; KC = Cmat-A = 400-100 = 300 u.m.; K = 800 u.m. RPr/K = (200/800) x 100 = 25%.' },
+    { enunt: 'Firma "ABC": cifra de afaceri=1.000 u.m., costul total=500 u.m., impozitul pe profit=15%. Calculați profitul net.', unitate: 'u.m.', corect: 425, toleranta: 1, explicatie: 'Profit brut = CA-CT = 1.000-500 = 500 u.m. Profit net = 500 - 0,15 x 500 = 425 u.m.' },
+    { enunt: 'Un întreprinzător investește un capital de 50.000 €, la o rată a dobânzii de 3%. Anterior era salariat cu 19.000 €/an și închiria apartamentul unde își are acum afacerea cu 10.000 €/an. Calculați profitul normal (PrN), în €/an.', unitate: '€/an', corect: 30500, toleranta: 10, explicatie: 'PrN = dobânda pierdută (50.000 x 3% = 1.500) + salariul pierdut (19.000) + chiria pierdută (10.000) = 30.500 €/an.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Profit normal' },
+        { id: 't2', text: 'Profit economic' },
+        { id: 't3', text: 'Renta funciară' },
+        { id: 't4', text: 'Pragul de rentabilitate' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Nivelul minim de profit, echivalent cu costul de oportunitate al capitalului' },
+        { id: 'o_b', text: 'Excedentul de profit peste profitul normal, din asumarea riscului' },
+        { id: 'o_c', text: 'Venitul proprietarului unei suprafețe de pământ atrase în activitatea economică' },
+        { id: 'o_d', text: 'Nivelul producției la care profitul total este zero' },
+        { id: 'o_e', text: 'Excedentul de profit peste profitul economic, din puterea de piață' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, supraprofitul (profitul de monopol) - un concept diferit, care nu apare în coloana din stânga.'
+    }
+  ]
+};
+
+function calculeazaProfitBrutNet(CA, CT, impozitPct) {
+  const PrBrut = CA - CT;
+  const PrNet = PrBrut - (impozitPct / 100) * PrBrut;
+  return { PrBrut, PrNet };
+}
+function calculeazaProfitNormal(capital, dobandaPct, salariuAnterior, chirieAnterioara) {
+  return capital * (dobandaPct / 100) + salariuAnterior + chirieAnterioara;
+}
+function calculeazaRateProfit(K, procentKF, T, cheltuieliSalariale, P, Q) {
+  const KF = (procentKF / 100) * K, KC = K - KF;
+  const A = KF / T;
+  const Cmat = A + KC;
+  const CT = Cmat + cheltuieliSalariale;
+  const CA = P * Q;
+  const Pr = CA - CT;
+  return {
+    KF, KC, A, Cmat, CT, CA, Pr,
+    RPrK: (Pr / K) * 100, RPrCT: (Pr / CT) * 100, RPrCA: (Pr / CA) * 100
+  };
+}
+
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 20, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+function campInput(randuri, labelTxt, placeholder, valInitial) {
+  const label = document.createElement('label');
+  label.appendChild(document.createTextNode(labelTxt));
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+  label.appendChild(input);
+  randuri.appendChild(label);
+  return input;
+}
+
+function buildProfitBrutNetCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: profitul brut și net'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputCA = campInput(randuri, 'Cifra de afaceri (CA)', 'ex. 1000', 1000);
+  const inputCT = campInput(randuri, 'Cost total (CT)', 'ex. 500', 500);
+  const inputImpozit = campInput(randuri, 'Impozit pe profit (%)', 'ex. 15', 15);
+  box.appendChild(randuri);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const CA = Number(inputCA.value), CT = Number(inputCT.value), impozit = Number(inputImpozit.value);
+    if ([inputCA, inputCT, inputImpozit].some(i => i.value === '') || [CA, CT, impozit].some(isNaN)) {
+      rezultat.textContent = 'Completează toate valorile.';
+      return;
+    }
+    const r = calculeazaProfitBrutNet(CA, CT, impozit);
+    rezultat.innerHTML = '';
+    [['Profit brut', r.PrBrut], ['Profit net', r.PrNet]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+  }
+  [inputCA, inputCT, inputImpozit].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+function buildProfitNormalEconomicCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: profitul normal și economic'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputCapital = campInput(randuri, 'Capital investit', 'ex. 50000', 50000);
+  const inputDobanda = campInput(randuri, 'Rata dobânzii (%)', 'ex. 3', 3);
+  const inputSalariu = campInput(randuri, 'Salariu anterior', 'ex. 19000', 19000);
+  const inputChirie = campInput(randuri, 'Chirie anterioară', 'ex. 10000', 10000);
+  box.appendChild(randuri);
+
+  const randuri2 = el('div', 'mini-calc__randuri');
+  const inputCA = campInput(randuri2, 'Cifra de afaceri (CA)', 'ex. 50000', 50000);
+  const inputSalariiFirma = campInput(randuri2, 'Salarii plătite de firmă', 'ex. 10000', 10000);
+  const inputCmat = campInput(randuri2, 'Cheltuieli materiale', 'ex. 5000', 5000);
+  const inputImpozit = campInput(randuri2, 'Impozit pe profit (%)', 'ex. 10', 10);
+  box.appendChild(randuri2);
+
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const capital = Number(inputCapital.value), dobanda = Number(inputDobanda.value),
+      salariu = Number(inputSalariu.value), chirie = Number(inputChirie.value),
+      CA = Number(inputCA.value), salariiFirma = Number(inputSalariiFirma.value),
+      Cmat = Number(inputCmat.value), impozit = Number(inputImpozit.value);
+    const toate = [inputCapital, inputDobanda, inputSalariu, inputChirie, inputCA, inputSalariiFirma, inputCmat, inputImpozit];
+    if (toate.some(i => i.value === '') || [capital, dobanda, salariu, chirie, CA, salariiFirma, Cmat, impozit].some(isNaN)) {
+      rezultat.textContent = 'Completează toate valorile.';
+      return;
+    }
+    const PrN = calculeazaProfitNormal(capital, dobanda, salariu, chirie);
+    const CT = salariiFirma + Cmat;
+    const r = calculeazaProfitBrutNet(CA, CT, impozit);
+    const Pre = r.PrNet - PrN;
+    rezultat.innerHTML = '';
+    [['Profit normal (PrN)', PrN], ['Profit brut', r.PrBrut], ['Profit net', r.PrNet], ['Profit economic (Pre)', Pre]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+  }
+  [inputCapital, inputDobanda, inputSalariu, inputChirie, inputCA, inputSalariiFirma, inputCmat, inputImpozit].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+function buildRateProfitCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: ratele profitului'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputK = campInput(randuri, 'Capital tehnic (K)', 'ex. 1000', 1000);
+  const inputProc = campInput(randuri, '% din K care e KF', 'ex. 50', 50);
+  const inputT = campInput(randuri, 'Durata amortizării (T)', 'ex. 5', 5);
+  box.appendChild(randuri);
+  const randuri2 = el('div', 'mini-calc__randuri');
+  const inputSalarii = campInput(randuri2, 'Cheltuieli salariale', 'ex. 100', 100);
+  const inputP = campInput(randuri2, 'Preț (P)', 'ex. 10', 10);
+  const inputQ = campInput(randuri2, 'Producție (Q)', 'ex. 100', 100);
+  box.appendChild(randuri2);
+
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const K = Number(inputK.value), proc = Number(inputProc.value), T = Number(inputT.value),
+      salarii = Number(inputSalarii.value), P = Number(inputP.value), Q = Number(inputQ.value);
+    const toate = [inputK, inputProc, inputT, inputSalarii, inputP, inputQ];
+    if (toate.some(i => i.value === '') || [K, proc, T, salarii, P, Q].some(isNaN) || K === 0 || T === 0) {
+      rezultat.textContent = 'Completează toate valorile (K și T diferite de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const r = calculeazaRateProfit(K, proc, T, salarii, P, Q);
+    rezultat.innerHTML = '';
+    [['CT', r.CT], ['CA', r.CA], ['Profit (Pr)', r.Pr], ['RPr/K (%)', r.RPrK], ['RPr/CT (%)', r.RPrCT], ['RPr/CA (%)', r.RPrCA]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+    chartWrap.innerHTML = '';
+    const maxRadar = Math.max(r.RPrK, r.RPrCT, r.RPrCA, 10) * 1.2;
+    chartWrap.appendChild(buildRadarChart(['RPr/K', 'RPr/CT', 'RPr/CA'], [
+      { culoare: 'var(--accent)', valori: [r.RPrK, r.RPrCT, r.RPrCA] }
+    ], { maxVal: maxRadar }));
+  }
+  [inputK, inputProc, inputT, inputSalarii, inputP, inputQ].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'profitBrutNet') body.appendChild(buildProfitBrutNetCalc());
+  if (item.calculator === 'profitNormalEconomic') body.appendChild(buildProfitNormalEconomicCalc());
+  if (item.calculator === 'rateProfit') body.appendChild(buildRateProfitCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+function buildExploratorRenta() {
+  const costProductie = 500;
+  const width = 320, height = 250, barW = 60, gap = 40, top = 16, bottom = 34;
+  const chartH = height - top - bottom;
+  const baseY = top + chartH;
+  const x1 = 40, x2 = x1 + barW + gap, x3 = x2 + barW + gap;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Trei terenuri (A, B, C) au același cost de producție (500 u.m.), dar fertilități diferite. Prețul pieței e dat de terenul cel mai puțin fertil - restul obțin rentă.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Renta funciara diferentiata pe 3 terenuri cu fertilitati diferite' });
+  svg.appendChild(elNS('line', { x1: 20, y1: baseY, x2: width - 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+
+  const linePret = elNS('line', { stroke: 'var(--mark)', 'stroke-width': 1.5, 'stroke-dasharray': '4 3' });
+  svg.appendChild(linePret);
+
+  const barA_ctm = elNS('rect', { x: x1, width: barW, fill: 'var(--accent)' });
+  const barA_renta = elNS('rect', { x: x1, width: barW, fill: 'var(--good)', 'fill-opacity': 0.55 });
+  const barB_ctm = elNS('rect', { x: x2, width: barW, fill: 'var(--accent)' });
+  const barB_renta = elNS('rect', { x: x2, width: barW, fill: 'var(--good)', 'fill-opacity': 0.55 });
+  const barC_ctm = elNS('rect', { x: x3, width: barW, fill: 'var(--accent)' });
+  svg.appendChild(barA_ctm); svg.appendChild(barA_renta);
+  svg.appendChild(barB_ctm); svg.appendChild(barB_renta);
+  svg.appendChild(barC_ctm);
+
+  const labelA = elNS('text', { x: x1 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); labelA.textContent = 'Teren A';
+  const labelB = elNS('text', { x: x2 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); labelB.textContent = 'Teren B';
+  const labelC = elNS('text', { x: x3 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); labelC.textContent = 'Teren C';
+  svg.appendChild(labelA); svg.appendChild(labelB); svg.appendChild(labelC);
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Cost mediu (CTM)'));
+  legenda.appendChild(legendItem('var(--good)', 'Rentă'));
+  legenda.appendChild(legendItem('var(--mark)', 'Preț de piață'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxPret = document.createElement('div'); const sPret = document.createElement('strong'); boxPret.appendChild(sPret); boxPret.appendChild(el('span', '', 'Preț piață (u.m./t)'));
+  const boxRentaA = document.createElement('div'); const sRentaA = document.createElement('strong'); boxRentaA.appendChild(sRentaA); boxRentaA.appendChild(el('span', '', 'Rentă teren A'));
+  const boxRentaB = document.createElement('div'); const sRentaB = document.createElement('strong'); boxRentaB.appendChild(sRentaB); boxRentaB.appendChild(el('span', '', 'Rentă teren B'));
+  citire.appendChild(boxPret); citire.appendChild(boxRentaA); citire.appendChild(boxRentaB);
+  wrap.appendChild(citire);
+
+  const sliders = el('div', 'simulator__sliders');
+  function randSlider(labelTxt, min, max, step, val, onChange) {
+    const row = el('div', 'slider-row');
+    const label = document.createElement('label');
+    const labelSpanTxt = el('span', '', labelTxt);
+    const labelSpanVal = el('span', '', String(val));
+    label.appendChild(labelSpanTxt); label.appendChild(labelSpanVal);
+    row.appendChild(label);
+    const input = document.createElement('input');
+    input.type = 'range'; input.min = min; input.max = max; input.step = step; input.value = val;
+    input.addEventListener('input', () => { labelSpanVal.textContent = input.value; onChange(); });
+    row.appendChild(input);
+    sliders.appendChild(row);
+    return input;
+  }
+  const inputQA = randSlider('Producție teren A (t)', 60, 120, 5, 100, () => recalc());
+  const inputQB = randSlider('Producție teren B (t)', 60, 120, 5, 80, () => recalc());
+  const inputQC = randSlider('Producție teren C (t)', 40, 100, 5, 60, () => recalc());
+  wrap.appendChild(sliders);
+
+  const maxCTM = 15, scale = chartH / maxCTM;
+
+  function recalc() {
+    const QA = Number(inputQA.value), QB = Number(inputQB.value), QC = Number(inputQC.value);
+    const ctmA = costProductie / QA, ctmB = costProductie / QB, ctmC = costProductie / QC;
+    const pret = Math.max(ctmA, ctmB, ctmC);
+    const rentaA = pret - ctmA, rentaB = pret - ctmB;
+
+    const hA = Math.min(ctmA, maxCTM) * scale;
+    barA_ctm.setAttribute('y', baseY - hA); barA_ctm.setAttribute('height', hA);
+    const hPret = Math.min(pret, maxCTM) * scale;
+    barA_renta.setAttribute('y', baseY - hPret); barA_renta.setAttribute('height', Math.max(0, hPret - hA));
+
+    const hB = Math.min(ctmB, maxCTM) * scale;
+    barB_ctm.setAttribute('y', baseY - hB); barB_ctm.setAttribute('height', hB);
+    barB_renta.setAttribute('y', baseY - hPret); barB_renta.setAttribute('height', Math.max(0, hPret - hB));
+
+    const hC = Math.min(ctmC, maxCTM) * scale;
+    barC_ctm.setAttribute('y', baseY - hC); barC_ctm.setAttribute('height', hC);
+
+    linePret.setAttribute('x1', 20); linePret.setAttribute('y1', baseY - hPret);
+    linePret.setAttribute('x2', width - 10); linePret.setAttribute('y2', baseY - hPret);
+
+    sPret.textContent = pret.toFixed(2);
+    sRentaA.textContent = rentaA.toFixed(2);
+    sRentaB.textContent = rentaB.toFixed(2);
+  }
+  recalc();
+  return wrap;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: renta funciară diferențiată');
+  eyebrowExp.id = 'sect-explorator-renta';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Aceleași 3 terenuri ca în teorie (secțiunea 5), dar acum le poți explora.'));
+  root.appendChild(buildExploratorRenta());
+});
+</script>
+</body>
+</html>

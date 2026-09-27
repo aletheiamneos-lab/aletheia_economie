@@ -1,0 +1,1288 @@
+{
+  "capitol": 19,
+  "titlu_capitol": "Piața mondială",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (economia mondiala, piata mondiala, comertul international, eficienta comertului exterior, piata schimburilor valutare). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (CRE, CRI, Pr.(Ex), Pr.(Im), V_T=Ki(CRI/CRE)^n, dinamica cursului valutar Cs.V).",
+  "intrebari": [
+    {
+      "id": "C19_T01",
+      "capitol": 19,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Economia mondială reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ansamblul resurselor naturale disponibile la nivel mondial",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ansamblul economiilor naționale ale statelor lumii, privite în strânsa interdependență a relațiilor economice dintre ele",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv economia celor mai dezvoltate state ale lumii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O singură economie centralizată, care guvernează toate țările",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Economia mondială nu se rezumă la câteva state dezvoltate, nici la resursele naturale globale: ea reprezintă ansamblul economiilor naționale ale tuturor statelor lumii, privite în strânsa lor interdependență. Prin urmare, răspunsul corect este: Ansamblul economiilor naționale ale statelor lumii, privite în strânsa interdependență a relațiilor economice dintre ele."
+    },
+    {
+      "id": "C19_T02",
+      "capitol": 19,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre componentele principale ale economiei mondiale se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Economiile naționale, diviziunea internațională a muncii și fluxurile economice internaționale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv piața internă a fiecărei țări, fără nicio legătură externă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv rezervele valutare ale băncilor centrale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv organizațiile internaționale non-guvernamentale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Economia mondială se structurează pe componente interdependente: economiile naționale („celulele de bază”), diviziunea internațională a muncii (specializarea țărilor) și fluxurile economice internaționale — nu doar piețe interne izolate. Prin urmare, răspunsul corect este: Economiile naționale, diviziunea internațională a muncii și fluxurile economice internaționale."
+    },
+    {
+      "id": "C19_T03",
+      "capitol": 19,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața mondială reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv un spațiu fizic, geografic, delimitat de granițele unei singure țări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Spațiul economic (dar nu strict fizic, geografic) în care au loc tranzacții între economii naționale sau agenți economici de pe glob",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv piața unei singure mărfi tranzacționate la nivel mondial",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ansamblul rezervelor de aur ale tuturor băncilor centrale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Piața mondială nu este limitată la un spațiu fizic, geografic strict: ea reprezintă spațiul economic — inclusiv virtual, electronic — în care au loc tranzacții între economiile naționale sau agenții economici de pe întregul glob. Prin urmare, răspunsul corect este: Spațiul economic (dar nu strict fizic, geografic) în care au loc tranzacții între economii naționale sau agenți economici de pe glob."
+    },
+    {
+      "id": "C19_T04",
+      "capitol": 19,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața mondială, ca entitate de sine stătătoare, s-a constituit:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Abia după cel de-al Doilea Război Mondial",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "La sfârșitul secolului al XIX-lea și începutul secolului al XX-lea",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "În Antichitate, odată cu apariția primelor state",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este un fenomen exclusiv al secolului XXI, complet nou",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Piața mondială, ca economia mondială însăși, nu este un fenomen recent sau antic: ea s-a constituit ca entitate de sine stătătoare la sfârșitul secolului al XIX-lea și începutul secolului al XX-lea. Prin urmare, răspunsul corect este: La sfârșitul secolului al XIX-lea și începutul secolului al XX-lea."
+    },
+    {
+      "id": "C19_T05",
+      "capitol": 19,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre cauzele principale ale existenței pieței mondiale se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Autosuficiența completă a tuturor economiilor naționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Înzestrarea diferită a țărilor cu factori de producție și specializarea economiilor naționale în producerea de bunuri cu eficiență ridicată",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Identitatea perfectă a resurselor naturale disponibile în toate țările lumii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Interzicerea legală a oricărui schimb comercial internațional",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Piața mondială există tocmai pentru că țările nu sunt identic înzestrate cu factori de producție și nu pot produce eficient întreaga gamă de bunuri — de aceea se specializează și fac schimb, nu pentru că ar fi complet autosuficiente sau identice. Prin urmare, răspunsul corect este: Înzestrarea diferită a țărilor cu factori de producție și specializarea economiilor naționale în producerea de bunuri cu eficiență ridicată."
+    },
+    {
+      "id": "C19_T06",
+      "capitol": 19,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Comerțul internațional reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv migrația internațională a forței de muncă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv tranzacțiile cu titluri de valoare mobiliare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O formă marginală, nesemnificativă a pieței mondiale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Forma inițială și, în prezent, cea mai importantă a pieței mondiale, respectiv schimburile de bunuri și servicii nefinanciare cu exteriorul",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dintre toate formele pieței mondiale, comerțul internațional a fost forma inițială de manifestare și rămâne, în prezent, cea mai importantă — spre deosebire de piața capitalurilor sau piața muncii, care sunt forme distincte. Prin urmare, răspunsul corect este: Forma inițială și, în prezent, cea mai importantă a pieței mondiale, respectiv schimburile de bunuri și servicii nefinanciare cu exteriorul."
+    },
+    {
+      "id": "C19_T07",
+      "capitol": 19,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața internațională a capitalurilor este considerată, în prezent:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cea mai dinamică formă de tranzacții de pe piața mondială",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O formă complet dispărută a pieței mondiale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Identică, sub toate aspectele, cu comerțul internațional",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Mai puțin importantă decât piața internațională a muncii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dintre toate formele pieței mondiale, piața internațională a capitalurilor (împrumuturi externe, investiții directe și de portofoliu) este cea mai dinamică în prezent — nu una dispărută sau mai puțin relevantă decât piața muncii. Prin urmare, răspunsul corect este: Cea mai dinamică formă de tranzacții de pe piața mondială."
+    },
+    {
+      "id": "C19_T08",
+      "capitol": 19,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Comerțul internațional, spre deosebire de comerțul exterior:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclude complet serviciile, incluzând doar bunuri materiale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Se referă exclusiv la schimburile unei singure țări cu restul lumii",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sunt noțiuni perfect identice, fără nicio deosebire între ele",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reflectă totalitatea schimburilor de bunuri și servicii dintre toate țările lumii, nu doar ale unei singure țări cu exteriorul",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Comerțul internațional privește ansamblul schimburilor dintre toate țările globului, în timp ce comerțul exterior se referă strict la schimburile unei singure țări cu restul lumii — o distincție importantă, nu o identitate perfectă. Prin urmare, răspunsul corect este: Reflectă totalitatea schimburilor de bunuri și servicii dintre toate țările lumii, nu doar ale unei singure țări cu exteriorul."
+    },
+    {
+      "id": "C19_T09",
+      "capitol": 19,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Exportul reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Schimbul de bunuri economice exclusiv în interiorul unei țări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Vânzarea peste graniță de bunuri economice naționale, contra unei sume în valută",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Împrumutul de capital acordat unei firme străine",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cumpărarea de bunuri economice din străinătate, contra unei sume în valută",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Exportul și importul sunt operații opuse: exportul înseamnă vânzarea peste graniță de bunuri naționale, contra valută, în timp ce importul înseamnă cumpărarea de bunuri din străinătate. Prin urmare, răspunsul corect este: Vânzarea peste graniță de bunuri economice naționale, contra unei sume în valută."
+    },
+    {
+      "id": "C19_T10",
+      "capitol": 19,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Comerțul (export-import) invizibil se referă la fluxuri internaționale de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mărfuri netangibile, cu servicii — transporturi, telecomunicații, turism, asigurări, brevete",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv produse agricole exportate în stare brută",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv mărfuri materiale, tangibile, precum echipamentele industriale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv metale prețioase, precum aurul și argintul",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Comerțul invizibil se distinge de cel vizibil (mărfuri tangibile) tocmai prin natura netangibilă a obiectului tranzacționat: servicii precum transporturile, telecomunicațiile, turismul, asigurările sau brevetele. Prin urmare, răspunsul corect este: Mărfuri netangibile, cu servicii — transporturi, telecomunicații, turism, asigurări, brevete."
+    },
+    {
+      "id": "C19_T11",
+      "capitol": 19,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Protecționismul, ca politică comercială, constă în:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Subvenționarea exclusivă a exporturilor, fără nicio măsură la import",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Libera circulație totală a mărfurilor, fără nicio taxă vamală",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Eliminarea completă a oricărei restricții la importul de mărfuri",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Protejarea pieței interne de concurența externă, prin măsuri tarifare (taxe vamale) și netarifare",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Protecționismul urmărește exact opusul liberului schimb: protejarea pieței interne de concurența străină, prin taxe vamale (tarifare) sau prin plafoane cantitative și exigențe de calitate (netarifare). Prin urmare, răspunsul corect este: Protejarea pieței interne de concurența externă, prin măsuri tarifare (taxe vamale) și netarifare."
+    },
+    {
+      "id": "C19_T12",
+      "capitol": 19,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Liberul schimb, ca politică comercială, presupune:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Impunerea unor plafoane cantitative stricte la exporturi",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Interzicerea completă a oricărui schimb comercial internațional",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Libera circulație a mărfurilor în comerțul internațional, fără restricții",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Aplicarea unor taxe vamale foarte ridicate la toate importurile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Liberul schimb este exact opusul protecționismului: mărfurile circulă liber în comerțul internațional, fără taxe vamale ridicate sau plafoane cantitative restrictive. Prin urmare, răspunsul corect este: Libera circulație a mărfurilor în comerțul internațional, fără restricții."
+    },
+    {
+      "id": "C19_T13",
+      "capitol": 19,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Balanța comercială reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv volumul investițiilor străine directe primite de o țară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv datoria publică externă a unei țări",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Valoarea totală și pe grupe de mărfuri a exporturilor și importurilor efectuate de o țară, într-o perioadă de timp",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv rezervele de aur ale unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Balanța comercială este instrumentul specific de evaluare a comerțului exterior: ea înregistrează valoarea exporturilor și importurilor unei țări, pe total și pe grupe de mărfuri, într-o perioadă dată — nu rezerve de aur sau datorie publică, indicatori distincți. Prin urmare, răspunsul corect este: Valoarea totală și pe grupe de mărfuri a exporturilor și importurilor efectuate de o țară, într-o perioadă de timp."
+    },
+    {
+      "id": "C19_T14",
+      "capitol": 19,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "O balanță comercială excedentară (activă), determinată de competitivitatea ridicată a produselor unei țări, asigură:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Reducerea automată a competitivității produselor naționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Epuizarea completă a rezervelor valutare naționale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Obținerea valutei necesare importurilor viitoare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Formarea automată a datoriei externe a țării",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Când exporturile depășesc importurile (Ex > Im), țara respectivă obține un surplus de valută, util pentru finanțarea importurilor viitoare — spre deosebire de balanța deficitară, care generează datorie externă. Prin urmare, răspunsul corect este: Obținerea valutei necesare importurilor viitoare."
+    },
+    {
+      "id": "C19_T15",
+      "capitol": 19,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Balanța de plăți externe reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Încasările și plățile efectuate de o țară în relațiile cu exteriorul, pe an, deci tranzacțiile ei pe toate formele pieței mondiale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv rezervele valutare ale băncii centrale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv soldul balanței comerciale, fără nicio altă componentă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv datoria externă acumulată de o țară de-a lungul timpului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Balanța de plăți externe este mai cuprinzătoare decât balanța comercială: ea include toate încasările și plățile unei țări cu exteriorul, reflectând tranzacțiile pe toate formele pieței mondiale (comerț, capital, muncă, valută), nu doar comerțul cu mărfuri. Prin urmare, răspunsul corect este: Încasările și plățile efectuate de o țară în relațiile cu exteriorul, pe an, deci tranzacțiile ei pe toate formele pieței mondiale."
+    },
+    {
+      "id": "C19_T16",
+      "capitol": 19,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Eficiența comerțului exterior reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv cursul valutar practicat la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv volumul total al exporturilor unei țări, indiferent de costuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv numărul de parteneri comerciali externi ai unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Relația dintre efecte cât mai mari și eforturi cât mai mici, la export-import",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Eficiența comerțului exterior urmează principiul general al eficienței economice: raportul dintre efectele obținute (valuta încasată la export, veniturile nete la import) și eforturile depuse (cheltuielile aferente), nu simplul volum al tranzacțiilor. Prin urmare, răspunsul corect este: Relația dintre efecte cât mai mari și eforturi cât mai mici, la export-import."
+    },
+    {
+      "id": "C19_T17",
+      "capitol": 19,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Exportul unui bun economic este eficient atunci când cursul de revenire la export (CRE):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Crește nelimitat, indiferent de cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este întotdeauna mai mare decât cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu are nicio legătură cu cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Scade și este mai mic sau egal decât cursul valutar (CRE ≤ Cs.V)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cursul de revenire la export (CRE) reflectă cât costă, în monedă națională, obținerea unei unități valutare prin export — exportul este eficient atunci când acest cost scade și rămâne sub (sau egal cu) cursul valutar de pe piață. Prin urmare, răspunsul corect este: Scade și este mai mic sau egal decât cursul valutar (CRE ≤ Cs.V)."
+    },
+    {
+      "id": "C19_T18",
+      "capitol": 19,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Importul unui bun economic este eficient atunci când cursul de revenire la import (CRI):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Scade sub orice nivel, indiferent de cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu are nicio legătură cu cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Crește și este mai mare sau egal decât cursul valutar (CRI ≥ Cs.V)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Este întotdeauna mai mic decât cursul valutar",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Cursul de revenire la import (CRI) reflectă câți lei se obțin, pe piața internă, dintr-o unitate valutară cheltuită la import — importul este eficient atunci când acest randament crește și depășește (sau egalează) cursul valutar de pe piață. Prin urmare, răspunsul corect este: Crește și este mai mare sau egal decât cursul valutar (CRI ≥ Cs.V)."
+    },
+    {
+      "id": "C19_T19",
+      "capitol": 19,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cursul valutar (Cs.V) exprimă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul valoric dintre două monede naționale convertibile, respectiv prețul unei monede exprimat în altă monedă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv valoarea totală a exporturilor unei țări",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv rata inflației dintr-o țară",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv rata dobânzii practicate pe piața monetară a unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cursul valutar este, în esență, un preț — prețul unei monede naționale, exprimat în altă monedă convertibilă — nu un indicator al dobânzii, inflației sau volumului comercial, deși acestea îl pot influența. Prin urmare, răspunsul corect este: Raportul valoric dintre două monede naționale convertibile, respectiv prețul unei monede exprimat în altă monedă."
+    },
+    {
+      "id": "C19_T20",
+      "capitol": 19,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Când Cs.V₁ < Cs.V₀ (este nevoie de mai puține unități din moneda națională pentru a cumpăra o unitate de monedă străină), are loc:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Deprecierea monedei naționale față de moneda străină",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Dispariția completă a monedei naționale de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Aprecierea monedei naționale față de moneda străină",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Nu are loc nicio modificare a valorii monedei naționale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dacă este nevoie de tot mai puțini lei pentru a cumpăra aceeași unitate de monedă străină (Cs.V scade), moneda națională câștigă valoare relativă — fenomen numit apreciere, opusul deprecierii. Prin urmare, răspunsul corect este: Aprecierea monedei naționale față de moneda străină."
+    },
+    {
+      "id": "C19_E01",
+      "capitol": 19,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea importului a fost, într-un an, 600 u.m., iar balanța comercială a înregistrat un deficit de 40 u.m. Valoarea exportului (Ex) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "640 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "560 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "600 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "40 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Deficit = Im – Ex = 40 ⇒ Ex = Im – 40 = 600 – 40 = 560 u.m."
+    },
+    {
+      "id": "C19_E02",
+      "capitol": 19,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În t₀, excedentul balanței comerciale era 500 u.m., iar valoarea importului 180 u.m. În t₁, valoarea exportului scade cu 25%, iar importul crește cu 30% față de perioada anterioară. În această situație, balanța comercială este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "deficitară (–276 u.m.)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "excedentară (+276 u.m.)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "echilibrată (0 u.m.)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "excedentară (+680 u.m.)",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Ex₀ – 180 = 500 ⇒ Ex₀ = 680 u.m. Ex₁ = 0,75×680 = 510 u.m., Im₁ = 1,3×180 = 234 u.m. ⇒ Ex₁ – Im₁ = 510 – 234 = 276 u.m. (balanță excedentară)."
+    },
+    {
+      "id": "C19_E03",
+      "capitol": 19,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă inițiază o activitate de comerț exterior cu un capital de 15 mil. lei. Într-un an face 4 operații de export-import, în condițiile în care CRE = 4 lei/€, iar CRI = 8 lei/€. La sfârșitul anului, profitul total (Pr.T) al firmei este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "225 mil. lei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "60 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "240 mil. lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "V_T = K_i × (CRI/CRE)ⁿ = 15 mil. × (8/4)⁴ = 15 mil. × 16 = 240 mil. lei ⇒ Pr.T = V_T – K_i = 240 – 15 = 225 mil. lei."
+    },
+    {
+      "id": "C19_E04",
+      "capitol": 19,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O întreprindere, pentru a exporta 600 buc. dintr-un bun X, face cheltuieli de producție de 20 mil. lei și obține un profit normal de 10 mil. lei, iar până la frontiera beneficiarului extern, cheltuielile de circulație sunt 12 mil. lei. Dacă CRE = 12 lei/$, atunci prețul în valută al bunurilor exportate (Pve) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2,66 mil. $",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4 mil. $",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2,5 mil. $",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3,5 mil. $",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pie = CT + Pr.N = 20 + 10 = 30 mil. lei ⇒ Pve = (Pie + Cc) : CRE = (30 + 12) mil. : 12 lei/$ = 3,5 mil. $."
+    },
+    {
+      "id": "C19_E05",
+      "capitol": 19,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CRI = 27 lei/€ și este de 3 ori mai mare decât CRE. Valoarea încasată la export și utilizată integral la import este 6.000 €. Profitul obținut în urma activității de comerț exterior (Pr.T) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "81.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "162.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "54.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "108.000 lei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "CRE = 27 : 3 = 9 lei/€ ⇒ Pr.T = (CRI – CRE) × V = (27 – 9) lei/€ × 6.000 € = 108.000 lei."
+    },
+    {
+      "id": "C19_E06",
+      "capitol": 19,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prin realizarea unei operații de export, un agent economic obține un CRE = 12 lei/$, în condițiile în care pe piața valutară Cs.V = 6 lei/$. În această situație, agentul economic:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "pierde 12 lei/$",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "câștigă 6 lei/$",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "câștigă 12 lei/$",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "pierde 6 lei/$",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pr.(Ex) = Cs.V – CRE = 6 – 12 = – 6 lei/$ (agentul economic pierde 6 lei la fiecare dolar exportat)."
+    },
+    {
+      "id": "C19_E07",
+      "capitol": 19,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CRE = 10 lei/€, iar valoarea exportului este 30 mil. lei. În anul următor, deși valoarea exportului crește cu 20%, CRE scade cu 4 lei/€, atunci valuta încasată de exportator va spori (Δ%Pve) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "82%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "100%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pve₀ = 30 mil. : 10 lei/€ = 3 mil. €. Ex₁ = 1,2×30 = 36 mil. lei, CRE₁ = 10 – 4 = 6 lei/€ → Pve₁ = 36 mil. : 6 lei/€ = 6 mil. € ⇒ I_Pve = (6/3)×100 = 200% ⇒ Δ%Pve = 100%."
+    },
+    {
+      "id": "C19_E08",
+      "capitol": 19,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pentru importul unor bunuri se cheltuiesc 6.000 €, în condițiile în care CRI = 18 lei/€, iar Cs.V = 15 lei/€. Profitul importatorului [Pr.(Im.)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "18.000 lei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "27.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "9.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "12.000 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pr.(Im.) = (CRI – Cs.V) × V = (18 – 15) lei/€ × 6.000 € = 18.000 lei."
+    },
+    {
+      "id": "C19_E09",
+      "capitol": 19,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă realizează o activitate de export-import și obține un CRI = 4 lei/€, când Cs.V = 6 lei/€. Suma pierderilor suportate din activitatea de comerț exterior de agentul economic la fiecare euro este de 14 lei. Cursul de revenire la export (CRE) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "18 lei/€",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "22 lei/€",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "14 lei/€",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "10 lei/€",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pierdere(Ex) = CRE – Cs.V, iar pierdere(Im) = Cs.V – CRI ⇒ Pierdere totală = (CRE – Cs.V) + (Cs.V – CRI) = CRE – CRI (Cs.V se simplifică) = 14 ⇒ CRE = 14 + CRI = 14 + 4 = 18 lei/€."
+    },
+    {
+      "id": "C19_E10",
+      "capitol": 19,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Din exportul de mobilă al unei firme se încasează 60 mil. €, în condițiile în care CRE = 25 lei/€, iar Cs.V = 35 lei/€. Profitul firmei [Pr.(Ex.)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "600 mil. lei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "2.100 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1.500 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "60 mil. lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pr.(Ex.) = (Cs.V – CRE) × V = (35 – 25) lei/€ × 60 mil. € = 600 mil. lei."
+    },
+    {
+      "id": "C19_E11",
+      "capitol": 19,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea exportului unor mărfuri este de 25.000 lei/an și se obțin 5.000 € cu care se importă banane, din vânzarea cărora se încasează 30.000 lei. Cheltuielile de desfacere a bananelor pe piața internă sunt de 4.000 lei. Profitul din activitatea de comerț exterior (Pr.T) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.000 lei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "5.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "6.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "9.000 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "V.n = 30.000 lei, CT = 25.000 + 4.000 = 29.000 lei ⇒ Pr.T = 30.000 – 29.000 = 1.000 lei."
+    },
+    {
+      "id": "C19_E12",
+      "capitol": 19,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă cumpără euro cu 6 lei/€ pentru a importa materii prime, încasând un profit pe piața internă de 18 lei/€. Cursul de revenire la import (CRI) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "18 lei/€",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 lei/€",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "12 lei/€",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "24 lei/€",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pr.(Im.) = CRI – Cs.V ⇒ CRI = Cs.V + Pr.(Im.) = 6 + 18 = 24 lei/€."
+    },
+    {
+      "id": "C19_E13",
+      "capitol": 19,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CRI = 5 lei/$, iar cheltuielile cu importul mărfurilor sunt 1.200 $. Dacă în țară veniturile totale încasate din vânzarea mărfurilor (înainte de taxe) sunt 8.000 lei, atunci taxa vamală plătită la importul mărfurilor (T.i) va fi de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2.000 lei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1.200 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "6.000 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "V.n(Im) = CRI × Pvi = 5 lei/$ × 1.200 $ = 6.000 lei (venitul net, după taxe). Cum V.n = Pii – T.i, iar Pii = 8.000 lei ⇒ T.i = Pii – V.n = 8.000 – 6.000 = 2.000 lei."
+    },
+    {
+      "id": "C19_E14",
+      "capitol": 19,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă face un credit de 1 mil. lei cu o rată a dobânzii de 12%, pe 18 luni, și importă 8t de marfă la prețul de 12 $/kg. În țară, încasează 600 lei/kg din vânzarea mărfurilor importate, face cheltuieli de desfacere de 0,4 mil. lei și plătește taxe vamale de 0,15 mil. lei, în condițiile unui Cs.V = 5 lei/$. După achitarea împrumutului, profitul firmei (Pr.T) va fi de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2,59 mil. lei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "0,55 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1,18 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4,8 mil. lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "n = 18 luni = 1,5 ani → D = 1 mil. × 12% × 1,5 = 0,18 mil. lei → S_t = 1,18 mil. lei. Cheltuieli import (lei) = 8.000 kg × 12 $/kg × 5 lei/$ = 0,48 mil. lei → CT = (1,18 + 0,48 + 0,4 + 0,15) mil. = 2,21 mil. lei. VT (piața internă) = 8.000 kg × 600 lei/kg = 4,8 mil. lei ⇒ Pr.T = (4,8 – 2,21) mil. = 2,59 mil. lei."
+    },
+    {
+      "id": "C19_E15",
+      "capitol": 19,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Cs.V₀ = 4,8 lei/€, iar indicele prețurilor în U.E. este 105% și în România este 120%. Cursul valutar în perioada curentă (Cs.V₁) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1€/4,57 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1€/5,49 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1€/4,2 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1€/5 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Cs.V₁ = Cs.V₀ × (I_PE/I_PI) = 4,8 × (105/120) = 4,8 × 0,875 = 4,2 lei/€."
+    },
+    {
+      "id": "C19_E16",
+      "capitol": 19,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Cs.V₀ = 5 lei/€. În România, valoarea internă a unei unități monetare a scăzut cu 20% în perioada curentă, iar în U.E. prețurile au crescut cu 10%. Modificarea în mărimi absolute a cursului valutar (ΔCs.V) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1€/0,6 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1€/–1 leu",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1€/–0,6 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1€/1 leu",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Scăderea puterii de cumpărare a leului cu 20% înseamnă I_PI (România) = 1/(1–0,20) × 100 = 125%. I_PE (U.E.) = 110% ⇒ I_Cs.V = (110/125) × 100 = 88% → Cs.V₁ = 0,88×5 = 4,4 lei/€ ⇒ ΔCs.V = 4,4 – 5 = – 0,6 lei/€ (leul s-a depreciat cu 0,6 lei față de euro)."
+    },
+    {
+      "id": "C19_E17",
+      "capitol": 19,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea externă a monedei naționale este de tipul 1 leu = 0,4 $. Moneda națională s-a revalorizat cu 25%. În aceste condiții, cursul valutar al leului în perioada curentă (Cs.V₁) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1 leu/2 $",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1 leu/0,5 $",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1 $/2 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1 $/2,5 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "PCB₀ (leu/$) = 0,4 → PCB₁ = 1,25×0,4 = 0,5 (1 leu = 0,5 $) ⇒ Cs.V₁ = 1 : 0,5 = 1 $/2 lei."
+    },
+    {
+      "id": "C19_E18",
+      "capitol": 19,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, rata inflației în România a fost 6%, iar în U.E. 3%. Modificarea procentuală a cursului de schimb (Δ%Cs.V) este mai apropiată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "– 50%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "150%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "– 2,83%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "3%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_GP(România) = 106%, I_GP(U.E.) = 103% → I_Cs.V = (I_PE/I_PI) × 100 = (103/106) × 100 ≈ 97,17% ⇒ Δ%Cs.V ≈ – 2,83%."
+    },
+    {
+      "id": "C19_E19",
+      "capitol": 19,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La bursa valutară, când Cs.V₀ = 1€/4 lei, un speculator încheie un contract de cumpărare a 2.500 €. La termen, Cs.V₁ = 1€/6 lei. Situația financiară a agentului economic este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "pierde 2.500 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "câștigă 5.000 lei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "pierde 5.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "câștigă 2.500 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Speculatorul cumpără 2.500 € la 4 lei/€ (cheltuind 10.000 lei), iar la termen le poate revinde la cursul de 6 lei/€, obținând 15.000 lei ⇒ Câștig = 15.000 – 10.000 = 5.000 lei."
+    },
+    {
+      "id": "C19_E20",
+      "capitol": 19,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Din activitatea de comerț exterior, o firmă înregistrează un CRE = 3 lei/€ și un CRI = 7 lei/€, iar cursul de schimb valutar este 5 lei/€. Profitul obținut la un euro investit în activitatea de comerț exterior este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "10 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "12 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pr.(Ex) = Cs.V – CRE = 5 – 3 = 2 lei/€, iar Pr.(Im) = CRI – Cs.V = 7 – 5 = 2 lei/€ ⇒ Profitul total pe euro = 2 + 2 = 4 lei, sau, echivalent, Pr.(comerț exterior) = CRI – CRE = 7 – 3 = 4 lei."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

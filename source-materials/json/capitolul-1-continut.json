@@ -1,0 +1,514 @@
+{
+  "capitol": {
+    "numar": 1,
+    "titlu": "Introducere în economie",
+    "obiective": [
+      "Să definești nevoile umane și resursele economice, și să le clasifici",
+      "Să explici relația (tensiunea) dintre nevoile nelimitate și resursele limitate",
+      "Să calculezi costul de oportunitate al unei alegeri economice",
+      "Să calculezi modificările absolute și procentuale ale unui indicator economic",
+      "Să înțelegi rolul și obiectivele științei economice"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "nevoi",
+      "nr": "1",
+      "titlu": "Nevoile umane",
+      "text": [
+        "Nevoile umane reprezintă ansamblul dorințelor, așteptărilor și cerințelor care se manifestă la nivelul unui individ, al unui grup sau al societății în ansamblul ei. Satisfacerea lor, prin consumul de bunuri și servicii, determină existența și dezvoltarea oamenilor și a societății.",
+        "Majoritatea nevoilor au un caracter subiectiv - depind de persoana care le resimte - dar au și o determinare obiectivă, legată de nivelul de dezvoltare al societății în care trăiește individul. Inițial, o nevoie se manifestă ca o stare de dezechilibru sau disconfort, care dispare temporar prin consum, dar reapare ulterior."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Dinamice și nelimitate numeric",
+          "descriere": "se multiplică și se diversifică permanent, o dată cu dezvoltarea individului și a societății"
+        },
+        {
+          "termen": "Limitate în volum (capacitate)",
+          "descriere": "satisfacerea lor presupune un consum limitat dintr-un bun (un pahar de apă e suficient pentru sete)"
+        },
+        {
+          "termen": "Regenerabile",
+          "descriere": "se sting momentan prin consum, dar reapar (foamea revine la câteva ore după ce ai mâncat)"
+        },
+        {
+          "termen": "Concurente și substituibile",
+          "descriere": "cu venituri limitate, satisfacerea unei nevoi înseamnă adesea sacrificarea alteia"
+        },
+        {
+          "termen": "Complementare",
+          "descriere": "satisfacerea unei nevoi le condiționează pe altele (dacă îți e foame, nu poți dormi bine)"
+        }
+      ],
+      "clasificari": [
+        {
+          "criteriu": "După nivelul la care se manifestă",
+          "categorii": [
+            {
+              "nume": "Individuale",
+              "definitie": "nevoi personale, ale unui singur om (de hidratare, de odihnă, de a citi)"
+            },
+            {
+              "nume": "De grup",
+              "definitie": "nevoi la nivelul unor colectivități (de transport și iluminat urban)"
+            },
+            {
+              "nume": "Sociale",
+              "definitie": "nevoi ale întregii societăți (de securitate, de mediu nepoluat)"
+            }
+          ]
+        },
+        {
+          "criteriu": "După gradul de complexitate",
+          "categorii": [
+            {
+              "nume": "Elementare",
+              "definitie": "nevoi de bază, primare (de a respira, de locuință)"
+            },
+            {
+              "nume": "Complexe",
+              "definitie": "nevoi superioare, elevate (de informare, de activitate creatoare)"
+            }
+          ]
+        },
+        {
+          "criteriu": "După dimensiunea ființei umane",
+          "categorii": [
+            {
+              "nume": "Biologice",
+              "definitie": "fiziologice (de hrană, de igienă, de mișcare)"
+            },
+            {
+              "nume": "Psihologice",
+              "definitie": "spiritual-raționale (de înțelegere, de iubire și apreciere)"
+            },
+            {
+              "nume": "Sociale",
+              "definitie": "de comunicare, de prietenie, de realizare profesională"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Nevoia de realizare profesională apare la nivel individual (unii vor să fie antreprenori, alții profesori); nevoia de a câștiga puterea se manifestă mai ales la nivel de grup (partidele politice); nevoia de reducere a criminalității apare la nivelul întregii societăți."
+      ],
+      "formule": []
+    },
+    {
+      "id": "bunuri",
+      "nr": "2",
+      "titlu": "Bunurile economice",
+      "text": [
+        "Bunurile (utilitățile) reprezintă orice element al realității capabil să satisfacă o nevoie umană. În funcție de proveniența lor și de accesul oamenilor la ele, bunurile se împart în bunuri libere și bunuri economice.",
+        "Bunurile libere sunt daruri ale naturii (aerul, căldura și lumina solară), virtual nelimitate, la care accesul este gratuit, deși consumul lor rămâne condiționat de loc și timp. Bunurile economice provin din activitatea economică - necesită efort și resurse pentru a fi produse - și sunt limitate în raport cu nevoile. Accesul la ele poate fi direct, prin autoconsum, sau indirect, prin intermediul pieței, caz în care bunul economic devine marfă."
+      ],
+      "puncteCheie": [],
+      "clasificari": [
+        {
+          "criteriu": "După proveniență și accesul oamenilor la ele",
+          "categorii": [
+            {
+              "nume": "Bunuri libere",
+              "definitie": "daruri ale naturii, acces gratuit (aerul, lumina solară)"
+            },
+            {
+              "nume": "Bunuri economice",
+              "definitie": "necesită efort și resurse (produse prin activitate economică)"
+            }
+          ]
+        },
+        {
+          "criteriu": "După forma sub care se prezintă",
+          "categorii": [
+            {
+              "nume": "Materiale",
+              "definitie": "tangibile, palpabile"
+            },
+            {
+              "nume": "Nemateriale (servicii)",
+              "definitie": "informații, servicii - netangibile"
+            }
+          ]
+        },
+        {
+          "criteriu": "După destinația principală",
+          "categorii": [
+            {
+              "nume": "Prodfactori (intermediare)",
+              "definitie": "ex. făina și drojdia, pentru pâine"
+            },
+            {
+              "nume": "Satisfactori (finale)",
+              "definitie": "ex. ochelarii, pixul"
+            }
+          ]
+        },
+        {
+          "criteriu": "După circulația între agenții economici",
+          "categorii": [
+            {
+              "nume": "Marfare",
+              "definitie": "supuse vânzării-cumpărării"
+            },
+            {
+              "nume": "Nemarfare",
+              "definitie": "din producție proprie sau de la stat"
+            }
+          ]
+        },
+        {
+          "criteriu": "După relația în procesul utilizării",
+          "categorii": [
+            {
+              "nume": "Substituibile",
+              "definitie": "satisfac alternativ aceeași nevoie (cafeaua și îndulcitorul)"
+            },
+            {
+              "nume": "Complementare",
+              "definitie": "satisfac împreună aceeași nevoie (calculatorul și curentul electric)"
+            },
+            {
+              "nume": "Independente",
+              "definitie": "nu se influențează reciproc (umbrela și pasta de dinți)"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "resurse",
+      "nr": "3",
+      "titlu": "Resursele economice",
+      "text": [
+        "Resursele economice reprezintă elementele umane, naturale și create de om care pot fi utilizate, sau sunt efectiv utilizate (devenind astfel factori de producție), pentru realizarea bunurilor și serviciilor necesare satisfacerii nevoilor. Resursele nu trebuie confundate cu bunurile: resursele sunt „intrări\" ale procesului de producție, iar bunurile economice sunt rezultatul folosirii lor.",
+        "Resursele sunt dinamice numeric, dar cresc mai încet decât nevoile umane - de aici tensiunea permanentă dintre nevoi și resurse, care generează problema fundamentală a economiei: utilizarea eficientă a resurselor limitate, adică alegerea răspunsurilor la întrebările ce, cât, cum și pentru cine să se producă."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Resursa umană",
+          "descriere": "este considerată cea mai importantă resursă economică; resursele naturale sunt sursa primară de satisfacere a nevoilor"
+        }
+      ],
+      "clasificari": [
+        {
+          "criteriu": "După proveniență",
+          "categorii": [
+            {
+              "nume": "Primare/originare",
+              "definitie": "resursele umane, resursele naturale (pământ, apă, păduri)"
+            },
+            {
+              "nume": "Derivate",
+              "definitie": "materii prime, tehnologii, abilitatea întreprinzătorului"
+            }
+          ]
+        },
+        {
+          "criteriu": "Resurse naturale, după durata folosirii",
+          "categorii": [
+            {
+              "nume": "Regenerabile",
+              "definitie": "pământ, aer, apă"
+            },
+            {
+              "nume": "Neregenerabile",
+              "definitie": "combustibili fosili, minereuri"
+            }
+          ]
+        },
+        {
+          "criteriu": "Resurse naturale, după posibilitatea recuperării",
+          "categorii": [
+            {
+              "nume": "Recuperabile",
+              "definitie": "o gamă largă de materii prime"
+            },
+            {
+              "nume": "Parțial recuperabile",
+              "definitie": "resursele biologice"
+            },
+            {
+              "nume": "Nerecuperabile",
+              "definitie": "resursele de energie"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "cost-oportunitate",
+      "nr": "4",
+      "titlu": "Costul de oportunitate",
+      "text": [
+        "Din cauză că resursele sunt insuficiente pentru a acoperi toate nevoile, orice alegere în producție sau în consum implică o renunțare - un cost. Costul de oportunitate reprezintă valoarea celei mai bune alternative de alocare a resurselor la care se renunță, în favoarea alternativei alese.",
+        "Costul de oportunitate are tendința generală de creștere pe măsură ce se renunță la o cantitate tot mai mare dintr-un bun în favoarea altuia - acesta este conținutul legii creșterii costurilor relative. O explicație vine din caracterul specializat al resurselor: acestea pot fi adaptate pentru o altă utilizare doar până la un punct, dincolo de care adaptarea devine tot mai costisitoare."
+      ],
+      "puncteCheie": [
+        "Are valori minime la alegerile optime (utilizarea rațională a resurselor) și crește în condițiile risipei",
+        "Ar putea fi zero doar dacă resursele ar fi nelimitate numeric",
+        "Se mai numește și cost relativ, pentru că măsoară \"câștigul\" prin \"pierderea\" celei mai bune alternative sacrificate",
+        "La un moment dat, cu o singură alternativă de ales: în unități fizice, Co = -x/y; în unități valorice, Co = (-x/y) x Px",
+        "Într-un interval de timp, cu mai multe alternative: în unități fizice, Co = -Δx/Δy; în unități valorice, Co = (-Δx/Δy) x Px"
+      ],
+      "exemple": [
+        "Firma \"Diana\" S.R.L. poate produce, dintr-o cantitate dată de lapte, fie brânză, fie iaurt, în variantele: A (500 kg brânză, 0 kg iaurt), B (400, 200), C (200, 400), D (0, 500). Trecând de la A la B, costul de oportunitate al unui kilogram de iaurt e de 0,5 kg brânză; trecând de la B la C, ajunge la 1 kg brânză; trecând de la C la D, la 2 kg brânză. Costul de oportunitate al iaurtului crește pe măsură ce se produce tot mai mult din el - exact legea creșterii costurilor relative. Poți explora aceste 4 variante mai jos, în secțiunea V."
+      ],
+      "formule": [
+        {
+          "nume": "Cost de oportunitate, o alegere, unități fizice",
+          "formula": "Co = -x / y"
+        },
+        {
+          "nume": "Cost de oportunitate, o alegere, unități valorice",
+          "formula": "Co = (-x/y) x Px"
+        },
+        {
+          "nume": "Cost de oportunitate, într-un interval de timp",
+          "formula": "Co = -Δx / Δy"
+        }
+      ],
+      "calculator": "costOportunitate",
+      "notaLegatura": {
+        "href": "#sect-ppf",
+        "text": "Vezi explorarea completă a celor 4 variante (A-D) în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "stiinta-economica",
+      "nr": "5",
+      "titlu": "Ce studiază economia",
+      "text": [
+        "Economia este o știință socială care studiază comportamentul oamenilor în activitatea de alocare a resurselor limitate, cu întrebuințări alternative, pentru acoperirea nevoilor. Alocarea resurselor implică patru întrebări fundamentale, la care economia trebuie să răspundă permanent: ce, cât, cum și pentru cine să producem?",
+        "Economistul J.K. Galbraith arăta că economia studiază, pe scurt, procesul prin care este servit individul, comportamentul uman ca relație între țeluri și resurse rare cu întrebuințări alternative, și modul în care decidem să folosim resursele productive rare pentru un anumit scop.",
+        "În funcție de nivelul la care analizează fenomenele economice, economia se împarte în microeconomie - studiază comportamentul unităților economice individuale - și macroeconomie - studiază comportamentul agregat al unităților economice, la nivelul economiei naționale."
+      ],
+      "puncteCheie": [
+        "Obiectivele economiei ca știință: descrie și explică fenomenele și comportamentul oamenilor în activitatea economică; prognozează stări și evoluții economice; oferă instrumente de utilizare rațională a resurselor",
+        "Cunoștințele economice au caracter științific, cognitiv, practic (pregătire profesională), educativ și istoric"
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Nivelele de analiză economică",
+          "categorii": [
+            {
+              "nume": "Microeconomia",
+              "definitie": "studiază comportamentul unităților economice individuale (o firmă, un consumator)"
+            },
+            {
+              "nume": "Macroeconomia",
+              "definitie": "studiază comportamentul agregat, la nivelul economiei naționale"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "indicatori-economici",
+      "nr": "6",
+      "titlu": "Indicatorii economici și dinamica lor",
+      "text": [
+        "Indicatorul economic este expresia cantitativă sau calitativă a rezultatelor activității economice (de exemplu, prețul unui bun e un indicator cantitativ, iar calitatea lui, unul calitativ). Dinamica unui indicator - felul în care evoluează de la o perioadă la alta - se apreciază în mărimi absolute și în mărimi relative (procentuale).",
+        "Modificarea absolută arată cu cât se modifică o variabilă de la o perioadă (0) la alta (1). Indicele arată de câte ori se modifică o variabilă de la o perioadă la alta. Modificarea procentuală (relativă) arată cu cât se modifică, procentual, o variabilă."
+      ],
+      "exemple": [
+        "Dacă producția crește de la 3 tone la 5 tone, modificarea absolută este ΔQ = 5 - 3 = 2 tone. Dacă venitul crește de la 50 la 80 u.m., modificarea procentuală este Δ%V = (80-50)/50 x 100 = 60%. Dacă venitul crește cu 30%, indicele e IV = 100% + 30% = 130% (venitul a crescut de 1,3 ori)."
+      ],
+      "formule": [
+        {
+          "nume": "Modificarea absolută",
+          "formula": "ΔX = X1 - X0"
+        },
+        {
+          "nume": "Indicele",
+          "formula": "IX = (X1/X0) x 100"
+        },
+        {
+          "nume": "Modificarea procentuală (relativă)",
+          "formula": "Δ%X = IX - 100"
+        }
+      ],
+      "calculator": "indicatori"
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Care dintre următoarele nevoi este considerată nelimitată, în sensul că nu poate fi niciodată complet satisfăcută?",
+      "optiuni": [
+        "nevoia de a bea apă atunci când ți-e sete",
+        "nevoia de somn, opt ore pe noapte",
+        "nevoia de cunoaștere și informare",
+        "nevoia de a respira"
+      ],
+      "corect": 2,
+      "explicatie": "Nevoile elementare (apă, somn, respirație) se satisfac prin consumul unei cantități limitate și clar definite; nevoile complexe, precum cunoașterea, sunt dinamice și practic nelimitate."
+    },
+    {
+      "intrebare": "Care dintre următoarele reprezintă un bun liber, nu un bun economic?",
+      "optiuni": [
+        "pâinea de la brutărie",
+        "aerul pe care îl respirăm",
+        "un bilet de autobuz",
+        "un calculator"
+      ],
+      "corect": 1,
+      "explicatie": "Bunurile libere sunt daruri ale naturii, la care avem acces gratuit (aerul, lumina solară); celelalte necesită efort și resurse pentru a fi produse, deci sunt bunuri economice."
+    },
+    {
+      "intrebare": "Pe măsură ce se renunță tot mai mult la producerea unui bun în favoarea altuia, costul de oportunitate:",
+      "optiuni": [
+        "scade",
+        "crește",
+        "rămâne constant",
+        "devine zero"
+      ],
+      "corect": 1,
+      "explicatie": "Aceasta este legea creșterii costurilor relative: costul de oportunitate crește pe măsură ce alocăm unei singure utilizări tot mai multe resurse, inițial specializate în altă direcție."
+    },
+    {
+      "intrebare": "Studiul comportamentului agregat al economiei, la nivel național, este obiectul de studiu al:",
+      "optiuni": [
+        "microeconomiei",
+        "macroeconomiei",
+        "contabilității",
+        "dreptului economic"
+      ],
+      "corect": 1,
+      "explicatie": "Macroeconomia analizează fenomenele la nivelul întregii economii naționale; microeconomia se ocupă de comportamentul unităților economice individuale."
+    },
+    {
+      "intrebare": "Resursele naturale precum zăcămintele de petrol sau cărbune sunt, din punctul de vedere al duratei folosirii:",
+      "optiuni": [
+        "regenerabile",
+        "neregenerabile",
+        "nelimitate",
+        "bunuri libere"
+      ],
+      "corect": 1,
+      "explicatie": "Combustibilii fosili se formează într-un timp geologic uriaș și nu se pot reface la scara utilizării umane, deci sunt resurse neregenerabile."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Nevoile umane sunt, în general, limitate numeric.",
+      "corect": false,
+      "explicatie": "Nevoile sunt dinamice și nelimitate numeric - se multiplică și se diversifică permanent; ceea ce e limitat este volumul de bun necesar pentru a satisface o nevoie la un moment dat."
+    },
+    {
+      "enunt": "Resursa umană este considerată cea mai importantă resursă economică.",
+      "corect": true,
+      "explicatie": "Așa cum arată manualul, resursa umană e cea mai importantă resursă economică, iar resursele naturale sunt sursa primară de satisfacere a nevoilor."
+    },
+    {
+      "enunt": "Costul de oportunitate ar putea fi zero dacă resursele economice ar fi nelimitate numeric.",
+      "corect": true,
+      "explicatie": "Dacă resursele nu ar fi rare, nicio alegere nu ar presupune o renunțare reală, deci costul de oportunitate ar dispărea."
+    },
+    {
+      "enunt": "Un bun liber, precum aerul, circulă de regulă ca marfă, la fel ca un bun economic.",
+      "corect": false,
+      "explicatie": "Bunurile libere sunt, prin definiție, virtual nelimitate și accesul la ele e gratuit; doar bunurile economice (limitate, produse prin efort) circulă, de regulă, ca mărfuri."
+    },
+    {
+      "enunt": "Modificarea procentuală a unei variabile economice se calculează raportând modificarea absolută la valoarea din perioada curentă (X1).",
+      "corect": false,
+      "explicatie": "Se raportează la valoarea din perioada anterioară (X0): Δ%X = (X1-X0)/X0 x 100, nu la X1."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "O firmă poate produce, dintr-o cantitate dată de materie primă, fie 800 kg de brânză (0 kg iaurt), fie 600 kg de brânză și 100 kg de iaurt. Care este costul de oportunitate al primului kilogram de iaurt produs, în kg de brânză?",
+      "unitate": "kg brânză",
+      "corect": 2,
+      "toleranta": 0.1,
+      "explicatie": "Co = -Δbrânză/Δiaurt = -(600-800)/(100-0) = -(-200)/100 = 2 kg brânză pentru fiecare kg de iaurt."
+    },
+    {
+      "enunt": "Venitul unei familii a crescut de la 4.000 lei la 5.200 lei. Calculați modificarea procentuală (relativă) a venitului.",
+      "unitate": "%",
+      "corect": 30,
+      "toleranta": 0.5,
+      "explicatie": "Δ%V = (V1-V0)/V0 x 100 = (5200-4000)/4000 x 100 = 30%."
+    },
+    {
+      "enunt": "Prețul unui produs a ajuns să fie de 1,4 ori mai mare față de perioada anterioară. Cu ce procent a crescut prețul?",
+      "unitate": "%",
+      "corect": 40,
+      "toleranta": 0.5,
+      "explicatie": "Dacă indicele e 1,4 (140%), modificarea procentuală este Δ%P = IP - 100% = 40%."
+    },
+    {
+      "enunt": "Prețul unui caiet este 15 u.m., iar al unui pix este 5 u.m. Care este costul de oportunitate al achiziționării a 3 caiete, exprimat în număr de pixuri?",
+      "unitate": "pixuri",
+      "corect": 9,
+      "toleranta": 0.1,
+      "explicatie": "3 caiete costă 3 x 15 = 45 u.m.; cu aceiași bani s-ar fi putut cumpăra 45/5 = 9 pixuri, deci acesta e costul de oportunitate al celor 3 caiete."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corespunzătoare.",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Bun liber"
+        },
+        {
+          "id": "t2",
+          "text": "Cost de oportunitate"
+        },
+        {
+          "id": "t3",
+          "text": "Macroeconomia"
+        },
+        {
+          "id": "t4",
+          "text": "Resursă economică"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "d1",
+          "text": "Ramura economiei care studiază comportamentul agregat, la nivelul economiei naționale"
+        },
+        {
+          "id": "d2",
+          "text": "Element uman, natural sau creat de om, folosit pentru a obține bunuri și servicii"
+        },
+        {
+          "id": "d3",
+          "text": "Cel mai bun lucru la care renunți atunci când faci o alegere"
+        },
+        {
+          "id": "d4",
+          "text": "Dar al naturii, la care ai acces gratuit și practic nelimitat"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "d4"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "d3"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "d1"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "d2"
+        }
+      ],
+      "explicatie": "Aceste patru noțiuni stau la baza întregii economii - orice altă lecție le presupune deja înțelese."
+    }
+  ]
+}

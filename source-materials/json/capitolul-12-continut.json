@@ -1,0 +1,370 @@
+{
+  "capitol": {
+    "numar": 12,
+    "titlu": "Piața de capital (financiară)",
+    "obiective": [
+      "Să definești și să compari acțiunile și obligațiunile",
+      "Să calculezi cursul unui titlu de valoare, dividendul și randamentul unei acțiuni",
+      "Să înțelegi diferența dintre operațiunile la vedere și cele la termen",
+      "Să înțelegi rolul bursei de valori și factorii care influențează cursul titlurilor",
+      "Să rezolvi aplicații practice legate de piața de capital"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "caracterizare-piata-capital",
+      "nr": "1",
+      "titlu": "Piața capitalurilor: caracterizare generală",
+      "text": [
+        "Piața capitalurilor (financiară) reflectă spațiul economic în care se întâlnesc cererea cu oferta de titluri de valoare (acțiuni și obligațiuni, în principal), formându-se prețul acestora, numit curs. Pe această piață se fac investiții de portofoliu - se plasează economiile în titluri de valoare mobiliare, de regulă pe termen lung.",
+        "Criteriile după care agenții economici aleg unde să-și plaseze economiile sunt: mărimea venitului adus de plasament (dobândă, dividend), riscurile implicate și lichiditatea (rapiditatea vânzării, cu cheltuieli minime)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Participanții la piața capitalurilor",
+          "categorii": [
+            {
+              "nume": "Ofertanții de TVM",
+              "definitie": "emitenții și posesorii de titluri care doresc să le vândă"
+            },
+            {
+              "nume": "Investitorii (cererea de TVM)",
+              "definitie": "posesorii de economii care doresc să le investească"
+            },
+            {
+              "nume": "Intermediarii",
+              "definitie": "băncile și societățile de valori mobiliare, sau agenții de bursă (brokerii)"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Cursul unui titlu de valoare",
+          "formula": "Cs(TVM) = V(TVM) / d’"
+        },
+        {
+          "nume": "Randamentul unui titlu de valoare",
+          "formula": "Rd(TVM) = (V/C) x 100"
+        }
+      ]
+    },
+    {
+      "id": "actiunile",
+      "nr": "2",
+      "titlu": "Acțiunile",
+      "text": [
+        "Acțiunea este un titlu patrimonial care atestă un drept de proprietate asupra unei părți a capitalului social al unei firme. Fiecare proprietar primește un număr de acțiuni proporțional cu capitalul subscris."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Drepturile acționarilor",
+          "categorii": [
+            {
+              "nume": "Drepturi patrimoniale",
+              "definitie": "dreptul la dividend (parte din profit, proporțional cu capitalul subscris) și dreptul la o parte din capital/pierderi, la lichidare"
+            },
+            {
+              "nume": "Drepturi sociale",
+              "definitie": "dreptul de a participa la Adunarea Generală a Acționarilor și dreptul de a fi informat asupra situației firmei"
+            }
+          ]
+        },
+        {
+          "criteriu": "Formele acțiunilor",
+          "categorii": [
+            {
+              "nume": "Nominative",
+              "definitie": "au înscris numele posesorului; se înstrăinează doar prin transcriere în registru"
+            },
+            {
+              "nume": "La purtător",
+              "definitie": "nu au numele proprietarului înscris; circulație liberă"
+            },
+            {
+              "nume": "Ordinare",
+              "definitie": "dividend variabil, în funcție de profit"
+            },
+            {
+              "nume": "Privilegiate",
+              "definitie": "dividend fix, indiferent de mărimea profitului"
+            },
+            {
+              "nume": "Preferențiale",
+              "definitie": "prioritate la încasarea dividendelor"
+            }
+          ],
+          "orientare": "vertical"
+        }
+      ],
+      "exemple": [
+        "Dividendul e o mărime variabilă, în funcție de profitul firmei - de aceea acțiunile se mai numesc și titluri mobiliare cu venit variabil (spre deosebire de obligațiuni, cu venit fix)."
+      ],
+      "formule": [],
+      "calculator": "randamentActiune"
+    },
+    {
+      "id": "obligatiunile",
+      "nr": "3",
+      "titlu": "Obligațiunile",
+      "text": [
+        "Obligațiunea este un titlu de credit asupra societății emitente, care atestă un împrumut pe termen lung, acordat de deținătorul titlului (obligatarul) emitentului. Spre deosebire de acțiune, obligațiunea nu conferă niciun drept asupra activității firmei - obligatarul e doar creditor."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Dreptul de a încasa un venit fix (dobânda/cuponul)",
+          "descriere": "reprezintă pentru firmă un cost, suportat chiar dacă nu obține profit"
+        },
+        {
+          "termen": "Dreptul de a primi înapoi, la scadență",
+          "descriere": "suma oferită sub formă de împrumut"
+        }
+      ],
+      "exemple": [
+        "Ioana cumpără o obligațiune emisă de stat, în valoare de 50 u.m., cu scadență peste un an, la o rată a dobânzii de 10%. Ea are dreptul să primească o dobândă fixă anuală de 5 u.m. (50 x 0,10) și, la scadență, cei 50 u.m. înapoi. Randamentul obligațiunii este R = (5/50) x 100 = 10%."
+      ],
+      "formule": [
+        {
+          "nume": "Randamentul obligațiunii",
+          "formula": "R = (dobânda/curs) x 100"
+        },
+        {
+          "nume": "Cursul (prețul) obligațiunii pe piață",
+          "formula": "Cs = D / d’"
+        }
+      ],
+      "calculator": "cursObligatiune"
+    },
+    {
+      "id": "formele-pietei-financiare",
+      "nr": "4",
+      "titlu": "Formele pieței financiare",
+      "text": [
+        "Piața financiară primară cuprinde tranzacțiile cu titluri nou emise; vânzarea se realizează prin instituții financiare (bănci, societăți de intermediere), iar prețul e, de regulă, egal cu valoarea nominală. Piața financiară secundară cuprinde tranzacțiile cu titluri emise anterior, prin piețe organizate - cea mai importantă instituție fiind bursa de valori, unde prețul diferă de valoarea nominală, în funcție de raportul cerere-ofertă."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de operațiuni, după momentul finalizării",
+          "categorii": [
+            {
+              "nume": "Operațiuni la vedere",
+              "definitie": "finalizarea are loc în momentul încheierii contractului (sau în maximum 2 zile lucrătoare)"
+            },
+            {
+              "nume": "Operațiuni la termen",
+              "definitie": "finalizarea are loc la o dată ulterioară - au caracter speculativ"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [],
+      "notaLegatura": {
+        "href": "#sect-explorator-bursa",
+        "text": "Explorează interactiv o operațiune la termen (speculator \"à la hausse\" vs. \"à la baisse\") în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "bursa-de-valori",
+      "nr": "5",
+      "titlu": "Bursa de valori",
+      "text": [
+        "Bursa de valori este o instituție/piață care asigură mecanismele necesare tranzacționării celor mai importante titluri financiare emise anterior, dar aflate în proprietatea altor unități decât cele emitente. Se apropie cel mai mult de modelul pieței cu concurență perfectă - e organizată riguros, condusă de un consiliu de administrație și supravegheată de autoritatea publică."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Rolul bursei de valori",
+          "orientare": "vertical",
+          "categorii": [
+            "Permite finanțarea pe termen lung a investițiilor firmelor",
+            "Asigură mobilitate și lichiditate ridicată a capitalurilor",
+            "Transformă rapid capitalul bănesc (economiile) în capital real, și invers",
+            "Permite transferul capitalurilor între firme sau între țări",
+            "Favorizează concentrarea puterii economice, prin achiziția pachetului de control",
+            "E un \"barometru\" al nivelului de dezvoltare economică a unei țări"
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Raportul dintre cererea și oferta de titluri de valoare",
+        "Evoluția profitului firmei emitente (relație directă)",
+        "Rata dobânzii pe piața monetară (relație inversă)",
+        "Informațiile despre activitatea firmei și conjunctura economică"
+      ],
+      "exemple": [],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Venitul adus de o acțiune se numește:",
+      "optiuni": [
+        "dividend",
+        "dobândă",
+        "rentă",
+        "profit"
+      ],
+      "corect": 0,
+      "explicatie": "Dividendul e partea din profitul net care revine acționarului, proporțional cu capitalul subscris."
+    },
+    {
+      "intrebare": "Când cursul acțiunilor crește, iar un investitor le vinde la noul curs:",
+      "optiuni": [
+        "vânzătorul câștigă",
+        "cumpărătorul pierde întotdeauna",
+        "cursul nu afectează vânzătorul",
+        "doar statul câștigă"
+      ],
+      "corect": 0,
+      "explicatie": "Vânzătorul care deținea acțiunile câștigă din creșterea cursului - le vinde la un preț mai mare decât cel de achiziție."
+    },
+    {
+      "intrebare": "Venitul adus de o obligațiune se numește:",
+      "optiuni": [
+        "dividend",
+        "dobândă (cupon)",
+        "rentă",
+        "profit"
+      ],
+      "corect": 1,
+      "explicatie": "Obligațiunea e un titlu de credit - venitul ei fix se numește dobândă sau cupon, nu dividend (specific acțiunilor)."
+    },
+    {
+      "intrebare": "Pe piața financiară secundară (bursă):",
+      "optiuni": [
+        "prețul e mereu egal cu valoarea nominală",
+        "se tranzacționează doar titluri nou emise",
+        "prețul diferă de valoarea nominală, în funcție de cerere-ofertă",
+        "nu există intermediari"
+      ],
+      "corect": 2,
+      "explicatie": "Spre deosebire de piața primară (unde prețul e, de regulă, egal cu valoarea nominală), pe piața secundară prețul variază după raportul cerere-ofertă."
+    },
+    {
+      "intrebare": "Un speculator care mizează pe creșterea cursului până la scadență se numește:",
+      "optiuni": [
+        "\"à la baisse\" (bear)",
+        "\"à la hausse\" (bull)",
+        "obligatar",
+        "broker"
+      ],
+      "corect": 1,
+      "explicatie": "Cumpărătorul care mizează pe creșterea cursului e speculatorul \"à la hausse\" (bull); vânzătorul care mizează pe scădere e \"à la baisse\" (bear)."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Acțiunile sunt titluri de proprietate.",
+      "corect": true,
+      "explicatie": "Da - acțiunea atestă un drept de proprietate asupra unei părți din capitalul social al firmei."
+    },
+    {
+      "enunt": "Obligațiunile sunt titluri de credit.",
+      "corect": true,
+      "explicatie": "Da - obligațiunea atestă un împrumut acordat emitentului, iar deținătorul (obligatarul) e creditor."
+    },
+    {
+      "enunt": "Venitul acțiunii se numește dobândă.",
+      "corect": false,
+      "explicatie": "Venitul acțiunii se numește dividend; dobânda (cuponul) e venitul obligațiunii."
+    },
+    {
+      "enunt": "Venitul obligațiunii se numește dobândă.",
+      "corect": true,
+      "explicatie": "Da - obligațiunea aduce un venit fix, numit dobândă sau cupon."
+    },
+    {
+      "enunt": "Operațiunile la termen, la bursă, au caracter speculativ.",
+      "corect": true,
+      "explicatie": "Da - una dintre părți câștigă, cealaltă pierde, în funcție de evoluția cursului până la scadență."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "O obligațiune aduce deținătorului său un venit fix de 20.000 u.m. Calculați prețul (cursul) obligațiunii pe piața financiară, în condițiile în care rata dobânzii este 20%.",
+      "unitate": "u.m.",
+      "corect": 100000,
+      "toleranta": 500,
+      "explicatie": "Cs = D/d’ = 20.000/0,20 = 100.000 u.m."
+    },
+    {
+      "enunt": "Doi brokeri încheie un contract la termen pentru 1.000 de acțiuni, la un curs de 100 u.m./acțiune. La scadență, cursul este de 90 u.m./acțiune. Cu cât câștigă vânzătorul?",
+      "unitate": "u.m.",
+      "corect": 10000,
+      "toleranta": 100,
+      "explicatie": "Vânzătorul mizează pe scădere: câștigă (100-90) x 1.000 = 10.000 u.m. Cumpărătorul pierde aceeași sumă."
+    },
+    {
+      "enunt": "Ion cumpără o acțiune cu 100.000 u.m. și o vinde peste 1 an cu 150.000 u.m., iar dividendul obținut e de 5.000 u.m. Calculați randamentul total al acțiunii (%).",
+      "unitate": "%",
+      "corect": 55,
+      "toleranta": 1,
+      "explicatie": "R = [(150.000-100.000)+5.000]/100.000 x 100 = 55%."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Acțiunea"
+        },
+        {
+          "id": "t2",
+          "text": "Obligațiunea"
+        },
+        {
+          "id": "t3",
+          "text": "Bursa de valori"
+        },
+        {
+          "id": "t4",
+          "text": "Speculator \"à la hausse\""
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Titlu care atestă un drept de proprietate asupra unei părți din capitalul unei firme"
+        },
+        {
+          "id": "o_b",
+          "text": "Titlu de credit care atestă un împrumut pe termen lung"
+        },
+        {
+          "id": "o_c",
+          "text": "Instituție/piață pentru tranzacționarea titlurilor emise anterior"
+        },
+        {
+          "id": "o_d",
+          "text": "Cumpărător care mizează pe creșterea cursului până la scadență"
+        },
+        {
+          "id": "o_e",
+          "text": "Vânzător care mizează pe scăderea cursului până la scadență"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, speculatorul \"à la baisse\" (bear) - opusul lui \"à la hausse\", care nu apare în coloana din stânga."
+    }
+  ]
+}

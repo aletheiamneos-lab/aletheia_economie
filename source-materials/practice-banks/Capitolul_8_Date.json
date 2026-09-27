@@ -1,0 +1,1288 @@
+{
+  "capitol": 8,
+  "titlu_capitol": "Piața și echilibrul său",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (definitia pietei, cererea, oferta, elasticitatea, pretul de echilibru). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (EQ(P) pentru cerere si oferta, EQ(V) pentru cerere, functii de cerere/oferta, pretul de echilibru).",
+  "intrebari": [
+    {
+      "id": "C8_T01",
+      "capitol": 8,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața, în sens economic, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Spațiul economic în care se întâlnește cererea cumpărătorilor cu oferta vânzătorilor, care schimbă între ei bunuri economice ce tind să se echilibreze la un anumit nivel al prețului",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Ansamblul resurselor economice disponibile într-o economie națională",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar spațiul geografic unde se desfășoară tranzacții comerciale, fără nicio componentă virtuală",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Totalitatea firmelor care produc același bun economic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Piața poate fi un spațiu real, geografic, dar și unul virtual, electronic — esențial este că acolo se întâlnesc cererea cumpărătorilor cu oferta vânzătorilor, iar schimbul tinde să echilibreze bunurile la un anumit nivel al prețului. Prin urmare, răspunsul corect este: Spațiul economic în care se întâlnește cererea cumpărătorilor cu oferta vânzătorilor, care schimbă între ei bunuri economice ce tind să se echilibreze la un anumit nivel al prețului."
+    },
+    {
+      "id": "C8_T02",
+      "capitol": 8,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele NU se numără printre elementele definitorii principale ale pieței?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Locul unde se întâlnesc, comunică și se informează vânzătorii și cumpărătorii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Locul unde întotdeauna statul stabilește prin lege prețul tuturor bunurilor economice",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Locul unde se confruntă oferta și cererea, formându-se prețul",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Locul unde se manifestă concurența",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Piața este, prin definiție, locul unde prețul se formează liber, prin confruntarea cererii cu oferta — nu locul unde statul fixează întotdeauna prin lege prețul tuturor bunurilor; aceasta ar caracteriza cel mult prețurile administrate, nu regula generală a pieței. Prin urmare, răspunsul corect este: Locul unde întotdeauna statul stabilește prin lege prețul tuturor bunurilor economice."
+    },
+    {
+      "id": "C8_T03",
+      "capitol": 8,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Variabilele pieței moderne sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar prețul și profitul firmelor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar cererea și oferta, fără nicio altă variabilă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar concurența și numărul de firme de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Mărfurile, cererea, oferta, prețul și concurența",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Piața modernă funcționează prin interacțiunea a cinci variabile fundamentale: mărfurile tranzacționate, cererea, oferta, prețul și concurența — nu doar o pereche sau alta dintre acestea, luată izolat. Prin urmare, răspunsul corect este: Mărfurile, cererea, oferta, prețul și concurența."
+    },
+    {
+      "id": "C8_T04",
+      "capitol": 8,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre funcțiile principale ale pieței se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Funcția de eliminare completă a concurenței",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Funcția de stabilire unilaterală a prețurilor de către stat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Funcția de limitare a libertății de alegere a consumatorilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Funcția de informare a agenților economici privind variabilele pieței",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Piața informează agenții economici privind variabilele sale (preț, cerere, ofertă), reglează activitatea economică prin adaptarea reciprocă cerere-ofertă și face selecția agenților pe criterii de eficiență — funcții complet diferite de cele descrise în celelalte variante. Prin urmare, răspunsul corect este: Funcția de informare a agenților economici privind variabilele pieței."
+    },
+    {
+      "id": "C8_T05",
+      "capitol": 8,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața prodfactorilor (monetară, a muncii, a capitalurilor, a resurselor naturale) se deosebește de piața satisfactorilor prin faptul că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Piața satisfactorilor nu implică nicio formă de concurență",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cele două piețe sunt identice, doar denumirea diferă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Piața prodfactorilor privește bunurile destinate producției, iar piața satisfactorilor privește bunurile destinate consumului final",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Piața prodfactorilor este întotdeauna mai mică decât piața satisfactorilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Distincția dintre cele două piețe ține de natura economică a obiectului tranzacționat: prodfactorii (monedă, muncă, capitaluri, resurse naturale) alimentează producția, în timp ce satisfactorii sunt bunuri economice destinate direct consumului final. Prin urmare, răspunsul corect este: Piața prodfactorilor privește bunurile destinate producției, iar piața satisfactorilor privește bunurile destinate consumului final."
+    },
+    {
+      "id": "C8_T06",
+      "capitol": 8,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cererea de bunuri economice reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Totalitatea nevoilor umane, indiferent dacă sunt satisfăcute prin piață sau nu",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar cantitatea efectiv cumpărată la un anumit preț fix",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cantitatea de bunuri economice produsă de o firmă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cantitatea maximă dorită și care poate fi cumpărată dintr-un bun economic, într-o perioadă de timp, la diferite niveluri ale prețului acelui bun",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cererea nu se rezumă la o singură cantitate, la un singur preț: ea reflectă cantitatea maximă dorită și care poate fi cumpărată, într-o perioadă de timp, la DIFERITE niveluri ale prețului. Prin urmare, răspunsul corect este: Cantitatea maximă dorită și care poate fi cumpărată dintr-un bun economic, într-o perioadă de timp, la diferite niveluri ale prețului acelui bun."
+    },
+    {
+      "id": "C8_T07",
+      "capitol": 8,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Relația dintre cerere și cantitatea cerută dintr-un bun economic, la un anumit preț, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ca de la întreg (cererea) la parte (cantitatea cerută)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "De identitate perfectă, cele două noțiuni fiind sinonime",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "De independență totală, cele două noțiuni nefiind legate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ca de la parte (cererea) la întreg (cantitatea cerută)",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cererea reflectă totalitatea cantităților cerute corespunzătoare unor niveluri diferite ale prețului, în timp ce cantitatea cerută este doar valoarea corespunzătoare unui singur nivel de preț — de aceea relația dintre ele este ca de la întreg la parte. Prin urmare, răspunsul corect este: Ca de la întreg (cererea) la parte (cantitatea cerută)."
+    },
+    {
+      "id": "C8_T08",
+      "capitol": 8,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Legea cererii reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Relația invers proporțională (negativă) dintre preț și cantitatea cerută, dacă celelalte împrejurări nu se modifică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Relația direct proporțională dintre preț și cantitatea cerută",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărei relații între preț și cantitatea cerută",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O relație valabilă doar pentru bunurile de lux",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Legea cererii este chiar relația invers proporțională dintre preț și cantitatea cerută: când prețul crește, cantitatea cerută scade (constrângerea cererii), iar când prețul scade, cantitatea cerută crește (extinderea cererii), dacă celelalte condiții rămân neschimbate. Prin urmare, răspunsul corect este: Relația invers proporțională (negativă) dintre preț și cantitatea cerută, dacă celelalte împrejurări nu se modifică."
+    },
+    {
+      "id": "C8_T09",
+      "capitol": 8,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Factorul principal care influențează cererea, printr-o relație negativă (invers proporțională), este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Anotimpul și tradițiile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Numărul de consumatori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Prețul bunului respectiv",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Venitul consumatorului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Prețul este factorul principal al cererii, cu o relație negativă — venitul, numărul de consumatori, anotimpul și tradițiile sunt, în schimb, factori non-preț, care influențează cererea printr-o relație pozitivă, deplasând întreaga curbă a cererii. Prin urmare, răspunsul corect este: Prețul bunului respectiv."
+    },
+    {
+      "id": "C8_T10",
+      "capitol": 8,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Elasticitatea cererii reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nivelul absolut al prețului de echilibru al unui bun",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sensibilitatea (reacția) cantității cerute datorită modificării factorilor care o influențează, în principal preț și venit",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre cerere și ofertă la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cantitatea maximă absolută care poate fi cumpărată dintr-un bun, indiferent de preț",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Elasticitatea cererii nu este o mărime absolută, ci una relativă: ea măsoară cât de sensibilă (reactivă) este cantitatea cerută la modificarea prețului sau a venitului, prin intermediul coeficientului de elasticitate. Prin urmare, răspunsul corect este: Sensibilitatea (reacția) cantității cerute datorită modificării factorilor care o influențează, în principal preț și venit."
+    },
+    {
+      "id": "C8_T11",
+      "capitol": 8,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă modificarea procentuală a cantității cerute este mai mare decât modificarea procentuală a prețului [EQ(p) > 1], cererea este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Inelastică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Elastică",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Perfect inelastică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cu elasticitate unitară",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Când Δ%Q > Δ%P, coeficientul de elasticitate depășește 1, iar cererea este considerată elastică — specifică, de exemplu, bunurilor de lux sau celor cu mulți substituenți. Prin urmare, răspunsul corect este: Elastică."
+    },
+    {
+      "id": "C8_T12",
+      "capitol": 8,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cererea perfect inelastică se caracterizează prin faptul că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cererea este specifică exclusiv bunurilor de lux",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cantitatea cerută nu se modifică indiferent de variația prețului [EQ(p) = 0]",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Cantitatea cerută variază exact proporțional cu prețul",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "La același preț, cantitatea cerută se modifică nelimitat [EQ(p) = +∞]",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Cererea perfect inelastică este cazul extrem opus celei perfect elastice: cantitatea cerută rămâne aceeași indiferent cât de mult variază prețul, ceea ce corespunde unui coeficient de elasticitate egal cu zero. Prin urmare, răspunsul corect este: Cantitatea cerută nu se modifică indiferent de variația prețului [EQ(p) = 0]."
+    },
+    {
+      "id": "C8_T13",
+      "capitol": 8,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă prețul zahărului crește, iar acest lucru determină creșterea cantității cerute din zaharină (înlocuitorul său), relația dintre cele două bunuri, din perspectiva cererii, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "De substituibilitate",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Imposibil de stabilit fără date suplimentare despre venituri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "De complementaritate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "De independență totală",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Zahărul și zaharina sunt bunuri substituibile în cerere: creșterea prețului unuia determină creșterea cantității cerute din celălalt — relație complet diferită de cea dintre bunurile complementare (unde creșterea prețului unuia reduce cererea celuilalt). Prin urmare, răspunsul corect este: De substituibilitate."
+    },
+    {
+      "id": "C8_T14",
+      "capitol": 8,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă cererea unui bun este inelastică, pentru a-și spori venitul (profitul), un întreprinzător ar trebui să:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mențină prețul constant, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Scadă prețul bunului respectiv",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Elimine complet bunul respectiv de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Mărească prețul bunului respectiv",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pentru cererea inelastică, relația dintre preț și venitul vânzătorului este direct proporțională — deci mărirea prețului este exact decizia care sporește venitul (profitul) întreprinzătorului, spre deosebire de cererea elastică, unde relația este negativă. Prin urmare, răspunsul corect este: Mărească prețul bunului respectiv."
+    },
+    {
+      "id": "C8_T15",
+      "capitol": 8,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bunurile pentru care elasticitatea cererii în funcție de venit este negativă [EQ(v) < 0] se numesc bunuri:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Normale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Superioare (de lux)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Inferioare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Libere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Bunurile inferioare sunt exact acele bunuri a căror cerere scade atunci când venitul consumatorului crește — de exemplu, unele bunuri alimentare de bază — spre deosebire de bunurile normale sau superioare, a căror cerere crește odată cu venitul. Prin urmare, răspunsul corect este: Inferioare."
+    },
+    {
+      "id": "C8_T16",
+      "capitol": 8,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Oferta de bunuri economice reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cantitatea de bunuri economice cerută de consumatori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar cantitatea efectiv vândută la un preț fix, dat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea resurselor naturale ale unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cantitatea maximă dorită și care poate fi vândută, într-o perioadă de timp, dintr-un bun economic, la diferite niveluri ale prețului",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "La fel ca cererea, oferta reflectă o relație între totalitatea cantităților oferite corespunzătoare unor niveluri diferite ale prețului, nu o singură cantitate vândută la un preț fix. Prin urmare, răspunsul corect este: Cantitatea maximă dorită și care poate fi vândută, într-o perioadă de timp, dintr-un bun economic, la diferite niveluri ale prețului."
+    },
+    {
+      "id": "C8_T17",
+      "capitol": 8,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Legea ofertei reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Relația direct proporțională dintre preț și cantitatea ofertei, dacă celelalte împrejurări nu se modifică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Relația invers proporțională dintre preț și cantitatea ofertei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărei legături între preț și cantitatea oferită",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O relație valabilă doar pe piețele cu concurență imperfectă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Spre deosebire de legea cererii (relație negativă), legea ofertei reflectă o relație direct proporțională: extinderea ofertei când prețul crește și contracția ofertei când prețul scade, dacă celelalte condiții rămân neschimbate. Prin urmare, răspunsul corect este: Relația direct proporțională dintre preț și cantitatea ofertei, dacă celelalte împrejurări nu se modifică."
+    },
+    {
+      "id": "C8_T18",
+      "capitol": 8,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea prețului petrolului, care determină creșterea prețului și, implicit, a cantității oferite de motorină și benzină (produse obținute din același proces de rafinare), reflectă o relație între bunuri:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Independente în ofertă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Complementare în ofertă",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Substituibile în ofertă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Fără nicio legătură cu oferta",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Petrolul, motorina și benzina sunt bunuri complementare în ofertă, obținute împreună din același proces de producție — creșterea prețului materiei prime (petrolul) antrenează creșterea prețului și a cantității oferite din produsele derivate. Prin urmare, răspunsul corect este: Complementare în ofertă."
+    },
+    {
+      "id": "C8_T19",
+      "capitol": 8,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Prețul de echilibru (Pe) este prețul la care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar vânzătorii își maximizează profitul, indiferent de cumpărători",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Statul stabilește în mod obligatoriu nivelul tranzacțiilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cererea și oferta satisfăcute sunt egale la volumul maxim de tranzacții pe piața unui bun",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Cererea este întotdeauna mai mare decât oferta",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Prețul de echilibru se formează liber la piață, exact în punctul unde cererea și oferta satisfăcute devin egale, la volumul maxim posibil de tranzacții — asigurând, astfel, satisfacerea optimă atât a vânzătorilor, cât și a cumpărătorilor. Prin urmare, răspunsul corect este: Cererea și oferta satisfăcute sunt egale la volumul maxim de tranzacții pe piața unui bun."
+    },
+    {
+      "id": "C8_T20",
+      "capitol": 8,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un preț maxim („plafon”), fixat de guvern sub nivelul prețului de echilibru, are ca scop principal:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Protejarea, în principal, a intereselor vânzătorilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea completă a cererii de pe piața bunului respectiv",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Protejarea, în principal, a intereselor cumpărătorilor",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Creșterea nelimitată a ofertei de pe piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Prețul maxim (plafon) este fixat tocmai pentru a proteja cumpărătorii, atunci când oferta este mai mică decât cererea — spre deosebire de prețul minim („podea”), care protejează interesele vânzătorilor. Prin urmare, răspunsul corect este: Protejarea, în principal, a intereselor cumpărătorilor."
+    },
+    {
+      "id": "C8_E01",
+      "capitol": 8,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Indicele cererii = 95%, iar al prețului = 104%. Coeficientul de elasticitate a cererii față de preț (EQ/P) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,25",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "0,8",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Δ%Q = –5%, Δ%P = 4% ⇒ EQ/P = –(Δ%Q/Δ%P) = –(–5/4) = 1,25."
+    },
+    {
+      "id": "C8_E02",
+      "capitol": 8,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă EQ/V = 2,5, iar indicele cererii este 70%, atunci modificarea relativă a venitului (Δ%V) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "– 12%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "12%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "– 30%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "175%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Δ%Q = –30%. EQ/V = 2,5 = (–30% : Δ%V) ⇒ Δ%V = –30%/2,5 = –12%."
+    },
+    {
+      "id": "C8_E03",
+      "capitol": 8,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prețurile sporesc cu 20%, în condițiile unei elasticități a cererii față de preț de 1,6. Indicele cererii (IQ) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "88%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "12%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "68%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "32%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Δ%P = 20%; 1,6 = –(–Δ%Q : 20%) ⇒ Δ%Q = –32% ⇒ IQ = 100% – 32% = 68%."
+    },
+    {
+      "id": "C8_E04",
+      "capitol": 8,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prețul unui bun, în perioada curentă, este de 4 ori mai mic decât în perioada anterioară, iar Q0 = Q1/3 (unde Q este cantitatea cerută din acel bun). Coeficientul de elasticitate a cererii față de preț (EQ/P) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3,75",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "75%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2,66",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "IP = 25% → Δ%P = –75%, iar IQ = 300% → Δ%Q = 200% ⇒ EQ/P = –(200/–75) = 2,66."
+    },
+    {
+      "id": "C8_E05",
+      "capitol": 8,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o zi, 8 persoane doresc să cumpere căpșuni. Funcția individuală a cererii de căpșuni este: Qi = 700 – 4P. Dacă prețul căpșunilor este 100 lei, cererea pieței de căpșuni (QT) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3.750 kg",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "800 kg",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "300 kg",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2.400 kg",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Qindiv. = 700 – 4×100 = 300 kg, iar QT = 300 kg × 8 persoane = 2.400 kg de căpșuni."
+    },
+    {
+      "id": "C8_E06",
+      "capitol": 8,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă P1 = 45 lei, iar cantitatea cerută crește de la 40 la 80 bucăți și EQ/P = 2, atunci prețul inițial (P0) a fost:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "22,5 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "180 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "90 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "45 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "IQ = (80/40) × 100 = 200% → Δ%Q = 100% → –Δ%P = 100%/2 = 50% ⇒ IP = 50% ⇒ P0 = P1/0,5 = 2×45 = 90 lei."
+    },
+    {
+      "id": "C8_E07",
+      "capitol": 8,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În condițiile în care ΔQ/Q0 = 0,22 (unde Q = cantitatea cerută), V0 = 300 u.m. și EQ/V = 0,88, atunci sporul venitului în mărimi absolute (ΔV) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "375 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "75 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "25 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "66 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Δ%Q = 22% → Δ%V = Δ%Q : EQ/V = 22%/0,88 = 25% → V1 = 1,25 × 300 = 375 u.m. ⇒ ΔV = 375 – 300 = 75 u.m."
+    },
+    {
+      "id": "C8_E08",
+      "capitol": 8,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă P0 = 30 u.m. și el sporește cu 36 u.m., oferta inițială era de 900 buc., iar EQ/P = 0,2, atunci oferta în perioada curentă (Q1) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.200 buc.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.080 buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "180 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1.116 buc.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "P1 = 66 u.m. → IP = (66/30) × 100 = 220% → Δ%P = 120% → Δ%Q = 0,2 × 120% = 24% → IQ = 124% ⇒ Q1 = 1,24 × 900 = 1.116 buc."
+    },
+    {
+      "id": "C8_E09",
+      "capitol": 8,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția cererii pe piața unui bun este de tipul: Ce.(Q) = 1.200 – 8P și a ofertei: Of.(Q) = 4P + 300. Prețul de echilibru (Pe) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "75",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "60",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "100",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Ce. = Of. → 1.200 – 8P = 4P + 300 → 900 = 12P ⇒ Pe = 75."
+    },
+    {
+      "id": "C8_E10",
+      "capitol": 8,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția ofertei individuale pe piața unui bun este de tipul: Q = 30 + 3P, iar P = 6 u.m. Dacă pe piața bunului respectiv sunt 80 vânzători, atunci oferta pieței (QT) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2.400 buc.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3.840 buc.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "384 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "48 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Qi = 30 + 3×6 = 48 buc. ⇒ QT = 48 buc. × 80 = 3.840 buc."
+    },
+    {
+      "id": "C8_E11",
+      "capitol": 8,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția cererii pe piața unui bun este de tipul: Ce.(Q) = 500 – 4P și a ofertei: Of.(Q) = 200 + 6P. Cantitatea de echilibru (Qe) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "300",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "200",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "380",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "500",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Ce. = Of. → 500 – 4P = 200 + 6P → Pe = 30, iar Qe = 200 + 6×30 = 380."
+    },
+    {
+      "id": "C8_E12",
+      "capitol": 8,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Tabelul de mai jos reflectă corelația: preț (P) – cantitate oferită (Q) și, respectiv, coeficientul de elasticitate a ofertei față de preț (EQ/P): Trimestrul I: P=4, Q=600, EQ/P=–; Trimestrul II: P=7, Q=?, EQ/P=1; Trimestrul III: P=?, Q=1.200, EQ/P=0,5; Trimestrul IV: P=13, Q=1.600, EQ/P=?. Completând tabelul, dacă în trimestrul IV prețul scade cu 30% față de situația inițială din acel trimestru, în condițiile aceluiași coeficient de elasticitate a ofertei față de preț, indicele cantității oferite (IQ) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "52%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "77,5%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "22,5%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "125%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "EQ/P(tr.II) = 1 = [(Q.II – 600)/600] × 4/(7–4) ⇒ Q.II = 1.050 buc. EQ/P(tr.III) = 0,5 = [(1.200–1.050)/1.050] × 7/(P.III–7) ⇒ P.III = 9 u.m. EQ/P(tr.IV) = [(1.600–1.200)/1.200] × 9/(13–9) = 0,75. Dacă Δ%P(tr.IV) = –30% și EQ/P(tr.IV) = 0,75 ⇒ Δ%Q(tr.IV) = 0,75 × (–30%) = –22,5% ⇒ IQ = 100% – 22,5% = 77,5%."
+    },
+    {
+      "id": "C8_E13",
+      "capitol": 8,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Tabelul de mai jos reflectă corelația: venit (V) – cantitate cerută (Q): Trimestrul I: V=800, Q=200; Trimestrul II: V=1.000, Q=240; Trimestrul III: V=1.250, Q=300; Trimestrul IV: V=1.500, Q=?. Știind că, între trimestrele III și IV, coeficientul de elasticitate a cererii față de venit este EQ/V=0,5, cantitatea cerută în trimestrul IV (Q.IV) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "350",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "315",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "330",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "360",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Δ%V(III→IV) = (1.500–1.250)/1.250 × 100 = 20% → Δ%Q = EQ/V × Δ%V = 0,5 × 20% = 10% ⇒ Q.IV = 300 × 1,10 = 330. (Verificare: EQ/V(I→II) = [(240–200)/200] : [(1.000–800)/800] = 20%:25% = 0,8, iar EQ/V(II→III) = [(300–240)/240] : [(1.250–1.000)/1.000] = 25%:25% = 1 — coeficienți diferiți pe fiecare interval, ceea ce e firesc.) Dacă, suplimentar, în trimestrul II venitul ar crește cu 25%, în condițiile EQ/V(tr.II)=0,8, atunci Δ%Q(tr.II) = 0,8 × 25% = 20%."
+    },
+    {
+      "id": "C8_E14",
+      "capitol": 8,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe piața unui bun, funcția cererii este de tipul: Ce.(Q) = 80 – 6P, iar a ofertei: Of.(Q) = 20 + 4P. Dacă guvernul impune un preț administrat de 3 u.m., pe piața bunului respectiv ar exista:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "deficit al cererii de 30 buc.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "deficit al ofertei de 44 buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "excedent al ofertei de 30 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "excedent al cererii de 30 buc.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "80 – 6P = 20 + 4P → Pe = 6 u.m., Qe = 44 buc. Cum 3 u.m. < 6 u.m. (prețul de echilibru), rezultă Ce. > Of. la acest preț: Ce.(3) = 80 – 18 = 62 buc., Of.(3) = 20 + 12 = 32 buc. ⇒ excedent al cererii = 62 – 32 = 30 buc."
+    },
+    {
+      "id": "C8_E15",
+      "capitol": 8,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția ofertei este de tipul: Q = 20 + 4P, iar P0 = 4. Coeficientul de elasticitate a ofertei față de preț (EQ/P) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "9/4",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2/9",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "9/2",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4/9",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Q0 = 20 + 4×4 = 36. Coeficientul de elasticitate se calculează ca produsul dintre panta funcției (4) și raportul P0/Q0: EQ/P = 4 × (4/36) = 16/36 = 4/9."
+    },
+    {
+      "id": "C8_E16",
+      "capitol": 8,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea ofertei bunului X a scăzut cu 4%, iar volumul B.E. marfare a crescut cu 20%, atunci indicele prețului bunului X (Ip) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "80%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "16%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "500%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "124%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I(P×Q) = Ip × IQ = 96% = Ip × 120% ⇒ Ip = (96/120) × 100 = 80%."
+    },
+    {
+      "id": "C8_E17",
+      "capitol": 8,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă prețul scade cu 10%, iar coeficientul elasticității cererii în funcție de preț este 2, atunci coeficientul elasticității cererii în funcție de venit [EQ(V)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,5",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,5",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "3,5",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,5",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "EQ(P) = –(Δ%Q/–10%) = 2 → Δ%Q = 20% → IQ = 120% (Q1 = 1,2Q0), iar IP = 90% (P1 = 0,9P0). VT1 = Q1×P1 = 1,2Q0 × 0,9P0 = 1,08VT0 → IVT = 108% → Δ%VT = 8% ⇒ EQ(V) = (Δ%Q : Δ%VT) = 20% : 8% = 2,5."
+    },
+    {
+      "id": "C8_E18",
+      "capitol": 8,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă IP/IQ = 2 și prețurile sporesc cu 25%, atunci coeficientul de elasticitate a cererii față de preț [EQ(P)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,5",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "0,5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2,5",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Ip = 125% → IQ = 125%/2 = 62,5% → Δ%Q = –37,5%. EQ(P) = –(–37,5% : 25%) = 1,5."
+    },
+    {
+      "id": "C8_E19",
+      "capitol": 8,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă oferta a crescut cu 1.500 unități, în condițiile în care Q0 = 6.000 unități și P0 = 300 lei, iar EQ(P) = 2, atunci prețul a crescut (ΔP) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "12,5 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "50 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "37,5 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "75 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Q1 = 6.000 + 1.500 = 7.500 → IQ = (7.500/6.000) × 100 = 125% → Δ%Q = 25% → 2 = 25% : Δ%P ⇒ Δ%P = 12,5% → IP = 112,5% = (P1/300) × 100 → P1 = 337,5 lei ⇒ ΔP = 337,5 – 300 = 37,5 lei."
+    },
+    {
+      "id": "C8_E20",
+      "capitol": 8,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În tabelul de mai jos se prezintă corelația dintre variația prețului (P) și a cantității oferite (Q): P = 1, 2, 3, 4 u.m.; Q = 8, 16, 36, 72 buc. Afirmația corectă este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "EQ(P) = 2,5, dacă „P” crește de la 2 la 3 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "EQ(P) = 2, dacă „P” crește de la 1 la 2 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "EQ(P) = 2,5, dacă „P” crește de la 3 la 4 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "EQ(P) = 1,5, dacă „P” crește de la 2 la 3 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "EQ(P) = [(16–8)/8] × 1/1 = 1, dacă P crește de la 1 la 2. EQ(P) = [(36–16)/16] × 2/1 = 2,5, dacă P crește de la 2 la 3. EQ(P) = [(72–36)/36] × 3/1 = 3, dacă P crește de la 3 la 4 ⇒ singura afirmație corectă este cea referitoare la intervalul 2→3 u.m., cu EQ(P) = 2,5."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

@@ -1,0 +1,971 @@
+{
+  "version": "5.4.0",
+  "legend": {
+    "A": "explicit graph/relationship in source",
+    "B": "direct formula/data derivation",
+    "C": "deterministic visualization of textual source"
+  },
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Introducere în economie",
+      "source": "Capitolul 1 - Introducere în Economie_ex.pdf",
+      "moduleCount": 2,
+      "evidence": "Resurse limitate, alegeri și cost de oportunitate; exerciții cu combinații alternative de producție.",
+      "modules": [
+        {
+          "id": "cost_oportunitate",
+          "title": "Frontiera alegerilor și costul de oportunitate",
+          "kind": "frontier",
+          "status": "B",
+          "formulas": [
+            "C.op = -ΔX / ΔY",
+            "C.op valoric = (-ΔX/ΔY) × Px"
+          ]
+        },
+        {
+          "id": "combinatii_productie",
+          "title": "Combinații alternative de producție",
+          "kind": "frontier_discrete",
+          "status": "B",
+          "formulas": [
+            "C.op = -ΔX / ΔY"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 2,
+      "title": "Economia de piață și proprietatea",
+      "source": "Capitolul 2 - Economia De Piață și Propietatea_ex.pdf",
+      "moduleCount": 3,
+      "evidence": "Fazele activității economice; cele șapte sectoare instituționale; fluxuri reale și monetare care formează circuitul economic.",
+      "modules": [
+        {
+          "id": "circuit_economic",
+          "title": "Circuitul economic: fluxuri reale și monetare",
+          "kind": "flow",
+          "status": "C",
+          "formulas": []
+        },
+        {
+          "id": "sectoare_institutionale",
+          "title": "Sectoarele instituționale ale economiei",
+          "kind": "institutional_sectors",
+          "status": "C",
+          "formulas": []
+        },
+        {
+          "id": "fazele_activitatii",
+          "title": "Fazele activității economice",
+          "kind": "process",
+          "status": "C",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 3,
+      "title": "Utilitatea bunurilor economice și consumatorul rațional",
+      "source": "Capitolul 3 - Utilitatea bunurilor economice și comportamentul consumatorului rational_ex.pdf",
+      "moduleCount": 3,
+      "evidence": "UT/Umg, legea utilității marginale descrescătoare, bugetul consumatorului și condiția Umg/P pentru alegerea rațională.",
+      "modules": [
+        {
+          "id": "ut_umg",
+          "title": "Utilitatea totală și utilitatea marginală",
+          "kind": "utility",
+          "status": "A",
+          "formulas": [
+            "UT = Σ Umg",
+            "Umg = ΔUT / ΔQ"
+          ]
+        },
+        {
+          "id": "dreapta_buget",
+          "title": "Dreapta bugetului",
+          "kind": "budget",
+          "status": "B",
+          "formulas": [
+            "V = Px × X + Py × Y"
+          ]
+        },
+        {
+          "id": "alegere_rationala",
+          "title": "Alegerea rațională: Umg/P",
+          "kind": "ratio_choice",
+          "status": "B",
+          "formulas": [
+            "Umg(X)/Px = Umg(Y)/Py"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 4,
+      "title": "Factorii de producție",
+      "source": "Capitolul 4 - Factorii de Producție_ex.pdf",
+      "moduleCount": 4,
+      "evidence": "Muncă, natură, capital; capital fix/circulant, amortizare, combinare/substituire și productivitate marginală a factorului.",
+      "modules": [
+        {
+          "id": "amortizare",
+          "title": "Amortizarea capitalului fix",
+          "kind": "amortization",
+          "status": "B",
+          "formulas": [
+            "A = KF / T",
+            "RA = (A/KF) × 100 = (1/T) × 100"
+          ]
+        },
+        {
+          "id": "capital_tehnic",
+          "title": "Capital tehnic utilizat și consumat",
+          "kind": "capital_composition",
+          "status": "B",
+          "formulas": [
+            "KT = KF + KC",
+            "K.cons = A + KC"
+          ]
+        },
+        {
+          "id": "substituire",
+          "title": "Substituirea factorilor de producție",
+          "kind": "substitution",
+          "status": "B",
+          "formulas": [
+            "Rms = ΔX / -ΔY",
+            "Rms = Wmg(Y) / Wmg(X)"
+          ]
+        },
+        {
+          "id": "produs_marginal_factor",
+          "title": "Productivitatea marginală a unui factor de producție",
+          "kind": "marginal_factor",
+          "status": "B",
+          "formulas": [
+            "Wmg = ΔQ / ΔFactor",
+            "ΔQ = Q1 - Q0",
+            "ΔFactor = Factor1 - Factor0"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 5,
+      "title": "Eficiența economică și productivitatea",
+      "source": "Capitolul 5 - Eficienta Economica și productivitatea_ex.pdf",
+      "moduleCount": 4,
+      "evidence": "Eficiență efect/efort; productivitate medie și marginală, reprezentare grafică, stadii și dinamică T0/T1.",
+      "modules": [
+        {
+          "id": "productivitate",
+          "title": "Producție, productivitate medie și marginală",
+          "kind": "productivity",
+          "status": "A",
+          "formulas": [
+            "Wmed = Q/L",
+            "Wmg = ΔQ/ΔL",
+            "QT = ΣWmg"
+          ]
+        },
+        {
+          "id": "stadii_productie",
+          "title": "Stadiile producției",
+          "kind": "productivity_stages",
+          "status": "A",
+          "formulas": [
+            "Wmg = Wmed la maximul Wmed"
+          ]
+        },
+        {
+          "id": "eficienta",
+          "title": "Eficiență: efect / efort",
+          "kind": "efficiency",
+          "status": "B",
+          "formulas": [
+            "Eficiență = efect / efort"
+          ]
+        },
+        {
+          "id": "dinamica_productivitatii",
+          "title": "Dinamica productivității muncii: T0 → T1",
+          "kind": "productivity_dynamics",
+          "status": "B",
+          "formulas": [
+            "W0 = Q0/L0",
+            "W1 = Q1/L1",
+            "IQ = Q1/Q0 × 100",
+            "IL = L1/L0 × 100",
+            "IW = W1/W0 × 100 = IQ/IL × 100"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 6,
+      "title": "Costul producției",
+      "source": "Capitolul 6 - Costul producției_ex.pdf",
+      "moduleCount": 3,
+      "evidence": "CF, CV, CT, CFM, CVM, CTM și Cmg; relația Cmg–CTM și minimul CTM.",
+      "modules": [
+        {
+          "id": "costuri_totale",
+          "title": "CF, CV și CT",
+          "kind": "costs",
+          "status": "A",
+          "formulas": [
+            "CT = CF + CV"
+          ]
+        },
+        {
+          "id": "costuri_medii",
+          "title": "CFM, CVM, CTM și Cmg",
+          "kind": "costs",
+          "status": "A",
+          "formulas": [
+            "CFM = CF/Q",
+            "CVM = CV/Q",
+            "CTM = CT/Q",
+            "Cmg = ΔCT/ΔQ"
+          ]
+        },
+        {
+          "id": "cost_marginal",
+          "title": "Cmg și minimul CTM",
+          "kind": "costs",
+          "status": "A",
+          "formulas": [
+            "Cmg = CTM la minimul CTM"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 7,
+      "title": "Profitul",
+      "source": "Capitolul 7 - Profitul_ex.pdf",
+      "moduleCount": 7,
+      "evidence": "Profit total/unitar/marginal, rate, profit brut/net/normal/economic, prag de rentabilitate și renta funciară diferențiată.",
+      "modules": [
+        {
+          "id": "prag_rentabilitate",
+          "title": "Venit total, cost total și pragul de rentabilitate",
+          "kind": "break_even",
+          "status": "B",
+          "formulas": [
+            "VT = P × Q",
+            "CT = CF + CV",
+            "Prag: VT = CT sau P = CMT"
+          ]
+        },
+        {
+          "id": "profit_total",
+          "title": "Profit total în funcție de producție",
+          "kind": "profit_curve",
+          "status": "B",
+          "formulas": [
+            "Pr.T = VT - CT"
+          ]
+        },
+        {
+          "id": "profit_unitar",
+          "title": "Profitul unitar și profitul total",
+          "kind": "profit_unit",
+          "status": "B",
+          "formulas": [
+            "Pr.u = P - CMT",
+            "Pr.T = Pr.u × Q"
+          ]
+        },
+        {
+          "id": "profit_marginal",
+          "title": "Profitul marginal și nivelul optim",
+          "kind": "marginal_profit",
+          "status": "B",
+          "formulas": [
+            "Pr.mg = Vmg - Cmg",
+            "Optim: Vmg = Cmg"
+          ]
+        },
+        {
+          "id": "rate_profit",
+          "title": "Ratele profitului",
+          "kind": "profit_rates",
+          "status": "B",
+          "formulas": [
+            "RPr(CT)=Pr/CT×100",
+            "RPr(KT)=Pr/KT×100",
+            "RPr(CA)=Pr/CA×100"
+          ]
+        },
+        {
+          "id": "forme_profit",
+          "title": "Profit brut, net, normal și economic",
+          "kind": "profit_forms",
+          "status": "B",
+          "formulas": [
+            "Pr.brut = CA - CT",
+            "Pr.net = Pr.brut - impozit",
+            "Pr.economic = Pr.net - Pr.normal"
+          ]
+        },
+        {
+          "id": "renta_diferentiala",
+          "title": "Renta funciară diferențiată",
+          "kind": "rent_differential",
+          "status": "B",
+          "formulas": [
+            "CMTi = CT / Qi",
+            "Piața este raportată la terenul marginal",
+            "Renta_i = (P - CMT_i) × Q_i"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 8,
+      "title": "Piața și echilibrul său",
+      "source": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+      "moduleCount": 9,
+      "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate.",
+      "modules": [
+        {
+          "id": "echilibru",
+          "title": "Cerere, ofertă și echilibru",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "miscare_pret",
+          "title": "Mișcare pe curbe la modificarea prețului",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "deplasare_cerere",
+          "title": "Deplasarea cererii T0 → T1",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "deplasare_oferta",
+          "title": "Deplasarea ofertei T0 → T1",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "elasticitate",
+          "title": "Elasticitatea cererii și ofertei",
+          "kind": "elasticity",
+          "status": "B",
+          "formulas": [
+            "Ec = -Δ%Qc / Δ%P",
+            "Eo = Δ%Qo / Δ%P"
+          ]
+        },
+        {
+          "id": "tipuri_elasticitate_cerere",
+          "title": "Tipurile de elasticitate ale cererii față de preț",
+          "kind": "elasticity_family",
+          "status": "C",
+          "formulas": [
+            "Ec(P) = -Δ%Q / Δ%P",
+            "Ec>1 elastică",
+            "Ec=1 unitară",
+            "Ec<1 inelastică"
+          ]
+        },
+        {
+          "id": "tipuri_elasticitate_oferta",
+          "title": "Tipurile de elasticitate ale ofertei față de preț",
+          "kind": "elasticity_family",
+          "status": "C",
+          "formulas": [
+            "Eo(P) = Δ%Q / Δ%P",
+            "Eo>1 elastică",
+            "Eo=1 unitară",
+            "Eo<1 inelastică"
+          ]
+        },
+        {
+          "id": "elasticitate_venit",
+          "title": "Elasticitatea cererii față de venit",
+          "kind": "income_elasticity",
+          "status": "B",
+          "formulas": [
+            "Ec(V) = Δ%Q / Δ%V",
+            "Ec(V)>0: bun normal",
+            "Ec(V)<0: bun inferior"
+          ]
+        },
+        {
+          "id": "pret_control",
+          "title": "Preț maxim și preț minim",
+          "kind": "price_control",
+          "status": "B",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 9,
+      "title": "Mecanismul concurențial",
+      "source": "Capitolul 9 - Mecanismul Concurential_ex.pdf",
+      "moduleCount": 2,
+      "evidence": "Concurență perfectă/imperfectă, structuri de piață și condiția de eficiență marginală utilizată didactic.",
+      "modules": [
+        {
+          "id": "firma_concurenta",
+          "title": "Firma în concurență perfectă: P = Cmg",
+          "kind": "firm_optimum",
+          "status": "B",
+          "formulas": [
+            "Profit maxim pe termen scurt: Cmg = Vmg = P"
+          ]
+        },
+        {
+          "id": "structuri_piata",
+          "title": "Comparatorul structurilor de piață",
+          "kind": "market_structure",
+          "status": "C",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 10,
+      "title": "Piața monetară",
+      "source": "Capitolul 10 - Paiață Monetara_ex.pdf",
+      "moduleCount": 7,
+      "evidence": "Piața monetară, M·V=P·Q, puterea de cumpărare, dobândă simplă/compusă, rată nominală/reală și câștig/profit bancar.",
+      "modules": [
+        {
+          "id": "piata_creditului",
+          "title": "Cerere și ofertă de monedă / credit",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "masa_monetara",
+          "title": "Ecuația M · V = P · Q",
+          "kind": "money_identity",
+          "status": "B",
+          "formulas": [
+            "M · V = P · Q"
+          ]
+        },
+        {
+          "id": "putere_cumparare",
+          "title": "Puterea de cumpărare a banilor",
+          "kind": "purchasing_power",
+          "status": "B",
+          "formulas": [
+            "PCB = 1 / I_P",
+            "PCM = M / I_P"
+          ]
+        },
+        {
+          "id": "dobanda_simpla",
+          "title": "Dobânda simplă",
+          "kind": "simple_interest",
+          "status": "B",
+          "formulas": [
+            "Ds = Cr × d' × n"
+          ]
+        },
+        {
+          "id": "dobanda_compusa",
+          "title": "Dobânda compusă",
+          "kind": "compound_interest",
+          "status": "B",
+          "formulas": [
+            "Sₙ = Cr × (1 + d')ⁿ"
+          ]
+        },
+        {
+          "id": "dobanda_nominala_reala",
+          "title": "Rata dobânzii nominale, reale și inflația",
+          "kind": "nominal_real_interest",
+          "status": "B",
+          "formulas": [
+            "d'n = d'r + ri",
+            "d'r = d'n - ri"
+          ]
+        },
+        {
+          "id": "castig_profit_bancar",
+          "title": "Dobânda activă, pasivă, câștigul și profitul bancar",
+          "kind": "banking_spread",
+          "status": "B",
+          "formulas": [
+            "Da = Credite × d'a",
+            "Dp = Depozite × d'p",
+            "Câștig bancar = Da - Dp",
+            "Profit brut = Câștig bancar - costuri",
+            "Profit net = Profit brut - impozit"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 11,
+      "title": "Inflația",
+      "source": "Capitolul 11 - Inflația_ex.pdf",
+      "moduleCount": 4,
+      "evidence": "Indice general/CPI, rata inflației, coș ponderat, puterea de cumpărare și relația cu rata dobânzii reale.",
+      "modules": [
+        {
+          "id": "cos_consum",
+          "title": "Coșul de consum și indicele general al prețurilor",
+          "kind": "weighted_basket",
+          "status": "B",
+          "formulas": [
+            "I_GP = Σ(Ipᵢ × pondereᵢ)",
+            "ri = I_GP - 100%"
+          ]
+        },
+        {
+          "id": "inflatie_timp",
+          "title": "Inflația în timp",
+          "kind": "time_series",
+          "status": "B",
+          "formulas": [
+            "ri = I_P - 100%"
+          ]
+        },
+        {
+          "id": "inflatie_putere",
+          "title": "Indicele prețurilor vs puterea de cumpărare",
+          "kind": "inflation_power",
+          "status": "B",
+          "formulas": [
+            "PCB = 1/I_P",
+            "PCM = M/I_P"
+          ]
+        },
+        {
+          "id": "dobanda_reala",
+          "title": "Dobândă nominală, reală și inflație",
+          "kind": "nominal_real_interest",
+          "status": "B",
+          "formulas": [
+            "d'n = d'r + ri"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 12,
+      "title": "Piața capitalurilor",
+      "source": "Capitolul 12 - Paiața de capital_ex.pdf",
+      "moduleCount": 4,
+      "evidence": "Acțiuni/obligațiuni, curs, venit al titlului, rata dobânzii, randament și rezultat din tranzacție.",
+      "modules": [
+        {
+          "id": "actiune",
+          "title": "Cursul acțiunii vs rata dobânzii",
+          "kind": "security_inverse",
+          "status": "B",
+          "formulas": [
+            "Cs(A) = Dividend / d'"
+          ]
+        },
+        {
+          "id": "obligatiune",
+          "title": "Cursul obligațiunii vs rata dobânzii",
+          "kind": "security_inverse",
+          "status": "B",
+          "formulas": [
+            "Cs(O) = Cupon / d'"
+          ]
+        },
+        {
+          "id": "randament",
+          "title": "Randamentul titlului",
+          "kind": "security_yield",
+          "status": "B",
+          "formulas": [
+            "Rd = Venit / Curs × 100"
+          ]
+        },
+        {
+          "id": "tranzactie",
+          "title": "Câștig / pierdere din tranzacție",
+          "kind": "transaction_return",
+          "status": "B",
+          "formulas": [
+            "Câștig = (Pv - Pc)×Q + venit×Q"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 13,
+      "title": "Piața muncii",
+      "source": "Capitolul 13 - Piata Muncii_ex.pdf",
+      "moduleCount": 8,
+      "evidence": "Cerere/ofertă de muncă, salariu, salariu nominal/real, brut/net, ocupare și intervenția statului prin salariul minim.",
+      "modules": [
+        {
+          "id": "echilibru_munca",
+          "title": "Cerere, ofertă de muncă și echilibru",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "miscare_salariu",
+          "title": "Mișcare pe curbe la modificarea salariului",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "deplasare_cerere_munca",
+          "title": "Deplasarea cererii de muncă",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "deplasare_oferta_munca",
+          "title": "Deplasarea ofertei de muncă",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "salariu_real",
+          "title": "Salariul nominal și salariul real",
+          "kind": "real_wage",
+          "status": "B",
+          "formulas": [
+            "SR = SN / (I_P / 100)"
+          ]
+        },
+        {
+          "id": "grad_ocupare",
+          "title": "Gradul de ocupare a resurselor de muncă",
+          "kind": "employment_rate",
+          "status": "B",
+          "formulas": [
+            "Rocup(PAD) = PO/PAD × 100",
+            "Rocup(PAM) = PO/PAM × 100",
+            "Ș = PAD - PO"
+          ]
+        },
+        {
+          "id": "salariu_minim",
+          "title": "Salariul minim pe piața muncii",
+          "kind": "wage_floor",
+          "status": "B",
+          "formulas": [
+            "Ld = a - bW",
+            "Ls = c + dW",
+            "Echilibru: Ld = Ls",
+            "Exces ofertă de muncă = Ls - Ld la salariul minim"
+          ]
+        },
+        {
+          "id": "salariu_brut_net",
+          "title": "Salariul brut și salariul net",
+          "kind": "salary_net",
+          "status": "B",
+          "formulas": [
+            "SN.net = SN.brut × (1 - cotă rețineri)"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 14,
+      "title": "Șomajul",
+      "source": "Capitolul 14 - Somajul_ex.pdf",
+      "moduleCount": 5,
+      "evidence": "Nivel absolut/relativ, durată, structură și intensitate (total/parțial) ale șomajului; evoluția ratei în timp.",
+      "modules": [
+        {
+          "id": "structura_pad",
+          "title": "PAD, populația ocupată și șomerii",
+          "kind": "unemployment",
+          "status": "B",
+          "formulas": [
+            "Ș = PAD - PO",
+            "Rș(PAD) = Ș/PAD × 100",
+            "Rș(PO) = Ș/PO × 100"
+          ]
+        },
+        {
+          "id": "rata_somaj",
+          "title": "Rata șomajului",
+          "kind": "unemployment",
+          "status": "B",
+          "formulas": [
+            "Rș(PAD) = Ș/PAD × 100"
+          ]
+        },
+        {
+          "id": "durata_intensitatea",
+          "title": "Durata și intensitatea șomajului",
+          "kind": "unemployment_profile",
+          "status": "C",
+          "formulas": []
+        },
+        {
+          "id": "somaj_timp",
+          "title": "Evoluția șomajului",
+          "kind": "time_series",
+          "status": "B",
+          "formulas": []
+        },
+        {
+          "id": "tipuri_somaj",
+          "title": "Structura tipurilor de șomaj",
+          "kind": "editable_bars",
+          "status": "C",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 15,
+      "title": "Venitul, consumul și investițiile",
+      "source": "Capitolul 15 - Venitul, consumul si investitiile_ex.pdf",
+      "moduleCount": 7,
+      "evidence": "PIB nominal/real, venit-consum-economii, înclinații medii/marginale, investiții, multiplicator și echilibru macroeconomic.",
+      "modules": [
+        {
+          "id": "pib_real",
+          "title": "PIB nominal și PIB real",
+          "kind": "gdp_real",
+          "status": "B",
+          "formulas": [
+            "PIB real = PIB nominal / (I_P/100)"
+          ]
+        },
+        {
+          "id": "venit_consum",
+          "title": "Venit și consum",
+          "kind": "consumption",
+          "status": "B",
+          "formulas": [
+            "C = C₀ + c'×VD",
+            "E = VD - C"
+          ]
+        },
+        {
+          "id": "venit_economii",
+          "title": "Venit și economii",
+          "kind": "savings",
+          "status": "B",
+          "formulas": [
+            "E = VD - C",
+            "c' + e' = 1"
+          ]
+        },
+        {
+          "id": "inclinatii",
+          "title": "Înclinațiile marginale spre consum și economii",
+          "kind": "propensities",
+          "status": "B",
+          "formulas": [
+            "c' = ΔC/ΔV",
+            "e' = ΔE/ΔV",
+            "c' + e' = 1"
+          ]
+        },
+        {
+          "id": "inclinatii_medii",
+          "title": "Înclinațiile medii spre consum și economii",
+          "kind": "average_propensities",
+          "status": "B",
+          "formulas": [
+            "c = C/VD",
+            "e = E/VD",
+            "c + e = 1",
+            "E = VD - C"
+          ]
+        },
+        {
+          "id": "multiplicator",
+          "title": "Multiplicatorul investițiilor",
+          "kind": "multiplier",
+          "status": "B",
+          "formulas": [
+            "K = 1/(1-c') = 1/e'",
+            "ΔV = K × ΔI"
+          ]
+        },
+        {
+          "id": "echilibru_macroeconomic",
+          "title": "Echilibrul macroeconomic: venit, consum și investiții",
+          "kind": "macro_equilibrium",
+          "status": "B",
+          "formulas": [
+            "C = C0 + c' × V",
+            "V = C + I",
+            "E = I la echilibru",
+            "V* = (C0 + I)/(1 - c')"
+          ]
+        }
+      ]
+    },
+    {
+      "lesson": 16,
+      "title": "Creștere, dezvoltare și progres economic",
+      "source": "Capitolul 16 - Crestere, dezvoltare si progres economic_ex.pdf",
+      "moduleCount": 4,
+      "evidence": "PIB real și pe locuitor, creștere pozitivă/negativă, extensivă/intensivă/intermediară și dezvoltare umană durabilă.",
+      "modules": [
+        {
+          "id": "pib_locuitor",
+          "title": "PIB real și PIB real pe locuitor",
+          "kind": "growth_pc",
+          "status": "B",
+          "formulas": []
+        },
+        {
+          "id": "crestere_timp",
+          "title": "Creșterea economică în timp",
+          "kind": "time_series",
+          "status": "B",
+          "formulas": []
+        },
+        {
+          "id": "tip_crestere",
+          "title": "Creștere extensivă, intensivă, intermediară",
+          "kind": "growth_type",
+          "status": "C",
+          "formulas": []
+        },
+        {
+          "id": "dezvoltare_umana",
+          "title": "Dezvoltare umană durabilă - tablou de indicatori",
+          "kind": "human_development",
+          "status": "C",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 17,
+      "title": "Ciclicitatea economică",
+      "source": "Capitolul 17 - Ciclicitatea economica_ex.pdf",
+      "moduleCount": 3,
+      "evidence": "Ciclicitate, trend, faze ale ciclului și politici anticiclice.",
+      "modules": [
+        {
+          "id": "ciclu",
+          "title": "Ciclul economic și fazele sale",
+          "kind": "cycle",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "trend_ciclu",
+          "title": "Trend și fluctuații ciclice",
+          "kind": "cycle",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "politici_anticiclice",
+          "title": "Politici anticiclice: recesiune vs boom",
+          "kind": "policy_cycle",
+          "status": "C",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 18,
+      "title": "Statul în economia de piață",
+      "source": "Capitolul 18 - Statul in economia de piata_ex.pdf",
+      "moduleCount": 3,
+      "evidence": "Buget public: venituri, cheltuieli, deficit/excedent și structură.",
+      "modules": [
+        {
+          "id": "buget",
+          "title": "Venituri, cheltuieli și sold bugetar",
+          "kind": "state_budget",
+          "status": "B",
+          "formulas": [
+            "Sold = Venituri - Cheltuieli"
+          ]
+        },
+        {
+          "id": "sold_timp",
+          "title": "Deficit / excedent în timp",
+          "kind": "time_series",
+          "status": "B",
+          "formulas": []
+        },
+        {
+          "id": "structura_buget",
+          "title": "Structura bugetului",
+          "kind": "budget_structure",
+          "status": "C",
+          "formulas": []
+        }
+      ]
+    },
+    {
+      "lesson": 19,
+      "title": "Piața mondială",
+      "source": "Capitolul 19 - Piata Mondiala_ex.pdf",
+      "moduleCount": 5,
+      "evidence": "Export/import, sold comercial, curs valutar, piață valutară, CRE/CRI și eficiența/profitul comerțului exterior.",
+      "modules": [
+        {
+          "id": "balanta",
+          "title": "Export, import și sold comercial",
+          "kind": "trade_balance",
+          "status": "B",
+          "formulas": [
+            "Sold comercial = Ex - Im"
+          ]
+        },
+        {
+          "id": "curs_timp",
+          "title": "Cursul valutar în timp",
+          "kind": "time_series",
+          "status": "B",
+          "formulas": []
+        },
+        {
+          "id": "piata_valutara",
+          "title": "Cerere și ofertă valutară",
+          "kind": "two_curve",
+          "status": "A",
+          "formulas": []
+        },
+        {
+          "id": "cre_cri",
+          "title": "CRE, curs valutar și CRI",
+          "kind": "external_efficiency",
+          "status": "B",
+          "formulas": [
+            "Export eficient: CRE < Cs.V",
+            "Import eficient: CRI > Cs.V"
+          ]
+        },
+        {
+          "id": "profit_extern",
+          "title": "Profitul comerțului exterior",
+          "kind": "external_profit",
+          "status": "B",
+          "formulas": [
+            "Pr.Export = (Cs.V - CRE) × valută",
+            "Pr.Import = (CRI - Cs.V) × valută"
+          ]
+        }
+      ]
+    }
+  ]
+}

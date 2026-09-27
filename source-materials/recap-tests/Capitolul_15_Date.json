@@ -1,0 +1,1288 @@
+{
+  "capitol": 15,
+  "titlu_capitol": "Venitul, consumul și investițiile",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (indicatorii macroeconomici, venitul, consumul, economiile, investitiile, multiplicatorul investitiilor, echilibrul macroeconomic). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (PIB, PNN, VN, V_D=C+E, c-bar, e-bar, c', e', K=1/e').",
+  "intrebari": [
+    {
+      "id": "C15_T01",
+      "capitol": 15,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Indicatorii macroeconomici (agregați) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Expresii numerice, cu prioritate ale laturilor cantitative ale activității economice la nivelul economiei naționale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv indicatori care măsoară activitatea unei singure firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Valabili doar pentru economiile de comandă (planificate)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv indicatori demografici, fără legătură cu activitatea economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Indicatorii macroeconomici se numesc și „agregați” tocmai pentru că se obțin prin însumarea rezultatelor de la nivel microeconomic și mezoeconomic până la nivelul întregii economii naționale — nu privesc o singură firmă sau doar aspecte demografice. Prin urmare, răspunsul corect este: Expresii numerice, cu prioritate ale laturilor cantitative ale activității economice la nivelul economiei naționale."
+    },
+    {
+      "id": "C15_T02",
+      "capitol": 15,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Relația dintre prețurile pieței (ale cumpărătorilor) și prețurile factorilor de producție (ale producătorilor) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu există nicio relație formalizabilă între ele",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "P_f = Pₚ + I_z.i.n.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Pₚ = P_f, cele două fiind întotdeauna identice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Pₚ = P_f + I_z.i.n., unde I_z.i.n. reprezintă impozitele indirecte nete",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Prețul plătit de cumpărător include, peste prețul încasat de producător, impozitele indirecte nete (TVA, accize etc.) — de aceea Pₚ este întotdeauna mai mare sau egal cu P_f, nu identic cu acesta. Prin urmare, răspunsul corect este: Pₚ = P_f + I_z.i.n., unde I_z.i.n. reprezintă impozitele indirecte nete."
+    },
+    {
+      "id": "C15_T03",
+      "capitol": 15,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spre deosebire de prețurile reale (constante), prețurile nominale (curente):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Se calculează exclusiv pentru bunurile de export",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sunt influențate de fenomenele inflaționiste",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Sunt întotdeauna mai mici decât prețurile reale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu sunt niciodată influențate de inflație",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Prețurile nominale reflectă nivelul curent, influențat de inflație, în timp ce prețurile reale (constante) elimină acest efect — de exemplu, PIB real se obține împărțind PIB nominal la indicele general al prețurilor. Prin urmare, răspunsul corect este: Sunt influențate de fenomenele inflaționiste."
+    },
+    {
+      "id": "C15_T04",
+      "capitol": 15,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Indicatorii macroeconomici bruți, spre deosebire de cei neți:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Includ amortizarea capitalului fix (A)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Se calculează doar pentru bunurile importate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclud întotdeauna amortizarea capitalului fix",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu au nicio legătură cu capitalul fix",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Distincția brut/net ține exact de tratamentul amortizării: indicatorii bruți includ amortizarea capitalului fix, iar cei neți o exclud (de exemplu, PIN = PIB – A). Prin urmare, răspunsul corect este: Includ amortizarea capitalului fix (A)."
+    },
+    {
+      "id": "C15_T05",
+      "capitol": 15,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un indicator macroeconomic „intern” (precum PIB), spre deosebire de unul „național” (precum PNB):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclude complet rezultatele agenților economici străini de pe teritoriul național",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Include rezultatele tuturor agenților economici de pe teritoriul național, indiferent de apartenența lor național-statală",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Include exclusiv rezultatele agenților economici naționali aflați în străinătate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este identic, sub toate aspectele, cu indicatorul „național”",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Criteriul „intern” face abstracție de apartenența național-statală și se concentrează pe teritoriu, în timp ce criteriul „național” face abstracție de teritoriu și se concentrează pe apartenența agenților economici — cele două perspective sunt complementare, nu identice. Prin urmare, răspunsul corect este: Include rezultatele tuturor agenților economici de pe teritoriul național, indiferent de apartenența lor național-statală."
+    },
+    {
+      "id": "C15_T06",
+      "capitol": 15,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Produsul global brut (PGB) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Valoarea bunurilor economice produse exclusiv de agenții economici naționali în străinătate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Valoarea exclusiv a bunurilor economice finale, fără cele intermediare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Valoarea totală a bunurilor economice (finale și intermediare) obținute într-o țară, de regulă, într-un an",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Valoarea netă a bunurilor economice finale, după scăderea amortizării",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Spre deosebire de PIB (care exclude consumul intermediar), PGB include atât bunurile finale, cât și pe cele intermediare — de unde relația PGB = PIB + C.I. Prin urmare, răspunsul corect este: Valoarea totală a bunurilor economice (finale și intermediare) obținute într-o țară, de regulă, într-un an."
+    },
+    {
+      "id": "C15_T07",
+      "capitol": 15,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Produsul intern brut (PIB) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Valoarea netă a bunurilor economice, după scăderea impozitelor indirecte",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Valoarea bunurilor economice produse exclusiv de agenții economici naționali, oriunde s-ar afla",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Valoarea exclusiv a bunurilor economice intermediare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Valoarea tuturor bunurilor economice finale produse într-o țară de către agenții economici, indiferent de apartenența lor național-statală",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Criteriul definitoriu al PIB este teritoriul, nu apartenența agenților economici: el include valoarea bunurilor finale produse pe teritoriul țării, indiferent cine le produce (agenți naționali sau străini). Prin urmare, răspunsul corect este: Valoarea tuturor bunurilor economice finale produse într-o țară de către agenții economici, indiferent de apartenența lor național-statală."
+    },
+    {
+      "id": "C15_T08",
+      "capitol": 15,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Produsul național brut (PNB) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Valoarea de piață a bunurilor economice finale produse de agenții economici naționali, indiferent de teritoriul pe care își desfășoară activitatea",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Valoarea bunurilor economice produse exclusiv pe teritoriul național, indiferent de apartenența agenților economici",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Valoarea exclusiv a bunurilor economice destinate exportului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Valoarea netă a bunurilor economice, după scăderea amortizării",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Spre deosebire de PIB (bazat pe teritoriu), PNB este bazat pe apartenența național-statală: include rezultatele agenților economici naționali, indiferent dacă activează în țară sau în străinătate. Prin urmare, răspunsul corect este: Valoarea de piață a bunurilor economice finale produse de agenții economici naționali, indiferent de teritoriul pe care își desfășoară activitatea."
+    },
+    {
+      "id": "C15_T09",
+      "capitol": 15,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Venitul național (VN) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv profiturile firmelor dintr-o țară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Veniturile încasate de proprietarii factorilor de producție dintr-o țară pentru contribuția adusă la obținerea de bunuri economice",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv salariile încasate de populația unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Valoarea totală a bunurilor economice finale și intermediare produse într-o țară",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Venitul național nu se rezumă la o singură categorie de venit (doar salarii sau doar profituri): el însumează toate veniturile fundamentale — salarii, profituri, rente, dobânzi — încasate de proprietarii factorilor de producție. Prin urmare, răspunsul corect este: Veniturile încasate de proprietarii factorilor de producție dintr-o țară pentru contribuția adusă la obținerea de bunuri economice."
+    },
+    {
+      "id": "C15_T10",
+      "capitol": 15,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Formula de calcul a PIB prin metoda cheltuielilor este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "PIB = S + Pr. + R + Dn, unde acestea sunt veniturile fundamentale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "PIB = A + I_z.i.n., unde A este amortizarea",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "PIB = Cₚ + C_G + I_B + Ex.n, unde Ex.n reprezintă exportul net",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "PIB = PGB + C.I., unde C.I. este consumul intermediar",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "PIB, calculat prin metoda cheltuielilor, însumează consumul privat, consumul guvernamental, investițiile brute și exportul net — o metodă distinctă de cea a veniturilor (folosită pentru VN) sau de relația cu PGB. Prin urmare, răspunsul corect este: PIB = Cₚ + C_G + I_B + Ex.n, unde Ex.n reprezintă exportul net."
+    },
+    {
+      "id": "C15_T11",
+      "capitol": 15,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Venitul, în sensul folosit în acest capitol, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Valoarea totală a bunurilor economice produse de o firmă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Expresia agregată a recompenselor (veniturilor fundamentale) încasate de posesorii factorilor de producție pentru contribuțiile aduse la activitatea economică",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv cheltuielile de consum ale unei familii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv suma economisită de o persoană într-o perioadă dată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Venitul este, la origine, o recompensă agregată pentru contribuția factorilor de producție la activitatea economică — el se împarte apoi în cheltuieli de consum și economii, dar nu se confundă cu niciuna dintre acestea, luată izolat. Prin urmare, răspunsul corect este: Expresia agregată a recompenselor (veniturilor fundamentale) încasate de posesorii factorilor de producție pentru contribuțiile aduse la activitatea economică."
+    },
+    {
+      "id": "C15_T12",
+      "capitol": 15,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cheltuielile de consum reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Partea din venitul disponibil (net) utilizată de menaje și administrații pentru satisfacerea directă a nevoilor individuale și colective",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv impozitele plătite statului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Întregul venit disponibil al unei persoane, fără nicio excepție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv partea din venit destinată investițiilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cheltuielile de consum reprezintă doar o parte a venitului disponibil — cea folosită pentru satisfacerea directă a nevoilor — restul, dacă există, devenind economii, nu se confundă cu întregul venit sau cu investițiile. Prin urmare, răspunsul corect este: Partea din venitul disponibil (net) utilizată de menaje și administrații pentru satisfacerea directă a nevoilor individuale și colective."
+    },
+    {
+      "id": "C15_T13",
+      "capitol": 15,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Economiile, la nivel macroeconomic, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv veniturile încasate de proprietarii de acțiuni",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv sumele depuse la bănci de către firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Întregul venit disponibil al unei persoane",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Excedentul de venit peste cheltuielile de consum (partea necheltuită din venit)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Economiile completează cheltuielile de consum: împreună, ele epuizează venitul disponibil (V_D = C + E) — economiile fiind exact partea rămasă necheltuită din venit. Prin urmare, răspunsul corect este: Excedentul de venit peste cheltuielile de consum (partea necheltuită din venit)."
+    },
+    {
+      "id": "C15_T14",
+      "capitol": 15,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Legea psihologică fundamentală privind înclinația marginală spre consum și economisire, formulată de J.M. Keynes, arată că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Economiile scad întotdeauna atunci când venitul disponibil crește",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Δ%C < Δ%V_D < Δ%E, adică venitul disponibil crește mai repede decât consumul, dar mai încet decât economiile",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Consumul crește întotdeauna mai repede decât venitul disponibil",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu există nicio relație stabilă între venit, consum și economii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Legea lui Keynes arată o gradație precisă: atunci când venitul disponibil crește, consumul crește mai încet decât venitul, în timp ce economiile cresc chiar mai repede decât venitul — deci Δ%C < Δ%V_D < Δ%E. Prin urmare, răspunsul corect este: Δ%C < Δ%V_D < Δ%E, adică venitul disponibil crește mai repede decât consumul, dar mai încet decât economiile."
+    },
+    {
+      "id": "C15_T15",
+      "capitol": 15,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Investițiile, în sens economic, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv impozitele plătite de o firmă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Întregul venit disponibil al unui agent economic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv sumele cheltuite pentru bunuri de consum curent",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Partea din venitul disponibil cheltuită pentru achiziționarea bunurilor de capital tehnic, în scopul formării, creșterii, modernizării sau înlocuirii acestuia",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Investițiile sunt direcționate specific către capitalul tehnic — formarea, creșterea, modernizarea sau înlocuirea lui — nu spre consumul curent sau obligațiile fiscale ale firmei. Prin urmare, răspunsul corect este: Partea din venitul disponibil cheltuită pentru achiziționarea bunurilor de capital tehnic, în scopul formării, creșterii, modernizării sau înlocuirii acestuia."
+    },
+    {
+      "id": "C15_T16",
+      "capitol": 15,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Investițiile de înlocuire (I_i), spre deosebire de investițiile nete (I_N):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Provin exclusiv din profitul firmei, niciodată din amortizare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sunt identice, sub toate aspectele, cu investițiile nete",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sunt destinate înlocuirii capitalului fix uzat, având ca sursă principală fondul de amortizare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Contribuie la formarea netă a capitalului tehnic și la sporirea volumului acestuia",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Investițiile de înlocuire au un scop precis — înlocuirea capitalului fix uzat — și o sursă tipică — fondul de amortizare — spre deosebire de investițiile nete, care sporesc efectiv volumul capitalului tehnic. Prin urmare, răspunsul corect este: Sunt destinate înlocuirii capitalului fix uzat, având ca sursă principală fondul de amortizare."
+    },
+    {
+      "id": "C15_T17",
+      "capitol": 15,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Multiplicatorul investițiilor (K) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata dobânzii practicate pe piața monetară pentru creditele de investiții",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Numărul de firme care investesc într-o anumită ramură economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cu cât sporește venitul disponibil în viitor la creșterea cu o unitate a investițiilor în perioada anterioară, respectiv de câte ori se multiplică investițiile",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Raportul dintre venitul disponibil și cheltuielile de consum, la un moment dat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Multiplicatorul investițiilor arată efectul amplificat al unei creșteri a investițiilor asupra venitului disponibil viitor: K = ΔV_D/ΔI = 1/e' — nicidecum un simplu raport static sau o rată a dobânzii. Prin urmare, răspunsul corect este: Cu cât sporește venitul disponibil în viitor la creșterea cu o unitate a investițiilor în perioada anterioară, respectiv de câte ori se multiplică investițiile."
+    },
+    {
+      "id": "C15_T18",
+      "capitol": 15,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Echilibrul economic reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Absența completă a oricărei tranzacții economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un fenomen specific exclusiv economiilor de comandă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O stare permanentă, niciodată perturbată, a tuturor piețelor dintr-o economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Starea spre care tind piața națională și diferitele piețe, caracterizată prin egalitatea dintre cerere și ofertă sau prin diferențe nesemnificative",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Echilibrul economic are, în principal, un caracter teoretic și tendențial: economia trece adesea prin stări de dezechilibru, iar echilibrul este starea spre care tinde, nu una permanentă și niciodată perturbată. Prin urmare, răspunsul corect este: Starea spre care tind piața națională și diferitele piețe, caracterizată prin egalitatea dintre cerere și ofertă sau prin diferențe nesemnificative."
+    },
+    {
+      "id": "C15_T19",
+      "capitol": 15,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Starea de „presiune” a dezechilibrului economic, pe piața bunurilor economice, apare atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Oferta depășește cererea peste limite normale, amplificând crizele economice de supraproducție",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Nu există nicio tranzacție pe piața respectivă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cererea și oferta sunt perfect egale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cererea depășește oferta, generând creșterea prețurilor și penurie",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Starea de „presiune” este specifică situației în care oferta depășește semnificativ cererea — pe piața bunurilor economice, aceasta amplifică crizele de supraproducție, spre deosebire de starea de „absorbție”, unde cererea depășește oferta. Prin urmare, răspunsul corect este: Oferta depășește cererea peste limite normale, amplificând crizele economice de supraproducție."
+    },
+    {
+      "id": "C15_T20",
+      "capitol": 15,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un dezechilibru „normal”, „pozitiv” și de dorit pe piața bunurilor economice apare atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cererea este mult mai mare decât oferta, determinând creșterea accelerată a prețurilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Oferta și cererea sunt complet absente de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Oferta este mai mare decât cererea, în limite raționale, determinând scăderea prețului și creșterea puterii de cumpărare a populației",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Prețurile cresc necontrolat, indiferent de raportul cerere-ofertă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Nu orice dezechilibru este de nedorit: atunci când oferta depășește cererea în limite raționale, prețurile scad, iar puterea de cumpărare și nivelul de trai al populației cresc — o piață „plină de mărfuri” funcționează bine. Prin urmare, răspunsul corect este: Oferta este mai mare decât cererea, în limite raționale, determinând scăderea prețului și creșterea puterii de cumpărare a populației."
+    },
+    {
+      "id": "C15_E01",
+      "capitol": 15,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În economie, într-un an, s-a înregistrat o creștere generalizată a prețurilor de 35% și un PIB nominal de 1.080 mld. u.m. În aceste condiții, PIB real (PIB.r), în mld. u.m., este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "800",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "1.458",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "700",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1.080",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_GP = 135%. PIB.r = PIB.n/I_GP = 1.080 mld./1,35 = 800 mld. u.m."
+    },
+    {
+      "id": "C15_E02",
+      "capitol": 15,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivel macroeconomic se cunosc următorii indicatori: salarii = 500 u.m., profituri = 2.500 u.m., rente = 800 u.m., dobânzi nete = 400 u.m., deprecierea capitalului fix = 900 u.m. și impozitele indirecte nete = 150 u.m., iar soldul relațiilor economice internaționale este nul. PIB în prețurile pieței (PIB_Pp) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5.250 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "5.100 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4.200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4.350 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "VN = Σ(S+Pr.+R+Dn) = 500+2.500+800+400 = 4.200 u.m. PNN_Pp = VN + Iz.i.n = 4.200+150 = 4.350 u.m. Dacă S_REI = 0 → PIB_Pp = PNB_Pp = PNN_Pp + A = 4.350+900 = 5.250 u.m."
+    },
+    {
+      "id": "C15_E03",
+      "capitol": 15,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Economiile într-o țară sunt egale cu 2.400 u.m., iar rata medie spre economii este 0,4. Valoarea consumului (C) este egală cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.600 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3.600 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "960 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "ē = 2.400/V_D = 0,4 → V_D = 2.400/0,4 = 6.000 u.m. = C+E ⇒ C = 6.000 – 2.400 = 3.600 u.m."
+    },
+    {
+      "id": "C15_E04",
+      "capitol": 15,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o economie, consumul crește cu 25% de la valoarea de 900 u.m., economiile în perioada t₁ sunt 300 u.m., iar înclinația marginală spre consum este 0,75. Economiile în perioada anterioară (E₀) erau:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "75 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "300 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "225 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "375 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "C₁ = 1,25×900 = 1.125 u.m. → ΔC = 225 u.m.; ΔV_D = 225/0,75 = 300 u.m. → ΔE = 300–225 = 75 u.m. = 300 – E₀ ⇒ E₀ = 225 u.m."
+    },
+    {
+      "id": "C15_E05",
+      "capitol": 15,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă înclinația marginală spre consum este 0,75, atunci multiplicatorul investițiilor (K) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "3",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "K = 1/e' = 1/(1–c') = 1/(1–0,75) = 1/0,25 = 4."
+    },
+    {
+      "id": "C15_E06",
+      "capitol": 15,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă înclinația marginală spre economii este 0,3, iar venitul disponibil a sporit cu 800 u.m., atunci variația absolută a consumului (ΔC) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "240 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "800 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "700 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "560 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "ΔE = e' × ΔV_D = 0,3×800 = 240 u.m. → ΔC = ΔV_D – ΔE = 800–240 = 560 u.m."
+    },
+    {
+      "id": "C15_E07",
+      "capitol": 15,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "PGB = 60.000 u.m., din care 30% este consum intermediar, valoarea amortizării capitalului fix este 1.200 u.m., consumul final este 80% din PIB, iar exportul net = – 400 u.m. Investițiile nete (I_N) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "7.600 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "6.400 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "9.200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "8.800 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "PIB = 70%×60.000 = 42.000 u.m. C_F = 80%×42.000 = 33.600 u.m. → I_B = PIB – (C_F+Ex.n) = 42.000 – (33.600–400) = 8.800 u.m. ⇒ I_N = I_B – A = 8.800 – 1.200 = 7.600 u.m."
+    },
+    {
+      "id": "C15_E08",
+      "capitol": 15,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Sporul economiilor este 500 u.m., iar sporul consumului este 750 u.m. Înclinația marginală spre consum (c') și multiplicatorul investițiilor (K) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2,5 și 0,6",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "0,4 și 2,5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,6 și 2,5",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "0,6 și 2",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "ΔV_D = 500+750 = 1.250 u.m. → c' = 750/1.250 = 0,6, iar e' = 0,4 ⇒ K = 1/e' = 1/0,4 = 2,5."
+    },
+    {
+      "id": "C15_E09",
+      "capitol": 15,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La începutul anului, venitul național la nivelul economiei naționale era 30.000 u.m. Indicele de creștere a venitului național a fost 125%, iar la sfârșitul anului, consumul este 75% din venitul național. În condițiile unui coeficient de elasticitate a cererii globale față de venit de 2, consumul sporește (ΔC) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "9.375 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "8.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "7.500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "6.000 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "VN₁ = 1,25×30.000 = 37.500 u.m. → Δ%VN = 25%. E_Ce(V) = 2 → Δ%Ce = 50% → I_Ce = 150%. C₁ = 75%×37.500 = 28.125 u.m. → C₀ = 28.125/1,5 = 18.750 u.m. ⇒ ΔC = 28.125–18.750 = 9.375 u.m."
+    },
+    {
+      "id": "C15_E10",
+      "capitol": 15,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivel macroeconomic, în t₀: capitalul fix = 250 u.m., amortizarea anuală era 12%, venitul național a fost 300 u.m., iar rata medie a economiilor 30%. În t₁, consumul a sporit cu 20%, iar economiile au scăzut cu 20%. Investițiile brute (I_B) în t₀ și indicele venitului național (I_VN) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "120 u.m. și 108%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "90 u.m. și 90%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "90 u.m. și 108%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "120 u.m. și 90%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "A = 12%×250 = 30 u.m., E₀ = 30%×300 = 90 u.m. → I_B(0) = A+E₀ = 30+90 = 120 u.m. C₀ = 300–90 = 210 u.m., C₁ = 1,2×210 = 252 u.m., E₁ = 0,8×90 = 72 u.m. → VN₁ = C₁+E₁ = 252+72 = 324 u.m. ⇒ I_VN = (324/300)×100 = 108%."
+    },
+    {
+      "id": "C15_E11",
+      "capitol": 15,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "ΔI = 250, iar multiplicatorul investițiilor = 5, atunci sporul venitului disponibil (ΔV_D) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.000",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.250",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1.500",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "K = ΔV_D/ΔI ⇒ ΔV_D = K × ΔI = 5 × 250 = 1.250."
+    },
+    {
+      "id": "C15_E12",
+      "capitol": 15,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Sporul investițiilor în economie de 6 mld. u.m. determină creșterea V.N. cu 30 mld. u.m., atunci multiplicatorul investițiilor (K) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,2",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "24",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "36",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "5",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "K = ΔVN/ΔI = 30/6 = 5."
+    },
+    {
+      "id": "C15_E13",
+      "capitol": 15,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană cu un venit net de 2.500 lei economisește 500 lei. Sporirea venitului la 3.000 lei determină creșterea cheltuielilor de consum cu 400 lei. Rata marginală spre consum (c') este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,4",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "0,8",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "0,2",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,5",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "C₀ = 2.500 – 500 = 2.000 lei. ΔV = 3.000 – 2.500 = 500 lei, iar ΔC = 400 lei ⇒ c' = ΔC/ΔV = 400/500 = 0,8."
+    },
+    {
+      "id": "C15_E14",
+      "capitol": 15,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă, la începutul anului, avea un capital fix K_F = 2.000 u.m., iar la sfârșitul anului de 2.500 u.m. Dacă deprecierea sa valorică anuală a fost 300 u.m., atunci investiția brută realizată pe parcursul anului (I_B) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2.200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "800 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_N = 2.500 – 2.000 = 500 u.m., I_i = A = 300 u.m. ⇒ I_B = I_N+I_i = 500+300 = 800 u.m."
+    },
+    {
+      "id": "C15_E15",
+      "capitol": 15,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "PNNr₀ = 1.200 mld. u.m. și PNNr₁ = 1.800 mld. u.m. Anual, prețurile în economie au crescut cu 15%. Produsul național net nominal (PNNn) în T₁ față de T₀ este de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,5 ori mai mare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1,725 ori mai mic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1,725 ori mai mare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1,15 ori mai mare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_PNNr = (1.800/1.200)×100 = 150%. I_P = 115%. I_PNNn = I_PNNr × I_P = 1,5×1,15 = 172,5% ⇒ PNNn₁ este de 1,725 ori mai mare decât PNNn₀."
+    },
+    {
+      "id": "C15_E16",
+      "capitol": 15,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivelul unei economii naționale se cunosc următorii indicatori: Cₚ = 70%PIB, Ex.n = 30 u.m. și el reprezintă 10%PIB. Dacă consumul guvernamental (C_G) = 20%Cₚ, iar I_i = 60%I_B, atunci consumul privat (Cₚ) și investițiile nete (I_N), exprimate în u.m., sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "300 și 60",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "210 și 24",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "210 și 36",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "270 și 24",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "PIB = 30/0,1 = 300 u.m. → Cₚ = 70%×300 = 210 u.m., C_G = 20%×210 = 42 u.m. → I_B = PIB – (Cₚ+Ex.n) = 300 – (210+30) = 60 u.m. → I_i = 60%×60 = 36 u.m. ⇒ I_N = I_B – I_i = 60–36 = 24 u.m."
+    },
+    {
+      "id": "C15_E17",
+      "capitol": 15,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se cunosc următorii indicatori macroeconomici: S_REI = 0, Ex.n = 100, Ex. = 300, A = 200, Cₚ = 3.200, C_G = 250, PNB = 5.000 și Iz.i.n = 60. Investițiile nete (I_N), venitul național (VN) și importul (Im) au următoarele valori:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.250, 4.940 și 400",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.250, 4.740 și 200",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1.450, 4.740 și 200",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1.450, 4.940 și 400",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "S_REI = 0 → PIB = PNB = Cₚ+C_G+I_B+Ex.n = 5.000 = 3.200+250+I_B+100 ⇒ I_B = 1.450 → I_N = I_B – A = 1.450–200 = 1.250. VN = PNN_Pf = (PNB–A) – Iz.i.n = (5.000–200)–60 = 4.740. Im = Ex – Ex.n = 300–100 = 200."
+    },
+    {
+      "id": "C15_E18",
+      "capitol": 15,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Multiplicatorul investițiilor (K) = 6, iar cheltuielile de consum au sporit cu 1.000. Sporul economiilor (ΔE) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.000",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.200",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "800",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "200",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "K = 6 = 1/e' ⇒ e' = 1/6, iar c' = 1 – 1/6 = 5/6 = 1.000/ΔV_D ⇒ ΔV_D = 1.200 ⇒ ΔE = 1.200 – 1.000 = 200."
+    },
+    {
+      "id": "C15_E19",
+      "capitol": 15,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă economiile sporesc cu 20%, iar ΔC = 1.400 și ΔV = 1.800, atunci economiile în perioada curentă (E₁) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2.000",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "480",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1.920",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2.400",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "ΔE = 1.800 – 1.400 = 400 = 0,2×E₀ ⇒ E₀ = 2.000 ⇒ E₁ = 1,2×2.000 = 2.400."
+    },
+    {
+      "id": "C15_E20",
+      "capitol": 15,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În tabelul de mai jos sunt prezentați indicatori la nivel macroeconomic: C₁ (u.m.) 90 | V₀ (u.m.) 100 | E₁ (u.m.) ? | c' 0,60 | ē₁ ? | I_C (%) ? | I_E (%) ? . Știind că indicele de creștere a venitului este 120%, atunci multiplicatorul investițiilor (K) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,4",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,5",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "0,6",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1,67",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "V₁ = 1,2×100 = 120 → E₁ = 120–90 = 30 ⇒ ē₁ = 30/120 = 0,25. ΔV = 20, c' = 0,6 → ΔC = 12 → C₀ = 90–12 = 78 ⇒ I_C = (90/78)×100 ≈ 115,4%. E₀ = 100–78 = 22 → I_E = (30/22)×100 ≈ 136,4%. e' = 1–c' = 0,4 ⇒ K = 1/e' = 1/0,4 = 2,5."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

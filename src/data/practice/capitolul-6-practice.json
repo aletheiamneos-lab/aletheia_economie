@@ -1,0 +1,1288 @@
+{
+  "capitol": 6,
+  "titlu_capitol": "Costul producției",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (esenta costului, tipologia costurilor, costul marginal, pragul de rentabilitate). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (CT=CF+CV, CMF=CF/Q, CMV=CV/Q, CMT=CT/Q, C.mg=DeltaCT/DeltaQ, C.mat=Kcons=A+Kc, dinamica costurilor).",
+  "intrebari": [
+    {
+      "id": "C6_T01",
+      "capitol": 6,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul, în expresie bănească, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sporul de producție determinat de creșterea cu o unitate a unui factor de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Consumul factorilor de producție necesar producerii și desfacerii de bunuri economice destinate pieței",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Suma încasărilor totale obținute din vânzarea producției",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Excedentul veniturilor peste cheltuielile efectuate de o firmă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Costul nu se confundă cu profitul sau cu venitul total: el reprezintă, în expresie bănească, exact consumul factorilor de producție necesar producerii și desfacerii de bunuri economice destinate pieței. Prin urmare, răspunsul corect este: Consumul factorilor de producție necesar producerii și desfacerii de bunuri economice destinate pieței."
+    },
+    {
+      "id": "C6_T02",
+      "capitol": 6,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nivelul prețului de vânzare al unui bun economic se stabilește, printre altele, în funcție de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv cererea pieței, indiferent de costuri",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar costul marginal al ultimei unități produse",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Rata inflației din anul precedent",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costul mediu total și profitul unitar dorit, conform relației P = CMT + Pr./u.p",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Costul stă la baza stabilirii nivelului prețului de vânzare, întrucât acesta trebuie să acopere cheltuielile necesare obținerii bunului și să lase, totodată, un profit: P = CMT + Pr./u.p. Prin urmare, răspunsul corect este: Costul mediu total și profitul unitar dorit, conform relației P = CMT + Pr./u.p."
+    },
+    {
+      "id": "C6_T03",
+      "capitol": 6,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cheltuielile de transport, depozitare, ambalare și reclamă ale unei firme fac parte din:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Costurile fixe, exclusiv",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costul de producție (de fabricație)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul de desfacere (de distribuție)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Costurile salariale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Costul de producție cuprinde cheltuielile determinate de producerea propriu-zisă a bunurilor, în timp ce costul de desfacere (distribuție) cuprinde cheltuielile ulterioare producției: transport, depozitare, ambalare și reclamă. Prin urmare, răspunsul corect este: Costul de desfacere (de distribuție)."
+    },
+    {
+      "id": "C6_T04",
+      "capitol": 6,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costurile materiale (C.mat.) ale unei firme cuprind:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar impozitele, dobânzile și amenzile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cheltuielile cu amortizarea capitalului fix și cu achiziționarea capitalului circulant",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Doar cheltuielile cu plata salariaților",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv cheltuielile de transport și depozitare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Costurile materiale reprezintă, de fapt, capitalul real consumat: C.mat. = K.cons. = A + Kc, adică amortizarea capitalului fix la care se adaugă achiziționarea capitalului circulant. Prin urmare, răspunsul corect este: Cheltuielile cu amortizarea capitalului fix și cu achiziționarea capitalului circulant."
+    },
+    {
+      "id": "C6_T05",
+      "capitol": 6,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Consumul specific (tehnologic) al unei firme, exprimat în unități fizice, se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul dintre capitalul circulant consumat (în unități fizice) și producția obținută",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Diferența dintre costul mediu total și costul mediu variabil",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Raportul dintre costul total și prețul de vânzare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Produsul dintre costul marginal și cantitatea produsă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Consumul specific arată cât capital circulant se consumă pentru a obține o unitate de produs: C.sp.(u.f.) = Kc(u.f.)/Q — un indicator de eficiență tehnologică, distinct de costurile medii sau de preț. Prin urmare, răspunsul corect este: Raportul dintre capitalul circulant consumat (în unități fizice) și producția obținută."
+    },
+    {
+      "id": "C6_T06",
+      "capitol": 6,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cheltuielile cu amortizarea și cu salariile personalului administrativ, care nu depind de variația producției pe termen scurt, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Costuri de desfacere, exclusiv",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costuri fixe",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Costuri marginale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costuri variabile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Costurile fixe sunt exact acele cheltuieli care nu depind de variația producției pe termen scurt — amortizarea capitalului fix și salariile personalului administrativ sunt exemple tipice. Prin urmare, răspunsul corect este: Costuri fixe."
+    },
+    {
+      "id": "C6_T07",
+      "capitol": 6,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cheltuielile cu materiile prime, materialele, energia și salariile personalului direct productiv, care se modifică odată cu volumul producției, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Costuri fixe",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costuri variabile",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Costuri marginale, exclusiv",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costuri de desfacere, exclusiv",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Spre deosebire de costurile fixe, costurile variabile se modifică direct proporțional (dar nu întotdeauna strict proporțional) cu volumul producției — materiile prime, energia și salariile personalului direct productiv sunt exemple tipice. Prin urmare, răspunsul corect este: Costuri variabile."
+    },
+    {
+      "id": "C6_T08",
+      "capitol": 6,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul mediu fix (CMF) depinde de modificarea volumului producției (Q) printr-o relație:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Invers proporțională",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "De independență totală",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Direct proporțională",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exponențială, întotdeauna crescătoare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Deoarece costurile fixe totale rămân constante, împărțirea lor la o producție tot mai mare (CMF = CF/Q) face ca CMF să scadă pe măsură ce Q crește — o relație invers proporțională. Prin urmare, răspunsul corect este: Invers proporțională."
+    },
+    {
+      "id": "C6_T09",
+      "capitol": 6,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul marginal (adițional) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cheltuielile medii pe unitate de produs, calculate la nivelul întregii producții",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cheltuielile fixe ale firmei, indiferent de volumul producției",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre venitul total și profitul total",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cheltuielile cu obținerea ultimei unități de produs realizate la un moment dat, respectiv sporul cheltuielilor totale determinat de creșterea cu o unitate a volumului producției",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Costul marginal nu este o medie, ci un cost al ultimei unități: cheltuielile suplimentare generate de producerea celei mai recente unități de produs, calculat ca C.mg. = ΔCT/ΔQ. Prin urmare, răspunsul corect este: Cheltuielile cu obținerea ultimei unități de produs realizate la un moment dat, respectiv sporul cheltuielilor totale determinat de creșterea cu o unitate a volumului producției."
+    },
+    {
+      "id": "C6_T10",
+      "capitol": 6,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul marginal este influențat de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv de costurile de desfacere",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costurile fixe (CF), în principal",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv de rata inflației",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costurile variabile (CV), nu de costurile fixe",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Deoarece costurile fixe nu se modifică odată cu producția, costul marginal (C.mg. = ΔCT/ΔQ = ΔCV/ΔQ) este influențat exclusiv de costurile variabile, fiind independent de costurile fixe. Prin urmare, răspunsul corect este: Costurile variabile (CV), nu de costurile fixe."
+    },
+    {
+      "id": "C6_T11",
+      "capitol": 6,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nivelul optim al producției unei firme (profitul pe unitate de produs maxim) se atinge atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Costul mediu fix este egal cu costul mediu variabil",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costul total este egal cu zero",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul marginal este egal cu costul mediu total, acesta din urmă fiind minim",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Costul marginal este maxim",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Comparând costul marginal cu costul mediu total, se stabilește nivelul optim al producției exact în punctul în care C.mg. = CMT, iar acesta din urmă atinge valoarea sa minimă. Prin urmare, răspunsul corect este: Costul marginal este egal cu costul mediu total, acesta din urmă fiind minim."
+    },
+    {
+      "id": "C6_T12",
+      "capitol": 6,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Evoluțiile costului marginal, ale costului mediu total și ale costului mediu variabil sunt influențate de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Legea randamentelor (marginale) neproporționale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Legea cererii și a ofertei, exclusiv",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Rata dobânzii practicate pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Numărul de concurenți de pe piața bunului respectiv",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pe măsură ce se asociază unități succesive dintr-un factor de producție variabil la o cantitate dată din alt factor, productivitatea marginală crește, apoi atinge un maxim, apoi scade — iar costul marginal, mediu variabil și mediu total urmează exact acest tipar (legea randamentelor neproporționale). Prin urmare, răspunsul corect este: Legea randamentelor (marginale) neproporționale."
+    },
+    {
+      "id": "C6_T13",
+      "capitol": 6,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Reducerea costurilor de producție, fără afectarea calității bunurilor economice, are ca efect, printre altele:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Creșterea automată a prețului de vânzare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Reducerea obligatorie a salariilor angajaților",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Scăderea automată a calității produselor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Sporirea producției, a ofertei și a profitului firmei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Reducerea costurilor, fără a afecta calitatea bunurilor, sporește producția, oferta și profitul firmei, îi crește capacitatea de a face față concurenței și poate conduce chiar la micșorarea prețului bunurilor economice — nu la efectele negative descrise în celelalte variante. Prin urmare, răspunsul corect este: Sporirea producției, a ofertei și a profitului firmei."
+    },
+    {
+      "id": "C6_T14",
+      "capitol": 6,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Sporirea productivității muncii determină, în ceea ce privește costurile unei firme:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu are nicio legătură cu nivelul costurilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Creșterea automată a costurilor fixe totale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Micșorarea costurilor salariale medii și a cheltuielilor materiale unitare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea automată a calității producției",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Sporirea productivității muncii este una dintre căile principale de reducere a costurilor: ea determină micșorarea costurilor salariale medii și, indirect, a cheltuielilor materiale unitare. Prin urmare, răspunsul corect este: Micșorarea costurilor salariale medii și a cheltuielilor materiale unitare."
+    },
+    {
+      "id": "C6_T15",
+      "capitol": 6,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pragul de rentabilitate reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nivelul producției la care firma obține profitul maxim posibil",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nivelul producției la care profitul total sau unitar este zero (nul), adică VT = CT sau P = CMT",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Nivelul producției la care costul marginal este maxim",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nivelul producției la care costurile fixe devin zero",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Pragul de rentabilitate marchează exact punctul de la care firma începe să obțină profit: nivelul producției la care veniturile totale acoperă integral costurile totale, iar profitul (total sau unitar) este zero. Prin urmare, răspunsul corect este: Nivelul producției la care profitul total sau unitar este zero (nul), adică VT = CT sau P = CMT."
+    },
+    {
+      "id": "C6_T16",
+      "capitol": 6,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dinamica costurilor, exprimată în mărimi relative (procentuale), se calculează, printre altele, ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Δ%C = IC – 100%, unde IC = (C1/C0) × 100",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "C = VT – Pr.T, indiferent de dinamică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "C = CF + CV, indiferent de perioadă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "ΔC = C1 – C0, exclusiv, fără raportare procentuală",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dinamica costurilor se poate exprima atât în mărimi absolute (ΔC = C1 – C0), cât și în mărimi relative, folosind indicele costului: Δ%C = IC – 100%, unde IC = (C1/C0) × 100. Prin urmare, răspunsul corect este: Δ%C = IC – 100%, unde IC = (C1/C0) × 100."
+    },
+    {
+      "id": "C6_T17",
+      "capitol": 6,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Funcția costului total, în forma generală CT = mQ³ + nQ² + tQ + u, conține un termen constant „u” care reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Prețul de vânzare al bunului economic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costul variabil total",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul marginal la nivelul întregii producții",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costul fix (CF), independent de volumul producției",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "În funcția costului total, termenii care conțin Q (mQ³ + nQ² + tQ) formează costul variabil, în timp ce termenul constant „u”, care nu depinde de Q, reprezintă costul fix. Prin urmare, răspunsul corect este: Costul fix (CF), independent de volumul producției."
+    },
+    {
+      "id": "C6_T18",
+      "capitol": 6,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costurile salariale (C.S) ale unei firme se împart, după comportamentul lor față de variația producției, în:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Salarii mari și salarii mici, indiferent de natura activității",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Salarii impozabile și salarii neimpozabile",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Salarii directe (parte a costurilor variabile) și salarii indirecte (parte a costurilor fixe)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Doar salarii directe, fără nicio altă subdiviziune",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Costurile salariale se împart în salarii directe — plătite personalului direct productiv, parte a costurilor variabile — și salarii indirecte — plătite personalului administrativ, parte a costurilor fixe. Prin urmare, răspunsul corect este: Salarii directe (parte a costurilor variabile) și salarii indirecte (parte a costurilor fixe)."
+    },
+    {
+      "id": "C6_T19",
+      "capitol": 6,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul mediu total (CMT) al unei firme se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul dintre profitul total și costul marginal",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Produsul dintre costul fix și cantitatea produsă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Suma dintre costul mediu fix și costul mediu variabil, sau raportul dintre costul total și producție",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Diferența dintre venitul total și costul marginal",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Costul mediu total se poate calcula în două moduri echivalente: fie ca sumă a costului mediu fix și a costului mediu variabil, fie direct ca raport între costul total și producție: CMT = CMF + CMV = CT/Q. Prin urmare, răspunsul corect este: Suma dintre costul mediu fix și costul mediu variabil, sau raportul dintre costul total și producție."
+    },
+    {
+      "id": "C6_T20",
+      "capitol": 6,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul de producție (de fabricație) al unei firme reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cheltuielile determinate de producerea propriu-zisă a bunurilor economice, putând fi totale, variabile sau fixe",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Suma tuturor impozitelor plătite de firmă statului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar cheltuielile de publicitate și reclamă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar cheltuielile de transport și depozitare a mărfurilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Costul de producție se referă strict la cheltuielile determinate de producerea propriu-zisă a bunurilor economice — el poate fi total, variabil sau fix — și este distinct de costul de desfacere, care privește etapele ulterioare (transport, depozitare, publicitate). Prin urmare, răspunsul corect este: Cheltuielile determinate de producerea propriu-zisă a bunurilor economice, putând fi totale, variabile sau fixe."
+    },
+    {
+      "id": "C6_E01",
+      "capitol": 6,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Amortizarea reprezintă 8% din costurile materiale, costul total (CT) este 2.100 u.m., iar celelalte costuri materiale sunt de 736 u.m. Costurile salariale (C.S) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.300 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "2.100 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "736 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "800 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "C.mat. = 736/(1–0,08) = 736/0,92 = 800 u.m. ⇒ C.S = CT – C.mat. = 2.100 – 800 = 1.300 u.m."
+    },
+    {
+      "id": "C6_E02",
+      "capitol": 6,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CMV = 900 u.m., CMF = 1/4 CMT, profitul reprezintă 20% din preț, iar Q = 3 buc. Venitul total (VT) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "900 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3.600 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4.500 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1.500 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "CMF = 1/4CMT → CMV = 3/4CMT = 900 → CMT = 1.200 u.m. = 80%P → P = 1.500 u.m. ⇒ VT = P × Q = 1.500 × 3 = 4.500 u.m."
+    },
+    {
+      "id": "C6_E03",
+      "capitol": 6,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Fie funcția costului total de tipul: CT = 4Q² + 8Q + 20, iar Q = 4 unități. Costul variabil (CV) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "116",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "96",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "20",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "24",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "CV = 4Q² + 8Q = 4×16 + 8×4 = 64 + 32 = 96."
+    },
+    {
+      "id": "C6_E04",
+      "capitol": 6,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Costul total evoluează conform relației: CT = 6Q³ + 3Q² + 5Q + 24. Dacă Q = 3 buc., atunci costul mediu total (CMT) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "84 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "8 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "70 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "76 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "CT = 6×27 + 3×9 + 5×3 + 24 = 162+27+15+24 = 228 ⇒ CMT = CT/Q = 228/3 = 76 u.m."
+    },
+    {
+      "id": "C6_E05",
+      "capitol": 6,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă pragul de rentabilitate este de 6 buc., P = 900 u.m., iar CMF = 300 u.m., costul variabil (CV) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5.400 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3.600 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1.800 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "900 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "La pragul de rentabilitate, P = CMT = CMF + CMV → CMV = 900 – 300 = 600 u.m. ⇒ CV = CMV × Q = 600 × 6 = 3.600 u.m."
+    },
+    {
+      "id": "C6_E06",
+      "capitol": 6,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "P = 1.800 u.m., CMV = 850 u.m., iar CF = 3.800 u.m. Pragul de rentabilitate (Q) este de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8 buc.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4 buc.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1/4 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "La pragul de rentabilitate, P = CMT → CMF = P – CMV = 1.800 – 850 = 950 u.m., iar Q = CF/CMF = 3.800/950 = 4 buc."
+    },
+    {
+      "id": "C6_E07",
+      "capitol": 6,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe termen scurt, indicele costului mediu fix este de 40%. În aceste condiții, volumul producției (Q):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a scăzut cu 40%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a crescut cu 40%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a crescut de 2,5 ori",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "a scăzut cu 60%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pe termen scurt, ICF = 100% → ICMF = (ICF/IQ) × 100 = 40% ⇒ IQ = (100/40) × 100 = 250%, adică producția a crescut de 2,5 ori."
+    },
+    {
+      "id": "C6_E08",
+      "capitol": 6,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "P = 240 u.m., din care un sfert este profitul. Dacă profitul crește cu 200% (de 3 ori), atunci costul unitar (CMT1/CMT0) se reduce:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "de 3 ori",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "de 4 ori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "cu 60 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "cu 180 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pr./u.p0 = 1/4 × 240 = 60 u.m. → CMT0 = 240 – 60 = 180 u.m. Pr./u.p1 = 3 × 60 = 180 u.m. → CMT1 = 240 – 180 = 60 u.m. ⇒ CMT0/CMT1 = 180/60 = 3 ori."
+    },
+    {
+      "id": "C6_E09",
+      "capitol": 6,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CT = 10Q + 400, iar profitul obținut prin vânzarea a 4 buc. este de 200 u.m. Prețul de vânzare (P) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "160 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "110 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "640 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "CT = 10×4 + 400 = 440 u.m., VT = CT + Pr.T = 440 + 200 = 640 u.m. ⇒ P = VT/Q = 640/4 = 160 u.m."
+    },
+    {
+      "id": "C6_E10",
+      "capitol": 6,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CS = 60 u.m., iar C.mat./CT = 0,75 și Q = 6 buc., atunci costurile materiale unitare (C.mat./Q) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "240 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "60 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "40 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "CS = 25%CT = 60 → CT = 240 u.m. ⇒ C.mat. = CT – CS = 240 – 60 = 180 u.m. → C.mat./Q = 180/6 = 30 u.m."
+    },
+    {
+      "id": "C6_E11",
+      "capitol": 6,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Costul total evoluează în condițiile creșterii producției conform datelor din tabelul de mai jos (Q = 0, 6, 12, 18: CT = 180, 300, 480, 720). Când Q = 18 buc., atunci CMV și CMF au următoarele valori:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "30 și 10",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "10 și 30",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30 și 15",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "40 și 10",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Când Q = 0, CT = CF = 180 u.m. Când Q = 18, CV = CT – CF = 720 – 180 = 540 → CMV = 540/18 = 30 u.m., iar CMF = 180/18 = 10 u.m."
+    },
+    {
+      "id": "C6_E12",
+      "capitol": 6,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CT = 1.080 u.m., CV este de 1,5 ori mai mare decât CF, iar C.mat./CS = 1/5. Cât din costurile salariale reprezintă costurile variabile [(CV/CS) × 100]?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "60%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "72%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "48%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "CT = CF + 1,5CF = 2,5CF → CF = 1.080/2,5 = 432 u.m., CV = 1.080 – 432 = 648 u.m. CT = C.mat. + CS = C.mat. + 5×C.mat. = 6×C.mat. → C.mat. = 180 u.m., CS = 900 u.m. ⇒ (CV/CS) × 100 = (648/900) × 100 = 72%."
+    },
+    {
+      "id": "C6_E13",
+      "capitol": 6,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Δ%Q = 25%, ICV = 115%, iar CMV0 = 50 u.m. Costul marginal (C.mg) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "37,5 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "6 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pentru Q0 = 100 (bază de calcul): Q1 = 125, CV0 = 100 × 50 = 5.000, CV1 = 1,15 × 5.000 = 5.750 ⇒ C.mg. = (CV1–CV0)/(Q1–Q0) = 750/25 = 30 u.m."
+    },
+    {
+      "id": "C6_E14",
+      "capitol": 6,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "CMF1 = 45 u.m., dacă Δ%Q = 20%, atunci costul mediu fix inițial (CMF0) era:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "60 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "36 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "45 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "54 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "IQ = 120%, ICF = 100% → ICMF = (100/120) × 100 = 83,33% = (45/CMF0) × 100 ⇒ CMF0 = 45/0,8333 = 54 u.m."
+    },
+    {
+      "id": "C6_E15",
+      "capitol": 6,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Următorul tabel reflectă evoluția costului marginal când crește producția (Q = 1,2,3,4,5: C.mg = 70, 65, 72, 78, 95 u.m.). Costul total (CT) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "95 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "350 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "190 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "380 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "CT = ΣC.mg. = 70+65+72+78+95 = 380 u.m."
+    },
+    {
+      "id": "C6_E16",
+      "capitol": 6,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe baza relațiilor matematice dintre diferitele tipuri de costuri (Q = 1,2,3,4: CF = 8; CV = 16, 26, 31, 42), costul marginal (C.mg) este minim când producția este de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 buc.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "4 buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "C.mg.(1) = 16, C.mg.(2) = 26–16 = 10, C.mg.(3) = 31–26 = 5, C.mg.(4) = 42–31 = 11 ⇒ costul marginal minim (5 u.m.) se atinge la Q = 3 buc."
+    },
+    {
+      "id": "C6_E17",
+      "capitol": 6,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La începutul anului, profitul reprezintă 75% din cifra de afaceri. Dacă profitul nu se modifică, dar venitul total crește cu 15%, atunci variația relativă a costului total (Δ%CT) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "40%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "60%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "CT0 = C.A0 – Pr.T0 = 25%C.A0. C.A1 = 1,15C.A0 și Pr.T1 = Pr.T0 = 75%C.A0 → CT1 = 1,15C.A0 – 0,75C.A0 = 0,40C.A0 → ICT = (0,40/0,25) × 100 = 160% ⇒ Δ%CT = 60%."
+    },
+    {
+      "id": "C6_E18",
+      "capitol": 6,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Când Q = 3 buc., CF = 150 u.m., CMV = 25Q. Dacă producția se triplează, costul marginal (C.mg.) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "150 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "450 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "300 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "CMV0 = 25×3 = 75 → CV0 = 75×3 = 225 → CT0 = 225+150 = 375 u.m. Q1 = 9 → CMV1 = 25×9 = 225 → CV1 = 225×9 = 2.025 → CT1 = 2.025+150 = 2.175 u.m. ⇒ C.mg. = (2.175–375)/(9–3) = 1.800/6 = 300 u.m."
+    },
+    {
+      "id": "C6_E19",
+      "capitol": 6,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pentru a produce 8 bucăți dintr-un bun Y, o firmă face următoarele cheltuieli: materii prime, materiale auxiliare = 120 u.m., combustibil pentru încălzit = 10 u.m., iluminatul firmei = 8 u.m., combustibil pentru fabricație = 20 u.m., apă tehnologică = 70 u.m., amortizarea = 12 u.m., salarii directe = 40 u.m., salarii indirecte = 25 u.m., taxe și impozite = 15 u.m. Dacă prețul de vânzare este de 160 u.m., atunci costurile materiale (C.mat.) și ponderea costului total în cifra de afaceri [(CT/C.A) × 100] sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "240 u.m. și 20%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "250 u.m. și 32%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "240 u.m. și 25%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "320 u.m. și 25%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "CF = combustibil încălzit + iluminat + amortizare + salarii indirecte + taxe = 10+8+12+25+15 = 70 u.m. CV = materii prime + combustibil fabricație + apă tehnologică + salarii directe = 120+20+70+40 = 250 u.m. → CT = 70+250 = 320 u.m. C.mat. = materii prime + combustibil încălzit + iluminat + combustibil fabricație + apă tehnologică + amortizare = 120+10+8+20+70+12 = 240 u.m. C.A = 160×8 = 1.280 u.m. ⇒ (CT/C.A) × 100 = (320/1.280) × 100 = 25%."
+    },
+    {
+      "id": "C6_E20",
+      "capitol": 6,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Kc consumat de o firmă pentru a produce zilnic 4 bucăți dintr-un bun se ridică la 20% din capitalul tehnic utilizat. Rata anuală a amortizării, pentru un capital fix de 80 mil. u.m., este 10%, iar Sd = 180 mil. u.m. și reprezintă 60% CS. Firma înregistrează încasări de 400 mil. u.m. În anul următor, firma decide sporirea producției cu 3 buc. la același nivel al prețului, iar capitalul circulant și salariile directe sporesc cu 25% fiecare. Sporul absolut al costurilor totale (ΔCT) și al profitului unitar (ΔPr./u.p.) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50 mil. și 28 mil.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "28 mil. și 50 mil.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "78 mil. și 10 mil.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50 mil. și 18 mil.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Kc0 = 20%KT → KT = 100 mil. u.m., Kc0 = 20 mil. u.m. A = 10% × 80 mil. = 8 mil. u.m. → C.mat0 = 8+20 = 28 mil. u.m. CS0 = 180/0,60 = 300 mil., Si0 = 300–180 = 120 mil. → CT0 = 28+300 = 328 mil. u.m. Pr./u.p0 = (400–328)/4 = 18 mil. u.m., P0 = 400/4 = 100 mil. u.m./buc. An următor: Q1 = 7 buc., Kc1 = 1,25×20 = 25 mil., Sd1 = 1,25×180 = 225 mil. → CS1 = 225+120 = 345 mil., C.mat1 = 8+25 = 33 mil. → CT1 = 33+345 = 378 mil. u.m. → ΔCT = 378–328 = 50 mil. u.m. VT1 = 100×7 = 700 mil. → Pr./u.p1 = (700–378)/7 = 46 mil. u.m. ⇒ ΔPr./u.p. = 46–18 = 28 mil. u.m."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

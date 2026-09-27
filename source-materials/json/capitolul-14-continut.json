@@ -1,0 +1,365 @@
+{
+  "capitol": {
+    "numar": 14,
+    "titlu": "Șomajul",
+    "obiective": [
+      "Să explici ce este șomajul și cine se încadrează în statutul de șomer",
+      "Să distingi șomajul voluntar de cel involuntar",
+      "Să analizezi formele șomajului, după cauzele care îl generează",
+      "Să calculezi rata șomajului și indicatorii asociați (PAD, PAM, populația ocupată)",
+      "Să înțelegi politicile de reducere a șomajului"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "ce-este-somajul",
+      "nr": "1",
+      "titlu": "Ce este șomajul?",
+      "text": [
+        "Șomajul este o stare negativă a economiei, manifestată pe piața muncii, caracterizată printr-o utilizare parțială a ofertei de muncă - șomerii fiind un surplus de forță de muncă în raport cu locurile de muncă disponibile, în condițiile de rentabilitate impuse de economia de piață.",
+        "Conform Biroului Internațional al Muncii (BIM), șomerul este persoana care întrunește simultan mai multe condiții: are vârsta legală de muncă, este aptă de muncă, nu are loc de muncă, caută activ un loc de muncă, este disponibilă să înceapă lucrul imediat și este înregistrată la oficiul de ocupare a forței de muncă."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Modalitățile de analiză a șomajului",
+          "categorii": [
+            {
+              "nume": "Nivelul",
+              "definitie": "absolut (numărul de șomeri) sau relativ (rata șomajului)"
+            },
+            {
+              "nume": "Durata",
+              "definitie": "perioada de la pierderea locului de muncă până la reangajare"
+            },
+            {
+              "nume": "Structura",
+              "definitie": "pe categorii de vârstă, sex, nivel de pregătire etc."
+            },
+            {
+              "nume": "Intensitatea",
+              "definitie": "șomaj total (pierderea locului de muncă) sau parțial (diminuarea muncii prestate)"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Este un fenomen negativ al economiei, în cazul șomajului ridicat",
+        "Este \"un rău necesar\" atunci când rata șomajului e sub 3-4% - permite selecția forței de muncă pe criterii de competență și stimulează perfecționarea profesională"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "formele-somajului",
+      "nr": "2",
+      "titlu": "Formele șomajului, după cauze",
+      "text": [
+        "În funcție de cauzele care îl generează, șomajul îmbracă mai multe forme distincte, fiecare cerând soluții diferite."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele șomajului",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Fricțional",
+              "definitie": "datorat perioadei necesare unei persoane pentru a-și găsi locul de muncă dorit (ex. la schimbarea localității)"
+            },
+            {
+              "nume": "Structural",
+              "definitie": "neconcordanță între cererea și oferta de muncă, pe industrii sau regiuni (ex. cerere mare în IT, ofertă mare în siderurgie)"
+            },
+            {
+              "nume": "Tehnologic",
+              "definitie": "datorat substituirii muncii prin capital (ex. o firmă cumpără un robot industrial și disponibilizează muncitori)"
+            },
+            {
+              "nume": "Ciclic",
+              "definitie": "datorat perioadelor de recesiune economică, când afacerile se restrâng"
+            },
+            {
+              "nume": "Tehnic",
+              "definitie": "datorat întreruperii producției din cauze accidentale (lipsa comenzilor, întârzieri cu materiile prime)"
+            },
+            {
+              "nume": "Sezonier",
+              "definitie": "datorat succesiunii anotimpurilor (ex. salvamarii de vară devin șomeri iarna)"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "somaj-voluntar-involuntar",
+      "nr": "3",
+      "titlu": "Șomajul voluntar și involuntar",
+      "text": [
+        "Șomajul involuntar este determinat de rigiditatea salariilor la scădere - chiar dacă oferta de muncă crește (de ex. o nouă generație de absolvenți), salariul de echilibru ar trebui să scadă, dar nu scade, din cauza contractelor de muncă existente, a productivității muncii sau a mobilității reduse a forței de muncă. Rezultă un dezechilibru: oferta de muncă superioară cererii, la salariul practicat.",
+        "Șomajul voluntar are două cauze principale: fie persoana refuză să se angajeze la salariul de pe piață, considerându-l prea mic în raport cu alternativele sale (de ex. o femeie casnică refuză un salariu de 600 RON, dacă o bonă ar costa-o 700 RON); fie apare din negocierile sindicale - sindicatele urmăresc simultan salarii mai mari și mai multe locuri de muncă, dar întreprinzătorii acceptă salarii mai mari doar dacă productivitatea crește, altfel firmele au nevoie de mai puțini lucrători. Șomajul rezultat e involuntar pentru individul disponibilizat, dar voluntar pentru sindicat (care a acceptat acest compromis).",
+        "Șomajul natural este nivelul de șomaj considerat normal, acceptat pentru o funcționare eficientă a economiei - format din șomajul voluntar, fricțional și structural (nu și cel ciclic sau tehnologic, care reflectă dezechilibre reale). Rata naturală a șomajului corespunde funcționării normale a pieței muncii."
+      ],
+      "exemple": [
+        "Andreea vrea să lucreze ca recepționeră doar dacă salariul e peste 500 RON/lună. În rețeaua hotelieră, salariile variază între 300 și 400 RON. Andreea preferă să stea acasă - acesta e șomaj voluntar, nu involuntar.",
+        "O firmă acceptă cererea unui sindicat de a crește salariile cu 10%, dacă sindicatul acceptă disponibilizarea a 2% din membri. Cei 2% sunt șomeri involuntari ca indivizi, dar șomajul lor a fost, de fapt, acceptat voluntar de sindicat, în schimbul salariilor mai mari pentru restul membrilor."
+      ],
+      "formule": [],
+      "notaLegatura": {
+        "href": "#sect-explorator-somaj",
+        "text": "Explorează interactiv șomajul involuntar cauzat de un salariu peste nivelul de echilibru, în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "efecte-politici-somaj",
+      "nr": "4",
+      "titlu": "Efectele șomajului și politicile de combatere",
+      "text": [
+        "Șomajul are atât efecte economice, cât și sociale, resimțite de individ, de firme și de întreaga societate.",
+        "Statul intervine prin două categorii de măsuri: măsuri de protecție a șomerilor (asigurarea unui venit minim) și măsuri de reducere a șomajului (acțiuni asupra ofertei și cererii de muncă). Combaterea șomajului nu se poate realiza doar printr-o singură categorie de măsuri, ci printr-un \"pachet de măsuri\", pe termen mediu și lung."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Efectele șomajului",
+          "categorii": [
+            {
+              "nume": "Economice",
+              "definitie": "reducerea PIB, creșterea cheltuielilor cu protecția socială, reducerea eficienței muncii, reducerea veniturilor"
+            },
+            {
+              "nume": "Sociale",
+              "definitie": "creșterea criminalității, stări depresive, sentimentul de inutilitate și marginalizare socială"
+            }
+          ]
+        },
+        {
+          "criteriu": "Măsurile de protecție a șomerilor (România)",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Indemnizația de șomaj",
+              "definitie": "75% din salariul minim brut pe economie, acordată 6-12 luni"
+            },
+            {
+              "nume": "Alocația de sprijin",
+              "definitie": "40% din salariul minim brut, încă 18 luni după indemnizație"
+            },
+            {
+              "nume": "Plățile compensatorii",
+              "definitie": "acordate la concedieri colective, valoare variabilă"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Măsuri care vizează oferta de muncă",
+          "descriere": "programe de recalificare și reconversie profesională, consiliere, prime de mobilitate/instalare"
+        },
+        {
+          "termen": "Măsuri care vizează cererea de muncă",
+          "descriere": "facilități fiscale pentru firmele care angajează șomeri, sprijin public pentru afaceri noi, mediu favorabil investițiilor"
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "rata-somajului",
+      "nr": "5",
+      "titlu": "Rata șomajului: formule și calcul",
+      "text": [
+        "Rata șomajului exprimă ponderea șomerilor în populația activă disponibilă (sau în populația ocupată) - principalul indicator relativ de măsurare a șomajului."
+      ],
+      "exemple": [
+        "La o populație activă disponibilă de 15 milioane persoane și 3 milioane de șomeri: Rș(PAD) = (3/15)x100 = 20%."
+      ],
+      "formule": [
+        {
+          "nume": "Numărul de șomeri",
+          "formula": "Ș = PAD - P.O"
+        },
+        {
+          "nume": "Rata șomajului (față de PAD)",
+          "formula": "Rș(PAD) = (Ș/PAD) x 100"
+        },
+        {
+          "nume": "Rata șomajului (față de populația ocupată)",
+          "formula": "Rș(P.O) = (Ș/P.O) x 100"
+        }
+      ],
+      "calculator": "rataSomajului"
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Conform BIM, o persoană este considerată șomer dacă:",
+      "optiuni": [
+        "este pensionară și caută un loc de muncă part-time",
+        "este elev/student la cursuri de zi și lucrează ocazional",
+        "nu are loc de muncă, caută activ unul și e disponibilă să înceapă imediat",
+        "a renunțat definitiv să mai caute de lucru"
+      ],
+      "corect": 2,
+      "explicatie": "Statutul de șomer (BIM) cere, simultan: vârsta legală de muncă, aptitudine de muncă, lipsa unui loc de muncă, căutarea activă a unuia și disponibilitatea de a începe imediat."
+    },
+    {
+      "intrebare": "Șomajul tehnologic este cauzat de:",
+      "optiuni": [
+        "recesiunea economică",
+        "substituirea muncii prin capital",
+        "neconcordanța cerere-ofertă pe regiuni",
+        "perioada necesară găsirii unui loc de muncă"
+      ],
+      "corect": 1,
+      "explicatie": "Șomajul tehnologic apare când firmele înlocuiesc muncitorii cu utilaje/roboți - un exemplu clasic de substituire a muncii prin capital."
+    },
+    {
+      "intrebare": "Șomajul voluntar apare atunci când:",
+      "optiuni": [
+        "nu există locuri de muncă disponibile",
+        "o persoană refuză locurile de muncă oferite sub pragul salarial dorit",
+        "firma disponibilizează angajați din cauza recesiunii",
+        "o persoană e prea tânără pentru a lucra"
+      ],
+      "corect": 1,
+      "explicatie": "Șomajul voluntar reflectă alegerea persoanei de a nu accepta un loc de muncă sub salariul minim pe care și-l dorește - nu lipsa locurilor de muncă în sine."
+    },
+    {
+      "intrebare": "Rata șomajului se calculează astfel:",
+      "optiuni": [
+        "Rș = (PAD/Ș) x 100",
+        "Rș = (Ș/PAD) x 100",
+        "Rș = Ș - PAD",
+        "Rș = (PAD - Ș)/PAD"
+      ],
+      "corect": 1,
+      "explicatie": "Rș(PAD) = (Ș/PAD) x 100 - ponderea șomerilor în populația activă disponibilă."
+    },
+    {
+      "intrebare": "Șomajul fricțional este cauzat, în principal, de:",
+      "optiuni": [
+        "recesiunea economică",
+        "automatizarea producției",
+        "perioada de căutare a unui loc de muncă potrivit",
+        "neconcordanța dintre industrii"
+      ],
+      "corect": 2,
+      "explicatie": "Șomajul fricțional apare din timpul necesar unei persoane pentru a-și găsi locul de muncă dorit (ex. la schimbarea orașului), nu din alte cauze structurale."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Șomajul, în forma sa moderată (sub 3-4%), poate fi considerat \"un rău necesar\".",
+      "corect": true,
+      "explicatie": "Da - un nivel scăzut al șomajului permite selecția forței de muncă pe criterii de competență și stimulează perfecționarea profesională."
+    },
+    {
+      "enunt": "Femeile casnice și elevii la cursuri de zi sunt incluși în categoria șomerilor.",
+      "corect": false,
+      "explicatie": "Nu - definiția BIM îi exclude explicit, pentru că nu caută activ (sau nu sunt disponibili pentru) un loc de muncă salariat."
+    },
+    {
+      "enunt": "Existența șomajului voluntar arată că șomajul nu e neapărat un dezechilibru pe piața muncii.",
+      "corect": true,
+      "explicatie": "Da - chiar dacă cererea ar egala oferta de muncă, unele persoane tot ar refuza locurile de muncă disponibile, sub pragul lor salarial dorit."
+    },
+    {
+      "enunt": "Șomajul structural apare din neconcordanța dintre cererea și oferta de muncă, pe industrii sau regiuni.",
+      "corect": true,
+      "explicatie": "Da - de exemplu, cererea mare de IT-iști poate depăși oferta, în timp ce siderurgia are exces de forță de muncă."
+    },
+    {
+      "enunt": "Șomajul parțial înseamnă pierderea completă a locului de muncă.",
+      "corect": false,
+      "explicatie": "Șomajul parțial înseamnă diminuarea activității prestate (mai puține ore, salariu redus), nu pierderea completă a locului de muncă - aceea e șomajul total."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "La o populație activă disponibilă de 15 milioane persoane, sunt 3 milioane de șomeri. Care este rata șomajului (%) față de PAD?",
+      "unitate": "%",
+      "corect": 20,
+      "toleranta": 0.5,
+      "explicatie": "Rș(PAD) = (3/15)x100 = 20%."
+    },
+    {
+      "enunt": "Rata șomajului față de populația ocupată este 25%, iar populația activă disponibilă este 10 milioane persoane. Câți șomeri sunt?",
+      "unitate": "mil. pers.",
+      "corect": 2,
+      "toleranta": 0.1,
+      "explicatie": "Ș = 25%xP.O, iar PAD = P.O+Ș = P.O(1,25) = 10 mil. → P.O = 8 mil., deci Ș = 10-8 = 2 mil. persoane."
+    },
+    {
+      "enunt": "Numărul de șomeri dintr-o țară este 0,5 milioane persoane, iar rata șomajului la populația ocupată este 5%. Care este populația activă disponibilă (PAD), în mil. persoane?",
+      "unitate": "mil. pers.",
+      "corect": 10.5,
+      "toleranta": 0.2,
+      "explicatie": "P.O = Ș/5% = 0,5/0,05 = 10 mil. persoane. PAD = P.O+Ș = 10+0,5 = 10,5 mil. persoane."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare formă de șomaj cu cauza ei principală (atenție - sunt mai multe cauze decât forme).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Șomajul fricțional"
+        },
+        {
+          "id": "t2",
+          "text": "Șomajul structural"
+        },
+        {
+          "id": "t3",
+          "text": "Șomajul tehnologic"
+        },
+        {
+          "id": "t4",
+          "text": "Șomajul ciclic"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Perioada necesară găsirii unui loc de muncă potrivit"
+        },
+        {
+          "id": "o_b",
+          "text": "Neconcordanța dintre cererea și oferta de muncă, pe industrii sau regiuni"
+        },
+        {
+          "id": "o_c",
+          "text": "Substituirea muncii prin capital (roboți, utilaje)"
+        },
+        {
+          "id": "o_d",
+          "text": "Perioadele de recesiune economică"
+        },
+        {
+          "id": "o_e",
+          "text": "Întreruperea producției din cauze accidentale"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, șomajul tehnic - o formă distinctă, care nu apare în coloana din stânga."
+    }
+  ]
+}

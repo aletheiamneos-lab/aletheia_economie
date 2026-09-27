@@ -1,0 +1,369 @@
+{
+  "capitol": {
+    "numar": 13,
+    "titlu": "Piața muncii. Salariul",
+    "obiective": [
+      "Să explici cererea de muncă și oferta de muncă, și factorii care le influențează",
+      "Să înțelegi de ce salariul trebuie corelat cu productivitatea muncii",
+      "Să calculezi salariul net, salariul real și dinamica lor",
+      "Să calculezi rata ocupării și principalii indicatori ai populației active",
+      "Să înțelegi particularitățile pieței muncii"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "caracterizare-piata-muncii",
+      "nr": "1",
+      "titlu": "Piața muncii: caracterizare generală",
+      "text": [
+        "Piața muncii reflectă spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de muncă, formându-se prețul muncii, numit salariu. Din punct de vedere economic, munca e considerată o \"marfă specială\" (Samuelson), deși juridic munca nu este o marfă.",
+        "Piața muncii se formează în două faze: la nivelul economiei naționale (unde se conturează condițiile generale de angajare și principiile de salarizare) și la nivel microeconomic (unde are loc confruntarea concretă dintre cerere și ofertă, în fiecare firmă)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Participanții la piața muncii",
+          "categorii": [
+            {
+              "nume": "Cererea de muncă",
+              "definitie": "firmele, băncile, administrațiile - utilizatorii resurselor de muncă"
+            },
+            {
+              "nume": "Oferta de muncă",
+              "definitie": "posesorii resurselor de muncă disponibile"
+            },
+            {
+              "nume": "Intermediarii",
+              "definitie": "sindicatele, guvernul, oficiile de plasare a forței de muncă"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Este o piață derivată - depinde de dezvoltarea economică (sursa cererii) și de fenomenele demografice (sursa ofertei)",
+        "Este o piață contractuală, eterogenă și segmentată (piața celor cu studii superioare, medii, fără calificare etc.)",
+        "Are un grad ridicat de rigiditate și o mobilitate limitată a laturilor sale",
+        "Este o piață cu concurență imperfectă (oligopol, monopson, monopol bilateral)"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "cererea-de-munca",
+      "nr": "2",
+      "titlu": "Cererea de muncă",
+      "text": [
+        "Cererea de muncă reprezintă nevoia de muncă salariată care se formează în economie într-o anumită perioadă de timp - vine din partea firmelor și se exprimă prin numărul locurilor de muncă din economie, indiferent dacă sunt sau nu ocupate.",
+        "Firma va continua să angajeze lucrători atâta timp cât productivitatea marginală a muncii (Wmg) este mai mare decât salariul - fiecare lucrător nou aduce firmei mai mult decât o costă. Numărul optim de angajați, la un salariu dat, este atins atunci când Wmg(L) = Salariul."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Cererea de bunuri și servicii",
+          "descriere": "cu cât se dorește mai mult consum, cu atât crește nevoia de muncă pentru a-l produce"
+        },
+        {
+          "termen": "Salariul",
+          "descriere": "relație inversă - cu cât salariul e mai mare, cu atât firmele pot cumpăra mai puțină muncă"
+        },
+        {
+          "termen": "Productivitatea marginală a muncii",
+          "descriere": "relație directă - crește cererea de muncă atunci când Wmg crește, la același nivel al salariului"
+        }
+      ],
+      "exemple": [
+        "O firmă produce 100 de cămăși/zi, cu 80 de ore de muncă (10 muncitori, 8h/zi fiecare). Dacă cererea crește la 120 de cămăși, la aceeași productivitate, firma are nevoie de 96 de ore de muncă, deci de 12 muncitori.",
+        "Dacă firma plătește muncitorii cu 400 RON/lună, iar Wmg e 600 RON/lună, câștigul pentru ultimul angajat e 200 RON. Dacă Wmg crește la 800 RON, câștigul crește la 400 RON - firma poate crește salariul la 500 RON (câștigul scade la 300 RON, dar rămâne pozitiv) și tot îi convine să angajeze."
+      ],
+      "formule": [
+        {
+          "nume": "Numărul optim de angajați (la salariu constant)",
+          "formula": "Wmg(L) = Salariul"
+        }
+      ],
+      "notaLegatura": {
+        "href": "#sect-explorator-cerere-munca",
+        "text": "Explorează interactiv relația Wmg-Salariu în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "oferta-de-munca",
+      "nr": "3",
+      "titlu": "Oferta de muncă",
+      "text": [
+        "Oferta de muncă reprezintă cantitatea de muncă pe care o pot depune membrii societății, în condiții salariale, într-o anumită perioadă de timp - provine de la populația activă disponibilă a unei țări."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Salariul",
+          "descriere": "cu cât e mai mare, cu atât mai multe persoane doresc să lucreze"
+        },
+        {
+          "termen": "Preferințele pentru timp liber vs. timp de muncă",
+          "descriere": "timpul liber e costul de oportunitate al salariului - dacă salariul crește, oferta de muncă crește, dar există un prag peste care creșterea nu mai are efect"
+        },
+        {
+          "termen": "Acțiunile sindicatelor",
+          "descriere": "sindicatele pot bloca accesul persoanelor nesindicalizate, reducând oferta și crescând salariul"
+        },
+        {
+          "termen": "Demografia",
+          "descriere": "creșterea sau reducerea populației determină creșterea sau reducerea ofertei de muncă"
+        }
+      ],
+      "exemple": [
+        "Dan muncește 12 ore/zi pentru 2.000 RON/lună. Chiar dacă firma i-ar oferi 3.000 RON pentru 15 ore/zi, e puțin probabil să accepte - nu i-ar mai rămâne timp nici să se odihnească. Există un prag peste care creșterea salariului nu mai determină creșterea ofertei de muncă."
+      ],
+      "formule": []
+    },
+    {
+      "id": "salariul-forme",
+      "nr": "4",
+      "titlu": "Salariul: forme și factori",
+      "text": [
+        "Salariul este suma de bani pe care o primește posesorul factorului de producție muncă pentru activitatea desfășurată într-o unitate economică - un cost pentru întreprinzător, dar un venit principal pentru salariat."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele salariului",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Salariul nominal (brut/net)",
+              "definitie": "suma de bani încasată pentru munca depusă, înainte sau după impozitare"
+            },
+            {
+              "nume": "Salariul real",
+              "definitie": "cantitatea de bunuri și servicii ce poate fi cumpărată cu salariul nominal"
+            },
+            {
+              "nume": "Salariul colectiv",
+              "definitie": "sume acordate tuturor salariaților unei firme (facilități, cantine, tabere)"
+            },
+            {
+              "nume": "Salariul social",
+              "definitie": "sume acordate celor afectați de accidente, boli profesionale etc."
+            },
+            {
+              "nume": "Salariul familial",
+              "definitie": "ajutoare pentru căsătorie, nașteri etc."
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Ioana primește un salariu brut de 1.500 RON. Dacă impozitul e 40% din brut, salariul net e 1.500 - 40%×1.500 = 900 RON."
+      ],
+      "formule": [
+        {
+          "nume": "Salariul nominal net",
+          "formula": "SN.n = SN.b - Iz(SN.b)"
+        }
+      ]
+    },
+    {
+      "id": "salariul-real-ocupare",
+      "nr": "5",
+      "titlu": "Salariul real, câștigul salarial și ocuparea",
+      "text": [
+        "Salariul real exprimă cantitatea de bunuri și servicii ce poate fi cumpărată cu salariul nominal - depinde de nivelul salariului nominal, dar și de dinamica prețurilor bunurilor de consum. Câștigul salarial include, pe lângă salariu, și alte venituri (ore suplimentare, prime, sporuri).",
+        "Prin confruntarea cererii cu oferta de muncă rezultă gradul de ocupare a populației active disponibile (PAD)."
+      ],
+      "exemple": [
+        "Ion primește 400 RON/lună; la un preț mediu de 10 RON/bun, poate cumpăra 40 de bunuri - acesta e salariul lui real."
+      ],
+      "formule": [
+        {
+          "nume": "Salariul real",
+          "formula": "SR = SN / Pc"
+        },
+        {
+          "nume": "Dinamica salariului real",
+          "formula": "I_SR = (I_SN / I_Pc) x 100"
+        },
+        {
+          "nume": "Câștigul salarial real",
+          "formula": "Cș.R = Cș.N.n / Pc"
+        },
+        {
+          "nume": "Populația activă disponibilă",
+          "formula": "PAD = P.O + Ș = PAM - PAM.nd"
+        },
+        {
+          "nume": "Rata ocupării",
+          "formula": "R.oc(PAD) = (P.O/PAD) x 100"
+        }
+      ],
+      "calculator": "salariuReal"
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Când prețurile cresc mai repede decât salariul nominal, salariul real:",
+      "optiuni": [
+        "crește",
+        "scade",
+        "nu se modifică",
+        "nu există nicio legătură între ele"
+      ],
+      "corect": 1,
+      "explicatie": "Salariul real (SR=SN/Pc) scade dacă prețurile (Pc) cresc mai repede decât salariul nominal (SN) - puterea de cumpărare a salariului se erodează."
+    },
+    {
+      "intrebare": "Creșterea fiscalității pe salarii, neînsoțită de creșterea salariilor brute, determină:",
+      "optiuni": [
+        "reducerea salariului net",
+        "creșterea salariului net",
+        "creșterea salariului real",
+        "nemodificarea salariului net"
+      ],
+      "corect": 0,
+      "explicatie": "SN.n = SN.b - impozit. Dacă impozitul crește, iar SN.b rămâne constant, SN.n scade."
+    },
+    {
+      "intrebare": "Dacă cererea de muncă scade și oferta de muncă crește, salariul pe piața muncii:",
+      "optiuni": [
+        "crește",
+        "scade",
+        "nu se modifică",
+        "crește peste nivelul productivității muncii"
+      ],
+      "corect": 1,
+      "explicatie": "Ambele mișcări (cerere mai mică, ofertă mai mare) apasă salariul în jos - la fel ca la orice piață, cu prețul (aici, salariul) format prin cerere-ofertă."
+    },
+    {
+      "intrebare": "O firmă va continua să angajeze lucrători atâta timp cât:",
+      "optiuni": [
+        "salariul este constant",
+        "productivitatea marginală a muncii e mai mare decât salariul",
+        "oferta de muncă scade",
+        "prețul bunurilor produse scade"
+      ],
+      "corect": 1,
+      "explicatie": "Cât timp Wmg(L) > Salariul, fiecare lucrător nou aduce firmei mai mult decât o costă - deci merită angajat."
+    },
+    {
+      "intrebare": "Sindicatele puternice, care limitează accesul persoanelor nesindicalizate pe piața muncii dintr-o ramură, determină:",
+      "optiuni": [
+        "creșterea ofertei de muncă și scăderea salariului",
+        "scăderea ofertei de muncă și creșterea salariului",
+        "nicio schimbare",
+        "scăderea cererii de muncă"
+      ],
+      "corect": 1,
+      "explicatie": "Prin limitarea accesului, oferta de muncă în acea ramură scade, ceea ce - la cerere constantă - determină creșterea salariului."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Cererea de muncă se exprimă prin numărul locurilor de muncă (ocupate sau nu) din economie.",
+      "corect": true,
+      "explicatie": "Da - cererea de muncă reflectă nevoia de muncă salariată formată în economie, indiferent dacă locurile sunt ocupate."
+    },
+    {
+      "enunt": "Oferta de muncă se află în relație directă cu salariul.",
+      "corect": true,
+      "explicatie": "Da - conform legii ofertei, un salariu mai mare determină, în general, o ofertă de muncă mai mare (până la un anumit prag)."
+    },
+    {
+      "enunt": "Când cererea de muncă crește, iar oferta de muncă nu se modifică, salariul crește.",
+      "corect": true,
+      "explicatie": "Da - o cerere mai mare, la ofertă constantă, împinge salariul (prețul muncii) în sus."
+    },
+    {
+      "enunt": "Când productivitatea muncii crește, cererea de muncă scade.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - creșterea productivității marginale a muncii, la același salariu, determină creșterea cererii de muncă (firma câștigă mai mult cu fiecare lucrător)."
+    },
+    {
+      "enunt": "Piața muncii este o piață cu concurență perfectă.",
+      "corect": false,
+      "explicatie": "Nu - piața muncii se caracterizează prin concurență imperfectă, sub forme precum oligopolul, monopsonul sau monopolul bilateral."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Andrei primește lunar un salariu brut de 1.000 RON. Impozitul pe salariu este 35%. Care este salariul net?",
+      "unitate": "RON",
+      "corect": 650,
+      "toleranta": 5,
+      "explicatie": "SN.n = 1.000 - 35%x1.000 = 650 RON."
+    },
+    {
+      "enunt": "Salariul minim pe economie a fost 2.500.000 lei în 2003. Dacă în 2004 prețurile au crescut în medie cu 10%, iar salariul nominal a crescut cu 5%, cu cât s-a modificat salariul real (%)?",
+      "unitate": "%",
+      "corect": -4.54,
+      "toleranta": 0.2,
+      "explicatie": "I_SR = (I_SN/I_Pc)x100 = (105/110)x100 = 95,45%. Δ%SR = 95,45-100 = -4,54%."
+    },
+    {
+      "enunt": "La o populație activă disponibilă de 15 milioane persoane și 3 milioane de șomeri, care este rata șomajului (%)?",
+      "unitate": "%",
+      "corect": 20,
+      "toleranta": 0.5,
+      "explicatie": "Rș(PAD) = (Ș/PAD)x100 = (3/15)x100 = 20%."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Salariul nominal"
+        },
+        {
+          "id": "t2",
+          "text": "Salariul real"
+        },
+        {
+          "id": "t3",
+          "text": "Cererea de muncă"
+        },
+        {
+          "id": "t4",
+          "text": "Oferta de muncă"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Suma de bani încasată de salariat pentru munca depusă"
+        },
+        {
+          "id": "o_b",
+          "text": "Cantitatea de bunuri și servicii ce poate fi cumpărată cu salariul nominal"
+        },
+        {
+          "id": "o_c",
+          "text": "Nevoia de muncă salariată formată în economie, exprimată prin numărul locurilor de muncă"
+        },
+        {
+          "id": "o_d",
+          "text": "Cantitatea de muncă pe care o pot depune membrii societății, în condiții salariale"
+        },
+        {
+          "id": "o_e",
+          "text": "Suma primită de deținătorul unei obligațiuni pentru împrumutul acordat"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, dobânda unei obligațiuni - un concept dintr-un alt capitol, care nu apare aici."
+    }
+  ]
+}

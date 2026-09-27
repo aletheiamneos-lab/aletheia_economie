@@ -1,0 +1,1026 @@
+[
+  {
+    "id": "p01_budget_start",
+    "year": 1,
+    "title": "Bugetul de început de mandat",
+    "context": "Economia crește moderat, dar deficitul este peste nivelul dorit. Trebuie stabilită direcția primului buget.",
+    "concepts": [
+      "buget",
+      "creștere economică",
+      "datorie publică"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Program mare de investiții publice",
+        "effects": {
+          "gdp_growth": 0.45,
+          "unemployment": -0.2,
+          "budget_balance": -0.65,
+          "debt_gdp": 0.45,
+          "approval": 2.0,
+          "business_confidence": 1.0
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "gdp_growth": 0.25,
+              "business_confidence": 1.0
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Consolidare fiscală rapidă",
+        "effects": {
+          "gdp_growth": -0.25,
+          "unemployment": 0.15,
+          "budget_balance": 0.85,
+          "debt_gdp": -0.25,
+          "approval": -2.0,
+          "business_confidence": 0.3
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "business_confidence": 0.8
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Buget echilibrat: investiții moderate + control al cheltuielilor",
+        "effects": {
+          "gdp_growth": 0.2,
+          "unemployment": -0.08,
+          "budget_balance": 0.3,
+          "approval": 0.8,
+          "business_confidence": 0.8
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "gdp_growth": 0.12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p02_vat",
+    "year": 1,
+    "title": "TVA și consumul",
+    "context": "Veniturile bugetare sunt insuficiente. Cabinetul propune modificarea TVA.",
+    "concepts": [
+      "fiscalitate",
+      "consum",
+      "inflație"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Crește TVA",
+        "effects": {
+          "budget_balance": 0.55,
+          "inflation": 0.35,
+          "purchasing_power": -1.8,
+          "approval": -2.5,
+          "gdp_growth": -0.12
+        }
+      },
+      {
+        "id": "B",
+        "label": "Menține TVA",
+        "effects": {
+          "approval": 0.3,
+          "business_confidence": 0.4
+        }
+      },
+      {
+        "id": "C",
+        "label": "Reducere țintită pentru bunuri de bază",
+        "effects": {
+          "budget_balance": -0.25,
+          "inflation": -0.15,
+          "purchasing_power": 1.2,
+          "approval": 1.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "p03_infrastructure",
+    "year": 1,
+    "title": "Programul de infrastructură",
+    "context": "Logistica slabă limitează investițiile și exporturile.",
+    "concepts": [
+      "investiții",
+      "productivitate",
+      "comerț exterior"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Program accelerat",
+        "effects": {
+          "budget_balance": -0.65,
+          "debt_gdp": 0.45,
+          "approval": 1.8,
+          "gdp_growth": 0.2
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "gdp_growth": 0.35,
+              "business_confidence": 1.8,
+              "external_balance": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Program moderat, etapizat",
+        "effects": {
+          "budget_balance": -0.3,
+          "approval": 0.8,
+          "gdp_growth": 0.1
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "gdp_growth": 0.2,
+              "business_confidence": 1.0,
+              "external_balance": 0.15
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Amână investiția",
+        "effects": {
+          "budget_balance": 0.25,
+          "approval": -1.0
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "business_confidence": -1.0,
+              "external_balance": -0.15
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p04_sme",
+    "year": 1,
+    "title": "Sprijin pentru IMM",
+    "context": "Firmele mici reclamă acces dificil la finanțare.",
+    "concepts": [
+      "credit",
+      "investiții",
+      "ocupare"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Granturi directe ample",
+        "effects": {
+          "budget_balance": -0.45,
+          "gdp_growth": 0.18,
+          "unemployment": -0.12,
+          "approval": 1.0
+        }
+      },
+      {
+        "id": "B",
+        "label": "Garanții de credit și criterii de eligibilitate",
+        "effects": {
+          "budget_balance": -0.15,
+          "gdp_growth": 0.15,
+          "unemployment": -0.1,
+          "business_confidence": 1.4
+        }
+      },
+      {
+        "id": "C",
+        "label": "Fără program nou",
+        "effects": {
+          "budget_balance": 0.15,
+          "business_confidence": -0.7
+        }
+      }
+    ]
+  },
+  {
+    "id": "p05_energy",
+    "year": 1,
+    "title": "Șoc energetic",
+    "context": "Prețurile energiei cresc puternic la nivel internațional. Inflația se accelerează.",
+    "concepts": [
+      "inflație prin costuri",
+      "subvenții",
+      "buget"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Subvenție generală a prețului",
+        "effects": {
+          "inflation": -0.35,
+          "budget_balance": -0.7,
+          "approval": 2.0,
+          "purchasing_power": 1.2
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "budget_balance": -0.2
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Sprijin doar pentru gospodării vulnerabile și firme esențiale",
+        "effects": {
+          "inflation": -0.18,
+          "budget_balance": -0.3,
+          "approval": 1.2,
+          "purchasing_power": 0.7
+        }
+      },
+      {
+        "id": "C",
+        "label": "Fără intervenție fiscală",
+        "effects": {
+          "inflation": 0.55,
+          "purchasing_power": -2.0,
+          "approval": -2.2,
+          "budget_balance": 0.15
+        }
+      }
+    ]
+  },
+  {
+    "id": "p06_labor_tax",
+    "year": 2,
+    "title": "Piața muncii",
+    "context": "Șomajul rămâne peste nivelul dorit, iar firmele reclamă costuri de angajare.",
+    "concepts": [
+      "piața muncii",
+      "fiscalitate",
+      "ocupare"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Reduce taxele pe muncă",
+        "effects": {
+          "budget_balance": -0.35,
+          "unemployment": -0.2,
+          "gdp_growth": 0.18,
+          "business_confidence": 1.0
+        }
+      },
+      {
+        "id": "B",
+        "label": "Programe de calificare și reconversie",
+        "effects": {
+          "budget_balance": -0.2,
+          "approval": 0.6
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "unemployment": -0.3,
+              "gdp_growth": 0.2,
+              "business_confidence": 0.8
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Menține politica actuală",
+        "effects": {
+          "approval": -0.3
+        }
+      }
+    ]
+  },
+  {
+    "id": "p07_public_wages",
+    "year": 2,
+    "title": "Salariile din sectorul public",
+    "context": "Sindicatele cer creșteri salariale consistente.",
+    "concepts": [
+      "salarii",
+      "productivitate",
+      "inflație",
+      "buget"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Creșteri salariale mari, imediate",
+        "effects": {
+          "budget_balance": -0.65,
+          "inflation": 0.3,
+          "purchasing_power": 1.0,
+          "approval": 2.0
+        }
+      },
+      {
+        "id": "B",
+        "label": "Creșteri moderate, legate de venituri și performanță",
+        "effects": {
+          "budget_balance": -0.25,
+          "inflation": 0.08,
+          "purchasing_power": 0.6,
+          "approval": 1.0
+        }
+      },
+      {
+        "id": "C",
+        "label": "Înghețare completă",
+        "effects": {
+          "budget_balance": 0.4,
+          "approval": -2.0,
+          "purchasing_power": -0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "p08_inflation",
+    "year": 2,
+    "title": "Inflație persistentă",
+    "context": "Inflația rămâne ridicată după șocul energetic.",
+    "concepts": [
+      "inflație",
+      "politică fiscală",
+      "protecție socială"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Consolidare fiscală și reducerea cererii publice",
+        "effects": {
+          "inflation": -0.3,
+          "budget_balance": 0.55,
+          "gdp_growth": -0.2,
+          "unemployment": 0.12,
+          "approval": -1.3
+        }
+      },
+      {
+        "id": "B",
+        "label": "Plafonări și subvenții generale",
+        "effects": {
+          "inflation": -0.2,
+          "budget_balance": -0.6,
+          "approval": 1.3
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "inflation": 0.15,
+              "business_confidence": -0.8
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Protecție țintită + măsuri de ofertă",
+        "effects": {
+          "inflation": -0.18,
+          "budget_balance": -0.2,
+          "business_confidence": 0.8,
+          "approval": 0.7
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "gdp_growth": 0.12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p09_industry",
+    "year": 2,
+    "title": "Politica industrială",
+    "context": "Productivitatea stagnează în sectoarele tradiționale.",
+    "concepts": [
+      "productivitate",
+      "tehnologie",
+      "subvenții"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Stimulează tehnologia, cercetarea și capitalul uman",
+        "effects": {
+          "budget_balance": -0.3,
+          "business_confidence": 1.2
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "gdp_growth": 0.3,
+              "external_balance": 0.15
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Subvenționează firmele vechi pentru a evita restructurarea",
+        "effects": {
+          "budget_balance": -0.5,
+          "unemployment": -0.08,
+          "approval": 0.8
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "business_confidence": -1.0,
+              "gdp_growth": -0.15
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Neutralitate totală",
+        "effects": {
+          "budget_balance": 0.1
+        }
+      }
+    ]
+  },
+  {
+    "id": "p10_exports",
+    "year": 2,
+    "title": "Strategia de export",
+    "context": "Balanța externă este negativă.",
+    "concepts": [
+      "export",
+      "balanță comercială",
+      "competitivitate"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Logistică, digitalizare vamală și competitivitate",
+        "effects": {
+          "budget_balance": -0.2
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "external_balance": 0.45,
+              "gdp_growth": 0.18,
+              "business_confidence": 0.6
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Subvenții directe exportatorilor",
+        "effects": {
+          "budget_balance": -0.35,
+          "external_balance": 0.2,
+          "business_confidence": 0.4
+        }
+      },
+      {
+        "id": "C",
+        "label": "Prioritizează doar cererea internă",
+        "effects": {
+          "purchasing_power": 0.4,
+          "external_balance": -0.2
+        }
+      }
+    ]
+  },
+  {
+    "id": "p11_external_recession",
+    "year": 3,
+    "title": "Recesiune externă",
+    "context": "Principalii parteneri comerciali intră în recesiune. Cererea externă scade.",
+    "concepts": [
+      "ciclu economic",
+      "politici anticiclice",
+      "export"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Stimul fiscal amplu",
+        "effects": {
+          "gdp_growth": 0.3,
+          "unemployment": -0.18,
+          "budget_balance": -0.75,
+          "debt_gdp": 0.5,
+          "approval": 1.4
+        }
+      },
+      {
+        "id": "B",
+        "label": "Consolidare fiscală pentru protejarea bugetului",
+        "effects": {
+          "budget_balance": 0.65,
+          "gdp_growth": -0.3,
+          "unemployment": 0.22,
+          "approval": -1.5
+        }
+      },
+      {
+        "id": "C",
+        "label": "Stabilizatori automați + investiții selective",
+        "effects": {
+          "gdp_growth": 0.15,
+          "unemployment": -0.1,
+          "budget_balance": -0.35,
+          "approval": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "id": "p12_unemployment",
+    "year": 3,
+    "title": "Șomaj în creștere",
+    "context": "Recesiunea externă a afectat industria și serviciile exportatoare.",
+    "concepts": [
+      "șomaj",
+      "recalificare",
+      "cheltuieli publice"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Lucrări publice temporare",
+        "effects": {
+          "budget_balance": -0.4,
+          "unemployment": -0.25,
+          "gdp_growth": 0.15,
+          "approval": 1.0
+        }
+      },
+      {
+        "id": "B",
+        "label": "Recalificare + stimulente pentru angajări noi",
+        "effects": {
+          "budget_balance": -0.25,
+          "unemployment": -0.12,
+          "approval": 0.7
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "unemployment": -0.22,
+              "business_confidence": 0.7
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Mărește doar indemnizațiile de șomaj",
+        "effects": {
+          "budget_balance": -0.3,
+          "approval": 0.8,
+          "purchasing_power": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "p13_currency",
+    "year": 3,
+    "title": "Moneda se depreciază",
+    "context": "Importurile se scumpesc, iar presiunile inflaționiste cresc.",
+    "concepts": [
+      "curs valutar",
+      "inflație importată",
+      "export"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Reduce dezechilibrul bugetar și susține încrederea",
+        "effects": {
+          "budget_balance": 0.4,
+          "inflation": -0.12,
+          "business_confidence": 0.8,
+          "approval": -0.5
+        }
+      },
+      {
+        "id": "B",
+        "label": "Introduce control administrativ al cursului comercial",
+        "effects": {
+          "inflation": -0.08,
+          "business_confidence": -1.8,
+          "external_balance": -0.2,
+          "approval": 0.4
+        }
+      },
+      {
+        "id": "C",
+        "label": "Acceptă ajustarea și sprijină competitivitatea exporturilor",
+        "effects": {
+          "inflation": 0.22,
+          "external_balance": 0.35,
+          "gdp_growth": 0.12,
+          "purchasing_power": -0.8
+        }
+      }
+    ]
+  },
+  {
+    "id": "p14_debt",
+    "year": 3,
+    "title": "Datoria publică",
+    "context": "Costurile de finanțare cresc, iar datoria se apropie de un prag sensibil.",
+    "concepts": [
+      "datorie publică",
+      "buget",
+      "fiscalitate"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Reformează cheltuielile și elimină programele ineficiente",
+        "effects": {
+          "budget_balance": 0.6,
+          "debt_gdp": -0.3,
+          "approval": -0.7,
+          "business_confidence": 0.6
+        }
+      },
+      {
+        "id": "B",
+        "label": "Crește impozitele general",
+        "effects": {
+          "budget_balance": 0.7,
+          "debt_gdp": -0.25,
+          "gdp_growth": -0.18,
+          "purchasing_power": -0.8,
+          "approval": -1.6
+        }
+      },
+      {
+        "id": "C",
+        "label": "Refinanțează datoria fără reforme",
+        "effects": {
+          "approval": 0.3
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "debt_gdp": 0.6,
+              "business_confidence": -0.8
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p15_productivity",
+    "year": 3,
+    "title": "Productivitate slabă",
+    "context": "Creșterea salariilor depășește sporul productivității în mai multe sectoare.",
+    "concepts": [
+      "productivitate",
+      "salarii",
+      "competitivitate"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Educație tehnică, digitalizare și investiții productive",
+        "effects": {
+          "budget_balance": -0.3,
+          "business_confidence": 1.0
+        },
+        "delayed": [
+          {
+            "after": 3,
+            "effects": {
+              "gdp_growth": 0.35,
+              "external_balance": 0.2
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Impune administrativ creșteri salariale suplimentare",
+        "effects": {
+          "purchasing_power": 0.8,
+          "inflation": 0.25,
+          "business_confidence": -1.2,
+          "approval": 1.2
+        }
+      },
+      {
+        "id": "C",
+        "label": "Protejează firmele interne prin bariere comerciale largi",
+        "effects": {
+          "external_balance": 0.1,
+          "inflation": 0.15,
+          "business_confidence": -0.6
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "gdp_growth": -0.12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p16_election",
+    "year": 4,
+    "title": "An electoral",
+    "context": "Popularitatea contează, dar dezechilibrele acumulate nu au dispărut.",
+    "concepts": [
+      "politică fiscală",
+      "ciclu economic",
+      "buget"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Stimul fiscal larg înainte de alegeri",
+        "effects": {
+          "approval": 3.0,
+          "purchasing_power": 1.2,
+          "gdp_growth": 0.2,
+          "budget_balance": -0.8,
+          "inflation": 0.25
+        }
+      },
+      {
+        "id": "B",
+        "label": "Disciplină fiscală strictă",
+        "effects": {
+          "approval": -1.8,
+          "budget_balance": 0.7,
+          "inflation": -0.15,
+          "gdp_growth": -0.12
+        }
+      },
+      {
+        "id": "C",
+        "label": "Măsuri țintite și menținerea investițiilor productive",
+        "effects": {
+          "approval": 1.2,
+          "budget_balance": -0.2,
+          "gdp_growth": 0.12,
+          "purchasing_power": 0.5
+        }
+      }
+    ]
+  },
+  {
+    "id": "p17_supply",
+    "year": 4,
+    "title": "Criză regională de aprovizionare",
+    "context": "Mai multe materii prime devin dificil de procurat.",
+    "concepts": [
+      "ofertă",
+      "inflație prin costuri",
+      "comerț exterior"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Diversifică furnizorii și rutele comerciale",
+        "effects": {
+          "budget_balance": -0.15,
+          "business_confidence": 0.5
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "inflation": -0.15,
+              "external_balance": 0.2
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Plafonează administrativ prețurile pe scară largă",
+        "effects": {
+          "inflation": -0.2,
+          "approval": 1.0,
+          "business_confidence": -1.0
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "inflation": 0.2
+            }
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "label": "Stocuri strategice + diversificare graduală",
+        "effects": {
+          "budget_balance": -0.25,
+          "inflation": -0.08,
+          "approval": 0.5
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "business_confidence": 0.7,
+              "external_balance": 0.12
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p18_social",
+    "year": 4,
+    "title": "Presiune socială",
+    "context": "Puterea de cumpărare a gospodăriilor vulnerabile rămâne sub presiune.",
+    "concepts": [
+      "redistribuire",
+      "consum",
+      "buget"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Transferuri țintite",
+        "effects": {
+          "budget_balance": -0.25,
+          "purchasing_power": 1.0,
+          "approval": 1.2
+        }
+      },
+      {
+        "id": "B",
+        "label": "Transferuri universale",
+        "effects": {
+          "budget_balance": -0.6,
+          "purchasing_power": 1.5,
+          "approval": 2.0,
+          "inflation": 0.1
+        }
+      },
+      {
+        "id": "C",
+        "label": "Reducere generală de taxe",
+        "effects": {
+          "budget_balance": -0.5,
+          "purchasing_power": 1.0,
+          "business_confidence": 0.8,
+          "approval": 1.3
+        }
+      }
+    ]
+  },
+  {
+    "id": "p19_private_invest",
+    "year": 4,
+    "title": "Investițiile private scad",
+    "context": "Companiile amână proiecte din cauza incertitudinii.",
+    "concepts": [
+      "investiții",
+      "încredere",
+      "fiscalitate"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Predictibilitate fiscală + infrastructură",
+        "effects": {
+          "budget_balance": -0.2,
+          "business_confidence": 1.8
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "gdp_growth": 0.22
+            }
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "label": "Reducerile masive de taxe, imediat",
+        "effects": {
+          "budget_balance": -0.65,
+          "business_confidence": 1.2,
+          "gdp_growth": 0.15
+        }
+      },
+      {
+        "id": "C",
+        "label": "Statul înlocuiește investițiile private prin cheltuieli publice mari",
+        "effects": {
+          "budget_balance": -0.8,
+          "gdp_growth": 0.25,
+          "approval": 1.0
+        },
+        "delayed": [
+          {
+            "after": 2,
+            "effects": {
+              "debt_gdp": 0.45
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "p20_final_budget",
+    "year": 4,
+    "title": "Ultimul buget",
+    "context": "Mandatul se încheie. Trebuie ales profilul final al politicii economice.",
+    "concepts": [
+      "sustenabilitate",
+      "buget",
+      "creștere"
+    ],
+    "options": [
+      {
+        "id": "A",
+        "label": "Sustenabilitate: deficit redus, investiții protejate",
+        "effects": {
+          "budget_balance": 0.55,
+          "debt_gdp": -0.2,
+          "business_confidence": 0.8,
+          "approval": 0.5
+        }
+      },
+      {
+        "id": "B",
+        "label": "Expansiune: consum și cheltuieli publice",
+        "effects": {
+          "gdp_growth": 0.25,
+          "approval": 2.0,
+          "budget_balance": -0.75,
+          "inflation": 0.2,
+          "debt_gdp": 0.4
+        }
+      },
+      {
+        "id": "C",
+        "label": "Austeritate amplă",
+        "effects": {
+          "budget_balance": 0.9,
+          "debt_gdp": -0.35,
+          "gdp_growth": -0.25,
+          "unemployment": 0.18,
+          "approval": -2.2
+        }
+      }
+    ]
+  }
+]

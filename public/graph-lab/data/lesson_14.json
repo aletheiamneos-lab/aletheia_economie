@@ -1,0 +1,147 @@
+{
+  "lesson": 14,
+  "title": "Șomajul",
+  "source": "Capitolul 14 - Șomajul",
+  "modules": [
+    {
+      "id": "structura_pad",
+      "title": "PAD, populația ocupată și șomerii",
+      "kind": "unemployment",
+      "defaults": {
+        "pad": 10,
+        "occupied": 8.2
+      },
+      "formulas": [
+        "Ș = PAD - PO",
+        "Rș(PAD) = Ș/PAD × 100",
+        "Rș(PO) = Ș/PO × 100"
+      ],
+      "provenance": {
+        "status": "B",
+        "statusLegend": "derivat direct din formule/datele materialului",
+        "primarySource": "Capitolul 14 - Somajul_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Nivel absolut/relativ, durată, structură și intensitate (total/parțial) ale șomajului; evoluția ratei în timp."
+      }
+    },
+    {
+      "id": "rata_somaj",
+      "title": "Rata șomajului",
+      "kind": "unemployment",
+      "defaults": {
+        "pad": 10,
+        "occupied": 8.5
+      },
+      "formulas": [
+        "Rș(PAD) = Ș/PAD × 100"
+      ],
+      "provenance": {
+        "status": "B",
+        "statusLegend": "derivat direct din formule/datele materialului",
+        "primarySource": "Capitolul 14 - Somajul_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Nivel absolut/relativ, durată, structură și intensitate (total/parțial) ale șomajului; evoluția ratei în timp."
+      }
+    },
+    {
+      "id": "durata_intensitatea",
+      "title": "Durata și intensitatea șomajului",
+      "kind": "unemployment_profile",
+      "defaults": {
+        "durationMonths": 6,
+        "intensity": "total",
+        "partialWorkPct": 50
+      },
+      "formulas": [],
+      "provenance": {
+        "status": "C",
+        "statusLegend": "vizualizare deterministă a unui concept textual din material",
+        "primarySource": "Capitolul 14 - Somajul_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Nivel absolut/relativ, durată, structură și intensitate (total/parțial) ale șomajului; evoluția ratei în timp."
+      }
+    },
+    {
+      "id": "somaj_timp",
+      "title": "Evoluția șomajului",
+      "kind": "time_series",
+      "defaults": {
+        "labels": [
+          "T0",
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5"
+        ],
+        "values": [
+          6.5,
+          7.2,
+          8.1,
+          7.6,
+          6.9,
+          6.2
+        ],
+        "valueName": "Rata șomajului (%)"
+      },
+      "provenance": {
+        "status": "B",
+        "statusLegend": "derivat direct din formule/datele materialului",
+        "primarySource": "Capitolul 14 - Somajul_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Nivel absolut/relativ, durată, structură și intensitate (total/parțial) ale șomajului; evoluția ratei în timp."
+      }
+    },
+    {
+      "id": "tipuri_somaj",
+      "title": "Structura tipurilor de șomaj",
+      "kind": "editable_bars",
+      "defaults": {
+        "items": [
+          {
+            "name": "Fricțional",
+            "value": 18
+          },
+          {
+            "name": "Structural",
+            "value": 28
+          },
+          {
+            "name": "Ciclic",
+            "value": 32
+          },
+          {
+            "name": "Sezonier",
+            "value": 12
+          },
+          {
+            "name": "Tehnologic",
+            "value": 10
+          }
+        ]
+      },
+      "provenance": {
+        "status": "C",
+        "statusLegend": "vizualizare deterministă a unui concept textual din material",
+        "primarySource": "Capitolul 14 - Somajul_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Nivel absolut/relativ, durată, structură și intensitate (total/parțial) ale șomajului; evoluția ratei în timp."
+      }
+    }
+  ],
+  "themeDefaults": {
+    "graphBg": "#ffffff",
+    "grid": "#edf1f6",
+    "axes": "#667085",
+    "line1": "#2f63d5",
+    "line2": "#13865f",
+    "line3": "#7458d8",
+    "line4": "#b46b00",
+    "line5": "#d04f5f",
+    "line6": "#0f8f9b",
+    "t0": "#667085",
+    "probe": "#b42318"
+  },
+  "auditVersion": "5.4-complet",
+  "sourcePolicy": "Nu se introduce o formulă economică nouă dacă nu este susținută de material; vizualizările C sunt marcate ca schematice/didactice."
+}

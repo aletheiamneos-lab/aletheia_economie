@@ -1,0 +1,660 @@
+{
+  "version": 1,
+  "testCount": 36,
+  "totalQuestions": 1280,
+  "formulaQuestions": 676,
+  "yearRange": [
+    2002,
+    2025
+  ],
+  "tests": [
+    {
+      "id": "g1-23iulie2025",
+      "year": 2025,
+      "session": "23 iulie 2025",
+      "variant": "G1",
+      "filename": "Grila_G1_23iulie2025.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 10,
+        "mediu": 13,
+        "greu": 4,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Subiecte_Grila_123_07_2025.pdf",
+      "answerSource": "barem_G123_07_2025.pdf",
+      "note": null
+    },
+    {
+      "id": "g2-23iulie2025",
+      "year": 2025,
+      "session": "23 iulie 2025",
+      "variant": "G2",
+      "filename": "Grila_G2_23iulie2025.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 10,
+        "mediu": 13,
+        "greu": 4,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Subiecte_Grila_223_07_2025.pdf",
+      "answerSource": "barem_G223_07_2025.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (23 iulie 2025), reordonate pe foaie. Textul enunturilor, variantele a-d si raspunsurile corecte sunt identice per exercitiu, verificate pe baremul propriu al Grilei G2."
+    },
+    {
+      "id": "g3-23iulie2025",
+      "year": 2025,
+      "session": "23 iulie 2025",
+      "variant": "G3",
+      "filename": "Grila_G3_23iulie2025.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 10,
+        "mediu": 13,
+        "greu": 4,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Subiecte_Grila_323_07_2025.pdf",
+      "answerSource": "barem_G323_07_2025.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1, reordonate. Verificate integral pe baremul propriu al Grilei G3."
+    },
+    {
+      "id": "g4-23iulie2025",
+      "year": 2025,
+      "session": "23 iulie 2025",
+      "variant": "G4",
+      "filename": "Grila_G4_23iulie2025.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 10,
+        "mediu": 13,
+        "greu": 4,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Subiecte_Grila_423_07_2025.pdf",
+      "answerSource": "barem_G423_07_2025.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1, reordonate. Verificate integral pe baremul propriu al Grilei G4."
+    },
+    {
+      "id": "g1-23iulie2024",
+      "year": 2024,
+      "session": "23 iulie 2024",
+      "variant": "G1",
+      "filename": "Grila_G1_23iulie2024.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 11,
+        "mediu": 14,
+        "greu": 3,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Subiecte_Grila_1iulie_2024.pdf",
+      "answerSource": "Raspunsuri_Grila_1iulie_2024.pdf",
+      "note": null
+    },
+    {
+      "id": "g2-23iulie2024",
+      "year": 2024,
+      "session": "23 iulie 2024",
+      "variant": "G2",
+      "filename": "Grila_G2_23iulie2024.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 11,
+        "mediu": 14,
+        "greu": 3,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Subiecte_Grila_2iulie_2024.pdf",
+      "answerSource": "Raspunsuri_Grila_2iulie_2024.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (23 iulie 2024), reordonate. Verificate integral pe baremul propriu al Grilei G2."
+    },
+    {
+      "id": "g3-23iulie2024",
+      "year": 2024,
+      "session": "23 iulie 2024",
+      "variant": "G3",
+      "filename": "Grila_G3_23iulie2024.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 11,
+        "mediu": 14,
+        "greu": 3,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Subiecte_Grila_3iulie_2024.pdf",
+      "answerSource": "Raspunsuri_Grila_3iulie_2024.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (23 iulie 2024), reordonate. Verificate integral pe baremul propriu al Grilei G3."
+    },
+    {
+      "id": "g4-23iulie2024",
+      "year": 2024,
+      "session": "23 iulie 2024",
+      "variant": "G4",
+      "filename": "Grila_G4_23iulie2024.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 11,
+        "mediu": 14,
+        "greu": 3,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Subiecte_Grila_4iulie_2024.pdf",
+      "answerSource": "Raspunsuri_Grila_4iulie_2024.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (23 iulie 2024), reordonate. Verificate integral pe baremul propriu al Grilei G4."
+    },
+    {
+      "id": "g1-20iulie2023",
+      "year": 2023,
+      "session": "20 iulie 2023",
+      "variant": "G1",
+      "filename": "Grila_G1_20iulie2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Subiecte_Grila_120_07_2023.pdf",
+      "answerSource": "Raspunsuri_Grila_120_07_2023.pdf",
+      "note": null
+    },
+    {
+      "id": "g2-20iulie2023",
+      "year": 2023,
+      "session": "20 iulie 2023",
+      "variant": "G2",
+      "filename": "Grila_G2_20iulie2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Subiecte_Grila_220_07_2023.pdf",
+      "answerSource": "Raspunsuri_Grila_220_07_2023.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (20 iulie 2023), reordonate. Verificate integral pe baremul propriu al Grilei G2."
+    },
+    {
+      "id": "g3-20iulie2023",
+      "year": 2023,
+      "session": "20 iulie 2023",
+      "variant": "G3",
+      "filename": "Grila_G3_20iulie2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Subiecte_Grila_320_07_2023.pdf",
+      "answerSource": "Raspunsuri_Grila_320_07_2023.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (20 iulie 2023), reordonate. Verificate integral pe baremul propriu al Grilei G3."
+    },
+    {
+      "id": "g4-20iulie2023",
+      "year": 2023,
+      "session": "20 iulie 2023",
+      "variant": "G4",
+      "filename": "Grila_G4_20iulie2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Subiecte_Grila_420_07_2023.pdf",
+      "answerSource": "Raspunsuri_Grila_420_07_2023.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (20 iulie 2023), reordonate. Verificate integral pe baremul propriu al Grilei G4."
+    },
+    {
+      "id": "g1-simulare7mai2023",
+      "year": 2023,
+      "session": "Simulare 7 mai 2023",
+      "variant": "G1",
+      "filename": "Grila_G1_simulare7mai2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Simulare__Subiecte_Grila_17_05_2023.pdf",
+      "answerSource": "Simulare__Grila_17_05_2023.pdf",
+      "note": null
+    },
+    {
+      "id": "g3-simulare7mai2023",
+      "year": 2023,
+      "session": "Simulare 7 mai 2023",
+      "variant": "G3",
+      "filename": "Grila_G3_simulare7mai2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Simulare__Subiecte_Grila_37_05_2023.pdf",
+      "answerSource": "Simulare__Grila_37_05_2023.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (simulare 7 mai 2023), reordonate. Verificate integral pe baremul propriu al Grilei G3. Notă: pentru această simulare nu există G2 în arhiva sursă."
+    },
+    {
+      "id": "g4-simulare7mai2023",
+      "year": 2023,
+      "session": "Simulare 7 mai 2023",
+      "variant": "G4",
+      "filename": "Grila_G4_simulare7mai2023.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 13,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Simulare__Subiecte_Grila_47_05_2023.pdf",
+      "answerSource": "Simulare__Grila_47_05_2023.pdf",
+      "note": "Aceleasi 30 de exercitii de economie ca la Grila G1 (simulare 7 mai 2023), reordonate. Verificate integral pe baremul propriu al Grilei G4. Notă: pentru această simulare nu există G2 în arhiva sursă."
+    },
+    {
+      "id": "g1-21iulie2022",
+      "year": 2022,
+      "session": "21 iulie 2022",
+      "variant": "G1",
+      "filename": "Grila_G1_21iulie2022.json",
+      "questionCount": 30,
+      "economyRange": "51-80",
+      "difficultyCounts": {
+        "usor": 15,
+        "mediu": 11,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Grile_2022.pdf (paginile 1-8)",
+      "answerSource": "Grile_2022.pdf (pagina 9)",
+      "note": null
+    },
+    {
+      "id": "g1-21iulie2021",
+      "year": 2021,
+      "session": "21 iulie 2021",
+      "variant": "G1",
+      "filename": "Grila_G1_21iulie2021.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 19,
+        "mediu": 17,
+        "greu": 3,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Grile_2021.pdf (pag. 1-6)",
+      "answerSource": "Grile_2021.pdf (pag. 7)",
+      "note": "Format diferit fata de alti ani: sectiunea de Limba romana este 1-60, iar Economia este 61-100 (40 de exercitii, nu 30)."
+    },
+    {
+      "id": "g1-22iulie2020",
+      "year": 2020,
+      "session": "22 iulie 2020",
+      "variant": "G1",
+      "filename": "Grila_G1_22iulie2020.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 16,
+        "mediu": 11,
+        "greu": 10,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Grile_2020.pdf (pag. 1-6)",
+      "answerSource": "Grile_2020.pdf (pag. 7)",
+      "note": "Format cu 40 de exercitii de economie (61-100), la fel ca 2021."
+    },
+    {
+      "id": "g1-24iulie2019",
+      "year": 2019,
+      "session": "24 iulie 2019",
+      "variant": "G1",
+      "filename": "Grila_G1_24iulie2019.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 20,
+        "mediu": 13,
+        "greu": 5,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Grile_2019.pdf (pag. 1-6)",
+      "answerSource": "Grile_2019.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-24iulie2018",
+      "year": 2018,
+      "session": "24 iulie 2018",
+      "variant": "G1",
+      "filename": "Grila_G1_24iulie2018.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 17,
+        "mediu": 14,
+        "greu": 6,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Grile_2018.pdf (pag. 1-6)",
+      "answerSource": "Grile_2018.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-24iulie2017",
+      "year": 2017,
+      "session": "24 iulie 2017",
+      "variant": "G1",
+      "filename": "Grila_G1_24iulie2017.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 16,
+        "mediu": 17,
+        "greu": 6,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Grile_2017.pdf (pag. 1-6)",
+      "answerSource": "Grile_2017.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-25iulie2016",
+      "year": 2016,
+      "session": "25 iulie 2016",
+      "variant": "G1",
+      "filename": "Grila_G1_25iulie2016.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 15,
+        "mediu": 13,
+        "greu": 11,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Grile_2016.pdf (pag. 1-6)",
+      "answerSource": "Grile_2016.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-22iulie2015",
+      "year": 2015,
+      "session": "22 iulie 2015",
+      "variant": "G1",
+      "filename": "Grila_G1_22iulie2015.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 12,
+        "mediu": 12,
+        "greu": 14,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Grile_2015.pdf (pag. 1-6)",
+      "answerSource": "Grile_2015.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-23iulie2014",
+      "year": 2014,
+      "session": "23 iulie 2014",
+      "variant": "G1",
+      "filename": "Grila_G1_23iulie2014.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 16,
+        "mediu": 11,
+        "greu": 12,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Grile_2014.pdf (pag. 1-6)",
+      "answerSource": "Grile_2014.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-23iulie2013",
+      "year": 2013,
+      "session": "23 iulie 2013",
+      "variant": "G1",
+      "filename": "Grila_G1_23iulie2013.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 11,
+        "mediu": 18,
+        "greu": 9,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Grile_2013.pdf (pag. 1-6)",
+      "answerSource": "Grile_2013.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-23iulie2012",
+      "year": 2012,
+      "session": "23 iulie 2012",
+      "variant": "G1",
+      "filename": "Grila_G1_23iulie2012.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 13,
+        "mediu": 17,
+        "greu": 9,
+        "foarte_greu": 1
+      },
+      "subjectSource": "Grile_2012.pdf (pag. 1-6)",
+      "answerSource": "Grile_2012.pdf (pag. 7)",
+      "note": null
+    },
+    {
+      "id": "g1-20iulie2011",
+      "year": 2011,
+      "session": "20 iulie 2011",
+      "variant": "G1",
+      "filename": "Grila_G1_20iulie2011.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 20,
+        "mediu": 4,
+        "greu": 13,
+        "foarte_greu": 3
+      },
+      "subjectSource": "Grile_2011.pdf",
+      "answerSource": "Grile_2011.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-23iulie2010",
+      "year": 2010,
+      "session": "23 iulie 2010",
+      "variant": "G1",
+      "filename": "Grila_G1_23iulie2010.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 20,
+        "mediu": 9,
+        "greu": 9,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Grile_2010.pdf",
+      "answerSource": "Grile_2010.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-2009",
+      "year": 2009,
+      "session": "Concurs de admitere 2009",
+      "variant": "G1",
+      "filename": "Grila_G1_2009.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 22,
+        "mediu": 2,
+        "greu": 14,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Grile_2009.pdf",
+      "answerSource": "Grile_2009.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-2008",
+      "year": 2008,
+      "session": "Concurs de admitere 2008",
+      "variant": "G1",
+      "filename": "Grila_G1_2008.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 18,
+        "mediu": 6,
+        "greu": 11,
+        "foarte_greu": 5
+      },
+      "subjectSource": "Grile_2008.pdf",
+      "answerSource": "Grile_2008.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-2007",
+      "year": 2007,
+      "session": "Concurs de admitere 2007",
+      "variant": "G1",
+      "filename": "Grila_G1_2007.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 19,
+        "mediu": 11,
+        "greu": 10,
+        "foarte_greu": 0
+      },
+      "subjectSource": "Grile_2007.pdf",
+      "answerSource": "Grile_2007.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-2006",
+      "year": 2006,
+      "session": "Concurs de admitere 2006",
+      "variant": "G1",
+      "filename": "Grila_G1_2006.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 20,
+        "mediu": 7,
+        "greu": 11,
+        "foarte_greu": 2
+      },
+      "subjectSource": "Grile_2006.pdf",
+      "answerSource": "Grile_2006.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-2005",
+      "year": 2005,
+      "session": "Concurs de admitere 2005",
+      "variant": "G1",
+      "filename": "Grila_G1_2005.json",
+      "questionCount": 40,
+      "economyRange": "61-100",
+      "difficultyCounts": {
+        "usor": 25,
+        "mediu": 8,
+        "greu": 7,
+        "foarte_greu": 0
+      },
+      "subjectSource": "Grile_2005.pdf",
+      "answerSource": "Grile_2005.pdf (barem)",
+      "note": null
+    },
+    {
+      "id": "g1-2004",
+      "year": 2004,
+      "session": "Concurs de admitere 2004",
+      "variant": "G1",
+      "filename": "Grila_G1_2004.json",
+      "questionCount": 35,
+      "economyRange": "66-100",
+      "difficultyCounts": {
+        "usor": 22,
+        "mediu": 3,
+        "greu": 10,
+        "foarte_greu": 0
+      },
+      "subjectSource": "Grile_2004.pdf",
+      "answerSource": "Grile_2004.pdf (barem)",
+      "note": "An atipic: secțiunea de Limba română se extinde până la Q65, iar Economia cuprinde doar 35 de exerciții (66-100), nu 40."
+    },
+    {
+      "id": "g1-2003",
+      "year": 2003,
+      "session": "Concurs de admitere 2003",
+      "variant": "G1",
+      "filename": "Grila_G1_2003.json",
+      "questionCount": 35,
+      "economyRange": "66-100",
+      "difficultyCounts": {
+        "usor": 19,
+        "mediu": 8,
+        "greu": 8,
+        "foarte_greu": 0
+      },
+      "subjectSource": "Grile_2003.pdf",
+      "answerSource": "Grile_2003.pdf (barem)",
+      "note": "An atipic: secțiunea de Limba română se extinde până la Q65, iar Economia cuprinde doar 35 de exerciții (66-100), nu 40."
+    },
+    {
+      "id": "g1-2002",
+      "year": 2002,
+      "session": "Concurs de admitere septembrie 2002",
+      "variant": "G1",
+      "filename": "Grila_G1_2002.json",
+      "questionCount": 50,
+      "economyRange": "51-100",
+      "difficultyCounts": {
+        "usor": 34,
+        "mediu": 10,
+        "greu": 6,
+        "foarte_greu": 0
+      },
+      "subjectSource": "Grile_2002.pdf",
+      "answerSource": "Grile_2002.pdf (barem)",
+      "note": "An atipic: secțiunea de Economie cuprinde 50 de exerciții (51-100), nu 40."
+    }
+  ]
+}

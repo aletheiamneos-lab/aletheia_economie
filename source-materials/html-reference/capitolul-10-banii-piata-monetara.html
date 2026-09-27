@@ -1,0 +1,1002 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 10 · Banii. Piața monetară</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input, .mini-calc__randuri select { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 20px; margin-top: 16px; font-family: var(--font-mono); flex-wrap: wrap; }
+.simulator__citire strong { color: var(--accent); font-size: 18px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 11.5px; }
+.legenda { display: flex; gap: 18px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  capitol: {
+    numar: 10,
+    titlu: 'Banii. Piața monetară',
+    obiective: [
+      'Să explici funcțiile banilor și formele lor de existență',
+      'Să calculezi masa monetară, folosind ecuația schimbului',
+      'Să înțelegi cererea și oferta de monedă, și rolul dobânzii',
+      'Să calculezi dobânda simplă și dobânda compusă',
+      'Să distingi tipurile de credit și rolul pieței monetare'
+    ]
+  },
+  teorie: [
+    {
+      id: 'piata-monetara', nr: '1', titlu: 'Piața monetară: caracterizare generală',
+      text: [
+        'Piața monetară reflectă spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de monedă, formându-se prețul tranzacțiilor, numit rata dobânzii. Este o piață cu concurență imperfectă, de tip oligopol.',
+        'Cererea de monedă (credite) provine de la debitori: firme, populație, trezoreria statului, administrații locale. Oferta de monedă provine de la creditori: banca centrală, băncile comerciale și alte instituții financiare, care mobilizează disponibilitățile bănești din economie.'
+      ],
+      clasificari: [
+        { criteriu: 'Participanții la piața monetară', categorii: [
+          { nume: 'Debitorii', definitie: 'exponenții cererii de monedă - firme, populație, trezoreria statului' },
+          { nume: 'Creditorii', definitie: 'exponenții ofertei de monedă - banca centrală, băncile comerciale' },
+          { nume: 'Intermediarii', definitie: 'băncile, casele de economii și pensii, societățile de asigurări' }
+        ] }
+      ],
+      puncteCheie: [
+        'Rolul pieței monetare: acoperă deficitul de monedă al unor agenți cu excedentul altora (de regulă, pe termen scurt) și reglează masa monetară din economie',
+        'Operații active (acordarea de credite) și operații pasive (colectarea și gestionarea economiilor, sub formă de depozite la vedere și la termen)'
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'banii-functii', nr: '2', titlu: 'Banii: geneza, evoluția și funcțiile lor',
+      text: [
+        'Banii reprezintă instrumentul social, general acceptat ca etalon al valorii, ca mijloc de plată, de schimb și de rezervă, într-un spațiu economic dat. Au apărut din nevoia de a depăși limitele trocului (schimbul direct, marfă contra marfă) - schimbul mijlocit de bani (marfă → bani → marfă) a simplificat și fluidizat tranzacțiile.',
+        'Formele banilor au evoluat istoric: de la bunuri-marfă (animale, blănuri, bucăți de metal), la metale prețioase și monede, apoi la bancnote (bilete de bancă, sec. al XVII-lea), bani scripturali/de cont (sfârșitul sec. al XIX-lea) și, în final, bani electronici (cardul, sfârșitul sec. al XX-lea).'
+      ],
+      puncteCheie: [
+        { termen: 'Mijloc de schimb și de plată', descriere: 'mijlocesc vânzarea-cumpărarea și sting obligațiile (ex. plata unui impozit)' },
+        { termen: 'Etalon universal de măsurare a valorii', descriere: 'permit evaluarea și compararea bunurilor între ele, prin preț' },
+        { termen: 'Mijloc de rezervă (economisire)', descriere: 'forma sub care se constituie și se păstrează rezervele firmelor și populației' },
+        { termen: 'Bani universali', descriere: 'monede liber utilizabile în tranzacții internaționale (euro, dolar, lira)' }
+      ],
+      exemple: [
+        'Prețul unui suc este de 2 u.m., iar al unei cafele, 1 u.m. Comparând cele două prețuri, vedem că valoarea bănească a sucului e de două ori mai mare decât a cafelei - exact rolul banilor de etalon universal de măsurare a valorii.'
+      ],
+      formule: []
+    },
+    {
+      id: 'masa-monetara', nr: '3', titlu: 'Masa monetară și ecuația schimbului',
+      text: [
+        'Cantitatea de bani aflată în circulație într-o economie reprezintă masa monetară. Ea cuprinde numerarul (bancnotele și moneda metalică) și moneda scripturală (banii de cont - cecul, cardul, depozitele la vedere/termen); în economiile contemporane, majoritatea masei monetare circulă sub formă de monedă scripturală.',
+        'Nivelul necesar al masei monetare rezultă din ecuația schimbului (Irving Fisher): masa monetară, înmulțită cu viteza ei de rotație, trebuie să fie egală cu volumul valoric al bunurilor și serviciilor tranzacționate.'
+      ],
+      puncteCheie: [
+        { termen: 'Creșterea volumului valoric al tranzacțiilor (P×Q)', descriere: 'influențează direct proporțional masa monetară necesară' },
+        { termen: 'Scăderea vitezei de circulație a banilor (V)', descriere: 'influențează invers proporțional masa monetară necesară' }
+      ],
+      exemple: [
+        'Într-o economie se produc doar mere: 100 kg/an, la un preț mediu de 2,5 u.m./kg, cu o viteză de rotație a banilor de 10 rotații/an. Masa monetară necesară este M = (100 × 2,5)/10 = 25 u.m.'
+      ],
+      formule: [
+        { nume: 'Ecuația schimbului (Fisher)', formula: 'M x V = P x Q  →  M = (P x Q) / V' }
+      ],
+      calculator: 'masaMonetara'
+    },
+    {
+      id: 'dobanda', nr: '4', titlu: 'Cererea și oferta de monedă. Dobânda',
+      text: [
+        'Rata dobânzii (d\u2019) reprezintă prețul plătit de debitor creditorului, pentru 100 de unități monetare împrumutate timp de un an. Dobânda (D) este suma de bani plătită de debitor creditorului pentru folosirea banilor împrumutați, până la restituirea lor.',
+        'Dobânda simplă se aplică atunci când perioada creditului (sau a economisirii) este mai mică de 1 an. Dobânda compusă (capitalizată) se aplică atunci când perioada e mai mare de 1 an - dobânda de la sfârșitul fiecărui an se adaugă la capital și, la rândul ei, aduce dobândă în anii următori.'
+      ],
+      exemple: [
+        'Un credit de 200.000 u.m., acordat pe 3 luni, cu rata dobânzii 30%/an: D = 200.000 × 0,30 × (3/12) = 15.000 u.m., iar suma finală SF = 15.000 + 200.000 = 215.000 u.m. Pentru un depozit de 10 u.m., cu dobândă compusă de 20%/an, timp de 2 ani: SF = 10 × (1,2)² = 14,4 u.m.'
+      ],
+      formule: [
+        { nume: 'Rata dobânzii', formula: 'd\u2019 = (D/C) x 100' },
+        { nume: 'Dobânda simplă (perioadă sub 1 an)', formula: 'D = C x d\u2019 x n,  SF = D + C' },
+        { nume: 'Dobânda compusă (perioadă peste 1 an)', formula: 'SF = C x (1 + d\u2019)^n,  DC = SF - C' }
+      ],
+      calculator: 'dobanda',
+      notaLegatura: { href: '#sect-explorator-dobanda', text: 'Explorează interactiv cum crește o sumă în timp, la dobândă simplă vs. compusă, în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'credit-putere-cumparare', nr: '5', titlu: 'Creditul și puterea de cumpărare a banilor',
+      text: [
+        'Puterea de cumpărare a banilor reflectă cantitatea de bunuri economice care poate fi achiziționată cu o unitate monetară sau cu o anumită sumă de bani, la un moment dat. Convertibilitatea reflectă însușirea legală a unei monede de a putea fi schimbată liber cu moneda altei țări, la un preț numit curs valutar.'
+      ],
+      clasificari: [
+        { criteriu: 'Categoriile de credit', orientare: 'vertical', categorii: [
+          { nume: 'Creditul bancar', definitie: 'acordat de bănci firmelor sau populației' },
+          { nume: 'Creditul comercial', definitie: 'acordat sub formă de marfă, între firme' },
+          { nume: 'Creditul obligatar', definitie: 'între instituții de stat și investitorii în obligațiuni' },
+          { nume: 'Creditul ipotecar', definitie: 'destinat activităților imobiliare' },
+          { nume: 'Creditul de consum', definitie: 'acordat populației pentru achiziționarea de mărfuri' }
+        ] }
+      ],
+      exemple: [],
+      formule: [
+        { nume: 'Puterea de cumpărare (a unei unități monetare)', formula: 'PCB = 1 / I_P' },
+        { nume: 'Puterea de cumpărare (a unei sume M)', formula: 'PCM = M / I_P' }
+      ]
+    }
+  ],
+  grila: [
+    { intrebare: 'Când rata dobânzii crește, cererea de monedă:', optiuni: ['crește', 'scade', 'nu se modifică', 'depinde de rata inflației'], corect: 1, explicatie: 'Un credit mai scump (dobândă mai mare) descurajează împrumuturile, deci cererea de monedă scade.' },
+    { intrebare: 'Masa monetară crește atunci când:', optiuni: ['viteza de rotație a banilor crește', 'valoarea bunurilor supuse tranzacției scade', 'volumul valoric al tranzacțiilor crește', 'ieșirile de valută sunt mai mari decât intrările'], corect: 2, explicatie: 'Din M=(P×Q)/V: dacă valoarea tranzacțiilor (P×Q) crește, e nevoie de mai multă monedă în circulație, la aceeași viteză de rotație.' },
+    { intrebare: 'Rata dobânzii reprezintă:', optiuni: ['un cost pentru creditor', 'un venit pentru debitor', 'prețul creditului', 'un mijloc de economisire pentru debitor'], corect: 2, explicatie: 'Rata dobânzii e prețul plătit de debitor creditorului pentru folosirea banilor împrumutați - deci prețul creditului.' },
+    { intrebare: 'Masa monetară scade atunci când:', optiuni: ['viteza de rotație a banilor crește', 'valoarea bunurilor supuse tranzacției crește', 'rata rezervelor obligatorii scade', 'ieșirile de valută sunt mai mici decât intrările'], corect: 0, explicatie: 'Din M=(P×Q)/V: dacă viteza de rotație (V) crește, la aceleași P și Q, masa monetară necesară scade.' },
+    { intrebare: 'Dobânda compusă se aplică atunci când:', optiuni: ['perioada creditului este mai mică de 1 an', 'perioada creditului este mai mare de 1 an', 'creditul e acordat de banca centrală', 'rata dobânzii e mai mică de 10%'], corect: 1, explicatie: 'Dobânda compusă (capitalizată) se folosește pentru perioade mai mari de 1 an - dobânda anuală se adaugă la capital și aduce, la rândul ei, dobândă.' }
+  ],
+  af: [
+    { enunt: 'Dacă rata dobânzii crește, se scumpesc creditele.', corect: true, explicatie: 'Da - o rată a dobânzii mai mare înseamnă un cost mai mare pentru cel care se împrumută.' },
+    { enunt: 'Persoana care se împrumută devine debitor.', corect: true, explicatie: 'Da - debitorul e cel care beneficiază de împrumut și are obligația să-l restituie, cu dobândă.' },
+    { enunt: 'Pentru creditor, dobânda este un preț pentru folosirea banilor.', corect: true, explicatie: 'Da - dobânda reprezintă, pentru creditor, venitul încasat pentru faptul că a renunțat temporar la folosirea propriilor bani.' },
+    { enunt: 'Cecul nu este o formă a banilor.', corect: false, explicatie: 'Cecul este monedă scripturală - o formă modernă a banilor, alături de card și depozitele la vedere.' },
+    { enunt: 'Majoritatea masei monetare, în economiile contemporane, circulă sub formă de numerar.', corect: false, explicatie: 'Dimpotrivă - majoritatea masei monetare circulă sub formă de monedă scripturală (bani de cont), nu numerar.' }
+  ],
+  probleme: [
+    { enunt: 'Ana contractează un împrumut de 100.000 u.m., la o rată a dobânzii de 10%/an. Ce sumă va trebui să returneze băncii, dacă perioada creditului este de 6 luni?', unitate: 'u.m.', corect: 105000, toleranta: 100, explicatie: 'D = C×d\u2019×n = 100.000×0,10×(6/12) = 5.000 u.m. SF = 100.000+5.000 = 105.000 u.m.' },
+    { enunt: 'Același împrumut de 100.000 u.m., la aceeași rată a dobânzii de 10%/an, dar pentru o perioadă de 2 ani (dobândă compusă). Ce sumă va trebui returnată?', unitate: 'u.m.', corect: 121000, toleranta: 200, explicatie: 'SF = C×(1+d\u2019)^n = 100.000×(1,1)² = 100.000×1,21 = 121.000 u.m.' },
+    { enunt: 'Masa monetară crește cu 50%, cantitatea de bunuri tranzacționate crește cu 30%, iar viteza de circulație a banilor scade cu 10%. Calculați indicele general al prețurilor (Ip, %).', unitate: '%', corect: 103.8, toleranta: 1, explicatie: 'Din M×V=P×Q rezultă Ip = (IM×IV)/IQ = (1,5×0,9)/1,3×100 = 103,8%.' },
+    { enunt: 'O bancă are un capital de 100.000 u.m. (depozite = credite). Rata dobânzii încasate este 25%, iar cea plătită, 15%. Cheltuielile de funcționare reprezintă 70% din câștigul bancar. Calculați profitul băncii.', unitate: 'u.m.', corect: 3000, toleranta: 50, explicatie: 'Câștigul bancar = 100.000×(0,25-0,15) = 10.000 u.m. Cheltuielile = 70%×10.000 = 7.000 u.m. Profitul = 10.000-7.000 = 3.000 u.m.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Masa monetară' },
+        { id: 't2', text: 'Rata dobânzii' },
+        { id: 't3', text: 'Creditul bancar' },
+        { id: 't4', text: 'Puterea de cumpărare a banilor' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Cantitatea de bani aflată în circulație într-o economie' },
+        { id: 'o_b', text: 'Prețul plătit pentru 100 de unități monetare împrumutate timp de un an' },
+        { id: 'o_c', text: 'Credit acordat de bănci firmelor sau populației' },
+        { id: 'o_d', text: 'Cantitatea de bunuri ce poate fi achiziționată cu o unitate monetară' },
+        { id: 'o_e', text: 'Numărul de tranzacții mijlocite de o unitate monetară într-un an' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, viteza de circulație a banilor - un concept diferit, care nu apare în coloana din stânga.'
+    }
+  ]
+};
+
+function calculeazaMasaMonetara(P, Q, V) { return (P * Q) / V; }
+function calculeazaDobandaSimpla(C, dp, nLuni) {
+  const d = dp / 100;
+  const D = C * d * (nLuni / 12);
+  return { D, SF: D + C };
+}
+function calculeazaDobandaCompusa(C, dp, nAni) {
+  const d = dp / 100;
+  const SF = C * Math.pow(1 + d, nAni);
+  return { SF, DC: SF - C };
+}
+
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 20, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+function campInput(randuri, labelTxt, placeholder, valInitial) {
+  const label = document.createElement('label');
+  label.appendChild(document.createTextNode(labelTxt));
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+  label.appendChild(input);
+  randuri.appendChild(label);
+  return input;
+}
+
+function buildMasaMonetaraCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: ecuația schimbului'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputP = campInput(randuri, 'Preț mediu (P)', 'ex. 2.5', 2.5);
+  const inputQ = campInput(randuri, 'Cantitate tranzacționată (Q)', 'ex. 100', 100);
+  const inputV = campInput(randuri, 'Viteza de rotație (V)', 'ex. 10', 10);
+  box.appendChild(randuri);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const P = Number(inputP.value), Q = Number(inputQ.value), V = Number(inputV.value);
+    if ([inputP, inputQ, inputV].some(i => i.value === '') || [P, Q, V].some(isNaN) || V === 0) {
+      rezultat.textContent = 'Completează toate valorile (V diferit de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const M = calculeazaMasaMonetara(P, Q, V);
+    rezultat.innerHTML = '';
+    rezultat.appendChild(document.createTextNode('Masa monetară necesară: '));
+    const strong = document.createElement('strong');
+    strong.textContent = Math.round(M * 100) / 100;
+    rezultat.appendChild(strong);
+    rezultat.appendChild(document.createTextNode(' u.m.'));
+    chartWrap.innerHTML = '';
+    const valTranzactii = P * Q;
+    const maxV = Math.max(valTranzactii, M, 1) * 1.15;
+    chartWrap.appendChild(buildDumbbellChart('Valoarea tranzacțiilor (P×Q)', valTranzactii, 'Masa monetară (M)', M, maxV, 'var(--mark)', 'var(--accent)'));
+  }
+  [inputP, inputQ, inputV].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+function buildDobandaCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: dobânda simplă și compusă'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputC = campInput(randuri, 'Capital (C)', 'ex. 200000', 200000);
+  const inputD = campInput(randuri, 'Rata dobânzii anuale (%)', 'ex. 30', 30);
+  const labelTip = document.createElement('label');
+  labelTip.appendChild(document.createTextNode('Tip dobândă'));
+  const selectTip = document.createElement('select');
+  ['Simplă (sub 1 an)', 'Compusă (peste 1 an)'].forEach((txt, i) => {
+    const opt = document.createElement('option'); opt.value = i; opt.textContent = txt; selectTip.appendChild(opt);
+  });
+  labelTip.appendChild(selectTip);
+  randuri.appendChild(labelTip);
+  const inputPerioada = campInput(randuri, 'Perioada (luni, dacă simplă / ani, dacă compusă)', 'ex. 3', 3);
+  box.appendChild(randuri);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const C = Number(inputC.value), dp = Number(inputD.value), perioada = Number(inputPerioada.value);
+    if ([inputC, inputD, inputPerioada].some(i => i.value === '') || [C, dp, perioada].some(isNaN)) {
+      rezultat.textContent = 'Completează toate valorile.';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    rezultat.innerHTML = '';
+    let SF;
+    if (Number(selectTip.value) === 0) {
+      const r = calculeazaDobandaSimpla(C, dp, perioada);
+      SF = r.SF;
+      rezultat.appendChild(document.createTextNode('Dobânda (D) = '));
+      let s = document.createElement('strong'); s.textContent = Math.round(r.D * 100) / 100; rezultat.appendChild(s);
+      rezultat.appendChild(document.createTextNode('   Suma finală (SF) = '));
+      s = document.createElement('strong'); s.textContent = Math.round(r.SF * 100) / 100; rezultat.appendChild(s);
+    } else {
+      const r = calculeazaDobandaCompusa(C, dp, perioada);
+      SF = r.SF;
+      rezultat.appendChild(document.createTextNode('Suma finală (SF) = '));
+      let s = document.createElement('strong'); s.textContent = Math.round(r.SF * 100) / 100; rezultat.appendChild(s);
+      rezultat.appendChild(document.createTextNode('   Dobânda compusă (DC) = '));
+      s = document.createElement('strong'); s.textContent = Math.round(r.DC * 100) / 100; rezultat.appendChild(s);
+    }
+    chartWrap.innerHTML = '';
+    const maxV = Math.max(C, SF, 1) * 1.15;
+    chartWrap.appendChild(buildDumbbellChart('Capital inițial (C)', C, 'Sumă finală (SF)', SF, maxV, 'var(--text-muted)', 'var(--accent)'));
+  }
+  [inputC, inputD, inputPerioada].forEach(inp => inp.addEventListener('input', recalc));
+  selectTip.addEventListener('change', recalc);
+  recalc();
+  return box;
+}
+
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'masaMonetara') body.appendChild(buildMasaMonetaraCalc());
+  if (item.calculator === 'dobanda') body.appendChild(buildDobandaCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// -----------------------------------------------------------------
+// V. Explorator: dobanda simpla vs compusa, in timp (graficul-semnatura)
+// -----------------------------------------------------------------
+function buildExploratorDobanda() {
+  const C0 = 1000;
+  const width = 380, height = 260, left = 46, right = 14, top = 18, bottom = 32;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const maxAni = 10;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Pornești cu 1.000 u.m. Alege rata dobânzii anuale și numărul de ani, și vezi cum crește suma, an de an, la dobândă simplă față de dobândă compusă.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cresterea unei sume in timp, dobanda simpla vs compusa' });
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--text-muted)', 'Dobândă simplă'));
+  legenda.appendChild(legendItem('var(--accent)', 'Dobândă compusă'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxSimpla = document.createElement('div'); const sSimpla = document.createElement('strong'); boxSimpla.appendChild(sSimpla); boxSimpla.appendChild(el('span', '', 'Sumă finală (simplă)'));
+  const boxCompusa = document.createElement('div'); const sCompusa = document.createElement('strong'); boxCompusa.appendChild(sCompusa); boxCompusa.appendChild(el('span', '', 'Sumă finală (compusă)'));
+  const boxDiferenta = document.createElement('div'); const sDiferenta = document.createElement('strong'); boxDiferenta.appendChild(sDiferenta); boxDiferenta.appendChild(el('span', '', 'Diferența'));
+  citire.appendChild(boxSimpla); citire.appendChild(boxCompusa); citire.appendChild(boxDiferenta);
+  wrap.appendChild(citire);
+
+  const sliders = el('div', 'simulator__sliders');
+  function randSlider(labelTxt, min, max, step, val, unitate, onChange) {
+    const row = el('div', 'slider-row');
+    const label = document.createElement('label');
+    const labelSpanTxt = el('span', '', labelTxt);
+    const labelSpanVal = el('span', '', val + (unitate || ''));
+    label.appendChild(labelSpanTxt); label.appendChild(labelSpanVal);
+    row.appendChild(label);
+    const input = document.createElement('input');
+    input.type = 'range'; input.min = min; input.max = max; input.step = step; input.value = val;
+    input.addEventListener('input', () => { labelSpanVal.textContent = input.value + (unitate || ''); onChange(); });
+    row.appendChild(input);
+    sliders.appendChild(row);
+    return input;
+  }
+  const inputRata = randSlider('Rata dobânzii anuale', 5, 40, 5, 20, '%', () => recalc());
+  const inputAni = randSlider('Numărul de ani', 1, 10, 1, 10, ' ani', () => recalc());
+  wrap.appendChild(sliders);
+
+  function recalc() {
+    const d = Number(inputRata.value) / 100;
+    const aniSelectati = Number(inputAni.value);
+    const maxSimpla = C0 * (1 + d * aniSelectati);
+    const maxCompusa = C0 * Math.pow(1 + d, aniSelectati);
+    const maxY = Math.max(maxSimpla, maxCompusa) * 1.15;
+
+    const sx = an => left + (an / maxAni) * chartW;
+    const sy = val => top + chartH - (val / maxY) * chartH;
+
+    svg.innerHTML = '';
+    svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+    svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+    const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' }); labelY.textContent = 'Sumă (u.m.)';
+    const labelX = elNS('text', { x: left + chartW, y: height - 8, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' }); labelX.textContent = 'Ani';
+    svg.appendChild(labelY); svg.appendChild(labelX);
+
+    const puncteSimpla = [], puncteCompusa = [];
+    for (let an = 0; an <= aniSelectati; an++) {
+      puncteSimpla.push({ an, val: C0 * (1 + d * an) });
+      puncteCompusa.push({ an, val: C0 * Math.pow(1 + d, an) });
+    }
+    svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--text-muted)', 'stroke-width': 2, points: puncteSimpla.map(p => sx(p.an) + ',' + sy(p.val)).join(' ') }));
+    svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncteCompusa.map(p => sx(p.an) + ',' + sy(p.val)).join(' ') }));
+    puncteSimpla.forEach(p => svg.appendChild(elNS('circle', { cx: sx(p.an), cy: sy(p.val), r: 2.5, fill: 'var(--text-muted)' })));
+    puncteCompusa.forEach(p => svg.appendChild(elNS('circle', { cx: sx(p.an), cy: sy(p.val), r: 2.5, fill: 'var(--accent)' })));
+
+    const sfSimpla = puncteSimpla[puncteSimpla.length - 1].val;
+    const sfCompusa = puncteCompusa[puncteCompusa.length - 1].val;
+    sSimpla.textContent = Math.round(sfSimpla) + ' u.m.';
+    sCompusa.textContent = Math.round(sfCompusa) + ' u.m.';
+    sDiferenta.textContent = Math.round(sfCompusa - sfSimpla) + ' u.m.';
+  }
+  recalc();
+  return wrap;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: dobânda simplă vs. compusă, în timp');
+  eyebrowExp.id = 'sect-explorator-dobanda';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Aceleași formule ca în secțiunea 4 din teorie, dar acum vezi cum diverg în timp.'));
+  root.appendChild(buildExploratorDobanda());
+});
+</script>
+</body>
+</html>

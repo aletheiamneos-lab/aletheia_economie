@@ -1,0 +1,439 @@
+{
+  "capitol": {
+    "numar": 8,
+    "titlu": "Piața și echilibrul său",
+    "obiective": [
+      "Să definești piața și să îi identifici funcțiile și formele principale",
+      "Să explici legea cererii și legea ofertei, și factorii care le influențează",
+      "Să determini prețul și cantitatea de echilibru pornind de la funcțiile cererii și ofertei",
+      "Să distingi între excesul de cerere și excesul de ofertă, și să recunoști efectele unui preț administrat",
+      "Să calculezi și să interpretezi coeficientul de elasticitate a cererii și a ofertei față de preț și față de venit"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "piata",
+      "nr": "1",
+      "titlu": "Piața: caracterizare generală",
+      "text": [
+        "Piața reprezintă spațiul economic în care se întâlnesc cererea cumpărătorilor cu oferta vânzătorilor, aceștia schimbând între ei bunuri economice al căror preț și cantitate tind să se echilibreze. Piața nu se reduce la un spațiu fizic, geografic: ea poate exista și sub formă electronică, așa cum se întâmplă atunci când contractele se încheie prin telefon, telex sau internet.",
+        "Variabilele definitorii ale pieței moderne sunt: mărfurile, cererea, oferta, prețul și concurența."
+      ],
+      "puncteCheie": [
+        "Funcția de informare: piața informează agenții economici despre prețuri, cantități, calitatea și tipurile de mărfuri tranzacționate",
+        "Funcția de reglare: piața corelează producția cu consumul, cererea cu oferta, și asigură alocarea eficientă a resurselor",
+        "Funcția de selecție: piața selectează agenții economici după criterii de eficiență",
+        "După natura obiectului tranzacționat: piața factorilor de producție (monetară, a muncii, a capitalurilor, a resurselor naturale) și piața bunurilor de consum final",
+        "După purtătorii cererii/ofertei: piața vânzătorilor și piața cumpărătorilor",
+        "După momentul finalizării tranzacțiilor: piața la vedere (imediată) și piața la termen (livrare la o dată ulterioară)",
+        "După numărul participanților și puterea lor economică de a influența prețul: piață cu concurență perfectă și piață cu concurență imperfectă (monopolistică, oligopol, monopol, monopson)"
+      ],
+      "formule": []
+    },
+    {
+      "id": "cerere-def",
+      "nr": "2",
+      "titlu": "Cererea: definiție și legea cererii",
+      "text": [
+        "Cererea reprezintă cantitatea dintr-un bun economic pe care consumatorii doresc și au capacitatea să o cumpere, la diferite niveluri de preț, într-o perioadă de timp determinată. Prin însumarea cererilor individuale ale tuturor consumatorilor, pentru fiecare nivel de preț, se obține cererea pieței.",
+        "Cererea nu se confundă cu cantitatea cerută: cantitatea cerută este o singură valoare, la un singur preț, în timp ce cererea descrie întreaga relație dintre preț și cantitate, pentru toate nivelurile posibile de preț. Cererea nu se confundă nici cu nevoile oamenilor: nu toate nevoile sunt satisfăcute prin intermediul pieței, deci între cerere și nevoi există o relație ca de la parte la întreg.",
+        "Legea cererii arată că, atunci când prețul unui bun crește, cantitatea cerută din acel bun scade, și invers, în condițiile în care ceilalți factori rămân neschimbați. Explicația vine din legea utilității marginale descrescânde: cu cât consumăm mai mult dintr-un bun, cu atât utilitatea marginală - și, odată cu ea, suma pe care suntem dispuși să o plătim - scade. O modificare a prețului determină o mișcare de-a lungul curbei cererii, numită extindere a cererii (când prețul scade) sau contracție a cererii (când prețul crește)."
+      ],
+      "exemple": [
+        "Cu cât mănânci mai multe prăjituri, la rând, cu atât ești dispus să plătești mai puțin pe următoarea - de-asta prețul și cantitatea cerută variază, de regulă, în sens opus."
+      ],
+      "formule": []
+    },
+    {
+      "id": "cerere-factori",
+      "nr": "3",
+      "titlu": "Factorii care influențează cererea",
+      "text": [
+        "Pe lângă preț, cererea este influențată și de o serie de factori non-preț. O modificare a acestor factori deplasează întreaga curbă a cererii - spre dreapta, dacă cererea crește, sau spre stânga, dacă scade - spre deosebire de modificarea prețului, care doar mișcă un punct de-a lungul curbei existente."
+      ],
+      "puncteCheie": [
+        "Venitul consumatorilor: pentru bunurile normale, cererea crește odată cu venitul (de ex. automobile, îmbrăcăminte); pentru bunurile inferioare, cererea scade când venitul crește (de ex. pâine, cartofi, fasole)",
+        "Prețul bunurilor substituibile: dacă prețul zahărului crește, cererea de zaharină crește (relație pozitivă)",
+        "Prețul bunurilor complementare: dacă prețul stiloului crește, cererea de cerneală scade (relație negativă)",
+        "Numărul de consumatori: cererea e mai mare acolo unde sunt mai mulți cumpărători (de ex. cererea de pâine e mai mare în București decât în Constanța)",
+        "Preferințele consumatorilor: o schimbare a gusturilor în favoarea unui produs crește cererea pentru el",
+        "Anticipările privind evoluția viitoare a prețului (o creștere așteptată a prețului mărește cererea prezentă) sau a venitului"
+      ],
+      "exemple": [
+        "Dacă veniturile populației cresc, cererea de automobile crește la orice nivel de preț - grafic, întreaga curbă a cererii se deplasează spre dreapta, nu se mișcă doar un punct pe ea."
+      ],
+      "formule": []
+    },
+    {
+      "id": "cerere-elasticitate",
+      "nr": "4",
+      "titlu": "Elasticitatea cererii față de preț și față de venit",
+      "text": [
+        "Elasticitatea cererii reflectă sensibilitatea cantității cerute la modificarea prețului sau a venitului. Ea se măsoară cu ajutorul coeficientului de elasticitate."
+      ],
+      "puncteCheie": [
+        "E(Q/P) > 1: cerere elastică - o variație a prețului produce o variație mai mare, în sens opus, a cantității cerute (de ex. bunuri de lux, produse electronice, bunuri cu mulți înlocuitori)",
+        "E(Q/P) = 1: cerere cu elasticitate unitară - cantitatea și prețul variază în aceeași proporție",
+        "E(Q/P) < 1: cerere inelastică - cantitatea cerută reacționează slab la variația prețului (de ex. bunurile de strictă necesitate)",
+        "Cazuri extreme, mai rar întâlnite: cerere perfect elastică (E = infinit) și cerere perfect inelastică (E = 0)",
+        "Elasticitatea cererii față de venit: pozitivă pentru bunurile normale (0 < E(Q/V) < 1) sau bunurile superioare/de lux (E(Q/V) > 1); negativă pentru bunurile inferioare",
+        "Pentru întreprinzător: dacă cererea e elastică, o creștere de preț reduce venitul total (VT = P x Q); dacă cererea e inelastică, o creștere de preț mărește venitul total"
+      ],
+      "exemple": [
+        "Un vânzător obține VT = 5 milioane u.m. din 1.000 de bucăți la prețul de 5.000 u.m. Dacă mărește prețul cu 10% și cererea e elastică (cantitatea scade cu 25%), VT scade la 4,125 milioane u.m. Dacă, în schimb, mărește prețul cu 25% și cererea e inelastică (cantitatea scade doar cu 10%), VT crește la 5,625 milioane u.m."
+      ],
+      "formule": [
+        {
+          "nume": "Elasticitatea cererii față de preț",
+          "formula": "E(Q/P) = -(DQ/Q0) / (DP/P0)"
+        },
+        {
+          "nume": "Elasticitatea cererii față de venit",
+          "formula": "E(Q/V) = (DQ/Q0) / (DV/V0)"
+        }
+      ],
+      "calculator": "elasticitateCerere"
+    },
+    {
+      "id": "oferta-def",
+      "nr": "5",
+      "titlu": "Oferta: definiție și legea ofertei",
+      "text": [
+        "Oferta reprezintă cantitatea dintr-un bun economic pe care producătorii doresc și pot să o vândă, la diferite niveluri de preț, într-o perioadă de timp determinată. La fel ca la cerere, oferta nu se confundă cu cantitatea oferită: cantitatea oferită e o singură valoare, la un singur preț, în timp ce oferta descrie întreaga relație preț-cantitate.",
+        "Cantitatea produsă și oferită de un vânzător pe piață nu este întotdeauna identică cu cantitatea efectiv vândută - între ele există, de regulă, o relație ca de la întreg la parte.",
+        "Legea ofertei arată că, atunci când prețul unui bun crește, cantitatea oferită crește, și invers - o relație direct proporțională, opusă legii cererii. Producătorii urmăresc maximizarea profitului: la un preț mai mare, sunt dispuși să producă și să vândă o cantitate mai mare."
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "oferta-factori",
+      "nr": "6",
+      "titlu": "Factorii care influențează oferta",
+      "text": [
+        "La fel ca cererea, oferta este influențată de o serie de factori non-preț, care deplasează întreaga curbă a ofertei."
+      ],
+      "puncteCheie": [
+        "Costul de producție: o creștere a costurilor (de ex. prețul petrolului) reduce oferta; o scădere o mărește",
+        "Tehnologia: tehnologii mai performante măresc oferta cu aceleași resurse (de ex. fertilizanții au crescut oferta de produse agricole)",
+        "Numărul producătorilor (ofertanților): de regulă, mai mulți producători înseamnă o ofertă mai mare",
+        "Prețul bunurilor substituibile în ofertă - bunuri obținute alternativ din aceleași resurse (de ex. iaurt și brânză, din lapte): o creștere a prețului brânzei reduce oferta de iaurt, pentru că producătorii preferă să obțină brânză (relație negativă)",
+        "Prețul bunurilor complementare în ofertă - bunuri obținute împreună din același proces de producție (de ex. motorină și benzină, din rafinarea petrolului): o creștere a prețului petrolului crește prețul și oferta de motorină/benzină (relație pozitivă)",
+        "Taxele (reduc oferta) și subvențiile (o măresc)",
+        "Condițiile naturale, mai ales în agricultură",
+        "Anticipările producătorilor privind evoluția viitoare a prețului"
+      ],
+      "exemple": [
+        "Dacă fermierii anticipează o creștere a prețului grâului, vor produce mai mult grâu chiar înainte ca prețul să crească efectiv - oferta prezentă reacționează la o așteptare, nu doar la un preț deja schimbat."
+      ],
+      "formule": []
+    },
+    {
+      "id": "oferta-elasticitate",
+      "nr": "7",
+      "titlu": "Elasticitatea ofertei față de preț",
+      "text": [
+        "Elasticitatea ofertei reflectă sensibilitatea cantității oferite la modificarea prețului."
+      ],
+      "puncteCheie": [
+        "E(Q/P) > 1: ofertă elastică",
+        "E(Q/P) = 1: ofertă cu elasticitate unitară",
+        "E(Q/P) < 1: ofertă inelastică",
+        "Cazuri extreme: ofertă perfect elastică (E = infinit) și ofertă perfect inelastică (E = 0)"
+      ],
+      "formule": [
+        {
+          "nume": "Elasticitatea ofertei față de preț",
+          "formula": "E(Q/P) = (DQ/Q0) / (DP/P0)"
+        }
+      ]
+    },
+    {
+      "id": "pret-tipuri",
+      "nr": "8",
+      "titlu": "Prețul și tipurile sale",
+      "text": [
+        "Prețul este suma de bani pe care cumpărătorul o plătește vânzătorului pentru a achiziționa o unitate dintr-un bun economic. El măsoară, în bani, valoarea, utilitatea marginală și raritatea unei mărfi. Prețul este influențat atât de factori interni pieței (cererea și oferta), cât și de factori externi acesteia (intervenția statului, politicile firmelor cu putere mare de piață)."
+      ],
+      "puncteCheie": [
+        "Funcțiile prețului: de evaluare/măsurare a cheltuielilor, veniturilor și rezultatelor economice; de informare a vânzătorilor și cumpărătorilor; de decizie privind ce, cât, cum și pentru cine să se producă; de stimulare a întreprinzătorilor; de redistribuire a venitului spre activitățile eficiente; de măsurare a puterii de cumpărare a veniturilor"
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de preț",
+          "categorii": [
+            {
+              "nume": "Preț liber",
+              "definitie": "se formează prin confruntarea dintre cerere și ofertă, fără intervenția statului"
+            },
+            {
+              "nume": "Preț administrat",
+              "definitie": "rezultă dintr-o decizie a statului sau a unor firme puternice economic"
+            },
+            {
+              "nume": "Preț mixt",
+              "definitie": "de regulă liber, dar uneori corectat prin intervenția statului"
+            }
+          ]
+        }
+      ],
+      "formule": [
+        {
+          "nume": "Prețul unui bun economic",
+          "formula": "P = CMT + Pr/u.p.   sau   P = VT / Q"
+        }
+      ]
+    },
+    {
+      "id": "pret-echilibru",
+      "nr": "9",
+      "titlu": "Prețul de echilibru",
+      "text": [
+        "Prețul de echilibru este prețul la care cantitatea cerută este egală cu cantitatea oferită, asigurând volumul maxim de tranzacții pe piața unui bun. Grafic, el se formează la intersecția curbei cererii cu curba ofertei.",
+        "De exemplu, dacă la intersecția curbelor prețul de echilibru este 3 u.m. și cantitatea de echilibru este 30 de bucăți, volumul valoric al vânzărilor (VT = P x Q = cifra de afaceri) este de 90 u.m. - volumul maxim posibil de tranzacții, la acest raport dintre cerere și ofertă.",
+        "Prețul de echilibru se formează liber și spontan pe piață. Este unic, la un moment dat, pe piața unui bun - dar dinamic în timp: se modifică atunci când se deplasează curba cererii sau a ofertei. Când cererea crește, prețul de echilibru crește; când oferta crește, prețul de echilibru scade."
+      ],
+      "puncteCheie": [
+        "Reglează cererea și oferta la volumul maxim al tranzacțiilor",
+        "Asigură alocarea și utilizarea eficientă a resurselor",
+        "Face selecția agenților economici după criterii de eficiență",
+        "Asigură satisfacerea optimă a intereselor vânzătorilor (profit maxim) și cumpărătorilor (utilitate maximă)",
+        "Este un punct de atracție pentru toți agenții economici - „nordul busolei economice\" - reflectând alocarea și utilizarea eficientă a resurselor",
+        "Autoechilibrează piața unei mărfi în funcție de prețul de echilibru al înlocuitorilor săi sau al factorilor de producție folosiți la obținerea ei",
+        "Nu se mai formează liber atunci când intervin sindicatele, firmele cu forță mare de piață sau statul"
+      ],
+      "formule": [
+        {
+          "nume": "Condiția de echilibru",
+          "formula": "Ce(P) = Of(P)"
+        },
+        {
+          "nume": "Venitul total (valoarea tranzacțiilor)",
+          "formula": "VT = P x Q = C.A."
+        }
+      ],
+      "diagrama": "echilibruStatic"
+    },
+    {
+      "id": "surplus",
+      "nr": "10",
+      "titlu": "Surplusul consumatorului și al producătorului",
+      "text": [
+        "Surplusul consumatorului reprezintă diferența dintre suma maximă pe care consumatorii ar fi dispuși să o plătească pentru fiecare unitate dintr-un bun și suma pe care chiar o plătesc (prețul de echilibru). El măsoară beneficiul net obținut de cumpărători din tranzacție.",
+        "Surplusul producătorului reprezintă diferența dintre prețul de echilibru și suma minimă pentru care vânzătorii ar fi dispuși să vândă fiecare unitate. El măsoară beneficiul net obținut de vânzători.",
+        "Notă: acest concept nu apare explicit, ca atare, în acest capitol al manualului, dar este o extensie standard a analizei prețului de echilibru, utilă pentru a vedea vizual „câștigul din schimb\" al fiecărei părți."
+      ],
+      "exemple": [
+        "Pe o piață cu Ce(Q) = 90 - 3P și Of(Q) = 6P, echilibrul se formează la Pe = 10 u.m. și Qe = 60 buc. Surplusul consumatorului este de 600 u.u., surplusul producătorului este de 300 u.u., iar surplusul total (beneficiul net al tuturor părților din aceste tranzacții) este de 900 u.u."
+      ],
+      "formule": [
+        {
+          "nume": "Surplusul consumatorului (cerere liniară)",
+          "formula": "CS = 0,5 x Qe x (Pmax - Pe)"
+        },
+        {
+          "nume": "Surplusul producătorului (ofertă liniară, prin origine)",
+          "formula": "PS = 0,5 x Qe x Pe"
+        }
+      ],
+      "diagrama": "surplus"
+    },
+    {
+      "id": "exces",
+      "nr": "11",
+      "titlu": "Excesul de cerere și excesul de ofertă",
+      "text": [
+        "Atunci când prețul practicat pe piață diferă de prețul de echilibru, apare un dezechilibru temporar între cantitatea cerută și cantitatea oferită.",
+        "Excesul de ofertă (numit și excedent) apare atunci când prețul practicat este mai mare decât prețul de echilibru: la acest preț, cantitatea oferită depășește cantitatea cerută, iar vânzătorii rămân cu marfă nevândută. Presiunea pieței împinge prețul în jos, spre nivelul de echilibru.",
+        "Excesul de cerere (numit și deficit) apare atunci când prețul practicat este mai mic decât prețul de echilibru: cantitatea cerută depășește cantitatea oferită, iar unii cumpărători nu găsesc marfa dorită. Presiunea pieței împinge prețul în sus, spre nivelul de echilibru."
+      ],
+      "exemple": [
+        "Dacă vara este foarte călduroasă, cererea de băuturi răcoritoare crește peste nivelul obișnuit; la vechiul preț apare un exces de cerere, iar prețul va tinde să crească până la un nou nivel de echilibru. Dacă, dimpotrivă, producătorii măresc brusc oferta fără ca cererea să crească la fel, apare un exces de ofertă, iar prețul va tinde să scadă."
+      ],
+      "formule": [],
+      "diagrama": "excesExplorer"
+    },
+    {
+      "id": "pret-administrat",
+      "nr": "12",
+      "titlu": "Prețul administrat: plafon și podea",
+      "text": [
+        "Uneori, statul intervine direct pe piață, fixând un preț diferit de cel de echilibru, din motive sociale sau economice. Acest preț fixat se numește preț administrat și poate lua două forme."
+      ],
+      "puncteCheie": [
+        "Preț maxim (plafon): fixat sub prețul de echilibru, ca să protejeze cumpărătorii (de ex. la produse considerate esențiale). Pentru că la acest preț cantitatea cerută depășește cantitatea oferită, plafonul tinde să genereze un exces de cerere permanent, cât timp rămâne în vigoare",
+        "Preț minim (podea): fixat peste prețul de echilibru, ca să protejeze vânzătorii/producătorii (de ex. un preț minim garantat pentru un produs agricol). Pentru că la acest preț cantitatea oferită depășește cantitatea cerută, podeaua tinde să genereze un exces de ofertă permanent",
+        "Statul poate influența prețurile și indirect, prin măsuri de stimulare sau reducere a cererii ori a ofertei (taxe, subvenții), nu doar prin fixarea directă a unui plafon sau a unei podele"
+      ],
+      "formule": [],
+      "notaLegatura": {
+        "href": "#sect-exces",
+        "text": "Vezi graficul interactiv din secțiunea 11 (Excesul de cerere și excesul de ofertă) - butoanele \"exemplu plafon\" / \"exemplu podea\" arată exact acest efect."
+      }
+    },
+    {
+      "id": "centralizator",
+      "nr": "13",
+      "titlu": "Centralizator de formule",
+      "text": [
+        "Toate formulele acestui capitol, într-un singur loc, pentru recapitulare rapidă."
+      ],
+      "formule": [
+        {
+          "nume": "Prețul unui bun economic",
+          "formula": "P = CMT + Pr/u.p.   sau   P = VT / Q"
+        },
+        {
+          "nume": "Condiția de echilibru",
+          "formula": "Ce(P) = Of(P)"
+        },
+        {
+          "nume": "Venitul total",
+          "formula": "VT = P x Q = C.A."
+        },
+        {
+          "nume": "Elasticitatea cererii față de preț",
+          "formula": "E(Q/P) = -(DQ/Q0) / (DP/P0)"
+        },
+        {
+          "nume": "Elasticitatea cererii față de venit",
+          "formula": "E(Q/V) = (DQ/Q0) / (DV/V0)"
+        },
+        {
+          "nume": "Elasticitatea ofertei față de preț",
+          "formula": "E(Q/P) = (DQ/Q0) / (DP/P0)"
+        }
+      ]
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Care dintre următoarele este considerată o funcție principală a pieței?",
+      "optiuni": [
+        "de informare a agenților economici",
+        "de stabilire a impozitelor",
+        "de emisiune monetară",
+        "de acordare a creditelor bancare"
+      ],
+      "corect": 0,
+      "explicatie": "Funcțiile pieței sunt: de informare, de reglare a activității economice și de selecție a agenților economici după criterii de eficiență; celelalte sunt atribuții ale statului sau ale băncilor."
+    },
+    {
+      "intrebare": "Dacă prețul unui bun scade, iar ceilalți factori rămân neschimbați, cantitatea cerută:",
+      "optiuni": [
+        "scade",
+        "crește",
+        "rămâne neschimbată",
+        "devine zero"
+      ],
+      "corect": 1,
+      "explicatie": "Legea cererii descrie o relație negativă între preț și cantitatea cerută."
+    },
+    {
+      "intrebare": "Excesul de ofertă pe piața unui bun apare atunci când:",
+      "optiuni": [
+        "prețul practicat este egal cu cel de echilibru",
+        "prețul practicat este sub cel de echilibru",
+        "prețul practicat este peste cel de echilibru",
+        "cantitatea oferită este egală cu cea cerută"
+      ],
+      "corect": 2,
+      "explicatie": "Un preț peste nivelul de echilibru stimulează oferta și descurajează cererea, deci cantitatea oferită depășește cantitatea cerută."
+    },
+    {
+      "intrebare": "Un preț maxim (plafon) stabilit de stat sub nivelul prețului de echilibru are ca efect probabil:",
+      "optiuni": [
+        "apariția unui exces de ofertă",
+        "apariția unui exces de cerere (deficit)",
+        "scăderea cantității cerute",
+        "creșterea cantității oferite peste nivelul de echilibru"
+      ],
+      "corect": 1,
+      "explicatie": "Sub prețul de echilibru, cantitatea cerută crește și cantitatea oferită scade, deci apare un deficit."
+    },
+    {
+      "intrebare": "Dacă, la o creștere de 10% a prețului, cantitatea cerută scade cu 20%, cererea este:",
+      "optiuni": [
+        "inelastică (E < 1)",
+        "elastică (E > 1)",
+        "unitar elastică (E = 1)",
+        "perfect inelastică"
+      ],
+      "corect": 1,
+      "explicatie": "E(Q/P) = -(-20%)/(10%) = 2, deci E > 1: cerere elastică."
+    },
+    {
+      "intrebare": "Un preț minim (podea) stabilit de stat peste prețul de echilibru are ca efect probabil:",
+      "optiuni": [
+        "un exces de cerere",
+        "un exces de ofertă",
+        "scăderea cantității oferite",
+        "dispariția excesului de pe piață"
+      ],
+      "corect": 1,
+      "explicatie": "Peste prețul de echilibru, cantitatea oferită crește și cantitatea cerută scade, deci apare un exces de ofertă (mărfuri nevândute)."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Piața este întotdeauna un spațiu fizic, geografic, delimitat.",
+      "corect": false,
+      "explicatie": "Piața poate exista și sub formă electronică sau virtuală (de ex. contracte încheiate prin telefon sau internet)."
+    },
+    {
+      "enunt": "Când cantitatea cerută și cantitatea oferită a unui bun sunt egale la un anumit preț, acel preț este prețul de echilibru.",
+      "corect": true,
+      "explicatie": "Aceasta este chiar definiția prețului de echilibru."
+    },
+    {
+      "enunt": "Un preț minim (podea) stabilit peste prețul de echilibru protejează, de regulă, interesele cumpărătorilor.",
+      "corect": false,
+      "explicatie": "Prețul minim protejează vânzătorii (producătorii); cumpărătorii sunt protejați de prețul maxim (plafon)."
+    },
+    {
+      "enunt": "Coeficientul de elasticitate a ofertei față de preț este, de regulă, pozitiv, întrucât relația dintre preț și cantitatea oferită este directă.",
+      "corect": true,
+      "explicatie": "Spre deosebire de cerere, oferta variază în același sens cu prețul, deci coeficientul nu are nevoie de semnul minus."
+    },
+    {
+      "enunt": "Cu cât coeficientul de elasticitate a cererii față de preț este mai mic decât 1, cu atât cererea este considerată mai elastică.",
+      "corect": false,
+      "explicatie": "Un coeficient sub 1 înseamnă cerere inelastică, nu elastică."
+    },
+    {
+      "enunt": "Un exces de cerere (deficit) apare atunci când prețul practicat pe piață este mai mare decât prețul de echilibru.",
+      "corect": false,
+      "explicatie": "Excesul de cerere apare exact invers: când prețul practicat este mai mic decât cel de echilibru. Un preț peste echilibru generează exces de ofertă."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Pe piața unui bun, funcția cererii este Ce(Q) = 200 - 4P, iar funcția ofertei este Of(Q) = 50 + 6P. Calculați prețul de echilibru (Pe), în u.m.",
+      "unitate": "u.m.",
+      "corect": 15,
+      "toleranta": 0.1,
+      "explicatie": "Din Ce = Of rezultă 200 - 4P = 50 + 6P, deci 10P = 150, iar Pe = 15 u.m."
+    },
+    {
+      "enunt": "Continuând exemplul anterior (Pe = 15 u.m.), care este cantitatea de echilibru (Qe), în bucăți?",
+      "unitate": "buc.",
+      "corect": 140,
+      "toleranta": 1,
+      "explicatie": "Qe = 200 - 4 x 15 = 140 buc. (verificare: 50 + 6 x 15 = 140 buc.)"
+    },
+    {
+      "enunt": "Prețul unui bun crește cu 20%, iar cantitatea cerută scade cu 30%. Calculați coeficientul de elasticitate a cererii față de preț.",
+      "unitate": "",
+      "corect": 1.5,
+      "toleranta": 0.05,
+      "explicatie": "E(Q/P) = -(-30%) / (20%) = 1,5, deci cerere elastică."
+    },
+    {
+      "enunt": "Pe piața unui bun, Ce(Q) = 55 - 3P și Of(Q) = 30 + 2P. Dacă guvernul impune un preț administrat de 2 u.m., ce exces apare pe piață (în bucăți)? Introdu doar valoarea numerică.",
+      "unitate": "buc.",
+      "corect": 15,
+      "toleranta": 1,
+      "explicatie": "La P = 2: Ce = 55 - 6 = 49 buc., Of = 30 + 4 = 34 buc. Cererea depășește oferta cu 49 - 34 = 15 buc., deci exces de cerere (deficit) de 15 buc."
+    }
+  ]
+}

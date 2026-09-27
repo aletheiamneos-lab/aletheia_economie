@@ -1,0 +1,262 @@
+[
+  {
+    "id": "id01",
+    "title": "Cererea explodează",
+    "difficulty": "easy",
+    "evidence": [
+      "consumul crește rapid",
+      "creditul crește",
+      "capacitatea de producție se schimbă puțin"
+    ],
+    "diagnoses": [
+      "demand"
+    ],
+    "measures": [
+      "reduce_demand"
+    ]
+  },
+  {
+    "id": "id02",
+    "title": "Șoc energetic",
+    "difficulty": "easy",
+    "evidence": [
+      "energia importată se scumpește",
+      "costurile firmelor cresc",
+      "oferta scade"
+    ],
+    "diagnoses": [
+      "cost",
+      "imported"
+    ],
+    "measures": [
+      "targeted_support",
+      "increase_supply"
+    ]
+  },
+  {
+    "id": "id03",
+    "title": "Emisiune monetară",
+    "difficulty": "easy",
+    "evidence": [
+      "masa monetară crește mult",
+      "oferta de bunuri stagnează",
+      "prețurile cresc generalizat"
+    ],
+    "diagnoses": [
+      "monetary",
+      "demand"
+    ],
+    "measures": [
+      "monetary_restraint"
+    ]
+  },
+  {
+    "id": "id04",
+    "title": "Salarii fără productivitate",
+    "difficulty": "medium",
+    "evidence": [
+      "salariile cresc 15%",
+      "productivitatea crește 2%",
+      "costul unitar al muncii crește"
+    ],
+    "diagnoses": [
+      "cost"
+    ],
+    "measures": [
+      "productivity",
+      "moderate_demand"
+    ]
+  },
+  {
+    "id": "id05",
+    "title": "Moneda se depreciază",
+    "difficulty": "medium",
+    "evidence": [
+      "moneda națională se depreciază",
+      "materiile prime importate se scumpesc",
+      "prețurile interne cresc"
+    ],
+    "diagnoses": [
+      "imported",
+      "cost"
+    ],
+    "measures": [
+      "stabilize_macro",
+      "increase_supply"
+    ]
+  },
+  {
+    "id": "id06",
+    "title": "Deficit și consum",
+    "difficulty": "medium",
+    "evidence": [
+      "cheltuielile publice cresc",
+      "deficitul bugetar se mărește",
+      "cererea agregată crește"
+    ],
+    "diagnoses": [
+      "demand"
+    ],
+    "measures": [
+      "fiscal_balance"
+    ]
+  },
+  {
+    "id": "id07",
+    "title": "Spirală salarii-prețuri",
+    "difficulty": "medium",
+    "evidence": [
+      "prețurile cresc",
+      "salariile nominale cresc pentru compensare",
+      "costurile cresc din nou"
+    ],
+    "diagnoses": [
+      "spiral",
+      "cost"
+    ],
+    "measures": [
+      "mixed_package"
+    ]
+  },
+  {
+    "id": "id08",
+    "title": "Credit excesiv",
+    "difficulty": "medium",
+    "evidence": [
+      "dobânzile sunt foarte joase",
+      "creditul de consum crește rapid",
+      "cererea depășește oferta"
+    ],
+    "diagnoses": [
+      "demand",
+      "monetary"
+    ],
+    "measures": [
+      "monetary_restraint"
+    ]
+  },
+  {
+    "id": "id09",
+    "title": "Fiscalitate mai mare",
+    "difficulty": "hard",
+    "evidence": [
+      "taxele pe producție cresc",
+      "costurile cresc",
+      "firmele reduc oferta"
+    ],
+    "diagnoses": [
+      "cost"
+    ],
+    "measures": [
+      "supply_measures"
+    ]
+  },
+  {
+    "id": "id10",
+    "title": "Importuri scumpe și cerere mare",
+    "difficulty": "hard",
+    "evidence": [
+      "energia importată se scumpește",
+      "creditul intern crește",
+      "consumul crește",
+      "costurile cresc"
+    ],
+    "diagnoses": [
+      "imported",
+      "cost",
+      "demand"
+    ],
+    "measures": [
+      "mixed_package"
+    ]
+  },
+  {
+    "id": "id11",
+    "title": "Productivitate scăzută",
+    "difficulty": "hard",
+    "evidence": [
+      "producția crește lent",
+      "salariile cresc",
+      "costul mediu crește"
+    ],
+    "diagnoses": [
+      "cost"
+    ],
+    "measures": [
+      "productivity"
+    ]
+  },
+  {
+    "id": "id12",
+    "title": "Ofertă agricolă redusă",
+    "difficulty": "hard",
+    "evidence": [
+      "recolta este slabă",
+      "oferta alimentară scade",
+      "prețurile alimentelor cresc"
+    ],
+    "diagnoses": [
+      "cost"
+    ],
+    "measures": [
+      "increase_supply",
+      "targeted_support"
+    ]
+  },
+  {
+    "id": "id13",
+    "title": "Masă monetară și deficit",
+    "difficulty": "hard",
+    "evidence": [
+      "deficit mare",
+      "finanțare monetară",
+      "masa monetară crește",
+      "prețuri generalizate"
+    ],
+    "diagnoses": [
+      "monetary",
+      "demand"
+    ],
+    "measures": [
+      "mixed_package"
+    ]
+  },
+  {
+    "id": "id14",
+    "title": "Inflație importată pură",
+    "difficulty": "hard",
+    "evidence": [
+      "prețurile externe cresc",
+      "cursul intern este stabil",
+      "importurile intermediare se scumpesc"
+    ],
+    "diagnoses": [
+      "imported",
+      "cost"
+    ],
+    "measures": [
+      "diversify_imports",
+      "increase_supply"
+    ]
+  },
+  {
+    "id": "id15",
+    "title": "Caz mixt complet",
+    "difficulty": "mastery",
+    "evidence": [
+      "creditul crește",
+      "energia se scumpește",
+      "salariile cresc peste productivitate",
+      "moneda se depreciază"
+    ],
+    "diagnoses": [
+      "demand",
+      "cost",
+      "imported",
+      "spiral"
+    ],
+    "measures": [
+      "mixed_package"
+    ]
+  }
+]

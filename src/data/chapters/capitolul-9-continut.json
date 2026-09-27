@@ -1,0 +1,340 @@
+{
+  "capitol": {
+    "numar": 9,
+    "titlu": "Mecanismul concurențial",
+    "obiective": [
+      "Să explici ce este concurența și care este rolul ei în economia de piață",
+      "Să distingi premisele și factorii care determină amploarea concurenței",
+      "Să înțelegi diferitele structuri de piață: concurență perfectă, monopolistică, oligopol, monopol",
+      "Să explici formarea prețurilor pe fiecare structură de piață",
+      "Să identifici instrumentele și strategiile concurențiale folosite de firme"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "caracterizare-concurenta",
+      "nr": "1",
+      "titlu": "Caracterizarea generală a concurenței",
+      "text": [
+        "Concurența - \"mâna invizibilă\" a pieței - reflectă relațiile dintre agenții economici care acționează pe piața aceluiași bun economic, fiecare urmărind realizarea propriilor interese, în condiții de libertate economică.",
+        "Vorbim de concurență directă între agenții economici care acționează pe piața aceluiași bun (de ex. telefoane mobile) sau în cazul bunurilor substituibile (zahăr și zaharină). Nu se află în concurență directă agenții de pe piețe diferite sau cei care produc bunuri complementare (stilouri - cerneală)."
+      ],
+      "puncteCheie": [
+        "Premise: formarea liberă a prețului, numeroși participanți la tranzacții, libertatea decizională a agenților economici, apărată și garantată legal",
+        "Factori care determină amploarea concurenței: numărul vânzătorilor și cumpărătorilor, gradul de diferențiere a ofertei și preferințelor, capacitatea societății de a stimula inițiativa și spiritul de competiție"
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele concurenței, după respectarea reglementărilor legale",
+          "categorii": [
+            {
+              "nume": "Concurență loială (corectă)",
+              "definitie": "respectă legile și reglementările în vigoare"
+            },
+            {
+              "nume": "Concurență neloială (incorectă)",
+              "definitie": "încalcă aceste reglementări (spionaj economic, șantaj etc.)"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Rolul concurenței: stimulează progresul științific/tehnic/economic/social; selectează agenții economici după eficiență; asigură alocarea eficientă a resurselor; reglează piața prin adaptarea ofertei la cerere; oferă cele mai bune răspunsuri la ce, cât, cum, pentru cine să se producă; stimulează reducerea costurilor și a prețurilor."
+      ],
+      "formule": []
+    },
+    {
+      "id": "concurenta-perfecta",
+      "nr": "2",
+      "titlu": "Concurența perfectă (pură)",
+      "text": [
+        "Concurența perfectă reprezintă acel tip de concurență în care vânzătorii și cumpărătorii își realizează propriile interese, dar nu pot influența, prin acțiuni individuale, raportul cerere-ofertă și deci prețul. E un model teoretic, ideal, dar util ca reper de comparare a piețelor reale (piața muncitorilor necalificați și piețele bursiere tind spre acest model).",
+        "Pe piața cu concurență perfectă, prețul se formează liber, prin confruntarea cererii cu oferta. Nicio firmă nu are putere de decizie asupra prețului - fiind obligată să practice prețul stabilit pe piață, firma e \"primitoare de preț\" (price-taker)."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Atomicitatea cererii și ofertei",
+          "descriere": "numeroși producători și consumatori, niciunul capabil să influențeze piața"
+        },
+        {
+          "termen": "Absența barierelor de intrare/ieșire",
+          "descriere": "orice producător/consumator poate intra sau ieși oricând de pe piață"
+        },
+        {
+          "termen": "Omogenitatea perfectă a produselor",
+          "descriere": "produsele oferite sunt identice"
+        },
+        {
+          "termen": "Transparența perfectă",
+          "descriere": "toți participanții dispun de aceeași informație despre piață"
+        },
+        {
+          "termen": "Perfecta mobilitate a factorilor de producție",
+          "descriere": "munca și capitalul se deplasează ușor de la o firmă la alta"
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "concurenta-monopolistica",
+      "nr": "3",
+      "titlu": "Concurența imperfectă: piața cu concurență monopolistică",
+      "text": [
+        "Concurența imperfectă apare prin absența uneia sau mai multor condiții ale concurenței perfecte. Piața cu concurență monopolistică se apropie cel mai mult de concurența perfectă: are aceleași trăsături, cu o excepție esențială - diferențierea produsului.",
+        "Fiind diferențiate, firmele dețin, pe termen scurt, o putere de monopol limitată - dar cererea la nivelul unei firme e mult mai elastică decât la monopolul propriu-zis (produsele fiind ușor substituibile). Pe termen lung, intrarea de noi firme reduce cererea, prețul și profitul fiecărei firme, apropiindu-le de zero."
+      ],
+      "puncteCheie": [
+        "Atomicitatea cererii și ofertei - fiecare ofertant deține o cotă mică din piață",
+        "Intrarea și ieșirea de pe piață sunt relativ libere (cheltuieli mici de acces)",
+        "Diferențierea produselor - permite concurență prin preț, dar și prin reclamă, garanție etc.",
+        "Transparență mare, dar nu perfectă - există cheltuieli de informare pentru cumpărători"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "oligopol",
+      "nr": "4",
+      "titlu": "Concurența imperfectă: piața cu concurență de oligopol",
+      "text": [
+        "Piața cu concurență de oligopol reflectă acel tip de piață în care puține firme, dar mari și puternice economic, produc bunuri diferențiate sau omogene și determină formarea prețului (prețuri administrate). Este cel mai răspândit tip de piață în economiile moderne.",
+        "Firmele care acționează pe această piață încheie fie înțelegeri de tip cartel (păstrează autonomia decizională, dar se înțeleg asupra prețului și segmentului de piață), fie de tip trust (pierd autonomia decizională). Concurența se desfășoară prin preț, publicitate, facilități acordate cumpărătorilor."
+      ],
+      "puncteCheie": [
+        "Numărul firmelor este mic (de regulă, 3-10), dar puternic economic",
+        "Interdependența decizională dintre firme este mare - fiecare ține cont de reacțiile așteptate ale concurenților",
+        "Accesul pe piață este dificil (bariere de intrare mari)",
+        "Prețul se formează în funcție de cerere și de cantitatea produsă, pornind de la costul total mediu (CTM)"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "monopol-monopson",
+      "nr": "5",
+      "titlu": "Monopolul, monopsonul și oligopsonul",
+      "text": [
+        "Piața de monopol reflectă acel tip de piață în care unicul producător (vânzător) domină oferta unor bunuri omogene (pe termen scurt, nesubstituibile) prin preț și cantitate. Monopolul practică cel mai mare preț de pe piață, obținând profit de monopol - de unde și legile antimonopol/antitrust, menite să protejeze un grad rezonabil de satisfacere a cumpărătorilor. În realitate, monopolul absolut (pur) nu există pe termen lung.",
+        "Monopsonul și oligopsonul sunt, în esență, \"oglinda\" monopolului și oligopolului - dar concentrarea puterii economice se manifestă pe partea cumpărătorilor, nu a vânzătorilor. Piața de monopson reflectă acel tip de piață în care un singur cumpărător determină stabilirea prețului unui bun economic omogen, oferit de un număr mare de vânzători (ofertă atomizată). Piața cu concurență de oligopson e acel tip de piață în care un număr mic de cumpărători dispun de o putere economică destul de mare în influențarea pieței, tot în condițiile atomicității ofertei.",
+        "Profitul firmei cu putere de piață (monopolistă, de oligopol) este maxim, pe termen scurt, atunci când costul marginal (Cmg) este cel mult egal cu venitul marginal (Vmg), care e mai mic decât prețul: Cmg ≤ Vmg < P."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de monopol, după cauzele care îl generează",
+          "categorii": [
+            "Legal",
+            "Inovațional",
+            "Natural",
+            "Bilateral (sindicat-patronat)"
+          ]
+        }
+      ],
+      "exemple": [
+        "Un lanț mare de retail care cumpără roșii de la sute de mici producători agricoli locali se apropie de o poziție de oligopson (sau chiar monopson, dacă e singurul cumpărător en-gros din zonă): puterea sa de negociere îi permite să impună prețul de achiziție, deși oferta (fermierii) rămâne atomizată."
+      ],
+      "formule": [
+        {
+          "nume": "Condiția profitului maxim (piață cu putere)",
+          "formula": "Cmg ≤ Vmg < P"
+        }
+      ],
+      "calculator": "profitMaxim",
+      "notaLegatura": {
+        "href": "#sect-explorator-spectru",
+        "text": "Explorează interactiv toate cele 6 structuri de piață, comparativ, în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "instrumente-strategii",
+      "nr": "6",
+      "titlu": "Instrumente și strategii concurențiale",
+      "text": [
+        "Firmele folosesc diverse instrumente pentru a câștiga avantaj competitiv - unele legitime, altele nu - și își aleg o strategie concurențială potrivită resurselor și pieței pe care activează."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Instrumentele concurențiale",
+          "categorii": [
+            {
+              "nume": "De natură economică",
+              "definitie": "reducerea costului și prețului, îmbunătățirea calității, diversificarea sortimentală, avantaje pentru cumpărători"
+            },
+            {
+              "nume": "De natură extraeconomică",
+              "definitie": "spionajul economic, șantajul, presiuni morale asupra cumpărătorilor (concurență neloială)"
+            }
+          ]
+        },
+        {
+          "criteriu": "Strategiile (politicile) concurențiale",
+          "categorii": [
+            {
+              "nume": "Strategia costurilor (\"japoneză\")",
+              "definitie": "se bazează pe reducerea costurilor și prețurilor, fără afectarea calității"
+            },
+            {
+              "nume": "Strategia elitei (\"Mercedes\")",
+              "definitie": "se bazează pe o calitate deosebită, cu performanțe superioare"
+            },
+            {
+              "nume": "Strategia efortului concentrat",
+              "definitie": "are la bază preferințele unei anumite clientele și zone geografice"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Concurența monopolistică se deosebește de concurența perfectă, în principal, prin:",
+      "optiuni": [
+        "libera intrare și ieșire de pe piață",
+        "atomicitatea cererii",
+        "atomicitatea ofertei",
+        "diferențierea produselor"
+      ],
+      "corect": 3,
+      "explicatie": "Piața cu concurență monopolistică păstrează, în esență, trăsăturile concurenței perfecte - excepția principală fiind diferențierea produsului."
+    },
+    {
+      "intrebare": "Pe piața cu concurență perfectă, prețul:",
+      "optiuni": [
+        "se formează liber, prin confruntarea cererii cu oferta",
+        "este stabilit de producător",
+        "este stabilit de stat",
+        "este mai mare decât pe piața de monopol"
+      ],
+      "corect": 0,
+      "explicatie": "Pe piața cu concurență perfectă, nicio firmă nu are putere de decizie asupra prețului - firmele sunt \"primitoare de preț\" (price-taker)."
+    },
+    {
+      "intrebare": "Piața de monopol se caracterizează prin:",
+      "optiuni": [
+        "atomicitatea ofertei",
+        "un singur producător",
+        "lipsa oricăror bariere de intrare pe piață",
+        "o foarte bună satisfacere a cererii"
+      ],
+      "corect": 1,
+      "explicatie": "La monopol, un singur producător domină oferta unui bun (de regulă) nesubstituibil - opusul atomicității ofertei specifice concurenței perfecte."
+    },
+    {
+      "intrebare": "Piața de oligopol NU se caracterizează prin:",
+      "optiuni": [
+        "un număr mic de firme, mari și puternice economic",
+        "existența unor înțelegeri de tip cartel",
+        "comportamentul strategic al firmelor",
+        "absența barierelor de intrare pe piață"
+      ],
+      "corect": 3,
+      "explicatie": "La oligopol, accesul pe piață este dificil (bariere mari de intrare) - tocmai opusul absenței barierelor, care descrie mai degrabă concurența perfectă sau monopolistică."
+    },
+    {
+      "intrebare": "Instrumentele concurențiale de natură extraeconomică includ:",
+      "optiuni": [
+        "reducerea costului și a prețului",
+        "îmbunătățirea calității bunurilor",
+        "spionajul economic",
+        "diversificarea structurii sortimentale"
+      ],
+      "corect": 2,
+      "explicatie": "Spionajul economic, șantajul și presiunile morale sunt instrumente extraeconomice (neloiale); celelalte trei sunt instrumente economice, legitime."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Diferențierea produselor este specifică pieței cu concurență monopolistică.",
+      "corect": true,
+      "explicatie": "Da - este exact trăsătura care o diferențiază de concurența perfectă (unde produsele sunt omogene)."
+    },
+    {
+      "enunt": "În condiții de monopol, cererea pieței coincide cu cererea la nivelul firmei.",
+      "corect": true,
+      "explicatie": "Da - fiind unicul ofertant, întreaga cerere a pieței se îndreaptă către firma monopolistă."
+    },
+    {
+      "enunt": "Pe piața de oligopol, firmele nu au un comportament strategic.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - la oligopol, fiecare firmă își fundamentează deciziile ținând cont de reacțiile așteptate ale concurenților."
+    },
+    {
+      "enunt": "Pe piața de monopson există un singur producător.",
+      "corect": false,
+      "explicatie": "La monopson există un singur CUMPĂRĂTOR (nu producător), în fața unui număr mare de vânzători."
+    },
+    {
+      "enunt": "Concurența neloială include acțiuni precum spionajul economic sau șantajul.",
+      "corect": true,
+      "explicatie": "Da - acestea sunt instrumente concurențiale de natură extraeconomică, specifice concurenței neloiale."
+    }
+  ],
+  "probleme": [],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare structură de piață cu trăsătura ei definitorie (atenție - sunt mai multe definiții decât structuri).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Concurența monopolistică"
+        },
+        {
+          "id": "t2",
+          "text": "Oligopolul"
+        },
+        {
+          "id": "t3",
+          "text": "Monopolul"
+        },
+        {
+          "id": "t4",
+          "text": "Monopsonul"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Multe firme, produse diferențiate, bariere de intrare relativ reduse"
+        },
+        {
+          "id": "o_b",
+          "text": "Puține firme mari, interdependență decizională puternică"
+        },
+        {
+          "id": "o_c",
+          "text": "Un singur producător domină oferta unui bun nesubstituibil"
+        },
+        {
+          "id": "o_d",
+          "text": "Un singur cumpărător stabilește prețul, în fața multor vânzători"
+        },
+        {
+          "id": "o_e",
+          "text": "Mulți cumpărători și mulți vânzători, produse omogene, fără putere de piață"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, concurența perfectă - un model teoretic care nu apare printre cele 4 structuri din coloana din stânga."
+    }
+  ]
+}

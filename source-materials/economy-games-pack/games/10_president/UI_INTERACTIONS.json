@@ -1,0 +1,34 @@
+{
+  "visual_quality": "premium academic-modern",
+  "desktop_layout": "scenario/context + central interactive world + indicators",
+  "mobile_layout": "single column + sticky critical indicators + bottom sheet actions",
+  "required_controls": [
+    "restart",
+    "why",
+    "continue"
+  ],
+  "accessibility": [
+    "keyboard",
+    "tap alternative to drag",
+    "reduced motion",
+    "text fallback for charts"
+  ],
+  "game": "President — Economy of a Nation",
+  "required_visual_components": [
+    "econia_city",
+    "cabinet_advisers",
+    "nine_indicator_dashboard",
+    "four_year_timeline",
+    "decision_cards",
+    "mandate_charts",
+    "final_report"
+  ],
+  "micro_interactions": [
+    "animated number transitions",
+    "meaningful state changes after decisions",
+    "persistent selected state",
+    "tooltips/tap details",
+    "short explanation drawer",
+    "success/partial/incorrect feedback where applicable"
+  ]
+}

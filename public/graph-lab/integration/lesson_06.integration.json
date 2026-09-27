@@ -1,0 +1,153 @@
+{
+  "schemaVersion": "1.0",
+  "packageVersion": "5.4.0",
+  "lesson": 6,
+  "title": "Costul producției",
+  "files": {
+    "configJson": "data/lesson_06.json",
+    "configJs": "data/lesson_06.js",
+    "modularHtml": "lessons/lesson_06.html",
+    "standaloneHtml": "standalone/lectia_06_standalone.html",
+    "engine": "assets/graph-engine.js",
+    "styles": "assets/graph-lab.css"
+  },
+  "integration": {
+    "mountTarget": "#content",
+    "moduleSelector": "#moduleSelect",
+    "stateKeyPattern": "eco_graph_l6_{moduleId}_v1",
+    "themeKey": "eco_graph_theme_v1",
+    "adminKey": "eco_graph_admin_v1",
+    "resetCurrent": "resetCurrent()",
+    "resetLesson": "resetLesson()"
+  },
+  "sourceAudit": {
+    "lesson": 6,
+    "title": "Costul producției",
+    "source": "Capitolul 6 - Costul producției_ex.pdf",
+    "moduleCount": 3,
+    "evidence": "CF, CV, CT, CFM, CVM, CTM și Cmg; relația Cmg–CTM și minimul CTM.",
+    "modules": [
+      {
+        "id": "costuri_totale",
+        "title": "CF, CV și CT",
+        "kind": "costs",
+        "status": "A",
+        "formulas": [
+          "CT = CF + CV"
+        ]
+      },
+      {
+        "id": "costuri_medii",
+        "title": "CFM, CVM, CTM și Cmg",
+        "kind": "costs",
+        "status": "A",
+        "formulas": [
+          "CFM = CF/Q",
+          "CVM = CV/Q",
+          "CTM = CT/Q",
+          "Cmg = ΔCT/ΔQ"
+        ]
+      },
+      {
+        "id": "cost_marginal",
+        "title": "Cmg și minimul CTM",
+        "kind": "costs",
+        "status": "A",
+        "formulas": [
+          "Cmg = CTM la minimul CTM"
+        ]
+      }
+    ]
+  },
+  "config": {
+    "lesson": 6,
+    "title": "Costul producției",
+    "source": "Capitolul 6 - Costul producției",
+    "modules": [
+      {
+        "id": "costuri_totale",
+        "title": "CF, CV și CT",
+        "kind": "costs",
+        "defaults": {
+          "cf": 220,
+          "alpha": 0.12,
+          "beta": 8,
+          "q": 32,
+          "view": "total"
+        },
+        "formulas": [
+          "CT = CF + CV"
+        ],
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 6 - Costul producției_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "CF, CV, CT, CFM, CVM, CTM și Cmg; relația Cmg–CTM și minimul CTM."
+        }
+      },
+      {
+        "id": "costuri_medii",
+        "title": "CFM, CVM, CTM și Cmg",
+        "kind": "costs",
+        "defaults": {
+          "cf": 220,
+          "alpha": 0.12,
+          "beta": 8,
+          "q": 32,
+          "view": "average"
+        },
+        "formulas": [
+          "CFM = CF/Q",
+          "CVM = CV/Q",
+          "CTM = CT/Q",
+          "Cmg = ΔCT/ΔQ"
+        ],
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 6 - Costul producției_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "CF, CV, CT, CFM, CVM, CTM și Cmg; relația Cmg–CTM și minimul CTM."
+        }
+      },
+      {
+        "id": "cost_marginal",
+        "title": "Cmg și minimul CTM",
+        "kind": "costs",
+        "defaults": {
+          "cf": 220,
+          "alpha": 0.12,
+          "beta": 8,
+          "q": 32,
+          "view": "marginal"
+        },
+        "formulas": [
+          "Cmg = CTM la minimul CTM"
+        ],
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 6 - Costul producției_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "CF, CV, CT, CFM, CVM, CTM și Cmg; relația Cmg–CTM și minimul CTM."
+        }
+      }
+    ],
+    "themeDefaults": {
+      "graphBg": "#ffffff",
+      "grid": "#edf1f6",
+      "axes": "#667085",
+      "line1": "#2f63d5",
+      "line2": "#13865f",
+      "line3": "#7458d8",
+      "line4": "#b46b00",
+      "line5": "#d04f5f",
+      "line6": "#0f8f9b",
+      "t0": "#667085",
+      "probe": "#b42318"
+    },
+    "auditVersion": "5.4-complet",
+    "sourcePolicy": "Nu se introduce o formulă economică nouă dacă nu este susținută de material; vizualizările C sunt marcate ca schematice/didactice."
+  }
+}

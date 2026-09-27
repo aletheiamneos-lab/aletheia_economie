@@ -1,0 +1,397 @@
+{
+  "nivel": "usor",
+  "slot": 2,
+  "numar_intrebari": 30,
+  "intrebari": [
+    {
+      "numar_in_slot": 1,
+      "enunt": "Utilitatea intrinsecă a unui bun economic reflectă:",
+      "variante": {
+        "a": "satisfacția subiectivă resimțită de un anumit consumator",
+        "b": "capacitatea unui bun economic de a satisface o nevoie umană, la un moment dat",
+        "c": "prețul de piață al bunului",
+        "d": "costul de producție al bunului",
+        "e": "raritatea bunului respectiv"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Utilitatea intrinsecă (în sens general) reflectă capacitatea unui bun economic de a satisface o nevoie umană, la un moment dat."
+    },
+    {
+      "numar_in_slot": 2,
+      "enunt": "Spre deosebire de utilitatea economică, utilitatea intrinsecă a unui bun:",
+      "variante": {
+        "a": "este aceeași pentru toți consumatorii raționali",
+        "b": "diferă de la un consumator la altul",
+        "c": "nu poate fi definită",
+        "d": "depinde exclusiv de venitul consumatorului",
+        "e": "apare doar după achiziționarea bunului"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Utilitatea intrinsecă are determinare obiectivă și este aceeași pentru toți consumatorii raționali, spre deosebire de utilitatea economică, ce are determinare subiectivă."
+    },
+    {
+      "numar_in_slot": 3,
+      "enunt": "Utilitatea economică reflectă:",
+      "variante": {
+        "a": "capacitatea obiectivă a unui bun de a fi util oricui",
+        "b": "satisfacția pe care crede că o va obține un anumit consumator prin utilizarea unei cantități determinate dintr-un bun economic, în anumite condiții de timp și spațiu",
+        "c": "prețul unui bun pe piață",
+        "d": "costul de oportunitate al unei decizii de consum",
+        "e": "cantitatea de bunuri produsă într-o economie"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Utilitatea economică reflectă satisfacția pe care crede că o va obține un anumit consumator prin utilizarea unei cantități determinate dintr-un bun economic, în anumite condiții de timp și spațiu."
+    },
+    {
+      "numar_in_slot": 4,
+      "enunt": "Utilitatea economică are, spre deosebire de utilitatea intrinsecă, o determinare:",
+      "variante": {
+        "a": "exclusiv obiectivă",
+        "b": "subiectivă, diferită de la un consumator rațional la altul",
+        "c": "identică pentru toți consumatorii",
+        "d": "independentă de preferințele consumatorului",
+        "e": "stabilită de stat"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Utilitatea economică are determinare subiectivă: aprecierea ei depinde de raportul stabilit de fiecare persoană între intensitatea nevoii sale și cantitatea consumată, deci diferă de la un consumator la altul."
+    },
+    {
+      "numar_in_slot": 5,
+      "enunt": "Pentru ca un bun să aibă utilitate economică pentru un consumator, este necesar, printre altele, ca:",
+      "variante": {
+        "a": "consumatorul să dețină deja bunul respectiv",
+        "b": "inițial, consumatorul să nu dețină bunul, dar să dorească să îl cumpere",
+        "c": "bunul să fie gratuit",
+        "d": "bunul să nu aibă niciun preț de piață",
+        "e": "consumatorul să nu aibă venituri disponibile"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Una dintre condițiile utilității economice este ca, inițial, consumatorul să nu dețină bunul, dar să dorească să-l cumpere."
+    },
+    {
+      "numar_in_slot": 6,
+      "enunt": "Satisfacția resimțită de un consumator în urma consumării fiecărei unități dintr-o serie de bunuri omogene se numește:",
+      "variante": {
+        "a": "utilitate marginală",
+        "b": "utilitate individuală",
+        "c": "utilitate intrinsecă",
+        "d": "utilitate totală",
+        "e": "cerere"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Utilitatea individuală reflectă satisfacția resimțită în urma consumării fiecărei unități/doze dintr-un bun dintr-o serie de bunuri omogene."
+    },
+    {
+      "numar_in_slot": 7,
+      "enunt": "Sporul de utilitate (satisfacție) obținut în urma creșterii cu o unitate a cantității consumate dintr-un bun se numește:",
+      "variante": {
+        "a": "utilitate totală",
+        "b": "utilitate intrinsecă",
+        "c": "utilitate marginală",
+        "d": "utilitate individuală medie",
+        "e": "cerere marginală"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Utilitatea marginală reflectă sporul de utilitate obținut în urma creșterii cu o unitate a cantității consumate dintr-o serie de bunuri omogene, respectiv satisfacția adusă de ultima unitate consumată."
+    },
+    {
+      "numar_in_slot": 8,
+      "enunt": "Pe măsură ce un consumator rațional consumă tot mai multe unități, succesiv, dintr-un anumit bun, într-un interval scurt de timp, utilitatea marginală:",
+      "variante": {
+        "a": "crește constant",
+        "b": "rămâne neschimbată",
+        "c": "descrește",
+        "d": "devine întotdeauna negativă încă de la prima unitate",
+        "e": "nu are nicio legătură cu numărul de unități consumate"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Legea utilității marginale descrescânde arată că utilitatea marginală pentru unitățile achiziționate și consumate succesiv, într-un timp scurt, de un consumator rațional, este descrescătoare."
+    },
+    {
+      "numar_in_slot": 9,
+      "enunt": "Explicația faptului că fiecare unitate suplimentară consumată dintr-un bun aduce o satisfacție tot mai mică este:",
+      "variante": {
+        "a": "creșterea prețului bunului",
+        "b": "scăderea calității bunului",
+        "c": "scăderea intensității nevoii pe măsură ce aceasta este satisfăcută continuu",
+        "d": "scăderea venitului consumatorului",
+        "e": "creșterea cantității produse de firme"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Fiecare nouă unitate consumată aduce o utilitate mai mică deoarece intensitatea nevoii satisfăcute continuu scade."
+    },
+    {
+      "numar_in_slot": 10,
+      "enunt": "Atunci când utilitatea marginală este zero, utilitatea totală este:",
+      "variante": {
+        "a": "zero",
+        "b": "negativă",
+        "c": "maximă (stare de saturație)",
+        "d": "egală cu utilitatea marginală anterioară",
+        "e": "în creștere accelerată"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Când utilitatea marginală ajunge la zero, nevoia de consum este integral satisfăcută (stare de saturație), iar utilitatea totală atinge nivelul maxim."
+    },
+    {
+      "numar_in_slot": 11,
+      "enunt": "Atât timp cât utilitatea marginală este pozitivă, iar consumul crește, utilitatea totală:",
+      "variante": {
+        "a": "scade",
+        "b": "rămâne constantă",
+        "c": "crește, dar cu un ritm descrescător",
+        "d": "devine negativă",
+        "e": "nu poate fi determinată"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Cât timp utilitatea marginală este pozitivă (dar descrescătoare), utilitatea totală continuă să crească, însă într-un ritm din ce în ce mai lent."
+    },
+    {
+      "numar_in_slot": 12,
+      "enunt": "De ce este atât de important rolul de consumator în economie?",
+      "variante": {
+        "a": "pentru că prețurile sunt stabilite de consumatori",
+        "b": "pentru că scopul final al oricărei producții este consumul",
+        "c": "pentru că fără consumatori nu ar exista factori de producție",
+        "d": "pentru că profitul este generat exclusiv de consumatori",
+        "e": "pentru că doar consumatorii pot economisi"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Rolul de consumator este esențial deoarece scopul final al oricărei producții este consumul - fără consum nu există producție, deci nici locuri de muncă sau profit."
+    },
+    {
+      "numar_in_slot": 13,
+      "enunt": "Caracteristica dominantă a bunurilor economice, care le deosebește de bunurile libere, este:",
+      "variante": {
+        "a": "faptul că sunt gratuite",
+        "b": "abundența lor",
+        "c": "raritatea lor, respectiv insuficiența în raport cu nevoile",
+        "d": "faptul că nu pot fi consumate",
+        "e": "faptul că sunt produse doar de stat"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Caracteristica dominantă a bunurilor economice este raritatea, respectiv insuficiența lor în raport cu nevoile."
+    },
+    {
+      "numar_in_slot": 14,
+      "enunt": "În categoria mărfii se include:",
+      "variante": {
+        "a": "orice bun liber, disponibil în cantități nelimitate",
+        "b": "orice bun care face obiectul schimbului prin vânzare-cumpărare",
+        "c": "doar bunurile alimentare",
+        "d": "doar serviciile publice",
+        "e": "doar bunurile produse de stat"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Marfa este orice bun economic care circulă de la un agent economic la altul prin vânzare-cumpărare, deci face obiectul schimbului pe piață."
+    },
+    {
+      "numar_in_slot": 15,
+      "enunt": "Factorii de producție reprezintă:",
+      "variante": {
+        "a": "totalitatea nevoilor unei societăți",
+        "b": "resursele atrase și efectiv utilizate în activitatea economică, din care rezultă bunuri economice utile, destinate pieței",
+        "c": "doar bunurile de consum final",
+        "d": "exclusiv resursele naturale neexploatate",
+        "e": "profitul obținut de o firmă"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Factorii de producție reprezintă resursele atrase și utilizate în activitatea economică, din care rezultă bunuri economice utile, destinate pieței."
+    },
+    {
+      "numar_in_slot": 16,
+      "enunt": "În raport cu producția, factorii de producție reprezintă:",
+      "variante": {
+        "a": "ieșirile (output-urile) activității economice",
+        "b": "intrările (input-urile) activității economice",
+        "c": "doar rezultatul final al vânzării unui bun",
+        "d": "profitul obținut de întreprinzător",
+        "e": "cererea de pe piață"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Factorii de producție sunt „intrări” (input-uri) ale activității economice, iar bunurile și serviciile obținute sunt „ieșiri” (output-uri)."
+    },
+    {
+      "numar_in_slot": 17,
+      "enunt": "Factorii de producție tradiționali (clasici) sunt:",
+      "variante": {
+        "a": "munca și natura, ca factori primari, și capitalul, ca factor derivat",
+        "b": "doar munca și capitalul",
+        "c": "informația și tehnologia",
+        "d": "doar capitalul și abilitatea întreprinzătorului",
+        "e": "statul și piața"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Factorii de producție tradiționali sunt munca și natura (factori primari sau originari) și capitalul (factor derivat, rezultat din combinarea celorlalți doi)."
+    },
+    {
+      "numar_in_slot": 18,
+      "enunt": "Printre neofactorii de producție se numără:",
+      "variante": {
+        "a": "munca și natura",
+        "b": "informația, tehnologia și abilitatea întreprinzătorului",
+        "c": "doar capitalul fix",
+        "d": "doar capitalul circulant",
+        "e": "doar pământul"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Neofactorii de producție includ informația, tehnologia, abilitatea întreprinzătorului, activitatea de management și marketing etc., care sporesc eficiența factorilor clasici."
+    },
+    {
+      "numar_in_slot": 19,
+      "enunt": "Atunci când sporirea producției se bazează, în principal, pe creșterea cantității factorilor de producție atrași, dezvoltarea economică este de tip:",
+      "variante": {
+        "a": "intensiv",
+        "b": "extensiv",
+        "c": "neutru",
+        "d": "regresiv",
+        "e": "structural"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Când sporirea producției se bazează pe creșterea cantității de factori de producție atrași, dezvoltarea economică este de tip extensiv; când se bazează pe calitate și eficiență, este de tip intensiv."
+    },
+    {
+      "numar_in_slot": 20,
+      "enunt": "Ca factor de producție, munca este:",
+      "variante": {
+        "a": "o activitate conștientă, specific umană, ce se finalizează în obținerea de bunuri economice utile",
+        "b": "doar o activitate fizică, fără implicare intelectuală",
+        "c": "identică cu timpul liber al unei persoane",
+        "d": "un factor de producție derivat",
+        "e": "o resursă naturală neregenerabilă"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Munca, ca factor de producție, este o activitate conștientă, specific umană, care se finalizează în obținerea de bunuri economice utile."
+    },
+    {
+      "numar_in_slot": 21,
+      "enunt": "Care dintre următoarele NU reprezintă o caracteristică a muncii ca factor de producție?",
+      "variante": {
+        "a": "este o activitate conștientă și rațională",
+        "b": "implică efort fizic și intelectual, precum și experiență",
+        "c": "are rol activ și determinant față de ceilalți factori de producție",
+        "d": "este un factor de producție derivat, rezultat din combinarea celorlalți factori",
+        "e": "sporirea eficienței ei a dus la denumirea de «capital uman»"
+      },
+      "raspuns_corect": "d",
+      "rezolvare": "Munca este un factor de producție primar (originar), nu unul derivat - capitalul este cel derivat din combinarea muncii cu natura."
+    },
+    {
+      "numar_in_slot": 22,
+      "enunt": "Ca factor de producție, natura (pământul) reprezintă:",
+      "variante": {
+        "a": "ansamblul resurselor naturale brute pe care omul le transformă în bunuri și servicii utile",
+        "b": "doar suprafețele agricole cultivate",
+        "c": "un factor de producție derivat",
+        "d": "ansamblul bunurilor produse prin muncă",
+        "e": "exclusiv resursele minerale"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Natura, ca factor de producție, reprezintă ansamblul resurselor naturale brute pe care omul le transformă, prin muncă, în bunuri și servicii capabile să satisfacă nevoile sale."
+    },
+    {
+      "numar_in_slot": 23,
+      "enunt": "Una dintre trăsăturile pământului ca factor de producție este:",
+      "variante": {
+        "a": "este nelimitat ca suprafață",
+        "b": "este un factor de producție derivat",
+        "c": "este, până acum, un element de neînlocuit în viața oamenilor",
+        "d": "nu are nicio legătură cu agricultura",
+        "e": "se epuizează complet și ireversibil la prima utilizare"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Printre trăsăturile pământului se numără faptul că, până acum, este un element de neînlocuit în viața oamenilor, deși este limitat ca suprafață."
+    },
+    {
+      "numar_in_slot": 24,
+      "enunt": "Capitalul, ca factor de producție, reflectă:",
+      "variante": {
+        "a": "ansamblul bunurilor materiale produse prin muncă și utilizate pentru realizarea de noi bunuri economice destinate pieței",
+        "b": "totalitatea resurselor naturale ale unei țări",
+        "c": "suma banilor deținuți de o firmă în cont bancar",
+        "d": "acțiunile și obligațiunile deținute de investitori",
+        "e": "profitul realizat de o firmă într-un an"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Capitalul, ca factor de producție, reflectă ansamblul bunurilor materiale produse prin muncă și utilizate pentru realizarea de noi bunuri economice - nu trebuie confundat cu capitalul bănesc, acțiunile sau obligațiunile."
+    },
+    {
+      "numar_in_slot": 25,
+      "enunt": "Capitalul tehnic utilizat într-o activitate economică este format din:",
+      "variante": {
+        "a": "doar capital fix",
+        "b": "doar capital circulant",
+        "c": "capital fix și capital circulant",
+        "d": "capital bănesc și acțiuni",
+        "e": "doar resurse naturale"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Capitalul tehnic utilizat (KT) este format din capitalul fix (KF) și capitalul circulant (KC): KT = KF + KC."
+    },
+    {
+      "numar_in_slot": 26,
+      "enunt": "Spre deosebire de capitalul circulant, capitalul fix:",
+      "variante": {
+        "a": "se consumă dintr-o dată, în întregime, într-un singur ciclu economic",
+        "b": "participă la mai multe cicluri economice și se consumă treptat",
+        "c": "este înlocuit la fiecare ciclu de producție",
+        "d": "nu se uzează niciodată",
+        "e": "nu face parte din capitalul tehnic"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Capitalul fix participă la mai multe cicluri economice, se consumă treptat, iar înlocuirea sa se face după mai mulți ani de utilizare - spre deosebire de capitalul circulant, care se consumă dintr-o dată, într-un singur ciclu."
+    },
+    {
+      "numar_in_slot": 27,
+      "enunt": "Deprecierea capitalului fix cauzată de progresul tehnic și/sau de condițiile pieței se numește:",
+      "variante": {
+        "a": "uzură fizică",
+        "b": "uzură morală",
+        "c": "amortizare",
+        "d": "capital circulant",
+        "e": "productivitate marginală"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Uzura morală este deprecierea capitalului fix cauzată de progresul tehnic și/sau de condițiile pieței, spre deosebire de uzura fizică, provocată de folosirea în producție și/sau acțiunea factorilor naturali."
+    },
+    {
+      "numar_in_slot": 28,
+      "enunt": "Recuperarea treptată a cheltuielilor cu achiziționarea capitalului fix, prin includerea lor treptată în costul bunurilor produse, se numește:",
+      "variante": {
+        "a": "uzură fizică",
+        "b": "uzură morală",
+        "c": "amortizare",
+        "d": "capital circulant",
+        "e": "profit"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Amortizarea reprezintă expresia valorică a uzurii capitalului fix și constă în recuperarea treptată a cheltuielilor cu achiziționarea acestuia, prin includerea lor treptată în costul bunurilor produse."
+    },
+    {
+      "numar_in_slot": 29,
+      "enunt": "Întreprinzătorul (antreprenorul) este:",
+      "variante": {
+        "a": "persoana care doar consumă bunuri economice",
+        "b": "persoana care inițiază, organizează, conduce o afacere, asumându-și riscul investirii capitalului, cu scopul obținerii unui profit cât mai mare",
+        "c": "un angajat al statului responsabil cu politica economică",
+        "d": "persoana care deține doar resurse naturale",
+        "e": "un consumator care nu desfășoară activitate economică"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Întreprinzătorul (antreprenorul) este o persoană care inițiază, organizează, coordonează, conduce o afacere, asumându-și riscul de a investi capital, cu scopul obținerii unui profit cât mai mare."
+    },
+    {
+      "numar_in_slot": 30,
+      "enunt": "Scopul principal al producătorului/întreprinzătorului este:",
+      "variante": {
+        "a": "satisfacerea propriilor nevoi de consum",
+        "b": "maximizarea profitului",
+        "c": "reducerea la minimum a producției",
+        "d": "creșterea numărului de angajați, indiferent de cost",
+        "e": "eliminarea concurenței prin orice mijloace"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Scopul principal al producătorului/întreprinzătorului este maximizarea profitului."
+    }
+  ]
+}

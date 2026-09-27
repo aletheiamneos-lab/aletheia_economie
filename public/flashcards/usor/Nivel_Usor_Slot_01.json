@@ -1,0 +1,397 @@
+{
+  "nivel": "usor",
+  "slot": 1,
+  "numar_intrebari": 30,
+  "intrebari": [
+    {
+      "numar_in_slot": 1,
+      "enunt": "Nevoile reprezintă:",
+      "variante": {
+        "a": "numai cerințele de bază ale unui individ, strict biologice",
+        "b": "totalitatea dorințelor, așteptărilor și cerințelor care se manifestă la nivel individual, de grup sau societal",
+        "c": "doar resursele de care dispune o persoană",
+        "d": "exclusiv nevoile care pot fi satisfăcute imediat",
+        "e": "bunurile economice rare"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Nevoile reprezintă totalitatea dorințelor, așteptărilor, cerințelor care se manifestă la nivelul unui individ, al unui grup sau la nivelul societății în ansamblul său."
+    },
+    {
+      "numar_in_slot": 2,
+      "enunt": "Din punctul de vedere al determinării lor, nevoile au:",
+      "variante": {
+        "a": "doar o determinare obiectivă",
+        "b": "doar o determinare subiectivă",
+        "c": "atât o determinare obiectivă, cât și una subiectivă",
+        "d": "o determinare exclusiv economică",
+        "e": "o determinare exclusiv juridică"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Majoritatea nevoilor au un pronunțat caracter subiectiv (depind de persoana care și le formulează), dar au și o determinare obiectivă, ce depinde de societatea în care trăiește individul."
+    },
+    {
+      "numar_in_slot": 3,
+      "enunt": "Costul de oportunitate reprezintă:",
+      "variante": {
+        "a": "prețul plătit efectiv pentru un bun",
+        "b": "cea mai bună alternativă de alocare a resurselor disponibile, sacrificată în favoarea alternativei alese",
+        "c": "costul contabil înregistrat de o firmă",
+        "d": "suma tuturor cheltuielilor unei firme",
+        "e": "profitul obținut dintr-o investiție"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Costul de oportunitate reprezintă cea mai bună alternativă de alocare a resurselor disponibile sacrificată în favoarea alternativei alese."
+    },
+    {
+      "numar_in_slot": 4,
+      "enunt": "Pe măsură ce se renunță la o cantitate tot mai mare dintr-un bun, în favoarea altuia, costul de oportunitate al bunului obținut suplimentar:",
+      "variante": {
+        "a": "scade",
+        "b": "rămâne constant",
+        "c": "crește",
+        "d": "devine zero",
+        "e": "devine negativ"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Aceasta este chiar legea creșterii costurilor relative: pe măsură ce se renunță la tot mai mult dintr-un bun, costul de oportunitate al bunului obținut suplimentar crește."
+    },
+    {
+      "numar_in_slot": 5,
+      "enunt": "Una dintre explicațiile creșterii costului de oportunitate, pe măsură ce se renunță la tot mai mult dintr-un bun, este:",
+      "variante": {
+        "a": "scăderea prețului bunului sacrificat",
+        "b": "caracterul specializat al resurselor economice",
+        "c": "creșterea cererii pentru bunul sacrificat",
+        "d": "intervenția statului pe piață",
+        "e": "inflația"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Resursele specializate pot fi adaptate pentru producerea celuilalt bun doar până la un punct, dincolo de care adaptarea devine tot mai costisitoare, iar costul de oportunitate crește."
+    },
+    {
+      "numar_in_slot": 6,
+      "enunt": "Alocarea resurselor limitate presupune răspunsul permanent la patru întrebări fundamentale. Care dintre următoarele NU se numără printre acestea?",
+      "variante": {
+        "a": "ce producem?",
+        "b": "cât producem?",
+        "c": "cum producem?",
+        "d": "pentru cine producem?",
+        "e": "unde vindem producția în străinătate?"
+      },
+      "raspuns_corect": "e",
+      "rezolvare": "Cele patru întrebări fundamentale ale economiei sunt: ce, cât, cum și pentru cine producem. Destinația exportului nu se numără printre ele."
+    },
+    {
+      "numar_in_slot": 7,
+      "enunt": "Microeconomia este ramura economiei care studiază:",
+      "variante": {
+        "a": "comportamentul agregat al unităților economice la nivel național",
+        "b": "comportamentul unităților economice individuale",
+        "c": "relațiile economice internaționale",
+        "d": "evoluția indicatorilor macroeconomici",
+        "e": "politicile monetare ale băncilor centrale"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Microeconomia este ramura economiei care studiază comportamentul unităților economice individuale (firmă, consumator)."
+    },
+    {
+      "numar_in_slot": 8,
+      "enunt": "Macroeconomia studiază:",
+      "variante": {
+        "a": "comportamentul unei firme individuale",
+        "b": "deciziile de consum ale unei singure familii",
+        "c": "comportamentul agregat al unităților economice la nivelul economiei naționale",
+        "d": "doar piața unui singur bun",
+        "e": "doar comerțul dintre două firme"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Macroeconomia este ramura economiei care studiază comportamentul agregat al unităților economice la nivelul economiei naționale."
+    },
+    {
+      "numar_in_slot": 9,
+      "enunt": "Prețul reprezintă:",
+      "variante": {
+        "a": "cantitatea de bunuri produsă de o firmă",
+        "b": "expresia bănească a valorii unui bun marfar",
+        "c": "costul de producție al unui bun",
+        "d": "profitul unei firme",
+        "e": "cererea pentru un bun"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Prețul reprezintă expresia bănească a valorii unui bun marfar."
+    },
+    {
+      "numar_in_slot": 10,
+      "enunt": "Indicatorul economic reprezintă:",
+      "variante": {
+        "a": "doar o măsură calitativă a activității economice",
+        "b": "expresia cantitativă sau calitativă a rezultatelor activității economice",
+        "c": "exclusiv o măsură a prețurilor",
+        "d": "o lege economică",
+        "e": "un tip de resursă economică"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Indicatorul economic este expresia cantitativă sau calitativă a rezultatelor activității economice."
+    },
+    {
+      "numar_in_slot": 11,
+      "enunt": "Activitatea economică reflectă:",
+      "variante": {
+        "a": "doar acțiunile statului în economie",
+        "b": "ansamblul acțiunilor întreprinse de agenții economici pentru a obține bunuri și servicii cu resurse limitate, pentru satisfacerea nevoilor",
+        "c": "exclusiv procesul de schimb pe piață",
+        "d": "doar producția de bunuri materiale, nu și de servicii",
+        "e": "acumularea de capital financiar"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Activitatea economică reflectă ansamblul acțiunilor întreprinse de agenții economici pentru a obține bunuri și servicii cu resurse economice limitate, în scopul satisfacerii nevoilor umane."
+    },
+    {
+      "numar_in_slot": 12,
+      "enunt": "Fazele principale ale activității economice sunt:",
+      "variante": {
+        "a": "producția, repartiția, schimbul și consumul",
+        "b": "cererea, oferta, prețul și profitul",
+        "c": "proiectarea, fabricarea și vânzarea",
+        "d": "planificarea, execuția și controlul",
+        "e": "investiția, economisirea și consumul"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Fazele principale ale activității economice sunt: producția, repartiția, schimbul și consumul."
+    },
+    {
+      "numar_in_slot": 13,
+      "enunt": "Nivelurile organizatorice structurale ale economiei unei țări sunt:",
+      "variante": {
+        "a": "microeconomia, mezoeconomia și macroeconomia",
+        "b": "producția, schimbul și consumul",
+        "c": "economia națională și economia mondială",
+        "d": "sectorul public și sectorul privat",
+        "e": "piața internă și piața externă"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Nivelurile organizatorice structurale ale economiei sunt: microeconomia (nivel de firmă/producător/consumator), mezoeconomia (nivel de ramură) și macroeconomia (nivelul economiei naționale)."
+    },
+    {
+      "numar_in_slot": 14,
+      "enunt": "Economia naturală este acel mod de organizare a economiei bazat pe:",
+      "variante": {
+        "a": "schimbul de mărfuri pe piață",
+        "b": "accesul direct la bunurile economice, respectiv autoconsum",
+        "c": "planificarea centralizată de către stat",
+        "d": "intervenția băncilor în alocarea resurselor",
+        "e": "comerțul internațional"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Economia naturală are la bază accesul direct la bunurile economice sau autoconsumul - fiecare își produce bunurile de care are nevoie."
+    },
+    {
+      "numar_in_slot": 15,
+      "enunt": "Economia de schimb (marfară) presupune că accesul la bunurile economice se realizează:",
+      "variante": {
+        "a": "direct, prin autoconsum",
+        "b": "în principal indirect, prin intermediul schimbului",
+        "c": "exclusiv prin donații",
+        "d": "doar prin intervenția statului",
+        "e": "doar în cadrul familiei"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "În economia de schimb, accesul la bunurile economice este, în principal, indirect, prin intermediul schimbului, bunurile devenind mărfuri."
+    },
+    {
+      "numar_in_slot": 16,
+      "enunt": "Printre condițiile (premisele) trecerii de la economia naturală la economia de schimb se numără:",
+      "variante": {
+        "a": "diviziunea muncii și autonomia (independența) producătorilor",
+        "b": "planificarea centralizată",
+        "c": "desființarea proprietății private",
+        "d": "reducerea numărului de producători",
+        "e": "eliminarea concurenței"
+      },
+      "raspuns_corect": "a",
+      "rezolvare": "Condițiile trecerii la economia de schimb sunt diviziunea muncii (specializarea producătorilor) și autonomia/independența producătorilor în deciziile privind bunurile produse."
+    },
+    {
+      "numar_in_slot": 17,
+      "enunt": "Economia de comandă (planificată-centralizată) se caracterizează prin faptul că:",
+      "variante": {
+        "a": "piața decide alocarea resurselor",
+        "b": "instituțiile statului decid modul de alocare a resurselor, iar proprietatea publică este dominantă",
+        "c": "proprietatea privată este dominantă",
+        "d": "prețurile se formează liber, prin confruntarea cererii cu oferta",
+        "e": "firmele private decid singure alocarea resurselor"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "În economia de comandă, instituțiile statului decid modul de alocare a resurselor economice, iar proprietatea publică domină."
+    },
+    {
+      "numar_in_slot": 18,
+      "enunt": "Economia de piață reprezintă acel tip de economie în care alocarea resurselor se face, în principal, prin:",
+      "variante": {
+        "a": "planificarea guvernamentală",
+        "b": "mecanismele pieței (preț, concurență)",
+        "c": "decizia unui organism internațional",
+        "d": "tradiție și obicei",
+        "e": "repartiția egală, stabilită de stat"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Economia de piață este acel tip de economie în care alocarea resurselor se face, în principal, prin mecanismele pieței - prețul și concurența."
+    },
+    {
+      "numar_in_slot": 19,
+      "enunt": "Care dintre următoarele NU reprezintă o trăsătură a economiei de piață?",
+      "variante": {
+        "a": "dominația proprietății private",
+        "b": "formarea liberă a prețurilor",
+        "c": "pluralismul centrelor de decizie economică",
+        "d": "absența oricărei intervenții a statului în economie",
+        "e": "relații economice concurențiale"
+      },
+      "raspuns_corect": "d",
+      "rezolvare": "Economia de piață presupune intervenția limitată a statului democratic, nu absența totală a acesteia - varianta d nu este o trăsătură corectă."
+    },
+    {
+      "numar_in_slot": 20,
+      "enunt": "Intervenția statului democratic în economia de piață se realizează, printre altele, prin:",
+      "variante": {
+        "a": "planificarea centralizată a producției",
+        "b": "legislație, furnizarea de bunuri publice și protecție socială",
+        "c": "desființarea proprietății private",
+        "d": "stabilirea directă a tuturor prețurilor din economie",
+        "e": "eliminarea concurenței dintre firme"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Statul intervine în economia de piață prin legislație (ex. legi antitrust), furnizarea de bunuri publice, protecție socială și programe de stabilizare economică."
+    },
+    {
+      "numar_in_slot": 21,
+      "enunt": "Vânzarea unei case presupune transferul către noul proprietar al:",
+      "variante": {
+        "a": "doar dreptului de folosință",
+        "b": "doar dreptului de posesiune",
+        "c": "tuturor atributelor proprietății: dispoziție, posesiune, folosință și uzufruct",
+        "d": "doar dreptului de dispoziție",
+        "e": "niciunui drept, ci doar a unei obligații"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Vânzarea înseamnă transferul complet al proprietății - toate atributele (dispoziție, posesiune, folosință/utilizare, uzufruct) trec la noul proprietar."
+    },
+    {
+      "numar_in_slot": 22,
+      "enunt": "Pluralismul formelor de proprietate reprezintă:",
+      "variante": {
+        "a": "existența unei singure forme de proprietate într-o țară",
+        "b": "coexistența mai multor forme de proprietate în aceeași țară",
+        "c": "o trăsătură exclusivă a economiei planificate",
+        "d": "desființarea proprietății private",
+        "e": "monopolul statului asupra resurselor"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Pluralismul formelor de proprietate reprezintă coexistența mai multor forme de proprietate (privată, publică, mixtă etc.) în aceeași țară."
+    },
+    {
+      "numar_in_slot": 23,
+      "enunt": "O primărie, care prestează servicii nemarfare și redistribuie venituri, face parte din categoria:",
+      "variante": {
+        "a": "societăților comerciale nefinanciare",
+        "b": "instituțiilor financiare",
+        "c": "administrațiilor publice",
+        "d": "menajelor",
+        "e": "restului lumii"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Administrațiile publice produc servicii nemarfare și efectuează operații de redistribuire a veniturilor și bogăției naționale - o primărie este un exemplu tipic."
+    },
+    {
+      "numar_in_slot": 24,
+      "enunt": "O organizație neguvernamentală care apără drepturile omului reprezintă un exemplu de:",
+      "variante": {
+        "a": "societate comercială privată, nefinanciară",
+        "b": "administrație privată",
+        "c": "administrație publică",
+        "d": "instituție de asigurare",
+        "e": "instituție financiară"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "ONG-ul prestează servicii nemarfare pentru anumite categorii de populație, fără a fi parte a statului - deci este administrație privată."
+    },
+    {
+      "numar_in_slot": 25,
+      "enunt": "O familie, care în principal consumă bunuri și servicii, reprezintă în terminologia economică:",
+      "variante": {
+        "a": "o societate comercială",
+        "b": "o instituție financiară",
+        "c": "un menaj (gospodărie)",
+        "d": "o administrație publică",
+        "e": "restul lumii"
+      },
+      "raspuns_corect": "c",
+      "rezolvare": "Menajele sau gospodăriile sunt agenți economici care, în principal, consumă bunuri și servicii."
+    },
+    {
+      "numar_in_slot": 26,
+      "enunt": "În modelul economiei de piață, rolul „mâinii invizibile\", care direcționează opțiunile economice ale fiecărui agent, este îndeplinit de:",
+      "variante": {
+        "a": "intervenția directă a statului",
+        "b": "mecanismul prețurilor și al concurenței",
+        "c": "planificarea centralizată",
+        "d": "reglementările internaționale",
+        "e": "tradiția economică"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "„Mâna invizibilă\" descrie modul în care mecanismul prețurilor și al concurenței coordonează deciziile agenților economici, fără o intervenție centrală."
+    },
+    {
+      "numar_in_slot": 27,
+      "enunt": "Economistul supranumit „părintele economiei\", autor al lucrării „Avuția națiunilor\" (1776), este:",
+      "variante": {
+        "a": "John Maynard Keynes",
+        "b": "Adam Smith",
+        "c": "Karl Marx",
+        "d": "David Ricardo",
+        "e": "Milton Friedman"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Adam Smith (1723-1790) a scris în 1776 „Avuția națiunilor. Cercetare asupra naturii și cauzelor sale\", carte care i-a adus numele de „părintele economiei\"."
+    },
+    {
+      "numar_in_slot": 28,
+      "enunt": "În 2004, România a primit calificativul de economie de piață funcțională, ceea ce presupune îndeplinirea cumulativă a mai multor condiții. Care dintre următoarele NU se numără printre acestea?",
+      "variante": {
+        "a": "prețuri și schimburi libere cu străinătatea",
+        "b": "existența unui cadru juridic adecvat și efectiv aplicat",
+        "c": "stabilitate macroeconomică",
+        "d": "eliminarea totală a comerțului cu alte țări",
+        "e": "existența unui sector financiar-bancar bine dezvoltat"
+      },
+      "raspuns_corect": "d",
+      "rezolvare": "O condiție a economiei de piață funcționale este, dimpotrivă, prețurile și schimburile libere cu străinătatea, nu eliminarea comerțului exterior."
+    },
+    {
+      "numar_in_slot": 29,
+      "enunt": "Economia mondială reprezintă:",
+      "variante": {
+        "a": "doar economia celor mai dezvoltate state",
+        "b": "ansamblul economiilor naționale ale statelor lumii, privite în interdependența legăturilor dintre ele",
+        "c": "piața unei singure mărfi la nivel internațional",
+        "d": "totalitatea organizațiilor economice internaționale",
+        "e": "sistemul monetar internațional"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Economia mondială reprezintă ansamblul economiilor naționale ale statelor lumii, privite în interdependența legăturilor dintre ele."
+    },
+    {
+      "numar_in_slot": 30,
+      "enunt": "Piața mondială reprezintă:",
+      "variante": {
+        "a": "piața internă a unei singure țări",
+        "b": "ansamblul relațiilor de schimb care se stabilesc între unitățile economice aparținând diferitelor țări",
+        "c": "doar comerțul cu produse agricole",
+        "d": "organizația mondială a comerțului",
+        "e": "sistemul bancar internațional"
+      },
+      "raspuns_corect": "b",
+      "rezolvare": "Piața mondială reprezintă ansamblul relațiilor de schimb care se stabilesc între unitățile economice aparținând diferitelor țări."
+    }
+  ]
+}

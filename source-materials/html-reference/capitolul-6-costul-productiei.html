@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 6 · Costul producției</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 16px; margin-top: 16px; font-family: var(--font-mono); flex-wrap: wrap; }
+.simulator__citire strong { color: var(--accent); font-size: 17px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 11px; }
+.legenda { display: flex; gap: 16px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ---------------------------------------------------------------------
+// Continutul capitolului - teoria completa, structurata dupa manual:
+// I. Esenta si rolul costului
+// II. Tipologia si structura costului (3 criterii de clasificare)
+// III. Costul mediu si costul marginal (formule + graficul-semnatura)
+// IV. Reducerea costurilor si eficienta economica
+// ---------------------------------------------------------------------
+const DATA = {
+  capitol: {
+    numar: 6,
+    titlu: 'Costul producției',
+    obiective: [
+      'Să explici rolul, structura și tipurile de costuri practicate',
+      'Să calculezi costul fix mediu, costul variabil mediu, costul total mediu și costul marginal',
+      'Să înțelegi relația dintre costul marginal și costul mediu total',
+      'Să evidențiezi importanța și efectele reducerii costurilor asupra eficienței economice',
+      'Să rezolvi probleme privind determinarea diferitelor tipuri de costuri'
+    ]
+  },
+  teorie: [
+    {
+      id: 'esenta-cost', nr: '1', titlu: 'Esența și rolul costului',
+      text: [
+        'Costul reflectă, în expresie bănească, consumul factorilor de producție necesar producerii și desfacerii de bunuri economice destinate pieței. Consumul fiecărui factor se exprimă diferit - de la unități fizice la unități valorice - motiv pentru care evidențierea lor unitară se face prin cost, în expresie bănească.'
+      ],
+      puncteCheie: [
+        'Fundamentează deciziile privind alegerea factorilor de producție, combinarea lor eficientă și volumul/structura optimă a producției',
+        'Reflectă calitatea și eficiența activității economice, prin intermediul profitului (a cărui mărime o influențează invers proporțional)',
+        'Stă la baza stabilirii prețului de vânzare: prețul include costul mediu și profitul unitar'
+      ],
+      clasificari: [
+        { criteriu: 'Cum se exprimă consumul fiecărui factor de producție', orientare: 'vertical', categorii: [
+          { nume: 'Munca', definitie: 'unități fizice (timp de muncă, număr de lucrători) și valorice (cheltuieli salariale)' },
+          { nume: 'Natura/Pământul', definitie: 'de regulă, doar unități valorice (cheltuieli de achiziție și întreținere)' },
+          { nume: 'Capitalul fix', definitie: 'doar valoric - prin amortizare' },
+          { nume: 'Capitalul circulant', definitie: 'unități fizice și valorice - consumul specific/tehnologic' }
+        ] }
+      ],
+      exemple: [],
+      formule: [
+        { nume: 'Prețul de vânzare', formula: 'P = CMT + Pr/u.p.  sau  P = VT/Q' }
+      ]
+    },
+    {
+      id: 'tipologie-cost', nr: '2', titlu: 'Tipologia și structura costului',
+      text: [
+        'Fundamentarea deciziei firmei privind reducerea cheltuielilor depinde de cunoașterea tipurilor de costuri practicate - identificate după mai multe criterii.'
+      ],
+      clasificari: [
+        { criteriu: 'După natura activității economice generatoare de cheltuieli', categorii: [
+          { nume: 'Cost de producție (CP)', definitie: 'cheltuielile determinate de producerea propriu-zisă a bunurilor' },
+          { nume: 'Cost de desfacere/distribuție (CD)', definitie: 'transport, ambalare, sortare, depozitare, reclamă' }
+        ] },
+        { criteriu: 'După natura cheltuielilor de producție', categorii: [
+          { nume: 'Costuri materiale (Cmat)', definitie: 'amortizarea capitalului fix + achiziția capitalului circulant' },
+          { nume: 'Costuri salariale (Cs)', definitie: 'salarii directe (Sd) + salarii indirecte (Si)' },
+          { nume: 'Alte cheltuieli (a.c.)', definitie: 'impozite, dobânzi, amenzi, taxe' }
+        ] }
+      ],
+      exemple: [],
+      formule: [
+        { nume: 'Costul total (după natura activității)', formula: 'CT = CP + CD' },
+        { nume: 'Costul total (după natura cheltuielilor)', formula: 'CT = Cmat + Cs + a.c.' }
+      ]
+    },
+    {
+      id: 'costuri-fixe-variabile', nr: '3', titlu: 'Costurile fixe și variabile',
+      text: [
+        'Pe termen scurt, reacția costurilor la variația producției le împarte în fixe și variabile - o distincție esențială pentru deciziile de producție pe termen scurt.'
+      ],
+      clasificari: [
+        { criteriu: 'După reacția la variația producției (termen scurt)', categorii: [
+          { nume: 'Costuri fixe (CF)', definitie: 'nu depind de volumul producției (amortizare, taxe, impozite, salarii administrative)' },
+          { nume: 'Costuri variabile (CV)', definitie: 'se modifică odată cu volumul producției (materii prime, energie, salarii directe)' }
+        ] }
+      ],
+      exemple: [],
+      formule: [
+        { nume: 'Costul total', formula: 'CT = CF + CV' }
+      ]
+    },
+    {
+      id: 'cost-mediu-marginal', nr: '4', titlu: 'Costul mediu și costul marginal',
+      text: [
+        'Costurile se pot calcula pe întreaga producție (CT, CF, CV), pe unitate de produs (costuri medii) sau pentru ultima unitate obținută (costul marginal).',
+        'Evoluția costului marginal (Cmg) și a costului total mediu (CTM) e influențată de aceeași lege a randamentelor neproporționale întâlnită la productivitate (capitolul anterior) - de fapt, costurile sunt "oglinda" productivității: când productivitatea crește, costurile pe unitate scad, și invers.'
+      ],
+      puncteCheie: [
+        { termen: 'Când Cmg < CTM', descriere: 'CTM scade, iar productivitatea medie crește' },
+        { termen: 'Când Cmg = CTM', descriere: 'CTM este minim și constant, iar productivitatea medie este maximă' },
+        { termen: 'Când Cmg > CTM', descriere: 'CTM crește, iar productivitatea medie scade' }
+      ],
+      exemple: [
+        'Dacă CT0 = 100 u.m. la Q0 = 10 buc., iar producția crește de 3 ori (Q1 = 30 buc.) în timp ce CT crește cu 50% (CT1 = 150 u.m.), costul marginal este Cmg = ΔCT/ΔQ = (150-100)/(30-10) = 50/20 = 2,5 u.m.'
+      ],
+      formule: [
+        { nume: 'Costul fix mediu', formula: 'CFM = CF/Q' },
+        { nume: 'Costul variabil mediu', formula: 'CVM = CV/Q' },
+        { nume: 'Costul total mediu', formula: 'CTM = CT/Q = CFM + CVM' },
+        { nume: 'Costul marginal', formula: 'Cmg = ΔCT/ΔQ' }
+      ],
+      calculator: 'costMediu',
+      notaLegatura: { href: '#sect-explorator-costuri', text: 'Explorează interactiv graficul celor 4 curbe de cost în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'reducere-costuri', nr: '5', titlu: 'Reducerea costurilor și eficiența economică',
+      text: [
+        'Reducerea costurilor este una din principalele căi de creștere a eficienței economice: la același preț de vânzare, un cost mai mic înseamnă profit mai mare (Pr = VT - CT) și o poziție competitivă mai bună pe piață. Practica economică arată că elementul comun tuturor firmelor de succes este inovarea - produse noi, tehnologii moderne, tehnici manageriale și de comercializare noi.'
+      ],
+      puncteCheie: [
+        { termen: 'Reducerea costurilor materiale', descriere: 'prin achiziționarea mai ieftină a factorilor, perfecționarea tehnologiilor, reducerea rebuturilor și a stocurilor, modernizarea utilajelor' },
+        { termen: 'Creșterea productivității muncii', descriere: 'cea mai importantă cale - reduce simultan costurile salariale și cele materiale, pe unitate de produs' },
+        { termen: 'Diminuarea cheltuielilor administrative', descriere: 'optimizarea cheltuielilor de aprovizionare, desfacere și publicitate' }
+      ],
+      clasificari: [
+        { criteriu: 'Efectele reducerii costurilor (fără afectarea calității)', orientare: 'vertical', categorii: [
+          'Sporirea producției, ofertei și a profitului',
+          'Creșterea capacității firmei de a face față concurenței',
+          'Sporirea capacității de autofinanțare, extindere și modernizare',
+          'Micșorarea prețului bunurilor economice',
+          'Creșterea cererii și a gradului de satisfacere a nevoilor sociale',
+          'Economisirea și utilizarea rațională a resurselor limitate',
+          'Protecția mediului înconjurător și a echilibrului ecologic'
+        ] }
+      ],
+      exemple: [
+        'O firmă produce și vinde 10 bucăți dintr-un bun, cu următoarele cheltuieli: materii prime și materiale=50, combustibil=6, energie=8, amortizare=7, salarii directe=10, salarii indirecte=7, desfacere - cheltuieli fixe=4, desfacere - cheltuieli variabile=8. Costurile materiale (Cmat) = 50+6+8+7 = 71; costurile salariale (Cs) = 10+7 = 17; costul de producție (CP) = Cmat+Cs = 88; costul de desfacere (CD) = 4+8 = 12; costul total (CT) = CP+CD = 100, deci CTM=10, CFM=1,8 și CVM=8,2 (CFM+CVM=CTM).'
+      ],
+      formule: []
+    }
+  ],
+  grila: [
+    { intrebare: 'Ce se întâmplă cu diferitele costuri dacă o firmă nu produce nimic (Q = 0)?', optiuni: ['CF = CV', 'CF = 0', 'CV = 0', 'CT = CV'], corect: 2, explicatie: 'La Q=0, costurile variabile sunt zero (nu se consumă materii prime etc.), dar costurile fixe rămân - deci CT = CF.' },
+    { intrebare: 'Sunt, în același timp, costuri materiale și variabile, costurile cu:', optiuni: ['iluminatul firmei', 'amortizarea', 'plata salariaților productivi', 'materii prime, materiale, combustibil'], corect: 3, explicatie: 'Materiile prime, materialele și combustibilul sunt costuri materiale (consum de capital circulant) și, în același timp, variabile (depind de volumul producției).' },
+    { intrebare: 'Cea mai importantă cale de reducere a costurilor este:', optiuni: ['promovarea progresului tehnic', 'achiziționarea mai ieftină a factorilor de producție', 'perfecționarea pregătirii profesionale', 'creșterea productivității muncii'], corect: 3, explicatie: 'Creșterea productivității muncii înseamnă mai multă producție cu același consum de factori, ceea ce reduce costul pe unitate de produs.' },
+    { intrebare: 'Consumul capitalului fix este inclus:', optiuni: ['în costurile materiale variabile', 'numai în costurile unitare', 'doar în costurile fixe unitare', 'în costurile materiale, fixe, unitare și totale'], corect: 3, explicatie: 'Amortizarea (consumul KF) e o cheltuială fixă și materială - regăsită atât în costul total, cât și în cel unitar.' },
+    { intrebare: 'Formula prețului de vânzare al unui bun, în funcție de cost și profit, este:', optiuni: ['P = CTM - Pr/u.p.', 'P = CTM + Pr/u.p.', 'P = CTM x Pr/u.p.', 'P = CTM/Pr/u.p.'], corect: 1, explicatie: 'P = CMT + Pr/u.p. - prețul acoperă costul mediu (unitar) și include și profitul pe unitate de produs.' }
+  ],
+  af: [
+    { enunt: 'La baza reducerii costurilor stă procesul inovării.', corect: true, explicatie: 'Da - promovarea progresului tehnic (inovarea) e una din căile principale de reducere a costurilor.' },
+    { enunt: 'Pragul de rentabilitate reflectă nivelul producției la care profitul este zero.', corect: true, explicatie: 'Da - la pragul de rentabilitate, VT = CT, deci profitul total (sau unitar) e nul.' },
+    { enunt: 'După natura cheltuielilor de producție, există costuri fixe și variabile.', corect: false, explicatie: 'Costurile fixe și variabile sunt clasificate după reacția la variația producției, nu după natura cheltuielilor (care dă costuri materiale, salariale și alte cheltuieli).' },
+    { enunt: 'Consumul specific (tehnologic) se exprimă numai în unități fizice.', corect: false, explicatie: 'Consumul specific se exprimă atât în unități fizice, cât și în unități monetare (valorice).' },
+    { enunt: 'Costul marginal reflectă sporul costului total determinat de obținerea unei unități suplimentare de produs.', corect: true, explicatie: 'Da - Cmg = ΔCT/ΔQ, exact sporul costului pentru ultima unitate produsă.' }
+  ],
+  probleme: [
+    { enunt: 'În perioada anterioară, CT0 = 100 u.m. și a crescut cu 50%, în condițiile sporirii producției de 3 ori față de perioada anterioară, când era de 10 buc. Care este costul marginal?', unitate: 'u.m.', corect: 2.5, toleranta: 0.05, explicatie: 'CT1 = 100 x 1,5 = 150 u.m.; Q1 = 10 x 3 = 30 buc. Cmg = ΔCT/ΔQ = (150-100)/(30-10) = 50/20 = 2,5 u.m.' },
+    { enunt: 'Funcția costului total este C = 4Q² + 10Q + 50. Când Q = 5, cât este costul fix mediu (CFM)?', unitate: 'u.m.', corect: 10, toleranta: 0.1, explicatie: 'Termenul constant (50) e costul fix (CF); CFM = CF/Q = 50/5 = 10 u.m.' },
+    { enunt: 'Dacă pragul de rentabilitate este de 15 buc., iar prețul de vânzare P = 100 u.m., care este costul total (CT) la acest nivel al producției?', unitate: 'u.m.', corect: 1500, toleranta: 5, explicatie: 'La pragul de rentabilitate, VT = CT. VT = P x Q = 100 x 15 = 1.500 u.m., deci CT = 1.500 u.m.' },
+    { enunt: 'KF = 600 u.m., iar amortizarea anuală e de 20% din KF. Dacă Cmat = 75% din CT, iar Kc = 20% din Cmat, cât sunt costurile salariale (Cs)?', unitate: 'u.m.', corect: 50, toleranta: 1, explicatie: 'A = 20% x 600 = 120 u.m. Din Kc = Cmat - A și Kc = 20% x Cmat rezultă Cmat = 150 u.m. CT = Cmat/0,75 = 200 u.m., deci Cs = CT - Cmat = 50 u.m.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Cost fix' },
+        { id: 't2', text: 'Cost variabil' },
+        { id: 't3', text: 'Cost marginal' },
+        { id: 't4', text: 'Prag de rentabilitate' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Nu depinde de volumul producției, pe termen scurt' },
+        { id: 'o_b', text: 'Se modifică odată cu volumul producției' },
+        { id: 'o_c', text: 'Sporul costului total determinat de ultima unitate produsă' },
+        { id: 'o_d', text: 'Nivelul producției la care profitul total este zero' },
+        { id: 'o_e', text: 'Costul total, împărțit la cantitatea produsă' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, costul mediu (CTM) - un concept diferit, care nu apare în coloana din stânga.'
+    }
+  ]
+};
+
+// ---------------------------------------------------------------------
+// Functii economice specifice acestui capitol.
+// ---------------------------------------------------------------------
+function calculeazaCosturi(CF, CV, Q) {
+  const CT = CF + CV;
+  const CFM = CF / Q, CVM = CV / Q, CTM = CT / Q;
+  return { CT, CFM, CVM, CTM };
+}
+
+// ---------------------------------------------------------------------
+// Helpere DOM (motorul comun)
+// ---------------------------------------------------------------------
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 26, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 12, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10.5, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+
+// ---------------------------------------------------------------------
+// Arbore de clasificare (motor comun - vezi kit-extindere-cod.md)
+// ---------------------------------------------------------------------
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Calculator inline (sectiunea 4): CFM, CVM, CTM
+// ---------------------------------------------------------------------
+function buildCostMediuCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: costurile medii'));
+  const randuri = el('div', 'mini-calc__randuri');
+
+  function campInput(labelTxt, placeholder, valInitial) {
+    const label = document.createElement('label');
+    label.appendChild(document.createTextNode(labelTxt));
+    const input = document.createElement('input');
+    input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+    label.appendChild(input);
+    randuri.appendChild(label);
+    return input;
+  }
+  const inputCF = campInput('Cost fix (CF)', 'ex. 50', 50);
+  const inputCV = campInput('Cost variabil (CV)', 'ex. 100', 100);
+  const inputQ = campInput('Producție (Q)', 'ex. 5', 5);
+  box.appendChild(randuri);
+
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const CF = Number(inputCF.value), CV = Number(inputCV.value), Q = Number(inputQ.value);
+    if (inputCF.value === '' || inputCV.value === '' || inputQ.value === '' || isNaN(CF) || isNaN(CV) || isNaN(Q) || Q === 0) {
+      rezultat.textContent = 'Completează toate valorile (Q diferit de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const r = calculeazaCosturi(CF, CV, Q);
+    rezultat.innerHTML = '';
+    [['CT', r.CT], ['CFM', r.CFM], ['CVM', r.CVM], ['CTM', r.CTM]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+    chartWrap.innerHTML = '';
+    chartWrap.appendChild(buildWaterfallChart([
+      { label: 'CFM', val: r.CFM, culoare: 'var(--text-muted)' },
+      { label: 'CVM', val: r.CVM, culoare: 'var(--mark)' }
+    ]));
+  }
+  [inputCF, inputCV, inputQ].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// Scor
+// ---------------------------------------------------------------------
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+// ---------------------------------------------------------------------
+// Sectiuni de teorie
+// ---------------------------------------------------------------------
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'costMediu') body.appendChild(buildCostMediuCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// I. Teste grila
+// ---------------------------------------------------------------------
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// II. Adevarat / Fals
+// ---------------------------------------------------------------------
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// III. Probleme numerice
+// ---------------------------------------------------------------------
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// IV. Asociere
+// ---------------------------------------------------------------------
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// V. Explorator: curbele costurilor (graficul-semnatura al capitolului)
+// ---------------------------------------------------------------------
+function buildExploratorCosturi() {
+  const puncte = [
+    { Q: 1, cfm: 120, cvm: 24.5, ctm: 144.5, cmg: 24.5 },
+    { Q: 2, cfm: 60, cvm: 20, ctm: 80, cmg: 15.5 },
+    { Q: 3, cfm: 40, cvm: 16.5, ctm: 56.5, cmg: 9.5 },
+    { Q: 4, cfm: 30, cvm: 14, ctm: 44, cmg: 6.5 },
+    { Q: 5, cfm: 24, cvm: 12.5, ctm: 36.5, cmg: 6.5 },
+    { Q: 6, cfm: 20, cvm: 12, ctm: 32, cmg: 9.5 },
+    { Q: 7, cfm: 17.14, cvm: 12.5, ctm: 29.64, cmg: 15.5 },
+    { Q: 8, cfm: 15, cvm: 14, ctm: 29, cmg: 24.5 },
+    { Q: 9, cfm: 13.33, cvm: 16.5, ctm: 29.83, cmg: 36.5 },
+    { Q: 10, cfm: 12, cvm: 20, ctm: 32, cmg: 51.5 }
+  ];
+  const width = 400, height = 260, left = 42, right = 10, top = 18, bottom = 32;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const maxQ = 10, maxY = 60;
+  const sx = q => left + ((q - 1) / (maxQ - 1)) * chartW;
+  const sy = y => top + chartH - (Math.min(y, maxY) / maxY) * chartH;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Mișcă producția (Q) și urmărește cele 4 curbe de cost - în special relația dintre costul marginal (Cmg) și costul total mediu (CTM), în punctul lor de minim.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Graficul celor 4 curbe de cost: CFM, CVM, CTM si Cmg' });
+  svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' }); labelY.textContent = 'Cost/unitate';
+  const labelX = elNS('text', { x: left + chartW, y: height - 8, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' }); labelX.textContent = 'Producție (Q)';
+  svg.appendChild(labelY); svg.appendChild(labelX);
+
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--text-muted)', 'stroke-width': 1.5, 'stroke-dasharray': '3 3', points: puncte.map(p => sx(p.Q) + ',' + sy(p.cfm)).join(' ') }));
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--mark)', 'stroke-width': 1.5, points: puncte.map(p => sx(p.Q) + ',' + sy(p.cvm)).join(' ') }));
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => sx(p.Q) + ',' + sy(p.ctm)).join(' ') }));
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--bad)', 'stroke-width': 2.5, points: puncte.map(p => sx(p.Q) + ',' + sy(p.cmg)).join(' ') }));
+
+  const punctActivCtm = elNS('circle', { r: 6, fill: 'var(--mark)' });
+  const punctActivCmg = elNS('circle', { r: 6, fill: 'var(--mark)' });
+  svg.appendChild(punctActivCtm); svg.appendChild(punctActivCmg);
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--text-muted)', 'CFM'));
+  legenda.appendChild(legendItem('var(--mark)', 'CVM'));
+  legenda.appendChild(legendItem('var(--accent)', 'CTM'));
+  legenda.appendChild(legendItem('var(--bad)', 'Cmg'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxCfm = document.createElement('div'); const sCfm = document.createElement('strong'); boxCfm.appendChild(sCfm); boxCfm.appendChild(el('span', '', 'CFM'));
+  const boxCvm = document.createElement('div'); const sCvm = document.createElement('strong'); boxCvm.appendChild(sCvm); boxCvm.appendChild(el('span', '', 'CVM'));
+  const boxCtm = document.createElement('div'); const sCtm = document.createElement('strong'); boxCtm.appendChild(sCtm); boxCtm.appendChild(el('span', '', 'CTM'));
+  const boxCmg = document.createElement('div'); const sCmg = document.createElement('strong'); boxCmg.appendChild(sCmg); boxCmg.appendChild(el('span', '', 'Cmg'));
+  citire.appendChild(boxCfm); citire.appendChild(boxCvm); citire.appendChild(boxCtm); citire.appendChild(boxCmg);
+  wrap.appendChild(citire);
+
+  const interpretare = document.createElement('div');
+  interpretare.style.marginTop = '10px'; interpretare.style.fontSize = '13.5px'; interpretare.style.color = 'var(--text-muted)';
+  wrap.appendChild(interpretare);
+
+  const sliderWrap = el('div', 'simulator__sliders');
+  const row = el('div', 'slider-row');
+  const label = document.createElement('label');
+  label.appendChild(el('span', '', 'Producție (Q)'));
+  const labelVal = el('span', '', '1');
+  label.appendChild(labelVal);
+  row.appendChild(label);
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '1'; slider.max = '10'; slider.step = '1'; slider.value = '1';
+  row.appendChild(slider);
+  sliderWrap.appendChild(row);
+  wrap.appendChild(sliderWrap);
+
+  function recalc(Q) {
+    const p = puncte[Q - 1];
+    labelVal.textContent = Q;
+    punctActivCtm.setAttribute('cx', sx(p.Q)); punctActivCtm.setAttribute('cy', sy(p.ctm));
+    punctActivCmg.setAttribute('cx', sx(p.Q)); punctActivCmg.setAttribute('cy', sy(p.cmg));
+    sCfm.textContent = p.cfm; sCvm.textContent = p.cvm; sCtm.textContent = p.ctm; sCmg.textContent = p.cmg;
+    let mesaj;
+    if (p.cmg < p.ctm) mesaj = 'Cmg < CTM: costul total mediu încă scade - firma poate produce mai eficient mărind producția.';
+    else if (Math.abs(p.cmg - p.ctm) < 1) mesaj = 'Cmg ≈ CTM: costul total mediu e aproape de minimul lui - nivelul optim de producție, pe termen scurt.';
+    else mesaj = 'Cmg > CTM: costul total mediu crește - producția suplimentară devine tot mai costisitoare pe unitate.';
+    interpretare.textContent = mesaj;
+  }
+  slider.addEventListener('input', () => recalc(Number(slider.value)));
+  recalc(1);
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Asamblare pagina
+// ---------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: curbele costurilor');
+  eyebrowExp.id = 'sect-explorator-costuri';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Aceleași formule ca în secțiunea 4 din teorie, dar acum le poți explora pe tot parcursul producției.'));
+  root.appendChild(buildExploratorCosturi());
+});
+</script>
+</body>
+</html>

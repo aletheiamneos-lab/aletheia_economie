@@ -1,0 +1,146 @@
+import { useCallback, useEffect, useState } from 'react'
+
+export const DEFAULT_ADMIN_PASSWORD = 'admin123'
+export const ADMIN_QUICK_ACCESS_ENABLED = true
+export const DEMO_ADMIN_EMAIL = 'admin@exemplu.ro'
+
+const APPEARANCE_STORAGE_KEY = 'economia-appearance-v1'
+const ADMIN_PASSWORD_STORAGE_KEY = 'economia-admin-password-v1'
+
+export type ThemeId = 'navy' | 'graphite' | 'forest' | 'blue-amber' | 'teal-coral' | 'plum-mint'
+export type FontId = 'editorial' | 'inter' | 'ibm-plex' | 'source' | 'lora' | 'newsreader' | 'space'
+
+export interface AppearancePreferences {
+  theme: ThemeId
+  font: FontId
+}
+
+export interface ThemeOption {
+  id: ThemeId
+  name: string
+  description: string
+  colors: [string, string, string]
+}
+
+export interface FontOption {
+  id: FontId
+  name: string
+  description: string
+  previewFamily: string
+}
+
+export const themeOptions: ThemeOption[] = [
+  { id: 'navy', name: 'Slate / Navy Editorial', description: 'Echilibrat și academic', colors: ['#f6f8fc', '#318d9c', '#163a59'] },
+  { id: 'graphite', name: 'Stone / Graphite Luxury', description: 'Neutru și sobru', colors: ['#f4f1eb', '#76695d', '#262a2e'] },
+  { id: 'forest', name: 'Forest / Ink Executive', description: 'Profund și natural', colors: ['#edf3ef', '#427563', '#183b35'] },
+  { id: 'blue-amber', name: 'Blue Sage & Amber', description: 'Clar și energic', colors: ['#edf4f7', '#2e6f91', '#dc9a4d'] },
+  { id: 'teal-coral', name: 'Teal Sand & Coral', description: 'Cald și contemporan', colors: ['#f7f2e9', '#217c7c', '#df7561'] },
+  { id: 'plum-mint', name: 'Plum Mint & Gold', description: 'Distinct și rafinat', colors: ['#f3eff5', '#765c7c', '#d0a84e'] },
+]
+
+export const fontOptions: FontOption[] = [
+  { id: 'editorial', name: 'Manrope / DM Sans', description: 'Fontul actual', previewFamily: 'Manrope, sans-serif' },
+  { id: 'inter', name: 'Inter', description: 'Curat și foarte lizibil', previewFamily: 'Inter, sans-serif' },
+  { id: 'ibm-plex', name: 'IBM Plex Sans', description: 'Tehnic și precis', previewFamily: '"IBM Plex Sans", sans-serif' },
+  { id: 'source', name: 'Source Serif 4 / Source Sans 3', description: 'Academic editorial', previewFamily: '"Source Serif 4", serif' },
+  { id: 'lora', name: 'Lora / Karla', description: 'Elegant și prietenos', previewFamily: 'Lora, serif' },
+  { id: 'newsreader', name: 'Newsreader / Work Sans', description: 'Revistă modernă', previewFamily: 'Newsreader, serif' },
+  { id: 'space', name: 'Space Grotesk / Inter', description: 'Modern și geometric', previewFamily: '"Space Grotesk", sans-serif' },
+]
+
+const defaultAppearance: AppearancePreferences = { theme: 'navy', font: 'editorial' }
+
+function isTheme(value: unknown): value is ThemeId {
+  return themeOptions.some((option) => option.id === value)
+}
+
+function isFont(value: unknown): value is FontId {
+  return fontOptions.some((option) => option.id === value)
+}
+
+function loadAppearance(): AppearancePreferences {
+  try {
+    const stored = window.localStorage.getItem(APPEARANCE_STORAGE_KEY)
+    if (!stored) return defaultAppearance
+    const parsed = JSON.parse(stored) as Partial<AppearancePreferences>
+    return {
+      theme: isTheme(parsed.theme) ? parsed.theme : defaultAppearance.theme,
+      font: isFont(parsed.font) ? parsed.font : defaultAppearance.font,
+    }
+  } catch {
+    return defaultAppearance
+  }
+}
+
+function applyAppearance(preferences: AppearancePreferences) {
+  document.documentElement.dataset.theme = preferences.theme
+  document.documentElement.dataset.font = preferences.font
+}
+
+export function useAppearance() {
+  const [preferences, setPreferences] = useState<AppearancePreferences>(loadAppearance)
+
+  useEffect(() => {
+    applyAppearance(preferences)
+    try {
+      window.localStorage.setItem(APPEARANCE_STORAGE_KEY, JSON.stringify(preferences))
+    } catch {
+      // Preferințele rămân active în sesiune dacă stocarea locală este blocată.
+    }
+  }, [preferences])
+
+  useEffect(() => {
+    const sync = (event: StorageEvent) => {
+      if (event.key !== APPEARANCE_STORAGE_KEY) return
+      setPreferences(loadAppearance())
+    }
+    window.addEventListener('storage', sync)
+    return () => {
+      window.removeEventListener('storage', sync)
+    }
+  }, [])
+
+  const update = useCallback((next: Partial<AppearancePreferences>) => {
+    setPreferences((current) => ({ ...current, ...next }))
+  }, [])
+
+  const reset = useCallback(() => update(defaultAppearance), [update])
+
+  return {
+    preferences,
+    setTheme: (theme: ThemeId) => update({ theme }),
+    setFont: (font: FontId) => update({ font }),
+    reset,
+  }
+}
+
+export type AppearanceApi = ReturnType<typeof useAppearance>
+
+export function hasCustomAdminPassword() {
+  try {
+    return Boolean(window.localStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY))
+  } catch {
+    return false
+  }
+}
+
+export function getAdminPassword() {
+  try {
+    return window.localStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY) || DEFAULT_ADMIN_PASSWORD
+  } catch {
+    return DEFAULT_ADMIN_PASSWORD
+  }
+}
+
+export function changeAdminPassword(currentPassword: string, nextPassword: string) {
+  if (currentPassword !== getAdminPassword()) return 'Parola curentă nu este corectă.'
+  if (nextPassword.length < 8) return 'Parola nouă trebuie să aibă cel puțin 8 caractere.'
+  if (!/[A-Za-zĂÂÎȘȚăâîșț]/.test(nextPassword) || !/\d/.test(nextPassword)) return 'Folosește cel puțin o literă și o cifră.'
+  if (nextPassword === currentPassword) return 'Parola nouă trebuie să fie diferită de cea curentă.'
+  try {
+    window.localStorage.setItem(ADMIN_PASSWORD_STORAGE_KEY, nextPassword)
+    return null
+  } catch {
+    return 'Parola nu a putut fi salvată pe acest dispozitiv.'
+  }
+}

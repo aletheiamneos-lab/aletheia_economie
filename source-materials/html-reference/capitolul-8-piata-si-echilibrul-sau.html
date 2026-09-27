@@ -1,0 +1,1404 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 8 · Piața și echilibrul său</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+.diagrama__nota { font-size: 12.5px; color: var(--text-muted); margin-top: 8px; }
+
+.mini-sim { margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--border); }
+.mini-sim__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-sim__slider label { display: flex; justify-content: space-between; font-size: 13px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.mini-sim__slider input[type="range"] { width: 100%; accent-color: var(--accent); }
+.mini-sim__citire { font-family: var(--font-mono); font-size: 13.5px; margin-top: 12px; }
+.mini-sim__citire strong { color: var(--mark); }
+.mini-sim__surplus { display: flex; gap: 20px; margin-top: 14px; font-family: var(--font-mono); flex-wrap: wrap; }
+.mini-sim__surplus div strong { display: block; font-size: 18px; }
+.mini-sim__surplus div span { color: var(--text-muted); font-size: 11.5px; }
+
+.preset-butoane { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.preset-buton { font-family: var(--font-body); font-size: 12.5px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--text); cursor: pointer; }
+.preset-buton:hover { border-color: var(--accent); color: var(--accent); }
+.preset-buton.activ { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 24px; margin-top: 16px; font-family: var(--font-mono); }
+.simulator__citire strong { color: var(--accent); font-size: 19px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 12px; }
+.legenda { display: flex; gap: 18px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+  .simulator__citire { gap: 14px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ---------------------------------------------------------------------
+// Continutul capitolului - teoria completa, structurata dupa manual:
+// I. Piata (caracterizare generala)
+// II. Cererea (definitie, factori, elasticitate)
+// III. Oferta (definitie, factori, elasticitate)
+// IV. Pretul si echilibrul pietei (pret, pret de echilibru, exces
+//     de cerere/oferta, pret administrat)
+// V. Centralizator de formule
+// ---------------------------------------------------------------------
+const DATA = {
+  capitol: {
+    numar: 8,
+    titlu: 'Piața și echilibrul său',
+    obiective: [
+      'Să definești piața și să îi identifici funcțiile și formele principale',
+      'Să explici legea cererii și legea ofertei, și factorii care le influențează',
+      'Să determini prețul și cantitatea de echilibru pornind de la funcțiile cererii și ofertei',
+      'Să distingi între excesul de cerere și excesul de ofertă, și să recunoști efectele unui preț administrat',
+      'Să calculezi și să interpretezi coeficientul de elasticitate a cererii și a ofertei față de preț și față de venit'
+    ]
+  },
+  teorie: [
+    {
+      id: 'piata',
+      nr: '1',
+      titlu: 'Piața: caracterizare generală',
+      text: [
+        'Piața reprezintă spațiul economic în care se întâlnesc cererea cumpărătorilor cu oferta vânzătorilor, aceștia schimbând între ei bunuri economice al căror preț și cantitate tind să se echilibreze. Piața nu se reduce la un spațiu fizic, geografic: ea poate exista și sub formă electronică, așa cum se întâmplă atunci când contractele se încheie prin telefon, telex sau internet.',
+        'Variabilele definitorii ale pieței moderne sunt: mărfurile, cererea, oferta, prețul și concurența.'
+      ],
+      puncteCheie: [
+        'Funcția de informare: piața informează agenții economici despre prețuri, cantități, calitatea și tipurile de mărfuri tranzacționate',
+        'Funcția de reglare: piața corelează producția cu consumul, cererea cu oferta, și asigură alocarea eficientă a resurselor',
+        'Funcția de selecție: piața selectează agenții economici după criterii de eficiență',
+        'După natura obiectului tranzacționat: piața factorilor de producție (monetară, a muncii, a capitalurilor, a resurselor naturale) și piața bunurilor de consum final',
+        'După purtătorii cererii/ofertei: piața vânzătorilor și piața cumpărătorilor',
+        'După momentul finalizării tranzacțiilor: piața la vedere (imediată) și piața la termen (livrare la o dată ulterioară)',
+        'După numărul participanților și puterea lor economică de a influența prețul: piață cu concurență perfectă și piață cu concurență imperfectă (monopolistică, oligopol, monopol, monopson)'
+      ],
+      formule: []
+    },
+    {
+      id: 'cerere-def',
+      nr: '2',
+      titlu: 'Cererea: definiție și legea cererii',
+      text: [
+        'Cererea reprezintă cantitatea dintr-un bun economic pe care consumatorii doresc și au capacitatea să o cumpere, la diferite niveluri de preț, într-o perioadă de timp determinată. Prin însumarea cererilor individuale ale tuturor consumatorilor, pentru fiecare nivel de preț, se obține cererea pieței.',
+        'Cererea nu se confundă cu cantitatea cerută: cantitatea cerută este o singură valoare, la un singur preț, în timp ce cererea descrie întreaga relație dintre preț și cantitate, pentru toate nivelurile posibile de preț. Cererea nu se confundă nici cu nevoile oamenilor: nu toate nevoile sunt satisfăcute prin intermediul pieței, deci între cerere și nevoi există o relație ca de la parte la întreg.',
+        'Legea cererii arată că, atunci când prețul unui bun crește, cantitatea cerută din acel bun scade, și invers, în condițiile în care ceilalți factori rămân neschimbați. Explicația vine din legea utilității marginale descrescânde: cu cât consumăm mai mult dintr-un bun, cu atât utilitatea marginală - și, odată cu ea, suma pe care suntem dispuși să o plătim - scade. O modificare a prețului determină o mișcare de-a lungul curbei cererii, numită extindere a cererii (când prețul scade) sau contracție a cererii (când prețul crește).'
+      ],
+      exemple: [
+        'Cu cât mănânci mai multe prăjituri, la rând, cu atât ești dispus să plătești mai puțin pe următoarea - de-asta prețul și cantitatea cerută variază, de regulă, în sens opus.'
+      ],
+      formule: []
+    },
+    {
+      id: 'cerere-factori',
+      nr: '3',
+      titlu: 'Factorii care influențează cererea',
+      text: [
+        'Pe lângă preț, cererea este influențată și de o serie de factori non-preț. O modificare a acestor factori deplasează întreaga curbă a cererii - spre dreapta, dacă cererea crește, sau spre stânga, dacă scade - spre deosebire de modificarea prețului, care doar mișcă un punct de-a lungul curbei existente.'
+      ],
+      puncteCheie: [
+        'Venitul consumatorilor: pentru bunurile normale, cererea crește odată cu venitul (de ex. automobile, îmbrăcăminte); pentru bunurile inferioare, cererea scade când venitul crește (de ex. pâine, cartofi, fasole)',
+        'Prețul bunurilor substituibile: dacă prețul zahărului crește, cererea de zaharină crește (relație pozitivă)',
+        'Prețul bunurilor complementare: dacă prețul stiloului crește, cererea de cerneală scade (relație negativă)',
+        'Numărul de consumatori: cererea e mai mare acolo unde sunt mai mulți cumpărători (de ex. cererea de pâine e mai mare în București decât în Constanța)',
+        'Preferințele consumatorilor: o schimbare a gusturilor în favoarea unui produs crește cererea pentru el',
+        'Anticipările privind evoluția viitoare a prețului (o creștere așteptată a prețului mărește cererea prezentă) sau a venitului'
+      ],
+      exemple: [
+        'Dacă veniturile populației cresc, cererea de automobile crește la orice nivel de preț - grafic, întreaga curbă a cererii se deplasează spre dreapta, nu se mișcă doar un punct pe ea.'
+      ],
+      formule: []
+    },
+    {
+      id: 'cerere-elasticitate',
+      nr: '4',
+      titlu: 'Elasticitatea cererii față de preț și față de venit',
+      text: [
+        'Elasticitatea cererii reflectă sensibilitatea cantității cerute la modificarea prețului sau a venitului. Ea se măsoară cu ajutorul coeficientului de elasticitate.'
+      ],
+      puncteCheie: [
+        'E(Q/P) > 1: cerere elastică - o variație a prețului produce o variație mai mare, în sens opus, a cantității cerute (de ex. bunuri de lux, produse electronice, bunuri cu mulți înlocuitori)',
+        'E(Q/P) = 1: cerere cu elasticitate unitară - cantitatea și prețul variază în aceeași proporție',
+        'E(Q/P) < 1: cerere inelastică - cantitatea cerută reacționează slab la variația prețului (de ex. bunurile de strictă necesitate)',
+        'Cazuri extreme, mai rar întâlnite: cerere perfect elastică (E = infinit) și cerere perfect inelastică (E = 0)',
+        'Elasticitatea cererii față de venit: pozitivă pentru bunurile normale (0 < E(Q/V) < 1) sau bunurile superioare/de lux (E(Q/V) > 1); negativă pentru bunurile inferioare',
+        'Pentru întreprinzător: dacă cererea e elastică, o creștere de preț reduce venitul total (VT = P x Q); dacă cererea e inelastică, o creștere de preț mărește venitul total'
+      ],
+      exemple: [
+        'Un vânzător obține VT = 5 milioane u.m. din 1.000 de bucăți la prețul de 5.000 u.m. Dacă mărește prețul cu 10% și cererea e elastică (cantitatea scade cu 25%), VT scade la 4,125 milioane u.m. Dacă, în schimb, mărește prețul cu 25% și cererea e inelastică (cantitatea scade doar cu 10%), VT crește la 5,625 milioane u.m.'
+      ],
+      formule: [
+        { nume: 'Elasticitatea cererii față de preț', formula: 'E(Q/P) = -(DQ/Q0) / (DP/P0)' },
+        { nume: 'Elasticitatea cererii față de venit', formula: 'E(Q/V) = (DQ/Q0) / (DV/V0)' }
+      ],
+      calculator: 'elasticitateCerere'
+    },
+    {
+      id: 'oferta-def',
+      nr: '5',
+      titlu: 'Oferta: definiție și legea ofertei',
+      text: [
+        'Oferta reprezintă cantitatea dintr-un bun economic pe care producătorii doresc și pot să o vândă, la diferite niveluri de preț, într-o perioadă de timp determinată. La fel ca la cerere, oferta nu se confundă cu cantitatea oferită: cantitatea oferită e o singură valoare, la un singur preț, în timp ce oferta descrie întreaga relație preț-cantitate.',
+        'Cantitatea produsă și oferită de un vânzător pe piață nu este întotdeauna identică cu cantitatea efectiv vândută - între ele există, de regulă, o relație ca de la întreg la parte.',
+        'Legea ofertei arată că, atunci când prețul unui bun crește, cantitatea oferită crește, și invers - o relație direct proporțională, opusă legii cererii. Producătorii urmăresc maximizarea profitului: la un preț mai mare, sunt dispuși să producă și să vândă o cantitate mai mare.'
+      ],
+      exemple: [],
+      formule: []
+    },
+    {
+      id: 'oferta-factori',
+      nr: '6',
+      titlu: 'Factorii care influențează oferta',
+      text: [
+        'La fel ca cererea, oferta este influențată de o serie de factori non-preț, care deplasează întreaga curbă a ofertei.'
+      ],
+      puncteCheie: [
+        'Costul de producție: o creștere a costurilor (de ex. prețul petrolului) reduce oferta; o scădere o mărește',
+        'Tehnologia: tehnologii mai performante măresc oferta cu aceleași resurse (de ex. fertilizanții au crescut oferta de produse agricole)',
+        'Numărul producătorilor (ofertanților): de regulă, mai mulți producători înseamnă o ofertă mai mare',
+        'Prețul bunurilor substituibile în ofertă - bunuri obținute alternativ din aceleași resurse (de ex. iaurt și brânză, din lapte): o creștere a prețului brânzei reduce oferta de iaurt, pentru că producătorii preferă să obțină brânză (relație negativă)',
+        'Prețul bunurilor complementare în ofertă - bunuri obținute împreună din același proces de producție (de ex. motorină și benzină, din rafinarea petrolului): o creștere a prețului petrolului crește prețul și oferta de motorină/benzină (relație pozitivă)',
+        'Taxele (reduc oferta) și subvențiile (o măresc)',
+        'Condițiile naturale, mai ales în agricultură',
+        'Anticipările producătorilor privind evoluția viitoare a prețului'
+      ],
+      exemple: [
+        'Dacă fermierii anticipează o creștere a prețului grâului, vor produce mai mult grâu chiar înainte ca prețul să crească efectiv - oferta prezentă reacționează la o așteptare, nu doar la un preț deja schimbat.'
+      ],
+      formule: []
+    },
+    {
+      id: 'oferta-elasticitate',
+      nr: '7',
+      titlu: 'Elasticitatea ofertei față de preț',
+      text: [
+        'Elasticitatea ofertei reflectă sensibilitatea cantității oferite la modificarea prețului.'
+      ],
+      puncteCheie: [
+        'E(Q/P) > 1: ofertă elastică',
+        'E(Q/P) = 1: ofertă cu elasticitate unitară',
+        'E(Q/P) < 1: ofertă inelastică',
+        'Cazuri extreme: ofertă perfect elastică (E = infinit) și ofertă perfect inelastică (E = 0)'
+      ],
+      formule: [
+        { nume: 'Elasticitatea ofertei față de preț', formula: 'E(Q/P) = (DQ/Q0) / (DP/P0)' }
+      ]
+    },
+    {
+      id: 'pret-tipuri',
+      nr: '8',
+      titlu: 'Prețul și tipurile sale',
+      text: [
+        'Prețul este suma de bani pe care cumpărătorul o plătește vânzătorului pentru a achiziționa o unitate dintr-un bun economic. El măsoară, în bani, valoarea, utilitatea marginală și raritatea unei mărfi. Prețul este influențat atât de factori interni pieței (cererea și oferta), cât și de factori externi acesteia (intervenția statului, politicile firmelor cu putere mare de piață).'
+      ],
+      puncteCheie: [
+        'Funcțiile prețului: de evaluare/măsurare a cheltuielilor, veniturilor și rezultatelor economice; de informare a vânzătorilor și cumpărătorilor; de decizie privind ce, cât, cum și pentru cine să se producă; de stimulare a întreprinzătorilor; de redistribuire a venitului spre activitățile eficiente; de măsurare a puterii de cumpărare a veniturilor'
+      ],
+      clasificari: [
+        { criteriu: 'Tipurile de preț', categorii: [
+          { nume: 'Preț liber', definitie: 'se formează prin confruntarea dintre cerere și ofertă, fără intervenția statului' },
+          { nume: 'Preț administrat', definitie: 'rezultă dintr-o decizie a statului sau a unor firme puternice economic' },
+          { nume: 'Preț mixt', definitie: 'de regulă liber, dar uneori corectat prin intervenția statului' }
+        ] }
+      ],
+      formule: [
+        { nume: 'Prețul unui bun economic', formula: 'P = CMT + Pr/u.p.   sau   P = VT / Q' }
+      ]
+    },
+    {
+      id: 'pret-echilibru',
+      nr: '9',
+      titlu: 'Prețul de echilibru',
+      text: [
+        'Prețul de echilibru este prețul la care cantitatea cerută este egală cu cantitatea oferită, asigurând volumul maxim de tranzacții pe piața unui bun. Grafic, el se formează la intersecția curbei cererii cu curba ofertei.',
+        'De exemplu, dacă la intersecția curbelor prețul de echilibru este 3 u.m. și cantitatea de echilibru este 30 de bucăți, volumul valoric al vânzărilor (VT = P x Q = cifra de afaceri) este de 90 u.m. - volumul maxim posibil de tranzacții, la acest raport dintre cerere și ofertă.',
+        'Prețul de echilibru se formează liber și spontan pe piață. Este unic, la un moment dat, pe piața unui bun - dar dinamic în timp: se modifică atunci când se deplasează curba cererii sau a ofertei. Când cererea crește, prețul de echilibru crește; când oferta crește, prețul de echilibru scade.'
+      ],
+      puncteCheie: [
+        'Reglează cererea și oferta la volumul maxim al tranzacțiilor',
+        'Asigură alocarea și utilizarea eficientă a resurselor',
+        'Face selecția agenților economici după criterii de eficiență',
+        'Asigură satisfacerea optimă a intereselor vânzătorilor (profit maxim) și cumpărătorilor (utilitate maximă)',
+        'Este un punct de atracție pentru toți agenții economici - „nordul busolei economice" - reflectând alocarea și utilizarea eficientă a resurselor',
+        'Autoechilibrează piața unei mărfi în funcție de prețul de echilibru al înlocuitorilor săi sau al factorilor de producție folosiți la obținerea ei',
+        'Nu se mai formează liber atunci când intervin sindicatele, firmele cu forță mare de piață sau statul'
+      ],
+      formule: [
+        { nume: 'Condiția de echilibru', formula: 'Ce(P) = Of(P)' },
+        { nume: 'Venitul total (valoarea tranzacțiilor)', formula: 'VT = P x Q = C.A.' }
+      ],
+      diagrama: 'echilibruStatic'
+    },
+    {
+      id: 'surplus',
+      nr: '10',
+      titlu: 'Surplusul consumatorului și al producătorului',
+      text: [
+        'Surplusul consumatorului reprezintă diferența dintre suma maximă pe care consumatorii ar fi dispuși să o plătească pentru fiecare unitate dintr-un bun și suma pe care chiar o plătesc (prețul de echilibru). El măsoară beneficiul net obținut de cumpărători din tranzacție.',
+        'Surplusul producătorului reprezintă diferența dintre prețul de echilibru și suma minimă pentru care vânzătorii ar fi dispuși să vândă fiecare unitate. El măsoară beneficiul net obținut de vânzători.',
+        'Notă: acest concept nu apare explicit, ca atare, în acest capitol al manualului, dar este o extensie standard a analizei prețului de echilibru, utilă pentru a vedea vizual „câștigul din schimb" al fiecărei părți.'
+      ],
+      exemple: [
+        'Pe o piață cu Ce(Q) = 90 - 3P și Of(Q) = 6P, echilibrul se formează la Pe = 10 u.m. și Qe = 60 buc. Surplusul consumatorului este de 600 u.u., surplusul producătorului este de 300 u.u., iar surplusul total (beneficiul net al tuturor părților din aceste tranzacții) este de 900 u.u.'
+      ],
+      formule: [
+        { nume: 'Surplusul consumatorului (cerere liniară)', formula: 'CS = 0,5 x Qe x (Pmax - Pe)' },
+        { nume: 'Surplusul producătorului (ofertă liniară, prin origine)', formula: 'PS = 0,5 x Qe x Pe' }
+      ],
+      diagrama: 'surplus'
+    },
+    {
+      id: 'exces',
+      nr: '11',
+      titlu: 'Excesul de cerere și excesul de ofertă',
+      text: [
+        'Atunci când prețul practicat pe piață diferă de prețul de echilibru, apare un dezechilibru temporar între cantitatea cerută și cantitatea oferită.',
+        'Excesul de ofertă (numit și excedent) apare atunci când prețul practicat este mai mare decât prețul de echilibru: la acest preț, cantitatea oferită depășește cantitatea cerută, iar vânzătorii rămân cu marfă nevândută. Presiunea pieței împinge prețul în jos, spre nivelul de echilibru.',
+        'Excesul de cerere (numit și deficit) apare atunci când prețul practicat este mai mic decât prețul de echilibru: cantitatea cerută depășește cantitatea oferită, iar unii cumpărători nu găsesc marfa dorită. Presiunea pieței împinge prețul în sus, spre nivelul de echilibru.'
+      ],
+      exemple: [
+        'Dacă vara este foarte călduroasă, cererea de băuturi răcoritoare crește peste nivelul obișnuit; la vechiul preț apare un exces de cerere, iar prețul va tinde să crească până la un nou nivel de echilibru. Dacă, dimpotrivă, producătorii măresc brusc oferta fără ca cererea să crească la fel, apare un exces de ofertă, iar prețul va tinde să scadă.'
+      ],
+      formule: [],
+      diagrama: 'excesExplorer'
+    },
+    {
+      id: 'pret-administrat',
+      nr: '12',
+      titlu: 'Prețul administrat: plafon și podea',
+      text: [
+        'Uneori, statul intervine direct pe piață, fixând un preț diferit de cel de echilibru, din motive sociale sau economice. Acest preț fixat se numește preț administrat și poate lua două forme.'
+      ],
+      puncteCheie: [
+        'Preț maxim (plafon): fixat sub prețul de echilibru, ca să protejeze cumpărătorii (de ex. la produse considerate esențiale). Pentru că la acest preț cantitatea cerută depășește cantitatea oferită, plafonul tinde să genereze un exces de cerere permanent, cât timp rămâne în vigoare',
+        'Preț minim (podea): fixat peste prețul de echilibru, ca să protejeze vânzătorii/producătorii (de ex. un preț minim garantat pentru un produs agricol). Pentru că la acest preț cantitatea oferită depășește cantitatea cerută, podeaua tinde să genereze un exces de ofertă permanent',
+        'Statul poate influența prețurile și indirect, prin măsuri de stimulare sau reducere a cererii ori a ofertei (taxe, subvenții), nu doar prin fixarea directă a unui plafon sau a unei podele'
+      ],
+      formule: [],
+      notaLegatura: { href: '#sect-exces', text: 'Vezi graficul interactiv din secțiunea 11 (Excesul de cerere și excesul de ofertă) - butoanele "exemplu plafon" / "exemplu podea" arată exact acest efect.' }
+    },
+    {
+      id: 'centralizator',
+      nr: '13',
+      titlu: 'Centralizator de formule',
+      text: [
+        'Toate formulele acestui capitol, într-un singur loc, pentru recapitulare rapidă.'
+      ],
+      formule: [
+        { nume: 'Prețul unui bun economic', formula: 'P = CMT + Pr/u.p.   sau   P = VT / Q' },
+        { nume: 'Condiția de echilibru', formula: 'Ce(P) = Of(P)' },
+        { nume: 'Venitul total', formula: 'VT = P x Q = C.A.' },
+        { nume: 'Elasticitatea cererii față de preț', formula: 'E(Q/P) = -(DQ/Q0) / (DP/P0)' },
+        { nume: 'Elasticitatea cererii față de venit', formula: 'E(Q/V) = (DQ/Q0) / (DV/V0)' },
+        { nume: 'Elasticitatea ofertei față de preț', formula: 'E(Q/P) = (DQ/Q0) / (DP/P0)' }
+      ]
+    }
+  ],
+  grila: [
+    {
+      intrebare: 'Care dintre următoarele este considerată o funcție principală a pieței?',
+      optiuni: ['de informare a agenților economici', 'de stabilire a impozitelor', 'de emisiune monetară', 'de acordare a creditelor bancare'],
+      corect: 0,
+      explicatie: 'Funcțiile pieței sunt: de informare, de reglare a activității economice și de selecție a agenților economici după criterii de eficiență; celelalte sunt atribuții ale statului sau ale băncilor.'
+    },
+    {
+      intrebare: 'Dacă prețul unui bun scade, iar ceilalți factori rămân neschimbați, cantitatea cerută:',
+      optiuni: ['scade', 'crește', 'rămâne neschimbată', 'devine zero'],
+      corect: 1,
+      explicatie: 'Legea cererii descrie o relație negativă între preț și cantitatea cerută.'
+    },
+    {
+      intrebare: 'Excesul de ofertă pe piața unui bun apare atunci când:',
+      optiuni: ['prețul practicat este egal cu cel de echilibru', 'prețul practicat este sub cel de echilibru', 'prețul practicat este peste cel de echilibru', 'cantitatea oferită este egală cu cea cerută'],
+      corect: 2,
+      explicatie: 'Un preț peste nivelul de echilibru stimulează oferta și descurajează cererea, deci cantitatea oferită depășește cantitatea cerută.'
+    },
+    {
+      intrebare: 'Un preț maxim (plafon) stabilit de stat sub nivelul prețului de echilibru are ca efect probabil:',
+      optiuni: ['apariția unui exces de ofertă', 'apariția unui exces de cerere (deficit)', 'scăderea cantității cerute', 'creșterea cantității oferite peste nivelul de echilibru'],
+      corect: 1,
+      explicatie: 'Sub prețul de echilibru, cantitatea cerută crește și cantitatea oferită scade, deci apare un deficit.'
+    },
+    {
+      intrebare: 'Dacă, la o creștere de 10% a prețului, cantitatea cerută scade cu 20%, cererea este:',
+      optiuni: ['inelastică (E < 1)', 'elastică (E > 1)', 'unitar elastică (E = 1)', 'perfect inelastică'],
+      corect: 1,
+      explicatie: 'E(Q/P) = -(-20%)/(10%) = 2, deci E > 1: cerere elastică.'
+    },
+    {
+      intrebare: 'Un preț minim (podea) stabilit de stat peste prețul de echilibru are ca efect probabil:',
+      optiuni: ['un exces de cerere', 'un exces de ofertă', 'scăderea cantității oferite', 'dispariția excesului de pe piață'],
+      corect: 1,
+      explicatie: 'Peste prețul de echilibru, cantitatea oferită crește și cantitatea cerută scade, deci apare un exces de ofertă (mărfuri nevândute).'
+    }
+  ],
+  af: [
+    {
+      enunt: 'Piața este întotdeauna un spațiu fizic, geografic, delimitat.',
+      corect: false,
+      explicatie: 'Piața poate exista și sub formă electronică sau virtuală (de ex. contracte încheiate prin telefon sau internet).'
+    },
+    {
+      enunt: 'Când cantitatea cerută și cantitatea oferită a unui bun sunt egale la un anumit preț, acel preț este prețul de echilibru.',
+      corect: true,
+      explicatie: 'Aceasta este chiar definiția prețului de echilibru.'
+    },
+    {
+      enunt: 'Un preț minim (podea) stabilit peste prețul de echilibru protejează, de regulă, interesele cumpărătorilor.',
+      corect: false,
+      explicatie: 'Prețul minim protejează vânzătorii (producătorii); cumpărătorii sunt protejați de prețul maxim (plafon).'
+    },
+    {
+      enunt: 'Coeficientul de elasticitate a ofertei față de preț este, de regulă, pozitiv, întrucât relația dintre preț și cantitatea oferită este directă.',
+      corect: true,
+      explicatie: 'Spre deosebire de cerere, oferta variază în același sens cu prețul, deci coeficientul nu are nevoie de semnul minus.'
+    },
+    {
+      enunt: 'Cu cât coeficientul de elasticitate a cererii față de preț este mai mic decât 1, cu atât cererea este considerată mai elastică.',
+      corect: false,
+      explicatie: 'Un coeficient sub 1 înseamnă cerere inelastică, nu elastică.'
+    },
+    {
+      enunt: 'Un exces de cerere (deficit) apare atunci când prețul practicat pe piață este mai mare decât prețul de echilibru.',
+      corect: false,
+      explicatie: 'Excesul de cerere apare exact invers: când prețul practicat este mai mic decât cel de echilibru. Un preț peste echilibru generează exces de ofertă.'
+    }
+  ],
+  probleme: [
+    {
+      enunt: 'Pe piața unui bun, funcția cererii este Ce(Q) = 200 - 4P, iar funcția ofertei este Of(Q) = 50 + 6P. Calculați prețul de echilibru (Pe), în u.m.',
+      unitate: 'u.m.',
+      corect: 15,
+      toleranta: 0.1,
+      explicatie: 'Din Ce = Of rezultă 200 - 4P = 50 + 6P, deci 10P = 150, iar Pe = 15 u.m.'
+    },
+    {
+      enunt: 'Continuând exemplul anterior (Pe = 15 u.m.), care este cantitatea de echilibru (Qe), în bucăți?',
+      unitate: 'buc.',
+      corect: 140,
+      toleranta: 1,
+      explicatie: 'Qe = 200 - 4 x 15 = 140 buc. (verificare: 50 + 6 x 15 = 140 buc.)'
+    },
+    {
+      enunt: 'Prețul unui bun crește cu 20%, iar cantitatea cerută scade cu 30%. Calculați coeficientul de elasticitate a cererii față de preț.',
+      unitate: '',
+      corect: 1.5,
+      toleranta: 0.05,
+      explicatie: 'E(Q/P) = -(-30%) / (20%) = 1,5, deci cerere elastică.'
+    },
+    {
+      enunt: 'Pe piața unui bun, Ce(Q) = 55 - 3P și Of(Q) = 30 + 2P. Dacă guvernul impune un preț administrat de 2 u.m., ce exces apare pe piață (în bucăți)? Introdu doar valoarea numerică.',
+      unitate: 'buc.',
+      corect: 15,
+      toleranta: 1,
+      explicatie: 'La P = 2: Ce = 55 - 6 = 49 buc., Of = 30 + 4 = 34 buc. Cererea depășește oferta cu 49 - 34 = 15 buc., deci exces de cerere (deficit) de 15 buc.'
+    }
+  ]
+};
+
+// ---------------------------------------------------------------------
+// Motorul economic - functii pure.
+// ---------------------------------------------------------------------
+function calcEchilibru(a, b, c, d) {
+  const pret = (a - c) / (b + d);
+  const cantitate = a - b * pret;
+  return { pret: Math.round(pret * 100) / 100, cantitate: Math.round(cantitate * 100) / 100 };
+}
+function cantitateCeruta(a, b, p) { return Math.max(a - b * p, 0); }
+function cantitateOferita(c, d, p) { return Math.max(c + d * p, 0); }
+function puncteCurbe(a, b, c, d, pas) {
+  pas = pas || 12;
+  const pretMax = Math.max(b ? a / b : 10, d ? (c + d * 10) / d : 10, 1);
+  const puncte = [];
+  for (let i = 0; i <= pas; i++) {
+    const pret = Math.round((pretMax * i / pas) * 100) / 100;
+    puncte.push({ pret, cerere: Math.round(cantitateCeruta(a, b, pret) * 100) / 100, oferta: Math.round(cantitateOferita(c, d, pret) * 100) / 100 });
+  }
+  return puncte;
+}
+
+// ---------------------------------------------------------------------
+// Helpere DOM
+// ---------------------------------------------------------------------
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 26, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 12, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10.5, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+
+// ---------------------------------------------------------------------
+// Arbore de clasificare (motor comun - vezi kit-extindere-cod.md)
+// ---------------------------------------------------------------------
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Scor
+// ---------------------------------------------------------------------
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+// ---------------------------------------------------------------------
+// Calculator inline de elasticitate (folosit in sectiunea 4)
+// ---------------------------------------------------------------------
+function buildElasticitateCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: elasticitatea cererii'));
+  const randuri = el('div', 'mini-calc__randuri');
+
+  const labelQ = document.createElement('label');
+  labelQ.appendChild(document.createTextNode('Variația cantității cerute (%)'));
+  const inputQ = document.createElement('input');
+  inputQ.type = 'number'; inputQ.step = 'any'; inputQ.placeholder = 'ex. -20';
+  labelQ.appendChild(inputQ);
+
+  const labelP = document.createElement('label');
+  labelP.appendChild(document.createTextNode('Variația prețului (%)'));
+  const inputP = document.createElement('input');
+  inputP.type = 'number'; inputP.step = 'any'; inputP.placeholder = 'ex. 10';
+  labelP.appendChild(inputP);
+
+  randuri.appendChild(labelQ);
+  randuri.appendChild(labelP);
+  box.appendChild(randuri);
+
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat', 'Introdu ambele valori procentuale de mai sus.');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const dq = Number(inputQ.value), dp = Number(inputP.value);
+    if (inputQ.value === '' || inputP.value === '' || isNaN(dq) || isNaN(dp) || dp === 0) {
+      rezultat.textContent = 'Introdu ambele valori procentuale de mai sus.';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const e = Math.round((-(dq / dp)) * 100) / 100;
+    let tip = 'unitar elastică (E = 1)';
+    if (Math.abs(e) > 1.001) tip = 'elastică (E > 1)';
+    else if (Math.abs(e) < 0.999) tip = 'inelastică (E < 1)';
+    rezultat.innerHTML = '';
+    rezultat.appendChild(document.createTextNode('E(Q/P) = '));
+    const strong = document.createElement('strong');
+    strong.textContent = e;
+    rezultat.appendChild(strong);
+    rezultat.appendChild(document.createTextNode(' → cerere ' + tip + '.'));
+    chartWrap.innerHTML = '';
+    chartWrap.appendChild(buildGaugeChart(Math.abs(e) * 33.33, 100, [
+      { de: 0, pana: 30, culoare: 'var(--mark)', eticheta: 'Inelastică' },
+      { de: 30, pana: 36.66, culoare: 'var(--accent)', eticheta: 'Unitară' },
+      { de: 36.66, pana: 100, culoare: 'var(--good)', eticheta: 'Elastică' }
+    ]));
+  }
+  inputQ.addEventListener('input', recalc);
+  inputP.addEventListener('input', recalc);
+
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// Sectiuni de teorie
+// ---------------------------------------------------------------------
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'elasticitateCerere') {
+    body.appendChild(buildElasticitateCalc());
+  }
+  if (item.diagrama === 'echilibruStatic') body.appendChild(buildDiagramaEchilibruStatic());
+  if (item.diagrama === 'excesExplorer') body.appendChild(buildExcesExplorer());
+  if (item.diagrama === 'surplus') body.appendChild(buildSurplusDiagram());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// Grafice: schelet comun (axe, grid) reutilizat de diagramele de mai jos.
+// Conventie: x = Pret, y = Cantitate (ca la simulatorul din sectiunea IV).
+// ---------------------------------------------------------------------
+function creazaGraficBaza(maxPret, maxCant, opts) {
+  opts = opts || {};
+  const width = 400, height = 240;
+  const left = 46, right = 10, top = 16, bottom = 28;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': opts.aria || 'Grafic cerere-oferta' });
+  for (let i = 1; i < 5; i++) {
+    const gy = top + (chartH / 5) * i;
+    svg.appendChild(elNS('line', { x1: left, y1: gy, x2: left + chartW, y2: gy, stroke: 'var(--surface-2)', 'stroke-width': 1 }));
+  }
+  for (let i = 1; i < 6; i++) {
+    const gx = left + (chartW / 6) * i;
+    svg.appendChild(elNS('line', { x1: gx, y1: top, x2: gx, y2: top + chartH, stroke: 'var(--surface-2)', 'stroke-width': 1 }));
+  }
+  svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const labelCant = elNS('text', { x: left, y: 11, 'font-size': 10.5, fill: 'var(--text-muted)' });
+  labelCant.textContent = 'Cantitate';
+  const labelPret = elNS('text', { x: left + chartW, y: height - 8, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' });
+  labelPret.textContent = 'Preț';
+  svg.appendChild(labelCant); svg.appendChild(labelPret);
+  const sx = p => left + (p / maxPret) * chartW;
+  const sy = q => top + chartH - (q / maxCant) * chartH;
+  return { svg, sx, sy, left, top, chartW, chartH, width, height };
+}
+
+// ---------------------------------------------------------------------
+// Diagrama statica: formarea pretului de echilibru (sectiunea 9)
+// Piata-exemplu: Ce(Q) = 60 - 10P, Of(Q) = 10P  →  Pe = 3, Qe = 30
+// ---------------------------------------------------------------------
+function buildDiagramaEchilibruStatic() {
+  const a = 60, b = 10, c = 0, d = 10;
+  const rez = calcEchilibru(a, b, c, d);
+  const puncte = puncteCurbe(a, b, c, d, 12);
+  const maxPret = puncte[puncte.length - 1].pret || 1;
+  const maxCant = Math.max.apply(null, puncte.map(p => Math.max(p.cerere, p.oferta)).concat([1]));
+  const g = creazaGraficBaza(maxPret, maxCant, { aria: 'Graficul formarii pretului de echilibru: Pe = ' + rez.pret + ', Qe = ' + rez.cantitate });
+
+  g.svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.pret) + ',' + g.sy(p.cerere)).join(' ') }));
+  g.svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--bad)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.pret) + ',' + g.sy(p.oferta)).join(' ') }));
+
+  const ex = g.sx(rez.pret), ey = g.sy(rez.cantitate);
+  g.svg.appendChild(elNS('line', { x1: g.left, y1: ey, x2: ex, y2: ey, stroke: 'var(--mark)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+  g.svg.appendChild(elNS('line', { x1: ex, y1: ey, x2: ex, y2: g.top + g.chartH, stroke: 'var(--mark)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+  g.svg.appendChild(elNS('circle', { cx: ex, cy: ey, r: 5, fill: 'var(--mark)' }));
+  const labelE = elNS('text', { x: ex + 8, y: ey - 8, 'font-family': 'var(--font-display)', 'font-weight': 600, 'font-size': 14, fill: 'var(--mark)' });
+  labelE.textContent = 'E';
+  g.svg.appendChild(labelE);
+
+  const wrap = el('div', 'diagrama');
+  wrap.appendChild(g.svg);
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Cerere'));
+  legenda.appendChild(legendItem('var(--bad)', 'Ofertă'));
+  legenda.appendChild(legendItem('var(--mark)', 'E (Pe = ' + rez.pret + ' u.m., Qe = ' + rez.cantitate + ' buc.)'));
+  wrap.appendChild(legenda);
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Explorator interactiv: excesul de cerere / de oferta (sectiunea 11)
+// Aceeasi piata-exemplu ca la diagrama de mai sus, pentru continuitate.
+// ---------------------------------------------------------------------
+function buildExcesExplorer() {
+  const a = 60, b = 10, c = 0, d = 10;
+  const rez = calcEchilibru(a, b, c, d);
+  const puncte = puncteCurbe(a, b, c, d, 12);
+  const maxPret = puncte[puncte.length - 1].pret || 1;
+  const maxCant = Math.max.apply(null, puncte.map(p => Math.max(p.cerere, p.oferta)).concat([1]));
+  const g = creazaGraficBaza(maxPret, maxCant, { aria: 'Explorator interactiv: exces de cerere sau de oferta la un pret ales' });
+
+  g.svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.pret) + ',' + g.sy(p.cerere)).join(' ') }));
+  g.svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--bad)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.pret) + ',' + g.sy(p.oferta)).join(' ') }));
+
+  const linePret = elNS('line', { stroke: 'var(--mark)', 'stroke-width': 1.5, 'stroke-dasharray': '4 3' });
+  const bracket = elNS('line', { stroke: 'var(--mark)', 'stroke-width': 3, 'stroke-linecap': 'round' });
+  const punctQd = elNS('circle', { r: 4.5, fill: 'var(--accent)' });
+  const punctQs = elNS('circle', { r: 4.5, fill: 'var(--bad)' });
+  g.svg.appendChild(linePret); g.svg.appendChild(bracket); g.svg.appendChild(punctQd); g.svg.appendChild(punctQs);
+
+  const wrap = el('div', 'diagrama');
+  wrap.appendChild(g.svg);
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Cerere'));
+  legenda.appendChild(legendItem('var(--bad)', 'Ofertă'));
+  legenda.appendChild(legendItem('var(--mark)', 'Diferența (exces) la prețul ales'));
+  wrap.appendChild(legenda);
+
+  const sim = el('div', 'mini-sim');
+  sim.appendChild(el('div', 'mini-sim__titlu', 'Alege un preț practicat pe piață'));
+  const sliderWrap = el('div', 'mini-sim__slider');
+  const label = document.createElement('label');
+  const labelTxt = el('span', '', 'Preț practicat');
+  const labelVal = el('span', '', rez.pret + ' u.m.');
+  label.appendChild(labelTxt); label.appendChild(labelVal);
+  sliderWrap.appendChild(label);
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '0.5'; slider.max = String(maxPret - 0.5); slider.step = '0.5'; slider.value = String(rez.pret);
+  sliderWrap.appendChild(slider);
+  sim.appendChild(sliderWrap);
+
+  const citire = el('div', 'mini-sim__citire');
+  sim.appendChild(citire);
+
+  const presets = el('div', 'preset-butoane');
+  const btnEchilibru = el('button', 'preset-buton', 'Preț de echilibru');
+  const btnPlafon = el('button', 'preset-buton', 'Exemplu: plafon (preț mic)');
+  const btnPodea = el('button', 'preset-buton', 'Exemplu: podea (preț mare)');
+  presets.appendChild(btnEchilibru); presets.appendChild(btnPlafon); presets.appendChild(btnPodea);
+  sim.appendChild(presets);
+  wrap.appendChild(sim);
+
+  function recalc(pret) {
+    pret = Math.round(pret * 10) / 10;
+    labelVal.textContent = pret + ' u.m.';
+    const qd = cantitateCeruta(a, b, pret);
+    const qs = cantitateOferita(c, d, pret);
+    const x = g.sx(pret);
+    linePret.setAttribute('x1', x); linePret.setAttribute('y1', g.top); linePret.setAttribute('x2', x); linePret.setAttribute('y2', g.top + g.chartH);
+    const yQd = g.sy(qd), yQs = g.sy(qs);
+    punctQd.setAttribute('cx', x); punctQd.setAttribute('cy', yQd);
+    punctQs.setAttribute('cx', x); punctQs.setAttribute('cy', yQs);
+    bracket.setAttribute('x1', x + 6); bracket.setAttribute('y1', yQd); bracket.setAttribute('x2', x + 6); bracket.setAttribute('y2', yQs);
+
+    const diff = Math.round((qd - qs) * 10) / 10;
+    let mesaj;
+    if (Math.abs(diff) < 0.15) {
+      mesaj = 'La ' + pret + ' u.m. (prețul de echilibru): cantitatea cerută = cantitatea oferită = ' + qd.toFixed(1) + ' buc. Piața este în echilibru, fără exces.';
+    } else if (diff > 0) {
+      mesaj = 'La ' + pret + ' u.m.: cantitatea cerută (' + qd.toFixed(1) + ' buc.) > cantitatea oferită (' + qs.toFixed(1) + ' buc.) → exces de cerere (deficit) de ' + Math.abs(diff).toFixed(1) + ' buc. Acesta e efectul unui preț plafon.';
+    } else {
+      mesaj = 'La ' + pret + ' u.m.: cantitatea oferită (' + qs.toFixed(1) + ' buc.) > cantitatea cerută (' + qd.toFixed(1) + ' buc.) → exces de ofertă (excedent) de ' + Math.abs(diff).toFixed(1) + ' buc. Acesta e efectul unui preț podea.';
+    }
+    citire.textContent = mesaj;
+  }
+
+  slider.addEventListener('input', () => recalc(Number(slider.value)));
+  btnEchilibru.addEventListener('click', () => { slider.value = String(rez.pret); recalc(rez.pret); });
+  btnPlafon.addEventListener('click', () => { const v = Math.max(0.5, rez.pret - 1.5); slider.value = String(v); recalc(v); });
+  btnPodea.addEventListener('click', () => { const v = Math.min(maxPret - 0.5, rez.pret + 1.5); slider.value = String(v); recalc(v); });
+
+  recalc(rez.pret);
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Diagrama statica: surplusul consumatorului si al producatorului
+// Piata-exemplu (aleasa special, cu oferta trecand prin origine, ca sa
+// iasa doua triunghiuri curate): Ce(Q) = 90 - 3P, Of(Q) = 6P
+// →  Pe = 10, Qe = 60, CS = 600, PS = 300
+// ---------------------------------------------------------------------
+function buildSurplusDiagram() {
+  const maxPret = 30, maxCant = 100;
+  const puncte = [];
+  for (let p = 0; p <= maxPret; p += 2) {
+    puncte.push({ pret: p, cerere: Math.max(90 - 3 * p, 0), oferta: 6 * p });
+  }
+  const rez = calcEchilibru(90, 3, 0, 6);
+  const g = creazaGraficBaza(maxPret, maxCant, { aria: 'Graficul surplusului consumatorului si al producatorului' });
+
+  const bottomY = g.top + g.chartH;
+  const xPe = g.sx(rez.pret), yQe = g.sy(rez.cantitate);
+  const xPmax = g.sx(maxPret), xZero = g.sx(0);
+
+  const poligonCS = elNS('polygon', { points: xPmax + ',' + bottomY + ' ' + xPe + ',' + bottomY + ' ' + xPe + ',' + yQe, fill: 'var(--accent)', 'fill-opacity': '0.18', stroke: 'none' });
+  const poligonPS = elNS('polygon', { points: xZero + ',' + bottomY + ' ' + xPe + ',' + bottomY + ' ' + xPe + ',' + yQe, fill: 'var(--mark)', 'fill-opacity': '0.22', stroke: 'none' });
+  g.svg.appendChild(poligonCS);
+  g.svg.appendChild(poligonPS);
+
+  g.svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.pret) + ',' + g.sy(p.cerere)).join(' ') }));
+  g.svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--bad)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.pret) + ',' + g.sy(Math.min(p.oferta, maxCant))).join(' ') }));
+
+  g.svg.appendChild(elNS('line', { x1: g.left, y1: yQe, x2: xPe, y2: yQe, stroke: 'var(--mark)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+  g.svg.appendChild(elNS('line', { x1: xPe, y1: yQe, x2: xPe, y2: bottomY, stroke: 'var(--mark)', 'stroke-width': 1, 'stroke-dasharray': '3 3' }));
+  g.svg.appendChild(elNS('circle', { cx: xPe, cy: yQe, r: 5, fill: 'var(--mark)' }));
+  const labelE = elNS('text', { x: xPe + 8, y: yQe - 8, 'font-family': 'var(--font-display)', 'font-weight': 600, 'font-size': 14, fill: 'var(--mark)' });
+  labelE.textContent = 'E';
+  g.svg.appendChild(labelE);
+
+  const wrap = el('div', 'diagrama');
+  wrap.appendChild(g.svg);
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Surplusul consumatorului'));
+  legenda.appendChild(legendItem('var(--mark)', 'Surplusul producătorului'));
+  wrap.appendChild(legenda);
+
+  const surplusBox = el('div', 'mini-sim__surplus');
+  const cs = el('div');
+  const csStrong = el('strong', '', '600 u.u.'); cs.appendChild(csStrong); cs.appendChild(el('span', '', 'Surplusul consumatorului'));
+  const ps = el('div');
+  const psStrong = el('strong', '', '300 u.u.'); ps.appendChild(psStrong); ps.appendChild(el('span', '', 'Surplusul producătorului'));
+  const total = el('div');
+  const totalStrong = el('strong', '', '900 u.u.'); total.appendChild(totalStrong); total.appendChild(el('span', '', 'Surplusul total'));
+  surplusBox.appendChild(cs); surplusBox.appendChild(ps); surplusBox.appendChild(total);
+  wrap.appendChild(surplusBox);
+
+  return wrap;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// I. Teste grila
+// ---------------------------------------------------------------------
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+
+  card.appendChild(optWrap);
+  card.appendChild(verifBtn);
+  card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// II. Adevarat / Fals
+// ---------------------------------------------------------------------
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA);
+  wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true;
+    btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+
+  card.appendChild(wrap);
+  card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// III. Probleme numerice
+// ---------------------------------------------------------------------
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number';
+  input.step = 'any';
+  input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0';
+  verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true;
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+
+  card.appendChild(wrap);
+  card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// IV. Simulatorul cerere-oferta
+// ---------------------------------------------------------------------
+function buildSliderRow(labelTxt, onChange) {
+  const row = el('div', 'slider-row');
+  const label = document.createElement('label');
+  label.appendChild(el('span', '', labelTxt));
+  const spanVal = el('span', '', '0');
+  label.appendChild(spanVal);
+  row.appendChild(label);
+  const input = document.createElement('input');
+  input.type = 'range'; input.min = -40; input.max = 40; input.step = 5; input.value = 0;
+  input.addEventListener('input', () => {
+    const v = Number(input.value);
+    spanVal.textContent = v > 0 ? ('+' + v) : ('' + v);
+    onChange(v);
+  });
+  row.appendChild(input);
+  return row;
+}
+
+function buildSimulator() {
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Mișcă cererea (de ex. o creștere a venitului) sau oferta (de ex. o taxă nouă) și urmărește cum se schimbă prețul și cantitatea de echilibru.'));
+
+  const width = 400, height = 300, left = 46, right = 10, top = 22, bottom = 30;
+  const chartW = width - left - right, chartH = height - top - bottom;
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Graficul cererii si ofertei, cu punctul de echilibru' });
+
+  for (let i = 1; i < 5; i++) {
+    const gy = top + (chartH / 5) * i;
+    svg.appendChild(elNS('line', { x1: left, y1: gy, x2: left + chartW, y2: gy, stroke: 'var(--surface-2)', 'stroke-width': 1 }));
+  }
+  for (let i = 1; i < 6; i++) {
+    const gx = left + (chartW / 6) * i;
+    svg.appendChild(elNS('line', { x1: gx, y1: top, x2: gx, y2: top + chartH, stroke: 'var(--surface-2)', 'stroke-width': 1 }));
+  }
+
+  svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const labelCant = elNS('text', { x: left, y: 14, 'font-size': 11, fill: 'var(--text-muted)' });
+  labelCant.textContent = 'Cantitate (buc.)';
+  const labelPret = elNS('text', { x: left + chartW, y: height - 12, 'font-size': 11, fill: 'var(--text-muted)', 'text-anchor': 'end' });
+  labelPret.textContent = 'Preț (u.m.)';
+  svg.appendChild(labelCant); svg.appendChild(labelPret);
+
+  const linieCerere = elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5 });
+  const linieOferta = elNS('polyline', { fill: 'none', stroke: 'var(--bad)', 'stroke-width': 2.5 });
+  svg.appendChild(linieCerere); svg.appendChild(linieOferta);
+
+  const dashY = elNS('line', { stroke: 'var(--mark)', 'stroke-width': 1, 'stroke-dasharray': '3 3' });
+  const dashX = elNS('line', { stroke: 'var(--mark)', 'stroke-width': 1, 'stroke-dasharray': '3 3' });
+  svg.appendChild(dashY); svg.appendChild(dashX);
+
+  const punctE = elNS('circle', { r: 5, fill: 'var(--mark)' });
+  svg.appendChild(punctE);
+  const labelE = elNS('text', { 'font-family': 'var(--font-display)', 'font-weight': 600, 'font-size': 14, fill: 'var(--mark)' });
+  labelE.textContent = 'E';
+  svg.appendChild(labelE);
+
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Cerere'));
+  legenda.appendChild(legendItem('var(--bad)', 'Ofertă'));
+  legenda.appendChild(legendItem('var(--mark)', 'Echilibru (E)'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxPret = document.createElement('div');
+  const strongPret = document.createElement('strong');
+  boxPret.appendChild(strongPret); boxPret.appendChild(el('span', '', 'Preț echilibru (u.m.)'));
+  const boxCant = document.createElement('div');
+  const strongCant = document.createElement('strong');
+  boxCant.appendChild(strongCant); boxCant.appendChild(el('span', '', 'Cantitate echilibru (buc.)'));
+  citire.appendChild(boxPret); citire.appendChild(boxCant);
+  wrap.appendChild(citire);
+
+  let deplasareCerere = 0, deplasareOferta = 0;
+  function recalculeaza() {
+    const a = 200 + deplasareCerere, b = 4, c = 50 + deplasareOferta, d = 6;
+    const rez = calcEchilibru(a, b, c, d);
+    const puncte = puncteCurbe(a, b, c, d);
+    const maxPret = puncte[puncte.length - 1].pret || 1;
+    const maxCant = Math.max.apply(null, puncte.map(p => Math.max(p.cerere, p.oferta)).concat([1]));
+    const sx = p => left + (p / maxPret) * chartW;
+    const sy = q => top + chartH - (q / maxCant) * chartH;
+    linieCerere.setAttribute('points', puncte.map(p => sx(p.pret) + ',' + sy(p.cerere)).join(' '));
+    linieOferta.setAttribute('points', puncte.map(p => sx(p.pret) + ',' + sy(p.oferta)).join(' '));
+    const ex = sx(rez.pret), ey = sy(rez.cantitate);
+    dashY.setAttribute('x1', left); dashY.setAttribute('y1', ey); dashY.setAttribute('x2', ex); dashY.setAttribute('y2', ey);
+    dashX.setAttribute('x1', ex); dashX.setAttribute('y1', ey); dashX.setAttribute('x2', ex); dashX.setAttribute('y2', top + chartH);
+    punctE.setAttribute('cx', ex); punctE.setAttribute('cy', ey);
+    labelE.setAttribute('x', ex + 9); labelE.setAttribute('y', ey - 8);
+    strongPret.textContent = rez.pret;
+    strongCant.textContent = rez.cantitate;
+  }
+
+  const sliders = el('div', 'simulator__sliders');
+  sliders.appendChild(buildSliderRow('Deplasare cerere', v => { deplasareCerere = v; recalculeaza(); }));
+  sliders.appendChild(buildSliderRow('Deplasare ofertă', v => { deplasareOferta = v; recalculeaza(); }));
+  wrap.appendChild(sliders);
+
+  recalculeaza();
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Asamblare pagina
+// ---------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+  DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+  DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+  DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Simulatorul cerere-ofertă'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Aceeași piață ca la problema 1, dar acum o poți mișca.'));
+  root.appendChild(buildSimulator());
+});
+</script>
+</body>
+</html>

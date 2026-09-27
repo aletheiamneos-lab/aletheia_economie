@@ -1,0 +1,33 @@
+{
+  "visual_quality": "premium academic-modern",
+  "desktop_layout": "scenario/context + central interactive world + indicators",
+  "mobile_layout": "single column + sticky critical indicators + bottom sheet actions",
+  "required_controls": [
+    "restart",
+    "why",
+    "continue"
+  ],
+  "accessibility": [
+    "keyboard",
+    "tap alternative to drag",
+    "reduced motion",
+    "text fallback for charts"
+  ],
+  "game": "Factory Master",
+  "required_visual_components": [
+    "isometric_factory",
+    "worker_tokens",
+    "machine_upgrade",
+    "live_cost_dashboard",
+    "cost_curves",
+    "profit_meter"
+  ],
+  "micro_interactions": [
+    "animated number transitions",
+    "meaningful state changes after decisions",
+    "persistent selected state",
+    "tooltips/tap details",
+    "short explanation drawer",
+    "success/partial/incorrect feedback where applicable"
+  ]
+}

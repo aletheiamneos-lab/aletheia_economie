@@ -1,0 +1,182 @@
+{
+  "schemaVersion": "1.0",
+  "packageVersion": "5.4.0",
+  "lesson": 4,
+  "title": "Factorii de producție",
+  "files": {
+    "configJson": "data/lesson_04.json",
+    "configJs": "data/lesson_04.js",
+    "modularHtml": "lessons/lesson_04.html",
+    "standaloneHtml": "standalone/lectia_04_standalone.html",
+    "engine": "assets/graph-engine.js",
+    "styles": "assets/graph-lab.css"
+  },
+  "integration": {
+    "mountTarget": "#content",
+    "moduleSelector": "#moduleSelect",
+    "stateKeyPattern": "eco_graph_l4_{moduleId}_v1",
+    "themeKey": "eco_graph_theme_v1",
+    "adminKey": "eco_graph_admin_v1",
+    "resetCurrent": "resetCurrent()",
+    "resetLesson": "resetLesson()"
+  },
+  "sourceAudit": {
+    "lesson": 4,
+    "title": "Factorii de producție",
+    "source": "Capitolul 4 - Factorii de Producție_ex.pdf",
+    "moduleCount": 4,
+    "evidence": "Muncă, natură, capital; capital fix/circulant, amortizare, combinare/substituire și productivitate marginală a factorului.",
+    "modules": [
+      {
+        "id": "amortizare",
+        "title": "Amortizarea capitalului fix",
+        "kind": "amortization",
+        "status": "B",
+        "formulas": [
+          "A = KF / T",
+          "RA = (A/KF) × 100 = (1/T) × 100"
+        ]
+      },
+      {
+        "id": "capital_tehnic",
+        "title": "Capital tehnic utilizat și consumat",
+        "kind": "capital_composition",
+        "status": "B",
+        "formulas": [
+          "KT = KF + KC",
+          "K.cons = A + KC"
+        ]
+      },
+      {
+        "id": "substituire",
+        "title": "Substituirea factorilor de producție",
+        "kind": "substitution",
+        "status": "B",
+        "formulas": [
+          "Rms = ΔX / -ΔY",
+          "Rms = Wmg(Y) / Wmg(X)"
+        ]
+      },
+      {
+        "id": "produs_marginal_factor",
+        "title": "Productivitatea marginală a unui factor de producție",
+        "kind": "marginal_factor",
+        "status": "B",
+        "formulas": [
+          "Wmg = ΔQ / ΔFactor",
+          "ΔQ = Q1 - Q0",
+          "ΔFactor = Factor1 - Factor0"
+        ]
+      }
+    ]
+  },
+  "config": {
+    "lesson": 4,
+    "title": "Factorii de producție",
+    "source": "Capitolul 4 - Factorii de Producție",
+    "modules": [
+      {
+        "id": "amortizare",
+        "title": "Amortizarea capitalului fix",
+        "kind": "amortization",
+        "defaults": {
+          "kf": 1000,
+          "years": 10,
+          "probeYear": 4
+        },
+        "formulas": [
+          "A = KF / T",
+          "RA = (A/KF) × 100 = (1/T) × 100"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 4 - Factorii de Producție_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Muncă, natură, capital; capital fix/circulant, amortizare, combinare/substituire și productivitate marginală a factorului."
+        }
+      },
+      {
+        "id": "capital_tehnic",
+        "title": "Capital tehnic utilizat și consumat",
+        "kind": "capital_composition",
+        "defaults": {
+          "kf": 700,
+          "kc": 300,
+          "years": 10
+        },
+        "formulas": [
+          "KT = KF + KC",
+          "K.cons = A + KC"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 4 - Factorii de Producție_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Muncă, natură, capital; capital fix/circulant, amortizare, combinare/substituire și productivitate marginală a factorului."
+        }
+      },
+      {
+        "id": "substituire",
+        "title": "Substituirea factorilor de producție",
+        "kind": "substitution",
+        "defaults": {
+          "rms": 2,
+          "constant": 100,
+          "aX": 20,
+          "bX": 50
+        },
+        "formulas": [
+          "Rms = ΔX / -ΔY",
+          "Rms = Wmg(Y) / Wmg(X)"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 4 - Factorii de Producție_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Muncă, natură, capital; capital fix/circulant, amortizare, combinare/substituire și productivitate marginală a factorului."
+        }
+      },
+      {
+        "id": "produs_marginal_factor",
+        "title": "Productivitatea marginală a unui factor de producție",
+        "kind": "marginal_factor",
+        "defaults": {
+          "x0": 8,
+          "x1": 12,
+          "q0": 60,
+          "q1": 84
+        },
+        "formulas": [
+          "Wmg = ΔQ / ΔFactor",
+          "ΔQ = Q1 - Q0",
+          "ΔFactor = Factor1 - Factor0"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 4 - Factorii de Producție_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Muncă, natură, capital; capital fix/circulant, amortizare, combinare/substituire și productivitate marginală a factorului."
+        }
+      }
+    ],
+    "themeDefaults": {
+      "graphBg": "#ffffff",
+      "grid": "#edf1f6",
+      "axes": "#667085",
+      "line1": "#2f63d5",
+      "line2": "#13865f",
+      "line3": "#7458d8",
+      "line4": "#b46b00",
+      "line5": "#d04f5f",
+      "line6": "#0f8f9b",
+      "t0": "#667085",
+      "probe": "#b42318"
+    },
+    "auditVersion": "5.4-complet",
+    "sourcePolicy": "Nu se introduce o formulă economică nouă dacă nu este susținută de material; vizualizările C sunt marcate ca schematice/didactice."
+  }
+}

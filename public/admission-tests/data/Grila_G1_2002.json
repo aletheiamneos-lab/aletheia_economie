@@ -1,0 +1,792 @@
+{
+  "an": 2002,
+  "sesiune": "Concurs de admitere septembrie 2002",
+  "varianta": "G1",
+  "sursa_subiecte": "Grile_2002.pdf",
+  "sursa_barem": "Grile_2002.pdf (barem)",
+  "interval_economie_in_test": "51-100",
+  "nota": "An atipic: secțiunea de Economie cuprinde 50 de exerciții (51-100), nu 40.",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 34,
+      "exercitii": [
+        {
+          "numar_in_test": 51,
+          "capitol": "Introducere în economie",
+          "dificultate": "usor",
+          "enunt": "Ce anume determină comportamentul omului în societate și față de natură:",
+          "optiuni": {
+            "a": "tendința permanentă și normală a omului de a utiliza eficient resursele naturale",
+            "b": "tendința permanentă și normală a omului de a-și acoperi cât mai bine nevoile",
+            "c": "tendința permanentă și normală a omului de a beneficia de pe urma rarității resurselor",
+            "d": "tendința permanentă și normală a omului de a trăi rațional"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Comportamentul economic fundamental este determinat de nevoia de a-și satisface cât mai bine nevoile."
+        },
+        {
+          "numar_in_test": 52,
+          "capitol": "Costul producției",
+          "dificultate": "usor",
+          "enunt": "În unități naturale se poate exprima:",
+          "optiuni": {
+            "a": "costul de producție",
+            "b": "consumul specific sau tehnologic",
+            "c": "consumul de capital fix",
+            "d": "consumul factorilor de producție"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Consumul specific (tehnologic) se exprimă în unități fizice (naturale) — de exemplu, kg de materie primă per unitate de produs."
+        },
+        {
+          "numar_in_test": 54,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Fiecare nouă unitate care se consumă dintr-un bun economic aduce o satisfacție mai mare, pentru că:",
+          "optiuni": {
+            "a": "se adresează unei nevoi satisfăcute",
+            "b": "se adresează unei nevoi fluctuante",
+            "c": "se adresează unei trebuințe în creștere",
+            "d": "toate răspunsurile de mai sus sunt greșite"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Afirmația contravine legii utilității marginale descrescânde — nicio unitate suplimentară nu aduce o satisfacție mai mare decât cele anterioare."
+        },
+        {
+          "numar_in_test": 55,
+          "capitol": "Mecanismul concurențial — concurența perfectă",
+          "dificultate": "usor",
+          "enunt": "Între particularitățile pieței cu concurență perfectă se numără:",
+          "optiuni": {
+            "a": "omogenitatea tuturor produselor existente pe piață",
+            "b": "transparența perfectă",
+            "c": "perfecta mobilitate a factorilor de influență ai pieței",
+            "d": "producătorii sunt în număr egal cu consumatorii"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Transparența perfectă este o trăsătură standard a concurenței perfecte."
+        },
+        {
+          "numar_in_test": 57,
+          "capitol": "Costul producției — amortizarea",
+          "dificultate": "usor",
+          "enunt": "Consumul de capital fix se include în costul de producție:",
+          "optiuni": {
+            "a": "sub forma uzurii fizice a acestuia",
+            "b": "sub forma uzurii fizice și morale a acestuia",
+            "c": "proporțional cu producția obținută",
+            "d": "prin amortizare"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Amortizarea este modalitatea standard prin care se include în cost consumul (uzura) capitalului fix."
+        },
+        {
+          "numar_in_test": 58,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Legea utilității marginale descrescânde a fost formulată prima dată de:",
+          "optiuni": {
+            "a": "Alfred Marshall",
+            "b": "Heinrich Gossen",
+            "c": "Paul Samuelson",
+            "d": "John K. Galbraith"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Heinrich Gossen a formulat prima dată legea utilității marginale descrescânde (Legea lui Gossen)."
+        },
+        {
+          "numar_in_test": 59,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "usor",
+          "enunt": "Rodnicia muncii crește pe măsură ce:",
+          "optiuni": {
+            "a": "se asimilează noi factori de producție",
+            "b": "factorul muncă utilizat sporește cantitativ",
+            "c": "scad cantitățile din alți factori de producție",
+            "d": "se îmbogățește conținutul muncii pe seama asimilării informației, a perfecționării celorlalți factori de producție"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Productivitatea crește prin îmbunătățirea calitativă a muncii, nu doar prin creșterea cantitativă a factorilor."
+        },
+        {
+          "numar_in_test": 60,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "usor",
+          "enunt": "Productivitatea globală exprimă:",
+          "optiuni": {
+            "a": "productivitatea medie a factorilor de producție",
+            "b": "productivitatea unui factor de producție",
+            "c": "eficiența agregată a tuturor factorilor de producție implicați în obținerea unui rezultat",
+            "d": "producția totală pe unitate de factor de producție"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Productivitatea globală măsoară eficiența agregată a tuturor factorilor de producție implicați."
+        },
+        {
+          "numar_in_test": 61,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "Dacă cererea este egală cu oferta, atunci:",
+          "optiuni": {
+            "a": "numărul producătorilor este egal cu cel al cumpărătorilor",
+            "b": "piața se află în echilibru",
+            "c": "nevoile de consum sunt egale cu resursele",
+            "d": "cererea este satisfăcută integral"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Egalitatea cerere=ofertă definește echilibrul pieței."
+        },
+        {
+          "numar_in_test": 62,
+          "capitol": "Piața muncii — salariul de echilibru",
+          "dificultate": "usor",
+          "enunt": "Cărei situații îi corespunde salariul de echilibru:",
+          "optiuni": {
+            "a": "stării în care piața muncii se caracterizează prin egalitatea cererii cu oferta",
+            "b": "stării în care ofertantul de forță de muncă este mulțumit de sine",
+            "c": "stării căreia îi este propriu prețul minim pe piața bunurilor",
+            "d": "dezechilibrului concomitent pe toate piețele"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Salariul de echilibru corespunde egalității cerere-ofertă pe piața muncii."
+        },
+        {
+          "numar_in_test": 65,
+          "capitol": "Piața și echilibrul pieței — elasticitate",
+          "dificultate": "usor",
+          "enunt": "Cererea elastică presupune:",
+          "optiuni": {
+            "a": "o variație a cererii egală cu variația prețului",
+            "b": "o variație a cererii mai mică decât variația prețului",
+            "c": "o variație a cererii mai mare decât variația prețului",
+            "d": "că variația cererii este pozitivă"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "|Kc/p| > 1",
+          "rezolvare": "Cererea elastică presupune o variație procentuală a cererii mai mare decât cea a prețului."
+        },
+        {
+          "numar_in_test": 66,
+          "capitol": "Piața muncii — salariul social",
+          "dificultate": "usor",
+          "enunt": "Salariul social se acordă:",
+          "optiuni": {
+            "a": "pentru a spori veniturile unor categorii (grupuri) de salariați, care se confruntă cu greutăți legate de realizarea procesului de producție",
+            "b": "pentru a spori veniturile unor categorii (grupuri) de salariați, care se confruntă cu greutăți legate de slaba lor calificare profesională",
+            "c": "pentru a spori veniturile unor categorii (grupuri) de salariați aflați în preajma pensionării",
+            "d": "pentru a spori veniturile unor categorii (grupuri) de salariați, care se confruntă cu greutăți legate de accidente de muncă, boli profesionale, șomaj ș.a."
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Salariul social este un ajutor pentru situații speciale — accidente de muncă, boli profesionale, șomaj."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Piața de capital — bursa de valori",
+          "dificultate": "usor",
+          "enunt": "Bursa de valori este:",
+          "optiuni": {
+            "a": "singura emitentă de titluri de valoare noi",
+            "b": "piața indispensabilă transferurilor de capitaluri individuale de la o întreprindere la alta sau dintr-o țară în alta",
+            "c": "formă a pieței secundare unde au loc numai operațiuni speculative",
+            "d": "forma de piață reală care se apropie cel mai mult de modelul pieței cu concurență imperfectă"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Bursa facilitează transferul de capital între entități și țări diferite."
+        },
+        {
+          "numar_in_test": 69,
+          "capitol": "Piața mondială — balanța comercială",
+          "dificultate": "usor",
+          "enunt": "Deficitul balanței comerciale impune:",
+          "optiuni": {
+            "a": "raționalizarea consumurilor interne",
+            "b": "angajarea de credite externe",
+            "c": "limitarea deficitului bugetului de stat",
+            "d": "obligația de a realiza un buget de stat excedentar"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Deficitul balanței comerciale se acoperă, de regulă, prin angajarea de credite externe."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Piața mondială — piața valutară",
+          "dificultate": "usor",
+          "enunt": "Pe piața valutară, operațiile specifice se realizează, aproape în exclusivitate, prin intermediul:",
+          "optiuni": {
+            "a": "caselor de schimb valutar",
+            "b": "agenților de schimb",
+            "c": "băncilor",
+            "d": "instituțiilor financiare internaționale"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Băncile intermediază majoritatea operațiunilor de pe piața valutară."
+        },
+        {
+          "numar_in_test": 73,
+          "capitol": "Mecanismul concurențial — monopson",
+          "dificultate": "usor",
+          "enunt": "Piața cu concurență monopsonică se caracterizează prin:",
+          "optiuni": {
+            "a": "cumpărătorul nu exercită nicio influență asupra prețului produsului",
+            "b": "vânzătorii sunt puțini la număr sau numai unul singur",
+            "c": "cumpărătorul exercită o influență asupra prețului, pot fi puțini cumpărători sau unul singur",
+            "d": "cumpărătorul hotărăște cât trebuie să se producă"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Monopsonul presupune puțini cumpărători (sau unul singur), cu putere de influențare a prețului."
+        },
+        {
+          "numar_in_test": 76,
+          "capitol": "Piața mondială — convertibilitatea",
+          "dificultate": "usor",
+          "enunt": "Ce legătură există între convertibilitatea monedei și economie:",
+          "optiuni": {
+            "a": "convertibilitatea este un mijloc de asigurare și sprijinire a dezvoltării economice",
+            "b": "convertibilitatea poate fi garantată numai în economia de schimb",
+            "c": "convertibilitatea este condiționată de rezervele de aur ale băncii centrale",
+            "d": "convertibilitatea este posibilă numai pe bază de reciprocitate"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Convertibilitatea sprijină dezvoltarea economică, facilitând schimburile economice internaționale."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Introducere în economie — marfa",
+          "dificultate": "usor",
+          "enunt": "Care dintre următoarele bunuri pot fi mărfuri:",
+          "optiuni": {
+            "a": "bunurile libere, dacă sunt destinate schimbului",
+            "b": "bunurile economice apte să satisfacă o nevoie și care fac obiectul schimbului, prin vânzare-cumpărare",
+            "c": "bunurile economice destinate consumului personal",
+            "d": "toate bunurile care servesc satisfacerii trebuințelor umane"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a mărfii: bun economic care face obiectul schimbului prin vânzare-cumpărare."
+        },
+        {
+          "numar_in_test": 80,
+          "capitol": "Profitul — supraprofitul",
+          "dificultate": "usor",
+          "enunt": "Ce reprezintă supraprofitul sau profitul de monopol:",
+          "optiuni": {
+            "a": "profitul obținut de către agenții economici ce practică concurența neloială",
+            "b": "profitul ce se obține peste cel normal",
+            "c": "profitul obținut prin practicarea unor metode de vânzare aflate în discordanță cu normele și reglementările comerciale în vigoare",
+            "d": "condiția fără de care nici o activitate economică nu poate funcționa"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Supraprofitul reprezintă profitul obținut peste nivelul normal."
+        },
+        {
+          "numar_in_test": 81,
+          "capitol": "Introducere în economie — indicatorul economic",
+          "dificultate": "usor",
+          "enunt": "Indicatorul economic reprezintă:",
+          "optiuni": {
+            "a": "expresia cantitativă a rezultatelor activității umane, prezentată în unități fizice (naturale) și valorice (bănești sau monetare)",
+            "b": "cantitatea utilizată într-o activitate economică și rezultatele acesteia",
+            "c": "bunurile și serviciile create de agenții economici",
+            "d": "valoarea bunurilor și serviciilor create de agenții economici naționali într-un an"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a indicatorului economic."
+        },
+        {
+          "numar_in_test": 82,
+          "capitol": "Piața și echilibrul pieței — elasticitatea ofertei",
+          "dificultate": "usor",
+          "enunt": "Când coeficientul de elasticitate a ofertei este subunitar, oferta este:",
+          "optiuni": {
+            "a": "elastică",
+            "b": "inelastică",
+            "c": "cu elasticitate scăzută",
+            "d": "răspunsurile de mai sus sunt greșite"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "|Ko/p| < 1",
+          "rezolvare": "Coeficient subunitar (<1) definește oferta inelastică."
+        },
+        {
+          "numar_in_test": 84,
+          "capitol": "Mecanismul concurențial — strategii",
+          "dificultate": "usor",
+          "enunt": "Scopul strategiilor concurențiale este de:",
+          "optiuni": {
+            "a": "intensificare a concurenței",
+            "b": "asigura o cât mai bună satisfacere a nevoilor",
+            "c": "asigurare a succesului în lupta de concurență",
+            "d": "schimbare a poziției deținute pe piață"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Strategiile concurențiale urmăresc, în primul rând, succesul în competiția de piață."
+        },
+        {
+          "numar_in_test": 85,
+          "capitol": "Eficiența economică",
+          "dificultate": "usor",
+          "enunt": "A avea eficiență în activitatea economică înseamnă:",
+          "optiuni": {
+            "a": "a satisface trebuințe mai mari cu resurse mai ieftine",
+            "b": "a satisface trebuințele cu resursele pe care societatea le produce",
+            "c": "a satisface trebuințe mai mari cu aceleași resurse sau cu resurse mai puține",
+            "d": "a spori permanent cantitatea resurselor atrase și utilizate"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a eficienței economice."
+        },
+        {
+          "numar_in_test": 86,
+          "capitol": "Ciclicitatea economică — boom",
+          "dificultate": "usor",
+          "enunt": "Ce se înțelege prin boom:",
+          "optiuni": {
+            "a": "un aspect negativ al economiei, tipic pentru faza de criză a ciclului economic",
+            "b": "un element care generează apariția \"punctelor de cotitură\" în economie",
+            "c": "starea de echilibru a economiei",
+            "d": "reluarea creșterii economice și a expansiunii"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Boom-ul reprezintă reluarea creșterii economice și a expansiunii — opusul crizei."
+        },
+        {
+          "numar_in_test": 87,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "Egalitatea cererii și ofertei exprimă:",
+          "optiuni": {
+            "a": "elasticitatea unitară a cererii",
+            "b": "elasticitatea unitară a ofertei",
+            "c": "echilibrul pieței",
+            "d": "armonia între cumpărători și vânzători"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Egalitatea cerere=ofertă definește echilibrul pieței."
+        },
+        {
+          "numar_in_test": 88,
+          "capitol": "Factorii de producție — informația",
+          "dificultate": "usor",
+          "enunt": "Ce este informația:",
+          "optiuni": {
+            "a": "o sinteză a tuturor celorlalte grupe de factori de producție",
+            "b": "sumă a cunoștințelor veridice, ordonate, însușite și folosite",
+            "c": "factorul activ și determinant al producției de bunuri și servicii",
+            "d": "rezultatul combinării factorilor de producție"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a informației ca resursă/factor de producție."
+        },
+        {
+          "numar_in_test": 89,
+          "capitol": "Economia de piață și proprietatea",
+          "dificultate": "usor",
+          "enunt": "Obiectul proprietății îl constituie:",
+          "optiuni": {
+            "a": "agenții economici, care-și exercită atributele proprietății în forme foarte variate",
+            "b": "relația dintre oameni, contractul social cu privire la activitățile economice",
+            "c": "bunurile, ceea ce este comun vieții economico-sociale",
+            "d": "nevoile umane de bunuri libere sau economice"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Obiectul proprietății sunt bunurile — ceea ce este comun activității economico-sociale."
+        },
+        {
+          "numar_in_test": 93,
+          "capitol": "Profitul — funcțiile profitului",
+          "dificultate": "usor",
+          "enunt": "Funcțiile profitului sunt:",
+          "optiuni": {
+            "a": "impulsionează creșterea economică",
+            "b": "satisface nevoile de producție și de consum ale agenților economici",
+            "c": "stimulează inițiativa și acceptarea riscului de către agenții economici",
+            "d": "incită la realizarea eforturilor de sporire a producției și diversificarea ofertei"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Profitul stimulează, în mod fundamental, inițiativa antreprenorială și asumarea riscului."
+        },
+        {
+          "numar_in_test": 94,
+          "capitol": "Piața monetară — lichiditatea banilor",
+          "dificultate": "usor",
+          "enunt": "Ce înseamnă că banii sunt lichidați:",
+          "optiuni": {
+            "a": "capacitatea acestora de fi preschimbați rapid și ușor în alte monede",
+            "b": "banii sunt acceptați în tranzacții în condiții de risc și cheltuieli suplimentare minime pentru deținători",
+            "c": "banii pot fi depozitați ușor sau preschimbați rapid în alte monede",
+            "d": "permit achitarea oricărei sume (mai ales prin bani de cont), oricât de mare sau mică ar fi aceasta"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Lichiditatea banilor înseamnă acceptarea lor în tranzacții cu riscuri și costuri suplimentare minime pentru deținători."
+        },
+        {
+          "numar_in_test": 95,
+          "capitol": "Piața mondială — balanța comercială",
+          "dificultate": "usor",
+          "enunt": "Atunci când este deficitară, balanța comercială poate fi echilibrată apelându-se la:",
+          "optiuni": {
+            "a": "subscripție publică",
+            "b": "rezerva valutară proprie",
+            "c": "emisiune monetară",
+            "d": "deplasarea forței de muncă spre alte țări"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Rezerva valutară proprie poate acoperi temporar deficitul balanței comerciale."
+        },
+        {
+          "numar_in_test": 96,
+          "capitol": "Mecanismul concurențial",
+          "dificultate": "usor",
+          "enunt": "Manifestarea concurenței este o expresie a:",
+          "optiuni": {
+            "a": "dezvoltării producției și creșterii costurilor unitare",
+            "b": "gradului de dezvoltare a pieței și a gradului de liberalizare economică",
+            "c": "subvenționării producției și desfacerii mărfurilor",
+            "d": "măsurii în care societatea este capabilă să asigure stabilitatea prețurilor"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Concurența reflectă gradul de dezvoltare și liberalizare a pieței."
+        },
+        {
+          "numar_in_test": 98,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Care sunt elementele care stau la baza utilității în sens general:",
+          "optiuni": {
+            "a": "proprietățile, însușirile, caracteristicile pe care le posedă fiecare bun sau categorie de bunuri",
+            "b": "capacitatea unui consumator de a-și aloca veniturile pentru diferite bunuri, în scopul atingerii satisfacției maxime",
+            "c": "satisfacția pe care crede că o obține un consumator dat, prin folosirea unei doze determinate dintr-un bun economic, în anumite condiții de loc și timp",
+            "d": "evaluarea subiectivă a fiecărui individ cu privire la cantitățile bunurilor"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Utilitatea în sens general se bazează pe proprietățile obiective ale bunurilor, care le fac capabile să satisfacă nevoi."
+        },
+        {
+          "numar_in_test": 99,
+          "capitol": "Utilitatea bunurilor economice — utilitatea marginală",
+          "dificultate": "usor",
+          "enunt": "Utilitatea marginală reprezintă:",
+          "optiuni": {
+            "a": "satisfacția resimțită de consumator pe fiecare unitate consumată dintr-un bun economic",
+            "b": "sporul utilității individuale obținut prin creșterea cu o unitate a cantității consumate",
+            "c": "satisfacția resimțită de un consumator prin consumarea unei doze dintr-un bun economic",
+            "d": "sporul utilității totale obținut prin creșterea cu o unitate a cantității consumate"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Umg = ΔUT",
+          "rezolvare": "Definiția standard: utilitatea marginală este sporul utilității totale obținut prin consumul unei unități suplimentare."
+        },
+        {
+          "numar_in_test": 100,
+          "capitol": "Piața mondială — comerțul exterior",
+          "dificultate": "usor",
+          "enunt": "Operațiunile de comerț exterior sunt judecate:",
+          "optiuni": {
+            "a": "în funcție de raportul dintre efecte și rezultate",
+            "b": "prin comparație cu operațiile de comerț interior",
+            "c": "din punct de vedere al eficienței economice",
+            "d": "după raportul dintre eforturi și cheltuieli"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Eficiența economică este criteriul standard de evaluare a operațiunilor de comerț exterior."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 10,
+      "exercitii": [
+        {
+          "numar_in_test": 53,
+          "capitol": "Piața și echilibrul pieței — indici de preț",
+          "dificultate": "mediu",
+          "enunt": "Când prețul unei mărfi este la un moment dat de 100 și ulterior ajunge la 225, înseamnă că:",
+          "optiuni": {
+            "a": "a crescut cu 225%",
+            "b": "a crescut la 125%",
+            "c": "a crescut cu 125%",
+            "d": "a crescut de 1,25 ori"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Indice = (P1/P0) x 100",
+          "rezolvare": "I_P=(225/100)x100=225%. Creștere=225%-100%=125%."
+        },
+        {
+          "numar_in_test": 63,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "mediu",
+          "enunt": "Locul central în determinarea și evaluarea nivelului și dinamicii productivității îl deține:",
+          "optiuni": {
+            "a": "productivitatea parțială",
+            "b": "productivitatea globală",
+            "c": "productivitatea marginală",
+            "d": "productivitatea muncii (medie și marginală)"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Productivitatea muncii (medie și marginală) ocupă locul central în analiza economică standard a productivității."
+        },
+        {
+          "numar_in_test": 64,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "mediu",
+          "enunt": "Productivitatea marginală a capitalului se determină ca:",
+          "optiuni": {
+            "a": "raport între variația efectelor obținute și volumul capitalului utilizat",
+            "b": "eficiența unei unități din factorul capital utilizat",
+            "c": "raport între producția obținută și variația de capital tehnic utilizat",
+            "d": "raport între variația absolută a producției obținute și variația absolută a capitalului tehnic utilizat"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "W.mg(K) = ΔQ/ΔK",
+          "rezolvare": "Definiția standard a productivității marginale a capitalului."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Piața monetară — dobânda simplă",
+          "dificultate": "mediu",
+          "enunt": "Dobânda simplă se calculează după formula:",
+          "optiuni": {
+            "a": "D = C/d'",
+            "b": "D = d'*C",
+            "c": "D = d'*C/100",
+            "d": "D = d'*C/n"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Ds = d' x C",
+          "rezolvare": "Formula standard a dobânzii simple pentru un an: Ds=d'x C."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Cheltuielile materiale de producție se compun din:",
+          "optiuni": {
+            "a": "întregul capital tehnic care se află în proprietatea întreprinderii la un moment dat",
+            "b": "consumul de capital fix și capital tehnic folosit",
+            "c": "capitalul circulant consumat și amortizarea capitalului fix",
+            "d": "consumul specific sau tehnologic"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Cheltuielile materiale de producție cuprind capitalul circulant consumat și amortizarea capitalului fix."
+        },
+        {
+          "numar_in_test": 75,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "mediu",
+          "enunt": "Dacă s = 0,4, c' va fi egal cu:",
+          "optiuni": {
+            "a": "0,8",
+            "b": "0,6",
+            "c": "4",
+            "d": "nu se poate determina pe baza datelor oferite"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "c' = 1 – e'",
+          "rezolvare": "c'=1-0,4=0,6."
+        },
+        {
+          "numar_in_test": 90,
+          "capitol": "Piața de capital — tranzacții la termen",
+          "dificultate": "mediu",
+          "enunt": "În cazul operațiunilor la termen câștigă:",
+          "optiuni": {
+            "a": "cumpărătorul, în cazul în care cursul titlurilor la scadență este mai ridicat decât cel din momentul încheierii contractului, pentru că el este un speculator \"a la baisse\"",
+            "b": "vânzătorul, în cazul în care cursul titlurilor la scadență este mai ridicat decât cel din momentul încheierii contractului, pentru că astfel el cumpără mai ieftin și vinde mai scump",
+            "c": "cel care intuiește evoluția reală a cursului",
+            "d": "vânzătorul, în cazul în care cursul titlurilor crește, întrucât el este un speculator \"a la hausse\""
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Formularea general corectă: câștigă cel care a intuit corect evoluția reală a cursului — celelalte variante conțin erori (confundă rolurile cumpărător/vânzător cu tipurile de speculatori)."
+        },
+        {
+          "numar_in_test": 91,
+          "capitol": "Piața monetară — masa monetară",
+          "dificultate": "mediu",
+          "enunt": "Care dintre cauzele de mai jos generează necesitatea creșterii volumului masei monetare:",
+          "optiuni": {
+            "a": "emisiunea monetară",
+            "b": "formarea de rezerve în valută (monedă străină), ce nu sunt depuse la bănci sau instituții financiare",
+            "c": "scăderea vitezei de circulație a banilor",
+            "d": "echilibrarea excedentului bugetului de stat prin intervenția băncii centrale"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "M = (P x Q)/V",
+          "rezolvare": "Dacă viteza de rotație scade, pentru a menține același volum de tranzacții este necesară o masă monetară mai mare."
+        },
+        {
+          "numar_in_test": 92,
+          "capitol": "Piața mondială — inflația importată",
+          "dificultate": "mediu",
+          "enunt": "Incidența inflației importate este mai mică:",
+          "optiuni": {
+            "a": "cu cât ponderea bunurilor importate este mai mare",
+            "b": "cu cât elasticitatea cererii în raport cu prețurile bunurilor de import sau ale celor fabricate cu bunuri de import este mai mică",
+            "c": "cu cât elasticitatea cererii în raport cu prețurile bunurilor de import sau ale celor fabricate cu bunuri de import este mai mare",
+            "d": "cu cât elasticitatea ofertei în raport cu prețurile bunurilor de import sau ale celor fabricate cu bunuri de import este mai mică"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "O elasticitate mare a cererii înseamnă că, la creșterea prețurilor bunurilor de import, consumul se reorientează rapid — impactul inflației importate este mai mic."
+        },
+        {
+          "numar_in_test": 97,
+          "capitol": "Piața muncii — rata șomajului",
+          "dificultate": "mediu",
+          "enunt": "Care este numărul șomerilor dacă rata șomajului este de 8%, iar populația aptă de muncă de 45 milioane:",
+          "optiuni": {
+            "a": "0,36 milioane",
+            "b": "8 milioane",
+            "c": "36 milioane",
+            "d": "3,6 milioane"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Nr. șomeri = Rata șomajului x Populație activă",
+          "rezolvare": "0,08x45=3,6 milioane."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 6,
+      "exercitii": [
+        {
+          "numar_in_test": 56,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "greu",
+          "enunt": "Venitul anului curent de 800 este cu 25% mai mare decât venitul anului anterior. Dacă multiplicatorul investițiilor a fost egal cu 2, cât a fost sporul investițiilor:",
+          "optiuni": {
+            "a": "180",
+            "b": "80",
+            "c": "20",
+            "d": "4"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "ΔV = K x ΔI",
+          "rezolvare": "V0=800/1,25=640. ΔV=800-640=160. ΔI=160/2=80."
+        },
+        {
+          "numar_in_test": 70,
+          "capitol": "Piața monetară — dobânda compusă",
+          "dificultate": "greu",
+          "enunt": "Un agent economic ia un credit de 100.000.000 lei de la o bancă pe o perioadă de 4 ani, cu o rată a dobânzii de 20%. Care este suma totală pe care trebuie să o ramburseze debitorul creditorului la scadență (știind că atât suma împrumutată cât și dobânzile aferente se plătesc la finele celor 4 ani):",
+          "optiuni": {
+            "a": "180.000.000 lei",
+            "b": "207.360.000 lei",
+            "c": "307.360.000 lei",
+            "d": "nu se poate determina pe baza datelor oferite"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "St = Cr(1+d')ⁿ",
+          "rezolvare": "St=100.000.000x(1,2)⁴=100.000.000x2,0736=207.360.000 lei."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Piața monetară — ecuația schimbului",
+          "dificultate": "greu",
+          "enunt": "Dacă masa monetară (M) este de 50 de miliarde unități monetare, cantitatea de bunuri aflate în circulație de 200.000 bucăți, iar viteza de rotație a banilor egală cu 4, prețul mediu (unitar) al bunurilor va fi de:",
+          "optiuni": {
+            "a": "1.000.000",
+            "b": "10.000.000",
+            "c": "100.000",
+            "d": "100.000.000"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "M = (P x Q)/V → P = (M x V)/Q",
+          "rezolvare": "P=(50.000.000.000x4)/200.000=1.000.000."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Piața monetară — profitul bancar",
+          "dificultate": "greu",
+          "enunt": "O bancă acordă, din sumele atrase spre fructificare, un credit anual de 250.000.000 lei. Rata dobânzii încasată de bancă este 40%, iar cea plătită deponenților săi este de 30%. Cheltuielile anuale de funcționare ale băncii sunt de 20.000.000 lei. Profitul anual al băncii respective este de:",
+          "optiuni": {
+            "a": "25.000.000 lei",
+            "b": "40.000.000 lei",
+            "c": "5.000.000 lei",
+            "d": "nu se poate determina pe baza datelor oferite"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Profit bancar = (Dobândă încasată – Dobândă plătită) – Cheltuieli funcționare",
+          "rezolvare": "Dobândă încasată=100.000.000. Dobândă plătită=75.000.000. Câștig bancar=25.000.000. Profit=25.000.000-20.000.000=5.000.000 lei."
+        },
+        {
+          "numar_in_test": 79,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "greu",
+          "enunt": "Producția a 4000 de bunuri necesită 80 de lucrători. Angajarea a încă 40 de lucrători determină un spor de producție de 1640 de bunuri. La cât se cifrează productivitatea marginală a muncii:",
+          "optiuni": {
+            "a": "16,4",
+            "b": "56,4",
+            "c": "41",
+            "d": "23,6"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "W.mg(L) = ΔQ/ΔL",
+          "rezolvare": "Wmg=1640/40=41."
+        },
+        {
+          "numar_in_test": 83,
+          "capitol": "Profitul",
+          "dificultate": "greu",
+          "enunt": "Care este cantitatea de produse ce asigură realizarea unui profit anual de 30 milioane cu un cost fix global de 200 milioane și un cost variabil mediu de 150.000 pe produs, la un preț unitar de 250.000:",
+          "optiuni": {
+            "a": "1.000 bucăți",
+            "b": "2.500 bucăți",
+            "c": "2.300 bucăți",
+            "d": "2.400 bucăți"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Pr.T = P x Q – (CF + CMV x Q)",
+          "rezolvare": "30.000.000=250.000Q-(200.000.000+150.000Q). 100.000Q=230.000.000. Q=2.300 bucăți."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 0,
+      "exercitii": []
+    }
+  ]
+}

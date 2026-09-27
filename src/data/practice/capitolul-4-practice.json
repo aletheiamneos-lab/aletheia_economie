@@ -1,0 +1,1288 @@
+{
+  "capitol": 4,
+  "titlu_capitol": "Factorii de producție",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din manual (munca, natura, capitalul, amortizarea, combinarea si substituirea F.P). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (KT=KF+KC, K.cons=A+KC, A=KF/T, T=KF/A, RA=(A/KF)x100=(1/T)x100, W.mg(x)=DeltaQ/Deltax, Rms=Deltax/-Deltay).",
+  "intrebari": [
+    {
+      "id": "C4_T01",
+      "capitol": 4,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Factorii de producție reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Totalitatea bunurilor economice existente pe piață la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar capitalul tehnic utilizat de o firmă într-un an",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Resursele atrase și utilizate în activitatea economică din care rezultă bunuri economice utile, destinate pieței",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Ansamblul nevoilor umane nesatisfăcute încă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Factorii de producție nu se confundă cu nevoile sau cu bunurile economice: ei reprezintă resursele efectiv atrase și utilizate în activitatea economică, din care rezultă bunuri economice utile, destinate pieței. Prin urmare, răspunsul corect este: Resursele atrase și utilizate în activitatea economică din care rezultă bunuri economice utile, destinate pieței."
+    },
+    {
+      "id": "C4_T02",
+      "capitol": 4,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele NU este o trăsătură a factorilor de producție, conform teoriei?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sunt input-uri (intrări) ale activității economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sunt partea activă (atrasă și folosită) a resurselor destinate producției",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sunt nelimitați, spre deosebire de resursele din care provin",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Sunt limitați, la fel ca și resursele din care provin",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Factorii de producție provin din resurse economice, care sunt prin definiție limitate — de aceea și factorii de producție rămân limitați, la fel ca resursele din care provin, nicidecum nelimitați. Prin urmare, răspunsul corect este: Sunt nelimitați, spre deosebire de resursele din care provin."
+    },
+    {
+      "id": "C4_T03",
+      "capitol": 4,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Sporirea cantității factorilor de producție folosiți, ca sursă principală de creștere a producției, determină o creștere/dezvoltare economică:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Extensivă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Neutră",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Regresivă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Intensivă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul distinge clar cele două căi de sporire a producției: contribuția preponderent cantitativă (sporirea cantității factorilor folosiți) generează creștere/dezvoltare economică extensivă, în timp ce contribuția preponderent calitativă (îmbunătățirea calității și eficienței) generează creștere intensivă. Prin urmare, răspunsul corect este: Extensivă."
+    },
+    {
+      "id": "C4_T04",
+      "capitol": 4,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dintre factorii de producție tradiționali (clasici), care este considerat factor derivat?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Capitalul",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Munca",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Natura",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Informația",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul clasifică munca și natura drept factori de producție primari, iar capitalul drept factor de producție derivat (rezultat, la rândul lui, din activitatea economică anterioară). Informația, în schimb, face parte din categoria neofactorilor, nu a factorilor tradiționali. Prin urmare, răspunsul corect este: Capitalul."
+    },
+    {
+      "id": "C4_T05",
+      "capitol": 4,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Informația, tehnologia, abilitatea întreprinzătorului și activitatea de management și marketing reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Neofactori de producție, cu rolul de a spori eficiența factorilor de producție clasici",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Resurse economice libere, cu acces gratuit",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Factori de producție primari",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Factori de producție derivați exclusiv din resursele naturale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Alături de factorii tradiționali (munca, natura, capitalul), manualul introduce categoria neofactorilor de producție — informația, tehnologia, abilitatea întreprinzătorului, managementul și marketingul — al căror rol este să sporească eficiența utilizării factorilor clasici. Prin urmare, răspunsul corect este: Neofactori de producție, cu rolul de a spori eficiența factorilor de producție clasici."
+    },
+    {
+      "id": "C4_T06",
+      "capitol": 4,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Munca, ca factor de producție, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ansamblul resurselor naturale brute utilizate în producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O activitate conștientă, specific umană, care se finalizează în obținerea de bunuri economice utile",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea bunurilor materiale produse de om și utilizate pentru a obține alte bunuri",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un neofactor de producție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Munca este definită ca activitate conștientă, specific umană, presupunând consum de energie fizică și intelectuală, plus experiență, finalizată în obținerea de bunuri economice utile. Prin urmare, răspunsul corect este: O activitate conștientă, specific umană, care se finalizează în obținerea de bunuri economice utile."
+    },
+    {
+      "id": "C4_T07",
+      "capitol": 4,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Faptul că munca condiționează existența, folosirea, combinarea, substituirea și perfecționarea celorlalți factori de producție arată că munca este un factor:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Derivat și pasiv",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Activ și determinant față de ceilalți factori de producție",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Neofactor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Limitat doar sub aspect cantitativ",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Dintre toți factorii de producție, munca este cea care condiționează folosirea, combinarea, substituirea și perfecționarea celorlalți — de aceea manualul o descrie explicit drept factor activ și determinant, spre deosebire de ceilalți factori. Prin urmare, răspunsul corect este: Activ și determinant față de ceilalți factori de producție."
+    },
+    {
+      "id": "C4_T08",
+      "capitol": 4,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Natura, ca factor de producție, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Totalitatea bunurilor materiale produse de om",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ansamblul resurselor naturale brute utilizate, adaptate și transformate de oameni prin muncă, conform nevoilor și intereselor lor",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Ansamblul cunoștințelor tehnice folosite în procesul de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar resursele minerale ale unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Natura, ca factor de producție, nu se limitează la resursele minerale, ci reprezintă ansamblul resurselor naturale brute — pământul, apa, resursele minerale și cele cosmice — utilizate, adaptate și transformate de oameni prin muncă. Prin urmare, răspunsul corect este: Ansamblul resurselor naturale brute utilizate, adaptate și transformate de oameni prin muncă, conform nevoilor și intereselor lor."
+    },
+    {
+      "id": "C4_T09",
+      "capitol": 4,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cel mai important factor natural de producție, care dă și denumirea generică a naturii ca factor de producție, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Resursele de apă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Pământul",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Resursele minerale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Resursele cosmice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul indică explicit pământul drept componenta principală și cel mai important factor natural de producție, celelalte componente (apa, resursele minerale, resursele cosmice) fiind considerate în completarea acestuia sau, din punct de vedere economic, incluse în noțiunea de pământ. Prin urmare, răspunsul corect este: Pământul."
+    },
+    {
+      "id": "C4_T10",
+      "capitol": 4,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele este o trăsătură a pământului ca factor de producție, conform teoriei?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Este neregenerabil în totalitate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este cel mai puțin restrictiv dintre factorii de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Este, momentan, de neînlocuit, neputând fi substituit",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Este produs de om și ușor de substituit cu alți factori",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pământul este neprodus de om și, momentan, de neînlocuit — spre deosebire de alți factori, el nu poate fi substituit cu altceva. În plus, el este regenerabil și parțial recuperabil (când e utilizat rațional), și este cel mai restrictiv factor de producție, nu cel mai puțin restrictiv. Prin urmare, răspunsul corect este: Este, momentan, de neînlocuit, neputând fi substituit."
+    },
+    {
+      "id": "C4_T11",
+      "capitol": 4,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Capitalul, ca factor de producție, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O activitate conștientă, specific umană",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar disponibilitățile bănești ale unei firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Ansamblul resurselor naturale brute",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Totalitatea bunurilor materiale produse de om și utilizate în continuare la obținerea de noi bunuri economice destinate vânzării",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Capitalul (capital tehnic, capital real, bunuri investiționale) reflectă totalitatea bunurilor materiale produse de om și utilizate în continuare pentru a obține noi bunuri economice destinate vânzării — spre deosebire de simplele disponibilități bănești, care nu reprezintă capital tehnic. Prin urmare, răspunsul corect este: Totalitatea bunurilor materiale produse de om și utilizate în continuare la obținerea de noi bunuri economice destinate vânzării."
+    },
+    {
+      "id": "C4_T12",
+      "capitol": 4,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Materiile prime, materialele auxiliare, energia și combustibilul reprezintă componente ale:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Capitalului fix, care participă la mai multe procese de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Capitalului circulant, care se consumă sau se transformă în totalitate într-un singur ciclu de producție",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Neofactorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Resurselor naturale regenerabile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Materiile prime, materialele auxiliare, energia și combustibilul participă la un singur proces de producție și se consumă sau se transformă integral în cadrul acestuia, fiind înlocuite la fiecare nou ciclu economic — exact caracteristicile capitalului circulant. Prin urmare, răspunsul corect este: Capitalului circulant, care se consumă sau se transformă în totalitate într-un singur ciclu de producție."
+    },
+    {
+      "id": "C4_T13",
+      "capitol": 4,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Mașinile, utilajele, instalațiile și clădirile reprezintă componente ale:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Capitalului circulant, care se consumă integral într-un singur ciclu de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Capitalului fix, care participă la mai multe procese de producție și se consumă/uzează treptat",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Muncii ca factor de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Naturii ca factor de producție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Mașinile, utilajele, instalațiile și clădirile participă la mai multe procese de producție, se consumă/degradează/uzează treptat și se înlocuiesc după o perioadă mai mare de timp — exact caracteristicile capitalului fix. Prin urmare, răspunsul corect este: Capitalului fix, care participă la mai multe procese de producție și se consumă/uzează treptat."
+    },
+    {
+      "id": "C4_T14",
+      "capitol": 4,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Deprecierea capitalului fix datorită progresului tehnic, care aduce pe piață echipamente noi, mai performante și eventual mai ieftine, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata marginală de substituire",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Uzura fizică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Uzura morală (involuntară)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Amortizarea",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul distinge uzura fizică (deprecierea datorată acțiunii agenților naturali și/sau folosirii efective în producție) de uzura morală, sau involuntară, care se datorează progresului tehnic ce aduce pe piață echipamente noi, mai performante, sau schimbării condițiilor pieței. Prin urmare, răspunsul corect este: Uzura morală (involuntară)."
+    },
+    {
+      "id": "C4_T15",
+      "capitol": 4,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Amortizarea (A) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Consumul integral al capitalului circulant într-un singur ciclu de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sporul de producție determinat de creșterea cu o unitate a unui factor de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea veniturilor încasate de posesorii factorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Recuperarea treptată a valorii capitalului fix prin vânzarea bunurilor produse cu ajutorul lui",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Amortizarea reflectă exact recuperarea treptată a valorii capitalului fix, prin vânzarea bunurilor produse cu ajutorul lui — sau, echivalent, expresia valorică a uzurii capitalului fix. Prin urmare, răspunsul corect este: Recuperarea treptată a valorii capitalului fix prin vânzarea bunurilor produse cu ajutorul lui."
+    },
+    {
+      "id": "C4_T16",
+      "capitol": 4,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Capitalul tehnic utilizat (KT) nu este sinonim, sub aspect matematic, cu capitalul consumat (K.cons), deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "K.cons este întotdeauna egal cu KT, indiferent de amortizare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "KT nu include niciodată capitalul circulant",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "K.cons = A + KC, unde A reprezintă doar amortizarea anuală a capitalului fix, nu întregul capital fix (KF)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "K.cons este întotdeauna mai mare decât KT",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Capitalul tehnic utilizat (KT = KF + KC) reprezintă întregul capital angrenat în producție, în timp ce capitalul consumat (K.cons = A + KC) include doar amortizarea anuală a capitalului fix — o fracțiune din KF — la care se adaugă integral capitalul circulant. De aceea, cele două noțiuni nu coincid matematic. Prin urmare, răspunsul corect este: K.cons = A + KC, unde A reprezintă doar amortizarea anuală a capitalului fix, nu întregul capital fix (KF)."
+    },
+    {
+      "id": "C4_T17",
+      "capitol": 4,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Veniturile fundamentale încasate de posesorii factorilor de producție, ca recompensă pentru contribuția adusă la desfășurarea activității economice, sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar salariul și profitul",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Salariul, renta, profitul și dobânda",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Amortizarea și rata marginală de substituire",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar dobânda și renta",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul precizează explicit că, în economia de piață, veniturile fundamentale ale posesorilor factorilor de producție, încasate ca recompensă pentru contribuția lor, sunt: salariul (pentru muncă), renta (pentru natură/pământ), profitul (pentru capital/întreprinzător) și dobânda (pentru capitalul financiar). Prin urmare, răspunsul corect este: Salariul, renta, profitul și dobânda."
+    },
+    {
+      "id": "C4_T18",
+      "capitol": 4,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Combinarea factorilor de producție reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Operațiunea tehnico-economică de unire, sub aspect cantitativ, calitativ și structural, a factorilor de producție, necesară în orice activitate economică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Doar calculul productivității marginale a unui factor de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Uzura fizică și morală a capitalului fix",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Înlocuirea totală a unui factor de producție cu altul",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Combinarea factorilor de producție este atributul specific întreprinzătorului: operațiunea tehnico-economică de unire cantitativă, calitativă și structurală a factorilor de producție, prezentă în orice activitate economică, și care are o latură tehnică și una economică. Prin urmare, răspunsul corect este: Operațiunea tehnico-economică de unire, sub aspect cantitativ, calitativ și structural, a factorilor de producție, necesară în orice activitate economică."
+    },
+    {
+      "id": "C4_T19",
+      "capitol": 4,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Substituirea factorilor de producție se referă la:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Unirea sub aspect cantitativ și calitativ a tuturor factorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Recuperarea treptată a valorii capitalului fix",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Deprecierea capitalului fix datorită folosirii în procesul de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Înlocuirea totală sau parțială a unui factor de producție cu unul sau mai mulți alți factori, astfel încât producția să rămână aceeași sau să crească",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Substituirea este operațiunea pe care se bazează combinarea factorilor de producție: înlocuirea totală sau parțială a unui factor cu unul sau mai mulți alți factori, în așa fel încât producția obținută să rămână cel puțin aceeași sau chiar să crească. Prin urmare, răspunsul corect este: Înlocuirea totală sau parțială a unui factor de producție cu unul sau mai mulți alți factori, astfel încât producția să rămână aceeași sau să crească."
+    },
+    {
+      "id": "C4_T20",
+      "capitol": 4,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata marginală de substituție (Rms) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sporul producției determinat de creșterea cu o unitate a unui factor de producție, ceilalți factori rămânând constanți",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Timpul necesar recuperării integrale a valorii capitalului fix",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cantitatea suplimentară dintr-un factor de producție necesară pentru a compensa reducerea cu o unitate a altui factor de producție, astfel încât producția să rămână cel puțin aceeași",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Raportul dintre capitalul fix și capitalul circulant al unei firme",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Rata marginală de substituție nu trebuie confundată cu productivitatea marginală (care măsoară sporul de producție al unui singur factor): ea reflectă cantitatea suplimentară necesară dintr-un factor de producție pentru a compensa reducerea cu o unitate a altui factor, astfel încât producția să rămână cel puțin aceeași. Prin urmare, răspunsul corect este: Cantitatea suplimentară dintr-un factor de producție necesară pentru a compensa reducerea cu o unitate a altui factor de producție, astfel încât producția să rămână cel puțin aceeași."
+    },
+    {
+      "id": "C4_E01",
+      "capitol": 4,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Mijloacele de producție utilizate de o firmă sunt în valoare de 200 mil. u.m., deprecierea anuală a capitalului fix reprezintă 10%, iar capitalul circulant consumat este de 110 mil. u.m. Capitalul tehnic consumat (K.cons.) într-un an este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "90 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "119 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "9 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "200 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "KF = KT – KC = 200 – 110 = 90 mil. u.m. A = 10% × KF = 9 mil. u.m. ⇒ K.cons. = KC + A = 110 + 9 = 119 mil. u.m."
+    },
+    {
+      "id": "C4_E02",
+      "capitol": 4,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Capitalul circulant utilizat de o firmă = 160 mil. u.m. și el reprezintă 40% din capitalul real (tehnic), iar capitalul fix se amortizează în 8 ani. Rata anuală a amortizării (RA) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "8%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "40%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "12,5%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "KC = 40%KT = 160 mil. → KT = 400 mil., iar KF = 400 – 160 = 240 mil. u.m. → A = 240/8 ani = 30 mil. u.m., iar RA = (30/240) × 100 = (1/8) × 100 = 12,5%."
+    },
+    {
+      "id": "C4_E03",
+      "capitol": 4,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rata anuală a amortizării capitalului fix este 4%. Durata recuperării integrale a capitalului fix (T) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4 ani",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20 ani",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25 ani",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "40 ani",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "RA = (1/T) × 100 = 4% → T = 100/4 = 25 ani."
+    },
+    {
+      "id": "C4_E04",
+      "capitol": 4,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea amortizată a capitalului fix în primii 6 ani este de 360 mil. u.m., în condițiile unei rate anuale de amortizare a capitalului fix de 5%, iar valoarea materiilor prime și materialelor consumate (KC) este de 700 mil. u.m. Capitalul tehnic utilizat (KT) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "700 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.900 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "2.500 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1.200 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "A(6 ani) = (6 ani × 5%) KF = 360 mil. u.m. → KF = 360/0,30 = 1.200 mil. u.m. → KT = KF + KC = 1.200 + 700 = 1.900 mil. u.m."
+    },
+    {
+      "id": "C4_E05",
+      "capitol": 4,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă anual amortizarea capitalului fix, achiziționat la prețul de 800 mil. u.m., este de 40 mil. u.m., timpul de amortizare integrală a valorii de inventar a capitalului fix (T) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20 ani",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "10 ani",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "32 ani",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "40 ani",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "T = KF/A = 800/40 = 20 ani."
+    },
+    {
+      "id": "C4_E06",
+      "capitol": 4,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "După 5 ani de funcționare, valoarea capitalului fix rămasă de recuperat este de 400 mil. u.m., iar rata amortizării este 4%. Amortizarea anuală a capitalului fix (A) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "100 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "80 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "5 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "În 5 ani s-a recuperat (5% × 5 ani) KF = 20%KF → KF nerecuperat = 400 mil. = 80%KF → KF = 500 mil. u.m., iar RA = 4% = (A/500 mil.) × 100 → A = 20 mil. u.m."
+    },
+    {
+      "id": "C4_E07",
+      "capitol": 4,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă termenul de amortizare a capitalului fix este de 25 ani, atunci rata anuală a amortizării (RA) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,5%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "40%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "RA = (1/T) × 100 = (1/25) × 100 = 4%."
+    },
+    {
+      "id": "C4_E08",
+      "capitol": 4,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea capitalului fix (KF) amortizat în primii 5 ani este de 30 mil. u.m., iar valoarea rămasă de recuperat este de 18 mil. u.m. Timpul de recuperare a prețului de achiziție a KF (T) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5 ani",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 ani",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "8 ani",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "48 ani",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "KF = 30 mil. + 18 mil. = 48 mil. u.m., iar A/an = 30 mil./5 ani = 6 mil. u.m. → T = KF/A = 48/6 = 8 ani."
+    },
+    {
+      "id": "C4_E09",
+      "capitol": 4,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "KF = 360 mil. u.m. și reprezintă 60% din valoarea mijloacelor de producție consumate (K.cons.) de o firmă, iar timpul de amortizare (T) = 6 ani. Capitalul circulant (KC) și capitalul total utilizat (KT), în mil. u.m., sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "600 și 900",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "60 și 900",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "540 și 360",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "540 și 900",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "KF = 60%K.cons. = 360 mil. → K.cons. = 600 mil. = A + KC, iar A = 360 mil./6 ani = 60 mil. u.m. → KC = 600 mil. – 60 mil. = 540 mil. u.m. ⇒ KT = 360 mil. + 540 mil. = 900 mil. u.m."
+    },
+    {
+      "id": "C4_E10",
+      "capitol": 4,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă utilizează un capital real de 400 u.m., din care capital circulant 10%, iar capitalul fix se amortizează anual 5%, ciclul de producție fiind de 6 luni. Capitalul real consumat (K.cons.) într-un an este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "98 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "80 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "18 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "116 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Sunt 2 cicluri de producție/an (6 luni fiecare) → KC/an = 2 × 10% × 400 = 80 u.m., KF = 90% × 400 = 360 u.m., A/an = 5% × 360 = 18 u.m. → K.cons./an = 80 + 18 = 98 u.m."
+    },
+    {
+      "id": "C4_E11",
+      "capitol": 4,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Productivitatea marginală a F.P substituit este de 50 buc., iar a celui care-l substituie este de 125 buc. Rata marginală de substituire (Rms) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2,5",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "0,5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1,25",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,4",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rms = W.mg.(substituit)/W.mg.(substituent) = 50/125 = 0,4."
+    },
+    {
+      "id": "C4_E12",
+      "capitol": 4,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rata marginală de substituție a capitalului fix prin muncă este de 5. Raportul dintre productivitatea marginală a muncii și productivitatea marginală a capitalului fix [W.mg.(M)/W.mg.(KF)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,5",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,2",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rms = W.mg.(KF)/W.mg.(M) = 5 ⇒ W.mg.(M)/W.mg.(KF) = 1/5 = 0,2."
+    },
+    {
+      "id": "C4_E13",
+      "capitol": 4,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rms = 6, iar productivitatea marginală a F.P. care substituie (x) este 12. Productivitatea F.P. substituit [W.mg.(y)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "72",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "12",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,5",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Rms = W.mg.(y)/W.mg.(x) = 6 → W.mg.(y) = 6 × 12 = 72."
+    },
+    {
+      "id": "C4_E14",
+      "capitol": 4,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Q0 = 1.200 buc. și se reduce cu 10% în perioada următoare datorită disponibilizării unui muncitor. Productivitatea marginală a F.P.(K) care substituie munca disponibilizată este de 40 buc. Rata marginală de substituție (Rms) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "5",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "ΔQ = 10% × 1.200 = 120 buc. (pierdute prin disponibilizarea 1 muncitor) → Rms = W.mg.(L)/W.mg.(K) = (ΔQ/–ΔL) : W.mg.(K) = (120/1) : 40 = 3."
+    },
+    {
+      "id": "C4_E15",
+      "capitol": 4,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rata marginală de substituire a muncii prin capital fix este 3. Pentru a obține aceeași producție, deși numărul de salariați s-a redus cu 5, firma va suplimenta numărul de utilaje (ΔKF) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "8",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Rms = ΔKF/ΔL = 3 → ΔKF = 3 × 5 = 15 utilaje suplimentare."
+    },
+    {
+      "id": "C4_E16",
+      "capitol": 4,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Capitalul tehnic utilizat în primul an de funcționare este cu 400 mil. u.m. mai mare decât cel consumat în anul respectiv. Capitalul circulant este cu 20% mai mic decât capitalul fix, care se amortizează în 5 ani. Capitalul real consumat (K.cons.) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "400 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "100 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "600 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "500 mil. u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "KT – K.cons. = 400 = (KF+KC) – (A+KC) = KF–A = KF – KF/5 → KF × (4/5) = 400 → KF = 500 mil. u.m. → A = 500/5 = 100 mil. u.m., iar KC = 80% × 500 = 400 mil. u.m. ⇒ K.cons. = A + KC = 100 + 400 = 500 mil. u.m."
+    },
+    {
+      "id": "C4_E17",
+      "capitol": 4,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "KT = 600.000 u.m., din care KC = 180.000 u.m., iar K.cons. = 380.000 u.m./an. Valoarea KF nerecuperată după primul an (KF nerec.) și durata recuperării integrale a valorii KF (T) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,22 mil. u.m. și 1,5 ani",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,1 mil. u.m. și 0,22 ani",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,42 mil. u.m. și 2,1 ani",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,22 mil. u.m. și 2,1 ani",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "KF = 600.000 – 180.000 = 420.000 u.m., A = 380.000 – 180.000 = 200.000 u.m. → KF nerecuperat = KF – A = 220.000 u.m. = 0,22 mil. u.m. ⇒ T = KF/A = 420.000/200.000 = 2,1 ani."
+    },
+    {
+      "id": "C4_E18",
+      "capitol": 4,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La realizarea a 1.500 de produse, o firmă utilizează un capital tehnic de 10 mil. u.m., din care 25% este capital circulant. Dacă K.cons., în primul an, este de 7 mil. u.m., atunci amortizarea medie (A/Q) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3.000 u.m./buc.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "2.500 u.m./buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4.500 u.m./buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "7.000 u.m./buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "KC = 25% × 10 mil. = 2,5 mil. u.m., A = K.cons. – KC = 7 mil. – 2,5 mil. = 4,5 mil. u.m. → A/Q = 4,5 mil./1.500 buc. = 3.000 u.m./buc."
+    },
+    {
+      "id": "C4_E19",
+      "capitol": 4,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "K.cons/an = 1.000 u.m., iar capitalul circulant reprezintă de 1,5 ori valoarea capitalului fix, a cărui depreciere anuală este de 250 u.m. Rata amortizării (RA) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "75%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "50%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "33,33%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "K.cons. = 1.000 = A + KC = 250 + KC → KC = 750 u.m. = 1,5 × KF → KF = 750/1,5 = 500 u.m. ⇒ RA = (A/KF) × 100 = (250/500) × 100 = 50%."
+    },
+    {
+      "id": "C4_E20",
+      "capitol": 4,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "KC = 90 mil. u.m., reprezentând 30% din valoarea capitalului tehnic utilizat, iar prețul de achiziționare a capitalului fix se recuperează în 8 ani. Rata amortizării (RA) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "12,5%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "10%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "8%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "KT = 90 mil./30% = 300 mil. u.m.→ KF = 300 mil. – 90 mil. = 210 mil. u.m. ⇒ RA = (1/T) × 100 = (1/8) × 100 = 12,5%."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

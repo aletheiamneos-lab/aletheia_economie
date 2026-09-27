@@ -1,0 +1,381 @@
+{
+  "capitol": {
+    "numar": 7,
+    "titlu": "Profitul și renta",
+    "obiective": [
+      "Să utilizezi corect conceptul de profit și să-i înțelegi funcțiile",
+      "Să calculezi profitul brut, net, unitar și marginal",
+      "Să distingi profitul normal de cel economic și de supraprofit",
+      "Să calculezi ratele profitului și să identifici factorii care îl influențează",
+      "Să înțelegi conceptul de rentă economică și rentă funciară diferențiată"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "esenta-profit",
+      "nr": "1",
+      "titlu": "Esența și funcțiile profitului",
+      "text": [
+        "Profitul reprezintă câștigul sau avantajul în formă bănească obținut de unitățile economice ce desfășoară eficient activități cu scop lucrativ - generic, excedentul veniturilor încasate prin vânzarea bunurilor economice, peste costurile efectuate.",
+        "Profitul poate fi privit din mai multe unghiuri: recompensă pentru riscul asumat de întreprinzător, recompensă pentru abilitatea antreprenorială, venitul factorului de producție capital, principala sursă de motivare a întreprinzătorului și principala sursă de finanțare a activității economice."
+      ],
+      "puncteCheie": [
+        "Maximizarea profitului este un obiectiv major al oricărui întreprinzător",
+        "Stimulează investițiile, eficiența economică, economisirea și dezvoltarea afacerii",
+        "Stimulează concurența dintre agenții economici și dezvoltarea economico-socială generală",
+        "Este sursă principală de autofinanțare a firmei",
+        "Este un mijloc de alocare eficientă a resurselor și de selecție a agenților economici pe piață"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "masurarea-profitului",
+      "nr": "2",
+      "titlu": "Cum se măsoară profitul",
+      "text": [
+        "Profitul se determină ca diferență între încasările (cifra de afaceri) și costul total ocazionat de obținerea producției. Profitul obținut astfel se numește profit brut; după plata impozitului pe profit, rămâne profitul net (admis).",
+        "Profitul adus de fiecare unitate vândută se numește profit unitar (mediu). Profitul marginal reflectă profitul suplimentar încasat prin vânzarea ultimei unități de produs."
+      ],
+      "exemple": [
+        "Cifra de afaceri a firmei \"ABC\" este de 1.000 u.m., costurile totale sunt de 500 u.m., iar impozitul pe profit e 15%. Profitul brut = 1.000 - 500 = 500 u.m. Profitul net = 500 - 0,15 x 500 = 425 u.m."
+      ],
+      "formule": [
+        {
+          "nume": "Cifra de afaceri",
+          "formula": "CA = P x Q"
+        },
+        {
+          "nume": "Profitul brut (total)",
+          "formula": "Pr = CA - CT"
+        },
+        {
+          "nume": "Profitul net",
+          "formula": "Prnet = Pr - X% x Pr"
+        },
+        {
+          "nume": "Profitul unitar (mediu)",
+          "formula": "Pr/u.p. = P - CMT = Pr.T/Q"
+        },
+        {
+          "nume": "Profitul marginal",
+          "formula": "Pr.mg = ΔPr.T/ΔQ = Vmg - Cmg"
+        }
+      ],
+      "calculator": "profitBrutNet"
+    },
+    {
+      "id": "formele-profitului",
+      "nr": "3",
+      "titlu": "Formele profitului",
+      "text": [
+        "Profitul normal (PrN) reprezintă nivelul minim de profit pe care o firmă trebuie să-l obțină pentru a supraviețui pe piață - de fapt, un cost de oportunitate al capitalului investit (dacă întreprinzătorul nu și-ar fi făcut propria afacere, ar fi obținut acest venit altfel: ca salariat, din dobânzi, din chirii).",
+        "Profitul economic (sau pur, Pre) este excedentul peste profitul normal, obținut ca urmare a riscului asumat - cel mai important pentru întreprinzător, calculat ca diferență între profitul net și profitul normal.",
+        "Supraprofitul (profitul de monopol) depășește profitul economic și apare din conjuncturi favorabile sau din puterea economică de piață a firmei (de ex. un furnizor unic de apă pentru un oraș)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele profitului, după poziția în cifra de afaceri",
+          "categorii": [
+            {
+              "nume": "Profit normal",
+              "definitie": "nivelul minim, echivalent cu costul de oportunitate"
+            },
+            {
+              "nume": "Profit economic (pur)",
+              "definitie": "excedentul peste profitul normal, din asumarea riscului"
+            },
+            {
+              "nume": "Supraprofit (de monopol)",
+              "definitie": "excedentul peste profitul economic, din putere de piață"
+            }
+          ]
+        },
+        {
+          "criteriu": "Formele profitului, după respectarea reglementărilor",
+          "categorii": [
+            {
+              "nume": "Profit legitim",
+              "definitie": "obținut cu respectarea legilor în vigoare"
+            },
+            {
+              "nume": "Profit nelegitim",
+              "definitie": "obținut prin încălcarea lor (ex. muncă \"la negru\")"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Jean investește 50.000 € (dobândă 3%) într-o afacere; anterior era salariat cu 19.000 €/an și închiria apartamentul unde stă acum firma cu 10.000 €/an. Profitul normal = 1.500 + 19.000 + 10.000 = 30.500 €/an - suma minimă pe care Jean trebuie s-o obțină, altfel ar face mai bine să rămână salariat. Dacă firma sa are CA=50.000 €, salarii=10.000 €, cheltuieli materiale=5.000 € și impozit=10%: profit brut=35.000 €, profit net=31.500 €, iar profitul economic = 31.500 - 30.500 = 1.000 €."
+      ],
+      "formule": [
+        {
+          "nume": "Profitul economic",
+          "formula": "Pre = Prnet - PrN"
+        }
+      ],
+      "calculator": "profitNormalEconomic"
+    },
+    {
+      "id": "factori-rate-profit",
+      "nr": "4",
+      "titlu": "Factorii care influențează profitul și ratele profitului",
+      "text": [
+        "Obținerea unui profit cât mai mare nu este un scop în sine, ci și un mijloc prin care firma își consolidează poziția pe piață: o parte din profit - numit profit reinvestit - este folosit pentru dezvoltarea, modernizarea și diversificarea activității.",
+        "Profitul total crește atunci când cresc prețul, producția, viteza de rotație a capitalului și calitatea factorilor de producție utilizați; scade atunci când cresc costul total și durata de rotație a capitalului.",
+        "Ratele profitului (mărimi relative, procentuale) arată cât de eficientă e firma - cu cât sunt mai mari, cu atât firma e mai eficientă."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Factorii care influențează profitul",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Prețul",
+              "definitie": "relație directă - preț mai mare, profit mai mare"
+            },
+            {
+              "nume": "Producția",
+              "definitie": "relație directă - la costuri date, mai multă producție, mai mult profit"
+            },
+            {
+              "nume": "Costul unitar",
+              "definitie": "relație inversă - cost mai mare, profit mai mic"
+            },
+            {
+              "nume": "Viteza de rotație a capitalului",
+              "definitie": "relație directă - mai multe rotații/an, mai mult profit"
+            },
+            {
+              "nume": "Calitatea factorilor de producție",
+              "definitie": "relație directă - echipamente și organizare mai bune, profit mai mare"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Firma \"SIMONA\": capital tehnic K=1.000 u.m. (din care 50% capital fix, amortizat în 5 ani), cheltuieli salariale=100 u.m., preț P=10 u.m., producție Q=100 buc. KF=500, KC=500, A=100, deci Cmat=600 și CT=700 u.m. CA=1.000 u.m., profit=300 u.m. Rata profitului la capital=30%, la costul total=42,85%, la cifra de afaceri=30%."
+      ],
+      "formule": [
+        {
+          "nume": "Rata profitului la cost (rentabilitatea)",
+          "formula": "RPr/CT = (Pr.T/CT) x 100"
+        },
+        {
+          "nume": "Rata profitului la capitalul tehnic",
+          "formula": "RPr/KT = (Pr.T/KT) x 100"
+        },
+        {
+          "nume": "Rata profitului la cifra de afaceri",
+          "formula": "RPr/CA = (Pr.T/CA) x 100"
+        },
+        {
+          "nume": "Pragul de rentabilitate",
+          "formula": "Pr.T = 0  →  CT = VT = CA"
+        }
+      ],
+      "calculator": "rateProfit"
+    },
+    {
+      "id": "renta",
+      "nr": "5",
+      "titlu": "Renta",
+      "text": [
+        "Venitul încasat de proprietarul unei suprafețe de pământ atras în activitatea economică se numește rentă funciară - forma inițială a rentei economice. Ea apare pentru că pământul e un factor de producție limitat, iar oferta lui e foarte puțin sensibilă la preț.",
+        "Renta funciară diferențiată apare din diferența de fertilitate și de poziție dintre suprafețele agricole. Prețul pieței e determinat de terenurile cu cea mai slabă fertilitate; diferența dintre acest preț și costul efectiv al proprietarilor terenurilor mai fertile reprezintă renta lor.",
+        "Renta economică, în sens larg, este venitul obținut de proprietarii unor factori de producție cu calități și randamente deosebite, greu substituibili pe termen scurt, a căror ofertă e inelastică - de exemplu, talentul rar al unui pictor consacrat."
+      ],
+      "exemple": [
+        "Pe 3 terenuri (A, B, C) se cultivă porumb, cu același cost de 500 u.m., dar producții diferite (fertilitate diferită): QA=100t, QB=80t, QC=60t. Costurile medii sunt CTMA=5, CTMB=6,25, CTMC=8,33 u.m./t. Prețul pieței se formează după terenul C, cel mai puțin fertil: 8,33 u.m./t. Proprietarul terenului A obține o rentă de 3,33 u.m./t, iar cel al terenului B, 2,08 u.m./t."
+      ],
+      "formule": [
+        {
+          "nume": "Prețul pământului",
+          "formula": "PP = Rf / d’"
+        }
+      ],
+      "notaLegatura": {
+        "href": "#sect-explorator-renta",
+        "text": "Explorează interactiv renta funciară diferențiată în secțiunea V, mai jos."
+      }
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Printre factorii care influențează invers proporțional profitul enumerăm:",
+      "optiuni": [
+        "prețul de vânzare",
+        "producția",
+        "durata de rotație a capitalului",
+        "încasările firmei"
+      ],
+      "corect": 2,
+      "explicatie": "Cu cât durata unei rotații a capitalului e mai mare, cu atât firma obține profit mai rar - relație inversă. Prețul, producția și încasările au relație directă cu profitul."
+    },
+    {
+      "intrebare": "Profitul NU poate fi considerat:",
+      "optiuni": [
+        "recompensă pentru riscul asumat de întreprinzător",
+        "venitul factorului de producție pământ",
+        "recompensă pentru abilitatea antreprenorială",
+        "venitul factorului de producție capital"
+      ],
+      "corect": 1,
+      "explicatie": "Venitul factorului de producție pământ este renta, nu profitul. Profitul e, în schimb, venitul capitalului și recompensa riscului/abilității antreprenoriale."
+    },
+    {
+      "intrebare": "Cu cât terenul cultivat de un fermier este mai fertil, cu atât:",
+      "optiuni": [
+        "renta funciară va fi mai mare",
+        "renta funciară va fi mai mică",
+        "productivitatea marginală a terenului va fi mai mică",
+        "costul total mediu al producției agricole va fi mai mare"
+      ],
+      "corect": 0,
+      "explicatie": "Un teren mai fertil produce mai mult cu același cost, deci are un CTM mai mic - iar diferența față de prețul pieței (dat de cel mai puțin fertil teren), adică renta, va fi mai mare."
+    },
+    {
+      "intrebare": "Profitul normal:",
+      "optiuni": [
+        "este egal cu costul de oportunitate",
+        "este egal cu profitul economic",
+        "este mai mare decât profitul economic",
+        "este egal cu costul explicit"
+      ],
+      "corect": 0,
+      "explicatie": "Profitul normal reprezintă chiar costul de oportunitate al capitalului investit de întreprinzător - nivelul minim pentru a rămâne pe piață."
+    },
+    {
+      "intrebare": "Pragul de rentabilitate este nivelul producției la care:",
+      "optiuni": [
+        "profitul este maxim",
+        "profitul total este zero",
+        "costul marginal este minim",
+        "prețul este maxim"
+      ],
+      "corect": 1,
+      "explicatie": "La pragul de rentabilitate, VT = CT (sau P = CMT), deci profitul total sau unitar e nul."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Profitul este un venit care nu se impozitează.",
+      "corect": false,
+      "explicatie": "Profitul brut se impozitează - din el rezultă profitul net (Prnet = Pr - impozit% x Pr)."
+    },
+    {
+      "enunt": "Profitul normal este egal cu costul de oportunitate.",
+      "corect": true,
+      "explicatie": "Da - profitul normal reprezintă exact costul de oportunitate al capitalului investit de întreprinzător."
+    },
+    {
+      "enunt": "Viteza de rotație a capitalului influențează direct proporțional profitul.",
+      "corect": true,
+      "explicatie": "Da - cu cât capitalul se rotește mai des (mai multe rotații/an), cu atât firma obține profit mai des, deci mai mult profit total."
+    },
+    {
+      "enunt": "Profitul nu depinde de abilitatea întreprinzătorului.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - profitul e chiar o recompensă pentru abilitatea antreprenorială și inovațiile întreprinzătorului."
+    },
+    {
+      "enunt": "Renta economică apare la factori de producție cu ofertă puțin sensibilă la preț (inelastică).",
+      "corect": true,
+      "explicatie": "Da - exact asta descrie renta economică: venitul unor factori cu calități deosebite, greu substituibili, a căror ofertă e inelastică."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Prețul unitar al bunului X este 100 u.m., iar costul unitar reprezintă 20% din preț. Dacă costul unitar crește cu 10% (prețul rămâne constant), cu cât se modifică profitul unitar?",
+      "unitate": "u.m.",
+      "corect": -2,
+      "toleranta": 0.1,
+      "explicatie": "Cost inițial=20 u.m., cost nou=22 u.m. Profit inițial=100-20=80 u.m., profit nou=100-22=78 u.m. Modificare = 78-80 = -2 u.m. (scade cu 2 u.m.)"
+    },
+    {
+      "enunt": "Firma \"MARA\": cifra de afaceri=700 u.m., cheltuielile materiale reprezintă 80% din costul total, cheltuielile salariale=100 u.m., durata de funcționare a capitalului fix=5 ani, amortizarea=100 u.m. Calculați rata profitului față de capitalul tehnic (RPr/K), în %.",
+      "unitate": "%",
+      "corect": 25,
+      "toleranta": 0.5,
+      "explicatie": "CT = Cs/0,2 = 500 u.m.; Pr = CA-CT = 700-500 = 200 u.m.; KF = A x T = 100 x 5 = 500 u.m.; KC = Cmat-A = 400-100 = 300 u.m.; K = 800 u.m. RPr/K = (200/800) x 100 = 25%."
+    },
+    {
+      "enunt": "Firma \"ABC\": cifra de afaceri=1.000 u.m., costul total=500 u.m., impozitul pe profit=15%. Calculați profitul net.",
+      "unitate": "u.m.",
+      "corect": 425,
+      "toleranta": 1,
+      "explicatie": "Profit brut = CA-CT = 1.000-500 = 500 u.m. Profit net = 500 - 0,15 x 500 = 425 u.m."
+    },
+    {
+      "enunt": "Un întreprinzător investește un capital de 50.000 €, la o rată a dobânzii de 3%. Anterior era salariat cu 19.000 €/an și închiria apartamentul unde își are acum afacerea cu 10.000 €/an. Calculați profitul normal (PrN), în €/an.",
+      "unitate": "€/an",
+      "corect": 30500,
+      "toleranta": 10,
+      "explicatie": "PrN = dobânda pierdută (50.000 x 3% = 1.500) + salariul pierdut (19.000) + chiria pierdută (10.000) = 30.500 €/an."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Profit normal"
+        },
+        {
+          "id": "t2",
+          "text": "Profit economic"
+        },
+        {
+          "id": "t3",
+          "text": "Renta funciară"
+        },
+        {
+          "id": "t4",
+          "text": "Pragul de rentabilitate"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Nivelul minim de profit, echivalent cu costul de oportunitate al capitalului"
+        },
+        {
+          "id": "o_b",
+          "text": "Excedentul de profit peste profitul normal, din asumarea riscului"
+        },
+        {
+          "id": "o_c",
+          "text": "Venitul proprietarului unei suprafețe de pământ atrase în activitatea economică"
+        },
+        {
+          "id": "o_d",
+          "text": "Nivelul producției la care profitul total este zero"
+        },
+        {
+          "id": "o_e",
+          "text": "Excedentul de profit peste profitul economic, din puterea de piață"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, supraprofitul (profitul de monopol) - un concept diferit, care nu apare în coloana din stânga."
+    }
+  ]
+}

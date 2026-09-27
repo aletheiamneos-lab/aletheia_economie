@@ -1,0 +1,320 @@
+{
+  "capitol": {
+    "numar": 11,
+    "titlu": "Inflația",
+    "obiective": [
+      "Să explici ce este inflația și cum se măsoară",
+      "Să calculezi indicele prețurilor, rata inflației și venitul real",
+      "Să distingi inflația prin cerere de inflația prin ofertă",
+      "Să distingi între efectele pozitive și cele negative ale inflației",
+      "Să înțelegi măsurile de protecție socială și politicile antiinflaționiste"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "ce-este-inflatia",
+      "nr": "1",
+      "titlu": "Ce este inflația și cum se măsoară",
+      "text": [
+        "Inflația este un dezechilibru macroeconomic caracterizat printr-o masă monetară aflată în circulație mai mare decât cantitatea de bunuri și servicii de pe piață (o ofertă monetară prea mare în raport cu cererea de monedă). Are două tendințe majore: creșterea generalizată și rapidă a prețurilor, și deprecierea valorii banilor (scăderea puterii lor de cumpărare).",
+        "Pentru a măsura modificarea prețurilor, se folosește indicele prețurilor bunurilor de consum (IPC), calculat pe baza unui \"coș de bunuri și servicii\" consumate frecvent. Rata inflației arată exact cu cât cresc prețurile."
+      ],
+      "puncteCheie": [
+        "Este un fenomen negativ, dar în forma moderată e considerat \"un rău necesar\" al creșterii economice - deblochează anumite mecanisme economice, dacă e corect anticipată și controlată",
+        "Este un dezechilibru mondoeconomic (are loc, cu intensități diferite, în toate țările), macroeconomic-structural, monetar (are loc pe piața monetară) și macrosocial (efecte asupra majorității agenților economici)",
+        "Premisa fundamentală: existența unei mase monetare excedentare față de oferta de bunuri economice"
+      ],
+      "exemple": [
+        "Dacă în 2005 nivelul mediu al prețurilor era 50 RON, iar în 2006 devine 60 RON: IPC=(60/50)×100=120%, iar rata inflației=120%-100%=20%. Cu un venit lunar de 600 RON, în 2005 puteai cumpăra 12 bunuri (la 50 RON/bun); în 2006, cu același venit, doar 10 bunuri (600/60). Venitul real Vr=Vn/IPC=600/1,2=500 RON, iar indicele puterii de cumpărare a banilor IPCB=1/IPC=83,33%."
+      ],
+      "formule": [
+        {
+          "nume": "Indicele prețurilor de consum",
+          "formula": "IPC = (P1/P0) x 100"
+        },
+        {
+          "nume": "Rata inflației",
+          "formula": "r.i = IPC - 100%"
+        },
+        {
+          "nume": "Venitul real (puterea de cumpărare)",
+          "formula": "Vr = Vn / IPC"
+        },
+        {
+          "nume": "Indicele puterii de cumpărare a banilor",
+          "formula": "IPCB = 1 / IPC"
+        }
+      ],
+      "calculator": "inflatie"
+    },
+    {
+      "id": "cauze-forme",
+      "nr": "2",
+      "titlu": "Cauzele și formele inflației",
+      "text": [
+        "Inflația prin cerere este determinată de creșterea cererii globale de bunuri și servicii, în condițiile în care oferta nu se modifică sau crește mai lent - unitățile economice doresc să cumpere mai mult decât poate produce economia. Principalele cauze: creșterea cheltuielilor de consum (venituri mai mari), creșterea cheltuielilor publice (deficit bugetar), creșterea excesivă a creditului, emisiunea monetară fără acoperire.",
+        "Inflația prin ofertă (costuri) este determinată de creșterea costurilor de producție și reducerea ofertei de bunuri și servicii - firmele produc mai puțin cu aceleași resurse, dacă cheltuiesc mai mult pentru fiecare bun. Cauze: creșterea salariilor fără acoperire în productivitate, creșterea prețurilor factorilor de producție importați (inflație importată), \"șocul ofertei\" (ex. energie electrică), creșterea fiscalității.",
+        "Spirala inflaționistă apare când cele două forme (prin cerere și prin ofertă) se întrepătrund, chiar dacă procesul e determinat inițial de o singură cauză. Atunci când indicele general al prețurilor (IGP) trebuie calculat pentru un întreg \"coș de bunuri\" (nu pentru un singur preț), se folosește o medie ponderată a indicilor de preț ai fiecărui bun, cu ponderea lui în consumul total.",
+        "Nu orice mișcare a prețurilor e inflație: deflația reprezintă reducerea nivelului general al prețurilor (rata inflației negativă), iar dezinflația reprezintă scăderea ratei inflației, care rămâne însă pozitivă - prețurile tot cresc, dar mai încet decât înainte."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele inflației, după intensitatea manifestării",
+          "categorii": [
+            {
+              "nume": "Moderată",
+              "definitie": "rata inflației sub 10%, cu relativă stabilitate a banilor și încredere în moneda națională"
+            },
+            {
+              "nume": "Galopantă",
+              "definitie": "rata inflației cu 2-3 cifre, care destabilizează economia"
+            },
+            {
+              "nume": "Hiperinflație",
+              "definitie": "rata inflației de 4-5 cifre sau mai mult, care distruge bogăția unei țări"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Coșul de bunuri al unei familii conține 3 bunuri, cu următorii indici de preț și ponderi în consum: A (Ip=110%, Z=70%), B (Ip=125%, Z=5%), C (Ip=90%, Z=25%). IGP = 110×0,70 + 125×0,05 + 90×0,25 = 77+6,25+22,5 = 105,75%, deci rata inflației e r.i.=5,75% - mult mai mică decât ar părea dacă te-ai uita doar la bunul B (al cărui preț a crescut cel mai mult), tocmai pentru că ponderea lui în consum e mică."
+      ],
+      "formule": [
+        {
+          "nume": "Indicele general al prețurilor (coș ponderat)",
+          "formula": "IGP = Σ(Ip x Z), unde Z = ponderea bunului în consumul total"
+        }
+      ],
+      "notaLegatura": {
+        "href": "#sect-explorator-inflatie",
+        "text": "Explorează interactiv graficele inflației prin cerere și prin ofertă în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "efectele-inflatiei",
+      "nr": "3",
+      "titlu": "Efectele inflației",
+      "text": [
+        "Deși efectele negative sunt preponderente, inflația moderată poate avea și efecte pozitive - motiv pentru care e privită, adesea, ca \"un rău necesar\" al creșterii economice."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Efectele inflației",
+          "categorii": [
+            {
+              "nume": "Negative (preponderente)",
+              "definitie": "deprecierea banilor, descurajarea economisirii și a investițiilor productive, accentuarea deficitului bugetar - dezavantajează cumpărătorii, creditorii, pensionarii, persoanele cu venituri mici și fixe"
+            },
+            {
+              "nume": "Pozitive",
+              "definitie": "stimulează consumul și exporturile, elimină firmele necompetitive - avantajează vânzătorii, debitorii, persoanele cu venituri mari și ajustabile"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "masuri-combatere",
+      "nr": "4",
+      "titlu": "Măsurile de combatere a efectelor negative ale inflației",
+      "text": [
+        "Statul și partenerii sociali pot acționa prin două tipuri principale de măsuri, complementare: unele care protejează populația de efectele deja resimțite, altele care atacă direct cauzele inflației."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Măsurile de combatere a inflației",
+          "categorii": [
+            {
+              "nume": "De protecție socială",
+              "definitie": "indexarea salariilor și a altor venituri (cea mai importantă), creșterea dobânzilor la economii, compensații pentru salariați/pensionari, subvenționarea prețurilor unor produse de bază"
+            },
+            {
+              "nume": "Antiinflaționiste - de reducere a masei monetare",
+              "definitie": "creșterea ratei dobânzii la credite, echilibrarea bugetului de stat, încetinirea emisiunii monetare, creșterea fiscalității, controlul (înghețarea) prețurilor și salariilor"
+            },
+            {
+              "nume": "Antiinflaționiste - de sporire a ofertei",
+              "definitie": "reducerea fiscalității asupra firmelor, facilități pentru producători, creșterea productivității factorilor de producție"
+            }
+          ],
+          "orientare": "vertical"
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Inflația prin ofertă este determinată de:",
+      "optiuni": [
+        "creșterea cheltuielilor statului pentru infrastructură",
+        "creșterea prețurilor la factorii de producție importați",
+        "scăderea impozitului pe salariu",
+        "scăderea impozitului pe profit"
+      ],
+      "corect": 1,
+      "explicatie": "Creșterea prețurilor factorilor de producție importați (inflație importată) crește costurile de producție, reducând oferta - exact mecanismul inflației prin ofertă. Celelalte 3 variante ar stimula, dacă ceva, cererea."
+    },
+    {
+      "intrebare": "Efectele negative ale inflației sunt resimțite, în principal, de:",
+      "optiuni": [
+        "debitori, pentru că banii se devalorizează",
+        "creditori, pentru că la scadență primesc bani cu putere de cumpărare mai mică",
+        "creditori și debitori în aceeași proporție",
+        "debitori, pentru că trebuie să ramburseze mai mult"
+      ],
+      "corect": 1,
+      "explicatie": "Creditorii sunt dezavantajați: banii primiți înapoi, la scadență, au o putere de cumpărare mai mică decât atunci când au acordat împrumutul. Debitorii sunt, dimpotrivă, avantajați."
+    },
+    {
+      "intrebare": "Care dintre următorii factori determină inflația prin cerere:",
+      "optiuni": [
+        "creșterea salariilor fără acoperire în productivitate",
+        "creșterea impozitării",
+        "creșterea excesivă a creditului",
+        "diminuarea cheltuielilor bugetare"
+      ],
+      "corect": 2,
+      "explicatie": "Creșterea excesivă a creditului sporește cererea de bunuri fără o creștere corespunzătoare a ofertei - un mecanism clasic al inflației prin cerere."
+    },
+    {
+      "intrebare": "Rata inflației se calculează astfel:",
+      "optiuni": [
+        "r.i = IPC + 100%",
+        "r.i = IPC - 100%",
+        "r.i = IPC x 100%",
+        "r.i = 100% - IPC"
+      ],
+      "corect": 1,
+      "explicatie": "r.i = IPC - 100% (sau IGP - 100%) - arată cu cât au crescut prețurile față de perioada de referință."
+    },
+    {
+      "intrebare": "Hiperinflația se caracterizează prin:",
+      "optiuni": [
+        "o rată a inflației sub 10%",
+        "o rată a inflației peste 10%, dar sub 100%",
+        "o rată a inflației de 4-5 cifre sau mai mult",
+        "absența oricărei creșteri de preț"
+      ],
+      "corect": 2,
+      "explicatie": "Hiperinflația e forma extremă, cu o rată a inflației de 4-5 cifre (sute sau mii la sută) sau chiar mai mult - spre deosebire de inflația moderată (sub 10%) sau galopantă (peste 10%)."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Orice creștere a prețurilor unor bunuri de consum reprezintă inflație.",
+      "corect": false,
+      "explicatie": "Nu - inflația înseamnă o creștere GENERALIZATĂ a prețurilor, nu creșterea prețului unui bun izolat (care poate avea cauze proprii, ex. o recoltă slabă)."
+    },
+    {
+      "enunt": "Creșterea salariilor nu conduce niciodată la inflație.",
+      "corect": false,
+      "explicatie": "Dacă salariile cresc fără acoperire în sporirea productivității muncii, costurile de producție cresc, ceea ce poate declanșa inflație prin ofertă."
+    },
+    {
+      "enunt": "Inflația dezavantajează creditorii.",
+      "corect": true,
+      "explicatie": "Da - creditorii primesc, la scadență, o sumă cu putere de cumpărare mai mică decât cea acordată inițial."
+    },
+    {
+      "enunt": "Inflația prin ofertă este cauzată de creșterea prețurilor factorilor de producție.",
+      "corect": true,
+      "explicatie": "Da - printre cauzele inflației prin ofertă (costuri) se numără creșterea prețurilor factorilor de producție importați și a celorlalți factori (\"șoc al ofertei\")."
+    },
+    {
+      "enunt": "Inflația moderată, corect anticipată și controlată, poate avea și efecte pozitive asupra economiei.",
+      "corect": true,
+      "explicatie": "Da - inflația moderată e considerată \"un rău necesar\" al creșterii economice, deblocând anumite mecanisme economice."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Dacă în intervalul t1 față de t0 prețurile au crescut de 3 ori, iar în t2 față de t1, de 2 ori, care este rata inflației (%) în perioada t2 față de t0?",
+      "unitate": "%",
+      "corect": 500,
+      "toleranta": 2,
+      "explicatie": "Indicele total = 3 x 2 = 6 (600%). Rata inflației = 600% - 100% = 500%."
+    },
+    {
+      "enunt": "Salariul minim pe economie a fost 320 RON. Dacă prețurile au crescut cu 10%, care este valoarea reală a acestui salariu, la noul nivel al prețurilor?",
+      "unitate": "RON",
+      "corect": 290.9,
+      "toleranta": 1,
+      "explicatie": "Vr = Vn/IPC = 320/1,10 = 290,9 RON."
+    },
+    {
+      "enunt": "Coșul de bunuri al unei familii conține 3 bunuri: A (indice de preț 110%, pondere în consum 70%), B (indice de preț 125%, pondere 5%) și C (indice de preț 90%, pondere 25%). Calculați rata inflației (%), folosind indicele general al prețurilor ponderat.",
+      "unitate": "%",
+      "corect": 5.75,
+      "toleranta": 0.2,
+      "explicatie": "IGP = 110x0,70 + 125x0,05 + 90x0,25 = 77+6,25+22,5 = 105,75%. Rata inflației = 105,75% - 100% = 5,75%."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Inflația prin cerere"
+        },
+        {
+          "id": "t2",
+          "text": "Inflația prin ofertă"
+        },
+        {
+          "id": "t3",
+          "text": "Rata inflației"
+        },
+        {
+          "id": "t4",
+          "text": "Puterea de cumpărare a banilor"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Determinată de creșterea cererii globale, în condițiile în care oferta nu ține pasul"
+        },
+        {
+          "id": "o_b",
+          "text": "Determinată de creșterea costurilor de producție și reducerea ofertei"
+        },
+        {
+          "id": "o_c",
+          "text": "IPC - 100%"
+        },
+        {
+          "id": "o_d",
+          "text": "Cantitatea de bunuri ce poate fi cumpărată cu o unitate monetară"
+        },
+        {
+          "id": "o_e",
+          "text": "Suma de bani plătită pentru folosirea unui împrumut"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, dobânda - un concept diferit, care nu apare în coloana din stânga."
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "capitol": {
+    "numar": 2,
+    "titlu": "Economia de piață și proprietatea",
+    "obiective": [
+      "Să apreciezi dacă economia românească este o economie de piață funcțională",
+      "Să analizezi formele de organizare și funcționare a economiei",
+      "Să clasifici agenții economici după sectorul instituțional din care fac parte",
+      "Să înțelegi ce este proprietatea, care sunt atributele și formele sale",
+      "Să explici ce înseamnă libera inițiativă"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "activitate-economica",
+      "nr": "1",
+      "titlu": "Activitatea economică",
+      "text": [
+        "Activitatea economică reprezintă ansamblul acțiunilor întreprinse de agenții economici pentru a obține bunuri materiale și servicii, cu resurse economice limitate, în scopul satisfacerii nevoilor umane nelimitate numeric. Ea trebuie subordonată principiului raționalității și eficienței economice."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Fazele activității economice",
+          "categorii": [
+            {
+              "nume": "Producție",
+              "definitie": "transformarea resurselor în bunuri și servicii utile"
+            },
+            {
+              "nume": "Repartiție",
+              "definitie": "distribuirea rezultatelor producției, sub formă de venituri, către cei care au participat la obținerea lor"
+            },
+            {
+              "nume": "Schimb",
+              "definitie": "circulația bunurilor și serviciilor de la producători la consumatori, de regulă prin vânzare-cumpărare"
+            },
+            {
+              "nume": "Consum",
+              "definitie": "utilizarea bunurilor și serviciilor pentru satisfacerea directă a nevoilor"
+            }
+          ]
+        },
+        {
+          "criteriu": "Nivelele organizatorice ale economiei",
+          "categorii": [
+            {
+              "nume": "Microeconomia",
+              "definitie": "nivelul de firmă, de producător sau consumator"
+            },
+            {
+              "nume": "Mezoeconomia",
+              "definitie": "nivelul de ramură, subramură, unități teritorial-administrative"
+            },
+            {
+              "nume": "Macroeconomia",
+              "definitie": "nivelul economiei naționale"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "forme-economie",
+      "nr": "2",
+      "titlu": "Formele economiei: naturală și de schimb",
+      "text": [
+        "În funcție de accesul oamenilor la bunurile economice, activitatea economică poate lua două forme principale. Economia naturală se bazează pe accesul direct la bunuri, prin autoconsum - fiecare își produce singur ce are nevoie. Economia de schimb (marfară) este forma evoluată, în care accesul la bunuri e, în principal, indirect, prin intermediul schimbului pe piață - bunurile devin mărfuri.",
+        "Trecerea de la economia naturală la economia de schimb a fost posibilă datorită diviziunii muncii (specializarea producătorilor) și autonomiei/independenței producătorilor de a decide asupra bunurilor pe care le produc.",
+        "Economia de schimb, la rândul ei, a îmbrăcat de-a lungul istoriei două forme, în funcție de cine decide alocarea resurselor și ce formă de proprietate domină: economia de comandă (planificată-centralizată), în care instituțiile statului decid alocarea resurselor și domină proprietatea publică, și economia de piață, concurențială, a liberei inițiative, în care piața și firmele private decid alocarea resurselor, iar proprietatea privată domină."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele economiei, după accesul la bunuri",
+          "categorii": [
+            {
+              "nume": "Economia naturală",
+              "definitie": "acces direct, prin autoconsum"
+            },
+            {
+              "nume": "Economia de schimb",
+              "definitie": "acces indirect, prin piață - bunurile devin mărfuri"
+            }
+          ]
+        },
+        {
+          "criteriu": "Formele economiei de schimb",
+          "categorii": [
+            {
+              "nume": "Economia de comandă (planificată)",
+              "definitie": "statul decide alocarea resurselor; domină proprietatea publică"
+            },
+            {
+              "nume": "Economia de piață",
+              "definitie": "piața și firmele private decid; domină proprietatea privată"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Faptul că îți faci singur ordine în dulap, fără să angajezi pe cineva pentru asta, e un exemplu de autoconsum (economie naturală) - chiar dacă trăiești, în rest, într-o economie de piață. Atenție: economia de piață nu e sinonimă cu economia de schimb - economia de schimb e principala ei componentă, dar economia de piață include și proprietatea privată, concurența, prețurile libere etc."
+      ],
+      "formule": []
+    },
+    {
+      "id": "economia-de-piata",
+      "nr": "3",
+      "titlu": "Economia de piață",
+      "text": [
+        "Economia de piață reprezintă acel tip de economie în care alocarea resurselor se face, în principal, prin mecanismele pieței - prețul și concurența."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Dominația proprietății private",
+          "descriere": "în condițiile pluralismului formelor de proprietate"
+        },
+        {
+          "termen": "Formarea liberă a prețurilor",
+          "descriere": "prin confruntarea cererii cu oferta"
+        },
+        {
+          "termen": "Libertatea de decizie și de acțiune",
+          "descriere": "a agenților economici, în limitele legii"
+        },
+        {
+          "termen": "Relații economice concurențiale",
+          "descriere": "între agenții economici, pe piață"
+        },
+        {
+          "termen": "Pluralismul centrelor de decizie economică",
+          "descriere": "deciziile se iau descentralizat, la nivelul multor unități economice individuale"
+        },
+        {
+          "termen": "Finanțarea economiei",
+          "descriere": "printr-un sistem bancar-financiar complex, modern"
+        },
+        {
+          "termen": "Intervenția limitată a statului democratic",
+          "descriere": "prin legislație (ex. legi antitrust), furnizare de bunuri publice, protecție socială și programe de stabilizare economică"
+        },
+        {
+          "termen": "Scopul principal al participanților",
+          "descriere": "maximizarea profitului pentru producători/vânzători, maximizarea satisfacției pentru cumpărători/consumatori"
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "economie-functionala",
+      "nr": "4",
+      "titlu": "Economia de piață funcțională",
+      "text": [
+        "Constituția României afirmă că țara noastră este o economie de piață, iar Raportul din 2004 privind aderarea la Uniunea Europeană a confirmat că economia românească este o economie de piață funcțională. O economie de piață viabilă (funcțională) trebuie să întrunească, simultan, mai multe condiții."
+      ],
+      "puncteCheie": [
+        "Prețuri și schimburi libere cu străinătatea",
+        "Existența unui cadru juridic adecvat și efectiv aplicat",
+        "Stabilitate macroeconomică",
+        "Consensul partenerilor sociali (guvern, sindicate, patronat) asupra politicii macroeconomice",
+        "Existența unui sector financiar, bancar și nonbancar bine dezvoltat",
+        "Absența obstacolelor semnificative la intrarea, respectiv ieșirea de pe piață"
+      ],
+      "exemple": [
+        "În 1993, la Copenhaga, șefii guvernelor europene au stabilit criteriile de aderare la UE pentru statele foste comuniste - printre ele, tocmai existența unei economii de piață funcționale, alături de instituții democratice stabile și capacitatea de a face față concurenței din interiorul Uniunii Europene."
+      ],
+      "formule": [],
+      "diagrama": "checklistFunctionala"
+    },
+    {
+      "id": "agenti-economici",
+      "nr": "5",
+      "titlu": "Agenții economici",
+      "text": [
+        "Agenții economici (unitățile economice sau instituționale) sunt persoane fizice și/sau juridice care îndeplinesc funcții bine determinate în activitatea economică și dispun de o anumită autonomie decizională. Totalitatea unităților cu un comportament analog - aceeași funcție economică principală și resurse principale - formează un sector instituțional.",
+        "Între agenții economici dintr-o țară au loc fluxuri economice - reale, de bunuri și servicii, și monetare, de venituri și cheltuieli. De exemplu, când cumperi pâine, iau naștere două fluxuri: unul real (pâinea, care trece la tine) și unul monetar (banii, care trec la vânzător). Totalitatea acestor fluxuri, în interdependența lor, formează circuitul economic."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Sectoarele instituționale (tipurile de agenți economici)",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Societăți comerciale nefinanciare",
+              "definitie": "produc bunuri și servicii nefinanciare, destinate pieței (ex. Romtelecom)"
+            },
+            {
+              "nume": "Instituții financiare",
+              "definitie": "prestează servicii financiare (bănci, burse) - ex. Banca Comercială Română"
+            },
+            {
+              "nume": "Administrații publice",
+              "definitie": "prestează servicii nemarfare și redistribuie venituri (statul, primăriile, armata)"
+            },
+            {
+              "nume": "Administrații private",
+              "definitie": "prestează servicii nemarfare pentru grupuri de populație (ex. Crucea Roșie)"
+            },
+            {
+              "nume": "Societăți de asigurare",
+              "definitie": "transformă riscurile individuale în riscuri colective (ex. Asirom)"
+            },
+            {
+              "nume": "Menaje (gospodării)",
+              "definitie": "consumă, în principal, bunuri și servicii (ex. o familie)"
+            },
+            {
+              "nume": "Exteriorul (restul lumii)",
+              "definitie": "unități nerezidente ce fac operații cu cele rezidente - agent \"fictiv\", fără resurse principale proprii"
+            }
+          ]
+        }
+      ],
+      "diagrama": "circuitEconomic",
+      "exemple": [
+        "Romtelecom e o societate comercială nefinanciară, Banca Comercială Română e o instituție financiară, Asirom e o societate de asigurare, primăria unui oraș e o administrație publică, Crucea Roșie e o administrație privată, familia ta e un menaj, iar o firmă străină care exportă în România face parte din exterior/restul lumii - numit și agent economic \"fictiv\", pentru că nu are o funcție sau resurse principale proprii, specifice."
+      ],
+      "formule": []
+    },
+    {
+      "id": "proprietate",
+      "nr": "6",
+      "titlu": "Proprietatea",
+      "text": [
+        "Proprietatea reprezintă, din punct de vedere economic, un raport social stabilit între agenții economici cu privire la bunurile materiale, spirituale sau de altă natură, existente în societate sau create prin activitatea economică. Obiectul proprietății îl reprezintă bunurile și serviciile; subiecții proprietății sunt agenții economici (indivizi, familii, organizații etc.)."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Dreptul de dispoziție",
+          "descriere": "puterea proprietarului de a decide soarta bunului - să-l vândă, închirieze, doneze etc."
+        },
+        {
+          "termen": "Dreptul de posesiune",
+          "descriere": "dreptul de a stăpâni în fapt, direct și nemijlocit, bunul"
+        },
+        {
+          "termen": "Dreptul de utilizare",
+          "descriere": "posibilitatea de a folosi bunul, personal sau printr-o persoană delegată"
+        },
+        {
+          "termen": "Dreptul de uzufruct",
+          "descriere": "dreptul de a beneficia de veniturile/roadele aduse de bunul respectiv"
+        }
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele de proprietate, după subiectul proprietății",
+          "categorii": [
+            {
+              "nume": "Privată (individuală/asociativă)",
+              "definitie": "aparține unităților economice individuale"
+            },
+            {
+              "nume": "Publică (de stat)",
+              "definitie": "aparține statului sau unităților administrativ-teritoriale"
+            },
+            {
+              "nume": "Mixtă",
+              "definitie": "aparține unei asociații între unități private și stat"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "Dacă îți închiriezi apartamentul, renunți temporar la dreptul de posesiune și utilizare, dar rămâi proprietar de drept (păstrezi dispoziția) și continui să beneficiezi de o parte din uzufruct (chiria). Atributele proprietății pot fi înstrăinate total - prin vânzare, donație, moștenire - sau parțial - prin închiriere, arendare, concesionare."
+      ],
+      "formule": []
+    },
+    {
+      "id": "libera-initiativa",
+      "nr": "7",
+      "titlu": "Libera inițiativă",
+      "text": [
+        "Libera inițiativă, expresia libertății economice bazată pe proprietatea privată, reflectă libertatea agenților economici de a acționa conform propriilor interese, așa cum consideră ei că e mai bine, în limitele impuse de legile juridice în vigoare.",
+        "Libera inițiativă și proprietatea privată sunt o premisă pentru alocarea eficientă a resurselor: fiecare proprietar caută să-și valorifice cât mai bine bunul, iar pentru un producător, asta înseamnă să răspundă cât mai bine nevoilor consumatorilor exprimate pe piață."
+      ],
+      "puncteCheie": [
+        "Libertatea de a-ți exercita neîngrădit atributele proprietății, conform propriilor interese",
+        "Libertatea de a-ți alege obiectul și dimensiunile afacerii, furnizorii, clienții, piețele",
+        "Libertatea de a stabili prețurile bunurilor economice",
+        "Libertatea de a acționa ca întreprinzător în deciziile de administrare a afacerii"
+      ],
+      "exemple": [
+        "Firma Shell e proprietate privată, Electrica e proprietate publică, iar Romtelecom a fost, la un moment dat, proprietate mixtă - toate formele de proprietate coexistă în aceeași economie de piață."
+      ],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Dacă resursele într-o economie sunt alocate în principal prin mecanismul pieței, această economie este:",
+      "optiuni": [
+        "planificată",
+        "centralizată",
+        "naturală",
+        "de piață"
+      ],
+      "corect": 3,
+      "explicatie": "Aceasta este chiar definiția economiei de piață: alocarea resurselor se face prin mecanismele pieței (preț, concurență)."
+    },
+    {
+      "intrebare": "Când vinzi casa în care locuiești, pierzi:",
+      "optiuni": [
+        "numai posesiunea",
+        "numai dreptul de utilizare",
+        "doar dispoziția și posesiunea",
+        "proprietatea"
+      ],
+      "corect": 3,
+      "explicatie": "Vânzarea înseamnă transferul complet al proprietății - toate cele 4 atribute (dispoziție, posesiune, utilizare, uzufruct) trec la noul proprietar."
+    },
+    {
+      "intrebare": "O organizație neguvernamentală pentru apărarea drepturilor omului reprezintă un exemplu de:",
+      "optiuni": [
+        "societate comercială privată, nefinanciară",
+        "administrație privată",
+        "administrație publică",
+        "instituție de asigurare"
+      ],
+      "corect": 1,
+      "explicatie": "O organizație neguvernamentală (ONG) prestează servicii nemarfare pentru anumite categorii de populație, fără a fi parte a statului - deci e administrație privată."
+    },
+    {
+      "intrebare": "Când statul realizează achiziții publice pentru armată, el face parte din următoarea categorie de agenți economici:",
+      "optiuni": [
+        "administrație privată",
+        "societăți comerciale nefinanciare",
+        "menaje",
+        "administrație publică"
+      ],
+      "corect": 3,
+      "explicatie": "Armata, ministerele, poliția fac parte din administrațiile publice - ele prestează servicii nemarfare și redistribuie venituri/bogăție la nivel de stat."
+    },
+    {
+      "intrebare": "Faptul că îți faci singur curățenie în cameră, fără să plătești pe cineva pentru asta, este un exemplu de:",
+      "optiuni": [
+        "economie de schimb",
+        "economie naturală (autoconsum)",
+        "economie planificată",
+        "economie de piață"
+      ],
+      "corect": 1,
+      "explicatie": "Autoconsumul (a produce/presta chiar tu serviciul, fără schimb pe piață) este esența economiei naturale, care continuă să existe alături de economia de schimb, dar cu pondere redusă."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Proprietatea privată dominantă este o trăsătură a economiei de piață.",
+      "corect": true,
+      "explicatie": "Da, e una din trăsăturile principale ale economiei de piață."
+    },
+    {
+      "enunt": "În economia de piață, statul nu intervine deloc în activitatea economică.",
+      "corect": false,
+      "explicatie": "Statul intervine, dar limitat: prin legislație, furnizarea de bunuri publice, protecție socială și programe de stabilizare economică."
+    },
+    {
+      "enunt": "În economiile planificate nu se utilizează banii.",
+      "corect": false,
+      "explicatie": "Banii se folosesc și în economia planificată; diferența e că statul, nu piața, decide alocarea resurselor."
+    },
+    {
+      "enunt": "Proprietatea mixtă este pur și simplu suma proprietăților private și publice existente separat, la nivel național.",
+      "corect": false,
+      "explicatie": "Proprietatea mixtă înseamnă o asociere efectivă între unități private și stat asupra aceluiași obiect, nu doar suma matematică a proprietăților private și publice existente separat în economie."
+    },
+    {
+      "enunt": "Libera inițiativă presupune dreptul individului de a desfășura orice activitate economică, fără nicio restricție legală.",
+      "corect": false,
+      "explicatie": "Libera inițiativă e condiționată de respectarea legilor juridice în vigoare - nu înseamnă absența oricărei reguli."
+    }
+  ],
+  "probleme": [],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare concept cu definiția corectă (atenție - sunt mai multe definiții decât concepte).",
+      "coloanaA": [
+        {
+          "id": "c1",
+          "text": "Proprietatea privată"
+        },
+        {
+          "id": "c2",
+          "text": "Proprietatea publică"
+        },
+        {
+          "id": "c3",
+          "text": "Libera inițiativă"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Aparține unei asociații între unități private și stat"
+        },
+        {
+          "id": "o_b",
+          "text": "Aparține unităților economice individuale"
+        },
+        {
+          "id": "o_c",
+          "text": "Exprimă dreptul individului de a desfășura orice activitate economică"
+        },
+        {
+          "id": "o_d",
+          "text": "Exprimă dreptul individului de a desfășura orice activitate economică, cu condiția respectării legilor juridice"
+        },
+        {
+          "id": "o_e",
+          "text": "Aparține statului sau unităților administrativ-teritoriale"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "c1",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "c2",
+          "dreapta": "o_e"
+        },
+        {
+          "stanga": "c3",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum \"libera inițiativă\" (o_d) diferă de varianta incompletă (o_c) doar prin precizarea \"cu condiția respectării legilor juridice\" - fără această condiție, definiția e greșită. Iar o_a descrie, de fapt, proprietatea mixtă - un concept care nu apare în coloana din stânga."
+    }
+  ]
+}

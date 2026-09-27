@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit raport</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;padding:30px;background:#dfe5e8}main{display:grid;gap:28px;justify-content:center}canvas{width:1240px;height:auto;display:block;background:white;box-shadow:0 12px 35px rgba(17,39,52,.15)}
+  </style>
+</head>
+<body>
+  <main id="pages"></main>
+  <script type="module">
+    import { renderAssessmentReportPages } from '/src/admissionReport.ts'
+    const prompt = 'O întreprindere analizează simultan evoluția costurilor totale, a producției și a productivității factorilor utilizați. Pe baza informațiilor disponibile, identifică varianta care descrie corect relația dintre indicatorii economici și efectul modificării producției asupra rezultatului final.'
+    const explanation = 'Rezolvarea pornește de la identificarea datelor relevante și de la alegerea formulei potrivite. Se calculează mai întâi indicatorul inițial, apoi indicatorul final, păstrând aceleași unități de măsură. Diferența dintre cele două valori arată sensul modificării. Varianta corectă este cea care respectă atât rezultatul numeric, cât și relația economică dintre cost, producție și eficiență.'
+    const questionCount=new URLSearchParams(location.search).has('full')?30:8
+    const questions = Array.from({length:questionCount},(_,index)=>({
+      id:`q${index+1}`,source:'admission',kind:index%2?'exercitiu':'teorie',originalNumber:51+index,
+      prompt:index===2?`${prompt} ${prompt}`:`${index+1}. ${prompt}`,
+      options:[{id:'a',text:'Crește proporțional și păstrează raportul inițial dintre indicatori.'},{id:'b',text:'Scade deoarece modificarea producției depășește modificarea costurilor totale.'},{id:'c',text:'Rămâne constantă în condițiile prezentate.'},{id:'d',text:'Informațiile nu sunt suficiente pentru un calcul economic.'}],
+      correctOptionId:index%3===0?'a':'b',formula:index%2?'W = Q / L; ΔW% = (W₁ / W₀ − 1) × 100':undefined,
+      explanation:index===4?`${explanation} ${explanation}`:explanation,
+    }))
+    const answers=Object.fromEntries(questions.map((question,index)=>[question.id,index%3===0?'a':'d']))
+    const params=new URLSearchParams(location.search)
+    const test=params.has('chapter')?{kind:'chapter',year:2026,session:'Capitolul 12',variant:'Test final',economyRange:'Piața monetară, creditul și mecanismele sistemului bancar',chapterNumber:12,chapterTitle:'Piața monetară, creditul și mecanismele sistemului bancar'}:{kind:'admission',year:2025,session:'23 iulie 2025',variant:'G1',economyRange:'51–80'}
+    const {pages}=renderAssessmentReportPages({studentName:'Alexandru-Mihai Popescu',studentEmail:'elev@example.ro',elapsedSeconds:2754,test,questions,answers,generatedAt:new Date('2026-09-13T12:00:00')})
+    const root=document.querySelector('#pages'); const visiblePages=params.has('summary')?pages.slice(0,1):params.has('details')?pages.slice(1):pages; visiblePages.forEach(page=>root.append(page)); document.body.dataset.ready='true'
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Compact academic sidebar, following the supplied navigation reference. */
+.main-sidebar{
+  width:248px;
+  padding:23px 16px 17px;
+  color:#142c49;
+  background:rgba(255,255,255,.975);
+  border-right:1px solid #d5dce2;
+  box-shadow:10px 0 30px rgba(28,45,63,.055);
+}
+.app-main{margin-left:248px}
+.brand-row{padding:0 12px 16px;border-bottom:1px solid #dce1e5}
+.brand{gap:11px;text-align:left}
+.brand-folder{position:relative;width:40px;height:37px;display:grid;place-items:center;color:#132e4c}
+.brand-folder>svg{position:absolute;inset:0;width:40px;height:37px;stroke-width:1.35}
+.brand-folder>b{position:relative;margin-top:7px;font:700 11px/1 "DM Mono"}
+.brand-copy{display:grid;gap:2px}
+.brand-copy strong{font:600 21px/1 Manrope;letter-spacing:-.7px}
+.brand-copy small{color:#3e7397;font:600 7px/1.2 "DM Sans";letter-spacing:.03em}
+.desktop-sidebar-toggle{top:50%;right:-10px;width:21px;height:40px;border-radius:8px}
+.desktop-sidebar-toggle svg{width:13px}
+.primary-nav{min-height:0;gap:2px;margin-top:9px;padding-right:2px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#d9e2e6 transparent}
+.nav-segment-label{margin:12px 12px 5px;color:#477593;font:700 7.5px "DM Mono";letter-spacing:.17em}
+.primary-nav button{
+  min-height:46px;
+  gap:12px;
+  padding:6px 13px;
+  border-radius:10px;
+  color:#677d92;
+  font-size:10.5px;
+}
+.primary-nav button>svg{width:18px;height:18px;flex:0 0 auto;stroke-width:1.65}
+.nav-copy{min-width:0;display:grid;gap:2px;text-align:left}
+.nav-copy b{overflow:hidden;color:inherit;text-overflow:ellipsis;white-space:nowrap;font-size:10.5px;font-weight:750}
+.nav-copy small{overflow:hidden;color:#7d90a3;text-overflow:ellipsis;white-space:nowrap;font-size:7.8px;font-weight:500}
+.primary-nav button:hover{color:#163a59;background:#f5f7f8}
+.primary-nav button.active{color:#112b48;background:linear-gradient(90deg,#edf4f7,#f6f8f9);box-shadow:inset 3px 0 0 #2d7280}
+.primary-nav button.active svg{color:#112b48}
+.primary-nav button.active .nav-copy small{color:#536f87}
+.sidebar-footer{margin-top:auto;padding:13px 10px 0;border-top:1px solid #dde2e6}
+.sidebar-profile-card{grid-template-columns:31px minmax(0,1fr) 12px;gap:9px;padding:7px 6px;border:0;border-radius:9px;background:transparent}
+.sidebar-profile-card:hover,.sidebar-profile-card.active{border-color:transparent;background:#f5f6f7}
+.profile-avatar{width:31px;height:31px;border-radius:9px;color:#426a84;background:#edf4f7}
+.profile-avatar svg{width:17px}
+.sidebar-profile-copy b{font-size:9.5px}.sidebar-profile-copy small{font-size:7.3px}
+.sidebar-logout-button{width:100%;min-height:35px;display:flex;align-items:center;justify-content:center;gap:7px;padding:0 9px;border:0;border-radius:8px;color:#82909b;background:transparent;font-size:8.3px;font-weight:700;cursor:pointer}
+.sidebar-logout-button:hover{color:#a5534f;background:#fff1ef}
+.sidebar-collapsed .main-sidebar{width:76px;padding-inline:11px}
+.sidebar-collapsed .app-main{margin-left:76px}
+.sidebar-collapsed .brand-row{padding-inline:0}
+.sidebar-collapsed .brand-copy,
+.sidebar-collapsed .primary-nav .nav-copy,
+.sidebar-collapsed .primary-nav .nav-segment-label,
+.sidebar-collapsed .sidebar-profile-copy,
+.sidebar-collapsed .sidebar-profile-card>.arrow-right{display:none}
+.sidebar-collapsed .primary-nav button{width:50px;justify-content:center;margin-inline:auto;padding:0}
+.sidebar-collapsed .sidebar-footer{padding-inline:0}
+.sidebar-collapsed .sidebar-profile-card{width:50px;grid-template-columns:1fr;justify-items:center;margin-inline:auto}
+.sidebar-collapsed .sidebar-logout-button{width:50px;margin-inline:auto;padding:0}
+.sidebar-collapsed .sidebar-logout-button span{display:none}
+
+@media(max-width:900px){
+  .main-sidebar{width:min(310px,86vw);padding:20px 16px 16px}
+  .app-main,.sidebar-collapsed .app-main{margin-left:0}
+  .sidebar-collapsed .main-sidebar{width:min(310px,86vw);padding-inline:16px}
+  .sidebar-collapsed .brand-row{padding-inline:12px}
+  .sidebar-collapsed .brand-copy,.sidebar-collapsed .primary-nav .nav-copy,.sidebar-collapsed .primary-nav .nav-segment-label,.sidebar-collapsed .sidebar-profile-copy,.sidebar-collapsed .sidebar-profile-card>.arrow-right{display:grid}
+  .sidebar-collapsed .primary-nav .nav-segment-label{display:block}
+  .sidebar-collapsed .primary-nav button{width:100%;justify-content:flex-start;margin:0;padding:6px 13px}
+  .sidebar-collapsed .sidebar-footer{padding:13px 10px 0}
+  .sidebar-collapsed .sidebar-profile-card{width:100%;grid-template-columns:31px minmax(0,1fr) 12px;justify-items:stretch;margin:0}
+  .sidebar-collapsed .sidebar-logout-button{width:100%}.sidebar-collapsed .sidebar-logout-button span{display:inline}
+  .primary-nav button{min-height:49px}
+  .nav-copy b{font-size:11px}.nav-copy small{font-size:8px}
+}

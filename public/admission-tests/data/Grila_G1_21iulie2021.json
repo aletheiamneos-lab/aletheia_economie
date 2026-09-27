@@ -1,0 +1,643 @@
+{
+  "an": 2021,
+  "sesiune": "21 iulie 2021",
+  "varianta": "G1",
+  "sursa_subiecte": "Grile_2021.pdf (pag. 1-6)",
+  "sursa_barem": "Grile_2021.pdf (pag. 7)",
+  "interval_economie_in_test": "61-100",
+  "nota": "Format diferit fata de alti ani: sectiunea de Limba romana este 1-60, iar Economia este 61-100 (40 de exercitii, nu 30).",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 19,
+      "exercitii": [
+        {
+          "numar_in_test": 61,
+          "capitol": "Introducere în economie — bunuri libere",
+          "dificultate": "usor",
+          "enunt": "Are caracter de bun liber:",
+          "optiuni": {
+            "a": "apa îmbuteliată",
+            "b": "marfa cu preț redus",
+            "c": "lumina solară",
+            "d": "transportul public"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Bunurile libere există în cantități nelimitate și nu presupun efort de producție sau tranzacție de piață — lumina solară este exemplul clasic. Celelalte variante sunt bunuri economice, tranzacționate pe piață."
+        },
+        {
+          "numar_in_test": 63,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Ce utilitate are un bun economic care, devenind demodat, nu mai este cerut de consumatori:",
+          "optiuni": {
+            "a": "negativă",
+            "b": "zero",
+            "c": "pozitivă",
+            "d": "utilitatea bunului rămâne neschimbată, doar cererea se schimbă"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Dacă bunul nu mai satisface nicio nevoie a consumatorilor (nu mai este cerut), utilitatea resimțită de aceștia pentru bunul respectiv este zero."
+        },
+        {
+          "numar_in_test": 64,
+          "capitol": "Economia de piață și proprietatea",
+          "dificultate": "usor",
+          "enunt": "Indicați situația care nu implică înstrăinarea integrală a atributelor proprietății:",
+          "optiuni": {
+            "a": "vânzare-cumpărare",
+            "b": "moștenire",
+            "c": "donație",
+            "d": "închiriere"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Închirierea transferă doar dreptul de folosință temporară, păstrând celelalte atribute ale proprietății la titularul inițial. Vânzarea, moștenirea și donația transferă integral proprietatea."
+        },
+        {
+          "numar_in_test": 65,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "Proprietarul unei mine de aur este în avantaj pe piață, atunci când:",
+          "optiuni": {
+            "a": "cererea pentru aur scade, iar oferta de aur crește, în urma descoperirii unor zăcăminte noi",
+            "b": "pe piață au mare căutare bijuteriile din argint",
+            "c": "cererea pentru aur rămâne neschimbată, iar oferta de aur crește semnificativ",
+            "d": "cererea pentru aur este superioară ofertei de aur"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Atunci când cererea depășește oferta (exces de cerere), prețul de piață crește, avantajând vânzătorul/producătorul — aici, proprietarul minei de aur."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Costul producției",
+          "dificultate": "usor",
+          "enunt": "Pe termen scurt, pentru un agent economic care produce cantitatea Q dintr-un bun, înregistrăm situația în care costurile totale CT sunt egale cu cele fixe CF. Notând cu CV costurile variabile, înseamnă că:",
+          "optiuni": {
+            "a": "CV = -CF",
+            "b": "Q = 0",
+            "c": "CV·Q = CF·Q",
+            "d": "CV = CT = CF"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "CT = CF + CV",
+          "rezolvare": "Din CT = CF (dat) și CT = CF + CV, rezultă CV = 0. Costul variabil este nul doar atunci când nu există producție, deci Q = 0."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "usor",
+          "enunt": "În termeni generali, raportul efect economic (rezultate economice, output) / efort economic (resurse, input) ia forma:",
+          "optiuni": {
+            "a": "prețului unui bun",
+            "b": "productivității",
+            "c": "cantității cerute dintr-un bun",
+            "d": "banilor"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Ee = Efecte/Eforturi",
+          "rezolvare": "Raportul general efecte/eforturi (eficiența economică) ia forma particulară a productivității atunci când efectul este producția obținută, iar efortul este factorul de producție consumat."
+        },
+        {
+          "numar_in_test": 70,
+          "capitol": "Mecanismul concurențial — forme de piață",
+          "dificultate": "usor",
+          "enunt": "Într-o țară, armata este unic cumpărător al echipamentului aflat în dotarea cadrelor militare, provenit de la numeroși producători de îmbrăcăminte, încălțăminte și accesorii ale acestora. O asemenea piață are trăsături de:",
+          "optiuni": {
+            "a": "monopol",
+            "b": "oligopol",
+            "c": "concurență perfectă",
+            "d": "monopson"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Monopsonul presupune un singur cumpărător (armata) și numeroși ofertanți (producătorii de echipament) — exact configurația descrisă."
+        },
+        {
+          "numar_in_test": 73,
+          "capitol": "Piața financiară — bonitatea",
+          "dificultate": "usor",
+          "enunt": "Bonitatea financiară reprezintă:",
+          "optiuni": {
+            "a": "obligația agenților economici de a elibera bon fiscal",
+            "b": "o cale legală de a evita falimentul fără a obține profit",
+            "c": "capacitatea unui debitor de a-și achita la scadență obligațiile contractuale",
+            "d": "modalitatea de a folosi cât mai bine resursele financiare"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Bonitatea financiară reprezintă capacitatea unui debitor de a-și onora, la scadență, obligațiile de plată asumate contractual."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Piața de capital — obligațiuni",
+          "dificultate": "usor",
+          "enunt": "Posesorul unei obligațiuni emise de către stat are calitatea de:",
+          "optiuni": {
+            "a": "debitor al statului",
+            "b": "acționar",
+            "c": "creditor al statului",
+            "d": "angajat"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Cumpărând o obligațiune de stat, posesorul împrumută bani statului — devine, deci, creditor al statului (statul fiind debitorul)."
+        },
+        {
+          "numar_in_test": 75,
+          "capitol": "Creșterea economică — indicatori macroeconomici",
+          "dificultate": "usor",
+          "enunt": "Consumul de capital fix este inclus în calculul:",
+          "optiuni": {
+            "a": "Produsului Intern Net",
+            "b": "Produsului Național Net",
+            "c": "Produsului Intern Brut",
+            "d": "Taxei pe Valoare Adăugată"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "PIB (indicator brut) include amortizarea (consumul de capital fix), spre deosebire de indicatorii neti (PIN, PNN), care o exclud/scad."
+        },
+        {
+          "numar_in_test": 76,
+          "capitol": "Creșterea economică — Venitul Național",
+          "dificultate": "usor",
+          "enunt": "Venitul Național este o altă denumire pentru:",
+          "optiuni": {
+            "a": "Produsul Național Brut exprimat în prețurile pieței",
+            "b": "Produsul Național Net exprimat în prețurile pieței",
+            "c": "Produsul Național Net exprimat în prețurile factorilor",
+            "d": "Produsul Național Brut exprimat în prețurile factorilor"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "VN = PNN_Pf",
+          "rezolvare": "Venitul Național este Produsul Național Net exprimat în prețurile factorilor de producție (fără impozitele indirecte nete)."
+        },
+        {
+          "numar_in_test": 79,
+          "capitol": "Costul producției — indici",
+          "dificultate": "usor",
+          "enunt": "Un indice al producției egal cu 116% într-o perioadă dată (fără a dispune de alte informații) înseamnă:",
+          "optiuni": {
+            "a": "creșterea costurilor de producție cu 16%",
+            "b": "scăderea costurilor de producție cu 16%",
+            "c": "majorarea output-ului cu 116%",
+            "d": "creșterea producției de 1,16 ori"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "IQ = (Q1/Q0) x 100",
+          "rezolvare": "Un indice de 116% înseamnă Q1 = 1,16 x Q0, adică producția a crescut de 1,16 ori (cu 16%). Indicele producției nu oferă informații despre costuri."
+        },
+        {
+          "numar_in_test": 82,
+          "capitol": "Piața de capital — acțiuni",
+          "dificultate": "usor",
+          "enunt": "Un acționar deține 30 din cele 30.000 acțiuni de tip A existente pe piață. Ponderea titlurilor aflate în posesia lui în totalul titlurilor de acest tip este:",
+          "optiuni": {
+            "a": "1%",
+            "b": "0,1%",
+            "c": "0,01%",
+            "d": "10%"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Pondere = (nr. acțiuni deținute/total acțiuni) x 100",
+          "rezolvare": "Pondere = (30/30.000) x 100 = 0,1%."
+        },
+        {
+          "numar_in_test": 83,
+          "capitol": "Costul producției — costul marginal",
+          "dificultate": "usor",
+          "enunt": "Producția a 3 creioane automate costă 60 u.m., iar producția a 4 asemenea bunuri costă 64 u.m. Costul marginal al fabricării celui de-al patrulea creion este (în u.m.):",
+          "optiuni": {
+            "a": "12",
+            "b": "1,33",
+            "c": "1",
+            "d": "4"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "C.mg = ΔCT/ΔQ",
+          "rezolvare": "C.mg = (64 – 60)/(4 – 3) = 4 u.m."
+        },
+        {
+          "numar_in_test": 87,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "usor",
+          "enunt": "Dacă înclinația marginală spre economii este 1/9, iar economiile sunt egale cu investițiile, multiplicatorul investițiilor:",
+          "optiuni": {
+            "a": "este egal cu 11,11%",
+            "b": "este egal cu 9",
+            "c": "este egal cu 1/9",
+            "d": "nu poate fi calculat, fiindcă informațiile oferite sunt insuficiente pentru determinarea lui"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "K = 1/e'",
+          "rezolvare": "K = 1/e' = 1/(1/9) = 9."
+        },
+        {
+          "numar_in_test": 96,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "usor",
+          "enunt": "Raportul dintre consum și venit este 8/10. Nivelul venitului fiind 240 milioane u.m., mărimea economiilor este:",
+          "optiuni": {
+            "a": "48 milioane u.m.",
+            "b": "192 milioane u.m.",
+            "c": "80% din venit",
+            "d": "2% din venit"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "c̄ = C/V_D; E = V_D – C",
+          "rezolvare": "c̄ = 8/10 = 0,8. C = 0,8 x 240 = 192 milioane u.m. E = 240 – 192 = 48 milioane u.m."
+        },
+        {
+          "numar_in_test": 97,
+          "capitol": "Inflația",
+          "dificultate": "usor",
+          "enunt": "Într-un interval de timp, într-o economie națională, prețurile bunurilor și tarifele serviciilor se majorează de 2,5 ori. Rata inflației este:",
+          "optiuni": {
+            "a": "150%",
+            "b": "50%",
+            "c": "250%",
+            "d": "25%"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Rata inflației = I_GP – 100%",
+          "rezolvare": "Prețurile de 2,5 ori mai mari înseamnă I_GP = 250%. Rata inflației = 250% – 100% = 150%."
+        },
+        {
+          "numar_in_test": 98,
+          "capitol": "Creșterea economică — PIB",
+          "dificultate": "usor",
+          "enunt": "În anul t, într-o economie națională sunt fabricate 4.000 bunuri, care sunt vândute cu 8 u.m. / bucată. În lipsa altor informații, mărimile PIB nominal și PIB real aferente anului t sunt (în această ordine, în u.m.):",
+          "optiuni": {
+            "a": "4.000; 32.000",
+            "b": "32.000; 32.000",
+            "c": "4.000; 500",
+            "d": "32.000; 256.000"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "PIB nominal = P x Q",
+          "rezolvare": "PIB nominal = 8 x 4.000 = 32.000 u.m. În lipsa oricărei informații despre evoluția prețurilor, PIB real este considerat egal cu PIB nominal: 32.000 u.m."
+        },
+        {
+          "numar_in_test": 100,
+          "capitol": "Inflația — deflația",
+          "dificultate": "usor",
+          "enunt": "Deflația reprezintă:",
+          "optiuni": {
+            "a": "sinonimul inflației",
+            "b": "vechea denumire a inflației (din secolele trecute)",
+            "c": "procesul de diminuare generală, semnificativă și relativ durabilă a prețurilor, într-o economie națională",
+            "d": "procesul de creștere a ratei dobânzii la depozitele bancare"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Deflația este definită ca procesul de scădere generală, semnificativă și relativ durabilă a prețurilor într-o economie — opusul inflației."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 17,
+      "exercitii": [
+        {
+          "numar_in_test": 62,
+          "capitol": "Piața și echilibrul pieței — elasticitatea cererii",
+          "dificultate": "mediu",
+          "enunt": "Majorarea cu o zecime a prețului unui bun determină pierderea unei cincimi dintre clienții producătorului (celelalte condiții ale pieței rămânând neschimbate). În acest caz, avem de-a face cu:",
+          "optiuni": {
+            "a": "o cerere inelastică în raport cu prețul",
+            "b": "o cerere elastică în raport cu prețul",
+            "c": "o elasticitate marginală",
+            "d": "o elasticitate de monopol"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Kc/p = Δ%Cerere / Δ%Preț",
+          "rezolvare": "Δ%Preț = +10% (o zecime). Pierderea unei cincimi dintre clienți înseamnă Δ%Cerere = -20%. |Kc/p| = 20/10 = 2 > 1, deci cererea este elastică."
+        },
+        {
+          "numar_in_test": 66,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Scăderea costului total mediu de la o perioadă la alta are loc atunci când, în acest interval:",
+          "optiuni": {
+            "a": "producția crește cu 5%, iar costul total cu 10%",
+            "b": "producția scade cu 4%, iar costul total crește cu 2%",
+            "c": "costul marginal este mai mare decât costul total mediu",
+            "d": "producția scade cu 3%, iar costul total scade cu 6%"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "CMT = CT/Q",
+          "rezolvare": "Pentru ca CMT să scadă, CT trebuie să scadă procentual mai mult decât Q. Doar în varianta d acest lucru se întâmplă (CT scade cu 6%, mai mult decât scăderea de 3% a lui Q): de exemplu Q0=100→Q1=97, CT0=100→CT1=94, CMT scade de la 1 la 94/97≈0,969."
+        },
+        {
+          "numar_in_test": 69,
+          "capitol": "Costul producției / Profitul",
+          "dificultate": "mediu",
+          "enunt": "De la o perioadă la alta, costul total mediu scade cu 85 u.m. / bucată, iar prețul de vânzare rămâne același (celelalte elemente ale pieței fiind neschimbate), astfel încât profitul unitar:",
+          "optiuni": {
+            "a": "scade cu 85 u.m. / bucată",
+            "b": "rămâne neschimbat",
+            "c": "crește cu 85 u.m. / bucată",
+            "d": "nu se poate determina în perioada curentă, fiindcă nu cunoaștem mărimea costului total mediu în perioada de bază"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Pr/u.p = P – CMT",
+          "rezolvare": "Cum Pr/u.p = P – CMT și P este constant, orice reducere a CMT se reflectă direct (1 la 1) într-o creștere egală a profitului unitar: dacă CMT scade cu 85 u.m., profitul unitar crește cu exact 85 u.m."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Piața monetară — câștigul bancar",
+          "dificultate": "mediu",
+          "enunt": "Comparativ cu nivelul dobânzilor încasate de bancă pentru creditele acordate, dimensiunea câștigului bancar (respectiv a profitului bancar brut) este:",
+          "optiuni": {
+            "a": "mai mică",
+            "b": "mai mare",
+            "c": "egală ca mărime",
+            "d": "mai mare sau cel puțin egală"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Câștig bancar = Dobânzi încasate – Dobânzi plătite",
+          "rezolvare": "Câștigul bancar se obține scăzând din dobânzile încasate (pentru creditele acordate) dobânzile plătite (pentru depozitele atrase). Fiind o diferență, câștigul bancar este întotdeauna mai mic decât dobânzile încasate luate singure."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Piața monetară — rata dobânzii",
+          "dificultate": "mediu",
+          "enunt": "O rată lunară a dobânzii egală cu 0,3% înseamnă o rată trimestrială a dobânzii egală cu:",
+          "optiuni": {
+            "a": "9%",
+            "b": "0,009",
+            "c": "1,2%",
+            "d": "9"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Rata trimestrială = Rata lunară x 3",
+          "rezolvare": "0,3% x 3 = 0,9%. Exprimat ca fracție zecimală (formatul variantei b), 0,9% = 0,009."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Ciclicitatea economică — recesiunea",
+          "dificultate": "mediu",
+          "enunt": "În faza de recesiune economică:",
+          "optiuni": {
+            "a": "inflația și șomajul sunt în creștere",
+            "b": "se reia, încet, ritmul creșterii economice",
+            "c": "investițiile încep să crească",
+            "d": "se întrevăd condiții pentru boom economic"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Recesiunea (declinul economic) se caracterizează prin creșterea șomajului (și adesea a inflației, în contexte de stagflație). Variantele b, c și d descriu, dimpotrivă, semnele ieșirii din criză/recesiune — reluarea creșterii, revigorarea investițiilor, apropierea de un nou avânt."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Eficiența economică",
+          "dificultate": "mediu",
+          "enunt": "Alegerea realizată de către un agent economic nu este eficientă dacă, față de o perioadă anterioară, acesta:",
+          "optiuni": {
+            "a": "depune un efort mai mic cu 5% și obține un efect mai mic cu 11%",
+            "b": "înregistrează un efect mai mare cu 9% și un efort mai mare cu 4%",
+            "c": "obține același efect cu efort mai mic",
+            "d": "înregistrează un efect cu 4% mai mare și un efort cu 2% mai mic"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Ee = efecte/eforturi",
+          "rezolvare": "În varianta a, efortul scade cu 5%, dar efectul scade și mai mult (11%) — raportul efect/efort se înrăutățește, deci alegerea nu este eficientă. Celelalte variante descriu îmbunătățiri ale eficienței."
+        },
+        {
+          "numar_in_test": 80,
+          "capitol": "Factorii de producție — capital fix și circulant",
+          "dificultate": "mediu",
+          "enunt": "Marcați enunțul fals:",
+          "optiuni": {
+            "a": "munca reprezintă o activitate specific umană",
+            "b": "creșterea productivității și a performanțelor capitalului are ca efect scădere competitivității agenților economici",
+            "c": "capital fix nu se înlocuiește la fiecare nou ciclu de producție",
+            "d": "elementele de capital circulant se înlocuiesc la fiecare ciclu de producție"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Afirmațiile a, c și d sunt adevărate (definiții standard). Afirmația b este falsă: creșterea productivității și a performanțelor capitalului determină, de fapt, creșterea (nu scăderea) competitivității agenților economici — este exact opusul relației corecte."
+        },
+        {
+          "numar_in_test": 86,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "mediu",
+          "enunt": "Venitul anului curent este mai mare cu 1/4 față de anul precedent, când înregistra 320 milioane u.m. Dacă în prezent, rata (medie a) consumului este 0,8, cheltuielile alocate consumului în perioada curentă reprezintă:",
+          "optiuni": {
+            "a": "a cincea parte din venit",
+            "b": "80 milioane u.m.",
+            "c": "320 milioane u.m.",
+            "d": "egalul mărimii economiilor"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "c̄ = C/V_D",
+          "rezolvare": "V_curent = 320 x (1 + 1/4) = 320 x 1,25 = 400 milioane u.m. C = c̄ x V_curent = 0,8 x 400 = 320 milioane u.m."
+        },
+        {
+          "numar_in_test": 88,
+          "capitol": "Piața și echilibrul pieței — cerere și ofertă",
+          "dificultate": "mediu",
+          "enunt": "Pe o piață, cererea pentru bunul B este dată de funcția C(P) = 200 – P, iar funcția ofertei este O(P) = 10 + 18·P (unde P este prețul bunului). Excesul de ofertă presupune ca prețul lui B să fie:",
+          "optiuni": {
+            "a": "egal cu 10 u.m.",
+            "b": "mai mic decât 10 u.m.",
+            "c": "prețul de echilibru al pieței",
+            "d": "mai mare decât 10 u.m."
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "La echilibru: C(P) = O(P)",
+          "rezolvare": "La echilibru: 200 – P = 10 + 18P → 190 = 19P → P = 10 u.m. Pentru un exces de ofertă (O > C), prețul trebuie să fie mai mare decât prețul de echilibru (oferta crește, cererea scade odată cu prețul) — deci P > 10 u.m."
+        },
+        {
+          "numar_in_test": 89,
+          "capitol": "Profitul",
+          "dificultate": "mediu",
+          "enunt": "Un producător realizează întregul său venit din vânzarea integrală a producției de 800 bucăți din bunul B, la 8 u.m. / bucată. Dacă rata profitului calculată în raport cu cifra de afaceri este 10%, atunci rata profitului calculată în raport cu costurile totale este:",
+          "optiuni": {
+            "a": "10%",
+            "b": "640 u.m.",
+            "c": "11,11%",
+            "d": "5,76%"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "RPr(CA) = (Pr.T/CA) x 100; RPr(CT) = (Pr.T/CT) x 100",
+          "rezolvare": "CA = 800 x 8 = 6.400 u.m. Din RPr(CA) = 10%, Pr.T = 0,1 x 6.400 = 640 u.m. CT = CA – Pr.T = 6.400 – 640 = 5.760 u.m. RPr(CT) = (640/5.760) x 100 ≈ 11,11%."
+        },
+        {
+          "numar_in_test": 90,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "mediu",
+          "enunt": "Un producător micșorează prețul bunului fabricat cu 25%, iar ca urmare, cantitatea vândută de el crește cu 25% (celelalte elemente ale pieței rămânând neschimbate). Cum evoluează încasările din vânzări, în acest caz:",
+          "optiuni": {
+            "a": "rămân neschimbate",
+            "b": "cresc cu 2,5%",
+            "c": "scad cu 6,25%",
+            "d": "cresc cu rată descrescătoare"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "VT = P x Q",
+          "rezolvare": "P1 = 0,75 x P0. Q1 = 1,25 x Q0. VT1 = 0,75 x 1,25 x (P0 x Q0) = 0,9375 x VT0. Încasările scad cu (1 – 0,9375) = 6,25%."
+        },
+        {
+          "numar_in_test": 91,
+          "capitol": "Piața monetară — dobânda compusă",
+          "dificultate": "mediu",
+          "enunt": "Persoana Y depune o sumă de 10.000 u.m. la bancă, pe termen de 3 ani. În condițiile capitalizării dobânzii, la o rată anuală a dobânzii egală cu 10%, suma totală pe care Y o va prelua la termen de la bancă este (în u.m.):",
+          "optiuni": {
+            "a": "13.000",
+            "b": "13.310",
+            "c": "11.000",
+            "d": "13.100"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "St = Cr(1+d')ⁿ",
+          "rezolvare": "St = 10.000 x (1,1)³ = 10.000 x 1,331 = 13.310 u.m."
+        },
+        {
+          "numar_in_test": 92,
+          "capitol": "Piața muncii / Inflația",
+          "dificultate": "mediu",
+          "enunt": "Într-o economie națională, guvernul decide să majoreze salariile cu 60% din rata inflației, în condițiile în care mărimea indicelui general al prețurilor este 160%. Ca urmare, salariile vor fi majorate cu:",
+          "optiuni": {
+            "a": "100%",
+            "b": "60%",
+            "c": "36%",
+            "d": "37,5%"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Rata inflației = I_GP – 100%",
+          "rezolvare": "Rata inflației = 160% – 100% = 60%. Majorarea salariilor = 60% din 60% = 0,6 x 60% = 36%."
+        },
+        {
+          "numar_in_test": 93,
+          "capitol": "Inflația — puterea de cumpărare",
+          "dificultate": "mediu",
+          "enunt": "Într-un interval de timp, într-o țară, rata inflației (determinată exclusiv de creșterea generalizată a prețurilor în economie) este 60%. Rezultă că în perioada dată, pe fondul unei mase monetare care a crescut cu 2/10, puterea de cumpărare a banilor a scăzut:",
+          "optiuni": {
+            "a": "cu 25%",
+            "b": "cu 20%",
+            "c": "cu 33,33%",
+            "d": "la 30%"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "I_PCM = (I_M/I_GP) x 100",
+          "rezolvare": "I_GP = 100% + 60% = 160%. I_M = 100% + 20% = 120%. I_PCM = (120/160) x 100 = 75%. Puterea de cumpărare a scăzut cu 100% – 75% = 25%."
+        },
+        {
+          "numar_in_test": 94,
+          "capitol": "Piața muncii — salariul nominal",
+          "dificultate": "mediu",
+          "enunt": "În decursul unui an, indicele salariului nominal este 1,24. În aceeași perioadă, prețurile bunurilor de consum (notate generic cu P) se majorează cu un sfert din creșterea procentuală a salariului nominal. Indicați răspunsul corect:",
+          "optiuni": {
+            "a": "P1 = 1,25·P0",
+            "b": "P0 = 0,76·P1",
+            "c": "P1 = 1,06·P0",
+            "d": "P1 = 0,25·P0"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Indicele salariului nominal 1,24 (124%) înseamnă o creștere de 24%. Prețurile cresc cu un sfert din 24% = 6%. Deci P1 = 1,06 x P0."
+        },
+        {
+          "numar_in_test": 99,
+          "capitol": "Creșterea economică — PNB per capita",
+          "dificultate": "mediu",
+          "enunt": "Eliminând influența modificării prețurilor de la o perioadă la alta într-o economie națională, raportul PNB0/N0 este mai mic decât raportul PNB1/N1 (unde N = numărul populației în țara respectivă). Acest fapt reflectă:",
+          "optiuni": {
+            "a": "scăderea mortalității și creșterea natalității",
+            "b": "creștere economică",
+            "c": "reducerea salariului mediu în economie",
+            "d": "creșterea consumului de factori de producție"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "PNB/N = PNB real pe locuitor",
+          "rezolvare": "PNB/N reprezintă PNB (real, eliminând efectul prețurilor) pe locuitor. Creșterea acestui raport de la o perioadă la alta este chiar definiția creșterii economice: sporirea producției totale și pe locuitor."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 3,
+      "exercitii": [
+        {
+          "numar_in_test": 81,
+          "capitol": "Circuitul economic — agenții economici",
+          "dificultate": "greu",
+          "enunt": "G, N și R sunt agenți economici. Dacă G cumpără resurse (factori de producție) de la N și bunuri de consum de la R, înseamnă că:",
+          "optiuni": {
+            "a": "G și N = bănci; R = populația (menaje)",
+            "b": "G, N și R = gospodării (menaje), populație sau bănci",
+            "c": "G = statul; N = gospodării agricole (populație); R = societate comercială (întreprindere)",
+            "d": "G = populația; N = statul; R = administrația centrală"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "În circuitul economic, agenții economici care cumpără atât factori de producție (resurse), cât și bunuri de consum sunt, tipic, statul (achiziții publice de resurse și bunuri) — G = statul, care cumpără resurse de la populație/gospodării agricole (N) și bunuri de consum de la întreprinderi (R = societate comercială)."
+        },
+        {
+          "numar_in_test": 84,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "greu",
+          "enunt": "În anul t0, venitul național este 2.000 milioane u.m., iar indicele său de creștere în perioada t0 – t1 este 150%. Dacă multiplicatorul investițiilor este 2, iar economiile sunt egale cu investițiile, înseamnă că în intervalul dat, economiile au crescut (în milioane u.m.) cu:",
+          "optiuni": {
+            "a": "3.000",
+            "b": "500",
+            "c": "4.000",
+            "d": "150"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "K = 1/e'; ΔE = e' x ΔV_D",
+          "rezolvare": "VN1 = VN0 x 1,5 = 2.000 x 1,5 = 3.000. ΔVN = 3.000 – 2.000 = 1.000 milioane u.m. Din K = 1/e' = 2, rezultă e' = 0,5. ΔE = e' x ΔVN = 0,5 x 1.000 = 500 milioane u.m."
+        },
+        {
+          "numar_in_test": 95,
+          "capitol": "Piața de capital — tranzacții la termen",
+          "dificultate": "greu",
+          "enunt": "Un individ vinde 100 acțiuni la termen de 3 luni, la 15 u.m. / titlu. Dacă la scadență, cursul acțiunii devine 16 u.m. / titlu, rezultatul tranzacției pentru persoana respectivă este:",
+          "optiuni": {
+            "a": "pierdere de 100 u.m.",
+            "b": "pierdere de 1.500 u.m.",
+            "c": "câștig de 1 u.m. / titlu",
+            "d": "câștig de 1.600 u.m."
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Vânzătorul s-a angajat să livreze acțiunile la 15 u.m./titlu, preț fixat la contractare. La scadență, cursul de piață este 16 u.m./titlu — mai mare decât prețul contractat. Diferența nefavorabilă vânzătorului este de 16 – 15 = 1 u.m./titlu, iar pentru cele 100 de titluri, pierderea totală este 100 x 1 = 100 u.m."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 1,
+      "exercitii": [
+        {
+          "numar_in_test": 85,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "foarte_greu",
+          "enunt": "În luna aprilie, la o producție de 4.000 bucăți din bunul X, productivitatea medie a muncii a fost 80 bucăți / angajat. În luna iunie, același producător înregistrează o productivitate marginală a muncii egală cu 100 bucăți, pentru întregul interval dat, timp în care numărul de salariați s-a dublat. Înseamnă că în perioada respectivă, indicele producției a fost:",
+          "optiuni": {
+            "a": "125%",
+            "b": "100%",
+            "c": "225%",
+            "d": "25%"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "W̄L = Q/L; W.mg(L) = ΔQ/ΔL",
+          "rezolvare": "L_aprilie = Q/W̄L = 4.000/80 = 50 angajați. L_iunie = 2 x 50 = 100 (s-a dublat), deci ΔL = 100 – 50 = 50. Din W.mg(L) = ΔQ/ΔL = 100, rezultă ΔQ = 100 x 50 = 5.000. Q_iunie = 4.000 + 5.000 = 9.000. Indicele producției: IQ = (9.000/4.000) x 100 = 225%."
+        }
+      ]
+    }
+  ]
+}

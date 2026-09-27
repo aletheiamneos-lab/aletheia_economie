@@ -1,0 +1,118 @@
+{
+  "lesson": 18,
+  "title": "Statul în economia de piață",
+  "source": "Capitolul 18 - Statul în economia de piață",
+  "modules": [
+    {
+      "id": "buget",
+      "title": "Venituri, cheltuieli și sold bugetar",
+      "kind": "state_budget",
+      "defaults": {
+        "revenue": 100,
+        "expenditure": 112
+      },
+      "formulas": [
+        "Sold = Venituri - Cheltuieli"
+      ],
+      "provenance": {
+        "status": "B",
+        "statusLegend": "derivat direct din formule/datele materialului",
+        "primarySource": "Capitolul 18 - Statul in economia de piata_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Buget public: venituri, cheltuieli, deficit/excedent și structură."
+      }
+    },
+    {
+      "id": "sold_timp",
+      "title": "Deficit / excedent în timp",
+      "kind": "time_series",
+      "defaults": {
+        "labels": [
+          "T0",
+          "T1",
+          "T2",
+          "T3",
+          "T4",
+          "T5"
+        ],
+        "values": [
+          -8,
+          -4,
+          2,
+          5,
+          -3,
+          1
+        ],
+        "valueName": "Sold bugetar"
+      },
+      "provenance": {
+        "status": "B",
+        "statusLegend": "derivat direct din formule/datele materialului",
+        "primarySource": "Capitolul 18 - Statul in economia de piata_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Buget public: venituri, cheltuieli, deficit/excedent și structură."
+      }
+    },
+    {
+      "id": "structura_buget",
+      "title": "Structura bugetului",
+      "kind": "budget_structure",
+      "defaults": {
+        "revenues": [
+          {
+            "name": "Impozite directe",
+            "value": 35
+          },
+          {
+            "name": "Impozite indirecte",
+            "value": 45
+          },
+          {
+            "name": "Alte venituri",
+            "value": 20
+          }
+        ],
+        "expenses": [
+          {
+            "name": "Servicii publice",
+            "value": 25
+          },
+          {
+            "name": "Educație & sănătate",
+            "value": 30
+          },
+          {
+            "name": "Protecție socială",
+            "value": 30
+          },
+          {
+            "name": "Investiții",
+            "value": 15
+          }
+        ]
+      },
+      "provenance": {
+        "status": "C",
+        "statusLegend": "vizualizare deterministă a unui concept textual din material",
+        "primarySource": "Capitolul 18 - Statul in economia de piata_ex.pdf",
+        "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+        "evidence": "Buget public: venituri, cheltuieli, deficit/excedent și structură."
+      }
+    }
+  ],
+  "themeDefaults": {
+    "graphBg": "#ffffff",
+    "grid": "#edf1f6",
+    "axes": "#667085",
+    "line1": "#2f63d5",
+    "line2": "#13865f",
+    "line3": "#7458d8",
+    "line4": "#b46b00",
+    "line5": "#d04f5f",
+    "line6": "#0f8f9b",
+    "t0": "#667085",
+    "probe": "#b42318"
+  },
+  "auditVersion": "5.4-complet",
+  "sourcePolicy": "Nu se introduce o formulă economică nouă dacă nu este susținută de material; vizualizările C sunt marcate ca schematice/didactice."
+}

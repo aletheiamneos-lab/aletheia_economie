@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 3 · Utilitatea bunurilor economice și consumatorul rațional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 24px; margin-top: 16px; font-family: var(--font-mono); }
+.simulator__citire strong { color: var(--accent); font-size: 19px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 12px; }
+.legenda { display: flex; gap: 18px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+  .simulator__citire { gap: 14px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ---------------------------------------------------------------------
+// Continutul capitolului - teoria completa, structurata dupa manual:
+// I. Formele utilitatii (intrinseca, economica: individuala/marginala/totala)
+// II. Consumatorul rational (criteriul eficientei, echilibrul consumatorului)
+// III. Bugetul personal si bugetul de familie
+// ---------------------------------------------------------------------
+const DATA = {
+  capitol: {
+    numar: 3,
+    titlu: 'Utilitatea bunurilor economice și comportamentul consumatorului rațional',
+    obiective: [
+      'Să explici ce este utilitatea economică, utilitatea totală și utilitatea marginală',
+      'Să înțelegi legea utilității marginale descrescânde și comportamentul consumatorului rațional',
+      'Să calculezi și să interpretezi criteriul de eficiență în consum (Umg/P)',
+      'Să determini condiția de echilibru a consumatorului care alege între două bunuri',
+      'Să elaborezi un buget personal și să interpretezi un buget de familie'
+    ]
+  },
+  teorie: [
+    {
+      id: 'utilitate-forme', nr: '1', titlu: 'Utilitatea intrinsecă și utilitatea economică',
+      text: [
+        'Utilitatea intrinsecă (în sens general) reflectă capacitatea unui bun economic de a satisface o nevoie umană, la un moment dat. Ea derivă din proprietățile proprii ale bunului - de exemplu, poți scrie cu un creion, dar nu cu o gumă, datorită proprietăților specifice ale fiecăruia. E aceeași pentru toți consumatorii raționali și proprie tuturor bunurilor de calitate.',
+        'Utilitatea economică reflectă satisfacția pe care crede că o va obține un consumator prin utilizarea unei cantități determinate dintr-un bun economic, în anumite condiții de timp și spațiu. Spre deosebire de utilitatea intrinsecă, ea are o determinare subiectivă: depinde de preferințele, gusturile și veniturile fiecărui consumator.',
+        'Utilitatea economică e specifică doar bunurilor care îndeplinesc simultan 5 condiții: inițial consumatorul nu deține bunul, dar dorește să-l cumpere; există o legătură între proprietățile bunului și o nevoie; convingerea că folosirea bunului aduce o satisfacție cât mai mare; dorința și posibilitatea financiară de a-l achiziționa; capacitatea de a-l folosi efectiv.'
+      ],
+      puncteCheie: [
+        { termen: 'Utilitatea intrinsecă', descriere: 'determinare obiectivă, aceeași pentru toți consumatorii raționali' },
+        { termen: 'Utilitatea economică', descriere: 'determinare subiectivă, diferă de la un consumator la altul, reflectă preferințele și nonposesia inițială a bunului' }
+      ],
+      exemple: [
+        'Există persoane care preferă apa plată, altele apa minerală - același bun (apa), dar utilități economice diferite, pentru că depind de preferințele fiecăruia.'
+      ],
+      formule: []
+    },
+    {
+      id: 'forme-utilitate', nr: '2', titlu: 'Utilitatea individuală, marginală și totală',
+      text: [
+        'Utilitatea individuală (U.i) reflectă satisfacția resimțită la consumarea fiecărei unități dintr-o serie de bunuri omogene. Utilitatea marginală (U.mg) reflectă sporul de satisfacție obținut prin creșterea cu o unitate a cantității consumate - practic, satisfacția adusă de ultima unitate consumată. Utilitatea totală (U.T) reflectă satisfacția totală obținută prin consumul succesiv al unei cantități dintr-un bun, până la pragul de saturație.',
+        'Legea utilității marginale descrescânde, formulată de economistul H.H. Gossen, arată că mărimea intensității unei plăceri descrește progresiv până la saturare, dacă respectiva plăcere este satisfăcută în mod continuu și neîntrerupt. Cu cât consumi mai mult dintr-un bun, cu atât fiecare unitate suplimentară îți aduce mai puțină satisfacție.'
+      ],
+      puncteCheie: [
+        'La prima unitate consumată, U.T = U.mg, iar U.mg are valoarea cea mai mare',
+        'La pragul de saturație (nivelul optim de consum), U.T este maximă, exact când U.mg = 0',
+        'Dincolo de acest prag, U.mg devine negativă, iar U.T scade - semn de comportament irațional'
+      ],
+      exemple: [
+        'Dacă bei pahare cu apă unul după altul, primul pahar aduce cea mai mare satisfacție; fiecare pahar următor aduce tot mai puțin, până când un pahar în plus chiar te incomodează.'
+      ],
+      formule: [
+        { nume: 'Utilitatea marginală', formula: 'Umg = ΔUT/ΔQ = (UT1 - UT0)/(Q1 - Q0)' },
+        { nume: 'Utilitatea totală', formula: 'UT = ΣUi = ΣUmg' }
+      ],
+      diagrama: 'utilitateChart'
+    },
+    {
+      id: 'consumator-rational', nr: '3', titlu: 'Consumatorul rațional și criteriul eficienței',
+      text: [
+        'Consumatorul rațional este persoana care, folosindu-și venitul disponibil pentru a cumpăra bunuri, pune un principiu de eficiență la baza deciziei de a-și maximiza satisfacția. Criteriul de eficiență în alegere și consum este raportul dintre utilitatea marginală și prețul bunului.',
+        'Când alegi între două bunuri, compari acest raport pentru fiecare - și e mai eficient să cumperi mai mult din bunul la care raportul e mai mare, pentru că satisfacția obținută pe unitatea de cheltuială e mai mare acolo.'
+      ],
+      exemple: [
+        'Dacă Umg(x)=30 la prețul Px=10 u.m., iar Umg(y)=25 la prețul Py=5 u.m., atunci Umg(x)/Px=3, dar Umg(y)/Py=5. Deși X aduce mai multă satisfacție brută, Y e alegerea mai eficientă - fiecare leu cheltuit pe Y aduce mai multă satisfacție.'
+      ],
+      puncteCheie: [
+        { termen: 'Efectul de substituție', descriere: 'modificarea consumului dintr-un bun cauzată de modificarea prețului lui, relativ la alte bunuri - un bun mai scump e înlocuit, parțial, cu altele mai ieftine' },
+        { termen: 'Efectul de venit', descriere: 'modificarea consumului cauzată de modificarea venitului real (V/P) - dacă prețul unui bun crește, venitul real scade, iar consumatorul își permite mai puțin' }
+      ],
+      formule: [
+        { nume: 'Criteriul de eficiență', formula: 'Crit.ef. = Umg / P' }
+      ]
+    },
+    {
+      id: 'echilibru-consumator', nr: '4', titlu: 'Programul optim de consum și echilibrul consumatorului',
+      text: [
+        'Esența alegerii consumatorului rațional constă în găsirea acelui program de achiziții și consum care îi maximizează satisfacția (utilitatea totală), folosind venitul său disponibil, limitat.',
+        'Programul optim de consum reflectă combinațiile cantitative maxime obținute prin consumul a două sau mai multe bunuri, de la care consumatorul estimează că va obține satisfacția totală maximă. Venitul disponibil reprezintă limita în care se poate realiza acest program, la prețurile existente ale bunurilor.'
+      ],
+      formule: [
+        { nume: 'Condiția de echilibru (2 bunuri)', formula: 'Umg(x)/Px = Umg(y)/Py' },
+        { nume: 'Ecuația bugetului (venitul disponibil)', formula: 'VD = Qx x Px + Qy x Py' }
+      ],
+      exemple: [
+        'Bianca are 150 u.m./săptămână de cheltuit pe covrigi (Px=5 u.m.) și pateuri (Py=25 u.m.). Comparând raportul Umg/P pentru fiecare cantitate posibilă, cele două rapoarte devin egale (Umg(x)/Px = Umg(y)/Py = 8) exact la a 5-a unitate din fiecare bun. Programul optim de consum este deci 5 covrigi + 5 pateuri: cheltuiește exact tot venitul (5x5 + 5x25 = 150 u.m.) și obține satisfacția totală maximă posibilă, UT = 1.750 utili. Vezi graficul de mai jos - cele două serii de rapoarte se întâlnesc exact în dreptul celei de-a 5-a unități.',
+        'Covrigii și pateurile sunt bunuri substituibile - satisfac alternativ aceeași nevoie (de hrană), așa că, dacă prețul pateurilor crește, Bianca poate cumpăra mai mulți covrigi în loc. Altfel stau lucrurile cu bunurile complementare, care satisfac împreună aceeași nevoie, într-o proporție fixă sau aproape fixă: dacă Bianca ar face o prăjitură cu 5 ouă și 5 linguri de zahăr, o creștere a prețului zahărului n-ar putea fi compensată cu mai multe ouă - rețeta cere ambele, în acea combinație.',
+        'Când sistemul celor 2 ecuații (condiția de echilibru + bugetul) se poate rezolva direct: Dan are un venit de 100 u.m., Px=Py=10 u.m., iar utilitățile marginale sunt UmgX=10-x și UmgY=12-y. Din condiția de echilibru, (10-x)/10=(12-y)/10, rezultă y=x+2; din buget, 10x+10y=100, rezultă x+y=10. Rezolvând sistemul: x=4, y=6 - programul optim de consum este 4x + 6y.'
+      ],
+      diagrama: 'biancaChart',
+      notaLegatura: { href: '#sect-simulator-consum', text: 'Explorează interactiv această condiție de echilibru în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'buget', nr: '5', titlu: 'Bugetul personal și bugetul de familie',
+      text: [
+        'Bugetul personal este un plan financiar care prezintă veniturile și cheltuielile pentru o anumită perioadă. Când venitul e egal cu cheltuielile, bugetul e echilibrat; când cheltuielile propuse depășesc veniturile, bugetul e deficitar; când veniturile depășesc cheltuielile, bugetul e excedentar.',
+        'Bugetul de familie e un instrument statistic prin care se studiază consumul menajelor dintr-o țară - un document completat voluntar de familii considerate reprezentative de autoritatea statistică (în România, Institutul Național de Statistică). Informațiile din bugetele de familie reflectă nivelul și structura consumului, permițând evaluarea nivelului de trai și comparații internaționale.'
+      ],
+      puncteCheie: [
+        'Stabilirea obiectivelor: necesități zilnice, achiziționarea unor bunuri de folosință îndelungată',
+        'Estimarea veniturilor: identificarea principalelor surse (bani de buzunar, alocații, daruri etc.)',
+        'Planificarea cheltuielilor: notarea a ce dorești să cumperi sau să plătești în perioada respectivă'
+      ],
+      exemple: [
+        'Bugetul săptămânal al lui Andrei e echilibrat: 25 u.m. venituri (bani de buzunar + bani de la bunici) și tot 25 u.m. cheltuieli (abonament RATB, bunuri personale, dulciuri, film, îmbrăcăminte, pizza).'
+      ],
+      diagrama: 'bugetChart'
+    }
+  ],
+  grila: [
+    { intrebare: 'Faptul că poți scrie cu un creion, dar nu cu o gumă, ține de:', optiuni: ['utilitatea economică, care e subiectivă', 'utilitatea intrinsecă, care derivă din proprietățile bunului', 'legea utilității marginale descrescânde', 'criteriul de eficiență în consum'], corect: 1, explicatie: 'Utilitatea intrinsecă (în sens general) derivă din proprietățile proprii ale bunului, fiind aceeași pentru toți consumatorii raționali - de-asta poți scrie cu un creion, dar nu cu o gumă.' },
+    { intrebare: 'Pe măsură ce consumi în mod neîntrerupt dintr-un bun, utilitatea marginală:', optiuni: ['crește', 'scade', 'rămâne constantă', 'devine întotdeauna negativă'], corect: 1, explicatie: 'Aceasta e legea utilității marginale descrescânde (Gossen): intensitatea unei plăceri scade progresiv, dacă e satisfăcută în mod continuu și neîntrerupt.' },
+    { intrebare: 'Utilitatea totală este maximă atunci când:', optiuni: ['utilitatea marginală este maximă', 'utilitatea marginală este zero', 'utilitatea marginală este negativă', 'prețul bunului scade'], corect: 1, explicatie: 'La pragul de saturație, utilitatea marginală devine zero, iar utilitatea totală atinge maximul - orice consum suplimentar ar scădea UT (comportament irațional).' },
+    { intrebare: 'Un consumator care alege între bunurile X și Y este în echilibru (rațional) dacă:', optiuni: ['cumpără doar bunul cu prețul cel mai mic', 'Umg(x)/Px = Umg(y)/Py, iar UT este maximă', 'Umg(x) = Umg(y), indiferent de preț', 'cheltuiește tot venitul pe un singur bun'], corect: 1, explicatie: 'Condiția de echilibru a consumatorului cere ca satisfacția marginală pe unitatea de cheltuială să fie egală pentru toate bunurile cumpărate.' },
+    { intrebare: 'Un buget în care cheltuielile depășesc veniturile este:', optiuni: ['echilibrat', 'excedentar', 'deficitar', 'neutru'], corect: 2, explicatie: 'Bugetul deficitar apare când cheltuielile propuse sunt mai mari decât veniturile obținute.' }
+  ],
+  af: [
+    { enunt: 'Utilitatea economică are o determinare obiectivă, fiind aceeași pentru toți consumatorii.', corect: false, explicatie: 'Utilitatea economică are determinare subiectivă - depinde de preferințele, gusturile și veniturile fiecărui consumator. Utilitatea intrinsecă (nu cea economică) e cea cu determinare obiectivă.' },
+    { enunt: 'Utilitatea totală se obține însumând utilitățile marginale ale tuturor unităților consumate.', corect: true, explicatie: 'UT = ΣUmg = Umg1 + Umg2 + ... + Umgn - exact așa cum apare și în centralizatorul de formule.' },
+    { enunt: 'Dacă utilitatea marginală devine negativă, înseamnă că bunul respectiv a provocat consumatorului o insatisfacție.', corect: true, explicatie: 'Dincolo de pragul de saturație, consumul suplimentar reduce utilitatea totală, ceea ce reflectă un comportament irațional.' },
+    { enunt: 'Un buget de familie este completat obligatoriu de toate familiile dintr-o țară.', corect: false, explicatie: 'Bugetul de familie e completat voluntar, doar de familiile selectate ca reprezentative de autoritatea statistică (în România, Institutul Național de Statistică).' },
+    { enunt: 'Venitul disponibil al unui consumator care cumpără două bunuri X și Y se calculează ca VD = Qx x Px + Qy x Py.', corect: true, explicatie: 'Da, aceasta e ecuația bugetului - venitul disponibil reprezintă limita cheltuielilor totale pe cele două bunuri.' }
+  ],
+  probleme: [
+    { enunt: 'Ioana consumă succesiv câte un pahar cu apă. La al treilea pahar, ea își mărește satisfacția totală de la 15 u.u. la 18 u.u. Care este utilitatea marginală a celui de-al treilea pahar (Umg.3)?', unitate: 'u.u.', corect: 3, toleranta: 0.1, explicatie: 'Umg.3 = UT3 - UT2 = 18 - 15 = 3 u.u.' },
+    { enunt: 'Funcția utilității totale este UT = 15 + 5Qx, unde Qx e cantitatea consumată din bunul X. Care este utilitatea marginală, când se consumă succesiv câte o unitate din X?', unitate: 'u.u.', corect: 5, toleranta: 0.1, explicatie: 'Fiind o funcție liniară, fiecare unitate suplimentară adaugă exact panta funcției: Umg = 5 u.u., constant.' },
+    { enunt: 'Pentru consumul a 5 unități dintr-un bun, se știe: UT2 = 60, Umg2 = 10, Umg3 = 8, UT4 = 75, Umg5 = 5. De câte ori este utilitatea totală (UT5) mai mare decât utilitatea marginală (Umg5), la a 5-a unitate?', unitate: 'ori', corect: 16, toleranta: 0.1, explicatie: 'UT1 = UT2 - Umg2 = 50; UT3 = UT2 + Umg3 = 68; UT5 = UT4 + Umg5 = 80. UT5/Umg5 = 80/5 = 16 ori.' },
+    { enunt: 'Satisfacția ultimei unități consumate din bunul A (preț 45 u.m.) este de 60 u.u., iar din bunul B este de 20 u.u. Pentru ce preț al bunului B (PB) consumatorul este în echilibru?', unitate: 'u.m.', corect: 15, toleranta: 0.1, explicatie: 'Din Umg(A)/PA = Umg(B)/PB: 60/45 = 20/PB, deci PB = 20 x 45/60 = 15 u.m.' },
+    { enunt: 'Utilitatea marginală, la consumul a 5 bucăți dintr-un bun X, evoluează astfel: 15, 10, 6, 0, -2 (pentru Q = 1..5). Care este utilitatea totală (UT) în condiții de optim pentru consumator?', unitate: 'u.u.', corect: 31, toleranta: 0.1, explicatie: 'Optimul (pragul de saturație) e atins quando Umg = 0, la Q = 4. UT = 15+10+6+0 = 31 u.u.' },
+    { enunt: 'Dan alege între bunurile X și Y, cu un venit de 100 u.m. Prețurile sunt Px=Py=10 u.m., iar utilitățile marginale sunt UmgX=10-x și UmgY=12-y. Care este cantitatea optimă din bunul X (x), în programul optim de consum?', unitate: 'buc.', corect: 4, toleranta: 0.1, explicatie: 'Din condiția de echilibru: (10-x)/10=(12-y)/10, deci y=x+2. Din buget: 10x+10y=100, deci x+y=10. Rezolvând: x=4, y=6.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Utilitatea individuală' },
+        { id: 't2', text: 'Utilitatea marginală' },
+        { id: 't3', text: 'Utilitatea totală' },
+        { id: 't4', text: 'Buget deficitar' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Satisfacția resimțită la consumarea fiecărei unități dintr-o serie de bunuri omogene' },
+        { id: 'o_b', text: 'Sporul de satisfacție obținut prin creșterea cu o unitate a cantității consumate' },
+        { id: 'o_c', text: 'Satisfacția totală obținută prin consumul succesiv al unei cantități dintr-un bun' },
+        { id: 'o_d', text: 'Buget în care cheltuielile depășesc veniturile' },
+        { id: 'o_e', text: 'Buget în care veniturile depășesc cheltuielile' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, bugetul excedentar - opusul lui buget deficitar, nu un termen din coloana din stânga.'
+    }
+  ]
+};
+
+// ---------------------------------------------------------------------
+// Paleta pentru segmentele graficelor cu bare stivuite (buget)
+// ---------------------------------------------------------------------
+const coloriSegmente = ['#1e3a5f', '#5b7ea3', '#a8790f', '#c9a45c', '#7d8a80', '#b23a2e'];
+
+// ---------------------------------------------------------------------
+// Helpere DOM (identice cu celelalte capitole - motorul comun)
+// ---------------------------------------------------------------------
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+
+// ---------------------------------------------------------------------
+// Arbore de clasificare (motor comun - vezi kit-extindere-cod.md).
+// Nu e folosit in acest capitol (nu are clasificari de facut), dar il
+// pastram pentru consistenta motorului intre capitole.
+// ---------------------------------------------------------------------
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Diagrama 1 (inline, sectiunea 2): utilitatea totala si marginala,
+// interactiva - un slider alege "cate pahare ai baut".
+// ---------------------------------------------------------------------
+function buildUtilitateChart() {
+  const puncte = [
+    { q: 1, ut: 15, umg: 15 }, { q: 2, ut: 20, umg: 5 }, { q: 3, ut: 23, umg: 3 },
+    { q: 4, ut: 24, umg: 1 }, { q: 5, ut: 24, umg: 0 }, { q: 6, ut: 23, umg: -1 }
+  ];
+  const width = 400, height = 260, left = 42, right = 10, top = 18, bottom = 32;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const maxQ = 6, minY = -5, maxY = 27;
+  const sx = q => left + (q / maxQ) * chartW;
+  const sy = y => top + chartH - ((y - minY) / (maxY - minY)) * chartH;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Pe măsură ce bei pahare cu apă, unul după altul, urmărește cum evoluează utilitatea totală (UT) și utilitatea marginală (Umg).'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Graficul utilitatii totale si marginale pentru pahare succesive de apa' });
+  svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const zeroY = sy(0);
+  svg.appendChild(elNS('line', { x1: left, y1: zeroY, x2: left + chartW, y2: zeroY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' }); labelY.textContent = 'Utili';
+  const labelX = elNS('text', { x: left + chartW, y: height - 8, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' }); labelX.textContent = 'Pahare (Q)';
+  svg.appendChild(labelY); svg.appendChild(labelX);
+
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => sx(p.q) + ',' + sy(p.ut)).join(' ') }));
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--bad)', 'stroke-width': 2.5, points: puncte.map(p => sx(p.q) + ',' + sy(p.umg)).join(' ') }));
+  puncte.forEach(p => {
+    svg.appendChild(elNS('circle', { cx: sx(p.q), cy: sy(p.ut), r: 3, fill: 'var(--accent)' }));
+    svg.appendChild(elNS('circle', { cx: sx(p.q), cy: sy(p.umg), r: 3, fill: 'var(--bad)' }));
+  });
+  const punctActivUT = elNS('circle', { r: 6, fill: 'var(--mark)' });
+  const punctActivUmg = elNS('circle', { r: 6, fill: 'var(--mark)' });
+  svg.appendChild(punctActivUT); svg.appendChild(punctActivUmg);
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Utilitate totală (UT)'));
+  legenda.appendChild(legendItem('var(--bad)', 'Utilitate marginală (Umg)'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxUT = document.createElement('div'); const sUT = document.createElement('strong'); boxUT.appendChild(sUT); boxUT.appendChild(el('span', '', 'Utilitate totală'));
+  const boxUmg = document.createElement('div'); const sUmg = document.createElement('strong'); boxUmg.appendChild(sUmg); boxUmg.appendChild(el('span', '', 'Utilitate marginală'));
+  citire.appendChild(boxUT); citire.appendChild(boxUmg);
+  wrap.appendChild(citire);
+
+  const interpretare = document.createElement('div');
+  interpretare.style.marginTop = '10px'; interpretare.style.fontSize = '13.5px'; interpretare.style.color = 'var(--text-muted)';
+  wrap.appendChild(interpretare);
+
+  const sliderWrap = el('div', 'simulator__sliders');
+  const row = el('div', 'slider-row');
+  const label = document.createElement('label');
+  label.appendChild(el('span', '', 'Pahare băute'));
+  const labelVal = el('span', '', '1');
+  label.appendChild(labelVal);
+  row.appendChild(label);
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '1'; slider.max = '6'; slider.step = '1'; slider.value = '1';
+  row.appendChild(slider);
+  sliderWrap.appendChild(row);
+  wrap.appendChild(sliderWrap);
+
+  function recalc(q) {
+    const p = puncte[q - 1];
+    labelVal.textContent = q;
+    punctActivUT.setAttribute('cx', sx(p.q)); punctActivUT.setAttribute('cy', sy(p.ut));
+    punctActivUmg.setAttribute('cx', sx(p.q)); punctActivUmg.setAttribute('cy', sy(p.umg));
+    sUT.textContent = p.ut + ' utili';
+    sUmg.textContent = p.umg + ' utili';
+    let mesaj;
+    if (p.umg > 0) mesaj = 'Umg > 0: fiecare pahar suplimentar încă îți aduce satisfacție (dar tot mai puțină).';
+    else if (p.umg === 0) mesaj = 'Umg = 0: ai atins pragul de saturație - UT e maximă chiar aici.';
+    else mesaj = 'Umg < 0: ai depășit pragul de saturație - consumul suplimentar chiar te incomodează.';
+    interpretare.textContent = mesaj;
+  }
+  slider.addEventListener('input', () => recalc(Number(slider.value)));
+  recalc(1);
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Diagrama 2 (inline, sectiunea 5): bugetul saptamanal al lui Andrei,
+// grafic cu bare stivuite (venituri vs. cheltuieli).
+// ---------------------------------------------------------------------
+function buildBugetChart() {
+  const venituri = [{ nume: 'Bani de buzunar', val: 20 }, { nume: 'Alte venituri (bunici)', val: 5 }];
+  const cheltuieli = [{ nume: 'Abonament RATB', val: 10 }, { nume: 'Bunuri personale', val: 2 }, { nume: 'Dulciuri', val: 1 }, { nume: 'Film', val: 5 }, { nume: 'Îmbrăcăminte', val: 5 }, { nume: 'Pizza', val: 2 }];
+  const totalV = venituri.reduce((a, b) => a + b.val, 0);
+  const totalC = cheltuieli.reduce((a, b) => a + b.val, 0);
+
+  const wrap = el('div', 'diagrama');
+  const randDonuturi = document.createElement('div');
+  randDonuturi.style.display = 'flex';
+  randDonuturi.style.flexWrap = 'wrap';
+  randDonuturi.style.gap = '18px';
+  randDonuturi.style.justifyContent = 'center';
+
+  function coloana(titlu, total, items) {
+    const col = document.createElement('div');
+    col.style.flex = '1 1 220px';
+    col.style.textAlign = 'center';
+    const t = el('div', '', titlu + ' - ' + total + ' u.m.');
+    t.style.fontFamily = 'var(--font-mono)';
+    t.style.fontSize = '11.5px';
+    t.style.color = 'var(--text-muted)';
+    t.style.marginBottom = '4px';
+    col.appendChild(t);
+    col.appendChild(buildDonutChart(items.map((it, i) => ({ label: it.nume, val: it.val, culoare: coloriSegmente[i % coloriSegmente.length] }))));
+    return col;
+  }
+  randDonuturi.appendChild(coloana('Venituri', totalV, venituri));
+  randDonuturi.appendChild(coloana('Cheltuieli', totalC, cheltuieli));
+  wrap.appendChild(randDonuturi);
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Diagrama (inline, sectiunea 4): exemplul Biancai - grafic cu bare
+// grupate, aratand cum cele doua rapoarte Umg/P converg exact la
+// cantitatea de echilibru (Q=5).
+// ---------------------------------------------------------------------
+function buildBiancaChart() {
+  const date = [
+    { q: 1, rx: 12, ry: 16 }, { q: 2, rx: 11, ry: 14 }, { q: 3, rx: 10, ry: 12 },
+    { q: 4, rx: 9, ry: 10 }, { q: 5, rx: 8, ry: 8 }, { q: 6, rx: 7, ry: 6 }
+  ];
+  const width = 360, height = 230, left = 34, right = 10, top = 16, bottom = 40;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const maxVal = 17;
+  const baseY = top + chartH;
+  const groupW = chartW / date.length;
+  const barW = groupW * 0.32;
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Ratele Umg/Pret pentru covrigi si pateuri, la fiecare cantitate; se egalizeaza la a cincea unitate' });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: left + chartW, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+
+  date.forEach((d, i) => {
+    const groupX = left + i * groupW;
+    if (d.q === 5) {
+      svg.appendChild(elNS('rect', { x: groupX + 2, y: top, width: groupW - 4, height: chartH, fill: 'var(--good-bg)' }));
+    }
+    const hx = (d.rx / maxVal) * chartH, hy = (d.ry / maxVal) * chartH;
+    const xBarX = groupX + groupW / 2 - barW - 2;
+    const xBarY = groupX + groupW / 2 + 2;
+    svg.appendChild(elNS('rect', { x: xBarX, y: baseY - hx, width: barW, height: hx, fill: 'var(--accent)', rx: 2 }));
+    svg.appendChild(elNS('rect', { x: xBarY, y: baseY - hy, width: barW, height: hy, fill: 'var(--bad)', rx: 2 }));
+    const labelQ = elNS('text', { x: groupX + groupW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 11, fill: d.q === 5 ? 'var(--good)' : 'var(--text-muted)', 'font-weight': d.q === 5 ? 600 : 400 });
+    labelQ.textContent = 'Q=' + d.q;
+    svg.appendChild(labelQ);
+  });
+  const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' }); labelY.textContent = 'Umg/Preț';
+  svg.appendChild(labelY);
+
+  const wrap = el('div', 'diagrama');
+  wrap.appendChild(svg);
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Umg(covrigi)/Px'));
+  legenda.appendChild(legendItem('var(--bad)', 'Umg(pateuri)/Py'));
+  legenda.appendChild(legendItem('var(--good)', 'Echilibru (Q=5)'));
+  wrap.appendChild(legenda);
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Scor
+// ---------------------------------------------------------------------
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+// ---------------------------------------------------------------------
+// Sectiuni de teorie
+// ---------------------------------------------------------------------
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.diagrama === 'utilitateChart') body.appendChild(buildUtilitateChart());
+  if (item.diagrama === 'bugetChart') body.appendChild(buildBugetChart());
+  if (item.diagrama === 'biancaChart') body.appendChild(buildBiancaChart());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// I. Teste grila
+// ---------------------------------------------------------------------
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// II. Adevarat / Fals
+// ---------------------------------------------------------------------
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// III. Probleme numerice
+// ---------------------------------------------------------------------
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// IV. Asociere
+// ---------------------------------------------------------------------
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// V. Simulator: eficienta si echilibrul consumatorului (Umg/P), cu bare
+// ---------------------------------------------------------------------
+function buildSimulatorEchilibruConsum() {
+  const width = 280, height = 210, barW = 70, gapBar = 60, top = 16, bottom = 34;
+  const chartH = height - top - bottom;
+  const maxRatioScale = 25;
+  const scale = chartH / maxRatioScale;
+  const x1 = 40, x2 = x1 + barW + gapBar;
+  const baseY = top + chartH;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Alege utilitatea marginală și prețul pentru două bunuri X și Y, și vezi care e alegerea mai eficientă - sau dacă ești deja în echilibru.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Compararea raportului utilitate marginala / pret, pentru bunurile X si Y' });
+  svg.appendChild(elNS('line', { x1: 20, y1: baseY, x2: width - 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const barX = elNS('rect', { x: x1, width: barW, fill: 'var(--accent)' });
+  const barY = elNS('rect', { x: x2, width: barW, fill: 'var(--bad)' });
+  svg.appendChild(barX); svg.appendChild(barY);
+  const labelValX = elNS('text', { x: x1 + barW / 2, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 13, fill: 'var(--text)', 'font-weight': 600 });
+  const labelValY = elNS('text', { x: x2 + barW / 2, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 13, fill: 'var(--text)', 'font-weight': 600 });
+  svg.appendChild(labelValX); svg.appendChild(labelValY);
+  const lblX = elNS('text', { x: x1 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); lblX.textContent = 'Umg(x)/Px';
+  const lblY = elNS('text', { x: x2 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); lblY.textContent = 'Umg(y)/Py';
+  svg.appendChild(lblX); svg.appendChild(lblY);
+  wrap.appendChild(svg);
+
+  const verdict = document.createElement('div');
+  verdict.style.marginTop = '14px';
+  wrap.appendChild(verdict);
+
+  const sliders = el('div', 'simulator__sliders');
+  function randSlider(labelTxt, min, max, step, val, onChange) {
+    const row = el('div', 'slider-row');
+    const label = document.createElement('label');
+    const labelSpanTxt = el('span', '', labelTxt);
+    const labelSpanVal = el('span', '', String(val));
+    label.appendChild(labelSpanTxt); label.appendChild(labelSpanVal);
+    row.appendChild(label);
+    const input = document.createElement('input');
+    input.type = 'range'; input.min = min; input.max = max; input.step = step; input.value = val;
+    input.addEventListener('input', () => { labelSpanVal.textContent = input.value; onChange(); });
+    row.appendChild(input);
+    sliders.appendChild(row);
+    return input;
+  }
+
+  const inputUmgX = randSlider('Umg(x)', 5, 50, 5, 30, () => recalc());
+  const inputPx = randSlider('Preț X (u.m.)', 2, 20, 1, 10, () => recalc());
+  const inputUmgY = randSlider('Umg(y)', 5, 50, 5, 25, () => recalc());
+  const inputPy = randSlider('Preț Y (u.m.)', 2, 20, 1, 5, () => recalc());
+  wrap.appendChild(sliders);
+
+  function recalc() {
+    const ux = Number(inputUmgX.value), px_ = Number(inputPx.value), uy = Number(inputUmgY.value), py_ = Number(inputPy.value);
+    const rx = ux / px_, ry = uy / py_;
+    const hx = Math.min(rx, maxRatioScale) * scale, hy = Math.min(ry, maxRatioScale) * scale;
+    barX.setAttribute('y', baseY - hx); barX.setAttribute('height', hx);
+    barY.setAttribute('y', baseY - hy); barY.setAttribute('height', hy);
+    labelValX.setAttribute('y', baseY - hx - 8); labelValX.textContent = rx.toFixed(1);
+    labelValY.setAttribute('y', baseY - hy - 8); labelValY.textContent = ry.toFixed(1);
+
+    if (Math.abs(rx - ry) < 0.05) {
+      verdict.className = 'feedback corect';
+      verdict.textContent = 'Ești în echilibru: Umg(x)/Px = Umg(y)/Py = ' + rx.toFixed(1) + '. Această combinație maximizează satisfacția, în limita venitului disponibil.';
+    } else if (rx > ry) {
+      verdict.className = 'feedback';
+      verdict.style.background = 'var(--accent-soft)'; verdict.style.color = 'var(--accent)';
+      verdict.textContent = 'Bunul X e mai eficient (raport mai mare) - ar trebui să cumperi mai mult din X și mai puțin din Y, până când cele două rapoarte se egalizează.';
+    } else {
+      verdict.className = 'feedback';
+      verdict.style.background = 'var(--accent-soft)'; verdict.style.color = 'var(--accent)';
+      verdict.textContent = 'Bunul Y e mai eficient (raport mai mare) - ar trebui să cumperi mai mult din Y și mai puțin din X, până când cele două rapoarte se egalizează.';
+    }
+  }
+  recalc();
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Asamblare pagina
+// ---------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowSim = el('div', 'exercitiu-eyebrow', 'V. Simulator: eficiența și echilibrul consumatorului');
+  eyebrowSim.id = 'sect-simulator-consum';
+  root.appendChild(eyebrowSim);
+  root.appendChild(el('div', 'exercitiu-sub', 'Pornește chiar din exemplul din teorie (secțiunea 3) - încearcă să miști sliderele până ajungi la echilibru.'));
+  root.appendChild(buildSimulatorEchilibruConsum());
+});
+</script>
+</body>
+</html>

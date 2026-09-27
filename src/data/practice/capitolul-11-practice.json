@@ -1,0 +1,1288 @@
+{
+  "capitol": 11,
+  "titlu_capitol": "Inflația",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (definitia inflatiei, formele si cauzele ei, efectele, masurile de combatere). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (I_GP=Suma(I_P x Z), r.i=I_GP-100%, PCB=1/I_P, PCM=M/I_P), inclusiv corelarea cu elasticitatea cererii/ofertei si cu rata dobanzii (d'n=d'r+r.i).",
+  "intrebari": [
+    {
+      "id": "C11_T01",
+      "capitol": 11,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Inflația reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O scădere generalizată și rapidă a prețurilor bunurilor economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un fenomen exclusiv pozitiv al economiei de piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un proces de ansamblu al economiei caracterizat prin existența în circulație a unei mase monetare mai mari decât nevoile reale ale economiei, sesizat prin creșterea generalizată a prețurilor și deprecierea valorii banilor",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "O creștere a masei monetare mai mică decât nevoile reale ale economiei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Inflația nu înseamnă scăderea prețurilor sau un deficit de monedă, ci exact opusul: existența unei mase monetare mai mari decât nevoile reale ale economiei, sesizată prin creșterea generalizată a prețurilor și deprecierea valorii banilor. Prin urmare, răspunsul corect este: Un proces de ansamblu al economiei caracterizat prin existența în circulație a unei mase monetare mai mari decât nevoile reale ale economiei, sesizat prin creșterea generalizată a prețurilor și deprecierea valorii banilor."
+    },
+    {
+      "id": "C11_T02",
+      "capitol": 11,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Principalii indicatori folosiți pentru măsurarea inflației sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Indicele general al prețurilor și indicele prețurilor bunurilor de consum",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv rata dobânzii pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv rata șomajului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Inflația se măsoară prin urmărirea evoluției prețurilor: indicele general al prețurilor (sau deflatorul PIB) și indicele prețurilor bunurilor de consum sunt cei doi indicatori principali, din care derivă direct rata inflației. Prin urmare, răspunsul corect este: Indicele general al prețurilor și indicele prețurilor bunurilor de consum."
+    },
+    {
+      "id": "C11_T03",
+      "capitol": 11,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata inflației (r.i) se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "r.i = I_GP × 100%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "r.i = I_GP + 100%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "r.i = 100% – I_GP – 100%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "r.i = I_GP – 100%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rata inflației exprimă exact cât a crescut indicele general al prețurilor peste nivelul de referință (100%): r.i = I_GP – 100%, sau, echivalent, r.i = I_PC – 100%. Prin urmare, răspunsul corect este: r.i = I_GP – 100%."
+    },
+    {
+      "id": "C11_T04",
+      "capitol": 11,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Inflația este considerată un dezechilibru monetar, în primul rând, pentru că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu are nicio legătură cu masa monetară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este cauzată exclusiv de factori naturali",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Are loc pe piața monetară, provocat de o ofertă de monedă excedentară față de cererea de monedă",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Afectează exclusiv piața muncii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Premisa fundamentală a mecanismului inflaționist este existența unei mase monetare excedentare față de oferta de bunuri economice — un dezechilibru care se manifestă, în primul rând, pe piața monetară. Prin urmare, răspunsul corect este: Are loc pe piața monetară, provocat de o ofertă de monedă excedentară față de cererea de monedă."
+    },
+    {
+      "id": "C11_T05",
+      "capitol": 11,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În funcție de intensitatea cu care se manifestă, inflația poate fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar moderată, indiferent de nivelul ratei inflației",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un fenomen care nu poate fi clasificat după intensitate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar galopantă, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Moderată (r.i < 10%), galopantă (r.i > 10%) sau hiperinflație (r.i de 4-5 cifre)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Intensitatea inflației variază pe o scară largă: de la inflația moderată (sub 10%), la cea galopantă (peste 10%, uneori peste 100%), până la hiperinflație (rate de 4-5 cifre sau mai mult). Prin urmare, răspunsul corect este: Moderată (r.i < 10%), galopantă (r.i > 10%) sau hiperinflație (r.i de 4-5 cifre)."
+    },
+    {
+      "id": "C11_T06",
+      "capitol": 11,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre cauzele inflației prin cerere se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Scăderea prețurilor factorilor de producție importați",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Reducerea excesivă a creditului acordat de bănci",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Creșterea cheltuielilor de consum și a cheltuielilor publice (deficitul bugetar)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Scăderea generalizată a cheltuielilor de consum",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Inflația prin cerere apare atunci când cererea agregată depășește oferta: creșterea cheltuielilor de consum, a cheltuielilor publice (deficitul bugetar) sau creșterea excesivă a creditului sunt cauze tipice — nu scăderea acestora. Prin urmare, răspunsul corect este: Creșterea cheltuielilor de consum și a cheltuielilor publice (deficitul bugetar)."
+    },
+    {
+      "id": "C11_T07",
+      "capitol": 11,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre cauzele inflației prin ofertă (costuri) se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Creșterea salariilor fără acoperire în sporirea productivității muncii",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Reducerea fiscalității asupra firmelor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Scăderea prețurilor factorilor de producție importați",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Scăderea generalizată a costurilor de producție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Inflația prin costuri apare atunci când cresc cheltuielile de producție fără o justificare în eficiență: creșterea salariilor peste sporirea productivității muncii este cauza tipică — nu scăderea costurilor sau a fiscalității. Prin urmare, răspunsul corect este: Creșterea salariilor fără acoperire în sporirea productivității muncii."
+    },
+    {
+      "id": "C11_T08",
+      "capitol": 11,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spirala inflaționistă apare atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata dobânzii scade sub nivelul ratei inflației",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Inflația prin cerere și inflația prin ofertă (costuri) se întrepătrund, chiar dacă procesul este determinat inițial de o singură cauză",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Masa monetară este perfect echilibrată cu oferta de bunuri",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Prețurile scad constant, fără nicio legătură cu cererea sau oferta",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Spirala inflaționistă este un mecanism de auto-alimentare: chiar dacă inflația pornește dintr-o singură cauză (cerere sau ofertă), cele două forme ajung să se întrepătrundă și să se amplifice reciproc. Prin urmare, răspunsul corect este: Inflația prin cerere și inflația prin ofertă (costuri) se întrepătrund, chiar dacă procesul este determinat inițial de o singură cauză."
+    },
+    {
+      "id": "C11_T09",
+      "capitol": 11,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Inflația importată este declanșată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Reducerea cheltuielilor publice ale statului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sporirea importurilor de bunuri economice sau factori de producție cu prețuri ridicate, care determină creșterea costurilor și, implicit, a prețurilor bunurilor importate",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Excedentul de masă monetară internă în raport cu oferta de bunuri economice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Scăderea generalizată a prețurilor de import",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Spre deosebire de inflația internă (declanșată de excedentul intern de masă monetară), inflația importată vine din afară: prețurile ridicate ale bunurilor sau factorilor de producție importați se transmit direct în costurile și prețurile interne. Prin urmare, răspunsul corect este: Sporirea importurilor de bunuri economice sau factori de producție cu prețuri ridicate, care determină creșterea costurilor și, implicit, a prețurilor bunurilor importate."
+    },
+    {
+      "id": "C11_T10",
+      "capitol": 11,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre efectele negative ale inflației se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Creșterea investițiilor productive, indiferent de rata dobânzii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea completă a incertitudinii economice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Deprecierea valorii banilor și descurajarea înclinației spre economisire",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Stimularea exclusivă a exporturilor de bunuri economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Printre efectele negative preponderente ale inflației se numără deprecierea valorii banilor, descurajarea economisirii, accentuarea deficitului bugetar și creșterea incertitudinii — nu stimularea exporturilor sau eliminarea riscurilor, care sunt efecte diferite. Prin urmare, răspunsul corect este: Deprecierea valorii banilor și descurajarea înclinației spre economisire."
+    },
+    {
+      "id": "C11_T11",
+      "capitol": 11,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Inflația dezavantajează, în principal:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cumpărătorii, creditorii, pensionarii și persoanele cu venituri mici și fixe",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Persoanele cu venituri mari și ajustabile",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Puterea publică, în calitate de mare debitor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Vânzătorii și debitorii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cei ale căror venituri sau creanțe sunt fixe în termeni nominali pierd cel mai mult din inflație: cumpărătorii, creditorii, pensionarii și persoanele cu venituri mici și fixe — spre deosebire de vânzători, debitori sau puterea publică, care sunt, de regulă, avantajați. Prin urmare, răspunsul corect este: Cumpărătorii, creditorii, pensionarii și persoanele cu venituri mici și fixe."
+    },
+    {
+      "id": "C11_T12",
+      "capitol": 11,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre efectele pozitive ale inflației se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Accentuarea deficitului bugetului de stat",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea firmelor necompetitive, favorizându-le pe cele eficiente",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Deprecierea valorii banilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Descurajarea investițiilor productive",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Deși preponderent negativă, inflația are și câteva efecte pozitive: favorizează firmele eficiente în detrimentul celor necompetitive și stimulează exporturile — spre deosebire de deprecierea banilor sau accentuarea deficitului bugetar, care sunt efecte negative. Prin urmare, răspunsul corect este: Eliminarea firmelor necompetitive, favorizându-le pe cele eficiente."
+    },
+    {
+      "id": "C11_T13",
+      "capitol": 11,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Inflația avantajează, în principal:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Pensionarii și persoanele cu venituri fixe",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Importatorii de bunuri economice scumpe",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cumpărătorii și creditorii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Vânzătorii, debitorii și persoanele cu venituri mari și ajustabile",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Vânzătorii, debitorii (care rambursează datorii cu bani depreciați) și persoanele cu venituri mari, ajustabile la inflație, sunt principalii beneficiari — spre deosebire de cumpărători, creditori sau pensionari, care sunt dezavantajați. Prin urmare, răspunsul corect este: Vânzătorii, debitorii și persoanele cu venituri mari și ajustabile."
+    },
+    {
+      "id": "C11_T14",
+      "capitol": 11,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Indexarea salariilor și a altor venituri este considerată:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cea mai importantă măsură de protecție socială împotriva efectelor negative ale inflației",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O măsură antiinflaționistă de reducere a masei monetare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O măsură interzisă prin lege în orice economie de piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O măsură de sporire a ofertei de bunuri economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dintre măsurile de protecție socială (indexare, creșterea dobânzilor la economii, compensații, subvenții), indexarea salariilor și a altor venituri este considerată cea mai importantă, deoarece atenuează direct pierderea puterii de cumpărare. Prin urmare, răspunsul corect este: Cea mai importantă măsură de protecție socială împotriva efectelor negative ale inflației."
+    },
+    {
+      "id": "C11_T15",
+      "capitol": 11,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre măsurile antiinflaționiste de reducere a masei monetare (cererii agregate) se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Facilități acordate producătorilor pentru cercetare-dezvoltare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Creșterea ratei dobânzii la creditele acordate",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Subvenționarea prețurilor unor produse de bază",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea fiscalității asupra veniturilor firmelor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Reducerea masei monetare (a cererii agregate) se realizează prin creșterea ratei dobânzii, echilibrarea bugetului de stat, încetinirea emisiunii monetare sau creșterea fiscalității — celelalte variante descriu, de fapt, măsuri de sporire a ofertei sau de protecție socială. Prin urmare, răspunsul corect este: Creșterea ratei dobânzii la creditele acordate."
+    },
+    {
+      "id": "C11_T16",
+      "capitol": 11,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre măsurile de sporire a ofertei de bunuri economice, ca instrument antiinflaționist, se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "„Înghețarea” prețurilor și salariilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Creșterea ratei dobânzii la creditele acordate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Creșterea fiscalității asupra tuturor agenților economici",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea fiscalității asupra veniturilor firmelor și facilități acordate producătorilor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Spre deosebire de măsurile de reducere a cererii agregate (dobândă mai mare, fiscalitate crescută), sporirea ofertei mizează pe stimularea producției: reducerea fiscalității firmelor și facilități pentru cercetare-dezvoltare sunt exemple tipice. Prin urmare, răspunsul corect este: Reducerea fiscalității asupra veniturilor firmelor și facilități acordate producătorilor."
+    },
+    {
+      "id": "C11_T17",
+      "capitol": 11,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Puterea de cumpărare a unei unități monetare (PCB) se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "PCB = 1/P",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "PCB = M × V",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "PCB = P",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "PCB = P × Q",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Puterea de cumpărare a unei unități monetare este invers proporțională cu nivelul prețurilor: cu cât prețurile cresc, cu atât aceeași sumă de bani cumpără mai puțin — de unde PCB = 1/P. Prin urmare, răspunsul corect este: PCB = 1/P."
+    },
+    {
+      "id": "C11_T18",
+      "capitol": 11,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Puterea de cumpărare a unei mase monetare (PCM), adică valoarea ei reală, se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "PCM = M × I_P",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "PCM = I_P/M",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "PCM = M/I_P",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "PCM = M – I_P",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Valoarea reală a unei sume de bani se obține împărțind suma nominală la indicele prețurilor: PCM = M/I_P — cu cât prețurile cresc mai mult, cu atât aceeași sumă nominală „valorează” mai puțin în termeni reali. Prin urmare, răspunsul corect este: PCM = M/I_P."
+    },
+    {
+      "id": "C11_T19",
+      "capitol": 11,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Indicele general al prețurilor (I_GP), atunci când se calculează pe baza unui „coș de bunuri”, se determină ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Produsul dintre numărul de bunuri din coș și prețul mediu al acestora",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Diferența dintre prețul cel mai mare și cel mai mic din coșul de bunuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Media aritmetică simplă a prețurilor absolute ale bunurilor din coș, fără nicio ponderare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Suma produselor dintre indicele prețului fiecărui bun și ponderea lui în consumul total",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Deoarece bunurile nu au aceeași pondere în consumul unei familii, I_GP se calculează ca o medie ponderată: suma produselor dintre indicele prețului fiecărui bun (I_P) și ponderea lui în consumul total (Z), nu o simplă medie aritmetică. Prin urmare, răspunsul corect este: Suma produselor dintre indicele prețului fiecărui bun și ponderea lui în consumul total."
+    },
+    {
+      "id": "C11_T20",
+      "capitol": 11,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Combaterea efectelor negative ale inflației:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Se realizează exclusiv prin indexarea salariilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu se poate realiza doar printr-o singură categorie de măsuri, ci printr-un „pachet de măsuri”, pe termen mediu și lung",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Nu necesită nicio intervenție din partea statului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Se realizează exclusiv prin creșterea masei monetare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Nicio măsură izolată (protecție socială, reducerea masei monetare sau sporirea ofertei) nu poate, de una singură, combate eficient inflația — este nevoie de un pachet coerent de măsuri, aplicat pe termen mediu și lung. Prin urmare, răspunsul corect este: Nu se poate realiza doar printr-o singură categorie de măsuri, ci printr-un „pachet de măsuri”, pe termen mediu și lung."
+    },
+    {
+      "id": "C11_E01",
+      "capitol": 11,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se cunosc următoarele date privind 4 bunuri care fac parte din „coșul de bunuri” al unei familii: Bunuri de consum: A, B, C, D | Indicele prețurilor (I_P): A=115%, B=95%, C=130%, D=105% | Ponderea în consum (Z): A=40%, B=30%, C=10%, D=20%. Rata inflației (r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "11,5%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "108,5%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "8,5%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "4,45%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "r.i = Σ(I_P × Z) – 100% = (1,15×0,4 + 0,95×0,3 + 1,30×0,1 + 1,05×0,2) × 100 – 100% = (0,46+0,285+0,13+0,21) × 100 – 100% = 108,5% – 100% = 8,5%."
+    },
+    {
+      "id": "C11_E02",
+      "capitol": 11,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "P₀ = 300 u.m., r.i (t₀ → t₁) = 25%, iar în perioada t₁ → t₂ prețurile cresc de 1,2 ori față de perioada t₀ → t₁. Prețul bunului la sfârșitul perioadei (P₂) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "375 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "360 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "450 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_P (t₀→t₁) = 125% → P₁ = 1,25 × 300 = 375 u.m. I_P (t₁→t₂) = 120% → P₂ = 1,2 × 375 = 450 u.m."
+    },
+    {
+      "id": "C11_E03",
+      "capitol": 11,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, rata inflației din economie a fost 25%. Prețurile (P) au crescut de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,25 ori",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "1,025 ori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25 ori",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,25 ori",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "r.i = 25% → I_GP = 125% = (P₁/P₀) × 100 → P₁ = 1,25P₀, adică prețurile au crescut de 1,25 ori."
+    },
+    {
+      "id": "C11_E04",
+      "capitol": 11,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivel macroeconomic, oferta globală de bunuri de consum a crescut într-un an cu 25% în condițiile unui coeficient de elasticitate a ofertei față de preț de 1,25. Rata inflației (r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "156,25%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "156%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "31,25%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "E_Of(P) = 1,25 = 25% : Δ%P ⇒ Δ%P = 25%/1,25 = 20% = r.i."
+    },
+    {
+      "id": "C11_E05",
+      "capitol": 11,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe piața monetară, rata dobânzii nominală este 10%, iar cea reală este cu 30% mai mică. Rata inflației (r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "30%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "13%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "7%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "d'r = d'n – 30%d'n = 70% × 10% = 7% → r.i = d'n – d'r = 10% – 7% = 3%."
+    },
+    {
+      "id": "C11_E06",
+      "capitol": 11,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, rata inflației a fost 10%, iar în anul următor a crescut cu 5 puncte procentuale. Variația procentuală a ratei inflației (Δ%r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "5%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "150%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "15%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "r.i₁ = 10% + 5 p.p. = 15% → I_r.i = (r.i₁/r.i₀) × 100 = (15/10) × 100 = 150% ⇒ Δ%r.i = 50%."
+    },
+    {
+      "id": "C11_E07",
+      "capitol": 11,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Cererea globală de bunuri de consum a scăzut într-un an cu 25%. Dacă coeficientul de elasticitate a cererii față de preț este 2,5, indicele puterii de cumpărare a unei unități monetare (I_PCB) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "115%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "86,95%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "110%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "90,91%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Δ%Q = – 25% și E_Q(P) = 2,5 = –(–25% : Δ%P) ⇒ Δ%P = 10% → I_P = 110% ⇒ I_PCB = (1/I_P) × 100 ≈ 90,91%."
+    },
+    {
+      "id": "C11_E08",
+      "capitol": 11,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe piața monetară, la începutul anului, d'n₀ = 15% și a scăzut cu 20%, iar d'r a rămas constantă la 10%. Indicele ratei inflației (I_r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "40%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "100%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "125%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "d'n₁ = 15% × 80% = 12%. r.i₀ = 15% – 10% = 5%; r.i₁ = 12% – 10% = 2% ⇒ I_r.i = (2/5) × 100 = 40%."
+    },
+    {
+      "id": "C11_E09",
+      "capitol": 11,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Masa monetară din economie crește într-un an cu 12%, în condițiile unei rate a inflației de 40%. Puterea de cumpărare a masei monetare (Δ%PCM):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a crescut cu 12%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a rămas constantă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a scăzut cu 40%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "a scăzut cu 20%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_M = 112%, iar r.i = 40% → I_P = 140% ⇒ I_PCM = (I_M/I_P) × 100 = (112/140) × 100 = 80% ⇒ Δ%PCM = –20%."
+    },
+    {
+      "id": "C11_E10",
+      "capitol": 11,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivel național, valoarea mărfurilor tranzacționate a crescut cu 60%, iar productivitatea muncii s-a dublat, în condițiile în care numărul de salariați a rămas constant. Variația procentuală a puterii de cumpărare a unei unități monetare (Δ%PCB) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "60%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "100%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_(PxQ) = 160%. Productivitatea muncii dublându-se, iar numărul de salariați rămânând constant, rezultă I_Q = 200%. I_(PxQ) = I_P × I_Q ⇒ I_P = (160/200) × 100 = 80% ⇒ I_PCB = (1/0,8) × 100 = 125% ⇒ Δ%PCB = 25%."
+    },
+    {
+      "id": "C11_E11",
+      "capitol": 11,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se cunosc următoarele date privind 2 bunuri care fac parte din „coșul de bunuri” al unei familii: A cu I_P = 140% și Z = 60%; B cu I_P = 80% și Z = 40%. Rata inflației (r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "116%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "60%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "16%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "10%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "r.i = (1,40×0,60 + 0,80×0,40) × 100 – 100% = (0,84+0,32) × 100 – 100% = 116% – 100% = 16%."
+    },
+    {
+      "id": "C11_E12",
+      "capitol": 11,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prețul unui bun crește cu 10% în primul an, apoi crește din nou cu 10% în anul următor (față de noul nivel). Prețul la sfârșitul celor doi ani, față de cel inițial (P₂/P₀), este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,21 ori mai mare",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "1,10 ori mai mare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1,20 ori mai mare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1,22 ori mai mare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "P₁ = 1,1 × P₀, iar P₂ = 1,1 × P₁ = 1,1 × 1,1 × P₀ = 1,21P₀ — creșterile succesive de preț se compun (ca o dobândă compusă), nu se adună simplu (1,1+1,1≠1,21, dar 1,1×1,1=1,21)."
+    },
+    {
+      "id": "C11_E13",
+      "capitol": 11,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prețul unui bun crește cu 8%, apoi scade cu 8% față de noul nivel (nu față de prețul inițial). Prețul final, față de cel inițial (Δ%P), este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a crescut cu 0,64%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a rămas neschimbat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a scăzut cu 16%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "a scăzut cu 0,64%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "P₁ = 1,08 × P₀. P₂ = 0,92 × P₁ = 0,92 × 1,08 × P₀ = 0,9936P₀ ⇒ Δ%P = –0,64% — o creștere urmată de o scădere procentuală egală nu readuce prețul la nivelul inițial, ci sub el."
+    },
+    {
+      "id": "C11_E14",
+      "capitol": 11,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Masa monetară dintr-o economie crește cu 32%, în condițiile unei rate a inflației de 20%. Puterea de cumpărare a masei monetare (Δ%PCM):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a crescut cu 32%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a scăzut cu 20%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a crescut cu 10%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "a rămas constantă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_M = 132%, iar r.i = 20% → I_P = 120% ⇒ I_PCM = (132/120) × 100 = 110% ⇒ Δ%PCM = 10%."
+    },
+    {
+      "id": "C11_E15",
+      "capitol": 11,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivel macroeconomic, oferta globală de bunuri de consum a crescut într-un an cu 18%, în condițiile unui coeficient de elasticitate a ofertei față de preț de 1,2. Rata inflației (r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6,66%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "15%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "21,6%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1,5%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "E_Of(P) = 1,2 = 18% : Δ%P ⇒ Δ%P = 18%/1,2 = 15% = r.i."
+    },
+    {
+      "id": "C11_E16",
+      "capitol": 11,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe piața monetară, rata dobânzii nominală este 12%, iar rata inflației este 4%. Rata reală a dobânzii (d'r) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "48%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "16%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "d'n = d'r + r.i ⇒ d'r = d'n – r.i = 12% – 4% = 8%."
+    },
+    {
+      "id": "C11_E17",
+      "capitol": 11,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Puterea de cumpărare a unei unități monetare (PCB) a scăzut cu 20% într-un an. Rata inflației (r.i) din acel an a fost:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "16,66%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "80%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_PCB = 80% = (1/I_P) × 100 ⇒ I_P = (1/0,8) × 100 = 125% ⇒ r.i = 25%."
+    },
+    {
+      "id": "C11_E18",
+      "capitol": 11,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Masa monetară dintr-o economie s-a dublat, în condițiile în care oferta de bunuri economice și viteza de rotație a banilor au rămas neschimbate. Rata inflației (r.i), rezultată din ecuația echilibrului pieței monetare (M×V=P×Q), este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "100%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "200%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_M = 200%, I_V = 100%, I_Q = 100% → I_P = (I_M × I_V)/I_Q = (2×1)/1 × 100 = 200% ⇒ r.i = 100% — prețurile se dublează exact cât s-a dublat masa monetară, dacă Q și V rămân constante."
+    },
+    {
+      "id": "C11_E19",
+      "capitol": 11,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se cunosc următoarele date privind 2 categorii de bunuri din „coșul de consum” al unei familii: bunuri alimentare, cu I_P = 112% și Z = 45%; bunuri nealimentare, cu I_P = 104% și Z = 55%. Rata inflației (r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "16%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "8%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "7,6%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "5,4%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "r.i = (1,12×0,45 + 1,04×0,55) × 100 – 100% = (0,504+0,572) × 100 – 100% = 107,6% – 100% = 7,6%."
+    },
+    {
+      "id": "C11_E20",
+      "capitol": 11,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pe piața monetară, rata dobânzii nominale a crescut de la 10% la 16% (+6 puncte procentuale), în condițiile în care rata reală a dobânzii a rămas constantă la 4%. Variația procentuală a ratei inflației (Δ%r.i) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a rămas constantă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a scăzut cu 50%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "s-a dublat (100%)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "a crescut cu 6%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "r.i₀ = 10% – 4% = 6%; r.i₁ = 16% – 4% = 12% ⇒ I_r.i = (12/6) × 100 = 200%, adică rata inflației s-a dublat (Δ%r.i = 100%)."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

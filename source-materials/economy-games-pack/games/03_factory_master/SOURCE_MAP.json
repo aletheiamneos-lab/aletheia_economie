@@ -1,0 +1,42 @@
+{
+  "sources": [
+    {
+      "file": "Capitolul 4 - Factorii de Producție_ex.pdf",
+      "topics": [
+        "muncă",
+        "capital",
+        "amortizare",
+        "combinarea factorilor"
+      ]
+    },
+    {
+      "file": "Capitolul 5 - Eficienta Economica și productivitatea_ex.pdf",
+      "topics": [
+        "productivitate medie",
+        "productivitate marginală",
+        "număr optim de lucrători"
+      ]
+    },
+    {
+      "file": "Capitolul 6 - Costul producției_ex.pdf",
+      "topics": [
+        "CF",
+        "CV",
+        "CT",
+        "CMF",
+        "CMV",
+        "CMT",
+        "Cmg"
+      ]
+    },
+    {
+      "file": "Capitolul 7 - Profitul_ex.pdf",
+      "topics": [
+        "profit total",
+        "profit unitar",
+        "prag de rentabilitate",
+        "rentabilitate"
+      ]
+    }
+  ]
+}

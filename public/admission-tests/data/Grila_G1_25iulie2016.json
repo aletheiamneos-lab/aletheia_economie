@@ -1,0 +1,642 @@
+{
+  "an": 2016,
+  "sesiune": "25 iulie 2016",
+  "varianta": "G1",
+  "sursa_subiecte": "Grile_2016.pdf (pag. 1-6)",
+  "sursa_barem": "Grile_2016.pdf (pag. 7)",
+  "interval_economie_in_test": "61-100",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 15,
+      "exercitii": [
+        {
+          "numar_in_test": 61,
+          "capitol": "Eficiența economică — risipa de resurse",
+          "dificultate": "usor",
+          "enunt": "Discutăm despre risipa de resurse în cazul în care știm doar că:",
+          "optiuni": {
+            "a": "oferta este adaptată cererii, din punct de vedere sortimental și calitativ",
+            "b": "oferta corespunde cererii, structural și cantitativ",
+            "c": "pe piață, oferta nu corespunde cererii",
+            "d": "tehnologia utilizată de către producători este cea mai nouă în domeniu, aducând sporuri de productivitate"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Risipa de resurse apare atunci când oferta nu corespunde cererii (dezechilibru cantitativ/structural) — resurse alocate greșit, fie prin surplus, fie prin deficit."
+        },
+        {
+          "numar_in_test": 63,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "În scopul atingerii satisfacției maxime, consumatorul rațional ține seama de restricții privind:",
+          "optiuni": {
+            "a": "relația dintre venitul personal și investițiile efectuate de către stat în economie",
+            "b": "raportul dintre consum și economisire",
+            "c": "prețul bunului achiziționat și venitul limitat al individului",
+            "d": "utilitatea marginală și utilitatea totală"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Restricția bugetară standard: consumatorul rațional este constrâns de venitul limitat și de prețurile bunurilor pe care dorește să le achiziționeze."
+        },
+        {
+          "numar_in_test": 64,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Care din următoarele afirmații este falsă:",
+          "optiuni": {
+            "a": "Utilitatea marginală exprimă sporul de satisfacție resimțit de consumator, prin creșterea cu o unitate a cantității consumate dintr-un bun economic omogen",
+            "b": "O unitate \"x\", consumată dintr-un bun economic omogen, corespunde unei nevoi mai puțin intense decât unitatea \"x-1\", consumată anterior",
+            "c": "În general, prin consumul unei unități suplimentare dintr-un bun economic omogen, crește satisfacția totală înregistrată de consumator",
+            "d": "Fiecare nouă unitate adițională, consumată dintr-un bun economic, are aceeași utilitate pentru consumator precum cea precedentă și cea următoare"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Afirmația d este falsă: contravine legii utilității marginale descrescânde — utilitatea NU este aceeași pentru unitățile succesive, ci descrescătoare."
+        },
+        {
+          "numar_in_test": 65,
+          "capitol": "Introducere în economie — bunuri intermediare",
+          "dificultate": "usor",
+          "enunt": "Pentru fabricarea mobilei, cheresteaua rezultată din tăierea buștenilor este:",
+          "optiuni": {
+            "a": "bun primar",
+            "b": "bun intermediar",
+            "c": "bun final",
+            "d": "inutilă"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Cheresteaua este un bun intermediar — rezultă din prelucrarea buștenilor (bun primar) și servește drept input pentru fabricarea mobilei (bun final)."
+        },
+        {
+          "numar_in_test": 66,
+          "capitol": "Piața și echilibrul pieței — oferta",
+          "dificultate": "usor",
+          "enunt": "Oferta de țiței a unui producător poate crește dacă:",
+          "optiuni": {
+            "a": "sectorul extracției de țiței primește subvenții",
+            "b": "pe plan mondial, apar tot mai mulți substituenți ieftini – ca alternativă la produsele pe bază de țiței",
+            "c": "veniturile consumatorilor casnici scad",
+            "d": "apar resurse energetice noi"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Subvențiile reduc costurile producătorilor, stimulând extinderea ofertei. Celelalte variante ar reduce, dimpotrivă, cererea/relevanța țițeiului."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Factorii de producție — substituția",
+          "dificultate": "usor",
+          "enunt": "Substituția factorilor de producție are la bază:",
+          "optiuni": {
+            "a": "creșterea cheltuielilor cu capitalul fix",
+            "b": "compatibilitatea caracteristicilor de utilitate ale factorilor folosiți în procesul de producție",
+            "c": "modificările de politică fiscală",
+            "d": "mărimea profitului obținut de producător"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Substituția factorilor este posibilă datorită compatibilității caracteristicilor lor de utilitate — permite înlocuirea unui factor cu altul, în anumite limite."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Factorii de producție — capitalul fix",
+          "dificultate": "usor",
+          "enunt": "Consumul factorului de producție \"capital fix\" se poate exprima:",
+          "optiuni": {
+            "a": "numai fizic (prin timpul de muncă cheltuit pentru producerea unui bun economic)",
+            "b": "numai valoric",
+            "c": "atât fizic, cât și valoric",
+            "d": "prin cheltuielile totale cu salariile și impozitul pe profit"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Uzura capitalului fix se exprimă atât fizic (uzură fizică prin utilizare), cât și valoric (prin amortizare, în termeni monetari)."
+        },
+        {
+          "numar_in_test": 69,
+          "capitol": "Costul producției",
+          "dificultate": "usor",
+          "enunt": "Pe termen scurt, în cazul unui agent economic (pentru care: CT – costul total; CF – costul fix; CV – costul variabil; Q – volumul producției), când CT = CF, înseamnă:",
+          "optiuni": {
+            "a": "Q < 0",
+            "b": "CT < 0",
+            "c": "Q = 0",
+            "d": "CT = CV"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "CT = CF + CV",
+          "rezolvare": "Din CT=CF, rezultă CV=0, ceea ce se întâmplă doar când nu există producție, adică Q=0."
+        },
+        {
+          "numar_in_test": 73,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "Prețul reprezintă:",
+          "optiuni": {
+            "a": "moneda unei țări",
+            "b": "suma de bani cedată de cumpărător vânzătorului, în schimbul achiziției unui bun sau serviciu",
+            "c": "costul mărfii",
+            "d": "simbolul bănesc al schimbului dintre producător și vânzător"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a prețului: suma de bani cedată de cumpărător vânzătorului pentru achiziționarea unui bun sau serviciu."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Mecanismul concurențial — monopol",
+          "dificultate": "usor",
+          "enunt": "Existența unui numeros cumpărători ai bunurilor fabricate de un singur producător este proprie pieței:",
+          "optiuni": {
+            "a": "cu concurență perfectă",
+            "b": "de monopol",
+            "c": "de oligopol",
+            "d": "de monopson"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Monopolul presupune un singur ofertant/producător, care se confruntă cu numeroși cumpărători."
+        },
+        {
+          "numar_in_test": 75,
+          "capitol": "Piața monetară — funcțiile banilor",
+          "dificultate": "usor",
+          "enunt": "Suma alocată copiilor de către stat (privită ca beneficiu social) conferă aplicabilitate următoarei funcții a banilor:",
+          "optiuni": {
+            "a": "mijloc de plată",
+            "b": "rezervă",
+            "c": "mijloc de schimb",
+            "d": "convertibilitate"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Alocația se plătește efectiv beneficiarilor — este o manifestare a funcției banilor de mijloc de plată."
+        },
+        {
+          "numar_in_test": 76,
+          "capitol": "Piața monetară — rata dobânzii",
+          "dificultate": "usor",
+          "enunt": "Scăderea ratei dobânzii în economie are efecte negative asupra:",
+          "optiuni": {
+            "a": "debitorilor",
+            "b": "creditorilor",
+            "c": "debitorilor și creditorilor deopotrivă",
+            "d": "investitorilor potențiali"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "O rată a dobânzii mai mică înseamnă venituri mai mici pentru cei care oferă capital cu împrumut (creditorii) — un efect negativ pentru ei. Pentru debitori, efectul este, dimpotrivă, favorabil."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Piața de capital — acțiuni și obligațiuni",
+          "dificultate": "usor",
+          "enunt": "Acțiunea se deosebește de obligațiune prin aceea că:",
+          "optiuni": {
+            "a": "aduce întotdeauna un venit mai mic",
+            "b": "este mai scumpă",
+            "c": "poate aduce un venit variabil",
+            "d": "este un titlu de valoare"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Acțiunea aduce dividend, un venit variabil (dependent de profit), spre deosebire de obligațiune, care aduce o dobândă fixă."
+        },
+        {
+          "numar_in_test": 79,
+          "capitol": "Piața de capital",
+          "dificultate": "usor",
+          "enunt": "Titlurile de valoare emise de o societate pe acțiuni pot fi achiziționate:",
+          "optiuni": {
+            "a": "prin vânzare-cumpărare",
+            "b": "doar de către partenerii firmei",
+            "c": "doar de către salariați",
+            "d": "de către organele centrale ale administrației publice"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Titlurile de valoare (acțiuni, obligațiuni) se tranzacționează liber, prin vânzare-cumpărare pe piața de capital."
+        },
+        {
+          "numar_in_test": 80,
+          "capitol": "Piața muncii",
+          "dificultate": "usor",
+          "enunt": "Munca plătită de către angajator, dar desfășurată fără încheierea prealabilă a unui contract de muncă, presupune activități aferente:",
+          "optiuni": {
+            "a": "pieței negre",
+            "b": "trocului",
+            "c": "pieței de monopol",
+            "d": "economiei naturale"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Munca fără contract legal (\"la negru\") este specifică pieței negre/informale."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 13,
+      "exercitii": [
+        {
+          "numar_in_test": 62,
+          "capitol": "Piața și echilibrul pieței — elasticitate",
+          "dificultate": "mediu",
+          "enunt": "Cererea inelastică arată că, în valoare absolută, mărimea coeficientului de elasticitate a cererii în raport cu prețul (K) este:",
+          "optiuni": {
+            "a": "K = 0",
+            "b": "K = -1",
+            "c": "0 < K < 1",
+            "d": "K = 1"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Cererea inelastică (cu elasticitate redusă) presupune 0<|K|<1 — reacție proporțional mai mică decât variația prețului."
+        },
+        {
+          "numar_in_test": 70,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "În absența altor informații, costul variabil mediu nu se modifică, atunci când:",
+          "optiuni": {
+            "a": "costul variabil și producția evoluează în același sens",
+            "b": "costul variabil și producția evoluează în sensuri contrare",
+            "c": "costul variabil se modifică în aceeași măsură, dar în sens opus",
+            "d": "costul variabil și producția se modifică în aceeași măsură și în același sens"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "CMV = CV/Q",
+          "rezolvare": "Dacă CV și Q se modifică în aceeași proporție și în același sens, raportul CV/Q (CMV) rămâne neschimbat."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "mediu",
+          "enunt": "Dinamica productivității muncii este determinată prin:",
+          "optiuni": {
+            "a": "măsurarea productivității la nivel de ramură economică",
+            "b": "productivitatea globală a factorilor de producție",
+            "c": "indicele productivității muncii",
+            "d": "reducerea costurilor de producție"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Dinamica (evoluția în timp) a productivității muncii se măsoară prin indicele productivității muncii."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Profitul — rata profitului",
+          "dificultate": "mediu",
+          "enunt": "Rata profitului în funcție de costurile (cheltuielile) totale apare ca:",
+          "optiuni": {
+            "a": "diferență dintre veniturile totale și costurile (cheltuielile) totale",
+            "b": "raport procentual dintre costurile (cheltuielile) totale și mărimea profitului",
+            "c": "diferență dintre cifra de afaceri și costurile (cheltuielile) totale",
+            "d": "raport procentual dintre masa profitului și costurile (cheltuielile) totale"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "RPr(CT) = (Pr.T/CT) x 100",
+          "rezolvare": "Rata profitului la costul total este, prin definiție, raportul procentual dintre masa profitului și costurile totale."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Piața monetară — dobânda",
+          "dificultate": "mediu",
+          "enunt": "Atunci când restituirea unui credit preluat pe 3 ani se face în tranșe anuale egale, cu plata dobânzilor la fiecare final de an, operăm cu relația de calcul aferentă:",
+          "optiuni": {
+            "a": "dobânzii compuse",
+            "b": "dobânzii simple",
+            "c": "dobânzii capitalizate",
+            "d": "dobânzii la termen"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Rambursarea în tranșe anuale egale de capital, cu plata separată a dobânzii (calculată pe soldul rămas, fără reinvestire în principal) este o schemă de dobândă simplă."
+        },
+        {
+          "numar_in_test": 81,
+          "capitol": "Piața muncii — productivitate și salariu",
+          "dificultate": "mediu",
+          "enunt": "Nivelul productivității muncii la nivel de firmă (exprimat prin indicele de creștere a productivității muncii) este punctul de pornire în determinarea:",
+          "optiuni": {
+            "a": "cursului de schimb al monedei naționale",
+            "b": "nivelului salariului (exprimat prin indicele de creștere a salariului)",
+            "c": "nivelului profitului bancar",
+            "d": "nivelului dobânzii (exprimat prin rata dobânzii)"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Creșterea productivității muncii este baza economică pentru justificarea creșterii salariilor."
+        },
+        {
+          "numar_in_test": 82,
+          "capitol": "Utilitatea bunurilor economice — utilitatea totală",
+          "dificultate": "mediu",
+          "enunt": "Prin consumul a 8 unități succesive dintr-un bun, un individ înregistrează următoarele utilități marginale: 22; 20; 17; 13; 8; 2; 0; –3. Utilitatea totală a primelor 5 unități consumate este (în unități de utilitate):",
+          "optiuni": {
+            "a": "82",
+            "b": "59",
+            "c": "79",
+            "d": "80"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "UT = Σ Umg(i)",
+          "rezolvare": "UT5 = 22+20+17+13+8 = 80 unități de utilitate."
+        },
+        {
+          "numar_in_test": 86,
+          "capitol": "Piața monetară — dobânda",
+          "dificultate": "mediu",
+          "enunt": "Pentru un credit de 100.000 u.m. preluat de firma X pe o perioadă de 3 luni, banca percepe o rată anuală a dobânzii de 40%. Dobânda încasată de ea la scadență reprezintă (în u.m.):",
+          "optiuni": {
+            "a": "10.000",
+            "b": "100.000",
+            "c": "40.000",
+            "d": "30.000"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Ds = Cr x d' x n",
+          "rezolvare": "Ds = 100.000 x 0,4 x (3/12) = 10.000 u.m."
+        },
+        {
+          "numar_in_test": 88,
+          "capitol": "Profitul",
+          "dificultate": "mediu",
+          "enunt": "Costurile totale înregistrate de o întreprindere pentru a produce sunt 9 milioane u.m. Care este masa profitului, dacă rata profitului (calculată la cifra de afaceri) este 10%:",
+          "optiuni": {
+            "a": "10 milioane u.m.",
+            "b": "900.000 u.m.",
+            "c": "8,1 milioane u.m.",
+            "d": "1 milion u.m."
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "RPr(CA) = (Pr.T/CA) x 100; CA = CT + Pr.T",
+          "rezolvare": "0,9·CA=9 → CA=10 milioane. Pr.T=0,1x10=1 milion u.m."
+        },
+        {
+          "numar_in_test": 89,
+          "capitol": "Utilitatea bunurilor economice — optimul de consum",
+          "dificultate": "mediu",
+          "enunt": "Raportul dintre prețurile unitare ale bunurilor A și B, incluse în programul de consum al unui consumator rațional, este 8/2. Rezultă că în cazul optimului de consum, între utilitățile marginale ale bunurilor B și A există raportul:",
+          "optiuni": {
+            "a": "8/2",
+            "b": "4/8",
+            "c": "1/4",
+            "d": "4/1"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Umg(A)/Umg(B) = PA/PB",
+          "rezolvare": "PA/PB=4 → UmgA/UmgB=4 → UmgB/UmgA=1/4."
+        },
+        {
+          "numar_in_test": 90,
+          "capitol": "Venitul",
+          "dificultate": "mediu",
+          "enunt": "Veniturile totale încasate de o corporație multinațională în anul curent, egale cu 900 milioane u.m., sunt cu 20% mai mari decât cele din anul anterior. Sporul veniturilor totale în intervalul dat este:",
+          "optiuni": {
+            "a": "120 milioane u.m.",
+            "b": "132%",
+            "c": "150 milioane u.m.",
+            "d": "180 milioane u.m."
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "V0=900/1,2=750 milioane. Spor=900-750=150 milioane u.m."
+        },
+        {
+          "numar_in_test": 93,
+          "capitol": "Profitul",
+          "dificultate": "mediu",
+          "enunt": "Cifra de afaceri a unei firme este 110.000 u.m., iar masa profitului ei reprezintă 10.000 u.m. În acest caz, rata profitului în raport cu costurile totale este:",
+          "optiuni": {
+            "a": "100%",
+            "b": "11%",
+            "c": "10%",
+            "d": "1%"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "CT = CA – Pr.T; RPr(CT) = (Pr.T/CT) x 100",
+          "rezolvare": "CT=110.000-10.000=100.000. RPr(CT)=(10.000/100.000)x100=10%."
+        },
+        {
+          "numar_in_test": 98,
+          "capitol": "Profitul",
+          "dificultate": "mediu",
+          "enunt": "Venitul total al unei firme, obținut din vânzarea a 10 bucăți fabricate din bunul A, este 22 milioane u.m. Dacă rata profitului (calculată în raport cu costul total) este 10%, mărimea costului total mediu al firmei reprezintă (în milioane u.m.):",
+          "optiuni": {
+            "a": "2",
+            "b": "0,2",
+            "c": "20",
+            "d": "2,2"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "VT = CT x 1,1 (din RPr(CT)=10%); CMT = CT/Q",
+          "rezolvare": "CT=22/1,1=20 milioane. CMT=20/10=2 milioane/bucată."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 11,
+      "exercitii": [
+        {
+          "numar_in_test": 83,
+          "capitol": "Profitul",
+          "dificultate": "greu",
+          "enunt": "Un producător cu activitate pe termen scurt înregistrează 90.000 u.m. costuri totale și 100.000 u.m. cifră de afaceri. Pe fondul păstrării neschimbate a celorlalte condiții ale pieței (inclusiv a cifrei de afaceri), înjumătățirea nivelului costurilor atrage după sine:",
+          "optiuni": {
+            "a": "scăderea profitului",
+            "b": "înjumătățirea profitului",
+            "c": "dublarea profitului",
+            "d": "obținerea unui profit de 55.000 u.m."
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Pr.T = CA – CT",
+          "rezolvare": "CA=100.000 (neschimbat). CT1=90.000/2=45.000. Pr.T1=100.000-45.000=55.000 u.m."
+        },
+        {
+          "numar_in_test": 84,
+          "capitol": "Profitul — impozitul pe profit",
+          "dificultate": "greu",
+          "enunt": "În condițiile unei rate de 16% a impozitului pe profit, un profit net de 21 u.m. presupune un profit brut (în u.m.) egal cu:",
+          "optiuni": {
+            "a": "25",
+            "b": "37",
+            "c": "3,36",
+            "d": "131,25"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Profit net = Profit brut x (1 – rata impozitului)",
+          "rezolvare": "21 = PrBrut x 0,84 → PrBrut = 21/0,84 = 25 u.m."
+        },
+        {
+          "numar_in_test": 85,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "greu",
+          "enunt": "La o întreprindere, volumul producției a sporit cu 300%, în timp ce numărul angajaților s-a dublat. Cum a evoluat, în perioada respectivă, productivitatea medie a muncii:",
+          "optiuni": {
+            "a": "a rămas constantă",
+            "b": "s-a înjumătățit",
+            "c": "a crescut cu 100%",
+            "d": "s-a majorat cu 200%"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "W̄L = Q/L",
+          "rezolvare": "IQ=400% (sporit cu 300%). IL=200% (dublat). IW̄L=(400/200)x100=200% — productivitatea a crescut cu 100%."
+        },
+        {
+          "numar_in_test": 87,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "greu",
+          "enunt": "Pe piața batistelor, la prețul unitar de 6 u.m. se înregistrează exces de ofertă, în timp ce la prețul unitar de 3 u.m. se constată exces de cerere. Prețul de echilibru în cazul batistelor este:",
+          "optiuni": {
+            "a": "1,5 u.m.",
+            "b": "7 u.m.",
+            "c": "cuprins între 3 și 6 u.m.",
+            "d": "rezultatul deciziei statului"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Prețul de echilibru se situează undeva între cele două praguri (3 și 6), acolo unde cererea egalizează oferta, în tranziția de la exces de cerere la exces de ofertă."
+        },
+        {
+          "numar_in_test": 91,
+          "capitol": "Piața și echilibrul pieței — cerere și ofertă",
+          "dificultate": "greu",
+          "enunt": "În urma creșterii veniturilor consumatorilor, cantitatea cerută din bunul X nu mai evoluează după funcția inițială Qc1 = 45 – 5·P1, ci după Qc2 = 55 – 5·P2 (P = prețul lui X). Cantitatea oferită rămâne, în întreaga perioadă, Qof = 5·P + 5. Arătați evoluția prețului de echilibru în intervalul dat:",
+          "optiuni": {
+            "a": "a crescut cu 25%",
+            "b": "a crescut de 2,5 ori",
+            "c": "a scăzut cu 25%",
+            "d": "a scăzut la 25%"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Qc = Qof",
+          "rezolvare": "Echilibru inițial: 45-5P1=5P1+5 → P1=4. Echilibru nou: 55-5P2=5P2+5 → P2=5. Creștere: (5-4)/4x100=25%."
+        },
+        {
+          "numar_in_test": 92,
+          "capitol": "Piața și echilibrul pieței — elasticitatea ofertei",
+          "dificultate": "greu",
+          "enunt": "Dacă prețul unitar al tonei de ciment se reduce pe piață de la 10 u.m. la 8 u.m., cum va evolua oferta de ciment a unui producător (inițial, de 400 tone), pentru a fi unitar elastică în raport cu prețul:",
+          "optiuni": {
+            "a": "va deveni 480 tone",
+            "b": "va crește la 420 tone",
+            "c": "se va micșora cu 320 tone",
+            "d": "va scădea cu 80 tone"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Elasticitate unitară: Δ%O = Δ%P",
+          "rezolvare": "Δ%P=-20%. Elasticitate unitară: Δ%O=-20%. O1=400x0,8=320 tone. Scădere=400-320=80 tone."
+        },
+        {
+          "numar_in_test": 94,
+          "capitol": "Profitul — rotația capitalului",
+          "dificultate": "greu",
+          "enunt": "Un agent economic obține, la fiecare rotație a capitalului (înregistrând 4 rotații pe an), un profit de 100 u.m. Dacă în anul următor, durata unei rotații scade la două luni, înseamnă că masa profitului anual evoluează astfel față de anul precedent:",
+          "optiuni": {
+            "a": "scade cu 50%",
+            "b": "crește cu 400 u.m.",
+            "c": "crește cu 100 u.m.",
+            "d": "crește cu 50%"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Profit anual = Profit/rotație x nr. rotații",
+          "rezolvare": "An precedent: 4 rotații x 100 = 400 u.m. An următor: durata rotației=2 luni → 12/2=6 rotații/an; profit anual=6x100=600 u.m. Creștere=(600-400)/400x100=50%."
+        },
+        {
+          "numar_in_test": 96,
+          "capitol": "Piața muncii — salariul real",
+          "dificultate": "greu",
+          "enunt": "În decursul unui an, într-o economie națională, în condițiile unui indice general al prețurilor de 105%, salariul nominal crește cu 26%. Înseamnă că în anul respectiv, salariul real:",
+          "optiuni": {
+            "a": "scade cu 26%",
+            "b": "crește cu 5%",
+            "c": "scade cu 1,2%",
+            "d": "crește cu 20%"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "I_SR = (I_SN/I_P) x 100",
+          "rezolvare": "I_SN=126%. I_SR=(126/105)x100=120% — salariul real crește cu 20%."
+        },
+        {
+          "numar_in_test": 97,
+          "capitol": "Costul producției",
+          "dificultate": "greu",
+          "enunt": "Un agent economic fabrică, la momentul t0, 80 bucăți din bunul M, la un cost unitar de 4 u.m. / bucată. La momentul t1, output-ul este cu un sfert mai mare, iar costul total al producției crește cu 62,5% față de perioada inițială. Indicele costului total mediu este, pentru intervalul dat:",
+          "optiuni": {
+            "a": "5,2%",
+            "b": "130%",
+            "c": "76,92%",
+            "d": "70%"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "CMT = CT/Q",
+          "rezolvare": "CT0=4x80=320. Q1=80x1,25=100. CT1=320x1,625=520. CMT0=4, CMT1=520/100=5,2. I_CMT=(5,2/4)x100=130%."
+        },
+        {
+          "numar_in_test": 99,
+          "capitol": "Piața monetară — viteza de rotație a banilor",
+          "dificultate": "greu",
+          "enunt": "Într-o economie națională, masa monetară necesară tranzacțiilor desfășurate într-un an a fost 3·10⁹ u.m., iar nivelul mediu al prețurilor aferente a fost 100.000 u.m. Dacă volumul tranzacțiilor a reprezentat 300.000 bucăți, înseamnă că viteza de rotație a banilor a fost (în rotații / an):",
+          "optiuni": {
+            "a": "3",
+            "b": "10",
+            "c": "100",
+            "d": "0,01"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "M = (P x Q)/V → V = (P x Q)/M",
+          "rezolvare": "V = (100.000 x 300.000)/(3x10⁹) = (3x10¹⁰)/(3x10⁹) = 10 rotații/an."
+        },
+        {
+          "numar_in_test": 100,
+          "capitol": "Piața muncii — productivitate și salariu",
+          "dificultate": "greu",
+          "enunt": "Într-o perioadă de timp, angajații firmei X și-au dublat productivitatea muncii. Ca urmare, la finalul intervalului, le-a fost majorat salariul nominal, cu jumătate din sporul procentual al productivității muncii. Dacă nivelul de bază al salariului nominal a fost 2.000 u.m., atunci în perioada curentă, nivelul acestui indicator este (în u.m.):",
+          "optiuni": {
+            "a": "1.000",
+            "b": "4.000",
+            "c": "3.000",
+            "d": "2.000"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Productivitatea se dublează → spor=100%. Salariul se majorează cu jumătate din spor = 50%. SN1=2.000x1,5=3.000 u.m."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 1,
+      "exercitii": [
+        {
+          "numar_in_test": 95,
+          "capitol": "Costul producției — funcția costului total",
+          "dificultate": "foarte_greu",
+          "enunt": "Dacă funcția costului total al unei firme care acționează pe termen scurt este CT = 75 + 2Q + 3Q² (unde Q = producția agentului economic), rezultă:",
+          "optiuni": {
+            "a": "costul fix CF = (75+2Q)/2",
+            "b": "costul variabil CV = 75+2Q",
+            "c": "costul fix CF = 75 u.m.",
+            "d": "costul variabil mediu CVM = 2Q+3Q²"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "CF = termenul constant din CT(Q)",
+          "rezolvare": "CF este termenul independent de Q: CF=75 u.m. (constant). CV=2Q+3Q² (partea dependentă de Q) — nu corespunde variantelor a, b sau d."
+        }
+      ]
+    }
+  ]
+}

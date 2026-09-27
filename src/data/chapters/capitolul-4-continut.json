@@ -1,0 +1,421 @@
+{
+  "capitol": {
+    "numar": 4,
+    "titlu": "Factorii de producție",
+    "obiective": [
+      "Să identifici factorii de producție și să-i clasifici",
+      "Să caracterizezi munca, natura și capitalul ca factori de producție",
+      "Să calculezi amortizarea și capitalul consumat, pornind de la capitalul tehnic",
+      "Să înțelegi procesul combinării și substituirii factorilor de producție",
+      "Să calculezi productivitatea marginală și rata marginală de substituție"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "fp-general",
+      "nr": "1",
+      "titlu": "Factorii de producție: caracterizare generală",
+      "text": [
+        "Întreprinzătorul (antreprenorul) este o persoană care inițiază, organizează, coordonează și conduce o afacere, asumându-și riscul de a investi capital, cu scopul obținerii unui profit cât mai mare. Funcția de producție reflectă legătura obiectivă dintre intrări (factorii de producție utilizați) și ieșiri (bunurile economice obținute).",
+        "Factorii de producție reprezintă resursele atrase și utilizate în activitatea economică, din care rezultă bunuri economice utile, destinate pieței. Ei sunt \"intrări\" (input-uri) ale producției, la fel cum bunurile obținute sunt \"ieșiri\" (output-uri) - de exemplu, tu consumi un covrig (ieșire), nu făina din care e făcut (intrare)."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Sunt input-uri",
+          "descriere": "ale activității economice, la fel ca resursele din care provin"
+        },
+        {
+          "termen": "Sunt partea activă a resurselor",
+          "descriere": "atrasă și folosită efectiv în producție"
+        },
+        {
+          "termen": "Sunt limitați",
+          "descriere": "la fel ca resursele din care provin"
+        },
+        {
+          "termen": "Contribuția la sporirea producției poate fi",
+          "descriere": "preponderent cantitativă (dezvoltare extensivă) sau preponderent calitativă (dezvoltare intensivă)"
+        }
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Factorii de producție tradiționali (clasici)",
+          "categorii": [
+            {
+              "nume": "Munca",
+              "definitie": "factor primar/originar"
+            },
+            {
+              "nume": "Natura",
+              "definitie": "factor primar/originar"
+            },
+            {
+              "nume": "Capitalul",
+              "definitie": "factor derivat, din combinarea muncii și naturii"
+            }
+          ]
+        },
+        {
+          "criteriu": "Neofactorii de producție (sporesc eficiența celor tradiționali)",
+          "categorii": [
+            {
+              "nume": "Informația",
+              "definitie": "cunoștințe și date folosite pentru decizii economice mai bune"
+            },
+            {
+              "nume": "Tehnologia",
+              "definitie": "metode și echipamente care sporesc eficiența folosirii factorilor clasici"
+            },
+            {
+              "nume": "Abilitatea întreprinzătorului",
+              "definitie": "capacitatea de a organiza, decide și de a-și asuma riscuri pentru profit"
+            },
+            {
+              "nume": "Managementul și marketingul",
+              "definitie": "activitățile de conducere a firmei și de studiere/satisfacere a pieței"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "munca",
+      "nr": "2",
+      "titlu": "Munca - factor activ și determinant",
+      "text": [
+        "Munca, ca factor de producție, este o activitate conștientă, specific umană, care se finalizează în obținerea de bunuri economice utile. Atenție: nu orice activitate conștientă și utilă e \"muncă\" din punct de vedere economic - de exemplu, temele unei eleve sau activitățile gospodărești din familie sunt muncă în sens larg, dar nu sunt remunerate sau destinate pieței, deci nu sunt muncă în sensul factorului de producție.",
+        "Munca poate fi analizată cantitativ (resursele disponibile de muncă și durata muncii), calitativ (nivelul de pregătire și calificare) și structural (categoriile socio-profesionale)."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Activitate conștientă și rațională",
+          "descriere": "presupune stabilirea unui scop și a mijloacelor necesare atingerii lui"
+        },
+        {
+          "termen": "Implică efort fizic și intelectual, plus experiență",
+          "descriere": "capacitate/forță de muncă"
+        },
+        {
+          "termen": "Factor activ și determinant",
+          "descriere": "față de ceilalți factori - condiționează existența, folosirea, combinarea și perfecționarea lor"
+        },
+        {
+          "termen": "Sporirea eficienței muncii",
+          "descriere": "a dus la denumirea de \"capital uman\""
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "natura",
+      "nr": "3",
+      "titlu": "Natura - factor primar de producție",
+      "text": [
+        "Natura, ca factor de producție, reprezintă ansamblul resurselor naturale brute utilizate, adaptate și transformate de oameni prin muncă, potrivit nevoilor și intereselor lor. Generic, natura e denumită pământ - cel mai important factor natural de producție - dar include și resursele de apă, minerale și cosmice (căldură, lumină)."
+      ],
+      "puncteCheie": [
+        "Este limitat ca suprafață, în raport cu nevoile",
+        "Este locul desfășurării oricărei activități umane și principalul mijloc de producție în agricultură",
+        "Nu este produs de om, dar acesta îi poate spori valoarea și randamentul prin acțiuni agricole - de unde și denumirea de \"pământ-capital\"",
+        "Este, până acum, un element de neînlocuit, cu mare capacitate de regenerare dacă e utilizat rațional"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "capital",
+      "nr": "4",
+      "titlu": "Capitalul - factor de producție derivat",
+      "text": [
+        "Capitalul, ca factor de producție, reflectă ansamblul bunurilor materiale produse prin muncă și utilizate pentru realizarea de noi bunuri economice destinate pieței (mașini, utilaje, materii prime). Atenție: nu trebuie confundat cu formele de capital în sens larg (capital bănesc, acțiuni, obligațiuni), care nu produc direct bunuri economice.",
+        "Capitalul tehnic (KT) e format din capitalul fix (KF - mașini, utilaje, clădiri) și capitalul circulant (KC - materii prime, materiale, combustibil). Capitalul fix participă la mai multe cicluri economice și se consumă treptat; capitalul circulant participă la un singur ciclu și se consumă integral, dintr-o dată.",
+        "Pe durata folosirii, capitalul fix se uzează - fie din cauza folosirii/factorilor naturali (uzură fizică), fie din cauza progresului tehnic sau a condițiilor pieței (uzură morală). Amortizarea este expresia valorică a acestei uzuri: recuperarea treptată a valorii capitalului fix, prin includerea ei în costul bunurilor produse cu ajutorul lui."
+      ],
+      "puncteCheie": [],
+      "exemple": [
+        "Dacă KT = 500 mil. u.m., din care 80% e capital fix (KF), cu o rată anuală de amortizare de 20%: KF = 80% x 500 = 400 mil.; KC = 500 - 400 = 100 mil.; A = 20% x 400 = 80 mil.; Kcons = A + KC = 80 + 100 = 180 mil. u.m."
+      ],
+      "formule": [
+        {
+          "nume": "Capitalul tehnic",
+          "formula": "KT = KF + KC"
+        },
+        {
+          "nume": "Amortizarea anuală (mărime absolută)",
+          "formula": "A = KF / T"
+        },
+        {
+          "nume": "Rata anuală a amortizării",
+          "formula": "RA = (A/KF) x 100 = (1/T) x 100"
+        },
+        {
+          "nume": "Capitalul consumat (costuri materiale)",
+          "formula": "Kcons = A + KC = Cmat"
+        }
+      ],
+      "calculator": "amortizare",
+      "notaLegatura": {
+        "href": "#sect-explorator-capital",
+        "text": "Explorează interactiv structura capitalului tehnic în secțiunea VI, mai jos."
+      }
+    },
+    {
+      "id": "combinare",
+      "nr": "5",
+      "titlu": "Combinarea factorilor de producție",
+      "text": [
+        "Combinarea factorilor de producție este operațiunea tehnico-economică de unire, sub aspect cantitativ, calitativ și structural, a factorilor de producție - o latură tehnică (unirea unor factori specifici) și una economică (sporirea eficienței). Ea se bazează pe substituirea factorilor: înlocuirea totală sau parțială a unui factor cu altul, astfel încât producția să rămână aceeași sau să crească."
+      ],
+      "puncteCheie": [
+        "Natura activității economice",
+        "Cererea (nevoile solvabile) de bunuri și servicii",
+        "Condițiile financiare și tehnice de producție",
+        "Abilitatea întreprinzătorului, activitatea de management și de marketing"
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Proprietăți ale factorilor de producție, care permit combinarea lor",
+          "categorii": [
+            {
+              "nume": "Adaptabilitate",
+              "definitie": "un muncitor poate deservi una sau mai multe mașini"
+            },
+            {
+              "nume": "Divizibilitate",
+              "definitie": "o suprafață de pământ poate fi împărțită în mai multe hectare, fără să-și piardă calitatea"
+            },
+            {
+              "nume": "Complementaritate",
+              "definitie": "un costum cere o cantitate anume de stofă, mașini de cusut, muncitori"
+            },
+            {
+              "nume": "Substituire",
+              "definitie": "5 lucrători agricoli pot fi înlocuiți cu un tractor"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "productivitate-substitutie",
+      "nr": "6",
+      "titlu": "Productivitatea marginală și rata de substituție",
+      "text": [
+        "Productivitatea marginală a unui factor de producție (x) reflectă sporul producției (ΔQ) determinat de creșterea cu o unitate a acelui factor (Δx), ceilalți factori rămânând constanți.",
+        "Rata marginală de substituție reflectă cantitatea suplimentară dintr-un factor de producție (ΔX) necesară pentru a compensa reducerea cu o unitate a altui factor (-ΔY), astfel încât producția să rămână cel puțin aceeași."
+      ],
+      "formule": [
+        {
+          "nume": "Productivitatea marginală",
+          "formula": "Wmg(x) = ΔQ/Δx"
+        },
+        {
+          "nume": "Rata marginală de substituție",
+          "formula": "Rms = Wmg(y)/Wmg(x) = Δx/-Δy"
+        }
+      ],
+      "exemple": [
+        "O firmă disponibilizează un muncitor, iar producția scade de la 900 la 720 buc. (cu 20%). Productivitatea marginală a muncii (a muncitorului disponibilizat) este Wmg(L) = ΔQ/ΔL = -180/-1 = 180 buc. Dacă firma vrea să recupereze producția pierdută folosind capital suplimentar (mașini), a cărui productivitate marginală este Wmg(K) = 90 buc., rata marginală de substituție este Rms = Wmg(L)/Wmg(K) = 180/90 = 2 - sunt necesare 2 unități de capital pentru a înlocui munca unui singur lucrător, ca producția să rămână aceeași."
+      ],
+      "calculator": "rms",
+      "diagrama": "substitutie"
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Factorul de producție muncă este, în raport cu timpul de producție consumat:",
+      "optiuni": [
+        "neregenerabil",
+        "regenerabil",
+        "recuperabil",
+        "nerecuperabil"
+      ],
+      "corect": 1,
+      "explicatie": "Capacitatea de a munci \"se reface\" ciclic (poți munci din nou a doua zi), deci munca e regenerabilă ca resursă - spre deosebire de timpul propriu-zis, care e irecuperabil odată pierdut."
+    },
+    {
+      "intrebare": "Capitalul tehnic consumat (K.cons.) este sinonim cu:",
+      "optiuni": [
+        "bunuri de producție folosite",
+        "mijloace de producție consumate",
+        "capital fix utilizat și capital circulant consumat",
+        "capital fix și circulant utilizate"
+      ],
+      "corect": 2,
+      "explicatie": "K.cons = A + KC - adică valoarea uzată/amortizată a capitalului fix, plus capitalul circulant, consumat integral. Nu e sinonim cu capitalul tehnic UTILIZAT (KT), care include KF în întregime, nu doar partea lui amortizată."
+    },
+    {
+      "intrebare": "Pământul, ca factor de producție, este:",
+      "optiuni": [
+        "recuperabil și substituibil",
+        "parțial regenerabil",
+        "un mijloc de producție în agricultură",
+        "un neofactor limitat ca suprafață"
+      ],
+      "corect": 2,
+      "explicatie": "Pământul e principalul mijloc de producție în agricultură. E un factor tradițional (primar), nu un neofactor - asta elimină varianta d."
+    },
+    {
+      "intrebare": "Utilizarea eficientă a factorilor de producție NU este determinată de:",
+      "optiuni": [
+        "caracterul limitat al factorilor în raport cu nevoile",
+        "necesitatea protejării mediului natural",
+        "creșterea exigențelor oamenilor privind calitatea bunurilor",
+        "tendința de ieftinire a factorilor de producție"
+      ],
+      "corect": 3,
+      "explicatie": "Ieftinirea factorilor reduce, dacă ceva, presiunea spre eficiență; celelalte trei (raritatea, protecția mediului, exigența crescândă) chiar impun o utilizare mai eficientă."
+    },
+    {
+      "intrebare": "Care dintre următoarele este un neofactor de producție, nu un factor tradițional?",
+      "optiuni": [
+        "munca",
+        "natura (pământul)",
+        "capitalul",
+        "abilitatea întreprinzătorului"
+      ],
+      "corect": 3,
+      "explicatie": "Neofactorii (informația, tehnologia, abilitatea întreprinzătorului, managementul) sporesc eficiența factorilor tradiționali (munca, natura, capitalul), dar nu sunt, ei înșiși, factori clasici."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Capitalul tehnic include bunurile economice destinate producției.",
+      "corect": true,
+      "explicatie": "Da - capitalul tehnic (KT = KF + KC) reprezintă tocmai bunurile materiale folosite pentru a produce alte bunuri: mașini, utilaje, materii prime etc."
+    },
+    {
+      "enunt": "Scopul întreprinzătorului este maximizarea profitului.",
+      "corect": true,
+      "explicatie": "Da, aceasta e chiar definiția scopului întreprinzătorului/producătorului."
+    },
+    {
+      "enunt": "Ca factor de producție, munca este analizată cantitativ, calitativ și structural.",
+      "corect": true,
+      "explicatie": "Da - cantitativ (resurse disponibile, durata muncii), calitativ (pregătire, calificare) și structural (categorii socio-profesionale)."
+    },
+    {
+      "enunt": "Pământul, fiind de neînlocuit, este cel mai important factor de producție.",
+      "corect": false,
+      "explicatie": "Cel mai important factor de producție este munca (factor activ și determinant), nu pământul - deși pământul e, la rândul lui, de neînlocuit."
+    },
+    {
+      "enunt": "Amortizarea reprezintă recuperarea treptată a valorii capitalului fix, pe măsură ce se vând bunurile produse cu ajutorul lui.",
+      "corect": true,
+      "explicatie": "Exact - amortizarea e expresia valorică a uzurii capitalului fix, recuperată treptat prin includerea ei în costul bunurilor produse."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "O firmă folosește mijloace de producție (capital tehnic) în valoare de 150 mil. u.m. Capitalul circulant, consumat integral într-un ciclu, este de 80 mil. u.m., iar capitalul fix se depreciază anual cu 10% din valoarea sa. Care este capitalul consumat (K.cons.) într-un an, în mil. u.m.?",
+      "unitate": "mil. u.m.",
+      "corect": 87,
+      "toleranta": 0.5,
+      "explicatie": "KF = KT - KC = 150 - 80 = 70 mil.; A = 10% x 70 = 7 mil.; K.cons. = A + KC = 7 + 80 = 87 mil. u.m."
+    },
+    {
+      "enunt": "Capitalul fix al unei firme se amortizează integral în 10 ani. Care este rata anuală a amortizării (RA), în %?",
+      "unitate": "%",
+      "corect": 10,
+      "toleranta": 0.5,
+      "explicatie": "RA = (1/T) x 100 = (1/10) x 100 = 10%."
+    },
+    {
+      "enunt": "Rata anuală a amortizării capitalului fix al unei firme este 5%. Care este durata recuperării integrale a capitalului fix (T), în ani?",
+      "unitate": "ani",
+      "corect": 20,
+      "toleranta": 0.5,
+      "explicatie": "T = (1/RA) x 100 = (1/5) x 100 = 20 ani."
+    },
+    {
+      "enunt": "Capitalul tehnic folosit de o firmă este KT = 500 mil. u.m., din care 80% este capital fix (KF), cu o rată anuală de amortizare de 20%. Calculați capitalul consumat (Kcons), în mil. u.m.",
+      "unitate": "mil. u.m.",
+      "corect": 180,
+      "toleranta": 0.5,
+      "explicatie": "KF = 80% x 500 = 400 mil.; KC = 500 - 400 = 100 mil.; A = 20% x 400 = 80 mil.; Kcons = A + KC = 80 + 100 = 180 mil. u.m."
+    },
+    {
+      "enunt": "Valoarea amortizată a capitalului fix, în primii 5 ani, este de 300 mil. u.m., cu o rată anuală de amortizare de 5%, iar valoarea materialelor consumate este de 800 mil. u.m. Calculați capitalul tehnic utilizat (KT), în mil. u.m.",
+      "unitate": "mil. u.m.",
+      "corect": 2000,
+      "toleranta": 5,
+      "explicatie": "T = (1/5%) x 100 = 20 ani; A anual = 300/5 = 60 mil.; KF = A x T = 60 x 20 = 1.200 mil.; KC = 800 mil.; KT = KF + KC = 2.000 mil. u.m."
+    },
+    {
+      "enunt": "Productivitatea marginală a factorului substituit este 40 buc., iar a celui care îl substituie este 80 buc. Calculați rata marginală de substituire (Rms).",
+      "unitate": "",
+      "corect": 0.5,
+      "toleranta": 0.02,
+      "explicatie": "Rms = Wmg(substituit) / Wmg(substituent) = 40/80 = 0,5."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Uzura fizică"
+        },
+        {
+          "id": "t2",
+          "text": "Uzura morală"
+        },
+        {
+          "id": "t3",
+          "text": "Amortizarea"
+        },
+        {
+          "id": "t4",
+          "text": "Rata marginală de substituție"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Deprecierea KF din cauza folosirii în producție și/sau acțiunii factorilor naturali"
+        },
+        {
+          "id": "o_b",
+          "text": "Deprecierea KF din cauza progresului tehnic sau a schimbării condițiilor pieței"
+        },
+        {
+          "id": "o_c",
+          "text": "Recuperarea treptată a valorii capitalului fix, prin costul bunurilor produse"
+        },
+        {
+          "id": "o_d",
+          "text": "Cantitatea suplimentară dintr-un factor necesară pentru a compensa reducerea cu o unitate a altui factor"
+        },
+        {
+          "id": "o_e",
+          "text": "Sporul de producție determinat de creșterea cu o unitate a unui factor, ceilalți rămânând constanți"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, productivitatea marginală - un concept înrudit, dar diferit de rata marginală de substituție."
+    }
+  ]
+}

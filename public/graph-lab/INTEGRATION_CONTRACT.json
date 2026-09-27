@@ -1,0 +1,305 @@
+{
+  "package": "economie_grafice_v5_4_audit_complet",
+  "baseline": "V5/V5.3 visual behavior",
+  "globalThemeKey": "eco_graph_theme_v1",
+  "adminKey": "eco_graph_admin_v1",
+  "stateKeyPattern": "eco_graph_l{lesson}_{moduleId}_v1",
+  "resetSemantics": "Current graph and whole lesson reset rebuild from defaults and clear stored state; global theme is separate.",
+  "assets": {
+    "css": "assets/graph-lab.css",
+    "engine": "assets/graph-engine.js"
+  },
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Introducere în economie",
+      "html": "lessons/lesson_01.html",
+      "json": "data/lesson_01.json",
+      "modules": [
+        "cost_oportunitate",
+        "combinatii_productie"
+      ],
+      "standalone": "standalone/lectia_01_standalone.html",
+      "moduleCount": 2
+    },
+    {
+      "lesson": 2,
+      "title": "Economia de piață și proprietatea",
+      "html": "lessons/lesson_02.html",
+      "json": "data/lesson_02.json",
+      "modules": [
+        "circuit_economic",
+        "sectoare_institutionale",
+        "fazele_activitatii"
+      ],
+      "standalone": "standalone/lectia_02_standalone.html",
+      "moduleCount": 3
+    },
+    {
+      "lesson": 3,
+      "title": "Utilitatea bunurilor economice și consumatorul rațional",
+      "html": "lessons/lesson_03.html",
+      "json": "data/lesson_03.json",
+      "modules": [
+        "ut_umg",
+        "dreapta_buget",
+        "alegere_rationala"
+      ],
+      "standalone": "standalone/lectia_03_standalone.html",
+      "moduleCount": 3
+    },
+    {
+      "lesson": 4,
+      "title": "Factorii de producție",
+      "html": "lessons/lesson_04.html",
+      "json": "data/lesson_04.json",
+      "modules": [
+        "amortizare",
+        "capital_tehnic",
+        "substituire",
+        "produs_marginal_factor"
+      ],
+      "standalone": "standalone/lectia_04_standalone.html",
+      "moduleCount": 4
+    },
+    {
+      "lesson": 5,
+      "title": "Eficiența economică și productivitatea",
+      "html": "lessons/lesson_05.html",
+      "json": "data/lesson_05.json",
+      "modules": [
+        "productivitate",
+        "stadii_productie",
+        "eficienta",
+        "dinamica_productivitatii"
+      ],
+      "standalone": "standalone/lectia_05_standalone.html",
+      "moduleCount": 4
+    },
+    {
+      "lesson": 6,
+      "title": "Costul producției",
+      "html": "lessons/lesson_06.html",
+      "json": "data/lesson_06.json",
+      "modules": [
+        "costuri_totale",
+        "costuri_medii",
+        "cost_marginal"
+      ],
+      "standalone": "standalone/lectia_06_standalone.html",
+      "moduleCount": 3
+    },
+    {
+      "lesson": 7,
+      "title": "Profitul",
+      "html": "lessons/lesson_07.html",
+      "json": "data/lesson_07.json",
+      "modules": [
+        "prag_rentabilitate",
+        "profit_total",
+        "profit_unitar",
+        "profit_marginal",
+        "rate_profit",
+        "forme_profit",
+        "renta_diferentiala"
+      ],
+      "standalone": "standalone/lectia_07_standalone.html",
+      "moduleCount": 7
+    },
+    {
+      "lesson": 8,
+      "title": "Piața și echilibrul său",
+      "html": "lessons/lesson_08.html",
+      "json": "data/lesson_08.json",
+      "modules": [
+        "echilibru",
+        "miscare_pret",
+        "deplasare_cerere",
+        "deplasare_oferta",
+        "elasticitate",
+        "tipuri_elasticitate_cerere",
+        "tipuri_elasticitate_oferta",
+        "elasticitate_venit",
+        "pret_control"
+      ],
+      "standalone": "standalone/lectia_08_standalone.html",
+      "moduleCount": 9
+    },
+    {
+      "lesson": 9,
+      "title": "Mecanismul concurențial",
+      "html": "lessons/lesson_09.html",
+      "json": "data/lesson_09.json",
+      "modules": [
+        "firma_concurenta",
+        "structuri_piata"
+      ],
+      "standalone": "standalone/lectia_09_standalone.html",
+      "moduleCount": 2
+    },
+    {
+      "lesson": 10,
+      "title": "Piața monetară",
+      "html": "lessons/lesson_10.html",
+      "json": "data/lesson_10.json",
+      "modules": [
+        "piata_creditului",
+        "masa_monetara",
+        "putere_cumparare",
+        "dobanda_simpla",
+        "dobanda_compusa",
+        "dobanda_nominala_reala",
+        "castig_profit_bancar"
+      ],
+      "standalone": "standalone/lectia_10_standalone.html",
+      "moduleCount": 7
+    },
+    {
+      "lesson": 11,
+      "title": "Inflația",
+      "html": "lessons/lesson_11.html",
+      "json": "data/lesson_11.json",
+      "modules": [
+        "cos_consum",
+        "inflatie_timp",
+        "inflatie_putere",
+        "dobanda_reala"
+      ],
+      "standalone": "standalone/lectia_11_standalone.html",
+      "moduleCount": 4
+    },
+    {
+      "lesson": 12,
+      "title": "Piața capitalurilor",
+      "html": "lessons/lesson_12.html",
+      "json": "data/lesson_12.json",
+      "modules": [
+        "actiune",
+        "obligatiune",
+        "randament",
+        "tranzactie"
+      ],
+      "standalone": "standalone/lectia_12_standalone.html",
+      "moduleCount": 4
+    },
+    {
+      "lesson": 13,
+      "title": "Piața muncii",
+      "html": "lessons/lesson_13.html",
+      "json": "data/lesson_13.json",
+      "modules": [
+        "echilibru_munca",
+        "miscare_salariu",
+        "deplasare_cerere_munca",
+        "deplasare_oferta_munca",
+        "salariu_real",
+        "grad_ocupare",
+        "salariu_minim",
+        "salariu_brut_net"
+      ],
+      "standalone": "standalone/lectia_13_standalone.html",
+      "moduleCount": 8
+    },
+    {
+      "lesson": 14,
+      "title": "Șomajul",
+      "html": "lessons/lesson_14.html",
+      "json": "data/lesson_14.json",
+      "modules": [
+        "structura_pad",
+        "rata_somaj",
+        "durata_intensitatea",
+        "somaj_timp",
+        "tipuri_somaj"
+      ],
+      "standalone": "standalone/lectia_14_standalone.html",
+      "moduleCount": 5
+    },
+    {
+      "lesson": 15,
+      "title": "Venitul, consumul și investițiile",
+      "html": "lessons/lesson_15.html",
+      "json": "data/lesson_15.json",
+      "modules": [
+        "pib_real",
+        "venit_consum",
+        "venit_economii",
+        "inclinatii",
+        "inclinatii_medii",
+        "multiplicator",
+        "echilibru_macroeconomic"
+      ],
+      "standalone": "standalone/lectia_15_standalone.html",
+      "moduleCount": 7
+    },
+    {
+      "lesson": 16,
+      "title": "Creștere, dezvoltare și progres economic",
+      "html": "lessons/lesson_16.html",
+      "json": "data/lesson_16.json",
+      "modules": [
+        "pib_locuitor",
+        "crestere_timp",
+        "tip_crestere",
+        "dezvoltare_umana"
+      ],
+      "standalone": "standalone/lectia_16_standalone.html",
+      "moduleCount": 4
+    },
+    {
+      "lesson": 17,
+      "title": "Ciclicitatea economică",
+      "html": "lessons/lesson_17.html",
+      "json": "data/lesson_17.json",
+      "modules": [
+        "ciclu",
+        "trend_ciclu",
+        "politici_anticiclice"
+      ],
+      "standalone": "standalone/lectia_17_standalone.html",
+      "moduleCount": 3
+    },
+    {
+      "lesson": 18,
+      "title": "Statul în economia de piață",
+      "html": "lessons/lesson_18.html",
+      "json": "data/lesson_18.json",
+      "modules": [
+        "buget",
+        "sold_timp",
+        "structura_buget"
+      ],
+      "standalone": "standalone/lectia_18_standalone.html",
+      "moduleCount": 3
+    },
+    {
+      "lesson": 19,
+      "title": "Piața mondială",
+      "html": "lessons/lesson_19.html",
+      "json": "data/lesson_19.json",
+      "modules": [
+        "balanta",
+        "curs_timp",
+        "piata_valutara",
+        "cre_cri",
+        "profit_extern"
+      ],
+      "standalone": "standalone/lectia_19_standalone.html",
+      "moduleCount": 5
+    }
+  ],
+  "version": "5.4.0",
+  "moduleCount": 87,
+  "sourceGrounding": "All modules audited against uploaded lesson PDFs, exercise manual and full manual; A/B/C provenance stored in each module and audit JSON.",
+  "requiredBehaviors": {
+    "rightPanel": "permanent parameter/equation panel when applicable",
+    "directManipulation": "economic constraints only",
+    "movementVsShift": "movement along a curve never shifts it; structural shift preserves slope unless edited numerically",
+    "t0t1": "T0 persistent structural baseline; T1 current scenario where relevant",
+    "ab": "A/B anchor supported where comparison of two points is relevant",
+    "resetGraph": "restores module defaults",
+    "resetLesson": "restores all lesson module defaults",
+    "theme": "global and independent of economic reset",
+    "explanations": "deterministic rules/text only; no AI generation"
+  }
+}

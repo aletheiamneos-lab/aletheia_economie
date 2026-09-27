@@ -1,0 +1,8 @@
+{
+  "curve": "demand",
+  "direction": "right",
+  "price_dir": "up",
+  "qty_dir": "up",
+  "price": 40,
+  "quantity": 40
+}

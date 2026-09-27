@@ -1,0 +1,417 @@
+{
+  "capitol": {
+    "numar": 5,
+    "titlu": "Eficiența economică și productivitatea",
+    "obiective": [
+      "Să definești eficiența economică și productivitatea, și să le distingi formele",
+      "Să înțelegi legea randamentelor neproporționale și cele 3 stadii ale productivității",
+      "Să calculezi productivitatea muncii și dinamica ei, în mărimi absolute și relative",
+      "Să identifici factorii și căile de sporire a productivității muncii",
+      "Să rezolvi aplicații practice legate de productivitate"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "rationalitate-eficienta",
+      "nr": "1",
+      "titlu": "Raționalitatea și eficiența economică",
+      "text": [
+        "Raționalitatea economică este un principiu de comportament economic care vizează atingerea obiectivelor urmărite, în condițiile unor constrângeri (resurse, timp, venituri). Eficiența economică, forma ei principală de manifestare practică, reflectă calitatea activității economice de utilizare rațională a resurselor, punând în balanță efectele cu eforturile - relația dintre ele este ca de la întreg (raționalitatea) la parte (eficiența).",
+        "Atenție: la nivel microeconomic (firmă), forma principală de apreciere a eficienței economice este rentabilitatea; la nivel macroeconomic (economia națională), este productivitatea națională a muncii."
+      ],
+      "puncteCheie": [],
+      "clasificari": [
+        {
+          "criteriu": "Formele eficienței economice",
+          "categorii": [
+            {
+              "nume": "Randamentul FP utilizați",
+              "definitie": "Ee = efecte/eforturi > 1, apreciat prin productivitate și rentabilitate"
+            },
+            {
+              "nume": "Consumul unitar de FP",
+              "definitie": "Ee = eforturi/efecte < 1, apreciat prin costuri medii, costul marginal, consumul specific"
+            }
+          ]
+        }
+      ],
+      "exemple": [
+        "O eficiență economică reală trebuie urmărită prin compatibilitatea efectelor economice (profit), sociale (satisfacerea nevoilor) și ecologice (protecția mediului) - o firmă poluantă nu e cu adevărat eficientă, chiar dacă obține profit mare."
+      ],
+      "formule": []
+    },
+    {
+      "id": "productivitate-fp",
+      "nr": "2",
+      "titlu": "Productivitatea factorilor de producție",
+      "text": [
+        "Productivitatea factorilor de producție (WFP) reflectă eficiența, randamentul cu care sunt utilizați factorii de producție în activitatea economică: WFP = efecte/eforturi = Q/FP."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Productivitatea, după numărul factorilor implicați",
+          "categorii": [
+            {
+              "nume": "Parțială",
+              "definitie": "eficiența unui singur factor de producție (muncă, natură sau capital)"
+            },
+            {
+              "nume": "Globală",
+              "definitie": "randamentul tuturor factorilor de producție utilizați împreună"
+            }
+          ]
+        },
+        {
+          "criteriu": "Productivitatea, după modul de determinare",
+          "categorii": [
+            {
+              "nume": "Medie",
+              "definitie": "producția medie obținută de un factor (sau de toți), la un moment dat"
+            },
+            {
+              "nume": "Marginală",
+              "definitie": "sporul de producție obținut prin creșterea cu o unitate a unui factor (sau a tuturor)"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Productivitatea medie parțială",
+          "formula": "W(M) = Q/M,  W(N) = Q/N,  W(K) = Q/K"
+        },
+        {
+          "nume": "Productivitatea medie globală",
+          "formula": "WG = Q/(M+N+K)"
+        },
+        {
+          "nume": "Productivitatea marginală parțială",
+          "formula": "Wmg(x) = ΔQ/Δx"
+        },
+        {
+          "nume": "Productivitatea marginală globală",
+          "formula": "WGmg = ΔQ/(ΔM+ΔN+ΔK)"
+        }
+      ]
+    },
+    {
+      "id": "randamente-neproportionale",
+      "nr": "3",
+      "titlu": "Legea randamentelor neproporționale",
+      "text": [
+        "Legea randamentelor neproporționale (marginale) arată că, pe măsură ce se asociază unități succesive dintr-un factor de producție variabil (de regulă, munca) la o cantitate dată dintr-un factor fix, productivitatea marginală (Wmg) și productivitatea medie (W) cresc, ating la un moment dat un maxim, după care încep să scadă.",
+        "Relația dintre cele două forme e cheia interpretării graficului: când Wmg > W, productivitatea medie crește; când Wmg = W, W este maximă și constantă; când Wmg < W, W scade."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Stadiul I (extensiv)",
+          "descriere": "Wmg > W - ambele cresc, pe măsură ce se angajează tot mai mulți lucrători"
+        },
+        {
+          "termen": "Stadiul II (intensiv)",
+          "descriere": "Wmg < W, dar încă pozitivă - W scade, dar producția totală (QT) încă mai crește; aici se află nivelul optim de angajare"
+        },
+        {
+          "termen": "Stadiul III (neeconomic)",
+          "descriere": "Wmg devine negativă - producția totală (QT) începe să scadă; angajarea de peste acest prag nu mai e rațională"
+        }
+      ],
+      "exemple": [],
+      "formule": [],
+      "notaLegatura": {
+        "href": "#sect-explorator-randamente",
+        "text": "Explorează interactiv cele 3 stadii în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "productivitate-munca",
+      "nr": "4",
+      "titlu": "Productivitatea muncii",
+      "text": [
+        "Productivitatea muncii (WL) reflectă eficiența cu care este consumată o anumită cantitate de muncă, la un moment dat. Este cea mai importantă formă a productivității factorilor de producție: măsoară eficiența celui mai important factor (munca), determină nivelul și dinamica salariului, și evaluează competitivitatea firmelor și a economiei naționale.",
+        "Se calculează prin metoda directă (W = Q/L sau Q/T) sau, în anumite domenii, prin metoda indirectă (W = L/Q sau T/Q, care reflectă consumul de muncă pe unitatea de produs - cu cât e mai mic, cu atât productivitatea e mai mare).",
+        "Dinamica productivității muncii se exprimă în mărimi absolute (ΔW = W1 - W0) și relative (Δ%W = IW - 100%, unde IW = (W1/W0) x 100)."
+      ],
+      "exemple": [
+        "Într-o perioadă anterioară, 10 muncitori (L0) obțineau o producție de 600 mil. u.m. (Q0). Numărul de muncitori crește la 15 (L1), iar producția la 750 mil. u.m. (Q1). Productivitatea marginală a celor 5 muncitori suplimentari este Wmg = ΔQ/ΔL = 150/5 = 30 mil. u.m./muncitor. Totodată, W0 = 600/10 = 60 mil. u.m./muncitor, W1 = 750/15 = 50 mil. u.m./muncitor, deci ΔW = -10 mil. u.m. și Δ%W = -16,7% - productivitatea medie a scăzut, chiar dacă producția totală a crescut."
+      ],
+      "formule": [
+        {
+          "nume": "Productivitatea muncii (metoda directă)",
+          "formula": "W(L) = Q/L"
+        },
+        {
+          "nume": "Productivitatea muncii (metoda indirectă)",
+          "formula": "W(L) = L/Q"
+        },
+        {
+          "nume": "Dinamica (mărime absolută)",
+          "formula": "ΔW = W1 - W0"
+        },
+        {
+          "nume": "Dinamica (mărime relativă)",
+          "formula": "Δ%W = IW - 100,  IW = (W1/W0) x 100"
+        }
+      ],
+      "calculator": "productivitate"
+    },
+    {
+      "id": "factori-cai-productivitate",
+      "nr": "5",
+      "titlu": "Factorii și căile de sporire a productivității muncii",
+      "text": [
+        "Nivelul și evoluția productivității muncii se află sub influența unei multitudini de factori, ale căror modalități concrete de folosire sunt reflectate de căile principale de sporire a ei."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Factorii care influențează productivitatea muncii",
+          "categorii": [
+            {
+              "nume": "Naturali",
+              "definitie": "clima, fertilitatea solului, resursele naturale"
+            },
+            {
+              "nume": "Tehnici",
+              "definitie": "dotarea tehnică, combinarea factorilor, managementul activității"
+            },
+            {
+              "nume": "Economici",
+              "definitie": "stimularea materială, calificarea lucrătorilor, abilitatea întreprinzătorului"
+            },
+            {
+              "nume": "Sociali",
+              "definitie": "condițiile de muncă și de viață, legislația, relațiile patronat-sindicate"
+            },
+            {
+              "nume": "Psihologici",
+              "definitie": "motivația și satisfacția muncii, climatul la locul de muncă"
+            },
+            {
+              "nume": "Internaționali",
+              "definitie": "calitatea relațiilor economice externe, productivitatea internațională"
+            }
+          ],
+          "orientare": "vertical"
+        }
+      ],
+      "puncteCheie": [
+        "Promovarea largă a progresului științific și tehnic",
+        "Îmbunătățirea pregătirii și calificării salariaților",
+        "Motivația/cointeresarea/stimularea economică a salariaților",
+        "Aplicarea unui management eficient"
+      ],
+      "exemple": [
+        "Un raport din 2004 arăta că productivitatea muncii pe salariat, în microîntreprinderile din România, era de peste 13 ori mai mică decât media UE (3.000 € față de 40.000 €/an) - o ilustrare directă a cât de mult contează acești factori."
+      ],
+      "formule": []
+    },
+    {
+      "id": "efecte-productivitate",
+      "nr": "6",
+      "titlu": "Efectele creșterii productivității muncii",
+      "text": [
+        "Creșterea productivității muncii înseamnă, în principal, sporirea rezultatelor cu același volum de cheltuieli sau cu unul mai mic - cu efecte la mai multe niveluri."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Efectele creșterii productivității muncii",
+          "categorii": [
+            {
+              "nume": "La nivelul salariatului",
+              "definitie": "salariu mai mare, timp de muncă redus, timp liber sporit, nivel de trai mai bun"
+            },
+            {
+              "nume": "La nivelul firmei",
+              "definitie": "economisirea factorilor, costuri mai mici, profit mai mare, competitivitate crescută"
+            },
+            {
+              "nume": "La nivelul economiei naționale",
+              "definitie": "reducerea tensiunii nevoi-resurse, investiții mai mari, standard de viață mai ridicat"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Nivelul și evoluția productivității NU depind de:",
+      "optiuni": [
+        "condițiile tehnice de producție",
+        "competența profesională a muncitorilor",
+        "calitățile întreprinzătorului",
+        "reducerea costurilor"
+      ],
+      "corect": 3,
+      "explicatie": "Reducerea costurilor este mai degrabă un efect al creșterii productivității, nu o cauză/factor care o influențează."
+    },
+    {
+      "intrebare": "Creșterea productivității muncii (WL) determină:",
+      "optiuni": [
+        "sporirea dependenței economice față de alte țări",
+        "scăderea timpului liber",
+        "sporirea salariului",
+        "creșterea prețurilor"
+      ],
+      "corect": 2,
+      "explicatie": "Unul dintre efectele creșterii productivității muncii, la nivelul salariatului, este sporirea salariului."
+    },
+    {
+      "intrebare": "Productivitatea medie a pământului:",
+      "optiuni": [
+        "crește indiferent de condițiile naturale",
+        "poate spori chiar dacă producția scade",
+        "nu poate fi niciodată calculată",
+        "este mereu egală cu productivitatea marginală"
+      ],
+      "corect": 1,
+      "explicatie": "Fiind un raport (W=Q/N), productivitatea poate crește chiar dacă producția scade, atâta timp cât suprafața de teren folosită scade mai mult decât producția."
+    },
+    {
+      "intrebare": "Activitatea unei firme este apreciată ca eficientă, din perspectiva forței de muncă, când:",
+      "optiuni": [
+        "W > Wmg",
+        "dinamica WL devansează dinamica salariului",
+        "cifra de afaceri este maximă",
+        "dinamica salariului devansează dinamica WL"
+      ],
+      "corect": 1,
+      "explicatie": "Eficiența cere ca productivitatea muncii să crească mai repede decât salariul - altfel costurile salariale unitare cresc, reducând profitul."
+    },
+    {
+      "intrebare": "Forma principală de apreciere a eficienței economice la nivel macroeconomic (economia națională) este:",
+      "optiuni": [
+        "rentabilitatea",
+        "productivitatea națională a muncii",
+        "costul mediu",
+        "profitul"
+      ],
+      "corect": 1,
+      "explicatie": "La nivel microeconomic (firmă), forma principală e rentabilitatea; la nivel macroeconomic, e productivitatea națională a muncii."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Forma principală de manifestare practică a eficienței economice este raționalitatea economică.",
+      "corect": false,
+      "explicatie": "E invers: raționalitatea economică e principiul general, iar eficiența economică e forma ei principală de manifestare practică (relație întreg-parte)."
+    },
+    {
+      "enunt": "Sporirea eficienței economice are loc și în condițiile poluării mediului natural.",
+      "corect": false,
+      "explicatie": "O eficiență economică reală presupune compatibilitatea efectelor economice cu cele sociale ȘI ecologice - poluarea contrazice acest principiu."
+    },
+    {
+      "enunt": "Când W (productivitatea medie) este maximă, producția totală este încă în creștere.",
+      "corect": true,
+      "explicatie": "Da - W e maximă la granița dintre stadiul I și II, când Wmg e încă pozitivă (deși egală sau sub W), deci producția totală (QT) încă mai crește."
+    },
+    {
+      "enunt": "Evoluția productivității muncii depinde de condițiile de muncă și de viață.",
+      "corect": true,
+      "explicatie": "Da - condițiile de muncă și de viață fac parte din factorii sociali care influențează productivitatea muncii."
+    },
+    {
+      "enunt": "O valoare mai mică a productivității calculate prin metoda indirectă (L/Q) înseamnă, de fapt, o productivitate mai mare.",
+      "corect": true,
+      "explicatie": "Metoda indirectă măsoară consumul de muncă pe unitate de produs - cu cât acest consum e mai mic, cu atât productivitatea e mai mare."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Într-o secție, 10 muncitori obțin 800 de piese în 8 ore. Care este productivitatea medie orară a muncii?",
+      "unitate": "piese/om-oră",
+      "corect": 10,
+      "toleranta": 0.1,
+      "explicatie": "W = Q/(L x T) = 800/(10 x 8) = 10 piese/om-oră."
+    },
+    {
+      "enunt": "Valoarea producției a sporit cu 50%, iar prețurile de 1,25 ori, în condițiile reducerii numărului de lucrători cu 25%. Cu ce procent a crescut WL în unități fizice?",
+      "unitate": "%",
+      "corect": 60,
+      "toleranta": 1,
+      "explicatie": "Indicele producției fizice = indicele valoric/indicele prețurilor = 1,5/1,25 = 1,2. Indicele numărului de lucrători = 0,75. IWL(fizic) = 1,2/0,75 = 1,6, deci o creștere de 60%."
+    },
+    {
+      "enunt": "WL1 = 2.500 buc./lucrător, fiind de 1,25 ori mai mare decât WL0, când L0 = 15. Dacă producția rămâne constantă, câți lucrători sunt acum (L1)?",
+      "unitate": "lucrători",
+      "corect": 12,
+      "toleranta": 0.1,
+      "explicatie": "WL0 = 2.500/1,25 = 2.000 buc./lucrător; Q = WL0 x L0 = 2.000 x 15 = 30.000 buc. (constantă); L1 = Q/WL1 = 30.000/2.500 = 12 lucrători."
+    },
+    {
+      "enunt": "10 muncitori suplimentari determină creșterea producției de la 450 la 900 u.m. Care este productivitatea marginală a muncii (WmgL)?",
+      "unitate": "u.m.",
+      "corect": 45,
+      "toleranta": 0.5,
+      "explicatie": "WmgL = ΔQ/ΔL = (900-450)/10 = 45 u.m."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Productivitatea medie"
+        },
+        {
+          "id": "t2",
+          "text": "Productivitatea marginală"
+        },
+        {
+          "id": "t3",
+          "text": "Eficiența economică"
+        },
+        {
+          "id": "t4",
+          "text": "Raționalitatea economică"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Producția medie obținută de un factor (sau de toți), la un moment dat"
+        },
+        {
+          "id": "o_b",
+          "text": "Sporul de producție obținut prin creșterea cu o unitate a unui factor"
+        },
+        {
+          "id": "o_c",
+          "text": "Pune în balanță efectele cu eforturile activității economice"
+        },
+        {
+          "id": "o_d",
+          "text": "Principiu general de comportament economic, orientat spre atingerea obiectivelor"
+        },
+        {
+          "id": "o_e",
+          "text": "Suma de bani plătită pentru folosirea unui factor de producție"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum eficiența economică (o_c) e forma practică de manifestare a raționalității economice (o_d) - relație de la întreg la parte, nu sinonime."
+    }
+  ]
+}

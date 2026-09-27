@@ -1,0 +1,567 @@
+{
+  "an": 2003,
+  "sesiune": "Concurs de admitere 2003",
+  "varianta": "G1",
+  "sursa_subiecte": "Grile_2003.pdf",
+  "sursa_barem": "Grile_2003.pdf (barem)",
+  "interval_economie_in_test": "66-100",
+  "nota": "An atipic: secțiunea de Limba română se extinde până la Q65, iar Economia cuprinde doar 35 de exerciții (66-100), nu 40.",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 19,
+      "exercitii": [
+        {
+          "numar_in_test": 66,
+          "capitol": "Introducere în economie — nevoile",
+          "dificultate": "usor",
+          "enunt": "Din perspectiva subiecților purtători ai necesităților, există nevoi:",
+          "optiuni": {
+            "a": "individuale, de grup și sociale (colective)",
+            "b": "individuale, familiale și naturale",
+            "c": "sociale și psihologice",
+            "d": "singulare, specific sociale și psihologice"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Clasificarea standard a nevoilor: individuale, de grup, sociale (colective)."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Introducere în economie — raritatea",
+          "dificultate": "usor",
+          "enunt": "În cele mai multe cazuri, în mod logic, relația dintre nevoi (N) și resurse (R) este de următoarea formă:",
+          "optiuni": {
+            "a": "N < R",
+            "b": "N = R",
+            "c": "N > R",
+            "d": "nu se poate stabili o asemenea relație"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Principiul rarității: nevoile depășesc, de regulă, resursele disponibile."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Creșterea economică",
+          "dificultate": "usor",
+          "enunt": "Creșterea (dezvoltarea) economică este de tip extensiv:",
+          "optiuni": {
+            "a": "dacă aportul calității și eficienței utilizării factorilor la creșterea activității și producției este preponderent",
+            "b": "în situația în care se extinde numărul factorilor de producție folosiți",
+            "c": "dacă volumul producției crește prin atragerea unei cantități suplimentare din factori de producție de aceeași calitate",
+            "d": "dacă determină încetinirea progresului tehnic în activitățile de producție"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Creșterea extensivă se realizează prin atragerea de resurse suplimentare, fără îmbunătățirea eficienței."
+        },
+        {
+          "numar_in_test": 69,
+          "capitol": "Introducere în economie — bunurile economice",
+          "dificultate": "usor",
+          "enunt": "Care este caracteristica dominantă a bunurilor economice:",
+          "optiuni": {
+            "a": "sunt dobândite din natură și trebuie consumate în cantități indicate",
+            "b": "sunt rezultat al consumului rațional de resurse",
+            "c": "producția lor depășește – de regulă – nevoile anticipate",
+            "d": "raritatea, respectiv insuficiența lor în raport cu nevoile"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Raritatea este caracteristica fundamentală care definește bunurile economice (spre deosebire de bunurile libere)."
+        },
+        {
+          "numar_in_test": 73,
+          "capitol": "Profitul",
+          "dificultate": "usor",
+          "enunt": "Obiectivul principal al producătorului este:",
+          "optiuni": {
+            "a": "obținerea de câștiguri legale",
+            "b": "înregistrarea de profit mediu",
+            "c": "maximizarea profitului",
+            "d": "minimizarea pierderilor"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Maximizarea profitului este obiectivul fundamental al producătorului."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Costul producției",
+          "dificultate": "usor",
+          "enunt": "Cheltuielile cu iluminatul și chiria pentru spațiile de producție reprezintă elemente de:",
+          "optiuni": {
+            "a": "cost variabil",
+            "b": "cost salarial",
+            "c": "cost fix",
+            "d": "cost marginal"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Iluminatul și chiria sunt costuri fixe, independente de volumul producției."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Piața muncii",
+          "dificultate": "usor",
+          "enunt": "Pe piața muncii:",
+          "optiuni": {
+            "a": "se vinde și se cumpără orice bun rezultat al muncii umane",
+            "b": "cererea este întotdeauna egală cu oferta",
+            "c": "se confruntă cererea și oferta de muncă (de locuri de muncă)",
+            "d": "se stabilește dobânda"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Piața muncii este locul de întâlnire al cererii și ofertei de forță de muncă."
+        },
+        {
+          "numar_in_test": 80,
+          "capitol": "Mecanismul concurențial",
+          "dificultate": "usor",
+          "enunt": "Concurența presupune ca:",
+          "optiuni": {
+            "a": "agenții economici, care se confruntă pe piață, să producă orice tip de bun",
+            "b": "agenții economici să vândă tot ceea ce produc (indiferent de cantitatea, calitatea și structura produselor)",
+            "c": "agenții economici să producă, să vândă și să cumpere atâta timp cât au capital propriu la dispoziție, în virtutea libertății economice",
+            "d": "agenții economici, care se confruntă pe piață, să acționeze pentru realizarea propriilor interese și pentru obținerea de cât mai multe avantaje"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Concurența este mecanismul prin care agenții economici urmăresc propriul interes, generând avantaje pentru sistem în ansamblu."
+        },
+        {
+          "numar_in_test": 81,
+          "capitol": "Mecanismul concurențial — concurența monopolistică",
+          "dificultate": "usor",
+          "enunt": "Cărui tip de piață îi este caracteristică vânzarea de produse diferențiate de către un număr mare de producători:",
+          "optiuni": {
+            "a": "pieței cu concurență imperfectă în general",
+            "b": "pieței cu concurență neloială",
+            "c": "pieței cu concurență monopolistică",
+            "d": "oligopolului"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Concurența monopolistică presupune numeroși producători și produse diferențiate."
+        },
+        {
+          "numar_in_test": 82,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "În general, dacă toate celelalte împrejurări rămân neschimbate, între prețul unei mărfi și cererea pentru ea se manifestă o relație:",
+          "optiuni": {
+            "a": "pozitivă",
+            "b": "proporțională",
+            "c": "ca de la parte la întreg",
+            "d": "negativă"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Legea cererii: relație inversă (negativă) între preț și cantitatea cerută."
+        },
+        {
+          "numar_in_test": 83,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "Dacă prețul unui bun crește pe piață, în general, oferta:",
+          "optiuni": {
+            "a": "crește",
+            "b": "scade, dar nu în aceleași proporții",
+            "c": "se modifică în raport cu elasticitatea cererii",
+            "d": "variază în funcție de posibilitățile producătorilor"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Legea ofertei: relație directă între preț și cantitatea oferită."
+        },
+        {
+          "numar_in_test": 84,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "usor",
+          "enunt": "Producătorul vinde la prețul de echilibru pentru că:",
+          "optiuni": {
+            "a": "este obligat de concurență",
+            "b": "altfel nu poate vinde, decât făcând reduceri substanțiale",
+            "c": "la acest nivel de preț obține cele mai mari profituri unitare",
+            "d": "acesta îi asigură condițiile reluării activității și obținerea unui profit relativ stabil, în decursul unei perioade"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Prețul de echilibru asigură continuitatea activității și un profit relativ stabil pe termen lung."
+        },
+        {
+          "numar_in_test": 88,
+          "capitol": "Piața mondială — convertibilitatea",
+          "dificultate": "usor",
+          "enunt": "O monedă națională poate participa la operațiunile pieței valutare dacă este:",
+          "optiuni": {
+            "a": "repatriată",
+            "b": "convertibilă",
+            "c": "metalică",
+            "d": "oferită pe piață"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Doar monedele convertibile pot participa liber la operațiunile pieței valutare internaționale."
+        },
+        {
+          "numar_in_test": 90,
+          "capitol": "Piața de capital — negocierea acțiunilor",
+          "dificultate": "usor",
+          "enunt": "Negocierea acțiunilor:",
+          "optiuni": {
+            "a": "nu este posibilă",
+            "b": "se realizează pe piața primară",
+            "c": "este posibilă doar dacă unul din cei implicați în operațiune deține pachetul acțiunilor de control",
+            "d": "se practică în cadrul bursei de valori"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Negocierea (tranzacționarea) acțiunilor se realizează la bursa de valori (piața secundară)."
+        },
+        {
+          "numar_in_test": 94,
+          "capitol": "Creșterea economică — PNB",
+          "dificultate": "usor",
+          "enunt": "Produsul național brut exprimă:",
+          "optiuni": {
+            "a": "un indicator de exprimare a eficienței economice",
+            "b": "valoarea totală curentă, de piață, a bunurilor și serviciilor finale, produse în economie în decursul unui an, de către agenții economici naționali",
+            "c": "produsul intern brut, din care se scade producția finală brută a agenților naționali care-și desfășoară activitatea în exteriorul țării",
+            "d": "produsul intern brut, la care se adaugă producția finală brută a agenților străini ce își desfășoară activitatea în interiorul țării"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "PNB se calculează pe criteriul național: producția tuturor agenților economici naționali, indiferent de locul unde își desfășoară activitatea."
+        },
+        {
+          "numar_in_test": 97,
+          "capitol": "Piața monetară — politica dobânzii",
+          "dificultate": "usor",
+          "enunt": "Politica monetară și de credit procedează la majorarea dobânzilor:",
+          "optiuni": {
+            "a": "în perioadele de recesiune, pentru a diminua riscul apariției de credite neperformante",
+            "b": "în perioada de boom, pentru a stimula investițiile și creșterea economică",
+            "c": "în perioada de boom prelungit, în scopul frânării cererii pentru bunuri de consum și investiții",
+            "d": "în perioada de recesiune, pentru a favoriza creșterea ocupării forței de muncă"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "În boom prelungit, majorarea dobânzilor frânează cererea excesivă, prevenind supraîncălzirea economiei."
+        },
+        {
+          "numar_in_test": 98,
+          "capitol": "Inflația",
+          "dificultate": "usor",
+          "enunt": "În cadrul măsurilor antiinflaționiste, cele de protecție a agenților economici și populației sunt îndreptate împotriva:",
+          "optiuni": {
+            "a": "scăderii producției",
+            "b": "scăderii puterii de cumpărare a banilor",
+            "c": "reducerii vitezei de rotație a banilor",
+            "d": "scăderii productivității muncii"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Măsurile de protecție antiinflaționiste vizează combaterea scăderii puterii de cumpărare cauzate de inflație."
+        },
+        {
+          "numar_in_test": 99,
+          "capitol": "Piața muncii — rata șomajului",
+          "dificultate": "usor",
+          "enunt": "Care este numărul șomerilor, dacă rata șomajului este de 8%, iar populația activă disponibilă, aptă de muncă, este 45 milioane:",
+          "optiuni": {
+            "a": "0,36 milioane",
+            "b": "8 milioane",
+            "c": "36 milioane",
+            "d": "3,6 milioane"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Nr. șomeri = Rata șomajului x Populație activă",
+          "rezolvare": "0,08x45=3,6 milioane."
+        },
+        {
+          "numar_in_test": 100,
+          "capitol": "Piața mondială — eficiența exporturilor",
+          "dificultate": "usor",
+          "enunt": "Eficiența economică a exporturilor se exprimă prin:",
+          "optiuni": {
+            "a": "export",
+            "b": "cursul de revenire la export",
+            "c": "raportul dintre export și import",
+            "d": "promovarea exporturilor"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Cursul de revenire la export este indicatorul standard folosit pentru a exprima eficiența economică a exporturilor."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 8,
+      "exercitii": [
+        {
+          "numar_in_test": 70,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "mediu",
+          "enunt": "De care din următoarele elemente depinde utilitatea:",
+          "optiuni": {
+            "a": "anticipările unui consumator în privința alocării veniturilor salariale pentru diferite bunuri personale, în scopul atingerii satisfacției maxime",
+            "b": "profitul agenților economici",
+            "c": "salariul nominal",
+            "d": "nivelul de cultură propriu consumatorilor"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Utilitatea, fiind subiectivă, este influențată de percepția individuală, inclusiv de nivelul de cultură al consumatorului."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "mediu",
+          "enunt": "Pe măsură ce se înregistrează creșterea cantității consumate din bunul economic X, se observă că:",
+          "optiuni": {
+            "a": "utilitatea marginală crește, în timp ce utilitatea totală descrește",
+            "b": "utilitatea individuală descrește în timp ce utilitatea marginală crește",
+            "c": "utilitatea totală crește, în timp ce utilitatea individuală descrește",
+            "d": "utilitatea marginală și utilitatea individuală cresc"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Legea utilității marginale descrescânde: utilitatea totală crește (cu ritm tot mai lent), în timp ce utilitatea individuală (marginală) descrește."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Utilitatea bunurilor economice — echilibrul consumatorului",
+          "dificultate": "mediu",
+          "enunt": "Echilibrul consumatorului se atinge în situația în care:",
+          "optiuni": {
+            "a": "cunoscându-se utilitatea totală pentru cantitățile x și y consumate din bunurile X și Y, se calculează utilitatea totală determinată de venitul disponibil",
+            "b": "cunoscându-se utilitatea marginală pentru cantitățile x și y achiziționate din bunurile X și Y, se determină utilitatea totală pe fiecare unitate monetară cheltuită (raportul dintre utilitatea totală și preț)",
+            "c": "cunoscându-se cantitățile x și y consumate din bunurile X și Y, se determină utilitatea totală pe fiecare unitate monetară cheltuită (raportul dintre utilitatea totală și preț)",
+            "d": "cunoscându-se utilitatea totală pentru cantitățile x și y consumate din bunurile X și Y, se determină utilitatea marginală pe fiecare unitate monetară cheltuită (raportul dintre utilitatea marginală și preț)"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Umg/P egal pentru toate bunurile",
+          "rezolvare": "Echilibrul consumatorului presupune egalizarea utilității marginale pe fiecare unitate monetară cheltuită (Umg/P), pentru toate bunurile din programul de consum."
+        },
+        {
+          "numar_in_test": 75,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Care din următoarele afirmații se dovedește a fi adevărată:",
+          "optiuni": {
+            "a": "pe termen scurt, costul fix este întotdeauna mai mare decât costul variabil",
+            "b": "costul total este mai mare decât costul variabil",
+            "c": "costul variabil este obligatoriu mai mic decât costul fix",
+            "d": "pe termen scurt, costul total poate fi egal cu costul variabil, când firma înregistrează cost fix"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "CT = CF + CV",
+          "rezolvare": "Cum CT=CF+CV și CF>0 pe termen scurt (există întotdeauna un cost fix), CT este întotdeauna mai mare decât CV."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Care din categoriile enumerate nu influențează nivelul costului total mediu:",
+          "optiuni": {
+            "a": "costul marginal",
+            "b": "costul fix",
+            "c": "costul variabil",
+            "d": "costul fix mediu"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "CMT = CMF + CMV",
+          "rezolvare": "Costul marginal nu este o componentă directă a CMT (CMT=CMF+CMV), spre deosebire de costul fix, variabil sau fix mediu."
+        },
+        {
+          "numar_in_test": 79,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "mediu",
+          "enunt": "Productivitatea marginală a unui factor de producție are în vedere:",
+          "optiuni": {
+            "a": "variația rezultatului economic obținut prin creșterea numărului de factori de producție și/sau a calității acestora",
+            "b": "raportul dintre sporul consumului din respectivul factor de producție și sporul producției, în condițiile în care ceilalți factori de producție nu se modifică",
+            "c": "sporul de producție obținut prin creșterea cu o unitate a costului producției",
+            "d": "variația (modificarea) rezultatului economic obținut prin sporirea cu o unitate a unui factor de producție, în condițiile în care ceilalți factori utilizați nu se modifică"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "W.mg = ΔQ/ΔFactor",
+          "rezolvare": "Definiția standard a productivității marginale."
+        },
+        {
+          "numar_in_test": 86,
+          "capitol": "Mecanismul concurențial — oligopol",
+          "dificultate": "mediu",
+          "enunt": "În cazul oligopolului format din 4 firme care acționează cooperând pe o anumită piață:",
+          "optiuni": {
+            "a": "fiecare firmă va produce cca 25% din oferta (producția) ramurii",
+            "b": "firmele vor produce atât cât le permit resursele de capital propriu",
+            "c": "fiecare firmă va adopta, pe rând, strategia dominării pieței",
+            "d": "una din firme va domina piața, iar celelalte se vor supune deciziilor ei"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Cu 4 firme egale care cooperează, fiecare ar produce, în medie, o cotă apropiată de 25% din piață."
+        },
+        {
+          "numar_in_test": 92,
+          "capitol": "Profitul — viteza de rotație a capitalului",
+          "dificultate": "mediu",
+          "enunt": "Profitul anual și viteza de rotație a capitalului (exprimată prin numărul de rotații) sunt în relație:",
+          "optiuni": {
+            "a": "invers proporțională",
+            "b": "directă",
+            "c": "negativă",
+            "d": "ca de la întreg la parte"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "O viteză de rotație mai mare înseamnă că același capital generează profit de mai multe ori pe an — relație directă cu profitul anual total."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 8,
+      "exercitii": [
+        {
+          "numar_in_test": 76,
+          "capitol": "Costul producției — costul fix mediu",
+          "dificultate": "greu",
+          "enunt": "Să se determine costul fix mediu știind că: producția obținută (Q) este 100 bucăți iar costul fix global (CF) 10.000 u.m.:",
+          "optiuni": {
+            "a": "100 u.m.",
+            "b": "20 u.m.",
+            "c": "nu se poate determina",
+            "d": "180 u.m."
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "CFM = CF/Q",
+          "rezolvare": "CFM=10.000/100=100 u.m."
+        },
+        {
+          "numar_in_test": 85,
+          "capitol": "Piața și echilibrul pieței — elasticitatea ofertei",
+          "dificultate": "greu",
+          "enunt": "Se dă funcția ofertei din bunul X sub forma O(X) = P+10. Știind că în timp, prețul lui X a scăzut de la 5 la 2 dolari, mărimea coeficientului de elasticitate a ofertei în raport cu prețul bunului este:",
+          "optiuni": {
+            "a": "1/3",
+            "b": "2/3",
+            "c": "3",
+            "d": "2"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "O(P) = P+10",
+          "rezolvare": "O(5)=15, O(2)=12. Δ%O=(12-15)/15x100≈-20%. Δ%P=(2-5)/5x100=-60%. |Ko/p|=20/60=1/3."
+        },
+        {
+          "numar_in_test": 87,
+          "capitol": "Piața monetară — cererea de bani",
+          "dificultate": "greu",
+          "enunt": "La o ofertă monetară constantă, cererea de bani evoluează:",
+          "optiuni": {
+            "a": "întotdeauna în același sens cu rata dobânzii",
+            "b": "direct proporțional cu rata dobânzii",
+            "c": "în sens invers față de mișcarea ratei dobânzii",
+            "d": "fără a avea legătură cu rata dobânzii"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Cererea de bani variază invers proporțional cu rata dobânzii (costul de oportunitate al deținerii de numerar)."
+        },
+        {
+          "numar_in_test": 89,
+          "capitol": "Piața monetară — masa monetară",
+          "dificultate": "greu",
+          "enunt": "Ce modificări apar în componentele unei mase monetare de 500 mld. lei, din care 30% reprezintă numerar, atunci când se creează un depozit bancar de 10 mld. lei:",
+          "optiuni": {
+            "a": "numerarul crește cu 10 mld., iar moneda scripturală scade cu 10 mld.",
+            "b": "numerarul ajunge la 140 mld., iar moneda scripturală la 360 mld.",
+            "c": "numerarul crește la 160 mld., iar moneda scripturală scade la 340 mld.",
+            "d": "numerarul ajunge la 150 mld., iar moneda scripturală la 350 mld."
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Numerar = 30% x Masa monetară",
+          "rezolvare": "Numerar inițial=0,3x500=150. Monedă scripturală inițială=350. La crearea unui depozit (conversie numerar→scriptural): Numerar=150-10=140. Monedă scripturală=350+10=360."
+        },
+        {
+          "numar_in_test": 91,
+          "capitol": "Piața muncii — salariul real/nominal",
+          "dificultate": "greu",
+          "enunt": "La o sporire cu 25% a salariului real, pe fondul majorării cu 10% a prețurilor bunurilor de consum, rezultă că salariul nominal:",
+          "optiuni": {
+            "a": "crește cu 37,5%",
+            "b": "scade cu 75%",
+            "c": "crește cu 137,5%",
+            "d": "crește cu 37,5%"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "I_SN = (I_SR x I_P)/100",
+          "rezolvare": "I_SR=125%. I_P=110%. I_SN=(125x110)/100=137,5% — creștere de 37,5%."
+        },
+        {
+          "numar_in_test": 93,
+          "capitol": "Piața monetară — profitul bancar",
+          "dificultate": "greu",
+          "enunt": "O bancă acordă, din sumele atrase spre fructificare, un credit anual de 250.000.000 lei. Rata dobânzii încasată de bancă este 40%, iar cea plătită deponenților săi este 30%. Cheltuielile anuale de funcționare ale băncii sunt de 20.000.000 lei. Profitul anual al băncii respective este:",
+          "optiuni": {
+            "a": "25.000.000 lei",
+            "b": "40.000.000 lei",
+            "c": "5.000.000 lei",
+            "d": "50.000.000 lei"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Profit bancar = (Dobândă încasată – Dobândă plătită) – Cheltuieli funcționare",
+          "rezolvare": "Dobândă încasată=250.000.000x0,4=100.000.000. Dobândă plătită=250.000.000x0,3=75.000.000. Câștig bancar=25.000.000. Profit=25.000.000-20.000.000=5.000.000 lei."
+        },
+        {
+          "numar_in_test": 95,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "greu",
+          "enunt": "Cât este multiplicatorul investițiilor, dacă înclinația marginală spre economii este 1/4:",
+          "optiuni": {
+            "a": "25%",
+            "b": "8",
+            "c": "4",
+            "d": "informațiile oferite sunt insuficiente pentru determinarea lui"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "K = 1/e'",
+          "rezolvare": "K=1/(1/4)=4."
+        },
+        {
+          "numar_in_test": 96,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "greu",
+          "enunt": "Cât este creșterea venitului, dacă sporul investițiilor este 250 miliarde, iar cel al consumului 750 miliarde (știind că mărimea investițiilor este egală cu cea a economiilor):",
+          "optiuni": {
+            "a": "500 miliarde",
+            "b": "1.000 miliarde",
+            "c": "10.000 miliarde",
+            "d": "nu se poate determina pe baza datelor oferite"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "ΔV = ΔC + ΔE",
+          "rezolvare": "ΔE=ΔI=250 (din I=E). ΔV=750+250=1.000 miliarde."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 0,
+      "exercitii": []
+    }
+  ]
+}

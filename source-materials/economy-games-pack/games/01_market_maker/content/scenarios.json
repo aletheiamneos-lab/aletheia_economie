@@ -1,0 +1,332 @@
+[
+  {
+    "id": "mm01",
+    "title": "Veniturile cresc pentru un bun normal",
+    "difficulty": "easy",
+    "shock": "Venitul consumatorilor crește, iar bunul este normal.",
+    "curve": "demand",
+    "direction": "right",
+    "price_dir": "up",
+    "qty_dir": "up",
+    "before": {
+      "a": 100,
+      "b": 2,
+      "c": 10,
+      "d": 1
+    },
+    "after": {
+      "a": 118,
+      "b": 2,
+      "c": 10,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm02",
+    "title": "Veniturile scad pentru un bun normal",
+    "difficulty": "easy",
+    "shock": "Venitul consumatorilor scade pentru un bun normal.",
+    "curve": "demand",
+    "direction": "left",
+    "price_dir": "down",
+    "qty_dir": "down",
+    "before": {
+      "a": 110,
+      "b": 2,
+      "c": 20,
+      "d": 1
+    },
+    "after": {
+      "a": 92,
+      "b": 2,
+      "c": 20,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm03",
+    "title": "Scumpirea energiei",
+    "difficulty": "easy",
+    "shock": "Prețul energiei utilizate în producție crește.",
+    "curve": "supply",
+    "direction": "left",
+    "price_dir": "up",
+    "qty_dir": "down",
+    "before": {
+      "a": 120,
+      "b": 2,
+      "c": 15,
+      "d": 1
+    },
+    "after": {
+      "a": 120,
+      "b": 2,
+      "c": 3,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm04",
+    "title": "Tehnologie mai eficientă",
+    "difficulty": "easy",
+    "shock": "Producătorii adoptă o tehnologie mai performantă.",
+    "curve": "supply",
+    "direction": "right",
+    "price_dir": "down",
+    "qty_dir": "up",
+    "before": {
+      "a": 120,
+      "b": 2,
+      "c": 10,
+      "d": 1
+    },
+    "after": {
+      "a": 120,
+      "b": 2,
+      "c": 25,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm05",
+    "title": "Mai mulți cumpărători",
+    "difficulty": "easy",
+    "shock": "Numărul cumpărătorilor crește.",
+    "curve": "demand",
+    "direction": "right",
+    "price_dir": "up",
+    "qty_dir": "up",
+    "before": {
+      "a": 95,
+      "b": 1.5,
+      "c": 10,
+      "d": 1
+    },
+    "after": {
+      "a": 112,
+      "b": 1.5,
+      "c": 10,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm06",
+    "title": "Mai mulți producători",
+    "difficulty": "easy",
+    "shock": "Intră noi firme pe piață.",
+    "curve": "supply",
+    "direction": "right",
+    "price_dir": "down",
+    "qty_dir": "up",
+    "before": {
+      "a": 100,
+      "b": 2,
+      "c": 8,
+      "d": 1.2
+    },
+    "after": {
+      "a": 100,
+      "b": 2,
+      "c": 20,
+      "d": 1.2
+    }
+  },
+  {
+    "id": "mm07",
+    "title": "Taxă pe producție",
+    "difficulty": "medium",
+    "shock": "Statul introduce o taxă care mărește costurile producătorilor.",
+    "curve": "supply",
+    "direction": "left",
+    "price_dir": "up",
+    "qty_dir": "down",
+    "before": {
+      "a": 130,
+      "b": 2.2,
+      "c": 20,
+      "d": 1.1
+    },
+    "after": {
+      "a": 130,
+      "b": 2.2,
+      "c": 5,
+      "d": 1.1
+    }
+  },
+  {
+    "id": "mm08",
+    "title": "Subvenție pentru producători",
+    "difficulty": "medium",
+    "shock": "Producătorii primesc o subvenție care reduce costul efectiv.",
+    "curve": "supply",
+    "direction": "right",
+    "price_dir": "down",
+    "qty_dir": "up",
+    "before": {
+      "a": 130,
+      "b": 2,
+      "c": 12,
+      "d": 1
+    },
+    "after": {
+      "a": 130,
+      "b": 2,
+      "c": 28,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm09",
+    "title": "Preferințe mai puternice",
+    "difficulty": "medium",
+    "shock": "Bunul devine mai preferat de consumatori.",
+    "curve": "demand",
+    "direction": "right",
+    "price_dir": "up",
+    "qty_dir": "up",
+    "before": {
+      "a": 85,
+      "b": 1.4,
+      "c": 5,
+      "d": 1
+    },
+    "after": {
+      "a": 105,
+      "b": 1.4,
+      "c": 5,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm10",
+    "title": "Prețul substitutului scade",
+    "difficulty": "medium",
+    "shock": "Prețul unui bun substituibil scade.",
+    "curve": "demand",
+    "direction": "left",
+    "price_dir": "down",
+    "qty_dir": "down",
+    "before": {
+      "a": 115,
+      "b": 2,
+      "c": 15,
+      "d": 1
+    },
+    "after": {
+      "a": 98,
+      "b": 2,
+      "c": 15,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm11",
+    "title": "Prețul complementului scade",
+    "difficulty": "medium",
+    "shock": "Prețul unui bun complementar scade.",
+    "curve": "demand",
+    "direction": "right",
+    "price_dir": "up",
+    "qty_dir": "up",
+    "before": {
+      "a": 100,
+      "b": 2,
+      "c": 20,
+      "d": 1
+    },
+    "after": {
+      "a": 116,
+      "b": 2,
+      "c": 20,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm12",
+    "title": "Condiții naturale nefavorabile",
+    "difficulty": "medium",
+    "shock": "Condițiile naturale reduc producția agricolă.",
+    "curve": "supply",
+    "direction": "left",
+    "price_dir": "up",
+    "qty_dir": "down",
+    "before": {
+      "a": 125,
+      "b": 2,
+      "c": 18,
+      "d": 1
+    },
+    "after": {
+      "a": 125,
+      "b": 2,
+      "c": 2,
+      "d": 1
+    }
+  },
+  {
+    "id": "mm13",
+    "title": "Așteptări de scumpire la consumatori",
+    "difficulty": "hard",
+    "shock": "Consumatorii se așteaptă ca prețul să crească în viitor și cumpără mai mult acum.",
+    "curve": "demand",
+    "direction": "right",
+    "price_dir": "up",
+    "qty_dir": "up",
+    "before": {
+      "a": 100,
+      "b": 1.8,
+      "c": 12,
+      "d": 1.1
+    },
+    "after": {
+      "a": 116,
+      "b": 1.8,
+      "c": 12,
+      "d": 1.1
+    }
+  },
+  {
+    "id": "mm14",
+    "title": "Așteptări de scumpire la producători",
+    "difficulty": "hard",
+    "shock": "Producătorii se așteaptă la prețuri mai mari ulterior și reduc oferta prezentă.",
+    "curve": "supply",
+    "direction": "left",
+    "price_dir": "up",
+    "qty_dir": "down",
+    "before": {
+      "a": 110,
+      "b": 1.9,
+      "c": 15,
+      "d": 1.0
+    },
+    "after": {
+      "a": 110,
+      "b": 1.9,
+      "c": 4,
+      "d": 1.0
+    }
+  },
+  {
+    "id": "mm15",
+    "title": "Crește productivitatea",
+    "difficulty": "hard",
+    "shock": "Productivitatea factorilor de producție crește.",
+    "curve": "supply",
+    "direction": "right",
+    "price_dir": "down",
+    "qty_dir": "up",
+    "before": {
+      "a": 120,
+      "b": 2,
+      "c": 10,
+      "d": 1.2
+    },
+    "after": {
+      "a": 120,
+      "b": 2,
+      "c": 27,
+      "d": 1.2
+    }
+  }
+]

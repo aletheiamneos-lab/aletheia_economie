@@ -1,0 +1,306 @@
+{
+  "capitol": {
+    "numar": 17,
+    "titlu": "Ciclicitatea economică",
+    "obiective": [
+      "Să explici ce reprezintă fluctuațiile macroeconomice și ciclicitatea economică",
+      "Să identifici fazele ciclului economic decenal (al afacerilor)",
+      "Să caracterizezi criza, depresiunea, înviorarea și expansiunea economică",
+      "Să înțelegi politicile anticiclice (monetară, fiscală, a cheltuielilor publice)",
+      "Să distingi creșterea economică inflaționistă de cea neinflaționistă"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "fluctuatii-ciclicitate",
+      "nr": "1",
+      "titlu": "Fluctuațiile macroeconomice și ciclicitatea economică",
+      "text": [
+        "Activitatea economică dintr-o țară are o evoluție ondulatorie, neuniformă, fluctuantă în timp - la nivel de firmă, ramură, economie națională sau chiar mondială, reflectată prin indicatori precum volumul producției, al investițiilor, cifra de afaceri, rata profitului.",
+        "Ciclicitatea economică este o formă specifică de mișcare a activității economice dintr-o țară, caracterizată prin alternanța, într-o anumită succesiune și regularitate în timp, a perioadelor de creștere (expansiune) cu cele de descreștere (recesiune) economică. Cauza principală, potrivit lui J.M. Keynes: evoluția, ea însăși ciclică, a eficienței marginale a capitalului."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de fluctuații ale activității economice",
+          "categorii": [
+            {
+              "nume": "Sezoniere",
+              "definitie": "determinate de succesiunea anotimpurilor (ex. construcțiile lucrează mai mult vara)"
+            },
+            {
+              "nume": "Întâmplătoare (accidentale)",
+              "definitie": "determinate de factori aleatori (ex. un cutremur reduce temporar activitatea)"
+            },
+            {
+              "nume": "Ciclice",
+              "definitie": "alternanța, cu o anumită regularitate, a perioadelor de prosperitate cu perioade de regres"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Ciclicitatea economică este o formă firească, normală de evoluție a economiei, care asigură continuitate, schimbări calitative și progres - nu doar un defect al sistemului"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "ciclul-economic",
+      "nr": "2",
+      "titlu": "Ciclul economic (decenal, al afacerilor)",
+      "text": [
+        "Ciclul economic reflectă perioada de la începutul unei crize economice până la următoarea criză - altfel spus, perioada dintre două crize succesive. Nu există un model unic de ciclu, sub aspectul duratei, configurației sau ordinii fazelor - acestea diferă de la o țară la alta și de la o perioadă la alta. Fiecare ciclu economic este, în principiu, superior celui anterior."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Tipurile de cicluri economice, după durată",
+          "categorii": [
+            {
+              "nume": "Pe termen scurt",
+              "definitie": "10-40 luni; formarea și absorbția stocurilor coincid cu o ușoară expansiune/recesiune"
+            },
+            {
+              "nume": "Pe termen mediu (decenal, al afacerilor)",
+              "definitie": "4-6 până la 10-12 ani; cel mai studiat tip de ciclu"
+            },
+            {
+              "nume": "Pe termen lung (secular)",
+              "definitie": "40-60 ani; se schimbă modul de producție specific economiei (ex. trecerea de la industrie la era informației)"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [],
+      "notaLegatura": {
+        "href": "#sect-explorator-ciclu",
+        "text": "Explorează interactiv fazele ciclului economic, în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "fazele-ciclului",
+      "nr": "3",
+      "titlu": "Fazele ciclului economic",
+      "text": [
+        "Ciclul economic decenal are două faze principale, cu caracteristici opuse: expansiunea (producția, veniturile și ocuparea cresc, nivelul de trai se îmbunătățește) și recesiunea (consumul, producția și cererea de muncă scad, nivelul de trai se înrăutățește). Trecerea de la expansiune la recesiune se face brusc, prin criză - descrisă de Keynes ca un fenomen \"subit și violent\"."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Fazele detaliate ale ciclului economic",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Criza (de supraproducție)",
+              "definitie": "oferta depășește cererea; scad producția, vânzările, investițiile, cursurile bursiere, profiturile; cresc stocurile și șomajul"
+            },
+            {
+              "nume": "Depresiunea",
+              "definitie": "dezechilibrele se propagă în tot sistemul; scad veniturile, cererea, profiturile; cresc costurile, falimentele, șomajul"
+            },
+            {
+              "nume": "Înviorarea (reluarea)",
+              "definitie": "investițiile firmelor rămase pe piață reduc costurile și modernizează capitalul; cererea și ocuparea încep să crească din nou"
+            },
+            {
+              "nume": "Avântul (expansiunea)",
+              "definitie": "creșterea investițiilor stimulează producția, creditele, ocuparea și veniturile - până când eficiența scade, pregătind o nouă criză"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "politici-anticiclice",
+      "nr": "4",
+      "titlu": "Politicile anticiclice",
+      "text": [
+        "Pentru a atenua efectele crizelor și ale ciclicității, statul poate folosi politici ale cererii (de inspirație keynesiană), care vizează creșterea cererii agregate, sau poate opta pentru \"economia ofertei\", care propune limitarea intervenției statului la crearea unui cadru favorabil pieței (reforme structurale, reducerea fiscalității)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Politicile cererii (keynesiene) - instrumente, în funcție de faza ciclului",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Politica monetară și de credit",
+              "definitie": "în recesiune: crește masa monetară, scade rata dobânzii, se extinde creditul; în expansiune: invers"
+            },
+            {
+              "nume": "Politica fiscală",
+              "definitie": "în recesiune: scad impozitele; în expansiune: cresc impozitele"
+            },
+            {
+              "nume": "Politica cheltuielilor publice",
+              "definitie": "în recesiune: cresc cheltuielile publice; în expansiune: scad cheltuielile publice"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Creșterea economică inflaționistă",
+          "descriere": "creșterea prețurilor depășește creșterea PIB real"
+        },
+        {
+          "termen": "Creșterea economică neinflaționistă",
+          "descriere": "creșterea PIB real depășește creșterea prețurilor"
+        }
+      ],
+      "exemple": [
+        "Economia ofertei propune, contrar politicilor cererii, reforme structurale orientate spre extinderea concurenței și diminuarea fiscalității - pentru a îmbunătăți direct perspectivele de profit ale firmelor, nu doar cererea agregată."
+      ],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Ciclul economic decenal (al afacerilor) are o durată de:",
+      "optiuni": [
+        "10-40 luni",
+        "4-6 până la 10-12 ani",
+        "40-60 ani",
+        "exact 5 ani, întotdeauna"
+      ],
+      "corect": 1,
+      "explicatie": "Ciclurile pe termen mediu (decenale, ale afacerilor) durează de la 4-6 până la 10-12 ani - cele mai studiate în economie."
+    },
+    {
+      "intrebare": "Trecerea de la expansiune la recesiune se face prin:",
+      "optiuni": [
+        "depresiune",
+        "criză",
+        "înviorare",
+        "avânt"
+      ],
+      "corect": 1,
+      "explicatie": "Criza marchează punctul de cotitură superior - trecerea bruscă și violentă de la expansiune la recesiune."
+    },
+    {
+      "intrebare": "În faza de recesiune, politica monetară (keynesiană) recomandă:",
+      "optiuni": [
+        "creșterea ratei dobânzii",
+        "scăderea masei monetare",
+        "scăderea ratei dobânzii și extinderea creditului",
+        "restrângerea creditului"
+      ],
+      "corect": 2,
+      "explicatie": "În recesiune, scopul e stimularea cererii - deci masa monetară crește, rata dobânzii scade, creditul se extinde."
+    },
+    {
+      "intrebare": "Cauza principală a ciclicității economice, potrivit lui J.M. Keynes, este:",
+      "optiuni": [
+        "evoluția ciclică a eficienței marginale a capitalului",
+        "succesiunea anotimpurilor",
+        "cutremurele și dezastrele naturale",
+        "creșterea populației"
+      ],
+      "corect": 0,
+      "explicatie": "Keynes a identificat evoluția ciclică a eficienței marginale a capitalului drept cauza principală a fluctuațiilor ciclice."
+    },
+    {
+      "intrebare": "Creșterea economică inflaționistă înseamnă că:",
+      "optiuni": [
+        "PIB real crește mai repede decât prețurile",
+        "prețurile cresc mai repede decât PIB real",
+        "PIB real și prețurile cresc în același ritm",
+        "PIB real scade, iar prețurile rămân constante"
+      ],
+      "corect": 1,
+      "explicatie": "Creșterea economică inflaționistă apare atunci când creșterea prețurilor depășește creșterea PIB-ului real."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Ciclicitatea economică este o formă firească, normală de evoluție a economiei.",
+      "corect": true,
+      "explicatie": "Da - deși implică perioade dificile, ciclicitatea asigură continuitate, schimbări calitative și progres pe termen lung."
+    },
+    {
+      "enunt": "Fiecare ciclu economic este identic cu cel anterior, ca durată și configurație.",
+      "corect": false,
+      "explicatie": "Nu - nu există un model unic de ciclu; durata, configurația și ordinea fazelor diferă de la un ciclu la altul."
+    },
+    {
+      "enunt": "În faza de expansiune (boom), guvernul de inspirație keynesiană recomandă creșterea cheltuielilor publice.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - în expansiune, cheltuielile publice ar trebui să SCADĂ, pentru a tempera cererea agregată deja ridicată."
+    },
+    {
+      "enunt": "Depresiunea se caracterizează prin propagarea dezechilibrelor din faza de criză, în tot sistemul economic.",
+      "corect": true,
+      "explicatie": "Da - în depresiune, scad în continuare veniturile, cererea, profiturile, iar șomajul și falimentele cresc."
+    },
+    {
+      "enunt": "\"Economia ofertei\" recomandă intervenția activă a statului prin cheltuieli publice mari.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - economia ofertei recomandă limitarea intervenției statului, prin reforme structurale și reducerea fiscalității, nu prin cheltuieli publice mari."
+    }
+  ],
+  "probleme": [],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare fază a ciclului economic cu descrierea ei (atenție - sunt mai multe descrieri decât faze).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Criza"
+        },
+        {
+          "id": "t2",
+          "text": "Depresiunea"
+        },
+        {
+          "id": "t3",
+          "text": "Înviorarea"
+        },
+        {
+          "id": "t4",
+          "text": "Avântul (expansiunea)"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Trecere bruscă și violentă de la expansiune la recesiune, cu supraproducție"
+        },
+        {
+          "id": "o_b",
+          "text": "Propagarea dezechilibrelor în tot sistemul, scăderea veniturilor și creșterea șomajului"
+        },
+        {
+          "id": "o_c",
+          "text": "Reluarea creșterii, prin reînnoirea capitalului și reducerea costurilor"
+        },
+        {
+          "id": "o_d",
+          "text": "Creșterea investițiilor, ocupării și veniturilor, până la apariția unor noi tensiuni"
+        },
+        {
+          "id": "o_e",
+          "text": "Alternanța perioadelor de creștere cu cele de descreștere, cu o anumită regularitate"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, ciclicitatea economică în ansamblu - conceptul general, nu o fază anume."
+    }
+  ]
+}

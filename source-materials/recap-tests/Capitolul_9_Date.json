@@ -1,0 +1,1288 @@
+{
+  "capitol": 9,
+  "titlu_capitol": "Mecanismul concurențial",
+  "nota_metodologica": "Capitolul este pur conceptual in sursa (fara formule sau probleme numerice), asemenea Capitolului 2 - prin urmare, toate cele 40 de intrebari sunt de teorie (concurenta perfecta si imperfecta, formele si rolul concurentei, tipurile de piata: monopolistica, oligopol, monopol, oligopson, monopson).",
+  "intrebari": [
+    {
+      "id": "C9_T01",
+      "capitol": 9,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Concurența, numită și „mâna invizibilă” a pieței, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Relațiile dintre agenții economici care acționează pe piața aceluiași bun economic, fiecare urmărind realizarea propriilor interese în condiții de libertate economică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Intervenția directă a statului în stabilirea prețurilor tuturor bunurilor economice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărei forme de interacțiune între vânzători și cumpărători",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Colaborarea obligatorie dintre toți producătorii de pe o piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Concurența nu presupune nici intervenție statală directă, nici colaborare obligatorie: ea reflectă relațiile dintre agenții economici de pe piața aceluiași bun, fiecare urmărindu-și propriile interese, în condiții de libertate economică. Prin urmare, răspunsul corect este: Relațiile dintre agenții economici care acționează pe piața aceluiași bun economic, fiecare urmărind realizarea propriilor interese în condiții de libertate economică."
+    },
+    {
+      "id": "C9_T02",
+      "capitol": 9,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Se poate vorbi de concurență directă între:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Agenții economici care produc camioane și cei care produc creioane",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Agenții economici care acționează pe piața aceluiași bun sau în cazul bunurilor substituibile",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv agenții economici de pe piețe geografic diferite",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Agenții economici care produc bunuri complementare, precum stilourile și cerneala",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Concurența directă apare între agenții economici de pe piața aceluiași bun (de exemplu, telefoane mobile) sau în cazul bunurilor substituibile (zahăr și zaharină) — nu între cei care produc bunuri complet diferite sau complementare. Prin urmare, răspunsul corect este: Agenții economici care acționează pe piața aceluiași bun sau în cazul bunurilor substituibile."
+    },
+    {
+      "id": "C9_T03",
+      "capitol": 9,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre premisele principale ale concurenței se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Existența unui singur vânzător pe fiecare piață",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Interzicerea legală a oricărei inițiative economice private",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Formarea liberă a prețului și numeroși participanți la tranzacții",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Stabilirea centralizată a prețurilor de către stat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Concurența reală presupune, ca premise, formarea liberă a prețului, numeroși participanți la tranzacții și libertatea decizională a agenților economici, apărată legal — nu centralizare, monopol sau interzicerea inițiativei private. Prin urmare, răspunsul corect este: Formarea liberă a prețului și numeroși participanți la tranzacții."
+    },
+    {
+      "id": "C9_T04",
+      "capitol": 9,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre factorii care determină amploarea concurenței se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Numărul vânzătorilor și al cumpărătorilor, precum și gradul de diferențiere a ofertei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Doar mărimea capitalului social al firmelor participante",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv nivelul absolut al prețurilor practicate pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv rata inflației dintr-o economie",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Amploarea concurenței depinde de numărul vânzătorilor și al cumpărătorilor, de gradul de diferențiere a ofertei și a preferințelor exprimate la piață, precum și de capacitatea societății de a stimula inițiativa și spiritul de competiție — nu de prețuri sau inflație, luate izolat. Prin urmare, răspunsul corect este: Numărul vânzătorilor și al cumpărătorilor, precum și gradul de diferențiere a ofertei."
+    },
+    {
+      "id": "C9_T05",
+      "capitol": 9,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Din punctul de vedere al respectării reglementărilor legale, concurența poate fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Loială (corectă) sau neloială (incorectă)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Doar între cumpărători, niciodată între vânzători",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar internă, niciodată internațională",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar perfectă sau doar imperfectă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "În raport de respectarea reglementărilor legale, concurența se clasifică în loială (corectă) și neloială (incorectă) — clasificarea perfectă/imperfectă ține de un alt criteriu, cel al numărului și puterii economice a participanților. Prin urmare, răspunsul corect este: Loială (corectă) sau neloială (incorectă)."
+    },
+    {
+      "id": "C9_T06",
+      "capitol": 9,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre rolurile concurenței se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Eliminarea oricărei forme de satisfacere a intereselor cumpărătorilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Creșterea artificială și permanentă a costurilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Stimularea progresului științific, tehnic, economic și social, precum și selecția agenților economici pe criterii de eficiență",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Blocarea completă a inovațiilor tehnologice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Concurența stimulează progresul general, face selecția agenților economici pe criterii de eficiență, asigură alocarea eficientă a resurselor și stimulează reducerea costurilor — exact opusul efectelor descrise în celelalte variante. Prin urmare, răspunsul corect este: Stimularea progresului științific, tehnic, economic și social, precum și selecția agenților economici pe criterii de eficiență."
+    },
+    {
+      "id": "C9_T07",
+      "capitol": 9,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Concurența perfectă reprezintă acel tip de concurență în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Fiecare cumpărător poate impune unilateral prețul de vânzare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Vânzătorii și cumpărătorii își realizează propriile interese, dar nu pot influența, prin acțiuni individuale, raportul cerere-ofertă și deci prețul",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Statul stabilește direct nivelul prețurilor pentru toate tranzacțiile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un singur vânzător controlează integral prețul și cantitatea oferită",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Concurența perfectă presupune tocmai imposibilitatea oricărui participant, acționând individual, de a influența raportul cerere-ofertă și, implicit, prețul — spre deosebire de monopol sau de intervenția statală directă. Prin urmare, răspunsul corect este: Vânzătorii și cumpărătorii își realizează propriile interese, dar nu pot influența, prin acțiuni individuale, raportul cerere-ofertă și deci prețul."
+    },
+    {
+      "id": "C9_T08",
+      "capitol": 9,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața cu concurență perfectă este considerată:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Specifică exclusiv economiilor de comandă (planificate)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un tip de piață complet lipsit de relevanță economică, chiar și teoretică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Singurul tip de piață existent în realitate, în orice economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un model teoretic, ideal de piață, care are totuși valențe practice, fiind un reper de raportare și analizare a piețelor reale",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Concurența perfectă rareori se regăsește integral în realitate (poate piața muncitorilor necalificați sau piețele bursiere tind spre acest model), dar rămâne un reper teoretic util pentru raportarea, compararea și analizarea piețelor reale, concurențiale. Prin urmare, răspunsul corect este: Un model teoretic, ideal de piață, care are totuși valențe practice, fiind un reper de raportare și analizare a piețelor reale."
+    },
+    {
+      "id": "C9_T09",
+      "capitol": 9,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Condițiile cumulative care definesc concurența perfectă sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Existența unui singur vânzător și a numeroși cumpărători",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Bariere ridicate la intrarea pe piață a noilor firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Atomicitatea, omogenitatea produselor, libertatea de acțiune, mobilitatea factorilor de producție, transparența și fluiditatea pieței",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Prezența exclusivă a bunurilor eterogene, puternic diferențiate",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Concurența perfectă este definită de șase condiții care trebuie îndeplinite simultan (cumulativ): atomicitatea participanților, omogenitatea perfectă a produselor, libertatea de acțiune pe piață, mobilitatea perfectă a factorilor de producție, transparența perfectă a pieței și fluiditatea perfectă a cererii și ofertei. Prin urmare, răspunsul corect este: Atomicitatea, omogenitatea produselor, libertatea de acțiune, mobilitatea factorilor de producție, transparența și fluiditatea pieței."
+    },
+    {
+      "id": "C9_T10",
+      "capitol": 9,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Atomicitatea perfectă a participanților la tranzacții presupune:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Absența completă a cumpărătorilor de pe piața respectivă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Puterea de piață concentrată în mâinile a doar câțiva participanți",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Existența unui singur vânzător dominant pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Numeroși vânzători și cumpărători, cu o putere concurențială mică, încât niciunul nu poate influența variabilele pieței",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Atomicitatea perfectă înseamnă exact opusul concentrării puterii de piață: numeroși vânzători și cumpărători, fiecare cu o putere concurențială atât de mică încât niciunul, acționând singur, nu poate influența variabilele pieței. Prin urmare, răspunsul corect este: Numeroși vânzători și cumpărători, cu o putere concurențială mică, încât niciunul nu poate influența variabilele pieței."
+    },
+    {
+      "id": "C9_T11",
+      "capitol": 9,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Omogenitatea perfectă a produselor presupune că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mărfurile similare sunt identice privind calitatea, prețul și caracteristicile tehnico-funcționale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Fiecare produs este unic și complet diferit de toate celelalte de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar produsele scumpe sunt considerate omogene",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Omogenitatea se referă exclusiv la ambalajul produselor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Omogenitatea perfectă înseamnă că mărfurile similare de pe piață sunt practic identice sub aspectul calității, prețului și caracteristicilor tehnico-funcționale — condiție incompatibilă cu diferențierea puternică a produselor. Prin urmare, răspunsul corect este: Mărfurile similare sunt identice privind calitatea, prețul și caracteristicile tehnico-funcționale."
+    },
+    {
+      "id": "C9_T12",
+      "capitol": 9,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Libertatea de acțiune pe piață, ca o condiție a concurenței perfecte, presupune că intrarea pe piață a vânzătorului are loc atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Vânzătorul deține deja o poziție de monopol pe piața respectivă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Costul marginal depășește semnificativ prețul pieței",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul marginal este mai mic sau egal cu prețul (C.mg ≤ P)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Doar statul aprobă explicit intrarea fiecărui vânzător nou",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Libertatea de acțiune pe criterii de eficiență economică înseamnă absența barierelor: vânzătorul intră pe piață atunci când C.mg ≤ P (îi este rentabil să vândă), și iese atunci când această condiție nu mai este îndeplinită. Prin urmare, răspunsul corect este: Costul marginal este mai mic sau egal cu prețul (C.mg ≤ P)."
+    },
+    {
+      "id": "C9_T13",
+      "capitol": 9,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Mobilitatea perfectă a factorilor de producție, condiție a concurenței perfecte, se referă la:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Orientarea și utilizarea factorilor de producție (muncă și capital) în activități și zone cu cea mai înaltă eficiență",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Imposibilitatea deplasării factorilor de producție dintr-o zonă în alta",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Blocarea legală a migrației forței de muncă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Utilizarea exclusivă a unui singur factor de producție, capitalul",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Mobilitatea perfectă înseamnă exact opusul blocajului: munca și capitalul se pot orienta liber și rapid către activitățile și zonele cu cea mai înaltă eficiență, fără restricții artificiale. Prin urmare, răspunsul corect este: Orientarea și utilizarea factorilor de producție (muncă și capital) în activități și zone cu cea mai înaltă eficiență."
+    },
+    {
+      "id": "C9_T14",
+      "capitol": 9,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Transparența perfectă a pieței, condiție a concurenței perfecte, presupune:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Secretizarea totală a informațiilor economice relevante",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Absența completă a oricărei forme de comunicare între agenții economici",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Informarea exclusivă a vânzătorilor, niciodată a cumpărătorilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Perfecta informare a agenților economici privind cererea, oferta, prețul etc.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Transparența perfectă a pieței înseamnă că toți agenții economici — atât vânzători, cât și cumpărători — sunt perfect informați privind cererea, oferta și prețul, nu doar o parte dintre ei. Prin urmare, răspunsul corect este: Perfecta informare a agenților economici privind cererea, oferta, prețul etc."
+    },
+    {
+      "id": "C9_T15",
+      "capitol": 9,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Fluiditatea perfectă a cererii și a ofertei, condiție a concurenței perfecte, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Imposibilitatea oricărei adaptări a cererii la modificările ofertei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O adaptare exclusiv lentă și întârziată a pieței la semnalele de preț",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărei legături dintre cerere și ofertă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Adaptarea rapidă, eficientă și fără limite a cererii la ofertă și invers, în funcție de modificarea prețului",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Fluiditatea perfectă înseamnă tocmai o piață extrem de receptivă: cererea și oferta se adaptează rapid, eficient și fără limite, una la cealaltă, ca reacție la modificarea prețului. Prin urmare, răspunsul corect este: Adaptarea rapidă, eficientă și fără limite a cererii la ofertă și invers, în funcție de modificarea prețului."
+    },
+    {
+      "id": "C9_T16",
+      "capitol": 9,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe o piață cu concurență perfectă, firmele sunt considerate „primitoare de preț”, ceea ce înseamnă că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Trebuie să accepte prețul pieței (prețul de echilibru), pe care nu îl pot controla prin acțiuni individuale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Prețul este stabilit exclusiv prin negociere directă cu fiecare cumpărător",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Firmele pot impune prețul dorit tuturor celorlalți participanți",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Fiecare firmă își stabilește liber propriul preț, independent de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Fiind atât de numeroase și de mici, firmele de pe o piață cu concurență perfectă nu pot influența individual prețul — ele sunt „primitoare de preț”, adică trebuie să accepte prețul de echilibru al pieței așa cum este. Prin urmare, răspunsul corect este: Trebuie să accepte prețul pieței (prețul de echilibru), pe care nu îl pot controla prin acțiuni individuale."
+    },
+    {
+      "id": "C9_T17",
+      "capitol": 9,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe o piață cu concurență perfectă, obiectul concurenței îl reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Diferențierea produsului prin calitate și aspecte funcționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cantitatea oferită dintr-un bun, adaptată prețului de echilibru",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Publicitatea și strategiile de marketing ale firmelor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Serviciile suplimentare oferite cumpărătorilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Deoarece produsele sunt omogene pe o piață cu concurență perfectă, firmele nu pot concura prin diferențiere, publicitate sau servicii suplimentare — singurul lucru pe care îl pot ajusta este cantitatea oferită, adaptată prețului de echilibru. Prin urmare, răspunsul corect este: Cantitatea oferită dintr-un bun, adaptată prețului de echilibru."
+    },
+    {
+      "id": "C9_T18",
+      "capitol": 9,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Concurența perfectă este considerată o concurență „impersonală” deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Există un singur agent economic dominant, cunoscut de toți ceilalți",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Toți agenții economici se cunosc personal și negociază direct fiecare tranzacție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Statul intervine personal în fiecare tranzacție de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Independența decizională a numeroșilor agenți economici, care de regulă nu se cunosc bine între ei, este foarte mare",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Tocmai pentru că participanții sunt numeroși și nu se cunosc bine între ei, fiecare acționând independent, concurența perfectă capătă un caracter „impersonal”, lipsit de negocieri directe, personalizate. Prin urmare, răspunsul corect este: Independența decizională a numeroșilor agenți economici, care de regulă nu se cunosc bine între ei, este foarte mare."
+    },
+    {
+      "id": "C9_T19",
+      "capitol": 9,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe termen scurt, profitul firmei este maxim, pe o piață cu concurență perfectă, atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Costul marginal este egal cu venitul marginal și cu prețul (C.mg = V.mg = P)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Costul mediu total este egal cu costul mediu fix",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Venitul marginal este egal cu costul mediu variabil",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costul marginal este egal cu zero",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Întrucât firma este „primitoare de preț” (V.mg = P), condiția de maximizare a profitului pe termen scurt devine C.mg = V.mg = P — o egalitate specifică exact concurenței perfecte. Prin urmare, răspunsul corect este: Costul marginal este egal cu venitul marginal și cu prețul (C.mg = V.mg = P)."
+    },
+    {
+      "id": "C9_T20",
+      "capitol": 9,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Concurența imperfectă reflectă acea situație a pieței reale în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Prețul se formează exclusiv prin decizia statului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Niciun participant nu poate influența, în vreun fel, variabilele pieței",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Există un număr infinit de vânzători, fiecare cu putere de piață nulă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Participanții la tranzacții, individual sau în grup, dispun de o anumită putere economică de a influența cererea, oferta sau prețul",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Concurența imperfectă presupune absența uneia sau mai multor condiții ale concurenței perfecte, astfel încât participanții — individual sau în grup — ajung să dispună de o anumită putere economică asupra cererii, ofertei sau prețului. Prin urmare, răspunsul corect este: Participanții la tranzacții, individual sau în grup, dispun de o anumită putere economică de a influența cererea, oferta sau prețul."
+    },
+    {
+      "id": "C9_T21",
+      "capitol": 9,
+      "numar": 21,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spre deosebire de concurența perfectă, obiectul concurenței imperfecte îl reprezintă, în principal:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Absența completă a oricărei forme de diferențiere a produselor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Produsul și diferențierea lui prin calitate, aspecte funcționale, prezentare sau servicii acordate cumpărătorilor",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Doar prețul, fără nicio legătură cu calitatea produsului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv cantitatea oferită, adaptată automat prețului de echilibru",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Pe o piață cu concurență imperfectă, firmele concurează tocmai prin diferențierea produsului — calitate, aspecte funcționale, prezentare, servicii pentru cumpărători — spre deosebire de concurența perfectă, unde produsele fiind omogene, obiectul concurenței este doar cantitatea oferită. Prin urmare, răspunsul corect este: Produsul și diferențierea lui prin calitate, aspecte funcționale, prezentare sau servicii acordate cumpărătorilor."
+    },
+    {
+      "id": "C9_T22",
+      "capitol": 9,
+      "numar": 22,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe o piață cu concurență imperfectă, firmele sunt considerate „căutătoare de preț”, ceea ce înseamnă că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sunt complet lipsite de putere asupra nivelului prețului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Trebuie să accepte întotdeauna prețul stabilit de concurenți",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Urmăresc stabilirea unui preț care să le maximizeze profitul, nefiind nevoite să accepte pasiv prețul pieței",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Nu pot influența în niciun fel cantitatea produsă sau vândută",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Spre deosebire de firmele „primitoare de preț” din concurența perfectă, firmele de pe o piață cu concurență imperfectă dispun de o anumită independență decizională privind prețul, pe care îl caută/stabilesc astfel încât să-și maximizeze profitul. Prin urmare, răspunsul corect este: Urmăresc stabilirea unui preț care să le maximizeze profitul, nefiind nevoite să accepte pasiv prețul pieței."
+    },
+    {
+      "id": "C9_T23",
+      "capitol": 9,
+      "numar": 23,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe termen scurt, pe o piață cu concurență imperfectă, profitul firmei este maxim atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Costul marginal este întotdeauna egal cu prețul pieței",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Venitul marginal depășește întotdeauna prețul pieței",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul marginal este egal cu venitul marginal (C.mg = V.mg)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Costul mediu total este egal cu zero",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Spre deosebire de concurența perfectă (unde V.mg = P), pe o piață cu concurență imperfectă venitul marginal este, de regulă, mai mic decât prețul — de aceea condiția de profit maxim rămâne C.mg = V.mg, fără a mai fi egală și cu P. Prin urmare, răspunsul corect este: Costul marginal este egal cu venitul marginal (C.mg = V.mg)."
+    },
+    {
+      "id": "C9_T24",
+      "capitol": 9,
+      "numar": 24,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Instrumentele concurențiale de natură extraeconomică folosite de unele firme includ:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Spionajul economic, șantajul și presiunile morale asupra cumpărătorilor",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Diversificarea structurii sortimentale a produselor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Reducerea costului și îmbunătățirea calității bunurilor economice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Acordarea de avantaje legale cumpărătorilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Instrumentele de natură economică (reducerea costurilor, îmbunătățirea calității, diversificarea sortimentelor) sunt distincte de cele extraeconomice, precum spionajul economic, șantajul sau presiunile morale asupra cumpărătorilor — practici incorecte de concurență. Prin urmare, răspunsul corect este: Spionajul economic, șantajul și presiunile morale asupra cumpărătorilor."
+    },
+    {
+      "id": "C9_T25",
+      "capitol": 9,
+      "numar": 25,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Strategia concurențială bazată pe reducerea costurilor și a prețurilor, fără afectarea calității, este cunoscută drept:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Strategia elitei (strategia „Mercedes”)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Strategia costurilor (strategia „japoneză”)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Strategia extraeconomică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Strategia efortului concentrat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Strategia costurilor, numită și „japoneză”, mizează pe reducerea costurilor și a prețurilor fără a afecta calitatea — spre deosebire de strategia elitei („Mercedes”), care mizează pe performanțe superioare, sau de strategia efortului concentrat, axată pe o clientelă și o zonă geografică specifice. Prin urmare, răspunsul corect este: Strategia costurilor (strategia „japoneză”)."
+    },
+    {
+      "id": "C9_T26",
+      "capitol": 9,
+      "numar": 26,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața cu concurență monopolistică este acel tip de piață caracterizat prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Absența completă a oricărei diferențieri între produsele oferite",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Existența a doar câțiva vânzători foarte puternici economic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Existența unui număr mare de participanți la tranzacționarea unor bunuri similare, dar diferențiate, cu o putere economică relativ apropiată",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Existența unui singur vânzător, care controlează integral piața",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Piața cu concurență monopolistică se distinge printr-un număr mare de participanți, care oferă bunuri similare, dar diferențiate, fiecare având o putere economică relativ apropiată de a celorlalți (o putere de monopol, dar limitată la termen scurt). Prin urmare, răspunsul corect este: Existența unui număr mare de participanți la tranzacționarea unor bunuri similare, dar diferențiate, cu o putere economică relativ apropiată."
+    },
+    {
+      "id": "C9_T27",
+      "capitol": 9,
+      "numar": 27,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața cu concurență monopolistică are, în principal, trăsăturile concurenței perfecte, cu excepția:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Formării libere a prețului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Libertății de acțiune pe piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Numărului mare de participanți",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Diferențierii produsului",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Piața cu concurență monopolistică seamănă, în cea mai mare parte, cu piața perfectă — numeroși participanți, libertate de acțiune, preț format liber — singura diferență majoră fiind faptul că produsul este diferențiat, nu omogen. Prin urmare, răspunsul corect este: Diferențierii produsului."
+    },
+    {
+      "id": "C9_T28",
+      "capitol": 9,
+      "numar": 28,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața cu concurență de oligopol reflectă acel tip de piață în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar statul stabilește prețurile practicate de toate firmele",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un număr foarte mare de firme mici concurează pe picior de egalitate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu există nicio interdependență decizională între firmele de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Puține firme, dar mari și puternice economic, produc bunuri diferențiate sau omogene și determină formarea prețului",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Oligopolul se distinge prin puține firme, dar de dimensiuni și putere economică mari, care produc bunuri diferențiate sau omogene și, spre deosebire de concurența perfectă sau monopolistică, determină ele însele formarea prețului (prețuri administrate). Prin urmare, răspunsul corect este: Puține firme, dar mari și puternice economic, produc bunuri diferențiate sau omogene și determină formarea prețului."
+    },
+    {
+      "id": "C9_T29",
+      "capitol": 9,
+      "numar": 29,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Oligopolul este considerat:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Specific exclusiv economiilor slab dezvoltate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cel mai răspândit tip de piață în economiile moderne",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Identic, sub toate aspectele, cu piața de monopol",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un tip de piață practic inexistent în economiile reale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Departe de a fi o excepție rară, oligopolul este considerat cel mai răspândit tip de piață în economiile moderne — multe industrii importante (auto, telecomunicații, energie etc.) funcționează sub această formă. Prin urmare, răspunsul corect este: Cel mai răspândit tip de piață în economiile moderne."
+    },
+    {
+      "id": "C9_T30",
+      "capitol": 9,
+      "numar": 30,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Firmele care acționează pe o piață cu concurență de oligopol pot încheia înțelegeri de tip:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Niciun tip de înțelegere, oligopolul excluzând orice cooperare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cartel (păstrarea autonomiei decizionale, dar înțelegere asupra prețului) sau trust (pierderea autonomiei decizionale)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv fuziuni totale, fără nicio altă formă de înțelegere",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar acorduri impuse obligatoriu prin lege",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Pe piața de oligopol, firmele pot încheia fie înțelegeri de tip cartel (rămân autonome decizional, dar se înțeleg privind prețul și segmentul de piață), fie de tip trust (renunță la autonomia decizională), ambele fiind forme distincte de cooperare între firme mari și puternice. Prin urmare, răspunsul corect este: Cartel (păstrarea autonomiei decizionale, dar înțelegere asupra prețului) sau trust (pierderea autonomiei decizionale)."
+    },
+    {
+      "id": "C9_T31",
+      "capitol": 9,
+      "numar": 31,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața de monopol reflectă acel tip de piață în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Unicul producător (vânzător) domină oferta unor bunuri omogene prin preț și cantitate",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Există numeroși vânzători, cu putere de piață aproximativ egală",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Prețul se formează exclusiv prin confruntarea liberă a cererii cu oferta",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cumpărătorii dețin întreaga putere de negociere asupra prețului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Monopolul se caracterizează prin existența unui singur producător care domină oferta unor bunuri omogene, deținând control atât asupra prețului, cât și asupra cantității oferite — exact opusul situației cu numeroși vânzători sau al pieței cu preț format liber. Prin urmare, răspunsul corect este: Unicul producător (vânzător) domină oferta unor bunuri omogene prin preț și cantitate."
+    },
+    {
+      "id": "C9_T32",
+      "capitol": 9,
+      "numar": 32,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Firma cu poziție de monopol practică, de regulă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un preț stabilit exclusiv de cumpărători",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un preț identic cu cel practicat pe o piață cu concurență perfectă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cel mai mic preț posibil, pentru a satisface pe deplin cumpărătorii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cel mai mare preț de pe piață, obținând astfel un profit de monopol",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Puterea de piață a monopolului îi permite să practice cel mai mare preț posibil (mult peste nivelul concurențial), obținând astfel un profit de monopol — nu prețuri mici sau prețuri identice cu cele din concurența perfectă. Prin urmare, răspunsul corect este: Cel mai mare preț de pe piață, obținând astfel un profit de monopol."
+    },
+    {
+      "id": "C9_T33",
+      "capitol": 9,
+      "numar": 33,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Gradul foarte scăzut de satisfacere a cumpărătorilor pe piața de monopol explică:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Extinderea nelimitată a subvențiilor acordate monopolurilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Interzicerea completă a oricărei forme de proprietate privată",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Aplicarea legilor antimonopol (antitrust)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea definitivă a conceptului de preț de echilibru",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Tocmai pentru că monopolul lasă cumpărătorii nemulțumiți (preț mare, alegere limitată), statele intervin prin legi antimonopol (antitrust), menite să limiteze abuzul de poziție dominantă. Prin urmare, răspunsul corect este: Aplicarea legilor antimonopol (antitrust)."
+    },
+    {
+      "id": "C9_T34",
+      "capitol": 9,
+      "numar": 34,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În realitate, monopolul absolut (pur):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Este singura formă de piață existentă pe termen lung",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu a existat niciodată, nici măcar temporar",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu există pe termen lung",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Este identic, sub toate aspectele, cu concurența perfectă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Deși pot apărea situații temporare de monopol, monopolul absolut (pur) nu se poate menține pe termen lung — apar mereu substituenți, concurenți sau reglementări care erodează poziția dominantă. Prin urmare, răspunsul corect este: Nu există pe termen lung."
+    },
+    {
+      "id": "C9_T35",
+      "capitol": 9,
+      "numar": 35,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În funcție de cauzele care generează o situație de monopol, există, printre altele, monopol:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv natural, specific doar resurselor minerale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Legal, inovațional și natural",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv legal, fără nicio altă formă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Interzis prin lege în toate economiile de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Monopolul poate avea mai multe cauze temporare: legal (acordat prin lege, precum brevetele), inovațional (rezultat al unei inovații unice) sau natural (specific unor resurse sau infrastructuri greu de duplicat), alături de monopolul bilateral. Prin urmare, răspunsul corect este: Legal, inovațional și natural."
+    },
+    {
+      "id": "C9_T36",
+      "capitol": 9,
+      "numar": 36,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața cu concurență de oligopson este acel tip de piață în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un număr mic de cumpărători dispun de putere economică destul de mare în influențarea pieței, în condițiile atomicității ofertei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Numărul cumpărătorilor și al vânzătorilor este aproximativ egal",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Prețul este stabilit exclusiv de vânzători, fără nicio influență a cumpărătorilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un singur vânzător domină integral piața",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Oligopsonul este „oglinda” oligopolului, dar dinspre partea cererii: un număr mic de cumpărători puternici economic influențează piața, în condițiile în care oferta este atomizată (numeroși vânzători mici). Prin urmare, răspunsul corect este: Un număr mic de cumpărători dispun de putere economică destul de mare în influențarea pieței, în condițiile atomicității ofertei."
+    },
+    {
+      "id": "C9_T37",
+      "capitol": 9,
+      "numar": 37,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața de monopson este acel tip de piață în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Prețul este stabilit exclusiv prin negociere colectivă între vânzători",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un singur cumpărător determină stabilirea prețului unui bun economic omogen, oferit de un număr mare de vânzători",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Există un singur vânzător și numeroși cumpărători",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cumpărătorii nu au nicio influență asupra prețului practicat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Monopsonul este „oglinda” monopolului, dar dinspre partea cererii: un singur cumpărător deține puterea de a stabili prețul unui bun omogen, oferit de un număr mare de vânzători aflați în concurență între ei pentru acest unic client. Prin urmare, răspunsul corect este: Un singur cumpărător determină stabilirea prețului unui bun economic omogen, oferit de un număr mare de vânzători."
+    },
+    {
+      "id": "C9_T38",
+      "capitol": 9,
+      "numar": 38,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Comparând numărul vânzătorilor pe diferite tipuri de piață, se poate spune că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Pe piața de monopol numărul vânzătorilor este întotdeauna mai mare decât pe cea monopolistică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Numărul vânzătorilor este identic pe toate tipurile de piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Pe piața de oligopol există întotdeauna mai mulți vânzători decât pe cea monopolistică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Pe piața cu concurență monopolistică numărul vânzătorilor este foarte mare, pe cea de oligopol este mic (3–10), iar pe piața de monopol există un singur vânzător",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Numărul vânzătorilor scade progresiv de la concurența monopolistică (foarte mare) la oligopol (câțiva, de regulă 3–10) și, în final, la monopol (unul singur) — o gradație clară, nu o distribuție identică sau inversă. Prin urmare, răspunsul corect este: Pe piața cu concurență monopolistică numărul vânzătorilor este foarte mare, pe cea de oligopol este mic (3–10), iar pe piața de monopol există un singur vânzător."
+    },
+    {
+      "id": "C9_T39",
+      "capitol": 9,
+      "numar": 39,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În privința caracterului produsului, piața de monopol se caracterizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un produs întotdeauna puternic diferențiat, la fel ca pe piața monopolistică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Absența completă a oricărui produs standardizat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un produs unicat (omogen), spre deosebire de piața monopolistică, unde produsul este eterogen (diferențiat)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un produs identic, sub toate aspectele, cu cel de pe piața de oligopson",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Fiind un singur producător, piața de monopol oferă un produs unicat (omogen prin natura sa) — spre deosebire de piața monopolistică, unde numeroși producători diferențiază intenționat produsele similare pentru a concura. Prin urmare, răspunsul corect este: Un produs unicat (omogen), spre deosebire de piața monopolistică, unde produsul este eterogen (diferențiat)."
+    },
+    {
+      "id": "C9_T40",
+      "capitol": 9,
+      "numar": 40,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În ultimă instanță, rațiunea de a fi a concurenței este de a favoriza satisfacerea optimă a intereselor participanților la tranzacții, principalul ei beneficiar fiind:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Niciunul dintre participanții direcți la piață",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cumpărătorul, considerat „rege”",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv statul, prin veniturile fiscale obținute",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv vânzătorii cu poziție de monopol",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Toate mecanismele concurenței converg, în ultimă instanță, spre satisfacerea optimă a intereselor participanților, iar principalul beneficiar al acestui proces este cumpărătorul, adesea considerat, metaforic, „rege” al pieței. Prin urmare, răspunsul corect este: Cumpărătorul, considerat „rege”."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

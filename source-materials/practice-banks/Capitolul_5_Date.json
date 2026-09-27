@@ -1,0 +1,1288 @@
+{
+  "capitol": 5,
+  "titlu_capitol": "Eficiența economică și productivitatea",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din manual (rationalitate, eficienta economica, productivitatea F.P, productivitatea muncii, echilibrul producatorului). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (W=Q/FP, W.mg=DeltaQ/DeltaFP, QT=SumaW.mg, IwM=(IQ/IL)x100, W(u.m.)=W(u.f.)xP, IwM(u.m.)=IwM(u.f.)xIp, Rms, echilibrul producatorului W.mg(M)/PM=W.mg(K)/PK).",
+  "intrebari": [
+    {
+      "id": "C5_T01",
+      "capitol": 5,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Raționalitatea economică este un principiu de comportament uman (economic) care vizează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Minimizarea tuturor efectelor obținute din activitatea economică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea completă a costurilor din activitatea de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Maximizarea nelimitată a producției, indiferent de resursele disponibile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Atingerea unor obiective urmărite în condițiile unor constrângeri (resurse, timp, venituri etc.)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Raționalitatea economică nu presupune maximizare sau minimizare fără limite, ci atingerea obiectivelor urmărite ținând cont de constrângerile reale — resurse limitate, timp și venituri disponibile. Prin urmare, răspunsul corect este: Atingerea unor obiective urmărite în condițiile unor constrângeri (resurse, timp, venituri etc.)."
+    },
+    {
+      "id": "C5_T02",
+      "capitol": 5,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Eficiența economică, formă principală de exprimare a raționalității economice, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Suma totală a efectelor economice obținute, indiferent de eforturile depuse",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Calitatea activității economice de utilizare rațională a resurselor și factorilor de producție, punând în balanță efectele cu eforturile",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Cantitatea de resurse economice existente într-o țară, la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar nivelul prețurilor practicate pe piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Eficiența economică nu se rezumă la volumul efectelor obținute, ci pune întotdeauna în balanță efectele cu eforturile depuse, reflectând calitatea utilizării raționale a resurselor și factorilor de producție pentru atingerea scopului propus. Prin urmare, răspunsul corect este: Calitatea activității economice de utilizare rațională a resurselor și factorilor de producție, punând în balanță efectele cu eforturile."
+    },
+    {
+      "id": "C5_T03",
+      "capitol": 5,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Relația dintre raționalitatea economică și eficiența economică este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "De la parte (raționalitatea) la întreg (eficiența)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "De opoziție, eficiența contrazicând principiile raționalității",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "De la întreg (raționalitatea) la parte (eficiența)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "De independență totală, cele două noțiuni nefiind legate între ele",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul precizează explicit că eficiența economică este forma principală de exprimare a raționalității economice — deci relația dintre ele este ca de la întreg (raționalitatea, noțiunea mai cuprinzătoare) la parte (eficiența, una dintre formele ei de manifestare). Prin urmare, răspunsul corect este: De la întreg (raționalitatea) la parte (eficiența)."
+    },
+    {
+      "id": "C5_T04",
+      "capitol": 5,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "La nivel microeconomic (firmă), forma principală de apreciere a eficienței economice este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Consumul specific tehnologic, la nivel macroeconomic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Rentabilitatea",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Productivitatea națională a muncii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costul marginal, calculat la nivelul întregii economii naționale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul face o distincție clară de nivel: la nivel microeconomic (firmă), forma principală de apreciere a eficienței economice este rentabilitatea, în timp ce la nivel macroeconomic (economia națională) este productivitatea națională a muncii. Prin urmare, răspunsul corect este: Rentabilitatea."
+    },
+    {
+      "id": "C5_T05",
+      "capitol": 5,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă eficiența economică se exprimă ca raport între eforturi și efecte (Ee = eforturi/efecte), atunci, pentru a exista eficiență economică reală, acest raport trebuie să fie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Subunitar, adică mai mic decât 1",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Egal cu 1",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Egal cu zero",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Mai mare decât 1",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Când eficiența economică se exprimă ca raport eforturi/efecte (de exemplu, costul unitar), o activitate este cu atât mai eficientă cu cât efortul necesar pentru un anumit efect este mai mic — deci acest raport trebuie să fie subunitar (Ee < 1). Situația inversă, Ee = efecte/eforturi, trebuie, în schimb, să fie supraunitară (> 1). Prin urmare, răspunsul corect este: Subunitar, adică mai mic decât 1."
+    },
+    {
+      "id": "C5_T06",
+      "capitol": 5,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Productivitatea factorilor de producție (WFP) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cantitatea totală de bunuri produse într-o economie, indiferent de resursele folosite",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar rentabilitatea financiară înregistrată de o firmă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul total al factorilor de producție utilizați de o firmă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eficiența, randamentul, rodnicia cu care sunt utilizați factorii de producție în activitatea economică",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Productivitatea factorilor de producție este definită explicit ca eficiența, randamentul, rodnicia cu care sunt utilizați factorii de producție (WFP = efecte/eforturi = Q/FP) — nu volumul absolut al producției și nici costurile implicate. Prin urmare, răspunsul corect este: Eficiența, randamentul, rodnicia cu care sunt utilizați factorii de producție în activitatea economică."
+    },
+    {
+      "id": "C5_T07",
+      "capitol": 5,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Productivitatea globală (WG), spre deosebire de productivitatea parțială, măsoară:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar productivitatea medie a resurselor naturale (naturii)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eficiența utilizării unui singur factor de producție (de exemplu, doar munca)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Eficiența/randamentul tuturor factorilor de producție utilizați în obținerea de bunuri economice",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Doar productivitatea marginală a capitalului tehnic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Productivitatea parțială măsoară eficiența fiecărui factor de producție în parte (muncă, natură, capital), în timp ce productivitatea globală măsoară eficiența/randamentul tuturor factorilor de producție utilizați împreună, la nivel de firmă, ramură sau economie națională. Prin urmare, răspunsul corect este: Eficiența/randamentul tuturor factorilor de producție utilizați în obținerea de bunuri economice."
+    },
+    {
+      "id": "C5_T08",
+      "capitol": 5,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Productivitatea marginală a unui factor de producție reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Producția medie obținută de un factor de producție, la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eficiența globală a tuturor factorilor de producție utilizați",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Randamentul factorilor de producție raportat la veniturile totale ale firmei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Sporul de producție obținut în urma modificării cu o unitate a unui factor de producție utilizat",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Productivitatea marginală nu măsoară nivelul mediu, ci sporul de producție (ΔQ) determinat de modificarea cu o unitate a unui factor de producție, ceilalți factori rămânând constanți — de exemplu, W.mg(M) = ΔQ/ΔM. Prin urmare, răspunsul corect este: Sporul de producție obținut în urma modificării cu o unitate a unui factor de producție utilizat."
+    },
+    {
+      "id": "C5_T09",
+      "capitol": 5,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Conform teoriei, producția totală (QT) obținută prin însumarea contribuțiilor marginale succesive ale unui factor de producție se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "QT = W̄FP (productivitatea medie)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "QT = FP/Q",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "QT = ΣW.mg. (suma productivităților marginale)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "QT = Q/FP",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Așa cum utilitatea totală se obține prin însumarea utilităților marginale succesive, la fel producția totală se obține prin însumarea productivităților marginale ale unităților succesive de factor de producție utilizate: QT = ΣW.mg. Prin urmare, răspunsul corect este: QT = ΣW.mg. (suma productivităților marginale)."
+    },
+    {
+      "id": "C5_T10",
+      "capitol": 5,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Productivitatea muncii reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Eficiența (rodnicia) cu care este consumată o anumită cantitate de muncă la un moment dat în activitatea economică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Salariul mediu plătit lucrătorilor dintr-o firmă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Numărul total de lucrători angajați într-o firmă, la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Timpul total de muncă disponibil într-o economie națională",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Productivitatea muncii nu se confundă cu numărul de angajați, salariul sau timpul de muncă disponibil — ea reflectă eficiența (rodnicia) cu care este consumată o anumită cantitate de muncă la un moment dat, în activitatea economică. Prin urmare, răspunsul corect este: Eficiența (rodnicia) cu care este consumată o anumită cantitate de muncă la un moment dat în activitatea economică."
+    },
+    {
+      "id": "C5_T11",
+      "capitol": 5,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Productivitatea muncii este considerată cea mai importantă formă a productivității factorilor de producție deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Măsoară eficiența celui mai important factor de producție (munca), determină nivelul și dinamica salariului, și evaluează competitivitatea firmelor și a economiei naționale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Este singura formă de productivitate care poate fi efectiv calculată",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Are întotdeauna o valoare mai mare decât productivitatea globală",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu depinde deloc de ceilalți factori de producție utilizați",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul enumeră explicit trei motive: productivitatea muncii măsoară eficiența celui mai important factor de producție (munca), determină nivelul și dinamica salariului, și evaluează eficiența și competitivitatea firmelor, ramurilor și economiei naționale. Prin urmare, răspunsul corect este: Măsoară eficiența celui mai important factor de producție (munca), determină nivelul și dinamica salariului, și evaluează competitivitatea firmelor și a economiei naționale."
+    },
+    {
+      "id": "C5_T12",
+      "capitol": 5,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Metoda indirectă de calcul a productivității medii a muncii, W̄(L) = L/Q, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Consumul de muncă pe unitatea de produs obținut",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Sporul de producție la creșterea cu o unitate a muncii utilizate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Eficiența globală a tuturor factorilor de producție utilizați",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Rata amortizării anuale a capitalului fix",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Spre deosebire de metoda directă (W̄L = Q/L, care măsoară producția pe lucrător), metoda indirectă (W̄L = L/Q) reflectă consumul de muncă pe unitatea de produs obținut — utilă mai ales atunci când scopul analizei este evaluarea efortului de muncă necesar pentru o unitate de produs. Prin urmare, răspunsul corect este: Consumul de muncă pe unitatea de produs obținut."
+    },
+    {
+      "id": "C5_T13",
+      "capitol": 5,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dinamica productivității muncii în mărimi relative (procentuale) se exprimă prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "ΔWM = WM1 – WM0",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "WM = Q/L",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Δ%WM = IWM – 100%, unde IWM = (WM1/WM0) × 100 = (IQ/IL) × 100",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Rms = ΔX/–ΔY",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dinamica productivității muncii în mărimi absolute se calculează ca simplă diferență (ΔWM = WM1 – WM0), dar în mărimi relative (procentuale) ea se exprimă prin indicele productivității, IWM = (WM1/WM0) × 100, care este totodată egal cu (IQ/IL) × 100, iar sporul procentual este Δ%WM = IWM – 100%. Prin urmare, răspunsul corect este: Δ%WM = IWM – 100%, unde IWM = (WM1/WM0) × 100 = (IQ/IL) × 100."
+    },
+    {
+      "id": "C5_T14",
+      "capitol": 5,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă productivitatea muncii în unități fizice (naturale) este cunoscută, productivitatea în unități monetare (valorice) se calculează astfel:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "WM(u.m.) = WM(u.f.) × P, unde P este prețul bunului economic",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "WM(u.m.) = P / WM(u.f.)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "WM(u.m.) = WM(u.f.) + P",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "WM(u.m.) = WM(u.f.) / P",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Conversia productivității din unități fizice în unități monetare se face prin simpla înmulțire cu prețul bunului economic: WM(u.m.) = WM(u.f.) × P. Similar, în dinamică, IWM(u.m.) = IWM(u.f.) × Ip. Prin urmare, răspunsul corect este: WM(u.m.) = WM(u.f.) × P, unde P este prețul bunului economic."
+    },
+    {
+      "id": "C5_T15",
+      "capitol": 5,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Numărul optim de lucrători și producția optimă se stabilesc atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Productivitatea marginală a muncii este egală cu cea medie, cea din urmă fiind maximă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Productivitatea marginală a muncii este întotdeauna egală cu zero",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Numărul de lucrători angajați tinde spre infinit",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Productivitatea medie a muncii este minimă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Conform manualului, numărul optim de lucrători și producția optimă corespund stadiului II al randamentelor, unde productivitatea marginală a muncii este egală cu productivitatea medie, iar aceasta din urmă atinge nivelul maxim. Prin urmare, răspunsul corect este: Productivitatea marginală a muncii este egală cu cea medie, cea din urmă fiind maximă."
+    },
+    {
+      "id": "C5_T16",
+      "capitol": 5,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Legea randamentelor neproporționale arată că, pe măsură ce se asociază unități succesive dintr-un factor de producție variabil la o cantitate dată de factor fix:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Productivitatea marginală rămâne mereu constantă, indiferent de cantitatea de factor variabil folosită",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Productivitatea marginală și cea medie cresc constant, la infinit, fără limită",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Producția totală scade încă de la prima unitate de factor variabil adăugată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Productivitatea marginală și cea medie cresc, ating un nivel maxim, apoi scad",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Legea randamentelor neproporționale descrie exact această evoluție în trei etape: pe măsură ce se adaugă unități succesive de factor variabil, productivitatea marginală și cea medie cresc mai întâi, ating un nivel maxim, apoi încep să scadă (deși rămân pozitive, în stadiul rațional de acțiune). Prin urmare, răspunsul corect este: Productivitatea marginală și cea medie cresc, ating un nivel maxim, apoi scad."
+    },
+    {
+      "id": "C5_T17",
+      "capitol": 5,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În stadiul III (neeconomic) al evoluției productivității factorilor de producție:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Productivitatea marginală este negativă, productivitatea medie scade, iar producția totală scade",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Productivitatea marginală este exact egală cu productivitatea medie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Producția totală crește rapid, iar productivitatea marginală este maximă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Firma ar trebui să angajeze cât mai mulți lucrători suplimentari posibil",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Stadiul III este numit „neeconomic” tocmai pentru că productivitatea marginală devine negativă, productivitatea medie continuă să scadă, iar producția totală însăși scade — o zonă în care niciun întreprinzător rațional nu ar continua să acționeze. Prin urmare, răspunsul corect este: Productivitatea marginală este negativă, productivitatea medie scade, iar producția totală scade."
+    },
+    {
+      "id": "C5_T18",
+      "capitol": 5,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Echilibrul producătorului, în combinarea a doi factori de producție (munca și capitalul), se realizează atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "PM = PK, indiferent de valoarea productivităților marginale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "W.mg(M) = W.mg(K), indiferent de prețurile celor doi factori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Numărul de lucrători este întotdeauna egal cu numărul de utilaje",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "W.mg(M)/PM = W.mg(K)/PK",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "La fel ca la echilibrul consumatorului (unde U.mg(x)/Px = U.mg(y)/Py), echilibrul producătorului presupune ca ultima unitate monetară cheltuită pe fiecare factor de producție să aducă aceeași productivitate marginală raportată la preț: W.mg(M)/PM = W.mg(K)/PK. Prin urmare, răspunsul corect este: W.mg(M)/PM = W.mg(K)/PK."
+    },
+    {
+      "id": "C5_T19",
+      "capitol": 5,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următorii NU se numără printre factorii care influențează productivitatea muncii, conform teoriei din manual?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata inflației dintr-o țară fără nicio relație economică cu firma respectivă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Factorii tehnici (nivelul de dotare tehnică, combinarea F.P)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Factorii naturali (clima și fertilitatea solului, resursele naturale)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Factorii psihologici (motivația și satisfacția muncii)",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul enumeră factorii naturali, tehnici, economici, sociali, psihologici și internaționali ca influențând productivitatea muncii — însă factorii internaționali relevanți sunt cei legați de calitatea relațiilor economice externe efective ale firmei/economiei, nu evoluțiile dintr-o țară fără nicio legătură economică. Prin urmare, răspunsul corect este: Rata inflației dintr-o țară fără nicio relație economică cu firma respectivă."
+    },
+    {
+      "id": "C5_T20",
+      "capitol": 5,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre căile principale de sporire a productivității muncii, conform manualului, se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Reducerea investițiilor în tehnologie și cercetare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Promovarea largă a progresului științific și tehnic, îmbunătățirea pregătirii și calificării, motivația salariaților și un management eficient",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Diminuarea calificării profesionale a angajaților",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a activității de management din firmă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul indică drept căi principale de sporire a productivității muncii: promovarea progresului științific și tehnic, îmbunătățirea pregătirii și calificării, motivația/cointeresarea economică a salariaților și aplicarea unui management eficient — nicidecum reducerea investițiilor sau a calificării. Prin urmare, răspunsul corect este: Promovarea largă a progresului științific și tehnic, îmbunătățirea pregătirii și calificării, motivația salariaților și un management eficient."
+    },
+    {
+      "id": "C5_E01",
+      "capitol": 5,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Productivitățile marginale ale primelor 5 unități succesive de capital sunt: 6, 9, 12, 7, 5. Producția totală (QT) obținută de cele 5 unități de capital este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "34",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "27",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "39",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "12",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "QT = ΣW.mg. = 6+9+12+7+5 = 39."
+    },
+    {
+      "id": "C5_E02",
+      "capitol": 5,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția productivității medii a muncii este de tipul: WL = 6L (unde L = numărul de lucrători). În cazul celui de-al cincilea lucrător, productivitatea marginală [W.mg.(L)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "150",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "54",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "96",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "6",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Din WL = 6L rezultă Q = WL × L = 6L². Q(4) = 6×16 = 96, Q(5) = 6×25 = 150 ⇒ W.mg.(5) = Q(5) – Q(4) = 150 – 96 = 54."
+    },
+    {
+      "id": "C5_E03",
+      "capitol": 5,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă productivitatea medie a muncii sporește cu 25%, iar producția (Q) crește de 2,5 ori față de perioada anterioară, atunci, pentru un număr inițial de lucrători L0 = 180, numărul suplimentar de muncitori angajați (ΔL) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "200",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "90",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "360",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "180",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "IWL = 125%, IQ = 250% → IL = (IQ/IWL) × 100 = (250/125) × 100 = 200% → L1 = 2×L0 = 360 → ΔL = 360 – 180 = 180."
+    },
+    {
+      "id": "C5_E04",
+      "capitol": 5,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, L0 = 4 muncitori și, prin angajarea a 4 muncitori suplimentari, producția (Q) sporește cu 40%. Indicele productivității muncii (IWL) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "140%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "70%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "200%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "L1 = L0+4 = 8 → IL = (8/4) × 100 = 200%, iar IQ = 140% → IWL = (IQ/IL) × 100 = (140/200) × 100 = 70%."
+    },
+    {
+      "id": "C5_E05",
+      "capitol": 5,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În t0, numărul de lucrători (L) era 25, iar producția totală obținută (Q) era 250 mil. u.m. Dacă productivitatea medie a muncii crește cu 4%, în condițiile păstrării constante a numărului de lucrători, sporul producției (ΔQ) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "25 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "260 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,4 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "10 mil. u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "WL0 = 250/25 = 10 mil. u.m./L. IWL = 104% → WL1 = 10,4 mil. u.m./L, iar L1 = L0 = 25 → Q1 = 25 × 10,4 mil. = 260 mil. u.m. ⇒ ΔQ = 260 – 250 = 10 mil. u.m."
+    },
+    {
+      "id": "C5_E06",
+      "capitol": 5,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă de încălțăminte are 120 de muncitori care obțin lunar o producție de 3.000 de perechi de pantofi. În anul următor, producția crește cu 1/5, deși numărul muncitorilor a scăzut cu 20%. Sporul relativ al productivității muncii (Δ%WL) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "66,66%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "150%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "IQ = 120% (creștere cu 1/5), IL = 80% (scădere cu 20%) → IWL = (IQ/IL) × 100 = (120/80) × 100 = 150% ⇒ Δ%WL = 150% – 100% = 50%."
+    },
+    {
+      "id": "C5_E07",
+      "capitol": 5,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În t0, productivitatea medie a muncii era de 3.000 piese/lucrător. Dacă producția (Q) sporește cu 4% și numărul de muncitori (L) cu 32%, atunci productivitatea marginală a muncii [W.mg.(L)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "750 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "375 piese/L",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "3.000 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "104 piese/L",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "IQ = 104% → Q1 = 1,04Q0, IL = 132% → L1 = 1,32L0 → W.mg.(L) = (1,04Q0 – Q0)/(1,32L0 – L0) = 0,04Q0/0,32L0 = (1/8) × WM0 = (1/8) × 3.000 = 375 piese/L."
+    },
+    {
+      "id": "C5_E08",
+      "capitol": 5,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă productivitatea medie orară a crescut cu 25%, iar producția (Q) a rămas constantă, atunci timpul de muncă (T):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "crește cu 25%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "scade cu 25%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "crește cu 20%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "scade cu 20%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "IWT = 125%, IQ = 100% → IT = (IQ/IWT) × 100 = (100/125) × 100 = 80% ⇒ Δ%T = 80% – 100% = –20%, adică T scade cu 20%."
+    },
+    {
+      "id": "C5_E09",
+      "capitol": 5,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "L0 = 60 și Q0 = 1.800 piese. Dacă producția rămâne constantă, în condițiile în care numărul de lucrători sporește cu 20%, atunci productivitatea medie a muncii va fi (W̄L1):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "30 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25 piese/L",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "72 piese/L",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "L1 = 1,2 × 60 = 72, iar Q1 = Q0 = 1.800 piese → W̄L1 = 1.800/72 = 25 piese/L."
+    },
+    {
+      "id": "C5_E10",
+      "capitol": 5,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Productivitatea medie a muncii a sporit de 2,5 ori de la nivelul de 8 buc./L, iar numărul de lucrători cu 4%, atunci productivitatea marginală a muncii, [W.mg.(L)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "40 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "8 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "320 piese/L",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "260 piese/L",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "IWL = 250%, IL = 104% → IQ = (2,5 × 1,04) × 100 = 260% → W.mg.(L) = [(IQ–100)/(IL–100)] × WL0 = (160/4) × 8 = 40 × 8 = 320 piese/L."
+    },
+    {
+      "id": "C5_E11",
+      "capitol": 5,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Timpul de muncă a crescut cu 1/4 față de perioada anterioară, iar volumul producției s-a redus cu 1/5, în condițiile în care prețurile au sporit de 3 ori față de perioada anterioară. Indicele productivității valorice a muncii [IWT (u.m.)] va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "96%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "192%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "300%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "64%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "IT = 125%, IQ(u.f.) = 80% → IWT(u.f.) = (IQ/IT) × 100 = (80/125) × 100 = 64%, iar Ip = 300% → IWT(u.m.) = IWT(u.f.) × Ip = (0,64 × 3) × 100 = 192%."
+    },
+    {
+      "id": "C5_E12",
+      "capitol": 5,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Relația dintre creșterea numărului de muncitori (L) dintr-o secție și volumul producției (Q) obținute de ei este reprezentată în tabelul de mai jos (L 1–6: Q = 8, 30, 72, 112, 135, 144). Numărul optim de muncitori (L.optim) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "6",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "5",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "W̄L(u.f.) = Q/L: 8, 15, 24, 28, 27, 24. Productivitatea medie atinge valoarea maximă unică (28) la L = 4 (verificare: W.mg.(4) = 112–72 = 40, iar W.mg.(5) = 135–112 = 23 < W̄L(5) = 27, adică eficiența începe să scadă după acest punct) ⇒ L.optim = 4."
+    },
+    {
+      "id": "C5_E13",
+      "capitol": 5,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Eficiența ultimului angajat este de 60 buc./L, iar cea a ultimului utilaj achiziționat este de 15 buc./KF. Dacă firma renunță la 6 muncitori neeficienți, producția rămânând constantă, atunci rata marginală de substituire a muncii prin capital fix (Rms) și numărul suplimentar de utilaje (ΔKF) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15 și 6",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4 și 4",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4 și 24",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "24 și 4",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Rms = W.mg.(L)/W.mg.(KF) = 60/15 = 4 → ΔKF = Rms × ΔL = 4 × 6 = 24 utilaje suplimentare."
+    },
+    {
+      "id": "C5_E14",
+      "capitol": 5,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o secție a unei firme, 7 muncitori realizează o producție totală de 320 piese/lună, iar productivitățile marginale ale primilor 6 muncitori sunt: 20, 28, 35, 42, 50, 55 piese/L. Productivitatea marginală a celui de-al 7-lea muncitor [W.mg.(7)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "320 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "90 piese/L",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "230 piese/L",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "55 piese/L",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "QT = ΣW.mg. → 320 = 20+28+35+42+50+55 + W.mg.(7) = 230 + W.mg.(7) ⇒ W.mg.(7) = 320 – 230 = 90 piese/L."
+    },
+    {
+      "id": "C5_E15",
+      "capitol": 5,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Evoluția producției (Q) și a numărului de lucrători (L) într-o secție este redată în tabelul de mai jos (L 4–9: Q = 40, 54, 72, 86, 96, 102). Știind că firma poate plăti un lucrător cu un salariu de 10 u.m., numărul maxim de salariați (L.max) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "7",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "9",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "8",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "W.mg.(L), pentru L = 5..9: 14, 18, 14, 10, 6. Firma angajează un lucrător suplimentar atât timp cât W.mg.(L) ≥ salariul (10 u.m.): W.mg.(8) = 10 u.m. (ultimul care încă acoperă salariul), iar W.mg.(9) = 6 < 10 (nu se mai justifică) ⇒ L.max = 8."
+    },
+    {
+      "id": "C5_E16",
+      "capitol": 5,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Pentru a obține maximizarea profitului pe an (300 zile), o firmă trebuie să producă 900.000 de piese. Un muncitor produce 2,5 piese pe oră. Dacă într-o zi se lucrează în 2 schimburi (1 schimb = 8 ore) și nu într-un schimb, atunci numărul suplimentar de muncitori disponibilizați (–ΔL) va fi de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "150",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "75",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "25",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Un schimb: Q0/an (per lucrător) = 2,5 piese/h × 8h × 300 zile = 6.000 piese → L0 = 900.000/6.000 = 150. Două schimburi: Q1/an (per lucrător) = 2,5 × 16h × 300 = 12.000 piese → L1 = 900.000/12.000 = 75 ⇒ ΔL = 75 – 150 = –75, deci 75 muncitori disponibilizați."
+    },
+    {
+      "id": "C5_E17",
+      "capitol": 5,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă volumul producției crește cu 20% în condițiile reducerii numărului de muncitori cu 20%, iar productivitatea medie a muncii, în unități valorice, sporește de 2,25 ori, atunci indicele prețurilor (Ip) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "120%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "150%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "225%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "IQ(u.f.) = 120%, IL = 80% → IWL(u.f.) = (120/80) × 100 = 150%, iar IWL(u.m.) = 225% (dat) ⇒ Ip = (IWL(u.m.)/IWL(u.f.)) × 100 = (225/150) × 100 = 150%."
+    },
+    {
+      "id": "C5_E18",
+      "capitol": 5,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o firmă cu trei secții (A, B, C), producția (Q) realizată și numărul de muncitori (L) se prezintă ca în tabelul de mai jos (A: Q=200, L=10; B: Q=270, L=15; C: Q=352, L=16). Productivitatea medie a muncii la nivelul firmei (W̄L/firmă) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "21,33 buc./L",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20 buc./L",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "22 buc./L",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "18 buc./L",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "W̄L(A) = 200/10 = 20 buc./L, W̄L(B) = 270/15 = 18 buc./L, W̄L(C) = 352/16 = 22 buc./L ⇒ W̄L/firmă = (20+18+22)/3 = 20 buc./L."
+    },
+    {
+      "id": "C5_E19",
+      "capitol": 5,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Raportul dintre prețul muncii și prețul utilajului este 4/5. Pentru maximizarea profitului, în condițiile disponibilizării a 5 muncitori, Rms și numărul suplimentar de utilaje (ΔKF) vor fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4/5 și 5",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4/5 și 4",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "5/4 și 5",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "5/4 și 4",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Condiția de echilibru: W.mg.(M)/PM = W.mg.(KF)/PK ⇒ Rms = ΔKF/–ΔM = PM/PK = 4/5 → ΔKF = (4/5) × 5 = 4 utilaje suplimentare."
+    },
+    {
+      "id": "C5_E20",
+      "capitol": 5,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă combină doi factori de producție, munca (M) și capitalul (K), pentru care PM = 15 u.m. și PK = 20 u.m. Productivitatea marginală a muncii este W.mg.(M) = 45 buc. Firma se află în echilibru dacă productivitatea marginală a capitalului, [W.mg.(K)], este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "60 buc.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "15 buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "45 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Condiția de echilibru a producătorului: W.mg.(M)/PM = W.mg.(K)/PK → 45/15 = W.mg.(K)/20 → 3 = W.mg.(K)/20 ⇒ W.mg.(K) = 60 buc."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

@@ -1,0 +1,400 @@
+﻿{
+    "capitole":  [
+                     {
+                         "capitol":  1,
+                         "titlu":  "Introducere în economie",
+                         "intrebari":  [
+                                           {
+                                               "nr":  1,
+                                               "enunt":  "Care dintre următoarele caracteristici nu aparține nevoilor?",
+                                               "variante":  {
+                                                                "a":  "dinamice",
+                                                                "b":  "nelimitate",
+                                                                "c":  "neregenerabile",
+                                                                "d":  "biologice",
+                                                                "e":  "sociale"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Nevoile sunt dinamice, nelimitate, biologice sau sociale; caracterul „neregenerabil” este propriu resurselor (mai ales celor naturale), nu nevoilor."
+                                           },
+                                           {
+                                               "nr":  2,
+                                               "enunt":  "Care dintre următoarele caracteristici nu poate aparține resurselor naturale?",
+                                               "variante":  {
+                                                                "a":  "limitate",
+                                                                "b":  "nelimitate",
+                                                                "c":  "parțial recuperabile",
+                                                                "d":  "regenerabile",
+                                                                "e":  "neregenerabile"
+                                                            },
+                                               "raspuns":  "b",
+                                               "rezolvare":  "Resursele naturale sunt prin definiție limitate (rare). Caracterul „nelimitat” este specific nevoilor, nu resurselor — de aici izvorăște chiar problema economică fundamentală: nevoi nelimitate versus resurse limitate."
+                                           },
+                                           {
+                                               "nr":  3,
+                                               "enunt":  "Obiectul de studiu al științei economice este:",
+                                               "variante":  {
+                                                                "a":  "activitatea umană",
+                                                                "b":  "relațiile dintre oameni",
+                                                                "c":  "interesele individuale",
+                                                                "d":  "comportamentul uman ca relație între țeluri și resursele rare care au întrebuințări alternative",
+                                                                "e":  "modalitățile concrete de aplicare în economie a rezultatelor cercetării științifice"
+                                                            },
+                                               "raspuns":  "d",
+                                               "rezolvare":  "Este definiția clasică a economiei (Lionel Robbins): studiul comportamentului uman ca relație între scopuri (nevoi) și mijloace rare cu întrebuințări alternative."
+                                           },
+                                           {
+                                               "nr":  4,
+                                               "enunt":  "Care dintre următoarele afirmații este incorectă?",
+                                               "variante":  {
+                                                                "a":  "resursele sunt limitate",
+                                                                "b":  "resursele nu cresc odată cu nevoile",
+                                                                "c":  "resursele se scumpesc",
+                                                                "d":  "resursele sunt nelimitate",
+                                                                "e":  "resursele sunt rare"
+                                                            },
+                                               "raspuns":  "d",
+                                               "rezolvare":  "Este fals că resursele sunt nelimitate — dimpotrivă, raritatea (caracterul limitat) resurselor este premisa întregii probleme economice."
+                                           },
+                                           {
+                                               "nr":  5,
+                                               "enunt":  "Care dintre următoarele bunuri reprezintă un bun primar?",
+                                               "variante":  {
+                                                                "a":  "plugul",
+                                                                "b":  "automobilul",
+                                                                "c":  "oțelul",
+                                                                "d":  "șina de cale ferată",
+                                                                "e":  "minereul de fier"
+                                                            },
+                                               "raspuns":  "e",
+                                               "rezolvare":  "Minereul de fier este o materie primă neprelucrată (bun primar); oțelul, șina sau plugul rezultă din prelucrarea materiilor prime, fiind bunuri intermediare sau finale."
+                                           },
+                                           {
+                                               "nr":  6,
+                                               "enunt":  "Care dintre următoarele bunuri reprezintă un bun final?",
+                                               "variante":  {
+                                                                "a":  "cheresteaua",
+                                                                "b":  "cărbunele",
+                                                                "c":  "strungul",
+                                                                "d":  "fonta",
+                                                                "e":  "minereul de fier"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Strungul este un bun de capital gata de utilizare (bun final); cheresteaua, cărbunele, fonta și minereul sunt materii prime sau bunuri intermediare, care mai trec prin procese de prelucrare."
+                                           },
+                                           {
+                                               "nr":  7,
+                                               "enunt":  "Ritmul de creștere și gradul de diversificare a resurselor, în raport cu cele ale nevoilor, sunt:",
+                                               "variante":  {
+                                                                "a":  "de aceeași intensitate și amploare",
+                                                                "b":  "mai înalt și mai mare",
+                                                                "c":  "mai scăzut și de o amploare mai mică",
+                                                                "d":  "datorită progresului tehnic, ritmul de creștere a resurselor depășește ritmul de sporire a nevoilor",
+                                                                "e":  "niciuna dintre afirmațiile anterioare nu este corectă"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Nevoile cresc și se diversifică mai rapid decât resursele — acesta este chiar fundamentul raportului de raritate dintre resurse și nevoi."
+                                           },
+                                           {
+                                               "nr":  8,
+                                               "enunt":  "Existența unor nevoi reduse și în scădere, concomitent cu existența pe piață a factorilor de producție corespunzători, constituie pentru întreprinzători premise pentru:",
+                                               "variante":  {
+                                                                "a":  "maximizarea producției de bunuri",
+                                                                "b":  "minimizarea consumului de factori",
+                                                                "c":  "sporirea și diversificarea producției",
+                                                                "d":  "creșterea prețului de vânzare",
+                                                                "e":  "diminuarea productivității muncii și creșterea productivității capitalului"
+                                                            },
+                                               "raspuns":  "b",
+                                               "rezolvare":  "Dacă cererea (nevoile) scade, întreprinzătorul nu are motive să extindă producția; raţional este să reducă (minimizeze) consumul de factori, adaptând oferta la cererea mai mică."
+                                           },
+                                           {
+                                               "nr":  9,
+                                               "enunt":  "Economia politică, studiind activitatea economică, nu urmărește:",
+                                               "variante":  {
+                                                                "a":  "utilizarea resurselor în cea mai adecvată formă",
+                                                                "b":  "conceperea și realizarea unui raport eficient între resurse și nevoi",
+                                                                "c":  "prognozarea evoluției raportului resurse-nevoi",
+                                                                "d":  "găsirea căilor de optimizare a raportului dintre resurse și nevoi",
+                                                                "e":  "furnizarea de soluții concrete la problemele agenților economici"
+                                                            },
+                                               "raspuns":  "e",
+                                               "rezolvare":  "Teoria economică explică și modelează fenomenele economice generale, dar nu are ca obiect oferirea de soluții punctuale, concrete, fiecărui agent economic în parte — acesta e rolul practicii/managementului aplicat."
+                                           },
+                                           {
+                                               "nr":  10,
+                                               "enunt":  "Sunt considerate bunuri libere, bunurile care:",
+                                               "variante":  {
+                                                                "a":  "se produc în agricultură",
+                                                                "b":  "au caracter material",
+                                                                "c":  "sunt un dar al naturii",
+                                                                "d":  "sunt limitate",
+                                                                "e":  "sunt realizate cu costuri de producție mici"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Bunurile libere (de exemplu aerul) există în natură din abundență, fără intervenția omului și fără cost — sunt „un dar al naturii”, spre deosebire de bunurile economice, care sunt rare."
+                                           },
+                                           {
+                                               "nr":  11,
+                                               "enunt":  "Are caracter funcțional și finalitate:",
+                                               "variante":  {
+                                                                "a":  "activitatea umană în general",
+                                                                "b":  "doar activitatea economică",
+                                                                "c":  "numai activitățile din care rezultă profit",
+                                                                "d":  "orice activitate din care rezultă doar bunuri materiale",
+                                                                "e":  "orice activitate în care productivitatea muncii este cel puțin egală cu cea existentă pe plan internațional"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Orice activitate umană — nu doar cea economică — este orientată către un scop și îndeplinește o funcție; caracterul funcțional-teleologic este propriu activității umane în ansamblu."
+                                           },
+                                           {
+                                               "nr":  12,
+                                               "enunt":  "Cunoștințele oferite de știința economică reprezintă:",
+                                               "variante":  {
+                                                                "a":  "resurse epuizabile",
+                                                                "b":  "resurse primare",
+                                                                "c":  "resurse derivate",
+                                                                "d":  "idei veridice care nu se includ în resurse",
+                                                                "e":  "elemente de capital circulant"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Cunoștințele (informația, know-how-ul) rezultă din prelucrarea și sistematizarea altor resurse, deci sunt resurse derivate, nu resurse primare/naturale."
+                                           },
+                                           {
+                                               "nr":  13,
+                                               "enunt":  "Calitatea specifică omului care îl diferențiază de regnul animal este:",
+                                               "variante":  {
+                                                                "a":  "existența sentimentelor",
+                                                                "b":  "discernământul",
+                                                                "c":  "creativitatea",
+                                                                "d":  "agilitatea",
+                                                                "e":  "curiozitatea"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Creativitatea — capacitatea de a inventa și combina resursele în moduri noi — este trăsătura distinctivă a activității economice umane față de comportamentul animal."
+                                           },
+                                           {
+                                               "nr":  14,
+                                               "enunt":  "Unul dintre serviciile pe care trebuie să le consume omul în vederea satisfacerii nevoilor este:",
+                                               "variante":  {
+                                                                "a":  "hrana",
+                                                                "b":  "asistența sanitară",
+                                                                "c":  "informația",
+                                                                "d":  "îmbrăcămintea",
+                                                                "e":  "energia electrică"
+                                                            },
+                                               "raspuns":  "b",
+                                               "rezolvare":  "Dintre variantele date, doar asistența sanitară este un serviciu; hrana, îmbrăcămintea și energia electrică sunt bunuri materiale."
+                                           },
+                                           {
+                                               "nr":  15,
+                                               "enunt":  "Comportamentul omului față de natură este determinat de:",
+                                               "variante":  {
+                                                                "a":  "necesitatea de a-și satisface nevoile",
+                                                                "b":  "instinctele sale, omul fiind un produs al naturii",
+                                                                "c":  "admirația sa pentru natură",
+                                                                "d":  "dorința de a învinge natura",
+                                                                "e":  "necesitatea schimbării legilor naturii"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Omul acționează asupra naturii, în primul rând, pentru a-și satisface nevoile prin producerea de bunuri — nu din instinct, admirație sau dorința de a „învinge” natura."
+                                           },
+                                           {
+                                               "nr":  16,
+                                               "enunt":  "Activitatea umană are la bază:",
+                                               "variante":  {
+                                                                "a":  "resursele derivate",
+                                                                "b":  "cunoștințele dobândite",
+                                                                "c":  "resursele naturale",
+                                                                "d":  "relațiile cu semenii",
+                                                                "e":  "legislația în vigoare"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "La baza oricărei activități umane, inclusiv economice, stau resursele naturale, ca punct de plecare al oricărui proces de producție."
+                                           },
+                                           {
+                                               "nr":  17,
+                                               "enunt":  "Știința economică are ca rezultat:",
+                                               "variante":  {
+                                                                "a":  "elaborarea legilor economice",
+                                                                "b":  "cunoașterea volumului global al resurselor naturale",
+                                                                "c":  "administrarea eficientă a resurselor limitate",
+                                                                "d":  "cunoașterea volumului nevoilor",
+                                                                "e":  "cunoașterea fenomenelor economice"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Scopul practic al științei economice este administrarea eficientă (alocarea rațională) a resurselor limitate în raport cu nevoile nelimitate."
+                                           },
+                                           {
+                                               "nr":  18,
+                                               "enunt":  "Resursele biologice fac parte din categoria resurselor:",
+                                               "variante":  {
+                                                                "a":  "recuperabile",
+                                                                "b":  "parțial recuperabile",
+                                                                "c":  "nerecuperabile",
+                                                                "d":  "derivate",
+                                                                "e":  "epuizabile"
+                                                            },
+                                               "raspuns":  "b",
+                                               "rezolvare":  "Resursele biologice (păduri, faună, resurse piscicole) se pot regenera prin reproducere naturală, dar numai până la un anumit ritm — de aceea sunt resurse parțial recuperabile, spre deosebire de cele complet nerecuperabile (minereurile)."
+                                           },
+                                           {
+                                               "nr":  19,
+                                               "enunt":  "În cadrul activității economice, omul creează în primul rând:",
+                                               "variante":  {
+                                                                "a":  "condițiile materiale ale vieții",
+                                                                "b":  "structura socială în care trăiește",
+                                                                "c":  "mijloacele necesare realizării intereselor economice",
+                                                                "d":  "a + b",
+                                                                "e":  "a + b + c"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Rezultatul direct și definitoriu al activității economice este asigurarea condițiilor materiale ale vieții (bunurile și serviciile necesare traiului)."
+                                           },
+                                           {
+                                               "nr":  20,
+                                               "enunt":  "Nevoile elementare sunt, la rândul lor:",
+                                               "variante":  {
+                                                                "a":  "limitate",
+                                                                "b":  "de bază",
+                                                                "c":  "neregenerabile",
+                                                                "d":  "fundamentale",
+                                                                "e":  "b + d"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Spre deosebire de nevoile în ansamblu (nelimitate ca număr), nevoile elementare (biologice) sunt limitate ca volum — după satisfacerea lor la un nivel normal, ele nu mai cresc semnificativ."
+                                           },
+                                           {
+                                               "nr":  21,
+                                               "enunt":  "Utilizarea rațională a resurselor presupune:",
+                                               "variante":  {
+                                                                "a":  "studierea comportamentului uman în activitatea de producție",
+                                                                "b":  "maximizarea efectelor utile",
+                                                                "c":  "realizarea unui raport eficient între resurse și nevoi, respectiv între producție și consum",
+                                                                "d":  "ca acestea să fie primare",
+                                                                "e":  "satisfacerea unui volum mai redus de nevoi"
+                                                            },
+                                               "raspuns":  "e",
+                                               "rezolvare":  "Deoarece resursele sunt limitate iar nevoile nelimitate, utilizarea rațională presupune acceptarea faptului că nu pot fi satisfăcute toate nevoile: se alege un volum realist (mai redus) de nevoi satisfăcute, adaptat la resursele efectiv disponibile."
+                                           },
+                                           {
+                                               "nr":  22,
+                                               "enunt":  "Obiectul acțiunii economice îl constituie:",
+                                               "variante":  {
+                                                                "a":  "relația nevoi-resurse",
+                                                                "b":  "volumul, structura și dinamica resurselor de muncă",
+                                                                "c":  "divizibilitatea factorilor de producție",
+                                                                "d":  "combinarea factorilor de producție în vederea obținerii de bunuri",
+                                                                "e":  "forma de proprietate"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Obiectul acțiunii economice este chiar relația (raportul) dintre nevoi și resurse, pe care agenții economici încearcă să o gestioneze cât mai eficient."
+                                           },
+                                           {
+                                               "nr":  23,
+                                               "enunt":  "Subiectul acțiunii economice îl constituie:",
+                                               "variante":  {
+                                                                "a":  "producția de bunuri materiale și servicii",
+                                                                "b":  "mijloacele de muncă utilizate",
+                                                                "c":  "satisfacerea cât mai deplină a trebuințelor",
+                                                                "d":  "creșterea profitului",
+                                                                "e":  "agentul economic, omul, privit individual sau colectiv"
+                                                            },
+                                               "raspuns":  "e",
+                                               "rezolvare":  "Subiectul (cel care acționează) într-o acțiune economică este întotdeauna agentul economic — omul, privit individual sau organizat colectiv (firmă, instituție)."
+                                           },
+                                           {
+                                               "nr":  24,
+                                               "enunt":  "Agenții economici sunt aceia care:",
+                                               "variante":  {
+                                                                "a":  "obțin bunuri economice fără a consuma factori de producție",
+                                                                "b":  "se află numai în proprietate privată",
+                                                                "c":  "se află numai în proprietate publică",
+                                                                "d":  "nu constituie surse de venituri",
+                                                                "e":  "produc bunuri economice"
+                                                            },
+                                               "raspuns":  "e",
+                                               "rezolvare":  "Agenții economici sunt definiți prin funcția lor de a produce (sau a contribui la producerea) bunurilor economice, indiferent de forma de proprietate."
+                                           },
+                                           {
+                                               "nr":  25,
+                                               "enunt":  "Totalitatea fluxurilor economice dintr-o economie formează:",
+                                               "variante":  {
+                                                                "a":  "produsul intern net",
+                                                                "b":  "produsul național net",
+                                                                "c":  "circuitul economic",
+                                                                "d":  "mecanismul economic",
+                                                                "e":  "cererea de bunuri economice"
+                                                            },
+                                               "raspuns":  "c",
+                                               "rezolvare":  "Ansamblul fluxurilor economice (de bunuri, monedă, venituri) dintr-o economie formează circuitul economic."
+                                           },
+                                           {
+                                               "nr":  26,
+                                               "enunt":  "Autonomia producătorilor se fundamentează pe:",
+                                               "variante":  {
+                                                                "a":  "cunoștințele lor economice",
+                                                                "b":  "accesul liber pe piață",
+                                                                "c":  "suma de bani deținută de fiecare",
+                                                                "d":  "o anumită formă de proprietate",
+                                                                "e":  "diviziunea muncii"
+                                                            },
+                                               "raspuns":  "d",
+                                               "rezolvare":  "Autonomia (independența decizională) a producătorilor derivă din dreptul de proprietate asupra resurselor și asupra rezultatelor propriei activități."
+                                           },
+                                           {
+                                               "nr":  27,
+                                               "enunt":  "Diviziunea muncii presupune specializarea:",
+                                               "variante":  {
+                                                                "a":  "în funcție de vârste și sexe",
+                                                                "b":  "pe ocupații, activități și teritorial",
+                                                                "c":  "în funcție de sistemul de valori specific oamenilor",
+                                                                "d":  "pe rase și sexe",
+                                                                "e":  "b + d"
+                                                            },
+                                               "raspuns":  "b",
+                                               "rezolvare":  "Diviziunea muncii înseamnă specializarea producătorilor pe ocupații, ramuri de activitate și zone geografice (teritorial), nu pe criterii precum vârsta, sexul sau rasa."
+                                           },
+                                           {
+                                               "nr":  28,
+                                               "enunt":  "Diviziunea muncii este, pentru economia de schimb, o condiție:",
+                                               "variante":  {
+                                                                "a":  "necesară",
+                                                                "b":  "suficientă",
+                                                                "c":  "necesară și suficientă",
+                                                                "d":  "fără importanță",
+                                                                "e":  "de eficiență ridicată"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Diviziunea muncii este o condiție necesară (fără ea nu ar exista schimb), dar nu și suficientă — pentru economia de schimb mai sunt necesare proprietatea și piața."
+                                           },
+                                           {
+                                               "nr":  29,
+                                               "enunt":  "Într-o economie de piață modernă, corectarea dezechilibrelor economice majore se realizează în principal de către:",
+                                               "variante":  {
+                                                                "a":  "stat",
+                                                                "b":  "piață",
+                                                                "c":  "societățile comerciale",
+                                                                "d":  "bănci",
+                                                                "e":  "instituțiile juridice"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "În economia de piață modernă (mixtă), corectarea dezechilibrelor majore (recesiune, inflație, șomaj) revine în principal statului, prin politici economice — piața singură nu se poate autoregla complet."
+                                           },
+                                           {
+                                               "nr":  30,
+                                               "enunt":  "Economia naturală:",
+                                               "variante":  {
+                                                                "a":  "se menține și în prezent, în proporții diferite, în țări diferite",
+                                                                "b":  "corespunde unei perioade scurte din istoria societății",
+                                                                "c":  "are la bază diviziunea socială a muncii",
+                                                                "d":  "are la bază bunurile primare",
+                                                                "e":  "presupune prevenirea degradării mediului natural"
+                                                            },
+                                               "raspuns":  "a",
+                                               "rezolvare":  "Economia naturală (autoconsumul, fără schimb) nu a dispărut complet — ea persistă și azi, în proporții diferite, mai ales în zonele rurale sau în țările slab dezvoltate."
+                                           }
+                                       ]
+                     }
+                 ]
+}

@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 19 · Piața mondială</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4; --surface: #ffffff; --surface-2: #eef1ed; --border: #d8dcd6;
+  --text: #1b2420; --text-muted: #5c6660; --accent: #1e3a5f; --accent-soft: #e7edf3;
+  --good: #1f7a4d; --good-bg: #e8f5ee; --bad: #b23a2e; --bad-bg: #fbeae8; --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif; --font-body: "Inter", system-ui, sans-serif; --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+.diagrama { margin-top: 12px; }
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 18px; margin-top: 16px; font-family: var(--font-mono); flex-wrap: wrap; }
+.simulator__citire strong { color: var(--accent); font-size: 17px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 11px; }
+.legenda { display: flex; gap: 16px; margin-top: 10px; font-size: 12px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+@media (max-width: 480px) { .header__titlu { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  capitol: {
+    numar: 19,
+    titlu: 'Piața mondială',
+    obiective: [
+      'Să explici ce este piața mondială și ce forme îmbracă',
+      'Să calculezi cursul de revenire la export și la import',
+      'Să analizezi avantajele și dezavantajele comerțului internațional',
+      'Să explici conceptele de convertibilitate și curs de schimb',
+      'Să calculezi profitul și eficiența unei activități de comerț exterior'
+    ]
+  },
+  teorie: [
+    {
+      id: 'formele-pietei-mondiale', nr: '1', titlu: 'Piața mondială: forme',
+      text: [
+        'Economia mondială reprezintă ansamblul economiilor naționale ale statelor lumii, privite în interdependența legăturilor dintre ele. Piața mondială reprezintă ansamblul relațiilor de schimb care se stabilesc între unitățile economice aparținând diferitelor țări.',
+        'Toate țările lumii, indiferent de mărime sau forță economică, participă la schimburile internaționale și sunt afectate de evoluțiile economice mondiale.'
+      ],
+      clasificari: [
+        { criteriu: 'Formele pieței mondiale, după natura tranzacțiilor', orientare: 'vertical', categorii: [
+          { nume: 'Comerțul internațional', definitie: 'schimbul de bunuri și servicii nefinanciare (altele decât munca) între țări' },
+          { nume: 'Piața internațională a muncii', definitie: 'migrația internațională a forței de muncă, pentru condiții mai bune' },
+          { nume: 'Piața internațională a capitalurilor', definitie: 'împrumuturi externe, investiții directe și de portofoliu - cele mai dinamice tranzacții actuale' },
+          { nume: 'Piața internațională valutară', definitie: 'tranzacțiile cu monede convertibile ale diferitelor țări' },
+          { nume: 'Piața produselor și tehnologiilor de vârf', definitie: 'invenții, programe, know-how - tinde să devanseze dinamica comerțului internațional' }
+        ] }
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'comertul-international', nr: '2', titlu: 'Comerțul internațional',
+      text: [
+        'Comerțul internațional reflectă totalitatea schimburilor de bunuri și servicii care se desfășoară între toate țările de pe glob. Atenție: nu se identifică cu comerțul exterior, care reflectă doar schimburile unei anumite țări cu restul lumii.',
+        'Exportul reprezintă vânzarea peste graniță de bunuri economice naționale, contra unei sume în valută. Importul reprezintă cumpărarea de bunuri economice din străinătate, contra unei sume în valută.',
+        'Balanța de plăți externe reflectă încasările și plățile unei țări în relațiile cu exteriorul, pe un an - cuprinde contul curent (care evidențiază, în principal, comerțul exterior, prin balanța comercială) și contul de capital și financiar (investițiile directe și de portofoliu, creditele externe, modificarea rezervelor valutare). Deficitul de cont curent se acoperă din excedentul contului de capital, sau invers - suma soldurilor trebuie să fie, teoretic, zero.'
+      ],
+      clasificari: [
+        { criteriu: 'Comerțul internațional, după obiectul tranzacțiilor', categorii: [
+          { nume: 'Comerț vizibil', definitie: 'fluxuri internaționale de mărfuri materiale, tangibile (textile, petrol, alimente)' },
+          { nume: 'Comerț invizibil', definitie: 'fluxuri cu servicii - transporturi, turism, asigurări, brevete, licențe' }
+        ] },
+        { criteriu: 'Politicile comerciale de reglementare', categorii: [
+          { nume: 'Protecționismul', definitie: 'protejarea pieței interne prin taxe vamale și bariere netarifare (plafoane, norme de calitate)' },
+          { nume: 'Liberul schimb', definitie: 'libera circulație a mărfurilor, fără restricții tarifare sau netarifare' }
+        ] },
+        { criteriu: 'Balanța comercială, după raportul export-import', categorii: [
+          { nume: 'Excedentară (activă)', definitie: 'Export > Import - din competitivitatea ridicată a produselor' },
+          { nume: 'Deficitară (pasivă)', definitie: 'Export < Import - formează datoria externă a țării' },
+          { nume: 'Echilibrată', definitie: 'Export = Import, realizat cumulativ pe mai mulți ani' }
+        ] }
+      ],
+      puncteCheie: [
+        'Avantajele comerțului exterior: diversificarea ofertei, extinderea pieței (economii de scară), accentuarea concurenței, modernizarea economiei, mai multe locuri de muncă',
+        'Dezavantajele comerțului exterior: falimentul firmelor necompetitive, creșterea decalajelor între țări dezvoltate și cele slab dezvoltate',
+        'Balanța comercială este componenta principală a balanței de plăți externe (relație parte-întreg)',
+        { termen: 'Turismul internațional', descriere: 'ansamblul deplasărilor efectuate de persoane în alte țări decât cea de reședință, în alt scop decât prestarea unei activități remunerate - o formă importantă a comerțului invizibil, care aduce încasări valutare din serviciile turistice' }
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'eficienta-comert-exterior', nr: '3', titlu: 'Eficiența comerțului exterior',
+      text: [
+        'Eficiența comerțului exterior reflectă relația dintre efecte cât mai mari și eforturi cât mai mici, la export-import. Cursul de revenire la export (CRE) exprimă cheltuiala internă necesară pentru a obține o unitate valutară - exportul e eficient când CRE este mai mic decât cursul de schimb (Cs.V).',
+        'Cursul de revenire la import (CRI) exprimă suma în monedă națională obținută prin vânzarea internă a unei unități de marfă importată - importul e eficient când CRI este mai mare decât cursul de schimb.'
+      ],
+      exemple: [
+        'Firma Ana S.A. exportă 100 de rochii în Franța, pentru 10.000 euro, cu cheltuieli de 10.000 RON: CRE = 10.000/10.000 = 1 RON/euro (export eficient, sub cursul de schimb). Cu banii obținuți, importă portocale, plătește 5.000 RON taxe vamale și le vinde cu 50.000 RON: CRI = (50.000-5.000)/10.000 = 4,5 RON/euro (import eficient, peste cursul de schimb). Profitul e Pr = 4,5-1 = 3,5 RON/euro, adică 35.000 RON în total.'
+      ],
+      formule: [
+        { nume: 'Cursul de revenire la export', formula: 'CRE = Pie/Pve  (trebuie CRE < Cs.V)' },
+        { nume: 'Cursul de revenire la import', formula: 'CRI = (Pii-Ti)/Pvi  (trebuie CRI > Cs.V)' },
+        { nume: 'Profitul pe unitate valutară', formula: 'Pr = CRI - CRE' }
+      ],
+      calculator: 'eficientaComertExterior',
+      notaLegatura: { href: '#sect-explorator-comert', text: 'Explorează interactiv zonele de eficiență ale exportului și importului, în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'piata-valutara', nr: '4', titlu: 'Piața valutară',
+      text: [
+        'Convertibilitatea exprimă capacitatea unei monede de a se schimba pe alte monede, în mod liber, pe piață. Piața valutară este piața pe care se întâlnesc cererea și oferta de valută, prin confruntarea cărora se formează cursul de schimb (prețul unei monede, exprimat prin altă monedă).',
+        'Cursul de schimb nominal este cel la care au loc efectiv tranzacțiile pe piață. Cursul de schimb real are la bază paritatea puterii de cumpărare a monedelor - de exemplu, dacă un coș de bunuri costă 100$ în SUA și 290 RON în România, cursul la paritatea puterii de cumpărare e 2,9 RON/$. Acesta e util mai ales pentru compararea standardelor de viață între țări, pentru că elimină distorsiunile fluctuațiilor de piață.',
+        'Cursul de schimb este influențat, pe lângă cererea și oferta de valută, și de intervențiile băncii centrale, rata dobânzii, așteptările agenților economici și rata inflației.'
+      ],
+      clasificari: [
+        { criteriu: 'Formele cursului de schimb, după modul de formare', categorii: [
+          { nume: 'Flexibil (flotant)', definitie: 'se formează liber pe piață, prin cerere și ofertă' },
+          { nume: 'Fix', definitie: 'guvernul intervine și stabilește un alt curs decât cel de piață' }
+        ] }
+      ],
+      puncteCheie: [
+        { termen: 'Avantajul cursului flotant', descriere: 'ajustare automată a balanței de plăți - o depreciere face exporturile mai competitive și frânează importurile' },
+        { termen: 'Dezavantajul cursului flotant', descriere: 'incertitudine în comerțul internațional și posibile presiuni inflaționiste' }
+      ],
+      exemple: [], formule: []
+    }
+  ],
+  grila: [
+    { intrebare: 'Cursul de revenire la export desemnează:', optiuni: ['cheltuiala internă care se realizează pentru a obține o unitate valutară', 'câștigul din realizarea unei operațiuni de import', 'câștigul din realizarea unei operațiuni de export', 'eficiența activității de import-export'], corect: 0, explicatie: 'CRE = Pie/Pve - cheltuiala internă (în monedă națională) făcută pentru a obține o unitate valutară prin export.' },
+    { intrebare: 'Când cererea de euro pe piața valutară din România crește, iar oferta nu se modifică, euro:', optiuni: ['se apreciază', 'se depreciază', 'nu își modifică valoarea', 'devine mai puternic decât dolarul, întotdeauna'], corect: 0, explicatie: 'Ca pe orice piață, o cerere mai mare la aceeași ofertă determină creșterea prețului - aici, prețul monedei (cursul), deci euro se apreciază.' },
+    { intrebare: 'Cumpărătorul la termen mizează pe:', optiuni: ['creșterea cursului valutar', 'scăderea cursului valutar', 'rămânerea constantă a cursului valutar', 'câștigul lui nu depinde de evoluția cursului'], corect: 0, explicatie: 'La fel ca la bursă, cumpărătorul la termen ("à la hausse") mizează pe creșterea prețului - aici, a cursului valutar.' },
+    { intrebare: 'Balanța comercială și balanța de plăți sunt:', optiuni: ['în relație parte-întreg', 'în relație întreg-parte', 'sinonime', 'fără nicio relație determinabilă'], corect: 0, explicatie: 'Balanța comercială (exporturi-importuri de bunuri) este o componentă (parte) a balanței de plăți externe (întreg), care include și alte tranzacții.' },
+    { intrebare: 'Exportul unei firme este eficient atunci când:', optiuni: ['CRE > Cs.V', 'CRE < Cs.V', 'CRE = 0', 'CRE nu poate fi comparat cu Cs.V'], corect: 1, explicatie: 'Exportul e eficient când cursul de revenire la export (CRE) e mai mic decât cursul de schimb (Cs.V) - firma cheltuiește mai puțin decât valorează, în monedă națională, fiecare unitate valutară obținută.' }
+  ],
+  af: [
+    { enunt: 'O țară poate să nu participe la piața mondială.', corect: false, explicatie: 'Nu - toate țările lumii, indiferent de mărime, participă la schimburile internaționale și sunt afectate de evoluțiile economice mondiale.' },
+    { enunt: 'Participarea unei țări la comerțul internațional conduce la creșterea productivității interne.', corect: true, explicatie: 'Da - extinderea pieței permite reducerea costurilor pe produs (economii de scară) și stimulează productivitatea.' },
+    { enunt: 'Comerțul internațional generează la nivelul economiei naționale numai efecte pozitive.', corect: false, explicatie: 'Nu - alături de avantaje (diversificare, concurență, productivitate), există și dezavantaje (falimentul firmelor necompetitive, decalaje între țări).' },
+    { enunt: 'Participarea unei țări la comerțul internațional poate determina reducerea cererii interne de muncă.', corect: true, explicatie: 'Da - firmele care nu fac față concurenței externe pot da faliment, reducând cererea de muncă în acele sectoare.' },
+    { enunt: 'Balanța de plăți externe este întotdeauna echilibrată, per ansamblu.', corect: true, explicatie: 'Da - orice tranzacție internațională trebuie să aibă o sursă de finanțare, deci suma soldurilor (cont curent, cont de capital, cont de rezerve) e, teoretic, zero.' }
+  ],
+  probleme: [
+    { enunt: 'Firma "Ana S.A." exportă 100 de rochii în Franța, pentru 10.000 euro, cu cheltuieli de producție și export de 10.000 RON. Cu banii obținuți, importă portocale, plătește 5.000 RON taxe vamale și le vinde cu 50.000 RON. Calculați profitul total al afacerii (RON).', unitate: 'RON', corect: 35000, toleranta: 300, explicatie: 'CRE = 10.000/10.000 = 1 RON/euro. CRI = (50.000-5.000)/10.000 = 4,5 RON/euro. Pr = 4,5-1 = 3,5 RON/euro. Profit total = 3,5 x 10.000 = 35.000 RON.' },
+    { enunt: 'O firmă începe o activitate de comerț exterior cu un capital de 10 milioane lei. Într-un an, face 3 operații de export-import, cu CRE=5 lei/euro și CRI=10 lei/euro. Care este profitul total, la sfârșitul anului (milioane lei)?', unitate: 'mil. lei', corect: 70, toleranta: 2, explicatie: 'VT = Ki x (CRI/CRE)^n = 10 x (10/5)³ = 10 x 8 = 80 mil. lei. Profitul = VT - Ki = 80-10 = 70 mil. lei.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Exportul' },
+        { id: 't2', text: 'Importul' },
+        { id: 't3', text: 'Cursul de revenire la export (CRE)' },
+        { id: 't4', text: 'Cursul de revenire la import (CRI)' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Vânzarea peste graniță de bunuri economice naționale, contra unei sume în valută' },
+        { id: 'o_b', text: 'Cumpărarea de bunuri economice din străinătate, contra unei sume în valută' },
+        { id: 'o_c', text: 'Cheltuiala internă necesară pentru a obține o unitate valutară, prin vânzare' },
+        { id: 'o_d', text: 'Suma în monedă națională obținută prin vânzarea internă a unei unități de marfă importată' },
+        { id: 'o_e', text: 'Diferența dintre cursul de revenire la import și cel la export' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, profitul pe unitate valutară (Pr=CRI-CRE) - un concept diferit, care nu apare în coloana din stânga.'
+    }
+  ]
+};
+
+function calculeazaEficientaComertExterior(Pie, Pve, Pii, Ti, Pvi) {
+  const CRE = Pie / Pve;
+  const CRI = (Pii - Ti) / Pvi;
+  const Pr = CRI - CRE;
+  return { CRE, CRI, Pr };
+}
+
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 20, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+function campInput(randuri, labelTxt, placeholder, valInitial) {
+  const label = document.createElement('label');
+  label.appendChild(document.createTextNode(labelTxt));
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+  label.appendChild(input);
+  randuri.appendChild(label);
+  return input;
+}
+
+function buildEficientaComertCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: eficiența comerțului exterior (exemplul Ana S.A.)'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputPie = campInput(randuri, 'Cheltuieli export (Pie, RON)', 'ex. 10000', 10000);
+  const inputPve = campInput(randuri, 'Valută încasată (Pve, €)', 'ex. 10000', 10000);
+  box.appendChild(randuri);
+  const randuri2 = el('div', 'mini-calc__randuri');
+  const inputPii = campInput(randuri2, 'Preț intern import (Pii, RON)', 'ex. 50000', 50000);
+  const inputTi = campInput(randuri2, 'Taxe vamale (Ti, RON)', 'ex. 5000', 5000);
+  const inputPvi = campInput(randuri2, 'Valută cheltuită la import (Pvi, €)', 'ex. 10000', 10000);
+  box.appendChild(randuri2);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const Pie = Number(inputPie.value), Pve = Number(inputPve.value), Pii = Number(inputPii.value), Ti = Number(inputTi.value), Pvi = Number(inputPvi.value);
+    const toate = [inputPie, inputPve, inputPii, inputTi, inputPvi];
+    if (toate.some(i => i.value === '') || [Pie, Pve, Pii, Ti, Pvi].some(isNaN) || Pve === 0 || Pvi === 0) {
+      rezultat.textContent = 'Completează toate valorile (valuta diferită de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const r = calculeazaEficientaComertExterior(Pie, Pve, Pii, Ti, Pvi);
+    rezultat.innerHTML = '';
+    [['CRE (RON/€)', r.CRE], ['CRI (RON/€)', r.CRI], ['Profit pe € (RON)', r.Pr]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+    const profitTotal = document.createElement('div');
+    profitTotal.appendChild(document.createTextNode('Profit total = Pr x Pve = '));
+    const s = document.createElement('strong'); s.textContent = Math.round(r.Pr * Pve * 100) / 100; profitTotal.appendChild(s);
+    profitTotal.appendChild(document.createTextNode(' RON'));
+    rezultat.appendChild(profitTotal);
+    chartWrap.innerHTML = '';
+    const maxV = Math.max(r.CRE, r.CRI, 1) * 1.15;
+    chartWrap.appendChild(buildDumbbellChart('CRE', r.CRE, 'CRI', r.CRI, maxV, 'var(--accent)', 'var(--good)'));
+  }
+  [inputPie, inputPve, inputPii, inputTi, inputPvi].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'eficientaComertExterior') body.appendChild(buildEficientaComertCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// -----------------------------------------------------------------
+// V. Explorator: zonele de eficienta ale exportului si importului
+// -----------------------------------------------------------------
+function buildExploratorComertExterior() {
+  const width = 320, height = 250, barW = 60, gap = 50, top = 20, bottom = 40;
+  const chartH = height - top - bottom;
+  const maxScala = 8;
+  const scale = chartH / maxScala;
+  const x1 = 50, x2 = x1 + barW + gap, x3 = x2 + barW + gap;
+  const baseY = top + chartH;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Alege CRE, CRI și cursul de schimb (Cs.V) - vezi live dacă exportul (CRE < Cs.V) și importul (CRI > Cs.V) sunt eficiente, și cât e profitul pe unitate valutară.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Zonele de eficienta ale exportului si importului, fata de cursul de schimb' });
+  svg.appendChild(elNS('line', { x1: 20, y1: baseY, x2: width - 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+
+  const linieCsV = elNS('line', { x1: 20, x2: width - 10, stroke: 'var(--mark)', 'stroke-width': 2, 'stroke-dasharray': '4 3' });
+  svg.appendChild(linieCsV);
+  const labelCsV = elNS('text', { x: width - 12, 'text-anchor': 'end', 'font-size': 11, fill: 'var(--mark)', 'font-family': 'var(--font-mono)' });
+  svg.appendChild(labelCsV);
+
+  const barCRE = elNS('rect', { x: x1, width: barW });
+  const barCRI = elNS('rect', { x: x2, width: barW });
+  svg.appendChild(barCRE); svg.appendChild(barCRI);
+  const labelValCRE = elNS('text', { x: x1 + barW / 2, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 12.5, fill: 'var(--text)', 'font-weight': 600 });
+  const labelValCRI = elNS('text', { x: x2 + barW / 2, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 12.5, fill: 'var(--text)', 'font-weight': 600 });
+  svg.appendChild(labelValCRE); svg.appendChild(labelValCRI);
+  const lblCRE = elNS('text', { x: x1 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); lblCRE.textContent = 'CRE';
+  const lblCRI = elNS('text', { x: x2 + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 12, fill: 'var(--text-muted)' }); lblCRI.textContent = 'CRI';
+  svg.appendChild(lblCRE); svg.appendChild(lblCRI);
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'CRE'));
+  legenda.appendChild(legendItem('var(--good)', 'CRI'));
+  legenda.appendChild(legendItem('var(--mark)', 'Curs de schimb (Cs.V)'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxProfit = document.createElement('div'); const sProfit = document.createElement('strong'); boxProfit.appendChild(sProfit); boxProfit.appendChild(el('span', '', 'Profit (CRI-CRE)'));
+  citire.appendChild(boxProfit);
+  wrap.appendChild(citire);
+
+  const verdict = document.createElement('div');
+  verdict.style.marginTop = '10px';
+  wrap.appendChild(verdict);
+
+  const sliders = el('div', 'simulator__sliders');
+  function randSlider(labelTxt, min, max, step, val, onChange) {
+    const row = el('div', 'slider-row');
+    const label = document.createElement('label');
+    const labelSpanTxt = el('span', '', labelTxt);
+    const labelSpanVal = el('span', '', String(val));
+    label.appendChild(labelSpanTxt); label.appendChild(labelSpanVal);
+    row.appendChild(label);
+    const input = document.createElement('input');
+    input.type = 'range'; input.min = min; input.max = max; input.step = step; input.value = val;
+    input.addEventListener('input', () => { labelSpanVal.textContent = input.value; onChange(); });
+    row.appendChild(input);
+    sliders.appendChild(row);
+    return input;
+  }
+  const inputCRE = randSlider('CRE (RON/€)', 0.5, 7, 0.25, 1, () => recalc());
+  const inputCRI = randSlider('CRI (RON/€)', 0.5, 7, 0.25, 4.5, () => recalc());
+  const inputCsV = randSlider('Curs de schimb Cs.V (RON/€)', 0.5, 7, 0.25, 4.2, () => recalc());
+  wrap.appendChild(sliders);
+
+  function recalc() {
+    const CRE = Number(inputCRE.value), CRI = Number(inputCRI.value), CsV = Number(inputCsV.value);
+    const hCRE = CRE * scale, hCRI = CRI * scale, yCsV = baseY - CsV * scale;
+
+    barCRE.setAttribute('y', baseY - hCRE); barCRE.setAttribute('height', hCRE);
+    barCRE.setAttribute('fill', CRE < CsV ? 'var(--accent)' : 'var(--bad)');
+    labelValCRE.setAttribute('y', baseY - hCRE - 8); labelValCRE.textContent = CRE.toFixed(2);
+
+    barCRI.setAttribute('y', baseY - hCRI); barCRI.setAttribute('height', hCRI);
+    barCRI.setAttribute('fill', CRI > CsV ? 'var(--good)' : 'var(--bad)');
+    labelValCRI.setAttribute('y', baseY - hCRI - 8); labelValCRI.textContent = CRI.toFixed(2);
+
+    linieCsV.setAttribute('y1', yCsV); linieCsV.setAttribute('y2', yCsV);
+    labelCsV.setAttribute('y', yCsV - 4); labelCsV.textContent = 'Cs.V=' + CsV.toFixed(2);
+
+    const profit = CRI - CRE;
+    sProfit.textContent = profit.toFixed(2) + ' RON/€';
+
+    const exportEficient = CRE < CsV, importEficient = CRI > CsV;
+    if (exportEficient && importEficient) {
+      verdict.className = 'feedback corect';
+      verdict.textContent = 'Export eficient (CRE < Cs.V) și import eficient (CRI > Cs.V) - activitatea de comerț exterior e profitabilă.';
+    } else {
+      verdict.className = 'feedback gresit';
+      let mesaj = '';
+      if (!exportEficient) mesaj += 'Exportul NU e eficient (CRE ≥ Cs.V - se cheltuiește mai mult decât se câștigă). ';
+      if (!importEficient) mesaj += 'Importul NU e eficient (CRI ≤ Cs.V).';
+      verdict.textContent = mesaj;
+    }
+  }
+  recalc();
+  return wrap;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: eficiența comerțului exterior');
+  eyebrowExp.id = 'sect-explorator-comert';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Vezi live zonele de eficiență ale exportului și importului, față de cursul de schimb.'));
+  root.appendChild(buildExploratorComertExterior());
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1288 @@
+{
+  "capitol": 12,
+  "titlu_capitol": "Piața capitalurilor (financiară)",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (piata capitalurilor, actiunea, obligatiunea, bursa de valori). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (Cs.A=Div./d', Cs.O=D/d', Rd.A=(Div./Cs.A)x100, Rd.O=(D/Cs.O)x100, Cs.b=VNxcotatie+VNxcupon).",
+  "intrebari": [
+    {
+      "id": "C12_T01",
+      "capitol": 12,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața capitalurilor reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Piața muncii, unde se formează salariul",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Spațiul economic în care se întâlnesc cererea cu oferta de titluri de valoare (acțiuni și obligațiuni), formându-se prețul acestora, numit curs",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Piața pe care se tranzacționează exclusiv resurse naturale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Spațiul economic exclusiv rezervat tranzacțiilor cu bunuri de consum",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Piața capitalurilor este locul unde cererea și oferta de titluri de valoare mobiliară (în principal acțiuni și obligațiuni) se întâlnesc, iar prețul rezultat poartă un nume specific: cursul. Prin urmare, răspunsul corect este: Spațiul economic în care se întâlnesc cererea cu oferta de titluri de valoare (acțiuni și obligațiuni), formându-se prețul acestora, numit curs."
+    },
+    {
+      "id": "C12_T02",
+      "capitol": 12,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre criteriile principale care stau la baza plasării economiilor agenților economici pe diferite piețe se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mărimea venitului adus de plasament, riscurile implicate și lichiditatea plasamentului",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv numărul de acționari ai firmei emitente",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv culoarea sau vechimea titlurilor de valoare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv locul geografic unde este emis titlul",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Un investitor rațional analizează trei dimensiuni ale unui plasament: cât venit aduce (dobândă, dividend), ce riscuri implică și cât de repede poate fi transformat înapoi în bani (lichiditatea) — nu aspecte formale precum culoarea titlului. Prin urmare, răspunsul corect este: Mărimea venitului adus de plasament, riscurile implicate și lichiditatea plasamentului."
+    },
+    {
+      "id": "C12_T03",
+      "capitol": 12,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Prețul (cursul) unui titlu de valoare mobiliară se calculează, în general, ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul dintre venitul adus de titlu (dividend sau dobândă) și rata dobânzii pe piața monetară",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Suma dintre venitul adus de titlu și rata dobânzii pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Produsul dintre venitul adus de titlu și rata dobânzii pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Diferența dintre valoarea nominală și venitul adus de titlu",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cursul unui titlu de valoare reflectă suma pe care un investitor ar fi dispus să o plătească, astfel încât venitul adus de titlu să echivaleze cu un plasament la rata dobânzii de pe piața monetară: Cs(TVM) = V(TVM)/d'. Prin urmare, răspunsul corect este: Raportul dintre venitul adus de titlu (dividend sau dobândă) și rata dobânzii pe piața monetară."
+    },
+    {
+      "id": "C12_T04",
+      "capitol": 12,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Tranzacțiile pe piața capitalurilor se încheie, de regulă, pe termen:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv scurt, sub 90 de zile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv foarte scurt, de o zi",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nedeterminat, fără nicio limită temporală, în toate cazurile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Lung, uneori mediu",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Spre deosebire de piața monetară (termen scurt), piața capitalurilor este specifică plasamentelor pe termen lung, uneori mediu — limitat până la scadență în cazul obligațiunilor, teoretic nelimitat în cazul acțiunilor. Prin urmare, răspunsul corect este: Lung, uneori mediu."
+    },
+    {
+      "id": "C12_T05",
+      "capitol": 12,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Exponenții cererii de titluri de valoare mobiliară (TVM) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv agenții de schimb (brokerii)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Investitorii, adică posesorii de economii care doresc să le investească",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv statul, prin instituțiile publice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv emitenții de titluri de valoare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Cererea de TVM vine dinspre investitori — posesorii de economii care doresc să le plaseze — în timp ce oferta vine dinspre emitenți și posesorii care doresc să-și vândă titlurile; brokerii sunt doar intermediari, nu exponenți ai cererii. Prin urmare, răspunsul corect este: Investitorii, adică posesorii de economii care doresc să le investească."
+    },
+    {
+      "id": "C12_T06",
+      "capitol": 12,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Randamentul unui titlu de valoare mobiliară (TVM) se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Produsul dintre valoarea nominală și rata dobânzii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Raportul dintre valoarea nominală și cursul titlului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre cursul curent și valoarea nominală a titlului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Raportul procentual dintre venitul adus de titlu și cheltuielile cu achiziționarea lui",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Randamentul unui TVM arată cât de eficient a fost plasamentul: R_d(TVM) = (V/C) × 100, unde V este venitul (dividend sau dobândă) și C sunt cheltuielile efective cu achiziționarea titlului. Prin urmare, răspunsul corect este: Raportul procentual dintre venitul adus de titlu și cheltuielile cu achiziționarea lui."
+    },
+    {
+      "id": "C12_T07",
+      "capitol": 12,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Acțiunea este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un titlu patrimonial care atestă dreptul de proprietate asupra unei părți din capitalul social al unei firme",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Un instrument exclusiv al pieței monetare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un document care garantează un venit fix, independent de profitul firmei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un titlu de credit care atestă un împrumut acordat unei firme",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Acțiunea este un titlu patrimonial (de proprietate), nu de credit: ea atestă dreptul deținătorului asupra unei părți din capitalul social al firmei, spre deosebire de obligațiune, care e un titlu de creanță. Prin urmare, răspunsul corect este: Un titlu patrimonial care atestă dreptul de proprietate asupra unei părți din capitalul social al unei firme."
+    },
+    {
+      "id": "C12_T08",
+      "capitol": 12,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Obligațiunea este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un document care conferă drept de vot în adunarea generală a acționarilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un titlu patrimonial care atestă dreptul de proprietate asupra unei firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un titlu de credit asupra societății emitente, care atestă un împrumut pe termen lung sau mediu",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un instrument exclusiv al pieței valutare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Spre deosebire de acțiune (titlu de proprietate), obligațiunea este un titlu de credit: emitentul se obligă să restituie împrumutul la scadență și să plătească un venit ferm pe toată durata lui. Prin urmare, răspunsul corect este: Un titlu de credit asupra societății emitente, care atestă un împrumut pe termen lung sau mediu."
+    },
+    {
+      "id": "C12_T09",
+      "capitol": 12,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spre deosebire de dividend (venitul acțiunii), dobânda sau cuponul (venitul obligațiunii) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Identic, sub toate aspectele, cu dividendul",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un venit care nu se plătește niciodată, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un venit fix, ferm, plătit de emitent pe durata determinată a împrumutului, indiferent de situația economico-financiară a acestuia",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un venit variabil, în funcție de mărimea profitului firmei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dividendul variază în funcție de profitul firmei și de numărul acțiunilor deținute, în timp ce dobânda (cuponul) este un venit fix, garantat, plătit indiferent de rezultatele economico-financiare ale emitentului. Prin urmare, răspunsul corect este: Un venit fix, ferm, plătit de emitent pe durata determinată a împrumutului, indiferent de situația economico-financiară a acestuia."
+    },
+    {
+      "id": "C12_T10",
+      "capitol": 12,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Riscurile implicate de deținerea unei acțiuni, comparativ cu o obligațiune, sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Identice cu cele ale unei obligațiuni, în toate situațiile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Întotdeauna mai mici decât cele ale unei obligațiuni",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Mai mari, dacă activitatea firmei emitente este ineficientă sau falimentează",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Nule, indiferent de performanța firmei emitente",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Fiind coproprietar, acționarul suportă direct riscurile activității firmei — dacă aceasta este ineficientă sau falimentează, riscurile sunt mari — spre deosebire de obligatar, protejat de garanții și de prioritatea creditorilor. Prin urmare, răspunsul corect este: Mai mari, dacă activitatea firmei emitente este ineficientă sau falimentează."
+    },
+    {
+      "id": "C12_T11",
+      "capitol": 12,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre drepturile patrimoniale ale acționarilor se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dreptul de a primi anual o parte din profitul firmei (dividend)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Dreptul exclusiv de a controla banca centrală",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Dreptul de a încasa un venit fix, cert, indiferent de rezultatele firmei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Dreptul de a primi, la scadență, suma împrumutată firmei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Drepturile patrimoniale ale acționarului includ primirea anuală a unei părți din profit (dividend), suportarea pierderilor dacă firma e ineficientă și primirea unei părți din capital la lichidare — nu drepturile specifice unui creditor (obligatar). Prin urmare, răspunsul corect este: Dreptul de a primi anual o parte din profitul firmei (dividend)."
+    },
+    {
+      "id": "C12_T12",
+      "capitol": 12,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spre deosebire de acționar, obligatarul (deținătorul unei obligațiuni):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Deține o parte din capitalul social al firmei emitente",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Suportă acoperirea pierderilor firmei, dacă aceasta este ineficientă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu are niciun drept asupra activității emitentului, dar are dreptul de a încasa, la scadență, suma împrumutată și un venit fix (dobânda)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Are drept de vot în adunarea generală a acționarilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Obligatarul este doar creditor, nu coproprietar: el nu are drepturi sociale (vot, informare privind activitatea firmei) sau patrimoniale (parte din capital), dar are dreptul cert de a-și recupera împrumutul și dobânda la scadență. Prin urmare, răspunsul corect este: Nu are niciun drept asupra activității emitentului, dar are dreptul de a încasa, la scadență, suma împrumutată și un venit fix (dobânda)."
+    },
+    {
+      "id": "C12_T13",
+      "capitol": 12,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața financiară primară se deosebește de cea secundară (bursa de valori) prin faptul că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Pe piața primară prețul este întotdeauna diferit de valoarea nominală a titlului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Pe piața secundară nu există niciun intermediar",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cele două piețe sunt identice, doar denumirea diferă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Pe piața primară se tranzacționează titluri de valoare nou emise, iar pe cea secundară titluri emise anterior",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Piața primară este locul unde titlurile nou emise ajung prima dată la investitori (prețul egalând, de regulă, valoarea nominală), în timp ce piața secundară (bursa) tranzacționează titluri deja emise anterior, la un preț care variază în funcție de cerere și ofertă. Prin urmare, răspunsul corect este: Pe piața primară se tranzacționează titluri de valoare nou emise, iar pe cea secundară titluri emise anterior."
+    },
+    {
+      "id": "C12_T14",
+      "capitol": 12,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bursa de valori este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O instituție exclusiv guvernamentală, fără nicio activitate privată",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O instituție/piață care asigură mecanismele necesare tranzacționării titlurilor financiare emise anterior de unii agenți economici, dar aflate în proprietatea altora decât emitenții",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "O instituție care stabilește, prin decizie administrativă, prețul tuturor titlurilor de valoare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Locul unde se emit exclusiv titluri de valoare noi",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Bursa de valori este principala instituție a pieței financiare secundare: ea organizează tranzacționarea titlurilor emise anterior, aflate deja în proprietatea unor investitori diferiți de emitenții inițiali — nu emiterea de titluri noi. Prin urmare, răspunsul corect este: O instituție/piață care asigură mecanismele necesare tranzacționării titlurilor financiare emise anterior de unii agenți economici, dar aflate în proprietatea altora decât emitenții."
+    },
+    {
+      "id": "C12_T15",
+      "capitol": 12,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre caracteristicile principale ale bursei de valori se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu permite niciun tip de operație speculativă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Se apropie cel mai mult, dintre toate piețele, de caracteristicile concurenței pure și perfecte",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Este condusă exclusiv de stat, fără niciun consiliu de administrație",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este complet lipsită de reglementări și supraveghere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Dintre toate piețele reale, bursa de valori se apropie cel mai mult de concurența pură și perfectă — dar rămâne, totodată, riguros organizată și reglementată, condusă de un consiliu de administrație și supravegheată de autoritatea publică. Prin urmare, răspunsul corect este: Se apropie cel mai mult, dintre toate piețele, de caracteristicile concurenței pure și perfecte."
+    },
+    {
+      "id": "C12_T16",
+      "capitol": 12,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Operațiile la vedere de la bursa de valori se caracterizează prin faptul că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sunt interzise prin lege în majoritatea burselor de valori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Finalizarea tranzacției are loc întotdeauna peste cel puțin un an",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu presupun niciun schimb efectiv de bani contra titluri",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Finalizarea tranzacției are loc în momentul încheierii contractului sau în maximum două zile lucrătoare",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Operațiile la vedere se disting prin rapiditatea decontării — momentul încheierii contractului sau, cel mult, două zile lucrătoare — spre deosebire de operațiile la termen, unde finalizarea are loc la o dată ulterioară, prestabilită. Prin urmare, răspunsul corect este: Finalizarea tranzacției are loc în momentul încheierii contractului sau în maximum două zile lucrătoare."
+    },
+    {
+      "id": "C12_T17",
+      "capitol": 12,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Investitorul care, printr-un contract la termen, mizează pe creșterea cursului unui titlu de valoare până la scadență, este numit:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Speculator „à la hausse” sau „bull”",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Obligatar, indiferent de tipul contractului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Intermediar (broker), indiferent de poziția sa",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Speculator „à la baisse” sau „bear”",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cel care cumpără mizând pe creșterea cursului este speculatorul „à la hausse” (bull) — spre deosebire de vânzătorul care mizează pe scăderea cursului, numit speculator „à la baisse” (bear). Prin urmare, răspunsul corect este: Speculator „à la hausse” sau „bull”."
+    },
+    {
+      "id": "C12_T18",
+      "capitol": 12,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre factorii care influențează cursul unui titlu de valoare mobiliară se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Numărul de angajați ai firmei emitente",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv data emiterii titlului, fără nicio altă influență",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Rata dobânzii pe piața monetară, printr-o relație negativă (invers proporțională)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Culoarea sau formatul fizic al titlului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Fiindcă cursul se calculează ca raport între venit și rata dobânzii (Cs = V/d'), o creștere a ratei dobânzii pe piața monetară determină scăderea cursului titlului — o relație negativă, invers proporțională. Prin urmare, răspunsul corect este: Rata dobânzii pe piața monetară, printr-o relație negativă (invers proporțională)."
+    },
+    {
+      "id": "C12_T19",
+      "capitol": 12,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre rolurile bursei de valori se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Eliminarea completă a riscului investițional",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Stabilirea directă a salariilor din economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Interzicerea oricărei tranzacții cu titluri emise anterior",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Asigurarea unui grad ridicat de mobilitate și lichiditate a capitalurilor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Bursa de valori facilitează transformarea rapidă a capitalului bănesc în capital real și invers, asigurând un grad ridicat de mobilitate și lichiditate a capitalurilor — nu stabilirea salariilor sau eliminarea riscului, care rămâne inerent oricărei investiții. Prin urmare, răspunsul corect este: Asigurarea unui grad ridicat de mobilitate și lichiditate a capitalurilor."
+    },
+    {
+      "id": "C12_T20",
+      "capitol": 12,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bursa de valori este considerată „barometrul” stării unei economii deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Reflectă exclusiv evoluția pieței muncii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Permite aprecierea nivelului de dezvoltare economică a unei țări prin evoluția cursurilor titlurilor tranzacționate",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Stabilește, prin lege, nivelul tuturor prețurilor din economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este complet independentă de starea reală a economiei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Evoluția cursurilor de la bursă reflectă, în mare măsură, așteptările investitorilor privind sănătatea economică a firmelor și a economiei în ansamblu — de aceea bursa este considerată un indicator sensibil, un „barometru”, al stării economiei. Prin urmare, răspunsul corect este: Permite aprecierea nivelului de dezvoltare economică a unei țări prin evoluția cursurilor titlurilor tranzacționate."
+    },
+    {
+      "id": "C12_E01",
+      "capitol": 12,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Venitul adus de o obligațiune a fost 4.000 u.m. în condițiile unei rate a dobânzii pe piața monetară de 8%. Dacă rata dobânzii se va dubla în viitor, atunci cursul obligațiunii va scădea (–ΔCs.O) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "5.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "12.500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "25.000 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cs.O₀ = 4.000/8% = 50.000 u.m. d'₁ = 16% → Cs.O₁ = 4.000/16% = 25.000 u.m. ⇒ ΔCs.O = 25.000 – 50.000 = –25.000 u.m."
+    },
+    {
+      "id": "C12_E02",
+      "capitol": 12,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dobânda încasată de un obligatar este 1.000 u.m., iar rata dobânzii 25%. Dacă rata dobânzii scade cu 20%, atunci modificarea relativă a cursului obligațiunii (Δ%Cs.O) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "125%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Cs.O₀ = 1.000/25% = 4.000 u.m. d'₁ = 0,8 × 25% = 20% → Cs.O₁ = 1.000/20% = 5.000 u.m. → I_Cs.O = (5.000/4.000) × 100 = 125% ⇒ Δ%Cs.O = 25%."
+    },
+    {
+      "id": "C12_E03",
+      "capitol": 12,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dividendul încasat de o persoană ce deține o acțiune este 200 u.m., iar d'=20%. Dacă rata dobânzii scade cu 5 puncte procentuale, iar venitul încasat de acționar crește cu 20%, atunci modificarea în mărimi absolute a cursului acțiunii (ΔCs.A) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "600 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "1.600 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "240 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1.000 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cs.A₀ = 200/20% = 1.000 u.m. d'₁ = 20% – 5 p.p. = 15%, iar Div.₁ = 1,2 × 200 = 240 u.m. → Cs.A₁ = 240/15% = 1.600 u.m. ⇒ ΔCs.A = 1.600 – 1.000 = 600 u.m."
+    },
+    {
+      "id": "C12_E04",
+      "capitol": 12,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un agent economic cumpără o obligațiune la valoarea nominală de 12.000 u.m. și o vinde peste un an cu 18.000 u.m. Dobânda încasată în perioada dată este 1.500 u.m. În aceste condiții, randamentul obligațiunii (Rd.O) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "62,5%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "75%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Rd.O = {[(18.000–12.000)+1.500]/12.000} × 100 = (7.500/12.000) × 100 = 62,5%."
+    },
+    {
+      "id": "C12_E05",
+      "capitol": 12,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O bancă, pentru a-și acoperi deficitele, emite 1.500 de obligațiuni la o valoare nominală unitară de 4.000 u.m., în condițiile în care rata dobânzii pe piața monetară este 8% anual, iar scadența de restituire a împrumutului este de 2,5 ani. Suma totală primită de obligatar la sfârșitul perioadei (S_T) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6,96 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "7,2 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "7,5 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "6,6 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Împrumutul = 1.500 × 4.000 = 6 mil. u.m., n = 2,5 ani = (2 + 1/2) ani → D(2 ani) = 6 mil. × 8% × 2 = 0,96 mil. u.m. și D(1/2 an) = 6 mil. × 8% × 0,5 = 0,24 mil. u.m. → D_T = 1,2 mil. u.m. ⇒ S_T = (6 + 1,2) mil. = 7,2 mil. u.m."
+    },
+    {
+      "id": "C12_E06",
+      "capitol": 12,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, dividendele încasate de acționarii unei firme scad cu 40%, în timp ce pe piața monetară rata dobânzii se reduce cu 20%, atunci indicele cursului acțiunii (I_Cs.A) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "200%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "75%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "60%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_Div = 60% și I_d' = 80% → I_Cs.A = (I_Div/I_d') × 100 = (60/80) × 100 = 75%."
+    },
+    {
+      "id": "C12_E07",
+      "capitol": 12,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La începutul anului, Rd.A₀ = 25%. În cursul anului, dividendul adus de acțiunea X crește de 1,44 ori, iar cursul acțiunii sporește cu 80%. Randamentul acțiunii la sfârșitul anului (Rd.A₁) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "45%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "25%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_Div = 144% și I_Cs.A = 180% → I_Rd.A = (I_Div/I_Cs.A) × 100 = (144/180) × 100 = 80% ⇒ Rd.A₁ = 80% × 25% = 20%."
+    },
+    {
+      "id": "C12_E08",
+      "capitol": 12,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O S.A. ce dispune de 5.000 de acțiuni are o rată a rentabilității de 25% la o producție vândută de 40 mil. lei. După plata impozitului pe profit de 10%, A.G.A. hotărăște ca din profitul net, jumătate să se reinvestească. Dividendul adus de o acțiune (Div./acțiune) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "900 lei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "500 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1.800 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "450 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pr.T = 25% × 40 mil. = 10 mil. lei, Pr.n = 90% × 10 mil. = 9 mil. lei, Div.T = 9 mil./2 = 4,5 mil. lei ⇒ Div./acțiune = 4,5 mil./5.000 = 900 lei."
+    },
+    {
+      "id": "C12_E09",
+      "capitol": 12,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Cuponul unei obligațiuni este 360 u.m., iar d'=6%. Dacă rata dobânzii pe piața monetară s-ar tripla, obligatarul ar achiziționa obligațiunea cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2.000 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "3.000 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Cs.O₀ = 360/6% = 6.000 u.m. ⇒ Cs.O₁ = 360/18% = 2.000 u.m."
+    },
+    {
+      "id": "C12_E10",
+      "capitol": 12,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă rata dobânzii scade cu 25%, atunci cursul obligațiunii (Δ%Cs.O):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "scade cu 33,33%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "crește cu 25%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "crește cu 33,33%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "scade cu 25%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_d' = 75%, iar I_D = 100% → I_Cs.O = (100/75) × 100 ≈ 133,33% ⇒ Δ%Cs.O ≈ 33,33%."
+    },
+    {
+      "id": "C12_E11",
+      "capitol": 12,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un trimestru, cuponul adus de o obligațiune este 8.000 u.m. Dacă rata anuală a dobânzii este 32%, atunci prețul plătit pentru a cumpăra o obligațiune (Cs.O) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "25.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "100.000 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "8.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "32.000 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Cs.O = D/an : d'/an = (8.000 × 4) : 32% = 32.000 : 0,32 = 100.000 u.m."
+    },
+    {
+      "id": "C12_E12",
+      "capitol": 12,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În t₀, o firmă vinde la bursa de valori o acțiune la prețul de 2.500 lei. Un agent economic încheie un contract de cumpărare la termen a 400 de acțiuni de la firma respectivă. Dacă la scadență cursul acțiunii scade cu 20%, atunci cine și ce sumă va câștiga?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "ambii parteneri câștigă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "vânzătorul, 500.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "cumpărătorul, 200.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "vânzătorul (firma), 200.000 lei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cs.A₁ = 0,8 × 2.500 = 2.000 lei/acțiune. Cumpărătorul s-a angajat să cumpere la 2.500 lei, dar acțiunea valorează, la scadență, doar 2.000 lei — el pierde 500 lei/acțiune, iar vânzătorul (firma) câștigă exact această diferență: St = 400 × (2.500 – 2.000) = 400 × 500 = 200.000 lei."
+    },
+    {
+      "id": "C12_E13",
+      "capitol": 12,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea nominală a unei obligațiuni este 5.000 lei. La bursă, ea este cotată la 108%, iar cuponul său este de 6%. Valoarea bursieră a obligațiunii (Cs.b.O) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5.300 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "5.900 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "5.700 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "5.400 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Cs.b.O = 5.000 × 108% + 5.000 × 6% = 5.400 + 300 = 5.700 lei."
+    },
+    {
+      "id": "C12_E14",
+      "capitol": 12,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un agent economic face următoarele tranzacții la bursa de valori: cumpără 150 de acțiuni de la firma X, la cursul de 40 u.m., și vinde 100 de acțiuni deținute la firma Y, la cursul de 60 u.m. Peste un an, cursul acțiunii, la firma X, devine 32 u.m., iar cursul acțiunii, la firma Y, 45 u.m. La sfârșitul anului, agentul economic înregistrează, pe total tranzacții, următoarea situație financiară:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "câștigă 2.700 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "pierde 1.200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "pierde 300 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "câștigă 300 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cumpărare: 150 × 40 = 6.000 u.m. (T₀), 150 × 32 = 4.800 u.m. (T₁) → pierdere de 1.200 u.m. (ca și cumpărător). Vânzare: 100 × 60 = 6.000 u.m. (T₀), 100 × 45 = 4.500 u.m. (T₁) → câștig de 1.500 u.m. (ca și vânzător, la termen). Pe total tranzacții: 1.500 – 1.200 = 300 u.m. câștig."
+    },
+    {
+      "id": "C12_E15",
+      "capitol": 12,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană cumpără 24 de obligațiuni la valoarea nominală de 1.000 lei, cu scadență peste un an, rata dobânzii fiind 27%. În anul respectiv, indicele general al prețurilor a fost 108%. Valoarea reală a dobânzii la sfârșitul anului (D.r) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5.925,92 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6.480 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "6.000 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "7.000 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Cr. = 24 × 1.000 = 24.000 lei, iar dobânda nominală = 27% × 24.000 = 6.480 lei ⇒ Dr (dobânda reală) = Dn/I_GP = 6.480/1,08 = 6.000 lei."
+    },
+    {
+      "id": "C12_E16",
+      "capitol": 12,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă rata dobânzii pe piața monetară s-a triplat, atunci variația relativă a randamentului obligațiunii (Δ%Rd.O) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "200%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "– 33,33%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "33,33%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "– 66,66%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_d' = 300%, I_D = 100% → I_Rd.O = (100/300) × 100 ≈ 33,33% ⇒ Δ%Rd.O ≈ –66,66%."
+    },
+    {
+      "id": "C12_E17",
+      "capitol": 12,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La începutul anului, o obligațiune vândută la prețul de 180.000 u.m. aduce un venit lunar de 900 u.m. Dacă la sfârșitul anului rata dobânzii pe piața monetară va crește cu 10 puncte procentuale, atunci cursul obligațiunii la sfârșitul anului (Cs.O₁), în raport cu cel inițial, va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "de 3 ori mai mare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "de 2 ori mai mic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "neschimbat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3/8 din nivelul inițial",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "D/an = 900 × 12 = 10.800 u.m. d'₀ = (10.800/180.000) × 100 = 6% → d'₁ = 6% + 10 p.p. = 16%. Cs.O₁ = 10.800/16% = 67.500 u.m. ⇒ Cs.O₁/Cs.O₀ = 67.500/180.000 = 3/8."
+    },
+    {
+      "id": "C12_E18",
+      "capitol": 12,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În scopul acoperirii deficitelor financiare, o administrație locală emite și vinde, în două etape, 2.400 de obligațiuni. La început vinde 1/4 din numărul obligațiunilor, care aduc o dobândă de 250 u.m./bucată, în condițiile unei d' = 20%. În a doua etapă, vinde restul obligațiunilor, care aduc același venit/bucată, dar cu o d' = 24%. Suma totală împrumutată (St) de către administrația locală (în mil. u.m.) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,75",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,625",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "3,375",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1,875",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Etapa I: Nr.O₁ = 1/4 × 2.400 = 600, Dt₁ = 600 × 250 = 150.000 u.m. → Cs.O(împrumutul) = 150.000 : 20% = 750.000 u.m. Etapa II: Nr.O₂ = 2.400 – 600 = 1.800, Dt₂ = 1.800 × 250 = 450.000 u.m. → Cs.O = 450.000 : 24% = 1.875.000 u.m. ⇒ St = (0,75 + 1,875) mil. = 2,625 mil. u.m."
+    },
+    {
+      "id": "C12_E19",
+      "capitol": 12,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O S.A. vinde într-un an 4.000 de acțiuni la o valoare nominală de 2.500 u.m./acțiune și acordă un dividend anual de 25% pe bucată, iar pe piața monetară, d' = 10%. Cursul unei acțiuni (Cs.A) și dividendele totale plătite (Div.T) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6.250 u.m. și 2,5 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "625 u.m. și 2,5 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "625 u.m. și 10 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "6.250 u.m. și 10 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Div./an/bucată = 25% × 2.500 = 625 u.m. → Cs.A = 625/10% = 6.250 u.m. și Div.T = 625 × 4.000 buc. = 2,5 mil. u.m."
+    },
+    {
+      "id": "C12_E20",
+      "capitol": 12,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rata anuală a profitului la cost este 20% la o cifră de afaceri de 900 mil. u.m. După plata impozitului de 10% din profitul total, A.G.A. hotărăște ca 50% din profitul net să se împartă acționarilor, dividendul încasat/acțiune fiind de 1,35 mil. u.m. Numărul de acțiuni (Nr.A) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "60",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "45",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "50",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "40",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pr.T = 20%CT → C.A = 900 mil. u.m. = 1,2CT ⇒ CT = 750 mil. u.m., iar Pr.T = (900 – 750) mil. = 150 mil. u.m. → Pr.n = 90% × 150 mil. = 135 mil. u.m. → Div.T = 50% × 135 mil. = 67,5 mil. u.m. ⇒ Nr.A = 67,5 mil./1,35 mil. = 50."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

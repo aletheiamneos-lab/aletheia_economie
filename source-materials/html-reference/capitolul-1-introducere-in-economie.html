@@ -1,0 +1,1166 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 1 · Introducere în economie</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+.diagrama__nota { font-size: 12.5px; color: var(--text-muted); margin-top: 8px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 24px; margin-top: 16px; font-family: var(--font-mono); }
+.simulator__citire strong { color: var(--accent); font-size: 19px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 12px; }
+.legenda { display: flex; gap: 18px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+  .simulator__citire { gap: 14px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+// ---------------------------------------------------------------------
+// Continutul capitolului - teoria completa, structurata dupa manual:
+// I. Nevoile umane
+// II. Bunurile economice
+// III. Resursele economice
+// IV. Costul de oportunitate
+// V. Ce studiaza economia
+// VI. Indicatorii economici si dinamica lor
+// ---------------------------------------------------------------------
+const DATA = {
+  capitol: {
+    numar: 1,
+    titlu: 'Introducere în economie',
+    obiective: [
+      'Să definești nevoile umane și resursele economice, și să le clasifici',
+      'Să explici relația (tensiunea) dintre nevoile nelimitate și resursele limitate',
+      'Să calculezi costul de oportunitate al unei alegeri economice',
+      'Să calculezi modificările absolute și procentuale ale unui indicator economic',
+      'Să înțelegi rolul și obiectivele științei economice'
+    ]
+  },
+  teorie: [
+    {
+      id: 'nevoi', nr: '1', titlu: 'Nevoile umane',
+      text: [
+        'Nevoile umane reprezintă ansamblul dorințelor, așteptărilor și cerințelor care se manifestă la nivelul unui individ, al unui grup sau al societății în ansamblul ei. Satisfacerea lor, prin consumul de bunuri și servicii, determină existența și dezvoltarea oamenilor și a societății.',
+        'Majoritatea nevoilor au un caracter subiectiv - depind de persoana care le resimte - dar au și o determinare obiectivă, legată de nivelul de dezvoltare al societății în care trăiește individul. Inițial, o nevoie se manifestă ca o stare de dezechilibru sau disconfort, care dispare temporar prin consum, dar reapare ulterior.'
+      ],
+      puncteCheie: [
+        { termen: 'Dinamice și nelimitate numeric', descriere: 'se multiplică și se diversifică permanent, o dată cu dezvoltarea individului și a societății' },
+        { termen: 'Limitate în volum (capacitate)', descriere: 'satisfacerea lor presupune un consum limitat dintr-un bun (un pahar de apă e suficient pentru sete)' },
+        { termen: 'Regenerabile', descriere: 'se sting momentan prin consum, dar reapar (foamea revine la câteva ore după ce ai mâncat)' },
+        { termen: 'Concurente și substituibile', descriere: 'cu venituri limitate, satisfacerea unei nevoi înseamnă adesea sacrificarea alteia' },
+        { termen: 'Complementare', descriere: 'satisfacerea unei nevoi le condiționează pe altele (dacă îți e foame, nu poți dormi bine)' }
+      ],
+      clasificari: [
+        { criteriu: 'După nivelul la care se manifestă', categorii: [
+          { nume: 'Individuale', definitie: 'nevoi personale, ale unui singur om (de hidratare, de odihnă, de a citi)' },
+          { nume: 'De grup', definitie: 'nevoi la nivelul unor colectivități (de transport și iluminat urban)' },
+          { nume: 'Sociale', definitie: 'nevoi ale întregii societăți (de securitate, de mediu nepoluat)' }
+        ] },
+        { criteriu: 'După gradul de complexitate', categorii: [
+          { nume: 'Elementare', definitie: 'nevoi de bază, primare (de a respira, de locuință)' },
+          { nume: 'Complexe', definitie: 'nevoi superioare, elevate (de informare, de activitate creatoare)' }
+        ] },
+        { criteriu: 'După dimensiunea ființei umane', categorii: [
+          { nume: 'Biologice', definitie: 'fiziologice (de hrană, de igienă, de mișcare)' },
+          { nume: 'Psihologice', definitie: 'spiritual-raționale (de înțelegere, de iubire și apreciere)' },
+          { nume: 'Sociale', definitie: 'de comunicare, de prietenie, de realizare profesională' }
+        ] }
+      ],
+      exemple: [
+        'Nevoia de realizare profesională apare la nivel individual (unii vor să fie antreprenori, alții profesori); nevoia de a câștiga puterea se manifestă mai ales la nivel de grup (partidele politice); nevoia de reducere a criminalității apare la nivelul întregii societăți.'
+      ],
+      formule: []
+    },
+    {
+      id: 'bunuri', nr: '2', titlu: 'Bunurile economice',
+      text: [
+        'Bunurile (utilitățile) reprezintă orice element al realității capabil să satisfacă o nevoie umană. În funcție de proveniența lor și de accesul oamenilor la ele, bunurile se împart în bunuri libere și bunuri economice.',
+        'Bunurile libere sunt daruri ale naturii (aerul, căldura și lumina solară), virtual nelimitate, la care accesul este gratuit, deși consumul lor rămâne condiționat de loc și timp. Bunurile economice provin din activitatea economică - necesită efort și resurse pentru a fi produse - și sunt limitate în raport cu nevoile. Accesul la ele poate fi direct, prin autoconsum, sau indirect, prin intermediul pieței, caz în care bunul economic devine marfă.'
+      ],
+      puncteCheie: [],
+      clasificari: [
+        { criteriu: 'După proveniență și accesul oamenilor la ele', categorii: [
+          { nume: 'Bunuri libere', definitie: 'daruri ale naturii, acces gratuit (aerul, lumina solară)' },
+          { nume: 'Bunuri economice', definitie: 'necesită efort și resurse (produse prin activitate economică)' }
+        ] },
+        { criteriu: 'După forma sub care se prezintă', categorii: [
+          { nume: 'Materiale', definitie: 'tangibile, palpabile' },
+          { nume: 'Nemateriale (servicii)', definitie: 'informații, servicii - netangibile' }
+        ] },
+        { criteriu: 'După destinația principală', categorii: [
+          { nume: 'Prodfactori (intermediare)', definitie: 'ex. făina și drojdia, pentru pâine' },
+          { nume: 'Satisfactori (finale)', definitie: 'ex. ochelarii, pixul' }
+        ] },
+        { criteriu: 'După circulația între agenții economici', categorii: [
+          { nume: 'Marfare', definitie: 'supuse vânzării-cumpărării' },
+          { nume: 'Nemarfare', definitie: 'din producție proprie sau de la stat' }
+        ] },
+        { criteriu: 'După relația în procesul utilizării', categorii: [
+          { nume: 'Substituibile', definitie: 'satisfac alternativ aceeași nevoie (cafeaua și îndulcitorul)' },
+          { nume: 'Complementare', definitie: 'satisfac împreună aceeași nevoie (calculatorul și curentul electric)' },
+          { nume: 'Independente', definitie: 'nu se influențează reciproc (umbrela și pasta de dinți)' }
+        ] }
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'resurse', nr: '3', titlu: 'Resursele economice',
+      text: [
+        'Resursele economice reprezintă elementele umane, naturale și create de om care pot fi utilizate, sau sunt efectiv utilizate (devenind astfel factori de producție), pentru realizarea bunurilor și serviciilor necesare satisfacerii nevoilor. Resursele nu trebuie confundate cu bunurile: resursele sunt „intrări" ale procesului de producție, iar bunurile economice sunt rezultatul folosirii lor.',
+        'Resursele sunt dinamice numeric, dar cresc mai încet decât nevoile umane - de aici tensiunea permanentă dintre nevoi și resurse, care generează problema fundamentală a economiei: utilizarea eficientă a resurselor limitate, adică alegerea răspunsurilor la întrebările ce, cât, cum și pentru cine să se producă.'
+      ],
+      puncteCheie: [
+        { termen: 'Resursa umană', descriere: 'este considerată cea mai importantă resursă economică; resursele naturale sunt sursa primară de satisfacere a nevoilor' }
+      ],
+      clasificari: [
+        { criteriu: 'După proveniență', categorii: [
+          { nume: 'Primare/originare', definitie: 'resursele umane, resursele naturale (pământ, apă, păduri)' },
+          { nume: 'Derivate', definitie: 'materii prime, tehnologii, abilitatea întreprinzătorului' }
+        ] },
+        { criteriu: 'Resurse naturale, după durata folosirii', categorii: [
+          { nume: 'Regenerabile', definitie: 'pământ, aer, apă' },
+          { nume: 'Neregenerabile', definitie: 'combustibili fosili, minereuri' }
+        ] },
+        { criteriu: 'Resurse naturale, după posibilitatea recuperării', categorii: [
+          { nume: 'Recuperabile', definitie: 'o gamă largă de materii prime' },
+          { nume: 'Parțial recuperabile', definitie: 'resursele biologice' },
+          { nume: 'Nerecuperabile', definitie: 'resursele de energie' }
+        ] }
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'cost-oportunitate', nr: '4', titlu: 'Costul de oportunitate',
+      text: [
+        'Din cauză că resursele sunt insuficiente pentru a acoperi toate nevoile, orice alegere în producție sau în consum implică o renunțare - un cost. Costul de oportunitate reprezintă valoarea celei mai bune alternative de alocare a resurselor la care se renunță, în favoarea alternativei alese.',
+        'Costul de oportunitate are tendința generală de creștere pe măsură ce se renunță la o cantitate tot mai mare dintr-un bun în favoarea altuia - acesta este conținutul legii creșterii costurilor relative. O explicație vine din caracterul specializat al resurselor: acestea pot fi adaptate pentru o altă utilizare doar până la un punct, dincolo de care adaptarea devine tot mai costisitoare.'
+      ],
+      puncteCheie: [
+        'Are valori minime la alegerile optime (utilizarea rațională a resurselor) și crește în condițiile risipei',
+        'Ar putea fi zero doar dacă resursele ar fi nelimitate numeric',
+        'Se mai numește și cost relativ, pentru că măsoară "câștigul" prin "pierderea" celei mai bune alternative sacrificate',
+        'La un moment dat, cu o singură alternativă de ales: în unități fizice, Co = -x/y; în unități valorice, Co = (-x/y) x Px',
+        'Într-un interval de timp, cu mai multe alternative: în unități fizice, Co = -Δx/Δy; în unități valorice, Co = (-Δx/Δy) x Px'
+      ],
+      exemple: [
+        'Firma "Diana" S.R.L. poate produce, dintr-o cantitate dată de lapte, fie brânză, fie iaurt, în variantele: A (500 kg brânză, 0 kg iaurt), B (400, 200), C (200, 400), D (0, 500). Trecând de la A la B, costul de oportunitate al unui kilogram de iaurt e de 0,5 kg brânză; trecând de la B la C, ajunge la 1 kg brânză; trecând de la C la D, la 2 kg brânză. Costul de oportunitate al iaurtului crește pe măsură ce se produce tot mai mult din el - exact legea creșterii costurilor relative. Poți explora aceste 4 variante mai jos, în secțiunea V.'
+      ],
+      formule: [
+        { nume: 'Cost de oportunitate, o alegere, unități fizice', formula: 'Co = -x / y' },
+        { nume: 'Cost de oportunitate, o alegere, unități valorice', formula: 'Co = (-x/y) x Px' },
+        { nume: 'Cost de oportunitate, într-un interval de timp', formula: 'Co = -Δx / Δy' }
+      ],
+      calculator: 'costOportunitate',
+      notaLegatura: { href: '#sect-ppf', text: 'Vezi explorarea completă a celor 4 variante (A-D) în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'stiinta-economica', nr: '5', titlu: 'Ce studiază economia',
+      text: [
+        'Economia este o știință socială care studiază comportamentul oamenilor în activitatea de alocare a resurselor limitate, cu întrebuințări alternative, pentru acoperirea nevoilor. Alocarea resurselor implică patru întrebări fundamentale, la care economia trebuie să răspundă permanent: ce, cât, cum și pentru cine să producem?',
+        'Economistul J.K. Galbraith arăta că economia studiază, pe scurt, procesul prin care este servit individul, comportamentul uman ca relație între țeluri și resurse rare cu întrebuințări alternative, și modul în care decidem să folosim resursele productive rare pentru un anumit scop.',
+        'În funcție de nivelul la care analizează fenomenele economice, economia se împarte în microeconomie - studiază comportamentul unităților economice individuale - și macroeconomie - studiază comportamentul agregat al unităților economice, la nivelul economiei naționale.'
+      ],
+      puncteCheie: [
+        'Obiectivele economiei ca știință: descrie și explică fenomenele și comportamentul oamenilor în activitatea economică; prognozează stări și evoluții economice; oferă instrumente de utilizare rațională a resurselor',
+        'Cunoștințele economice au caracter științific, cognitiv, practic (pregătire profesională), educativ și istoric'
+      ],
+      clasificari: [
+        { criteriu: 'Nivelele de analiză economică', categorii: [
+          { nume: 'Microeconomia', definitie: 'studiază comportamentul unităților economice individuale (o firmă, un consumator)' },
+          { nume: 'Macroeconomia', definitie: 'studiază comportamentul agregat, la nivelul economiei naționale' }
+        ] }
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'indicatori-economici', nr: '6', titlu: 'Indicatorii economici și dinamica lor',
+      text: [
+        'Indicatorul economic este expresia cantitativă sau calitativă a rezultatelor activității economice (de exemplu, prețul unui bun e un indicator cantitativ, iar calitatea lui, unul calitativ). Dinamica unui indicator - felul în care evoluează de la o perioadă la alta - se apreciază în mărimi absolute și în mărimi relative (procentuale).',
+        'Modificarea absolută arată cu cât se modifică o variabilă de la o perioadă (0) la alta (1). Indicele arată de câte ori se modifică o variabilă de la o perioadă la alta. Modificarea procentuală (relativă) arată cu cât se modifică, procentual, o variabilă.'
+      ],
+      exemple: [
+        'Dacă producția crește de la 3 tone la 5 tone, modificarea absolută este ΔQ = 5 - 3 = 2 tone. Dacă venitul crește de la 50 la 80 u.m., modificarea procentuală este Δ%V = (80-50)/50 x 100 = 60%. Dacă venitul crește cu 30%, indicele e IV = 100% + 30% = 130% (venitul a crescut de 1,3 ori).'
+      ],
+      formule: [
+        { nume: 'Modificarea absolută', formula: 'ΔX = X1 - X0' },
+        { nume: 'Indicele', formula: 'IX = (X1/X0) x 100' },
+        { nume: 'Modificarea procentuală (relativă)', formula: 'Δ%X = IX - 100' }
+      ],
+      calculator: 'indicatori'
+    }
+  ],
+  grila: [
+    { intrebare: 'Care dintre următoarele nevoi este considerată nelimitată, în sensul că nu poate fi niciodată complet satisfăcută?', optiuni: ['nevoia de a bea apă atunci când ți-e sete', 'nevoia de somn, opt ore pe noapte', 'nevoia de cunoaștere și informare', 'nevoia de a respira'], corect: 2, explicatie: 'Nevoile elementare (apă, somn, respirație) se satisfac prin consumul unei cantități limitate și clar definite; nevoile complexe, precum cunoașterea, sunt dinamice și practic nelimitate.' },
+    { intrebare: 'Care dintre următoarele reprezintă un bun liber, nu un bun economic?', optiuni: ['pâinea de la brutărie', 'aerul pe care îl respirăm', 'un bilet de autobuz', 'un calculator'], corect: 1, explicatie: 'Bunurile libere sunt daruri ale naturii, la care avem acces gratuit (aerul, lumina solară); celelalte necesită efort și resurse pentru a fi produse, deci sunt bunuri economice.' },
+    { intrebare: 'Pe măsură ce se renunță tot mai mult la producerea unui bun în favoarea altuia, costul de oportunitate:', optiuni: ['scade', 'crește', 'rămâne constant', 'devine zero'], corect: 1, explicatie: 'Aceasta este legea creșterii costurilor relative: costul de oportunitate crește pe măsură ce alocăm unei singure utilizări tot mai multe resurse, inițial specializate în altă direcție.' },
+    { intrebare: 'Studiul comportamentului agregat al economiei, la nivel național, este obiectul de studiu al:', optiuni: ['microeconomiei', 'macroeconomiei', 'contabilității', 'dreptului economic'], corect: 1, explicatie: 'Macroeconomia analizează fenomenele la nivelul întregii economii naționale; microeconomia se ocupă de comportamentul unităților economice individuale.' },
+    { intrebare: 'Resursele naturale precum zăcămintele de petrol sau cărbune sunt, din punctul de vedere al duratei folosirii:', optiuni: ['regenerabile', 'neregenerabile', 'nelimitate', 'bunuri libere'], corect: 1, explicatie: 'Combustibilii fosili se formează într-un timp geologic uriaș și nu se pot reface la scara utilizării umane, deci sunt resurse neregenerabile.' }
+  ],
+  af: [
+    { enunt: 'Nevoile umane sunt, în general, limitate numeric.', corect: false, explicatie: 'Nevoile sunt dinamice și nelimitate numeric - se multiplică și se diversifică permanent; ceea ce e limitat este volumul de bun necesar pentru a satisface o nevoie la un moment dat.' },
+    { enunt: 'Resursa umană este considerată cea mai importantă resursă economică.', corect: true, explicatie: 'Așa cum arată manualul, resursa umană e cea mai importantă resursă economică, iar resursele naturale sunt sursa primară de satisfacere a nevoilor.' },
+    { enunt: 'Costul de oportunitate ar putea fi zero dacă resursele economice ar fi nelimitate numeric.', corect: true, explicatie: 'Dacă resursele nu ar fi rare, nicio alegere nu ar presupune o renunțare reală, deci costul de oportunitate ar dispărea.' },
+    { enunt: 'Un bun liber, precum aerul, circulă de regulă ca marfă, la fel ca un bun economic.', corect: false, explicatie: 'Bunurile libere sunt, prin definiție, virtual nelimitate și accesul la ele e gratuit; doar bunurile economice (limitate, produse prin efort) circulă, de regulă, ca mărfuri.' },
+    { enunt: 'Modificarea procentuală a unei variabile economice se calculează raportând modificarea absolută la valoarea din perioada curentă (X1).', corect: false, explicatie: 'Se raportează la valoarea din perioada anterioară (X0): Δ%X = (X1-X0)/X0 x 100, nu la X1.' }
+  ],
+  probleme: [
+    { enunt: 'O firmă poate produce, dintr-o cantitate dată de materie primă, fie 800 kg de brânză (0 kg iaurt), fie 600 kg de brânză și 100 kg de iaurt. Care este costul de oportunitate al primului kilogram de iaurt produs, în kg de brânză?', unitate: 'kg brânză', corect: 2, toleranta: 0.1, explicatie: 'Co = -Δbrânză/Δiaurt = -(600-800)/(100-0) = -(-200)/100 = 2 kg brânză pentru fiecare kg de iaurt.' },
+    { enunt: 'Venitul unei familii a crescut de la 4.000 lei la 5.200 lei. Calculați modificarea procentuală (relativă) a venitului.', unitate: '%', corect: 30, toleranta: 0.5, explicatie: 'Δ%V = (V1-V0)/V0 x 100 = (5200-4000)/4000 x 100 = 30%.' },
+    { enunt: 'Prețul unui produs a ajuns să fie de 1,4 ori mai mare față de perioada anterioară. Cu ce procent a crescut prețul?', unitate: '%', corect: 40, toleranta: 0.5, explicatie: 'Dacă indicele e 1,4 (140%), modificarea procentuală este Δ%P = IP - 100% = 40%.' },
+    { enunt: 'Prețul unui caiet este 15 u.m., iar al unui pix este 5 u.m. Care este costul de oportunitate al achiziționării a 3 caiete, exprimat în număr de pixuri?', unitate: 'pixuri', corect: 9, toleranta: 0.1, explicatie: '3 caiete costă 3 x 15 = 45 u.m.; cu aceiași bani s-ar fi putut cumpăra 45/5 = 9 pixuri, deci acesta e costul de oportunitate al celor 3 caiete.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corespunzătoare.',
+      coloanaA: [
+        { id: 't1', text: 'Bun liber' },
+        { id: 't2', text: 'Cost de oportunitate' },
+        { id: 't3', text: 'Macroeconomia' },
+        { id: 't4', text: 'Resursă economică' }
+      ],
+      coloanaB: [
+        { id: 'd1', text: 'Ramura economiei care studiază comportamentul agregat, la nivelul economiei naționale' },
+        { id: 'd2', text: 'Element uman, natural sau creat de om, folosit pentru a obține bunuri și servicii' },
+        { id: 'd3', text: 'Cel mai bun lucru la care renunți atunci când faci o alegere' },
+        { id: 'd4', text: 'Dar al naturii, la care ai acces gratuit și practic nelimitat' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'd4' },
+        { stanga: 't2', dreapta: 'd3' },
+        { stanga: 't3', dreapta: 'd1' },
+        { stanga: 't4', dreapta: 'd2' }
+      ],
+      explicatie: 'Aceste patru noțiuni stau la baza întregii economii - orice altă lecție le presupune deja înțelese.'
+    }
+  ]
+};
+
+// ---------------------------------------------------------------------
+// Functii economice specifice acestui capitol (motorul de calcul).
+// ---------------------------------------------------------------------
+function calculeazaCo(dx, dy) {
+  return Math.abs(dx / dy);
+}
+function calculeazaModificare(x0, x1) {
+  const absoluta = x1 - x0;
+  const indice = (x1 / x0) * 100;
+  const procentuala = indice - 100;
+  return { absoluta, indice, procentuala };
+}
+
+// ---------------------------------------------------------------------
+// Helpere DOM (identice cu celelalte capitole - motorul comun)
+// ---------------------------------------------------------------------
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+
+// Mini-grafic cu bare, folosit ca sprijin vizual pentru calculatoarele
+// inline (care altfel ar da doar text). items: [{label, val, color}, ...]
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 26, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 12, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10.5, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+
+// ---------------------------------------------------------------------
+// Arbore de clasificare: un criteriu (eticheta) care se ramifica in
+// categoriile lui - inlocuieste liste plate de bullet-uri acolo unde
+// continutul e, de fapt, o defalcare/clasificare, nu proprietati
+// independente. Latimea fiecarei cutii se calculeaza din lungimea
+// textului, ca sa incapa orice eticheta fara sa se suprapuna.
+// ---------------------------------------------------------------------
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+
+// categorii: listă de texte SAU de {nume, definitie}. optiuni.orientare:
+// 'orizontal' (implicit) sau 'vertical' - util cand sunt multe categorii
+// sau etichete lungi, ca sa nu se inghesuie pe latime.
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Grafice: schelet comun (axe, grid), reutilizabil pentru orice diagrama.
+// ---------------------------------------------------------------------
+function creazaGraficBaza(maxX, maxY, opts) {
+  opts = opts || {};
+  const width = 400, height = 260;
+  const left = 50, right = 10, top = 18, bottom = 34;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': opts.aria || 'Grafic' });
+  for (let i = 1; i < 5; i++) {
+    const gy = top + (chartH / 5) * i;
+    svg.appendChild(elNS('line', { x1: left, y1: gy, x2: left + chartW, y2: gy, stroke: 'var(--surface-2)', 'stroke-width': 1 }));
+  }
+  for (let i = 1; i < 6; i++) {
+    const gx = left + (chartW / 6) * i;
+    svg.appendChild(elNS('line', { x1: gx, y1: top, x2: gx, y2: top + chartH, stroke: 'var(--surface-2)', 'stroke-width': 1 }));
+  }
+  svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' });
+  labelY.textContent = opts.labelY || '';
+  const labelX = elNS('text', { x: left + chartW, y: height - 10, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' });
+  labelX.textContent = opts.labelX || '';
+  svg.appendChild(labelY); svg.appendChild(labelX);
+  const sx = x => left + (x / maxX) * chartW;
+  const sy = y => top + chartH - (y / maxY) * chartH;
+  return { svg, sx, sy, left, top, chartW, chartH, width, height };
+}
+
+// ---------------------------------------------------------------------
+// Scor
+// ---------------------------------------------------------------------
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+// ---------------------------------------------------------------------
+// Calculatoare inline (folosite in sectiunile 4 si 6 de teorie)
+// ---------------------------------------------------------------------
+function buildCostOportunitateCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: costul de oportunitate'));
+  const randuri = el('div', 'mini-calc__randuri');
+
+  const labelX = document.createElement('label');
+  labelX.appendChild(document.createTextNode('Cât sacrifici (Δx)'));
+  const inputX = document.createElement('input'); inputX.type = 'number'; inputX.step = 'any'; inputX.placeholder = 'ex. 200';
+  labelX.appendChild(inputX);
+
+  const labelY = document.createElement('label');
+  labelY.appendChild(document.createTextNode('Cât câștigi (Δy)'));
+  const inputY = document.createElement('input'); inputY.type = 'number'; inputY.step = 'any'; inputY.placeholder = 'ex. 100';
+  labelY.appendChild(inputY);
+
+  randuri.appendChild(labelX); randuri.appendChild(labelY);
+  box.appendChild(randuri);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat', 'Introdu ambele valori.');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const dx = Number(inputX.value), dy = Number(inputY.value);
+    if (inputX.value === '' || inputY.value === '' || isNaN(dx) || isNaN(dy) || dy === 0) {
+      rezultat.textContent = 'Introdu ambele valori (Δy diferit de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const co = calculeazaCo(dx, dy);
+    rezultat.innerHTML = '';
+    rezultat.appendChild(document.createTextNode('Costul de oportunitate: '));
+    const strong = document.createElement('strong');
+    strong.textContent = co.toFixed(2);
+    rezultat.appendChild(strong);
+    rezultat.appendChild(document.createTextNode(' unități sacrificate pentru fiecare unitate câștigată.'));
+    chartWrap.innerHTML = '';
+    const maxV = Math.max(Math.abs(dx), Math.abs(dy), 1) * 1.15;
+    chartWrap.appendChild(buildDumbbellChart('Câștigi (Δy)', Math.abs(dy), 'Sacrifici (Δx)', Math.abs(dx), maxV, 'var(--accent)', 'var(--bad)'));
+  }
+  inputX.addEventListener('input', recalc);
+  inputY.addEventListener('input', recalc);
+  recalc();
+  return box;
+}
+
+function buildIndicatoriCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: dinamica unui indicator'));
+  const randuri = el('div', 'mini-calc__randuri');
+
+  const labelX0 = document.createElement('label');
+  labelX0.appendChild(document.createTextNode('Valoare inițială (X0)'));
+  const inputX0 = document.createElement('input'); inputX0.type = 'number'; inputX0.step = 'any'; inputX0.placeholder = 'ex. 100';
+  labelX0.appendChild(inputX0);
+
+  const labelX1 = document.createElement('label');
+  labelX1.appendChild(document.createTextNode('Valoare curentă (X1)'));
+  const inputX1 = document.createElement('input'); inputX1.type = 'number'; inputX1.step = 'any'; inputX1.placeholder = 'ex. 130';
+  labelX1.appendChild(inputX1);
+
+  randuri.appendChild(labelX0); randuri.appendChild(labelX1);
+  box.appendChild(randuri);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat', 'Introdu ambele valori (X0 diferit de 0).');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const x0 = Number(inputX0.value), x1 = Number(inputX1.value);
+    if (inputX0.value === '' || inputX1.value === '' || isNaN(x0) || isNaN(x1) || x0 === 0) {
+      rezultat.textContent = 'Introdu ambele valori (X0 diferit de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const r = calculeazaModificare(x0, x1);
+    rezultat.innerHTML = '';
+    rezultat.appendChild(document.createTextNode('ΔX = '));
+    let s = document.createElement('strong'); s.textContent = r.absoluta.toFixed(2); rezultat.appendChild(s);
+    rezultat.appendChild(document.createTextNode('   Indice = '));
+    s = document.createElement('strong'); s.textContent = r.indice.toFixed(1) + '%'; rezultat.appendChild(s);
+    rezultat.appendChild(document.createTextNode('   Δ% = '));
+    s = document.createElement('strong'); s.textContent = r.procentuala.toFixed(1) + '%'; rezultat.appendChild(s);
+    chartWrap.innerHTML = '';
+    const maxV = Math.max(Math.abs(x0), Math.abs(x1), 1) * 1.15;
+    chartWrap.appendChild(buildDumbbellChart('X0 (inițial)', Math.abs(x0), 'X1 (curent)', Math.abs(x1), maxV, 'var(--text-muted)', 'var(--accent)'));
+  }
+  inputX0.addEventListener('input', recalc);
+  inputX1.addEventListener('input', recalc);
+  recalc();
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// Sectiuni de teorie
+// ---------------------------------------------------------------------
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'costOportunitate') body.appendChild(buildCostOportunitateCalc());
+  if (item.calculator === 'indicatori') body.appendChild(buildIndicatoriCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+// ---------------------------------------------------------------------
+// I. Teste grila
+// ---------------------------------------------------------------------
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+
+  card.appendChild(optWrap);
+  card.appendChild(verifBtn);
+  card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// II. Adevarat / Fals
+// ---------------------------------------------------------------------
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA);
+  wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true;
+    btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+
+  card.appendChild(wrap);
+  card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// III. Probleme numerice
+// ---------------------------------------------------------------------
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number';
+  input.step = 'any';
+  input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0';
+  verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true;
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+
+  card.appendChild(wrap);
+  card.appendChild(feedback);
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// IV. Asociere (termen - definitie)
+// ---------------------------------------------------------------------
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+
+  let selectatId = null;
+  let rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++;
+        selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+
+  return card;
+}
+
+// ---------------------------------------------------------------------
+// V. Explorator: Curba posibilitatilor de productie (branza / iaurt)
+// ---------------------------------------------------------------------
+function buildPPFExplorer() {
+  const puncte = [
+    { nume: 'A', branza: 500, iaurt: 0 },
+    { nume: 'B', branza: 400, iaurt: 200 },
+    { nume: 'C', branza: 200, iaurt: 400 },
+    { nume: 'D', branza: 0, iaurt: 500 }
+  ];
+  const maxBranza = 550, maxIaurt = 550;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Firma "Diana" S.R.L. poate produce doar brânză și iaurt, în variantele A-D. Alege o variantă și vezi combinația obținută și costul de oportunitate al trecerii de la varianta anterioară.'));
+
+  const g = creazaGraficBaza(maxBranza, maxIaurt, { aria: 'Curba posibilitatilor de productie: branza si iaurt', labelX: 'Brânză (kg)', labelY: 'Iaurt (kg)' });
+
+  const linie = elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => g.sx(p.branza) + ',' + g.sy(p.iaurt)).join(' ') });
+  g.svg.appendChild(linie);
+
+  puncte.forEach(p => {
+    g.svg.appendChild(elNS('circle', { cx: g.sx(p.branza), cy: g.sy(p.iaurt), r: 3.5, fill: 'var(--text-muted)' }));
+    const t = elNS('text', { x: g.sx(p.branza) + 7, y: g.sy(p.iaurt) - 7, 'font-family': 'var(--font-mono)', 'font-size': 11, fill: 'var(--text-muted)' });
+    t.textContent = p.nume;
+    g.svg.appendChild(t);
+  });
+
+  const punctActiv = elNS('circle', { r: 6, fill: 'var(--mark)' });
+  g.svg.appendChild(punctActiv);
+  wrap.appendChild(g.svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Curba posibilităților de producție'));
+  legenda.appendChild(legendItem('var(--mark)', 'Varianta selectată'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxCombinatie = document.createElement('div');
+  const strongCombinatie = document.createElement('strong');
+  boxCombinatie.appendChild(strongCombinatie);
+  boxCombinatie.appendChild(el('span', '', 'Combinație (brânză kg / iaurt kg)'));
+  const boxCo = document.createElement('div');
+  const strongCo = document.createElement('strong');
+  boxCo.appendChild(strongCo);
+  boxCo.appendChild(el('span', '', 'Cost de oportunitate (kg brânză / kg iaurt suplimentar)'));
+  citire.appendChild(boxCombinatie); citire.appendChild(boxCo);
+  wrap.appendChild(citire);
+
+  const sliders = el('div', 'simulator__sliders');
+  const row = el('div', 'slider-row');
+  const label = document.createElement('label');
+  const labelTxt = el('span', '', 'Varianta de producție');
+  const labelVal = el('span', '', 'A');
+  label.appendChild(labelTxt); label.appendChild(labelVal);
+  row.appendChild(label);
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '0'; slider.max = '3'; slider.step = '1'; slider.value = '0';
+  row.appendChild(slider);
+  sliders.appendChild(row);
+  wrap.appendChild(sliders);
+
+  function recalc(idx) {
+    const p = puncte[idx];
+    labelVal.textContent = p.nume;
+    punctActiv.setAttribute('cx', g.sx(p.branza));
+    punctActiv.setAttribute('cy', g.sy(p.iaurt));
+    strongCombinatie.textContent = p.branza + ' / ' + p.iaurt;
+    if (idx === 0) {
+      strongCo.textContent = '\u2013';
+    } else {
+      const prev = puncte[idx - 1];
+      strongCo.textContent = calculeazaCo(prev.branza - p.branza, p.iaurt - prev.iaurt).toFixed(2);
+    }
+  }
+  slider.addEventListener('input', () => recalc(Number(slider.value)));
+  recalc(0);
+
+  return wrap;
+}
+
+// ---------------------------------------------------------------------
+// Asamblare pagina
+// ---------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+  DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+  DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+
+  root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+  root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+  DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowPPF = el('div', 'exercitiu-eyebrow', 'V. Explorator: curba posibilităților de producție');
+  eyebrowPPF.id = 'sect-ppf';
+  root.appendChild(eyebrowPPF);
+  root.appendChild(el('div', 'exercitiu-sub', 'Aceleași 4 variante ca la secțiunea IV din teorie, dar acum le poți explora.'));
+  root.appendChild(buildPPFExplorer());
+});
+</script>
+</body>
+</html>

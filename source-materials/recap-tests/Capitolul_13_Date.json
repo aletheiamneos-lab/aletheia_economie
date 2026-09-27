@@ -1,0 +1,1288 @@
+{
+  "capitol": 13,
+  "titlu_capitol": "Piața muncii. Salariul",
+  "schema_versiune": "2.0",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (piata muncii, cererea si oferta de munca, salariul, formele salariului). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (SN.b, SN.n, SR=SN/Pc, I_SR=(I_SN/I_Pc)x100, PAD, PAM, R.oc.).",
+  "intrebari": [
+    {
+      "id": "C13_T01",
+      "capitol": 13,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața muncii reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv locul unde se stabilesc programele de pregătire profesională",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de muncă, formându-se prețul muncii, numit salariu",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea firmelor care angajează personal calificat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ansamblul resurselor naturale ale unei economii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Ca orice piață, piața muncii se definește prin confruntarea cererii cu oferta — de data aceasta de muncă — proces din care rezultă prețul muncii, numit salariu. Prin urmare, răspunsul corect este: Spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de muncă, formându-se prețul muncii, numit salariu."
+    },
+    {
+      "id": "C13_T02",
+      "capitol": 13,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Din punct de vedere economic, munca este considerată:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un bun economic identic, sub toate aspectele, cu orice alt bun de larg consum",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv un serviciu public, prestat gratuit",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O „marfă specială”, așa cum a caracterizat-o economistul Samuelson, deși din punct de vedere juridic munca nu este o marfă",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un factor de producție care nu poate fi niciodată remunerat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Economic, munca se tranzacționează ca o marfă — dar una specială, așa cum a subliniat Samuelson, tocmai pentru că din punct de vedere juridic ea rămâne inseparabilă de persoana care o prestează. Prin urmare, răspunsul corect este: O „marfă specială”, așa cum a caracterizat-o economistul Samuelson, deși din punct de vedere juridic munca nu este o marfă."
+    },
+    {
+      "id": "C13_T03",
+      "capitol": 13,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Obiectul tranzacțiilor de pe piața muncii îl reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv munca prestată de femeile casnice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Munca salariată, nu întreaga muncă desfășurată în economie",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea timpului liber al populației active",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv munca voluntară, neremunerată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Piața muncii nu cuprinde orice fel de activitate umană, ci strict munca salariată — cea remunerată printr-un contract de muncă — nu munca casnică, voluntară sau timpul liber. Prin urmare, răspunsul corect este: Munca salariată, nu întreaga muncă desfășurată în economie."
+    },
+    {
+      "id": "C13_T04",
+      "capitol": 13,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Purtătorii cererii de muncă de pe piața muncii sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Utilizatorii resurselor de muncă disponibile (firme, bănci, administrații etc.)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv oficiile de plasare a forței de muncă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv sindicatele",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv guvernul",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cererea de muncă vine din partea celor care au nevoie de forță de muncă pentru a-și desfășura activitatea — firme, bănci, administrații — nu din partea sindicatelor sau a instituțiilor intermediare. Prin urmare, răspunsul corect este: Utilizatorii resurselor de muncă disponibile (firme, bănci, administrații etc.)."
+    },
+    {
+      "id": "C13_T05",
+      "capitol": 13,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Purtătorii ofertei de muncă de pe piața muncii sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Posesorii resurselor de muncă disponibile, cu excepția, printre altele, a femeilor casnice apte de muncă și a elevilor/studenților la cursuri de zi",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv firmele care angajează personal",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv utilizatorii resurselor de muncă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv statul, prin instituțiile sale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Oferta de muncă include doar acele persoane apte de muncă ce se pun efectiv la dispoziția pieței — nu întreaga populație aptă, ci excluzând, de exemplu, femeile casnice sau elevii/studenții la cursuri de zi, care nu caută un loc de muncă salariat. Prin urmare, răspunsul corect este: Posesorii resurselor de muncă disponibile, cu excepția, printre altele, a femeilor casnice apte de muncă și a elevilor/studenților la cursuri de zi."
+    },
+    {
+      "id": "C13_T06",
+      "capitol": 13,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre intermediarii de pe piața muncii se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sindicatele, guvernul și oficiile de plasare a forței de muncă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv societățile de asigurări",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv băncile comerciale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv bursa de valori",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Piața muncii are propriii intermediari — sindicatele, guvernul, oficiile de plasare — instituții distincte de intermediarii pieței financiare sau monetare (bănci, societăți de asigurări, bursă). Prin urmare, răspunsul corect este: Sindicatele, guvernul și oficiile de plasare a forței de muncă."
+    },
+    {
+      "id": "C13_T07",
+      "capitol": 13,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Formarea pieței muncii are loc, în prima fază, la nivelul economiei naționale sau pe mari domenii, unde se stabilesc:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv concediile de odihnă ale salariaților",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv numărul de ore lucrate zilnic de fiecare salariat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv salariul fiecărui angajat în parte, individual",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Condițiile generale de angajare a salariaților și principiile de salarizare",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Piața muncii se formează în două faze: întâi, la nivel național/de ramură, unde se conturează condițiile generale și principiile de salarizare, iar apoi, la nivel microeconomic, unde cererea și oferta se confruntă concret. Prin urmare, răspunsul corect este: Condițiile generale de angajare a salariaților și principiile de salarizare."
+    },
+    {
+      "id": "C13_T08",
+      "capitol": 13,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe piața muncii se manifestă, în principal:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv concurența perfectă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv piața de monopol, fără nicio altă formă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența completă a oricărei forme de concurență",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Concurența imperfectă, sub diferite forme, cum ar fi oligopolul, monopsonul sau monopolul bilateral",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Piața muncii este, prin natura ei, una imperfect concurențială — sindicatele, marile firme angajatoare sau reglementările statului fac imposibilă apariția condițiilor stricte ale concurenței perfecte. Prin urmare, răspunsul corect este: Concurența imperfectă, sub diferite forme, cum ar fi oligopolul, monopsonul sau monopolul bilateral."
+    },
+    {
+      "id": "C13_T09",
+      "capitol": 13,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cererea de muncă reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cantitatea necesară de muncă salariată care se formează în economie, într-o anumită perioadă de timp",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv numărul de șomeri dintr-o economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea nevoii de muncă din economie, indiferent dacă este salarizată sau nu",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Numărul total al populației unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cererea de muncă nu este identică cu nevoia de muncă din întreaga economie (care include și munca nesalarizată) — ea reflectă strict cantitatea de muncă salarizată necesară la un moment dat. Prin urmare, răspunsul corect este: Cantitatea necesară de muncă salariată care se formează în economie, într-o anumită perioadă de timp."
+    },
+    {
+      "id": "C13_T10",
+      "capitol": 13,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Oferta de muncă reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv populația totală a unei țări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv numărul de șomeri înregistrați",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Volumul disponibil al resurselor de muncă în condiții salariale, care se manifestă într-o anumită perioadă de timp în economie",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv numărul locurilor de muncă vacante la un moment dat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Oferta de muncă privește resursele de muncă disponibile care se oferă efectiv pieței, în condiții salariale — nu locurile vacante (care țin de cerere) sau populația totală a țării. Prin urmare, răspunsul corect este: Volumul disponibil al resurselor de muncă în condiții salariale, care se manifestă într-o anumită perioadă de timp în economie."
+    },
+    {
+      "id": "C13_T11",
+      "capitol": 13,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata (gradul) ocupării populației active disponibile [R.oc.(PAD)] se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Produsul dintre salariul mediu și numărul de angajați",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Raportul procentual dintre populația ocupată și populația activă disponibilă",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Raportul procentual dintre populația ocupată și populația totală a țării",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Diferența dintre populația activă disponibilă și numărul de șomeri",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Gradul de ocupare a resurselor de muncă disponibile se măsoară raportând populația efectiv ocupată la totalul populației active disponibile: R.oc.(PAD) = (P.O/PAD) × 100. Prin urmare, răspunsul corect este: Raportul procentual dintre populația ocupată și populația activă disponibilă."
+    },
+    {
+      "id": "C13_T12",
+      "capitol": 13,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața muncii este considerată o piață derivată deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu are nicio legătură cu celelalte piețe ale economiei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este identică, sub toate aspectele, cu piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Reflectă legătura dintre dezvoltarea economică, ca sursă a cererii de muncă, și fenomenele socio-demografice, ca sursă a ofertei de muncă",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Se formează exclusiv independent de orice alt fenomen economic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Piața muncii nu există izolat: cererea de muncă derivă din dezvoltarea economică (nevoia firmelor de a produce), iar oferta de muncă derivă din procesele demografice — de aici caracterul ei de piață derivată. Prin urmare, răspunsul corect este: Reflectă legătura dintre dezvoltarea economică, ca sursă a cererii de muncă, și fenomenele socio-demografice, ca sursă a ofertei de muncă."
+    },
+    {
+      "id": "C13_T13",
+      "capitol": 13,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața muncii este considerată o piață contractuală deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Contractele de muncă nu au nicio valoare juridică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu implică nicio formă de negociere între părți",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Salariul este stabilit exclusiv prin lege, fără nicio negociere",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Negocierile și contractul de muncă joacă un rol esențial în determinarea cererii și ofertei de muncă",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Spre deosebire de piețele unde prețul se formează spontan, pe piața muncii negocierile și contractul de muncă au un rol esențial în stabilirea condițiilor de angajare și de salarizare. Prin urmare, răspunsul corect este: Negocierile și contractul de muncă joacă un rol esențial în determinarea cererii și ofertei de muncă."
+    },
+    {
+      "id": "C13_T14",
+      "capitol": 13,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața muncii este considerată eterogenă și segmentată deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Obiectul tranzacțiilor (munca salariată) este neomogen, ceea ce determină existența unor piețe distincte (a celor cu studii medii, superioare, fără calificare etc.)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Nu există nicio diferențiere între diferitele categorii de angajați",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Toți salariații au exact aceeași pregătire și experiență",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este identică, sub toate aspectele, în orice țară din lume",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Munca nu este un bun omogen: calificarea, experiența și pregătirea diferă mult de la un salariat la altul, ceea ce fragmentează piața muncii în segmente distincte (studii medii, superioare, fără calificare etc.). Prin urmare, răspunsul corect este: Obiectul tranzacțiilor (munca salariată) este neomogen, ceea ce determină existența unor piețe distincte (a celor cu studii medii, superioare, fără calificare etc.)."
+    },
+    {
+      "id": "C13_T15",
+      "capitol": 13,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Salariul reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Profitul obținut de o firmă din vânzarea producției",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv suma de bani economisită de un angajat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul total al unei firme, indiferent de natura cheltuielilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Suma de bani pe care o primește posesorul factorului de producție muncă pentru activitatea desfășurată într-o unitate economică",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Salariul este exact prețul muncii: suma încasată de posesorul factorului de producție muncă drept recompensă pentru activitatea prestată — nu economiile, profitul firmei sau costul ei total. Prin urmare, răspunsul corect este: Suma de bani pe care o primește posesorul factorului de producție muncă pentru activitatea desfășurată într-o unitate economică."
+    },
+    {
+      "id": "C13_T16",
+      "capitol": 13,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Salariul nominal net (SN.n) se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "SN.n = SN.b + Iz.(SN.b)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "SN.n = SN.b – Iz.(SN.b), unde Iz. este impozitul pe salariul brut",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "SN.n = SN.b × Iz.(SN.b)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "SN.n este întotdeauna egal cu salariul real",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Salariul net este ceea ce rămâne efectiv salariatului după impozitare: SN.n = SN.b – Iz.(SN.b) — nu o sumă mai mare decât brutul, și nici identic cu salariul real (care ține cont și de prețuri). Prin urmare, răspunsul corect este: SN.n = SN.b – Iz.(SN.b), unde Iz. este impozitul pe salariul brut."
+    },
+    {
+      "id": "C13_T17",
+      "capitol": 13,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Salariul real (SR) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Suma brută încasată de salariat, înainte de impozitare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Diferența dintre salariul nominal brut și cel net",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Expresia monetară a cantității de bunuri materiale și servicii ce se poate cumpăra cu salariul nominal, la un moment dat",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv salariul minim pe economie, stabilit prin lege",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Salariul real depășește simpla sumă de bani încasată: el arată cât se poate cumpăra efectiv cu acei bani, ținând cont de nivelul prețurilor bunurilor de consum — SR = SN/Pc. Prin urmare, răspunsul corect este: Expresia monetară a cantității de bunuri materiale și servicii ce se poate cumpăra cu salariul nominal, la un moment dat."
+    },
+    {
+      "id": "C13_T18",
+      "capitol": 13,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre formele salariului indirect se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv salariul nominal net",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Salariul colectiv, salariul social și salariul familial",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv salariul minim garantat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv salariul nominal brut",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Salariul indirect nu depinde exclusiv de rezultatele muncii prestate: el include salariul colectiv (facilități pentru toți angajații), salariul social (sprijin pentru cei afectați de șomaj etc.) și salariul familial (ajutoare pentru căsătorie, nașteri). Prin urmare, răspunsul corect este: Salariul colectiv, salariul social și salariul familial."
+    },
+    {
+      "id": "C13_T19",
+      "capitol": 13,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre factorii cu acțiune directă asupra nivelului și dinamicii salariului se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv intervenția statului prin stabilirea salariului minim",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv migrația internațională a forței de muncă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Productivitatea muncii, printr-o relație direct proporțională",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv legislația privind protecția șomerilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Productivitatea muncii este un factor cu acțiune directă, esențial pentru nivelul salariului — spre deosebire de salariul minim, legislația privind șomajul sau migrația forței de muncă, care sunt factori cu acțiune indirectă. Prin urmare, răspunsul corect este: Productivitatea muncii, printr-o relație direct proporțională."
+    },
+    {
+      "id": "C13_T20",
+      "capitol": 13,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Câștigul salarial real (Cș.R) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv suma de bani încasată pentru orele suplimentare lucrate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Profitul obținut de firmă din activitatea salariatului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv impozitul plătit de salariat pe venitul obținut",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cantitatea de bunuri materiale și servicii pe care salariatul le poate cumpăra cu ajutorul câștigului nominal net, la un anumit nivel al prețurilor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Câștigul real (Cș.R = Cș.N.n/Pc) merge dincolo de salariul de bază, incluzând toate veniturile salariale suplimentare (ore suplimentare, prime, sporuri), exprimate în puterea lor efectivă de cumpărare. Prin urmare, răspunsul corect este: Cantitatea de bunuri materiale și servicii pe care salariatul le poate cumpăra cu ajutorul câștigului nominal net, la un anumit nivel al prețurilor."
+    },
+    {
+      "id": "C13_E01",
+      "capitol": 13,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Salariul nominal brut (SN.b) este 2.400 u.m. și se impozitează cu 10%. În perioada curentă, salariul nominal net (SN.n) este 2.484 u.m., iar prețurile bunurilor de consum scad cu 8%. Modificarea procentuală a puterii de cumpărare a salariului nominal (Δ%SR) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "– 8%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "8%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "SN.n₀ = 90% × 2.400 = 2.160 u.m. I_SN = (2.484/2.160) × 100 = 115%, iar I_Pc = 92% (prețurile scad cu 8%) → I_SR = (115/92) × 100 = 125% ⇒ Δ%SR = 25%."
+    },
+    {
+      "id": "C13_E02",
+      "capitol": 13,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă SN.b = 3.200 u.m. și impozitul pe salariul nominal este 10%, iar prețurile bunurilor de consum scad cu 10%, atunci salariul real (SR₁) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3.556 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3.200 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "2.880 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2.592 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "SN.n = 90% × 3.200 = 2.880 u.m., iar I_Pc = 90% → SR₁ = 2.880/0,9 = 3.200 u.m."
+    },
+    {
+      "id": "C13_E03",
+      "capitol": 13,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Sporul absolut al salariului nominal (ΔSN) care asigură creșterea cu 20% a salariului real, în condițiile în care prețurile cresc cu 25%, iar SN₁ = 6.000 u.m., este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2.000 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "1.500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1.200 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4.800 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_SR = 120% și I_P = 125% → I_SN = (1,20 × 1,25) × 100 = 150% = (6.000/SN₀) × 100 → SN₀ = 4.000 u.m. ⇒ ΔSN = 6.000 – 4.000 = 2.000 u.m."
+    },
+    {
+      "id": "C13_E04",
+      "capitol": 13,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă salariul nominal scade cu 10%, iar puterea de cumpărare a unei unități monetare (PCB) crește cu 20%, atunci salariul real, în mărimi relative (Δ%SR):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "crește cu 8%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "scade cu 30%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "scade cu 8%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "crește cu 10%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_SN = 90%, iar I_PCB = 120% = (1/I_Pc) × 100 → I_Pc ≈ 83,33% → I_SR = (90/83,33) × 100 ≈ 108% ⇒ Δ%SR ≈ 8%."
+    },
+    {
+      "id": "C13_E05",
+      "capitol": 13,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivelul economiei, indicele prețurilor bunurilor de consum este 115%. În urma negocierilor dintre patronat și sindicate, s-a hotărât ca salariul mediu nominal de 1.400 u.m. să fie indexat cu 80% din rata inflației. Salariul nominal în perioada curentă (SN₁) și indicele salariului real (I_SR) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.680 u.m. și 104,3%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.400 u.m. și 86,9%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1.568 u.m. și 97,39%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1.610 u.m. și 100%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "r.i = 15%, iar indexarea (Δ%SN) = 80% × 15% = 12% → SN₁ = 1,12 × 1.400 = 1.568 u.m. ⇒ I_SR = (I_SN/I_Pc) × 100 = (112/115) × 100 ≈ 97,39%."
+    },
+    {
+      "id": "C13_E06",
+      "capitol": 13,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă prețurile bunurilor de consum scad cu 8% în condițiile sporirii salariului real cu 25%, atunci salariul nominal, în mărimi relative (Δ%SN):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "scade cu 33%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "sporește cu 15%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "sporește cu 33%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "scade cu 15%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_Pc = 92% și I_SR = 125% → I_SN = (0,92 × 1,25) × 100 = 115% ⇒ Δ%SN = 15%."
+    },
+    {
+      "id": "C13_E07",
+      "capitol": 13,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Salariul nominal este indexat cu 8%, în condițiile sporirii salariului real de 1,2 ori. Prețurile bunurilor de consum au scăzut (–Δ%Pc) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "12%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "90%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_SN = 108% și I_SR = 120% → I_Pc = (108/120) × 100 = 90% ⇒ Δ%Pc = –10%."
+    },
+    {
+      "id": "C13_E08",
+      "capitol": 13,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "SN₁ = 1.800 u.m. În perioada t₀→t₁, salariul real nu s-a modificat, deși prețurile bunurilor de consum s-au redus cu 20%. Salariul nominal în perioada anterioară (SN₀) a fost:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2.160 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2.250 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1.440 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_SR = 100% și I_Pc = 80% → I_SN = 80% = (1.800/SN₀) × 100 ⇒ SN₀ = 2.250 u.m."
+    },
+    {
+      "id": "C13_E09",
+      "capitol": 13,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Raportul dintre modificarea procentuală a prețurilor și cea a salariului nominal este de 1/2, iar salariul real a sporit de 1,3 ori, atunci prețurile (P) au crescut de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,5 ori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1,2 ori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2,5 ori",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1,33 ori",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Δ%Pc : Δ%SN = 1/2 → Δ%SN = 2 × Δ%Pc. I_SR = 130% = (I_SN : I_Pc) × 100 → (100% + 2Δ%Pc) = 1,30 × (100% + Δ%Pc) → 100 + 2x = 130 + 1,3x → 0,7x = 30 → Δ%Pc ≈ 33,33% ⇒ I_Pc ≈ 133,33% → P au crescut de aproximativ 1,33 ori."
+    },
+    {
+      "id": "C13_E10",
+      "capitol": 13,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Producția sporește de 2,4 ori, numărul de lucrători cu 100%, iar prețurile bunurilor de consum cu 15%. Dacă salariul nominal sporește cu 75% din creșterea relativă a productivității muncii, atunci salariul real (SR) cunoaște următoarea situație:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "SR₁ = 1,15 SR₀",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "I_SR = 115%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "ΔSR = 0",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Δ%SR = 15%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_Q = 240% și I_L = 200% → I_WL = (240/200) × 100 = 120%, deci Δ%W_L = 20% → Δ%SN = 75% × 20% = 15%, deci I_SN = 115% și I_Pc = 115% → I_SR = 100% → SR₁ = SR₀ ⇒ ΔSR = 0."
+    },
+    {
+      "id": "C13_E11",
+      "capitol": 13,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția ofertei de muncă (Of.M) și a cererii de muncă (Ce.M) sunt de tipul: Of.M = 5S și Ce.M = 150 – 10S. Dacă guvernul fixează salariul mediu nominal (S.N) de 8 u.m., atunci raportul dintre cererea și oferta de muncă, precum și numărul locurilor de muncă neocupate vor fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "deficitar și 30",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "excedentar și 40",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "unitar și 40",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "excedentar și 30",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Of.M = Ce.M → 5S = 150 – 10S → Se = 10 u.m. > 8 u.m. (S.N) ⇒ Of.M < Ce.M, raportul cerere/ofertă este excedentar. La S.N = 8 u.m.: Of.M = 5×8 = 40, iar Ce.M = 150 – 80 = 70 ⇒ locuri de muncă neocupate = 70 – 40 = 30."
+    },
+    {
+      "id": "C13_E12",
+      "capitol": 13,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La o firmă, producția sporește cu 40%, iar numărul de salariați scade de 2,5 ori. Creșterea S.N este de 8% din sporirea relativă a productivității muncii, în condițiile scăderii puterii de cumpărare a salariului nominal cu 4%. Indicele prețurilor bunurilor de consum (I_Pc) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "96%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "104%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "125%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "116%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_Q = 140% și I_L = 40% → I_WL = (140/40) × 100 = 350% → Δ%W_L = 250%. → Δ%S.N = 8% × 250% = 20%, deci I_SN = 120% și I_SR (puterea de cumpărare a SN) = 96% → I_Pc = (I_SN/I_SR) × 100 = (120/96) × 100 = 125%."
+    },
+    {
+      "id": "C13_E13",
+      "capitol": 13,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă are 200 de salariați pe care îi plătește, în t₀, cu un salariu mediu lunar de 150 u.m. Dacă fondul anual de salarii, în t₁, este același, dar are loc o creștere a salariului mediu lunar cu 25%, numărul salariaților disponibilizați (–ΔL) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "40",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "50",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "30",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Fd.S/an₀ = L₀ × S₀ × 12 luni = 200 × 150 × 12 = 360.000 u.m. Fd.S/an₀ = Fd.S/an₁, iar I_SN = 125% → SN₁ = 1,25 × 150 = 187,5 u.m. → L₁ = 360.000/(187,5 × 12) = 160 ⇒ ΔL = 160 – 200 = –40."
+    },
+    {
+      "id": "C13_E14",
+      "capitol": 13,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă se dorește menținerea constantă a salariului nominal, în condițiile scăderii prețurilor satisfăcătorilor cu 5%, atunci salariul real, în mărimi procentuale (Δ%S.R), va înregistra o:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "creștere cu 5,26%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "scădere cu 5,26%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "creștere cu 105,26%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "menținere constantă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_SN = 100%, iar I_Pc = 95% → Δ%S.R = (I_SN/I_Pc) × 100 – 100% = (100/95) × 100 – 100% ≈ 105,26% – 100% ≈ 5,26% (creștere)."
+    },
+    {
+      "id": "C13_E15",
+      "capitol": 13,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă pe piața muncii, Of.M = 400 + 4S și Ce.M = 1.000 – 6S (unde S = salariul), numărul locurilor de muncă (L.Mc.), în condițiile unui echilibru pe piața muncii, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "640",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "460",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "600",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "500",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Of.M = Ce.M → 400 + 4S = 1.000 – 6S → Se. = 60 u.m. ⇒ Ce.M[L.Mc.(optim)] = 1.000 – 6×60 = 640."
+    },
+    {
+      "id": "C13_E16",
+      "capitol": 13,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă PAD = 80%PAM și PAM.nd. = 2,5 mil. persoane, iar Ș = 25%PAD, atunci raportul dintre P.O și PAM este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1/4",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3/5",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "2/5",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4/5",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "PAM = PAD + PAM.nd. = 80%PAM + 2,5 mil. pers. → PAM = 12,5 mil. pers. și PAD = 10 mil. pers.; Ș = 25% × 10 mil. = 2,5 mil. pers. → P.O = (10 – 2,5) mil. = 7,5 mil. pers. ⇒ P.O/PAM = 7,5/12,5 = 3/5."
+    },
+    {
+      "id": "C13_E17",
+      "capitol": 13,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă într-un an, PAD a sporit cu 1,5 mil. persoane, respectiv cu 12%, atunci populația activă disponibilă în perioada curentă (PAD₁) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "13,5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "11 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "12,5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "14 mil. pers.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_PAD = 112% → PAD₁ = 1,12PAD₀; ΔPAD = 1,12PAD₀ – PAD₀ = 1,5 mil. pers. ⇒ PAD₀ = 12,5 mil. pers. și PAD₁ = 14 mil. pers."
+    },
+    {
+      "id": "C13_E18",
+      "capitol": 13,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se cunosc următorii indicatori economici: SN.b₀ = ?, Iz(SN.b) = 10%, Δ%SN.n = 40%, SN.n₀ = 45, SN.n₁ = ?, r.i = 12%, I_SR = ?, SR₀ = 40, SR₁ = ?. Completând spațiile goale pe baza formulelor cunoscute, puterea de cumpărare a salariului nominal (SR), exprimată în u.m.:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a scăzut cu 10",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a crescut cu 5",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a rămas neschimbată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "a crescut cu 10",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "SN.b₀ = 45/0,90 = 50 u.m. SN.n₁ = 1,40 × 45 = 63 → I_SN = 140%. r.i = 12% → I_Pc = 112% → I_SR = (140/112) × 100 = 125% = (SR₁/40) × 100 ⇒ SR₁ = 50 ⇒ SR a crescut cu (50 – 40) = 10 u.m."
+    },
+    {
+      "id": "C13_E19",
+      "capitol": 13,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă într-un an, prețurile bunurilor de producție sporesc cu 25% (informație suplimentară, fără efect direct asupra calculului), iar ale bunurilor de consum cu 30%, în condițiile creșterii salariului nominal cu 17%, atunci cantitatea de bunuri și servicii ce poate fi cumpărată la nivelul actual al prețurilor (–Δ%SR) scade cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "13%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "90%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "47%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "10%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_Pc = 130%, I_SN = 117% → I_SR = (117/130) × 100 = 90% ⇒ Δ%SR = –10% (prețurile bunurilor de producție nu intră direct în formula puterii de cumpărare a salariului, care depinde de prețurile bunurilor de consum)."
+    },
+    {
+      "id": "C13_E20",
+      "capitol": 13,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivelul unei țări se cunosc următoarele: populația totală (PT) = 20 mil. pers., din care PAD reprezintă 80%, iar gradul de ocupare a PAM este de 75%. Dacă numărul șomerilor este 1,6 mil. pers., atunci populația aptă dar neocupată (P.neoc.) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "19,2 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4,8 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "3,2 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "14,4 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "PAD = 80% × 20 mil. = 16 mil. pers. → P.O = (16 – 1,6) mil. = 14,4 mil. pers. → PAM = P.O/R.oc.(PAM) = 14,4/0,75 = 19,2 mil. pers. ⇒ P.neoc. = (19,2 – 14,4) mil. = 4,8 mil. pers."
+    }
+  ]
+}

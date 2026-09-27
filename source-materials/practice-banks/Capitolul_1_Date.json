@@ -1,0 +1,1288 @@
+{
+  "capitol": 1,
+  "titlu_capitol": "Introducere în economie",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din manual (nevoi, bunuri, resurse, costul de oportunitate). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (costul de oportunitate in unitati fizice si valorice).",
+  "intrebari": [
+    {
+      "id": "C1_T01",
+      "capitol": 1,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Conform definiției din economie, nevoile (trebuințele) umane reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ansamblul dorințelor, așteptărilor și cerințelor oamenilor, a căror satisfacere prin consum de bunuri și servicii determină existența și dezvoltarea lor și a societății",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Ansamblul resurselor naturale și create de om, folosite în procesul de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Orice element al realității capabil să satisfacă o cerință a pieței",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cantitatea de bunuri economice aflată la dispoziția unui consumator la un moment dat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Nevoile umane sunt studiate în economie ca ansamblul dorințelor, așteptărilor și cerințelor oamenilor. Ceea ce le definește este legătura cu satisfacerea prin consum de bunuri și servicii, proces care determină însăși existența și dezvoltarea individului și a societății în ansamblul ei. Prin urmare, răspunsul corect este: Ansamblul dorințelor, așteptărilor și cerințelor oamenilor, a căror satisfacere prin consum de bunuri și servicii determină existența și dezvoltarea lor și a societății."
+    },
+    {
+      "id": "C1_T02",
+      "capitol": 1,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele NU reprezintă o trăsătură a nevoilor umane, conform teoriei economice?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sunt fixe și nu se pot substitui între ele",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Sunt dinamice și nelimitate numeric",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sunt limitate în capacitate, ca volum",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Sunt regenerabile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Una dintre trăsăturile reale ale nevoilor umane este că acestea sunt concurente și substituibile: cu venituri limitate, oamenii nu își pot satisface toate nevoile deodată, așa că unele se extind în defavoarea altora sau se înlocuiesc reciproc. Afirmația conform căreia nevoile ar fi fixe și nesubstituibile contrazice tocmai această trăsătură, fiind singura care nu descrie corect nevoile umane. Prin urmare, răspunsul corect este: Sunt fixe și nu se pot substitui între ele."
+    },
+    {
+      "id": "C1_T03",
+      "capitol": 1,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nevoia de un mediu nepoluat, la nivel planetar, se încadrează, după nivelul la care se manifestă, în categoria nevoilor:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Individuale, personale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "De grup, la nivelul unor colectivități",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sociale, generale, la nivelul întregii societăți",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Elementare, de bază",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Nevoile se clasifică, după nivelul la care se manifestă, în individuale, de grup și sociale (generale). Nevoia de un mediu nepoluat la nivel planetar privește întreaga societate, nu doar o persoană sau o colectivitate restrânsă, motiv pentru care se încadrează în categoria nevoilor sociale, generale, la nivelul întregii societăți. Prin urmare, răspunsul corect este: Sociale, generale, la nivelul întregii societăți."
+    },
+    {
+      "id": "C1_T04",
+      "capitol": 1,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nevoia de hrană și cea de locuință fac parte din categoria nevoilor:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Superioare, complexe, elevate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Elementare, de bază, primare",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Terțiare, de prisos",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "De grup",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "După gradul de complexitate, nevoile se împart în elementare (de bază, primare) și superioare (complexe, elevate). Hrana și locuința sunt condiții de bază ale existenței umane, deci se încadrează în categoria nevoilor elementare, de bază, primare. Prin urmare, răspunsul corect este: Elementare, de bază, primare."
+    },
+    {
+      "id": "C1_T05",
+      "capitol": 1,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nevoia de comunicare și de a avea prieteni corespunde, după dimensiunile principale ale ființei umane, categoriei nevoilor:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Biologice, fiziologice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Raționale, spiritual-psihologice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Primare, vitale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Sociale",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "După dimensiunile principale ale ființei umane, nevoile pot fi biologice, raționale (spiritual-psihologice) sau sociale. Comunicarea și prietenia țin de relațiile omului cu ceilalți membri ai societății, deci se încadrează în categoria nevoilor sociale. Prin urmare, răspunsul corect este: Sociale."
+    },
+    {
+      "id": "C1_T06",
+      "capitol": 1,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nevoia de a fi în pas cu moda este, după importanța și gradul de necesitate, o nevoie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Primară, vitală",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Terțiară, de prisos",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Secundară, elevată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Individuală",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "După importanța și gradul lor de necesitate, nevoile sunt primare (vitale), secundare (elevate) sau terțiare (de prisos). Dorința de a fi în pas cu moda nu ține de supraviețuire sau de un anumit nivel de confort, ci de opțiune personală și lux, motiv pentru care este considerată o nevoie terțiară, de prisos. Prin urmare, răspunsul corect este: Terțiară, de prisos."
+    },
+    {
+      "id": "C1_T07",
+      "capitol": 1,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bunurile (utilitățile), în sens economic, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Orice element al realității capabil să satisfacă nevoi umane",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Doar bunurile obținute prin activitate economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Ansamblul resurselor naturale disponibile într-o economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar produsele materiale, tangibile, obținute din producție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Bunurile (utilitățile) sunt definite, în sens economic, în modul cel mai larg posibil: orice element al realității capabil să satisfacă o nevoie umană, indiferent dacă provine din natură (bun liber) sau din activitate economică (bun economic). Prin urmare, răspunsul corect este: Orice element al realității capabil să satisfacă nevoi umane."
+    },
+    {
+      "id": "C1_T08",
+      "capitol": 1,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele este o caracteristică a bunurilor libere, și NU a bunurilor economice?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Accesul la ele se realizează, în cea mai mare parte, prin intermediul pieței",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Accesul la ele este gratuit, fiind daruri ale naturii",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Provin din activitatea economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Sunt limitate, insuficiente în raport cu nevoile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Bunurile libere, spre deosebire de bunurile economice, sunt daruri ale naturii (aerul, căldura și lumina solară), există în cantități virtual nelimitate, iar accesul la ele nu presupune niciun cost — sunt gratuite. Bunurile economice, în schimb, provin din activitate economică, sunt limitate și ajung la consumator mai ales prin piață. Prin urmare, răspunsul corect este: Accesul la ele este gratuit, fiind daruri ale naturii."
+    },
+    {
+      "id": "C1_T09",
+      "capitol": 1,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Serviciile și informațiile sunt, după forma sub care se prezintă, bunuri economice:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Pentru producție, prodfactori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Marfare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Materiale, tangibile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nemateriale, netangibile",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "După forma sub care se prezintă, bunurile economice pot fi materiale (tangibile, palpabile) sau nemateriale (netangibile). Serviciile și informațiile nu au o formă fizică palpabilă, deci se încadrează în categoria bunurilor nemateriale. Prin urmare, răspunsul corect este: Nemateriale, netangibile."
+    },
+    {
+      "id": "C1_T10",
+      "capitol": 1,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Făina și drojdia folosite pentru producerea pâinii reprezintă, după destinația lor principală, bunuri:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Pentru consum, satisfactori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nemarfare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Pentru producție, prodfactori, bunuri intermediare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Libere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "După destinația lor principală, bunurile economice pot fi pentru producție (prodfactori, bunuri intermediare) sau pentru consum (satisfactori, bunuri finale). Făina și drojdia nu sunt consumate ca atare, ci sunt folosite pentru a obține un alt bun — pâinea — deci sunt bunuri intermediare, prodfactori. Prin urmare, răspunsul corect este: Pentru producție, prodfactori, bunuri intermediare."
+    },
+    {
+      "id": "C1_T11",
+      "capitol": 1,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cafeaua și înlocuitorul de cafea (nessul), care satisfac alternativ aceeași nevoie, reprezintă bunuri:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Complementare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Independente",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Substituibile",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Nemarfare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "După relațiile dintre ele în procesul utilizării, bunurile pot fi substituibile (satisfac alternativ aceeași nevoie), complementare (se folosesc împreună) sau independente (fără legătură în consum). Cafeaua și nessul satisfac aceeași nevoie, unul putând înlocui pe celălalt, deci sunt bunuri substituibile. Prin urmare, răspunsul corect este: Substituibile."
+    },
+    {
+      "id": "C1_T12",
+      "capitol": 1,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Resursele economice reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ansamblul dorințelor și cerințelor oamenilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Bunurile rezultate din activitatea de producție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar resursele naturale regenerabile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Elementele umane, naturale și create de oameni ce pot fi utilizate pentru realizarea bunurilor și serviciilor necesare satisfacerii nevoilor umane",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Resursele economice reprezintă elementele umane, naturale și create de oameni ce pot fi utilizate pentru realizarea bunurilor și serviciilor necesare satisfacerii nevoilor umane — practic, sunt „intrările” oricărei activități economice, spre deosebire de bunuri, care sunt rezultatul acestei activități. Prin urmare, răspunsul corect este: Elementele umane, naturale și create de oameni ce pot fi utilizate pentru realizarea bunurilor și serviciilor necesare satisfacerii nevoilor umane."
+    },
+    {
+      "id": "C1_T13",
+      "capitol": 1,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Faptul că resursele economice cresc mai încet decât nevoile umane generează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dispariția completă a nevoilor umane",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O tensiune între nevoi și resurse, care stă la baza problemei fundamentale a economiei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Anularea costului de oportunitate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Transformarea bunurilor economice în bunuri libere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Resursele economice sunt dinamice, dar cresc mai încet decât nevoile umane, care sunt nelimitate numeric. Acest decalaj creează o tensiune permanentă între nevoi și resurse, tensiune care stă chiar la baza problemei fundamentale a economiei: ce, cât, cum și pentru cine să se producă. Prin urmare, răspunsul corect este: O tensiune între nevoi și resurse, care stă la baza problemei fundamentale a economiei."
+    },
+    {
+      "id": "C1_T14",
+      "capitol": 1,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Stocurile de materii prime, învățământul, cercetarea și inovația reprezintă, după proveniența lor, resurse economice:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Primare, originare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Regenerabile",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nerecuperabile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Derivate",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "După proveniența lor, resursele economice pot fi primare (originare — resursa umană și resursele naturale de bază) sau derivate, adică provenite din cele primare. Stocurile de materii prime, învățământul, cercetarea și inovația nu sunt resurse de bază ale naturii, ci rezultă din prelucrarea și dezvoltarea resurselor primare, deci sunt resurse derivate. Prin urmare, răspunsul corect este: Derivate."
+    },
+    {
+      "id": "C1_T15",
+      "capitol": 1,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Zăcămintele de combustibil fosil și minereurile sunt, după durata folosirii lor, resurse naturale:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Neregenerabile",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Derivate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Regenerabile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Recuperabile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Resursele naturale se clasifică, după durata folosirii lor, în regenerabile (pământul, aerul, apa) și neregenerabile. Zăcămintele de combustibil fosil și minereurile nu se refac în timp util pentru consumul uman, deci sunt resurse neregenerabile. Prin urmare, răspunsul corect este: Neregenerabile."
+    },
+    {
+      "id": "C1_T16",
+      "capitol": 1,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Conform teoriei economice, diferența esențială dintre resursele economice și bunurile economice este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Resursele sunt întotdeauna gratuite, iar bunurile sunt întotdeauna contra cost",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Resursele se obțin doar din import, iar bunurile doar din producția internă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Resursele sunt „intrări” ale procesului de producție, iar bunurile economice sunt rezultatul folosirii resurselor",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Nu există nicio diferență, termenii fiind sinonimi",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Resursele economice și bunurile economice nu trebuie confundate: resursele sunt „intrări” ale procesului de producție, în timp ce bunurile economice sunt rezultatul folosirii acestor resurse. Prin urmare, răspunsul corect este: Resursele sunt „intrări” ale procesului de producție, iar bunurile economice sunt rezultatul folosirii resurselor."
+    },
+    {
+      "id": "C1_T17",
+      "capitol": 1,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Costul de oportunitate (C.op) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Prețul total plătit efectiv pentru bunul achiziționat",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Valoarea celei mai bune alternative (variante) la care se renunță, în producție sau în consum, în favoarea alternativei alese",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Valoarea tuturor bunurilor economice existente într-o societate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Diferența dintre bunurile libere și cele economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Costul de oportunitate reflectă valoarea celei mai bune alternative la care se renunță, fie în producție, fie în consum, atunci când se alege o altă variantă. Practic, el măsoară ceea ce se pierde prin alegerea făcută, și nu prețul efectiv plătit pentru bunul ales. Prin urmare, răspunsul corect este: Valoarea celei mai bune alternative (variante) la care se renunță, în producție sau în consum, în favoarea alternativei alese."
+    },
+    {
+      "id": "C1_T18",
+      "capitol": 1,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele NU este o trăsătură a costului de oportunitate, conform teoriei?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Are valori minime la alegerile optime",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ar putea fi zero dacă resursele economice ar fi nelimitate numeric",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Are tendință generală de scădere pe măsură ce se renunță la cantități tot mai mari dintr-un bun",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Se numește și cost relativ",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Legea creșterii costurilor relative arată că, pe măsură ce se renunță la cantități tot mai mari dintr-un bun în favoarea altuia, costul de oportunitate are, de fapt, tendința de a crește, și nu de a scădea. Afirmația care susține o tendință de scădere contrazice această lege și este, așadar, singura care nu descrie o trăsătură reală a costului de oportunitate. Prin urmare, răspunsul corect este: Are tendință generală de scădere pe măsură ce se renunță la cantități tot mai mari dintr-un bun."
+    },
+    {
+      "id": "C1_T19",
+      "capitol": 1,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Potrivit economistului J.K. Galbraith, citat în manual, știința economică studiază, printre altele:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv comportamentul statului în economie",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar procesele de producție industrială",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Comportamentul uman ca relație între țeluri și resursele rare cu întrebuințări alternative",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv fluctuațiile bursiere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Potrivit economistului J.K. Galbraith, citat în manual, știința economică studiază, printre altele, comportamentul uman ca relație între țeluri și resursele rare care au întrebuințări alternative — felul în care oamenii decid să folosească resurse limitate pentru scopuri multiple, nu comportamentul unui singur actor (precum statul) sau al unui singur domeniu (precum producția industrială). Prin urmare, răspunsul corect este: Comportamentul uman ca relație între țeluri și resursele rare cu întrebuințări alternative."
+    },
+    {
+      "id": "C1_T20",
+      "capitol": 1,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Faptul că economia servește pregătirii profesionale și adaptării la cerințele pieței muncii reflectă caracterul cunoștințelor economice:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Practic",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Cognitiv",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Științific",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Istoric",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Caracterul practic al cunoștințelor economice se referă la faptul că acestea servesc pregătirii profesionale a oamenilor și adaptării lor la cerințele pieței muncii — spre deosebire de caracterul științific (bazat pe descoperiri privind activitatea economică), cel istoric (studiul realității economice în dinamica ei) sau cel cognitiv (cunoașterea realității economice). Prin urmare, răspunsul corect este: Practic."
+    },
+    {
+      "id": "C1_E01",
+      "capitol": 1,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prețul unei cărți (Px) este de 25 u.m., iar al unei reviste (Py) este de 5 u.m. Costul de oportunitate al achiziționării a 6 cărți este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5 reviste",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 reviste",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30 reviste",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "150 reviste",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "VT(6 cărți) = Px × 6 = 25 × 6 = 150 u.m. → –Qy = VT/Py = 150/5 = –30 reviste. Se renunță la 30 de reviste."
+    },
+    {
+      "id": "C1_E02",
+      "capitol": 1,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un producător cu un venit disponibil poate obține fie 300 de bucăți din bunul X, fie 60 de bucăți din bunul Y. Costul alegerii unei unități suplimentare din bunul Y este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5 buc. X",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "60 buc. X",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,2 buc. X",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "300 buc. X",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "C.op (1 u. Y) = –X/Y = –300/60 = –5 buc. X. Se renunță la 5 buc. din bunul X pentru fiecare unitate din Y."
+    },
+    {
+      "id": "C1_E03",
+      "capitol": 1,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană, cu un venit de 40 u.m., poate cumpăra fie 5 kg de struguri la prețul de 8 u.m., fie 10 kg de pere la prețul de 4 u.m. Costul relativ al cumpărării celor 5 kg de struguri este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "40 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "C.op = (–10 kg pere/5 kg struguri) × Py(pere, 4 u.m.) = (–10/5) × 4 = –8 u.m. (Pierdere)."
+    },
+    {
+      "id": "C1_E04",
+      "capitol": 1,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un atelier de croitorie, cu resursele disponibile, poate produce fie rochii (x), fie cămăși (y). Producerea unei rochii determină renunțarea la 3 cămăși, iar Px este de 4 ori mai mare decât Py. Dacă valoarea celei mai bune alternative sacrificate este de 12 u.m., atunci prețul unei rochii (Px) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "12 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "16 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "C.op = (–3 cămăși/1 rochie) × Py = 12 → Py = 12/3 = 4 u.m. Px = 4 × Py = 4 × 4 = 16 u.m."
+    },
+    {
+      "id": "C1_E05",
+      "capitol": 1,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă cu un venit disponibil fix poate produce în luna ianuarie fie 6 laptopuri (x), fie 15 tablete (y). În luna mai, prețul unui laptop crește cu 1/5, iar al unei tablete scade cu 25%. Costul relativ al producerii unui laptop, în luna mai, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5 tablete",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4 tablete",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "2,5 tablete",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20 tablete",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Venit = 6×Px0 = 15×Py0 (se alege, de exemplu, Venit = 600) → Px0 = 100 u.m., Py0 = 40 u.m. Luna mai: Px1 = 1,2×100 = 120 u.m.; Py1 = 0,75×40 = 30 u.m. Qx1 = 600/120 = 5 laptopuri; Qy1 = 600/30 = 20 tablete. C.op = –Qy1/Qx1 = –20/5 = –4 tablete."
+    },
+    {
+      "id": "C1_E06",
+      "capitol": 1,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă produce două bunuri, C și D. Pentru a produce 24 de unități suplimentare din bunul C, costul real al alegerii este 4. Cantitatea la care se renunță din bunul D (–QD) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "96 unități",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "6 unități",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "28 unități",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20 unități",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "C.op = 4 = (–QD/24) → QD = 4 × 24 = 96 unități."
+    },
+    {
+      "id": "C1_E07",
+      "capitol": 1,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un producător obține într-un an două bunuri X și Y, în 5 variante posibile (Variante I–V: X = 1, 2, 3, 4, 5 buc.; Y = 90, 84, 70, 40, 15 buc.). Costul oportun al primelor 5 bucăți din bunul X este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15 buc. Y",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "90 buc. Y",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "75 buc. Y",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "6 buc. Y",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "C.op(1,2,3,4,5 buc. X) = (84–90) + (70–84) + (40–70) + (15–40) = –6 –14 –30 –25 = –75 buc. Y."
+    },
+    {
+      "id": "C1_E08",
+      "capitol": 1,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Achiziționarea a două bunuri, C și D, cu un venit limitat, se poate realiza conform variantelor din tabel (Variante I–IV: C = 200, 150, 100, 50 buc.; D = 1, 2, 3, 4 buc.). Costul relativ al celei de-a 4-a bucăți din bunul D este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "200 buc. C",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "150 buc. C",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "100 buc. C",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50 buc. C",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "C.op (a 4-a buc. din D) = C(varianta IV) – C(varianta III) = 50 – 100 = –50 buc. C. Pierderea este de 50 buc. din bunul C."
+    },
+    {
+      "id": "C1_E09",
+      "capitol": 1,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un producător poate obține, la momentul t0, cu un venit disponibil de 200 u.m., fie 4 bucăți din bunul X, fie 8 bucăți din bunul Y. La momentul t1, venitul disponibil crește cu 50%, prețul bunului X se dublează, iar prețul bunului Y scade cu 20%. Costul alternativ al obținerii bunului X în perioada t1 este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "300 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "100 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "50 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Px0 = 200/4 = 50 u.m.; Py0 = 200/8 = 25 u.m. La t1: VD1 = 1,5×200 = 300 u.m.; Px1 = 2×50 = 100 u.m.; Py1 = 0,8×25 = 20 u.m. → Qx1 = 300/100 = 3 buc.; Qy1 = 300/20 = 15 buc. C.op1 = (–Qy1/Qx1)×Py1 = (–15/3)×20 = –100 u.m. (Pierdere)."
+    },
+    {
+      "id": "C1_E10",
+      "capitol": 1,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se produc două bunuri, X și Y, conform tabelului (Variante I–IV: X = 300, 220, ?, 40; Y = 0, 20, 35, 55). Costul oportun al producerii celor 35 de unități din bunul Y (trecerea de la varianta II la III) este 3. Cantitatea la care se renunță din bunul X (–QX) în varianta a III-a este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "45 unități",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "15 unități",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "175 unități",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 unități",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "ΔY (II→III) = 35 – 20 = 15. C.op = 3 = –(XIII – XII)/ΔY → –(XIII – 220) = 3×15 = 45 → XIII = 175, deci QX renunțată = 220 – 175 = 45 unități."
+    },
+    {
+      "id": "C1_E11",
+      "capitol": 1,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Costul real al alegerii unei cantități de 400 buc. din bunul A este de forma: C.op (400 A) = 40 B. Dacă PA = 6 u.m., atunci prețul bunului B (PB) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2.400 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "40 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "10 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "60 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "VT (400 A) = PA × 400 = 6 × 400 = 2.400 u.m. → PB = VT/40 = 2.400/40 = 60 u.m."
+    },
+    {
+      "id": "C1_E12",
+      "capitol": 1,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "PA = 30 u.m. și PB = 12 u.m., iar cantitățile ce pot fi produse din bunurile A și B sunt (Variante I–III: A = 0, 3, 5; B = 20, 14, 2). Costul oportun (exprimat în unități monetare) din varianta III față de cel din varianta II este mai mare de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6 ori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3 ori",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "2 ori",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4 ori",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "C.op (var.III/var.II) = –(2–14)/(5–3) × 12 = (12/2)×12 = 72 u.m. C.op (var.II/var.I) = –(14–20)/(3–0) × 12 = (6/3)×12 = 24 u.m. Raportul: 72/24 = 3 ori."
+    },
+    {
+      "id": "C1_E13",
+      "capitol": 1,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un producător, în raport de condițiile pedo-climatice din 6 ani consecutivi, are mai multe posibilități de producere a două fructe, piersici și caise, cu venitul disponibil (anii 1–6: Piersici = 15, 18, 21, 24, 28, 26; Caise = 24, 30, 50, 32, 8, 15). Costul relativ pentru producerea de piersici este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "18 kg caise",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 kg caise",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "20 kg caise",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 kg caise",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "C.op(–caise/piersici) se calculează doar acolo unde cantitatea de caise scade efectiv față de anul anterior: anul 4 față de 3: –(32–50)/(24–21) = 18/3 = 6 kg caise; anul 5 față de 4: –(8–32)/(28–24) = 24/4 = 6 kg caise. Se renunță, în ambele cazuri, la 6 kg de caise."
+    },
+    {
+      "id": "C1_E14",
+      "capitol": 1,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă poate produce zilnic fie 30 de paltoane, fie 60 de eșarfe. Prețul unui palton este de 80 lei, iar al unei eșarfe este de 30 lei. Varianta cea mai eficientă este cea la care C.op este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "40 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "30 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "80 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "60 lei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Varianta A (doar paltoane): C.op = –(60/30) × 30 (Pesarfa) = –60 lei. Varianta B (doar eșarfe): C.op = –(30/60) × 80 (Ppalton) = –40 lei. Valoarea celei mai bune alternative sacrificate este dată de varianta cu costul mai mare, deci 60 lei."
+    },
+    {
+      "id": "C1_E15",
+      "capitol": 1,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un elev dorește să participe la un curs de pregătire pentru admiterea la facultate. În loc să meargă la curs, el ar putea să meargă la sală (echivalentul a 40 de lei), să iasă cu prietenii (evaluat la 70 de lei), să citească o carte (echivalentul a 20 de lei) sau să se uite la un serial (echivalentul a 55 de lei). Costul de oportunitate al participării la curs este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "70 lei",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "40 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "20 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "55 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Costul de oportunitate este dat de valoarea celei mai bune alternative sacrificate, adică cea mai mare valoare dintre alternative: max(40, 70, 20, 55) = 70 lei (ieșitul cu prietenii)."
+    },
+    {
+      "id": "C1_E16",
+      "capitol": 1,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană, cu venitul limitat, pentru a achiziționa 2 kg de orez trebuie să renunțe la 8 kg de cartofi, valoarea pierderii fiind de 40 de lei. Prețul bunului sacrificat în consum (Px) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "10 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "4 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "C.op = 40 = (Qx/Qy) × Px = (8/2) × Px = 4 × Px → Px = 40/4 = 10 lei."
+    },
+    {
+      "id": "C1_E17",
+      "capitol": 1,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea celei mai bune alternative sacrificate în consumul a două bunuri, X și Y, este de 80 u.m. Dacă Py = 4Px, iar achiziționarea unei bucăți în plus din bunul Y presupune renunțarea la 5 bucăți din bunul X, atunci Px și Py sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20 u.m. și 80 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "64 u.m. și 16 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "16 u.m. și 64 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "4 u.m. și 16 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "C.op = 80 = (5/1) × Px → Px = 80/5 = 16 u.m. Py = 4 × Px = 4 × 16 = 64 u.m."
+    },
+    {
+      "id": "C1_E18",
+      "capitol": 1,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă, în perioada t0–t1, se pot consuma două bunuri, costul real al unei alegeri este de 30 de lei, iar prin achiziționarea a 15 kg în plus dintr-un bun, valoarea bunului la care se renunță (–Qx·Px) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "450 lei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "C.op = 30 = (–Qx·Px)/15 kg → (–Qx·Px) = 30 × 15 = 450 lei."
+    },
+    {
+      "id": "C1_E19",
+      "capitol": 1,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La începutul unui an (T0), cu venitul net de 1.200 lei, o persoană poate cumpăra fie 6 kg din bunul M, fie 24 kg din bunul N. La sfârșitul anului (T1), în condițiile aceluiași venit, persoana poate cumpăra fie 0,8 kg din bunul M, fie 3,2 kg din bunul N. În anul următor (T2), venitul crește cu 25% față de T1, dar prețurile celor două bunuri sporesc, fiecare, de 2 ori față de anul precedent (T1). Costul oportun al achiziționării bunului N în T2 este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,25 kg (bun M)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "750 lei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "3.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1.500 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Pm0 = 1.200/6 = 200 lei; Pn0 = 1.200/24 = 50 lei. T1: Pm1 = 1.200/0,8 = 1.500 lei; Pn1 = 1.200/3,2 = 375 lei. T2: VD2 = 1,25×1.200 = 1.500 lei; Pm2 = 2×1.500 = 3.000 lei; Pn2 = 2×375 = 750 lei. Qm2 = 1.500/3.000 = 0,5 kg; Qn2 = 1.500/750 = 2 kg. C.op (achiziționarea N) = (–Qm2/Qn2) × Pm2 = (–0,5/2) × 3.000 = –750 lei."
+    },
+    {
+      "id": "C1_E20",
+      "capitol": 1,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Să presupunem că, teoretic, economia unei țări ar produce doar energie electrică (A) și gaze naturale (B), iar costul oportun al producerii energiei electrice ar fi de 6 unități de gaze naturale. Dacă PA = 400 u.m. și PB = 500 u.m., bunul în care economia s-ar specializa, și câștigul obținut, ar fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "A (energie electrică) și 2.600 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "B (gaze naturale) și 400 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "economia s-ar specializa în ambele, câștigurile fiind egale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "B (gaze naturale) și 2.600 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Specializare în A: valoare A – valoare B sacrificată = PA – 6×PB = 400 – 3.000 = –2.600 u.m. (pierdere). Specializare în B: 6×PB – PA = 3.000 – 400 = 2.600 u.m. (câștig). Economia se specializează în producerea gazelor naturale (B), câștigul fiind 2.600 u.m."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

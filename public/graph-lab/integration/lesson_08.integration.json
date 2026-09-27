@@ -1,0 +1,393 @@
+{
+  "schemaVersion": "1.0",
+  "packageVersion": "5.4.0",
+  "lesson": 8,
+  "title": "Piața și echilibrul său",
+  "files": {
+    "configJson": "data/lesson_08.json",
+    "configJs": "data/lesson_08.js",
+    "modularHtml": "lessons/lesson_08.html",
+    "standaloneHtml": "standalone/lectia_08_standalone.html",
+    "engine": "assets/graph-engine.js",
+    "styles": "assets/graph-lab.css"
+  },
+  "integration": {
+    "mountTarget": "#content",
+    "moduleSelector": "#moduleSelect",
+    "stateKeyPattern": "eco_graph_l8_{moduleId}_v1",
+    "themeKey": "eco_graph_theme_v1",
+    "adminKey": "eco_graph_admin_v1",
+    "resetCurrent": "resetCurrent()",
+    "resetLesson": "resetLesson()"
+  },
+  "sourceAudit": {
+    "lesson": 8,
+    "title": "Piața și echilibrul său",
+    "source": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+    "moduleCount": 9,
+    "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate.",
+    "modules": [
+      {
+        "id": "echilibru",
+        "title": "Cerere, ofertă și echilibru",
+        "kind": "two_curve",
+        "status": "A",
+        "formulas": []
+      },
+      {
+        "id": "miscare_pret",
+        "title": "Mișcare pe curbe la modificarea prețului",
+        "kind": "two_curve",
+        "status": "A",
+        "formulas": []
+      },
+      {
+        "id": "deplasare_cerere",
+        "title": "Deplasarea cererii T0 → T1",
+        "kind": "two_curve",
+        "status": "A",
+        "formulas": []
+      },
+      {
+        "id": "deplasare_oferta",
+        "title": "Deplasarea ofertei T0 → T1",
+        "kind": "two_curve",
+        "status": "A",
+        "formulas": []
+      },
+      {
+        "id": "elasticitate",
+        "title": "Elasticitatea cererii și ofertei",
+        "kind": "elasticity",
+        "status": "B",
+        "formulas": [
+          "Ec = -Δ%Qc / Δ%P",
+          "Eo = Δ%Qo / Δ%P"
+        ]
+      },
+      {
+        "id": "tipuri_elasticitate_cerere",
+        "title": "Tipurile de elasticitate ale cererii față de preț",
+        "kind": "elasticity_family",
+        "status": "C",
+        "formulas": [
+          "Ec(P) = -Δ%Q / Δ%P",
+          "Ec>1 elastică",
+          "Ec=1 unitară",
+          "Ec<1 inelastică"
+        ]
+      },
+      {
+        "id": "tipuri_elasticitate_oferta",
+        "title": "Tipurile de elasticitate ale ofertei față de preț",
+        "kind": "elasticity_family",
+        "status": "C",
+        "formulas": [
+          "Eo(P) = Δ%Q / Δ%P",
+          "Eo>1 elastică",
+          "Eo=1 unitară",
+          "Eo<1 inelastică"
+        ]
+      },
+      {
+        "id": "elasticitate_venit",
+        "title": "Elasticitatea cererii față de venit",
+        "kind": "income_elasticity",
+        "status": "B",
+        "formulas": [
+          "Ec(V) = Δ%Q / Δ%V",
+          "Ec(V)>0: bun normal",
+          "Ec(V)<0: bun inferior"
+        ]
+      },
+      {
+        "id": "pret_control",
+        "title": "Preț maxim și preț minim",
+        "kind": "price_control",
+        "status": "B",
+        "formulas": []
+      }
+    ]
+  },
+  "config": {
+    "lesson": 8,
+    "title": "Piața și echilibrul său",
+    "source": "Capitolul 8 - Piața și echilibrul său",
+    "modules": [
+      {
+        "id": "echilibru",
+        "title": "Cerere, ofertă și echilibru",
+        "kind": "two_curve",
+        "defaults": {
+          "a": 120,
+          "b": 2,
+          "c": 10,
+          "d": 2,
+          "probe": 24,
+          "maxX": 150,
+          "maxY": 70
+        },
+        "labels": {
+          "d": "Cerere",
+          "s": "Ofertă",
+          "qd": "Qc",
+          "qs": "Qo",
+          "x": "Cantitate (Q)",
+          "y": "Preț (P)",
+          "sym": "P"
+        },
+        "defaultAnchor": true,
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "miscare_pret",
+        "title": "Mișcare pe curbe la modificarea prețului",
+        "kind": "two_curve",
+        "defaults": {
+          "a": 120,
+          "b": 2,
+          "c": 10,
+          "d": 2,
+          "probe": 18,
+          "maxX": 150,
+          "maxY": 70
+        },
+        "labels": {
+          "d": "Cerere",
+          "s": "Ofertă",
+          "qd": "Qc",
+          "qs": "Qo",
+          "x": "Cantitate (Q)",
+          "y": "Preț (P)",
+          "sym": "P"
+        },
+        "defaultAnchor": true,
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "deplasare_cerere",
+        "title": "Deplasarea cererii T0 → T1",
+        "kind": "two_curve",
+        "defaults": {
+          "a": 120,
+          "b": 2,
+          "c": 10,
+          "d": 2,
+          "probe": 24,
+          "maxX": 150,
+          "maxY": 70,
+          "startMode": "shift"
+        },
+        "labels": {
+          "d": "Cerere",
+          "s": "Ofertă",
+          "qd": "Qc",
+          "qs": "Qo",
+          "x": "Cantitate (Q)",
+          "y": "Preț (P)",
+          "sym": "P"
+        },
+        "shiftFocus": "d",
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "deplasare_oferta",
+        "title": "Deplasarea ofertei T0 → T1",
+        "kind": "two_curve",
+        "defaults": {
+          "a": 120,
+          "b": 2,
+          "c": 10,
+          "d": 2,
+          "probe": 24,
+          "maxX": 150,
+          "maxY": 70,
+          "startMode": "shift"
+        },
+        "labels": {
+          "d": "Cerere",
+          "s": "Ofertă",
+          "qd": "Qc",
+          "qs": "Qo",
+          "x": "Cantitate (Q)",
+          "y": "Preț (P)",
+          "sym": "P"
+        },
+        "shiftFocus": "s",
+        "provenance": {
+          "status": "A",
+          "statusLegend": "relație/grafic explicit în material",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "elasticitate",
+        "title": "Elasticitatea cererii și ofertei",
+        "kind": "elasticity",
+        "defaults": {
+          "p0": 20,
+          "p1": 25,
+          "qd0": 80,
+          "qd1": 70,
+          "qs0": 50,
+          "qs1": 62
+        },
+        "formulas": [
+          "Ec = -Δ%Qc / Δ%P",
+          "Eo = Δ%Qo / Δ%P"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "tipuri_elasticitate_cerere",
+        "title": "Tipurile de elasticitate ale cererii față de preț",
+        "kind": "elasticity_family",
+        "defaults": {
+          "selected": "elastic",
+          "side": "demand"
+        },
+        "options": [
+          "perfect_elastic",
+          "elastic",
+          "unit",
+          "inelastic",
+          "perfect_inelastic"
+        ],
+        "formulas": [
+          "Ec(P) = -Δ%Q / Δ%P",
+          "Ec>1 elastică",
+          "Ec=1 unitară",
+          "Ec<1 inelastică"
+        ],
+        "provenance": {
+          "status": "C",
+          "statusLegend": "vizualizare deterministă a unui concept textual din material",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "tipuri_elasticitate_oferta",
+        "title": "Tipurile de elasticitate ale ofertei față de preț",
+        "kind": "elasticity_family",
+        "defaults": {
+          "selected": "elastic",
+          "side": "supply"
+        },
+        "options": [
+          "perfect_elastic",
+          "elastic",
+          "unit",
+          "inelastic",
+          "perfect_inelastic"
+        ],
+        "formulas": [
+          "Eo(P) = Δ%Q / Δ%P",
+          "Eo>1 elastică",
+          "Eo=1 unitară",
+          "Eo<1 inelastică"
+        ],
+        "provenance": {
+          "status": "C",
+          "statusLegend": "vizualizare deterministă a unui concept textual din material",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "elasticitate_venit",
+        "title": "Elasticitatea cererii față de venit",
+        "kind": "income_elasticity",
+        "defaults": {
+          "v0": 1000,
+          "v1": 1200,
+          "q0": 10,
+          "q1": 12
+        },
+        "formulas": [
+          "Ec(V) = Δ%Q / Δ%V",
+          "Ec(V)>0: bun normal",
+          "Ec(V)<0: bun inferior"
+        ],
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      },
+      {
+        "id": "pret_control",
+        "title": "Preț maxim și preț minim",
+        "kind": "price_control",
+        "defaults": {
+          "a": 120,
+          "b": 2,
+          "c": 10,
+          "d": 2,
+          "cap": 18,
+          "floor": 38,
+          "maxX": 150,
+          "maxY": 70
+        },
+        "labels": {
+          "d": "Cerere",
+          "s": "Ofertă",
+          "x": "Cantitate (Q)",
+          "y": "Preț (P)"
+        },
+        "provenance": {
+          "status": "B",
+          "statusLegend": "derivat direct din formule/datele materialului",
+          "primarySource": "Capitolul 8 - Piața și echilibrul său_ex.pdf",
+          "secondarySource": "Manual exercitii fara rezolvare - Economie.docx / Economie 2012_Florina Pana_Corint.pdf",
+          "evidence": "Cerere, ofertă, echilibru, mișcare pe curbă vs deplasare, elasticități la preț/venit și prețuri administrate."
+        }
+      }
+    ],
+    "themeDefaults": {
+      "graphBg": "#ffffff",
+      "grid": "#edf1f6",
+      "axes": "#667085",
+      "line1": "#2f63d5",
+      "line2": "#13865f",
+      "line3": "#7458d8",
+      "line4": "#b46b00",
+      "line5": "#d04f5f",
+      "line6": "#0f8f9b",
+      "t0": "#667085",
+      "probe": "#b42318"
+    },
+    "auditVersion": "5.4-complet",
+    "sourcePolicy": "Nu se introduce o formulă economică nouă dacă nu este susținută de material; vizualizările C sunt marcate ca schematice/didactice."
+  }
+}

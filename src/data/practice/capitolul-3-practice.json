@@ -1,0 +1,1288 @@
+{
+  "capitol": 3,
+  "titlu_capitol": "Utilitatea bunurilor economice și comportamentul consumatorului rațional",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din manual (utilitate intrinseca, utilitate economica, U.T, U.mg, consumatorul rational). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (U.mg=DeltaUT/DeltaQ, U.T=SumaU.mg, criteriul de eficienta U.mg/P, conditia de optim U.mg(x)/Px=U.mg(y)/Py, VD=Qx*Px+Qy*Py).",
+  "intrebari": [
+    {
+      "id": "C3_T01",
+      "capitol": 3,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Utilitatea intrinsecă (în sens general) a unui bun economic reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Satisfacția totală obținută prin consumul succesiv al unui bun, până la pragul de saturație",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Satisfacția pe care crede că o va obține un anumit consumator prin utilizarea unei cantități determinate dintr-un bun",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sporul de utilitate obținut în urma creșterii cu o unitate a cantității consumate dintr-un bun",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Capacitatea unui bun economic de a satisface o nevoie umană, la un moment dat",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Utilitatea intrinsecă, în sens general, este cea mai largă noțiune dintre cele patru: ea reflectă simpla capacitate a unui bun de a satisface o nevoie umană la un moment dat, indiferent de un anumit consumator. Celelalte trei formulări descriu, de fapt, utilitatea economică, respectiv formele ei (utilitatea marginală și utilitatea totală). Prin urmare, răspunsul corect este: Capacitatea unui bun economic de a satisface o nevoie umană, la un moment dat."
+    },
+    {
+      "id": "C3_T02",
+      "capitol": 3,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele este o caracteristică a utilității intrinseci (în sens general), și NU a utilității economice?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Are determinare obiectivă, derivând din proprietățile intrinseci ale bunului respectiv",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Are determinare subiectivă, diferind de la un consumator rațional la altul",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Reflectă preferințele consumatorului și nonposesia inițială a bunului dorit",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Se calculează ca raport între utilitatea marginală și prețul bunului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Utilitatea intrinsecă are determinare obiectivă: ea derivă din proprietățile proprii ale bunului (de exemplu, poți scrie cu un creion datorită proprietăților lui, indiferent cine îl folosește), fiind aceeași pentru toți consumatorii raționali. În schimb, utilitatea economică are determinare subiectivă, depinzând de preferințele fiecărei persoane. Prin urmare, răspunsul corect este: Are determinare obiectivă, derivând din proprietățile intrinseci ale bunului respectiv."
+    },
+    {
+      "id": "C3_T03",
+      "capitol": 3,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Utilitatea economică reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Capacitatea obiectivă a unui bun de a satisface orice nevoie umană",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Suma satisfacțiilor resimțite la consumul succesiv al unei serii de bunuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Satisfacția pe care crede că o va obține un anumit consumator prin utilizarea unei cantități determinate dintr-un bun economic, în anumite condiții de timp și spațiu",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Sporul de satisfacție determinat de ultima unitate consumată dintr-un bun",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Utilitatea economică este o noțiune subiectivă, legată de un anumit consumator: ea reflectă satisfacția pe care crede că o va obține acel consumator prin utilizarea unei cantități determinate dintr-un bun, în anumite condiții concrete de timp și spațiu. Prin urmare, răspunsul corect este: Satisfacția pe care crede că o va obține un anumit consumator prin utilizarea unei cantități determinate dintr-un bun economic, în anumite condiții de timp și spațiu."
+    },
+    {
+      "id": "C3_T04",
+      "capitol": 3,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Faptul că utilitatea economică diferă de la un consumator rațional la altul, în funcție de preferințe, gusturi și nivel de cultură, reflectă caracterul ei:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Obiectiv",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cantitativ",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Subiectiv",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Marginal",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Spre deosebire de utilitatea intrinsecă (obiectivă, aceeași pentru toți), utilitatea economică are determinare subiectivă: aprecierea ei depinde de raportul stabilit de fiecare persoană între intensitatea nevoii sale și cantitatea consumată, în funcție de preferințe, gusturi, nivel de cultură și situație economică proprii. Prin urmare, răspunsul corect este: Subiectiv."
+    },
+    {
+      "id": "C3_T05",
+      "capitol": 3,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele NU este o condiție necesară pentru ca un bun să aibă utilitate economică pentru un anumit consumator, conform teoriei?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Există o relație între proprietățile bunului și o anumită nevoie umană",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Consumatorul deține deja bunul respectiv de la bun început",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Consumatorul are dorința și posibilitatea financiară de a achiziționa bunul",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Consumatorul are capacitatea de a utiliza efectiv bunul respectiv",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Una dintre condițiile necesare pentru ca un bun să aibă utilitate economică este ca, inițial, consumatorul să NU dețină bunul, dar să dorească să-l cumpere — utilitatea economică reflectă tocmai nonposesia inițială și preferința pentru acel bun. Afirmația că el ar deține deja bunul contrazice exact această condiție. Prin urmare, răspunsul corect este: Consumatorul deține deja bunul respectiv de la bun început."
+    },
+    {
+      "id": "C3_T06",
+      "capitol": 3,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Utilitatea individuală (U.i) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Satisfacția totală obținută prin consumul unei serii întregi de bunuri",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sporul de satisfacție determinat de ultima unitate consumată",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Satisfacția resimțită în urma consumării fiecărei unități (doze) dintr-un bun, dintr-o serie de bunuri omogene",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Raportul dintre utilitatea marginală și prețul bunului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Utilitatea individuală este forma cea mai elementară a utilității economice: ea reprezintă satisfacția resimțită la consumarea fiecărei unități (doze) în parte, dintr-o serie de bunuri omogene. Din însumarea utilităților individuale rezultă utilitatea totală. Prin urmare, răspunsul corect este: Satisfacția resimțită în urma consumării fiecărei unități (doze) dintr-un bun, dintr-o serie de bunuri omogene."
+    },
+    {
+      "id": "C3_T07",
+      "capitol": 3,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Utilitatea marginală (U.mg) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Satisfacția resimțită la consumarea primei unități dintr-un bun",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Suma tuturor utilităților individuale, indiferent de cantitatea consumată",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sporul de utilitate obținut în urma creșterii cu o unitate a cantității consumate dintr-o serie de bunuri omogene",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Raportul dintre venitul disponibil și prețul bunului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Utilitatea marginală măsoară sporul de satisfacție adus de consumarea unei unități suplimentare dintr-un bun (sau, echivalent, satisfacția adusă de ultima unitate consumată), calculându-se ca U.mg = ΔU.T/ΔQ. Prin urmare, răspunsul corect este: Sporul de utilitate obținut în urma creșterii cu o unitate a cantității consumate dintr-o serie de bunuri omogene."
+    },
+    {
+      "id": "C3_T08",
+      "capitol": 3,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Utilitatea totală (U.T) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Satisfacția obținută prin consumarea unei singure unități dintr-un bun",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sporul de satisfacție determinat de ultima unitate consumată dintr-un bun",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Satisfacția totală obținută prin consumarea succesivă a unei cantități dintr-unul sau mai multe bunuri economice, până la pragul de saturație",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Raportul dintre utilitatea marginală și numărul de unități consumate",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Utilitatea totală însumează satisfacțiile obținute prin consumul succesiv al tuturor unităților dintr-un bun (sau din mai multe bunuri), fie ca sumă a utilităților individuale, fie ca sumă a utilităților marginale, până la pragul de saturație, în cazul consumatorului rațional. Prin urmare, răspunsul corect este: Satisfacția totală obținută prin consumarea succesivă a unei cantități dintr-unul sau mai multe bunuri economice, până la pragul de saturație."
+    },
+    {
+      "id": "C3_T09",
+      "capitol": 3,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe măsură ce un consumator rațional consumă succesiv unități dintr-un bun, până la pragul de saturație, utilitatea totală (U.T):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Scade constant",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este pozitivă și sporește cu o rată descrescătoare",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Rămâne constantă, indiferent de cantitatea consumată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este negativă de la prima unitate consumată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Conform reprezentării grafice din manual, utilitatea totală este pozitivă și sporește cu o rată descrescătoare pe măsura consumului succesiv, până la pragul de saturație, după care — în cazul consumatorului irațional — ar putea scădea. Prin urmare, răspunsul corect este: Este pozitivă și sporește cu o rată descrescătoare."
+    },
+    {
+      "id": "C3_T10",
+      "capitol": 3,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "La pragul de saturație al consumului (nivelul optim), utilitatea marginală (U.mg):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Devine maximă, iar utilitatea totală este minimă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Rămâne constantă și pozitivă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Devine zero, iar utilitatea totală este maximă",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Nu poate fi calculată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "La pragul de saturație, utilitatea totală atinge nivelul maxim exact în punctul în care utilitatea marginală devine zero — orice unitate suplimentară consumată dincolo de acest prag nu ar mai aduce satisfacție suplimentară (ba chiar ar putea deveni negativă, pentru un consumator irațional). Prin urmare, răspunsul corect este: Devine zero, iar utilitatea totală este maximă."
+    },
+    {
+      "id": "C3_T11",
+      "capitol": 3,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "La consumarea primei doze dintr-un bun economic, relația dintre utilitatea totală și cea marginală este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "U.T = U.mg, iar U.mg are valoarea cea mai mare dintre toate dozele consumate",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "U.mg este întotdeauna negativă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "U.T este întotdeauna mai mare decât U.mg",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "U.T = 0, iar U.mg este maximă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "La prima doză consumată, întrucât nu există satisfacție acumulată anterior, utilitatea totală coincide cu utilitatea marginală (U.T = U.mg), iar aceasta din urmă înregistrează, conform graficului, cea mai mare valoare dintre toate dozele consumate succesiv. Prin urmare, răspunsul corect este: U.T = U.mg, iar U.mg are valoarea cea mai mare dintre toate dozele consumate."
+    },
+    {
+      "id": "C3_T12",
+      "capitol": 3,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă un consumator continuă să consume dintr-un bun dincolo de pragul de saturație, comportamentul său este considerat, conform teoriei:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rațional, deoarece utilitatea marginală rămâne pozitivă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Imposibil de întâlnit în realitate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Rațional, deoarece utilitatea totală crește în continuare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Irațional, deoarece utilitatea totală scade, iar utilitatea marginală devine negativă",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dincolo de pragul de saturație, utilitatea marginală devine negativă, iar utilitatea totală începe să scadă — un asemenea comportament de consum, dincolo de punctul optim, nu mai corespunde principiului raționalității economice. Prin urmare, răspunsul corect este: Irațional, deoarece utilitatea totală scade, iar utilitatea marginală devine negativă."
+    },
+    {
+      "id": "C3_T13",
+      "capitol": 3,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Legea utilității marginale descrescânde, formulată de economistul H.H. Gössen, arată că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mărimea intensității unei plăceri crește pe măsură ce este satisfăcută continuu",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Utilitatea totală descrește constant, indiferent de cantitatea consumată",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Mărimea intensității unei plăceri descrește până la saturație, dacă respectiva plăcere este satisfăcută în mod continuu și neîntrerupt",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Utilitatea marginală rămâne constantă până la saturație",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Legea lui Gössen este chiar fundamentul teoretic al utilității marginale descrescânde: cu cât o nevoie este satisfăcută mai continuu prin consum succesiv, cu atât intensitatea plăcerii resimțite descrește, până la saturație. Prin urmare, răspunsul corect este: Mărimea intensității unei plăceri descrește până la saturație, dacă respectiva plăcere este satisfăcută în mod continuu și neîntrerupt."
+    },
+    {
+      "id": "C3_T14",
+      "capitol": 3,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Consumatorul rațional este persoana care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Folosindu-și venitul disponibil (net) pentru a cumpăra bunuri necesare, pune un principiu de eficiență la baza deciziei de a-și maximiza satisfacția",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Cheltuiește tot venitul disponibil, indiferent de satisfacția obținută",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Consumă cât mai multe bunuri posibil, indiferent de preț",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu ține cont niciodată de propriile preferințe în deciziile de consum",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Consumatorul rațional nu cheltuiește la întâmplare, ci urmărește un principiu de eficiență economică: folosindu-și venitul disponibil limitat, el urmărește să-și maximizeze satisfacția (utilitatea totală) obținută din bunurile cumpărate. Prin urmare, răspunsul corect este: Folosindu-și venitul disponibil (net) pentru a cumpăra bunuri necesare, pune un principiu de eficiență la baza deciziei de a-și maximiza satisfacția."
+    },
+    {
+      "id": "C3_T15",
+      "capitol": 3,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Criteriul de eficiență folosit de consumatorul rațional în alegerea și consumul unui bun X este dat de raportul:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Px/U.mg(x)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "U.mg(x)/P(x)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "U.T(x)/Px",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Qx/Px",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Criteriul de eficiență în alegere și consum compară, pentru fiecare bun, satisfacția marginală obținută cu prețul plătit pentru a o obține — adică raportul dintre utilitatea marginală și preț: Crit.ef. = U.mg/P. Prin urmare, răspunsul corect este: U.mg(x)/P(x)."
+    },
+    {
+      "id": "C3_T16",
+      "capitol": 3,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Esența alegerii consumatorului rațional constă în:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Găsirea acelui program de achiziții și consum care îi maximizează satisfacția (utilitatea totală), folosind venitul său disponibil limitat",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Evitarea oricărui risc financiar",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cheltuirea integrală a venitului pe un singur bun",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Minimizarea cantității totale de bunuri consumate",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Alegerea consumatorului rațional nu înseamnă cheltuirea nediscriminată a banilor, ci găsirea acelei combinații de achiziții și consum care îi aduce maximum de satisfacție posibilă (U.T maximă), în limitele venitului disponibil de care dispune. Prin urmare, răspunsul corect este: Găsirea acelui program de achiziții și consum care îi maximizează satisfacția (utilitatea totală), folosind venitul său disponibil limitat."
+    },
+    {
+      "id": "C3_T17",
+      "capitol": 3,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Programul optim de consum reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Suma tuturor prețurilor bunurilor disponibile pe piață",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cantitatea minimă de bunuri necesară supraviețuirii",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre utilitatea totală și cea marginală, la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Combinațiile cantitative maxime obținute prin consumul a două sau mai multe bunuri, de la care consumatorul estimează că va obține maximum de satisfacție",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Programul optim de consum este exact acea combinație de cantități din două sau mai multe bunuri, obținută cu venitul disponibil, de la care consumatorul rațional estimează că va obține satisfacția totală maximă. Prin urmare, răspunsul corect este: Combinațiile cantitative maxime obținute prin consumul a două sau mai multe bunuri, de la care consumatorul estimează că va obține maximum de satisfacție."
+    },
+    {
+      "id": "C3_T18",
+      "capitol": 3,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Condiția maximizării satisfacției consumatorului rațional, în consumul a două bunuri X și Y, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "U.mg(x)/Px = U.mg(y)/Py",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "U.T(x) = U.T(y)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "U.mg(x) = U.mg(y), indiferent de prețurile celor două bunuri",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Px = Py, indiferent de utilitățile marginale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Consumatorul rațional își maximizează satisfacția atunci când ultimul leu cheltuit pe fiecare bun aduce aceeași satisfacție marginală — adică atunci când utilitatea marginală raportată la preț este egală pentru toate bunurile consumate: U.mg(x)/Px = U.mg(y)/Py. Prin urmare, răspunsul corect este: U.mg(x)/Px = U.mg(y)/Py."
+    },
+    {
+      "id": "C3_T19",
+      "capitol": 3,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Venitul disponibil (VD) al consumatorului, în cazul consumului a două bunuri X și Y, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Diferența dintre utilitatea totală a celor două bunuri",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Raportul dintre cantitățile consumate din cele două bunuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar suma cheltuită pe bunul cu prețul cel mai mare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Limitele între care se poate realiza un program de consum, la prețurile existente ale bunurilor: VD = Qx·Px + Qy·Py",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Venitul disponibil este suma de bani pe care consumatorul o are la dispoziție pentru a cumpăra bunurile dorite; el stabilește limita bugetului în cadrul căruia se realizează programul de consum, calculându-se ca sumă a cheltuielilor pe fiecare bun: VD = Qx·Px + Qy·Py. Prin urmare, răspunsul corect este: Limitele între care se poate realiza un program de consum, la prețurile existente ale bunurilor: VD = Qx·Px + Qy·Py."
+    },
+    {
+      "id": "C3_T20",
+      "capitol": 3,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Condiția maximizării satisfacției, în cazul consumului a două bunuri X și Y, poate fi exprimată echivalent și sub forma:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "U.mg(x)/U.mg(y) = Px/Py",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "U.mg(x) × U.mg(y) = Px × Py",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "U.mg(x) + U.mg(y) = Px + Py",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "U.mg(x) − U.mg(y) = Px − Py",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Condiția U.mg(x)/Px = U.mg(y)/Py poate fi rescrisă, prin simplă rearanjare a termenilor, sub forma echivalentă U.mg(x)/U.mg(y) = Px/Py — manualul indică explicit ambele formulări ale aceleiași condiții de optim. Prin urmare, răspunsul corect este: U.mg(x)/U.mg(y) = Px/Py."
+    },
+    {
+      "id": "C3_E01",
+      "capitol": 3,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Andrei consumă succesiv câte o felie de pizza. La a patra felie, el își mărește satisfacția totală de la 40 u.u. la 46 u.u. Utilitatea marginală a celei de-a patra felii [U.mg.(4)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "40 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "46 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Deoarece ΔQ = 1, U.mg.(4) = U.T4 – U.T3 = 46 – 40 = 6 u.u."
+    },
+    {
+      "id": "C3_E02",
+      "capitol": 3,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția utilității totale este de tipul: U.T = 20 + 8Qx, unde Qx este cantitatea consumată din bunul X. Utilitatea marginală (U.mg.), când se consumă succesiv câte o unitate din bunul X, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "20 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "28 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "12 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "ΔQ = 1 → U.mg. = ΔU.T. Când Qx=1 → U.T1=28, Qx=2 → U.T2=36, Qx=3 → U.T3=44 ⇒ ΔU.T = 8 u.u. (panta funcției liniare)."
+    },
+    {
+      "id": "C3_E03",
+      "capitol": 3,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "U.T și U.mg. resimțite de o persoană în cazul consumării a 5 unități dintr-un bun sunt prezentate în tabel (Q 1–5: U.T = ?, 60, ?, 76, ?; U.mg = 40, 20, 10, ?, 4). Să se completeze spațiile libere din tabel. Utilitatea totală este mai mare față de cea marginală în cazul consumării a 5 unități din bunul respectiv, de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4 ori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "76 ori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "20 ori",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "19 ori",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "ΔQ=1 → U.T1 = U.mg.(1) = 40. U.T2 = 60 (dat) → verificare: U.T1+U.mg.(2) = 40+20 = 60 ✓. U.T3 = U.T2+U.mg.(3) = 60+10 = 70. U.T4 = 76 (dat) → U.mg.(4) = U.T4–U.T3 = 76–70 = 6. U.T5 = U.T4+U.mg.(5) = 76+4 = 80 ⇒ U.T5/U.mg.(5) = 80/4 = 20 ori."
+    },
+    {
+      "id": "C3_E04",
+      "capitol": 3,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Satisfacția ultimei unități consumate din bunul A, care are un preț de 50 u.m., este de 80 u.u., iar a bunului B este de 32 u.u. Consumatorul va fi în condiții de echilibru dacă prețul bunului B (PB) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "32 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "50 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "16 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Condiția de echilibru: U.mg.(A)/PA = U.mg.(B)/PB → 80/50 = 32/PB ⇒ PB = (32 × 50)/80 = 20 u.m."
+    },
+    {
+      "id": "C3_E05",
+      "capitol": 3,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se dau următoarele date privind evoluția U.mg. în cazul consumării a 5 buc. dintr-un bun X (Qx 1–5: U.mg = 18, 12, 7, 0, –3). Satisfacția totală (U.T) atinsă în condiții de optim pentru consumator este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "18 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "34 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "37 u.u.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Consumatorul rațional se oprește exact la pragul de saturație, unde U.mg. = 0 (a patra unitate). U.T (optim) = U.mg.(1)+U.mg.(2)+U.mg.(3)+U.mg.(4) = 18+12+7+0 = 37 u.u."
+    },
+    {
+      "id": "C3_E06",
+      "capitol": 3,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană cu un venit net de 900 u.m. dorește să cumpere 5 kg din bunul X la prețul de 30 u.m. și 10 kg din bunul Y. Achiziționarea cantităților dorite din cele două bunuri cu venitul net se realizează dacă prețul bunului Y (PY) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "75 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "30 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "90 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "15 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "VD = 900 = Qx·Px + Qy·PY = 5×30 + 10×PY = 150 + 10×PY ⇒ PY = (900–150)/10 = 75 u.m."
+    },
+    {
+      "id": "C3_E07",
+      "capitol": 3,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În condiții de echilibru, cantitățile consumate din două bunuri X și Y sunt Qx = 5 buc. și Qy = 10 buc., iar prețul bunului X este de 24 u.m. și este cu 20% mai mic decât al bunului Y. Venitul net (Vn) care-i asigură consumatorului maximizarea utilității totale este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "300 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "120 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "150 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "420 u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Px = 24 = 0,8 × Py ⇒ Py = 24/0,8 = 30 u.m. Vn = Qx·Px + Qy·Py = 5×24 + 10×30 = 120 + 300 = 420 u.m."
+    },
+    {
+      "id": "C3_E08",
+      "capitol": 3,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Px = 60 u.m., iar raportul Py/U.mg.(y) = 3. Optimul în consumul a două bunuri (X și Y) este asigurat dacă utilitatea marginală a bunului X, [U.mg.(X)], este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "60 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "180 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20 u.u.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Condiția de optim: Px/U.mg.(x) = Py/U.mg.(y) = 3 ⇒ U.mg.(x) = Px/3 = 60/3 = 20 u.u."
+    },
+    {
+      "id": "C3_E09",
+      "capitol": 3,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Utilitățile marginale resimțite de o persoană la consumul succesiv a 4 unități dintr-un bun sunt: 20, 18, 15, 11. Utilitatea totală (U.T) obținută la consumarea celor 4 unități este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "64 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "11 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "54 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "U.T.(4 u.) = ΣU.mg.(4 u.) = 20+18+15+11 = 64 u.u."
+    },
+    {
+      "id": "C3_E10",
+      "capitol": 3,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Utilitatea marginală a bunului X evoluează conform funcției U.mg.(x) = 60/Qx. Utilitatea totală (U.T) obținută prin consumarea a 5 unități din bunul X este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "60 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "12 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "127 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "137 u.u.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "U.mg.(1) = 60/1 = 60, U.mg.(2) = 60/2 = 30, U.mg.(3) = 60/3 = 20, U.mg.(4) = 60/4 = 15, U.mg.(5) = 60/5 = 12 ⇒ U.T.(5 unități) = ΣU.mg. = 60+30+20+15+12 = 137 u.u."
+    },
+    {
+      "id": "C3_E11",
+      "capitol": 3,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Utilitățile marginale ale bunurilor X și Y, consumate de un individ, evoluează conform funcțiilor U.mg.(X) = 30 – 5Qx și U.mg.(Y) = 24 – 4Qy. Prețurile celor două bunuri sunt Px = 5 lei și Py = 3 lei, iar VD = 19 lei. Programul optim de consum este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 buc.(X) și 2 buc.(Y)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2 buc.(X) și 4 buc.(Y)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4 buc.(X) și 2 buc.(Y)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2 buc.(X) și 3 buc.(Y)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Programul optim respectă U.mg(x)/Px = U.mg(y)/Py. Calculând pentru Qx=1..4: U.mg(X) = 25,20,15,10 → /5 = 5, 4, 3, 2. Pentru Qy=1..4: U.mg(Y) = 20,16,12,8 → /3 = 6,67; 5,33; 4; 2,67. Egalitatea (rația = 4) se obține la Qx=2 și Qy=3. Verificare: VD = 5×2 + 3×3 = 10+9 = 19 lei ✓. Programul optim = 2 buc.(X) și 3 buc.(Y)."
+    },
+    {
+      "id": "C3_E12",
+      "capitol": 3,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Utilitățile totale resimțite de o persoană ce consumă succesiv 6 unități dintr-un bun sunt: 80, 135, 172, 180, 168, 140. Maximizarea satisfacției se realizează la consumul:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "celei de-a treia unități",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "celei de-a șasea unități",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "celei de-a patra unități",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "primei unități",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Utilitatea totală maximă este 180, atinsă unic la a patra unitate consumată (U.mg.(4) = 180–172 = 8 > 0, iar U.mg.(5) = 168–180 = –12 < 0, adică satisfacția scade după acest punct). Maximizarea satisfacției se realizează, deci, la consumul celei de-a patra unități."
+    },
+    {
+      "id": "C3_E13",
+      "capitol": 3,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Utilitățile totale resimțite de o persoană în cazul consumării a 5 bucăți din bunurile C și D, ale căror prețuri PC = PD = 6 u.m., sunt prezentate în tabel (Q 1–5: U.T(C) = 120, 192, 240, 276, 306; U.T(D) = 210, 324, 390, 432, 462). Venitul disponibil (VD) care-i asigură persoanei maximizarea satisfacției este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "30 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "60 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "24 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "45 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "U.mg.(C) = 120, 72, 48, 36, 30 → /6 = 20, 12, 8, 6, 5. U.mg.(D) = 210, 114, 66, 42, 30 → /6 = 35, 19, 11, 7, 5. Egalitatea unică a rapoartelor (=5) se obține la a 5-a bucată din fiecare bun. Programul optim = 5 buc.(C) și 5 buc.(D) → VD = 6×5 + 6×5 = 60 u.m."
+    },
+    {
+      "id": "C3_E14",
+      "capitol": 3,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Programul optim de consum a două bunuri C și D este: 7 buc. (C) și 5 buc. (D), iar prețurile lor sunt: PC = 8 lei și PD = 12 lei. Venitul net (Vn) care-i asigură consumatorului maximizarea satisfacției este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "96 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "60 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "116 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "56 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Vn = QC·PC + QD·PD = 7×8 + 5×12 = 56 + 60 = 116 lei."
+    },
+    {
+      "id": "C3_E15",
+      "capitol": 3,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Tabelul de mai jos prezintă relațiile dintre cantitățile achiziționate dintr-un bun și satisfacția totală obținută prin consumarea diferitelor doze din acel bun (Q 40–200: U.T = 400, 640, 800, 880, 920). Utilitatea marginală a unei unități din lotul de 160 de bucăți este mai mică, față de utilitatea marginală a unei unități din lotul de 80 de bucăți, de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2 ori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 ori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1,5 ori",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 ori",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "ΔQ = 40. U.mg.(lot 40) = 400/40 = 10. U.mg.(lot 80) = (640–400)/40 = 6. U.mg.(lot 120) = (800–640)/40 = 4. U.mg.(lot 160) = (880–800)/40 = 2. U.mg.(lot 200) = (920–880)/40 = 1. Raportul: U.mg.(lot 80)/U.mg.(lot 160) = 6/2 = 3 ori."
+    },
+    {
+      "id": "C3_E16",
+      "capitol": 3,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Satisfacțiile suplimentare obținute prin consumarea succesivă a 7 unități din bunul X sunt: 24, 15, 9, 3, 0, –3, –7. Utilitatea totală (U.T) obținută de un consumator rațional este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "51 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "24 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "41 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Consumatorul rațional se oprește la pragul de saturație (U.mg. = 0), fără a consuma dozele cu U.mg. negativă. U.T = 24+15+9+3+0 = 51 u.u."
+    },
+    {
+      "id": "C3_E17",
+      "capitol": 3,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția utilității marginale este: U.mg.(x) = 36 – 6Qx și se consumă succesiv 5 unități din bunul X. Rata descreșterii utilității totale (ΔU.T) când se consumă a cincea unitate față de a treia este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "18 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "6 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "12 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "24 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "U.mg.(1,2,3,4,5) = 30, 24, 18, 12, 6 ⇒ U.T. cumulată: 30, 54, 72, 84, 90. Rata descreșterii = U.T(5) – U.T(3) = 90 – 72 = 18 u.u."
+    },
+    {
+      "id": "C3_E18",
+      "capitol": 3,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se consumă succesiv 4 doze dintr-un bun. U.mg. a primei doze este de 40 u.u., iar U.T. a fiecărei doze suplimentare consumate crește cu 50%, 20%, 10% față de cea precedentă. Utilitatea marginală a celei de-a patra doze, [U.mg.(4)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "72 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "7,2 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "12 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "79,2 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "U.T.(1) = U.mg.(1) = 40. U.T.(2) = 1,5×40 = 60. U.T.(3) = 1,2×60 = 72. U.T.(4) = 1,1×72 = 79,2 ⇒ U.mg.(4) = U.T.(4) – U.T.(3) = 79,2 – 72 = 7,2 u.u."
+    },
+    {
+      "id": "C3_E19",
+      "capitol": 3,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Utilitățile marginale în cazul consumării a 5 unități din bunurile X și Y sunt prezentate în tabel (Q 1–5: U.mg.(X) = 55, 47, 40, 35, 25; U.mg.(Y) = 30, 21, 14, 9, 4). Dacă Px = 5 lei și Py = 3 lei, atunci venitul disponibil (VD) necesar maximizării satisfacției este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "26 lei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "35 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "21 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "U.mg.(X)/5 = 11; 9,4; 8; 7; 5. U.mg.(Y)/3 = 10; 7; 4,67; 3; 1,33. Egalitatea unică a rapoartelor (=7) se obține la Qx=4 și Qy=2. Programul optim = 4 buc.(X) + 2 buc.(Y) ⇒ VD = 5×4 + 3×2 = 20+6 = 26 lei."
+    },
+    {
+      "id": "C3_E20",
+      "capitol": 3,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană poate consuma până la 4 kg din bunurile C și D, cu prețurile Pc = 3 lei și Pd = 6 lei, iar utilitățile lor marginale și totale sunt conform tabelului de mai jos (Q 1–4: U.mg.(C) = 54, 45, 33, 18; U.T.(D) = 144, 234, 288, 312). Programul optim de consum și satisfacția maximă (U.T) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2Qc + 2Qd, 333 u.u.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "2Qc + 2Qd, 234 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "3Qc + 1Qd, 150 u.u.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1Qc + 3Qd, 288 u.u.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "U.T.(C) cumulată din U.mg.(C): 54, 99, 132, 150. U.mg.(D), derivată din U.T.(D): 144, 90, 54, 24. Rapoartele U.mg.(C)/3 = 18, 15, 11, 6, iar U.mg.(D)/6 = 24, 15, 9, 4. Egalitatea unică (=15) are loc la Qc=2 și Qd=2. Programul optim = 2Qc + 2Qd. Satisfacția maximă: U.T.(C=2) + U.T.(D=2) = 99 + 234 = 333 u.u."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

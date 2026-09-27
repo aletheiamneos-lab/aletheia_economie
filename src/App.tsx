@@ -1,0 +1,265 @@
+import { lazy, Suspense, useEffect, useState } from 'react'
+import { AppShell } from './components/AppShell'
+import { Dashboard } from './components/Dashboard'
+import { LoginPage } from './components/LoginPage'
+import { NotesDrawer } from './components/NotesDrawer'
+import { ProfilePage } from './components/ProfilePage'
+import { chapters } from './data/catalog'
+import { useSessionState } from './session'
+import { useAdminData } from './adminData'
+import { getGameMeta } from './games/catalog'
+import { useAppearance } from './preferences'
+import type { Route } from './types'
+
+const AdminReportsPage = lazy(() => import('./components/AdminReportsPage').then((module) => ({ default: module.AdminReportsPage })))
+const AdmissionAssessmentPage = lazy(() => import('./components/AdmissionAssessmentPage').then((module) => ({ default: module.AdmissionAssessmentPage })))
+const AdmissionTestsPage = lazy(() => import('./components/AdmissionTestsPage').then((module) => ({ default: module.AdmissionTestsPage })))
+const FinalAssessmentRoutePage = lazy(() => import('./components/FinalAssessmentRoutePage').then((module) => ({ default: module.FinalAssessmentRoutePage })))
+const CurriculumMap = lazy(() => import('./components/CurriculumMap').then((module) => ({ default: module.CurriculumMap })))
+const GamesPage = lazy(() => import('./components/GamesPage').then((module) => ({ default: module.GamesPage })))
+const GameStudioPage = lazy(() => import('./components/GameStudioPage').then((module) => ({ default: module.GameStudioPage })))
+const GraphLabPage = lazy(() => import('./components/GraphLabPage').then((module) => ({ default: module.GraphLabPage })))
+const LessonRoutePage = lazy(() => import('./components/LessonRoutePage').then((module) => ({ default: module.LessonRoutePage })))
+const LessonsPage = lazy(() => import('./components/LessonsPage').then((module) => ({ default: module.LessonsPage })))
+const LibraryPage = lazy(() => import('./components/LibraryPage').then((module) => ({ default: module.LibraryPage })))
+const MathWorkspacePage = lazy(() => import('./components/MathWorkspacePage').then((module) => ({ default: module.MathWorkspacePage })))
+const FlashcardsPage = lazy(() => import('./components/FlashcardsPage').then((module) => ({ default: module.FlashcardsPage })))
+const PracticeAssessmentRoutePage = lazy(() => import('./components/PracticeAssessmentRoutePage').then((module) => ({ default: module.PracticeAssessmentRoutePage })))
+const RecapTestsPage = lazy(() => import('./components/RecapTestsPage').then((module) => ({ default: module.RecapTestsPage })))
+
+function validChapterNumber(value: string) {
+  const chapterNumber = Number(value)
+  return Number.isInteger(chapterNumber) && chapterNumber >= 1 && chapterNumber <= 19
+    ? chapterNumber
+    : null
+}
+
+function parseRoute(hash: string): Route {
+  if (hash === '#/admin/rapoarte') return { page: 'admin-reports' }
+  if (hash === '#/biblioteca') return { page: 'library' }
+  if (hash === '#/lectii') return { page: 'lessons' }
+  if (hash === '#/caiet-matematic') return { page: 'math-workspace' }
+  if (hash === '#/flashcarduri') return { page: 'flashcards' }
+  const gameMatch = hash.match(/^#\/jocuri\/([a-z0-9_]+)$/)
+  if (gameMatch) return { page: 'game', gameId: gameMatch[1] }
+  if (hash === '#/jocuri') return { page: 'games' }
+  const admissionMatch = hash.match(/^#\/teste-admitere\/([a-z0-9-]+)$/)
+  if (admissionMatch) return { page: 'admission-assessment', testId: admissionMatch[1] }
+  if (hash === '#/teste-admitere') return { page: 'admission-tests' }
+  const graphLabMatch = hash.match(/^#\/grafice(?:\/(\d+))?$/)
+  if (graphLabMatch) {
+    const lesson = graphLabMatch[1] ? validChapterNumber(graphLabMatch[1]) : null
+    return { page: 'graph-lab', lesson: lesson ?? undefined }
+  }
+  const recapMatch = hash.match(/^#\/teste-recapitulative\/capitol\/(\d+)$/)
+  if (recapMatch) {
+    const chapter = validChapterNumber(recapMatch[1])
+    if (chapter !== null) return { page: 'recap-assessment', chapter }
+  }
+  if (hash === '#/teste-recapitulative') return { page: 'recap-tests' }
+  if (hash === '#/profil') return { page: 'profile' }
+  const chapterMatch = hash.match(/^#\/capitol\/(\d+)(?:\/(test-final|antrenament))?/)
+  if (chapterMatch) {
+    const chapter = validChapterNumber(chapterMatch[1])
+    if (chapter !== null) {
+      if (chapterMatch[2] === 'test-final') return { page: 'assessment', chapter, mode: 'final' }
+      if (chapterMatch[2] === 'antrenament') return { page: 'assessment', chapter, mode: 'practice' }
+      const params = new URLSearchParams(hash.split('?')[1] ?? '')
+      return { page: 'lesson', chapter, section: params.get('sectiune') ?? undefined }
+    }
+  }
+  if (hash.startsWith('#/harta')) return { page: 'map' }
+  return { page: 'dashboard' }
+}
+
+export function App() {
+  const [route, setRoute] = useState<Route>(() => parseRoute(window.location.hash))
+  const [notesOpen, setNotesOpen] = useState(false)
+  const sessionApi = useSessionState()
+  const adminDataApi = useAdminData()
+  const appearanceApi = useAppearance()
+
+  const activeChapterNumber = route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment'
+    ? route.chapter
+    : route.page === 'graph-lab' && route.lesson
+      ? route.lesson
+      : sessionApi.session.lastChapter
+  const activeChapter = chapters.find((chapter) => chapter.number === activeChapterNumber) ?? chapters[0]
+
+  useEffect(() => {
+    const update = () => setRoute(parseRoute(window.location.hash))
+    window.addEventListener('hashchange', update)
+    if (!window.location.hash) window.history.replaceState(null, '', '#/')
+    return () => window.removeEventListener('hashchange', update)
+  }, [])
+
+  useEffect(() => {
+    if (sessionApi.session.isAuthenticated && sessionApi.session.userRole !== 'admin' && route.page === 'admin-reports') {
+      window.location.hash = '#/'
+    }
+  }, [route.page, sessionApi.session.isAuthenticated, sessionApi.session.userRole])
+
+  useEffect(() => {
+    if (!sessionApi.session.isAuthenticated || sessionApi.session.userRole !== 'student') return
+    const access = adminDataApi.authorizeStudent(sessionApi.session.userEmail)
+    if (access?.status === 'blocked') {
+      sessionApi.logout()
+      window.location.hash = '#/'
+    }
+  }, [adminDataApi.authorizeStudent, sessionApi.logout, sessionApi.session.isAuthenticated, sessionApi.session.userEmail, sessionApi.session.userRole])
+
+  useEffect(() => {
+    if (route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment') sessionApi.selectChapter(route.chapter)
+    if (route.page === 'graph-lab' && route.lesson) sessionApi.selectChapter(route.lesson)
+    if (!sessionApi.session.isAuthenticated) {
+      document.title = 'Autentificare — Economie by A mentor'
+      return
+    }
+    const pageTitle = route.page === 'dashboard'
+      ? 'Economia — acasă'
+      : route.page === 'library'
+        ? 'Bibliotecă — Economia'
+      : route.page === 'lessons'
+        ? 'Lecții — Economia'
+      : route.page === 'math-workspace'
+        ? 'Caiet matematic — Economia'
+      : route.page === 'flashcards'
+        ? 'Flashcarduri — Economia'
+      : route.page === 'games'
+        ? 'Jocuri economice — Economia'
+      : route.page === 'game'
+        ? `${getGameMeta(route.gameId)?.title ?? 'Joc economic'} — Economia`
+      : route.page === 'map'
+        ? 'Harta materiei — Economia'
+        : route.page === 'graph-lab'
+          ? 'Grafice interactive — Economia'
+        : route.page === 'recap-tests'
+          ? 'Teste recapitulative — Economia'
+          : route.page === 'admission-tests'
+            ? 'Teste de admitere — Economia'
+          : route.page === 'admission-assessment'
+            ? 'Test de admitere — Economia'
+          : route.page === 'recap-assessment'
+            ? `Test recapitulativ — Capitolul ${route.chapter}`
+          : route.page === 'admin-reports'
+            ? 'Rapoarte și acces — Economia'
+          : route.page === 'profile'
+            ? 'Profil — Economia'
+        : route.page === 'lesson'
+          ? `Capitolul ${route.chapter} — ${activeChapter.title}`
+          : `${route.mode === 'final' ? 'Test final' : 'Antrenament'} — Capitolul ${route.chapter}`
+    document.title = pageTitle
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }, [route, activeChapter.title, sessionApi.selectChapter, sessionApi.session.isAuthenticated])
+
+  const navigate = (path: string) => {
+    // Update the visible route immediately. The hashchange listener remains
+    // responsible for browser back/forward navigation, but a menu click no
+    // longer depends on that asynchronous event being delivered first.
+    setRoute(parseRoute(path))
+    if (window.location.hash !== path) window.location.hash = path
+  }
+
+  const login = (user: Parameters<typeof sessionApi.login>[0]) => {
+    if (user.role === 'student') {
+      const registeredStudent = adminDataApi.authorizeStudent(user.email)
+      if (registeredStudent?.status === 'blocked') return 'Accesul acestui cont este blocat. Contactează administratorul.'
+      const identity = { name: user.name.trim(), email: registeredStudent?.email ?? user.email.trim().toLowerCase() }
+      sessionApi.login({ ...user, name: identity.name, email: identity.email })
+      adminDataApi.registerAndConnectStudent(identity.name, identity.email)
+      if (window.location.hash === '#/admin/rapoarte') navigate('#/')
+      return null
+    }
+    sessionApi.login(user)
+    if (route.page === 'dashboard') navigate('#/admin/rapoarte')
+    return null
+  }
+
+  if (!sessionApi.session.isAuthenticated) return <LoginPage onLogin={login} />
+
+  return (
+    <AppShell
+      route={route}
+      sessionApi={sessionApi}
+      onNavigate={navigate}
+      onLogout={() => {
+        if (sessionApi.session.userRole === 'student') adminDataApi.disconnectStudentByEmail(sessionApi.session.userEmail)
+        sessionApi.logout()
+        navigate('#/')
+      }}
+    >
+      <Suspense fallback={<div className="route-loading" role="status"><span />Se pregătește secțiunea…</div>}>
+        {route.page === 'dashboard' && <Dashboard sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'library' && <LibraryPage isAdmin={sessionApi.session.userRole === 'admin'} />}
+        {route.page === 'lessons' && <LessonsPage sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'math-workspace' && <MathWorkspacePage />}
+        {route.page === 'flashcards' && <FlashcardsPage />}
+        {route.page === 'games' && <GamesPage onNavigate={navigate} />}
+        {route.page === 'game' && <GameStudioPage key={route.gameId} gameId={route.gameId} onNavigate={navigate} />}
+        {route.page === 'lesson' && (
+          <LessonRoutePage
+            key={route.chapter}
+            chapter={route.chapter}
+            initialSection={route.section}
+            sessionApi={sessionApi}
+            onNavigate={navigate}
+            onOpenNotes={() => setNotesOpen(true)}
+          />
+        )}
+        {route.page === 'assessment' && (
+          route.mode === 'final' ? <FinalAssessmentRoutePage
+            key={`${route.chapter}-${route.mode}`}
+            chapter={route.chapter}
+            sessionApi={sessionApi}
+            onNavigate={navigate}
+          /> : <PracticeAssessmentRoutePage
+            key={`${route.chapter}-${route.mode}`}
+            chapter={route.chapter}
+            mode="practice"
+            sessionApi={sessionApi}
+            onNavigate={navigate}
+          />
+        )}
+        {route.page === 'map' && <CurriculumMap sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'graph-lab' && (
+          <GraphLabPage
+            initialLesson={route.lesson ?? sessionApi.session.lastChapter}
+            isAdmin={sessionApi.session.userRole === 'admin'}
+            onNavigate={navigate}
+          />
+        )}
+        {route.page === 'recap-tests' && <RecapTestsPage sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'admission-tests' && <AdmissionTestsPage onNavigate={navigate} />}
+        {route.page === 'admission-assessment' && <AdmissionAssessmentPage testId={route.testId} sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'admin-reports' && sessionApi.session.userRole === 'admin' && <AdminReportsPage adminDataApi={adminDataApi} />}
+        {route.page === 'profile' && (
+          <ProfilePage
+            sessionApi={sessionApi}
+            appearanceApi={appearanceApi}
+            adminStats={{
+              students: adminDataApi.students.length,
+              online: adminDataApi.students.filter((student) => student.isOnline).length,
+              reports: adminDataApi.reports.length,
+            }}
+            onNavigate={navigate}
+          />
+        )}
+        {route.page === 'recap-assessment' && (
+          <PracticeAssessmentRoutePage
+            key={`recap-${route.chapter}`}
+            chapter={route.chapter}
+            mode="recap"
+            sessionApi={sessionApi}
+            onNavigate={navigate}
+          />
+        )}
+      </Suspense>
+      <NotesDrawer
+        open={notesOpen}
+        notes={sessionApi.session.notes}
+        onClose={() => setNotesOpen(false)}
+        onSave={sessionApi.saveNotes}
+      />
+    </AppShell>
+  )
+}

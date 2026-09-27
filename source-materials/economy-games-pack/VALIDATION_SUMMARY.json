@@ -1,0 +1,152 @@
+{
+  "games": 10,
+  "tests_passed": 10,
+  "game_folders": {
+    "01_market_maker": {
+      "content_units": 15,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_01_market_maker.py"
+      ]
+    },
+    "02_consumer_lab": {
+      "content_units": 12,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_02_consumer_lab.py"
+      ]
+    },
+    "03_factory_master": {
+      "content_units": 12,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_03_factory_master.py"
+      ]
+    },
+    "04_inflation_detective": {
+      "content_units": 15,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_04_inflation_detective.py"
+      ]
+    },
+    "05_central_bank": {
+      "content_units": 8,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_05_central_bank.py"
+      ]
+    },
+    "06_job_market": {
+      "content_units": 12,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_06_job_market.py"
+      ]
+    },
+    "07_wall_street_lab": {
+      "content_units": 15,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_07_wall_street_lab.py"
+      ]
+    },
+    "08_global_trader": {
+      "content_units": 10,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_08_global_trader.py"
+      ]
+    },
+    "09_economic_pulse": {
+      "content_units": 16,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_09_economic_pulse.py"
+      ]
+    },
+    "10_president": {
+      "content_units": 20,
+      "files": [
+        "ACTION_EXAMPLE.json",
+        "FRONTEND_BLUEPRINT.md",
+        "SOURCE_MAP.json",
+        "SPEC.md",
+        "UI_INTERACTIONS.json",
+        "engine.py"
+      ],
+      "test_files": [
+        "test_10_president.py"
+      ]
+    }
+  },
+  "notes": [
+    "All 10 Python reference engines are executable.",
+    "Each game is stored separately.",
+    "Simulation coefficients are pedagogical assumptions; textbook formulas/concepts are source-mapped.",
+    "Frontend blueprints are framework-agnostic so the coding agent can integrate them into the existing app."
+  ]
+}

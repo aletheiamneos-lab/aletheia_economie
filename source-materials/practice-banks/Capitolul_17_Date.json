@@ -1,0 +1,1288 @@
+{
+  "capitol": 17,
+  "titlu_capitol": "Ciclicitatea economică",
+  "nota_metodologica": "Capitolul este pur conceptual in sursa (fara formule sau probleme numerice), asemenea Capitolelor 2, 9, 16, 18 - prin urmare, toate cele 40 de intrebari sunt de teorie (fluctuatiile macroeconomice, ciclicitatea economica, ciclul economic si fazele lui, politicile anticiclice).",
+  "intrebari": [
+    {
+      "id": "C17_T01",
+      "capitol": 17,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Activitatea economică dintr-o țară are, în timp, o evoluție:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Perfect liniară și constantă, an de an",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv ascendentă, fără nicio abatere",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv descendentă, fără nicio perioadă de creștere",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ondulatorie, neuniformă, fluctuantă",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Realitatea economică nu urmează o traiectorie perfect dreaptă, nici exclusiv ascendentă sau descendentă: ea are o evoluție ondulatorie, neuniformă, fluctuantă, la nivel de firmă, ramură sau economie națională. Prin urmare, răspunsul corect este: Ondulatorie, neuniformă, fluctuantă."
+    },
+    {
+      "id": "C17_T02",
+      "capitol": 17,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Fluctuațiile sezoniere ale activității economice sunt determinate, printre altele, de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Evenimente politice neprevăzute",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Interdependența factorilor economici interni activității economice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cataclisme naturale complet imprevizibile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cauze naturale, sociale, succesiunea anotimpurilor, tradiții și obiceiuri repetabile în timp",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Fluctuațiile sezoniere sunt specifice domeniilor precum agricultura, turismul sau construcțiile, fiind determinate de cauze regulate și previzibile — succesiunea anotimpurilor, tradiții — nu de evenimente imprevizibile sau de factori pur economici interni. Prin urmare, răspunsul corect este: Cauze naturale, sociale, succesiunea anotimpurilor, tradiții și obiceiuri repetabile în timp."
+    },
+    {
+      "id": "C17_T03",
+      "capitol": 17,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Fluctuațiile întâmplătoare ale activității economice sunt cauzate de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cataclisme naturale și evenimente politice neprevăzute",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Succesiunea regulată a anotimpurilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Tradiții și obiceiuri repetabile în fiecare an",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Interdependența factorilor economici interni și alternanța prosperitate-regres",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Spre deosebire de fluctuațiile sezoniere (regulate, previzibile) sau cele ciclice (generate de factori economici interni), fluctuațiile întâmplătoare sunt provocate de evenimente neprevăzute — cataclisme naturale sau evenimente politice bruște. Prin urmare, răspunsul corect este: Cataclisme naturale și evenimente politice neprevăzute."
+    },
+    {
+      "id": "C17_T04",
+      "capitol": 17,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Fluctuațiile ciclice ale activității economice sunt generate de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv evenimente politice complet imprevizibile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv succesiunea anotimpurilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv cataclisme naturale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Factorii economici interni activității economice și interdependența dintre ei, manifestându-se prin alternanța prosperitate-regres",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Fluctuațiile ciclice au o cauzalitate distinctă de celelalte două tipuri: ele izvorăsc din interdependența factorilor economici interni, manifestându-se printr-o alternanță regulată a perioadelor de prosperitate cu cele de regres. Prin urmare, răspunsul corect este: Factorii economici interni activității economice și interdependența dintre ei, manifestându-se prin alternanța prosperitate-regres."
+    },
+    {
+      "id": "C17_T05",
+      "capitol": 17,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Ciclicitatea economică este o formă specifică de mișcare a activității economice, caracterizată prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O contracție economică permanentă, fără nicio perioadă de expansiune",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Absența completă a oricărei regularități temporale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Alternanța, într-o anumită succesiune și regularitate în timp, a perioadelor de creștere (expansiune) cu cele de descreștere (contracție)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "O creștere economică perfect constantă, fără nicio alternanță",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Ciclicitatea nu înseamnă haos sau creștere/contracție permanentă, ci o alternanță regulată, cu o anumită succesiune în timp, între perioadele de expansiune și cele de contracție economică. Prin urmare, răspunsul corect este: Alternanța, într-o anumită succesiune și regularitate în timp, a perioadelor de creștere (expansiune) cu cele de descreștere (contracție)."
+    },
+    {
+      "id": "C17_T06",
+      "capitol": 17,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cauza principală a ciclicității economice, potrivit lui J.M. Keynes, o constituie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv cataclismele naturale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Evoluția ciclică a eficienței (randamentului) utilizării factorilor de producție, în special a eficienței marginale a capitalului",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv deciziile arbitrare ale guvernelor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv succesiunea anotimpurilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Keynes a identificat drept cauză principală a ciclicității tocmai evoluția, ea însăși ciclică, a eficienței utilizării factorilor de producție — în special a eficienței marginale a capitalului — nu factori exteriori precum anotimpurile sau deciziile administrative izolate. Prin urmare, răspunsul corect este: Evoluția ciclică a eficienței (randamentului) utilizării factorilor de producție, în special a eficienței marginale a capitalului."
+    },
+    {
+      "id": "C17_T07",
+      "capitol": 17,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Ciclicitatea economică este considerată:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O anomalie rară, care nu s-a manifestat niciodată în istoria economică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un fenomen specific exclusiv economiilor de comandă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un fenomen exclusiv negativ, care trebuie eliminat complet din economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O formă firească, normală de evoluție a activității economice, care asigură continuitate, schimbări calitative și progres",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Departe de a fi doar un fenomen negativ sau o anomalie, ciclicitatea este o formă firească de evoluție a economiei — ea asigură, prin alternanța fazelor sale, continuitate, schimbări calitative și progres economic. Prin urmare, răspunsul corect este: O formă firească, normală de evoluție a activității economice, care asigură continuitate, schimbări calitative și progres."
+    },
+    {
+      "id": "C17_T08",
+      "capitol": 17,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Ciclul economic decenal (al afacerilor) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Perioada de la începutul unei contracții (crize) economice de ansamblu până la următoarea contracție succesivă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O perioadă de timp complet aleatorie, fără nicio regularitate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv perioada de expansiune economică, fără nicio fază de recesiune",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O perioadă fixă, întotdeauna de exact 10 ani, identică pentru toate țările",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Ciclul economic nu are o durată fixă, universală: el reprezintă perioada dintre două crize (contracții) succesive sau dintre două momente similare ale dezvoltării economice, variind ca durată de la un ciclu la altul. Prin urmare, răspunsul corect este: Perioada de la începutul unei contracții (crize) economice de ansamblu până la următoarea contracție succesivă."
+    },
+    {
+      "id": "C17_T09",
+      "capitol": 17,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cu privire la ciclul economic, se poate afirma că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Fiecare ciclu economic este inferior celui anterior, economia regresând constant",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu există un model general, unic, sub aspectul duratei, configurației și ordinii fazelor, dar fiecare ciclu este superior celui anterior",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Ciclurile economice nu au nicio legătură unele cu altele",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Toate ciclurile economice au exact aceeași durată și configurație",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Ciclurile economice diferă unele de altele ca durată, configurație și ordine a fazelor — nu există un tipar universal — dar tendința generală, pe termen lung, este ca fiecare ciclu să marcheze un nivel superior de dezvoltare față de cel anterior. Prin urmare, răspunsul corect este: Nu există un model general, unic, sub aspectul duratei, configurației și ordinii fazelor, dar fiecare ciclu este superior celui anterior."
+    },
+    {
+      "id": "C17_T10",
+      "capitol": 17,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În funcție de durata lor, ciclurile economice pe termen scurt au o durată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exact 100 de ani, fără excepție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar câteva zile",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "10-40 de luni",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "40-60 de ani",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Clasificarea ciclurilor economice după durată distinge clar termenul scurt (10-40 luni) de cel lung sau secular (40-60 ani) și de cel mediu, decenal (4-6 până la 10-12 ani). Prin urmare, răspunsul corect este: 10-40 de luni."
+    },
+    {
+      "id": "C17_T11",
+      "capitol": 17,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Ciclurile economice pe termen lung (seculare) au o durată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "40-60 de ani",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "4-6 ani",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "10-40 de luni",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exact un an calendaristic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Ciclurile seculare sunt cele mai extinse ca durată dintre cele trei categorii — 40-60 de ani — spre deosebire de cele pe termen scurt (10-40 luni) sau de cele decenale (4-6 până la 10-12 ani). Prin urmare, răspunsul corect este: 40-60 de ani."
+    },
+    {
+      "id": "C17_T12",
+      "capitol": 17,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Ciclul economic mediu, decenal (al afacerilor) are o durată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10-40 de luni",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exact 25 de ani, fără nicio variație",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4-6 ani, putând ajunge la 10-12 ani",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "40-60 de ani",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Ciclul decenal, cel mai studiat și mai relevant pentru analiza economică practică, are o durată tipică de 4-6 ani, putând ajunge, în anumite situații, până la 10-12 ani. Prin urmare, răspunsul corect este: 4-6 ani, putând ajunge la 10-12 ani."
+    },
+    {
+      "id": "C17_T13",
+      "capitol": 17,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Faza de recesiune economică a ciclului decenal este dominată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Fenomene economico-sociale negative",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O scădere sistematică a șomajului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O creștere accelerată și susținută a investițiilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Fenomene economico-sociale exclusiv pozitive",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Recesiunea este exact faza în care predomină fenomenele negative — scăderea producției, a investițiilor, creșterea șomajului — spre deosebire de „boomul economic”, unde domină fenomenele pozitive. Prin urmare, răspunsul corect este: Fenomene economico-sociale negative."
+    },
+    {
+      "id": "C17_T14",
+      "capitol": 17,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Faza de recesiune economică cuprinde, ca subfaze:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Criza economică ciclică (de supraproducție) și depresiunea economică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv expansiunea economică (avântul)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv boomul economic prelungit",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv reluarea (înviorarea) creșterii economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Recesiunea se compune din două subfaze succesive: criza economică ciclică (de supraproducție), urmată de depresiunea economică — reluarea și expansiunea aparțin, în schimb, fazei de „boom economic”. Prin urmare, răspunsul corect este: Criza economică ciclică (de supraproducție) și depresiunea economică."
+    },
+    {
+      "id": "C17_T15",
+      "capitol": 17,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rolul recesiunii economice, în cadrul ciclului economic, este de a asigura:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Distrugerea completă și definitivă a economiei naționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Creșterea nelimitată a prețurilor, fără nicio corecție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărei schimbări în structura economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Restabilirea, cu prețuri diferite, a unor echilibre economice, precum și restructurarea și reînnoirea factorilor de producție",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Recesiunea, deși dureroasă pe termen scurt, joacă un rol curativ pentru economie: ea restabilește echilibre (la prețuri diferite) și impune restructurarea și reînnoirea factorilor de producție, premise ale dezvoltării viitoare. Prin urmare, răspunsul corect este: Restabilirea, cu prețuri diferite, a unor echilibre economice, precum și restructurarea și reînnoirea factorilor de producție."
+    },
+    {
+      "id": "C17_T16",
+      "capitol": 17,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "„Boomul economic”, ca fază a ciclului decenal, este dominat de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O creștere accelerată a numărului de falimente",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Fenomene economico-sociale pozitive",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Fenomene economico-sociale exclusiv negative",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O scădere sistematică a cererii de bunuri economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "„Boomul economic” este opusul recesiunii: aici predomină fenomenele pozitive — creșterea producției, a cererii, a ocupării — spre deosebire de fenomenele negative specifice recesiunii. Prin urmare, răspunsul corect este: Fenomene economico-sociale pozitive."
+    },
+    {
+      "id": "C17_T17",
+      "capitol": 17,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "„Boomul economic” cuprinde, ca subfaze:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu are nicio subfază distinctă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Reluarea (înviorarea) creșterii economice și expansiunea economică (avântul)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv depresiunea economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv criza economică ciclică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "„Boomul economic” se compune din reluarea (înviorarea) creșterii economice, urmată de expansiunea economică (avântul) — criza și depresiunea aparțin, în schimb, fazei de recesiune. Prin urmare, răspunsul corect este: Reluarea (înviorarea) creșterii economice și expansiunea economică (avântul)."
+    },
+    {
+      "id": "C17_T18",
+      "capitol": 17,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rolul „boomului economic”, în cadrul ciclului economic, este de a asigura:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Distrugerea completă a capitalului tehnic existent",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Absența oricărei creșteri a producției",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Satisfacerea foarte rapidă a unor aspirații de progres economic și social",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Creșterea permanentă și nelimitată a șomajului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "„Boomul economic” permite economiei să satisfacă rapid aspirațiile de progres — economic și social — acumulate în perioada de recesiune, prin creșterea producției, a veniturilor și a ocupării. Prin urmare, răspunsul corect este: Satisfacerea foarte rapidă a unor aspirații de progres economic și social."
+    },
+    {
+      "id": "C17_T19",
+      "capitol": 17,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Criza economică de supraproducție se caracterizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un deficit acut de bunuri economice pe piață",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O creștere constantă și susținută a profiturilor firmelor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Existența unui surplus de produse greu vandabile, ceea ce determină scăderea producției, vânzărilor, investițiilor și creșterea stocurilor și a șomajului",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Absența completă a oricărui stoc de produse",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Criza de supraproducție este declanșată de un exces de produse greu vandabile — oferta depășește cererea — ceea ce antrenează în lanț scăderea producției, vânzărilor, investițiilor și creșterea stocurilor, șomajului și incertitudinii. Prin urmare, răspunsul corect este: Existența unui surplus de produse greu vandabile, ceea ce determină scăderea producției, vânzărilor, investițiilor și creșterea stocurilor și a șomajului."
+    },
+    {
+      "id": "C17_T20",
+      "capitol": 17,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Criza economică de supraproducție înlocuiește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Brusc și violent o fază ascendentă cu una descendentă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O fază de expansiune cu o altă fază de expansiune, la fel de intensă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nimic, criza fiind doar o continuare firească a expansiunii anterioare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Treptat și lin o fază descendentă cu una ascendentă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Criza economică nu este o tranziție lină: ea marchează o ruptură bruscă și violentă, înlocuind rapid faza ascendentă (expansiunea) cu una descendentă (recesiunea). Prin urmare, răspunsul corect este: Brusc și violent o fază ascendentă cu una descendentă."
+    },
+    {
+      "id": "C17_T21",
+      "capitol": 17,
+      "numar": 21,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Depresiunea economică se caracterizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dispariția completă a șomajului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O creștere accelerată a cursurilor bursiere",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O revenire imediată și completă la nivelul de dinaintea crizei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Propagarea în întregul sistem economic a dezechilibrelor declanșate în faza crizei, cu scăderea producției, veniturilor, cererii și profiturilor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Depresiunea este faza în care efectele crizei se propagă și se adâncesc în întregul sistem economic — producția, veniturile, cererea și profiturile continuă să scadă, iar șomajul și falimentele cresc. Prin urmare, răspunsul corect este: Propagarea în întregul sistem economic a dezechilibrelor declanșate în faza crizei, cu scăderea producției, veniturilor, cererii și profiturilor."
+    },
+    {
+      "id": "C17_T22",
+      "capitol": 17,
+      "numar": 22,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Reluarea (înviorarea) activității economice se produce pe fondul:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Unei creșteri accelerate a ratei dobânzii, care descurajează investițiile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Procesului investițional intens al firmelor care au rezistat recesiunii și al scăderii ratei dobânzii",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Unei creșteri masive și susținute a șomajului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Absenței complete a oricărei activități investiționale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Reluarea creșterii este posibilă tocmai datorită firmelor care au supraviețuit recesiunii și au continuat să investească, favorizate și de scăderea ratei dobânzii și de restricțiile de creditare din faza anterioară. Prin urmare, răspunsul corect este: Procesului investițional intens al firmelor care au rezistat recesiunii și al scăderii ratei dobânzii."
+    },
+    {
+      "id": "C17_T23",
+      "capitol": 17,
+      "numar": 23,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de reluare (înviorare) a activității economice, stimularea cererii de bunuri de consum marchează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O stagnare permanentă a activității economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Sfârșitul definitiv al oricărui ciclu economic viitor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Trecerea la faza următoare a ciclului economic",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Revenirea imediată la faza de criză",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Odată ce cererea de bunuri de consum este relansată (după relansarea sectorului producător de mijloace de producție), economia trece la faza următoare a ciclului — expansiunea economică. Prin urmare, răspunsul corect este: Trecerea la faza următoare a ciclului economic."
+    },
+    {
+      "id": "C17_T24",
+      "capitol": 17,
+      "numar": 24,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Expansiunea economică (avântul) se caracterizează, la început, prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Creșterea substanțială a investițiilor, care determină sporirea producției, a creditelor și a gradului de ocupare",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O scădere accentuată a producției și a creditelor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O creștere continuă și accelerată a șomajului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Dispariția completă a cererii de bunuri economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Expansiunea debutează printr-o creștere substanțială a investițiilor, care antrenează sporirea producției, a creditelor (inițial ieftine), a gradului de ocupare și a tuturor veniturilor. Prin urmare, răspunsul corect este: Creșterea substanțială a investițiilor, care determină sporirea producției, a creditelor și a gradului de ocupare."
+    },
+    {
+      "id": "C17_T25",
+      "capitol": 17,
+      "numar": 25,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza finală a expansiunii prelungite, apar:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O revenire bruscă și completă la stabilitate perfectă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar semne suplimentare de prosperitate, fără nicio tensiune",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O eliminare definitivă a oricărei posibilități de criză viitoare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Tensiuni și dezechilibre pe diferite piețe, determinate în principal de scăderea eficienței utilizării factorilor de producție",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Chiar în plină prosperitate, expansiunea prelungită generează germenii propriei încheieri: scăderea eficienței utilizării factorilor de producție creează tensiuni și dezechilibre, premise ale trecerii la un nou ciclu economic. Prin urmare, răspunsul corect este: Tensiuni și dezechilibre pe diferite piețe, determinate în principal de scăderea eficienței utilizării factorilor de producție."
+    },
+    {
+      "id": "C17_T26",
+      "capitol": 17,
+      "numar": 26,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Tensiunile apărute în faza finală a expansiunii prelungite reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dovada că economia a atins un echilibru permanent",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Garanția că nu va mai exista niciodată o nouă criză economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Premisele trecerii la un nou ciclu economic și, deci, la o nouă criză economică ciclică",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un fenomen complet izolat, fără nicio legătură cu ciclul economic următor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Aceste tensiuni nu sunt întâmplătoare, ci constituie exact premisele unui nou ciclu economic: economia se îndreaptă, inevitabil, spre o nouă criză economică ciclică, reluând astfel alternanța fazelor. Prin urmare, răspunsul corect este: Premisele trecerii la un nou ciclu economic și, deci, la o nouă criză economică ciclică."
+    },
+    {
+      "id": "C17_T27",
+      "capitol": 17,
+      "numar": 27,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de recesiune, politica monetară și de credit urmărește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Reducerea drastică a masei monetare, indiferent de efecte",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Frânarea cererii de bunuri de consum și de investiții",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Stimularea consumului și a investițiilor, prin scăderea ratei dobânzii și creșterea volumului creditelor și a masei monetare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Creșterea permanentă a ratei dobânzii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "În recesiune, autoritățile relaxează politica monetară — scad rata dobânzii, cresc volumul creditelor și masa monetară — tocmai pentru a stimula consumul și investițiile, opusul abordării din faza de boom. Prin urmare, răspunsul corect este: Stimularea consumului și a investițiilor, prin scăderea ratei dobânzii și creșterea volumului creditelor și a masei monetare."
+    },
+    {
+      "id": "C17_T28",
+      "capitol": 17,
+      "numar": 28,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de boom prelungit, politica monetară și de credit urmărește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stimularea nelimitată a cererii de bunuri de consum",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea completă a oricărui control asupra masei monetare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Frânarea cererii de bunuri de consum și de investiții, prin creșterea ratei dobânzii și un control mai riguros al masei monetare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Scăderea continuă a ratei dobânzii, indiferent de context",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "În faza de boom prelungit, scopul politicii monetare se inversează față de recesiune: se urmărește frânarea cererii excesive, prin creșterea ratei dobânzii, restricționarea creditelor și un control mai strict al masei monetare. Prin urmare, răspunsul corect este: Frânarea cererii de bunuri de consum și de investiții, prin creșterea ratei dobânzii și un control mai riguros al masei monetare."
+    },
+    {
+      "id": "C17_T29",
+      "capitol": 17,
+      "numar": 29,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de recesiune, politica cheltuielilor publice urmărește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Frânarea cererii agregate prin scăderea cheltuielilor publice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Reducerea drastică a cheltuielilor publice, indiferent de efecte",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Stimularea cererii agregate, prin creșterea cheltuielilor publice (achiziții de stat, investiții social-culturale)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a achizițiilor de stat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "În recesiune, statul își sporește cheltuielile publice — achiziții, investiții social-culturale — tocmai pentru a compensa scăderea cererii private și a stimula cererea agregată de ansamblu. Prin urmare, răspunsul corect este: Stimularea cererii agregate, prin creșterea cheltuielilor publice (achiziții de stat, investiții social-culturale)."
+    },
+    {
+      "id": "C17_T30",
+      "capitol": 17,
+      "numar": 30,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de boom, politica cheltuielilor publice urmărește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Menținerea constantă a cheltuielilor publice, fără nicio ajustare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea completă a bugetului de stat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Creșterea nelimitată a cheltuielilor publice, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea producției și a cererii agregate, prin scăderea cheltuielilor publice",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "În faza de boom, cheltuielile publice sunt reduse tocmai pentru a tempera o cerere agregată deja excesivă și a preveni supraîncălzirea economiei. Prin urmare, răspunsul corect este: Reducerea producției și a cererii agregate, prin scăderea cheltuielilor publice."
+    },
+    {
+      "id": "C17_T31",
+      "capitol": 17,
+      "numar": 31,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de recesiune, politica fiscală urmărește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Menținerea constantă a fiscalității, fără nicio schimbare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Reducerea taxelor și impozitelor, pentru a lăsa venituri mai mari la dispoziția agenților economici și a stimula cererea",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Creșterea drastică a taxelor și impozitelor, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a sistemului fiscal",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Reducerea taxelor și impozitelor în recesiune lasă mai mulți bani la dispoziția agenților economici, stimulând astfel cererea de bunuri de consum și investiții — exact opusul politicii aplicate în faza de boom. Prin urmare, răspunsul corect este: Reducerea taxelor și impozitelor, pentru a lăsa venituri mai mari la dispoziția agenților economici și a stimula cererea."
+    },
+    {
+      "id": "C17_T32",
+      "capitol": 17,
+      "numar": 32,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În faza de boom, politica fiscală urmărește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Reducerea drastică și continuă a fiscalității, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Creșterea taxelor și impozitelor, pentru a frâna cererea și investițiile și a spori veniturile bugetare",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Eliminarea completă a taxelor vamale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Menținerea constantă a nivelului fiscalității",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "În faza de boom, creșterea fiscalității servește simultan două scopuri: frânează cererea și investițiile excesive și sporește veniturile bugetare ale statului, pregătind resurse pentru eventuale intervenții viitoare. Prin urmare, răspunsul corect este: Creșterea taxelor și impozitelor, pentru a frâna cererea și investițiile și a spori veniturile bugetare."
+    },
+    {
+      "id": "C17_T33",
+      "capitol": 17,
+      "numar": 33,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Politicile de atenuare a efectelor crizelor și ciclicității economice au fost fundamentate, în principal, de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Economistul englez J.M. Keynes",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Nu au fost fundamentate teoretic de niciun economist",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un economist exclusiv din perioada contemporană, fără nicio legătură cu teoria clasică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv economiști din perioada mercantilistă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Politicile anticiclice descrise (monetară, a cheltuielilor publice, fiscală) își au originea teoretică în opera economistului englez J.M. Keynes, cel care a explicat și cauza principală a ciclicității economice. Prin urmare, răspunsul corect este: Economistul englez J.M. Keynes."
+    },
+    {
+      "id": "C17_T34",
+      "capitol": 17,
+      "numar": 34,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Politica cheltuielilor publice și politica fiscală, împreună, formează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Politica valutară a statului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Politica antitrust a statului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Politica monetară și de credit",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Politica bugetară a statului",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cele două politici — a cheltuielilor publice și cea fiscală — nu sunt independente: împreună, ele formează politica bugetară a statului, distinctă de politica monetară și de credit, care ține de bancă centrală. Prin urmare, răspunsul corect este: Politica bugetară a statului."
+    },
+    {
+      "id": "C17_T35",
+      "capitol": 17,
+      "numar": 35,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre indicatorii de exprimare a ciclicității economice la nivel macroeconomic se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv suprafața agricolă cultivată",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv numărul de nașteri dintr-o țară",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv numărul de turiști străini",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "PIB, rata șomajului, gradul de ocupare, rata inflației, volumul investițiilor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Ciclicitatea economică se reflectă printr-un set larg de indicatori macroeconomici — PIB, șomaj, gradul de ocupare, inflație, investiții, veniturile populației — nu prin indicatori demografici sau agricoli izolați. Prin urmare, răspunsul corect este: PIB, rata șomajului, gradul de ocupare, rata inflației, volumul investițiilor."
+    },
+    {
+      "id": "C17_T36",
+      "capitol": 17,
+      "numar": 36,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Instrumentele politicii monetare și de credit, folosite pentru atenuarea ciclicității economice, includ:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata dobânzii, volumul creditelor și masa monetară",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv cheltuielile pentru apărare națională",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv subvențiile agricole",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv taxele vamale la import",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Politica monetară și de credit acționează prin trei instrumente principale — rata dobânzii, volumul creditelor și masa monetară — spre deosebire de instrumentele politicii fiscale (taxe, impozite) sau ale politicii cheltuielilor publice. Prin urmare, răspunsul corect este: Rata dobânzii, volumul creditelor și masa monetară."
+    },
+    {
+      "id": "C17_T37",
+      "capitol": 17,
+      "numar": 37,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Scopul aplicării politicii monetare în faza de recesiune este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stimularea consumului și a investițiilor",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea completă a creditului din economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Frânarea cererii de bunuri de consum și de investiții",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Menținerea absolut constantă a masei monetare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Scopul explicit al relaxării monetare în recesiune este stimularea consumului și a investițiilor — o economie aflată în recesiune are nevoie de impuls, nu de frânare suplimentară. Prin urmare, răspunsul corect este: Stimularea consumului și a investițiilor."
+    },
+    {
+      "id": "C17_T38",
+      "capitol": 17,
+      "numar": 38,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre principalele categorii de politici folosite pentru atenuarea efectelor crizelor și a ciclicității economice se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv politica culturală",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Politica monetară și de credit, politica cheltuielilor publice și politica fiscală",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv politica externă și de apărare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv politica demografică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Statul dispune de trei categorii principale de politici anticiclice, care acționează coordonat: politica monetară și de credit, politica cheltuielilor publice și politica fiscală — celelalte domenii enumerate nu sunt instrumente directe de atenuare a ciclicității economice. Prin urmare, răspunsul corect este: Politica monetară și de credit, politica cheltuielilor publice și politica fiscală."
+    },
+    {
+      "id": "C17_T39",
+      "capitol": 17,
+      "numar": 39,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Criza economică ciclică (de supraproducție) și depresiunea economică sunt, în cadrul recesiunii, două:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Fenomene complet identice, fără nicio diferență între ele",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Subfaze distincte, dar succesive, prima declanșând-o pe a doua prin propagarea dezechilibrelor",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Evenimente complet independente, fără nicio legătură cauzală",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Faze care aparțin, de fapt, „boomului economic”, nu recesiunii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Deși ambele aparțin recesiunii, criza și depresiunea sunt subfaze distincte: criza declanșează brusc dezechilibrele economice, iar depresiunea este faza în care aceste dezechilibre se propagă și se adâncesc în întregul sistem economic. Prin urmare, răspunsul corect este: Subfaze distincte, dar succesive, prima declanșând-o pe a doua prin propagarea dezechilibrelor."
+    },
+    {
+      "id": "C17_T40",
+      "capitol": 17,
+      "numar": 40,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spre sfârșitul fazei de expansiune economică (avânt), poate avea loc:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Eliminarea completă a oricărei posibilități de recesiune viitoare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un „boom” sau o expansiune prelungită, urmată de apariția unor tensiuni și dezechilibre",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "O stagnare perfectă, fără nicio schimbare ulterioară",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O revenire instantanee la faza de criză, fără nicio expansiune prelungită",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Expansiunea nu se încheie brusc: ea se poate prelungi într-un „boom” susținut, dar tocmai această prelungire generează, spre final, tensiunile și dezechilibrele care pregătesc trecerea la un nou ciclu economic. Prin urmare, răspunsul corect este: Un „boom” sau o expansiune prelungită, urmată de apariția unor tensiuni și dezechilibre."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

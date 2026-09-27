@@ -1,0 +1,334 @@
+{
+  "capitol": {
+    "numar": 3,
+    "titlu": "Utilitatea bunurilor economice și comportamentul consumatorului rațional",
+    "obiective": [
+      "Să explici ce este utilitatea economică, utilitatea totală și utilitatea marginală",
+      "Să înțelegi legea utilității marginale descrescânde și comportamentul consumatorului rațional",
+      "Să calculezi și să interpretezi criteriul de eficiență în consum (Umg/P)",
+      "Să determini condiția de echilibru a consumatorului care alege între două bunuri",
+      "Să elaborezi un buget personal și să interpretezi un buget de familie"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "utilitate-forme",
+      "nr": "1",
+      "titlu": "Utilitatea intrinsecă și utilitatea economică",
+      "text": [
+        "Utilitatea intrinsecă (în sens general) reflectă capacitatea unui bun economic de a satisface o nevoie umană, la un moment dat. Ea derivă din proprietățile proprii ale bunului - de exemplu, poți scrie cu un creion, dar nu cu o gumă, datorită proprietăților specifice ale fiecăruia. E aceeași pentru toți consumatorii raționali și proprie tuturor bunurilor de calitate.",
+        "Utilitatea economică reflectă satisfacția pe care crede că o va obține un consumator prin utilizarea unei cantități determinate dintr-un bun economic, în anumite condiții de timp și spațiu. Spre deosebire de utilitatea intrinsecă, ea are o determinare subiectivă: depinde de preferințele, gusturile și veniturile fiecărui consumator.",
+        "Utilitatea economică e specifică doar bunurilor care îndeplinesc simultan 5 condiții: inițial consumatorul nu deține bunul, dar dorește să-l cumpere; există o legătură între proprietățile bunului și o nevoie; convingerea că folosirea bunului aduce o satisfacție cât mai mare; dorința și posibilitatea financiară de a-l achiziționa; capacitatea de a-l folosi efectiv."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Utilitatea intrinsecă",
+          "descriere": "determinare obiectivă, aceeași pentru toți consumatorii raționali"
+        },
+        {
+          "termen": "Utilitatea economică",
+          "descriere": "determinare subiectivă, diferă de la un consumator la altul, reflectă preferințele și nonposesia inițială a bunului"
+        }
+      ],
+      "exemple": [
+        "Există persoane care preferă apa plată, altele apa minerală - același bun (apa), dar utilități economice diferite, pentru că depind de preferințele fiecăruia."
+      ],
+      "formule": []
+    },
+    {
+      "id": "forme-utilitate",
+      "nr": "2",
+      "titlu": "Utilitatea individuală, marginală și totală",
+      "text": [
+        "Utilitatea individuală (U.i) reflectă satisfacția resimțită la consumarea fiecărei unități dintr-o serie de bunuri omogene. Utilitatea marginală (U.mg) reflectă sporul de satisfacție obținut prin creșterea cu o unitate a cantității consumate - practic, satisfacția adusă de ultima unitate consumată. Utilitatea totală (U.T) reflectă satisfacția totală obținută prin consumul succesiv al unei cantități dintr-un bun, până la pragul de saturație.",
+        "Legea utilității marginale descrescânde, formulată de economistul H.H. Gossen, arată că mărimea intensității unei plăceri descrește progresiv până la saturare, dacă respectiva plăcere este satisfăcută în mod continuu și neîntrerupt. Cu cât consumi mai mult dintr-un bun, cu atât fiecare unitate suplimentară îți aduce mai puțină satisfacție."
+      ],
+      "puncteCheie": [
+        "La prima unitate consumată, U.T = U.mg, iar U.mg are valoarea cea mai mare",
+        "La pragul de saturație (nivelul optim de consum), U.T este maximă, exact când U.mg = 0",
+        "Dincolo de acest prag, U.mg devine negativă, iar U.T scade - semn de comportament irațional"
+      ],
+      "exemple": [
+        "Dacă bei pahare cu apă unul după altul, primul pahar aduce cea mai mare satisfacție; fiecare pahar următor aduce tot mai puțin, până când un pahar în plus chiar te incomodează."
+      ],
+      "formule": [
+        {
+          "nume": "Utilitatea marginală",
+          "formula": "Umg = ΔUT/ΔQ = (UT1 - UT0)/(Q1 - Q0)"
+        },
+        {
+          "nume": "Utilitatea totală",
+          "formula": "UT = ΣUi = ΣUmg"
+        }
+      ],
+      "diagrama": "utilitateChart"
+    },
+    {
+      "id": "consumator-rational",
+      "nr": "3",
+      "titlu": "Consumatorul rațional și criteriul eficienței",
+      "text": [
+        "Consumatorul rațional este persoana care, folosindu-și venitul disponibil pentru a cumpăra bunuri, pune un principiu de eficiență la baza deciziei de a-și maximiza satisfacția. Criteriul de eficiență în alegere și consum este raportul dintre utilitatea marginală și prețul bunului.",
+        "Când alegi între două bunuri, compari acest raport pentru fiecare - și e mai eficient să cumperi mai mult din bunul la care raportul e mai mare, pentru că satisfacția obținută pe unitatea de cheltuială e mai mare acolo."
+      ],
+      "exemple": [
+        "Dacă Umg(x)=30 la prețul Px=10 u.m., iar Umg(y)=25 la prețul Py=5 u.m., atunci Umg(x)/Px=3, dar Umg(y)/Py=5. Deși X aduce mai multă satisfacție brută, Y e alegerea mai eficientă - fiecare leu cheltuit pe Y aduce mai multă satisfacție."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Efectul de substituție",
+          "descriere": "modificarea consumului dintr-un bun cauzată de modificarea prețului lui, relativ la alte bunuri - un bun mai scump e înlocuit, parțial, cu altele mai ieftine"
+        },
+        {
+          "termen": "Efectul de venit",
+          "descriere": "modificarea consumului cauzată de modificarea venitului real (V/P) - dacă prețul unui bun crește, venitul real scade, iar consumatorul își permite mai puțin"
+        }
+      ],
+      "formule": [
+        {
+          "nume": "Criteriul de eficiență",
+          "formula": "Crit.ef. = Umg / P"
+        }
+      ]
+    },
+    {
+      "id": "echilibru-consumator",
+      "nr": "4",
+      "titlu": "Programul optim de consum și echilibrul consumatorului",
+      "text": [
+        "Esența alegerii consumatorului rațional constă în găsirea acelui program de achiziții și consum care îi maximizează satisfacția (utilitatea totală), folosind venitul său disponibil, limitat.",
+        "Programul optim de consum reflectă combinațiile cantitative maxime obținute prin consumul a două sau mai multe bunuri, de la care consumatorul estimează că va obține satisfacția totală maximă. Venitul disponibil reprezintă limita în care se poate realiza acest program, la prețurile existente ale bunurilor."
+      ],
+      "formule": [
+        {
+          "nume": "Condiția de echilibru (2 bunuri)",
+          "formula": "Umg(x)/Px = Umg(y)/Py"
+        },
+        {
+          "nume": "Ecuația bugetului (venitul disponibil)",
+          "formula": "VD = Qx x Px + Qy x Py"
+        }
+      ],
+      "exemple": [
+        "Bianca are 150 u.m./săptămână de cheltuit pe covrigi (Px=5 u.m.) și pateuri (Py=25 u.m.). Comparând raportul Umg/P pentru fiecare cantitate posibilă, cele două rapoarte devin egale (Umg(x)/Px = Umg(y)/Py = 8) exact la a 5-a unitate din fiecare bun. Programul optim de consum este deci 5 covrigi + 5 pateuri: cheltuiește exact tot venitul (5x5 + 5x25 = 150 u.m.) și obține satisfacția totală maximă posibilă, UT = 1.750 utili. Vezi graficul de mai jos - cele două serii de rapoarte se întâlnesc exact în dreptul celei de-a 5-a unități.",
+        "Covrigii și pateurile sunt bunuri substituibile - satisfac alternativ aceeași nevoie (de hrană), așa că, dacă prețul pateurilor crește, Bianca poate cumpăra mai mulți covrigi în loc. Altfel stau lucrurile cu bunurile complementare, care satisfac împreună aceeași nevoie, într-o proporție fixă sau aproape fixă: dacă Bianca ar face o prăjitură cu 5 ouă și 5 linguri de zahăr, o creștere a prețului zahărului n-ar putea fi compensată cu mai multe ouă - rețeta cere ambele, în acea combinație.",
+        "Când sistemul celor 2 ecuații (condiția de echilibru + bugetul) se poate rezolva direct: Dan are un venit de 100 u.m., Px=Py=10 u.m., iar utilitățile marginale sunt UmgX=10-x și UmgY=12-y. Din condiția de echilibru, (10-x)/10=(12-y)/10, rezultă y=x+2; din buget, 10x+10y=100, rezultă x+y=10. Rezolvând sistemul: x=4, y=6 - programul optim de consum este 4x + 6y."
+      ],
+      "diagrama": "biancaChart",
+      "notaLegatura": {
+        "href": "#sect-simulator-consum",
+        "text": "Explorează interactiv această condiție de echilibru în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "buget",
+      "nr": "5",
+      "titlu": "Bugetul personal și bugetul de familie",
+      "text": [
+        "Bugetul personal este un plan financiar care prezintă veniturile și cheltuielile pentru o anumită perioadă. Când venitul e egal cu cheltuielile, bugetul e echilibrat; când cheltuielile propuse depășesc veniturile, bugetul e deficitar; când veniturile depășesc cheltuielile, bugetul e excedentar.",
+        "Bugetul de familie e un instrument statistic prin care se studiază consumul menajelor dintr-o țară - un document completat voluntar de familii considerate reprezentative de autoritatea statistică (în România, Institutul Național de Statistică). Informațiile din bugetele de familie reflectă nivelul și structura consumului, permițând evaluarea nivelului de trai și comparații internaționale."
+      ],
+      "puncteCheie": [
+        "Stabilirea obiectivelor: necesități zilnice, achiziționarea unor bunuri de folosință îndelungată",
+        "Estimarea veniturilor: identificarea principalelor surse (bani de buzunar, alocații, daruri etc.)",
+        "Planificarea cheltuielilor: notarea a ce dorești să cumperi sau să plătești în perioada respectivă"
+      ],
+      "exemple": [
+        "Bugetul săptămânal al lui Andrei e echilibrat: 25 u.m. venituri (bani de buzunar + bani de la bunici) și tot 25 u.m. cheltuieli (abonament RATB, bunuri personale, dulciuri, film, îmbrăcăminte, pizza)."
+      ],
+      "diagrama": "bugetChart"
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Faptul că poți scrie cu un creion, dar nu cu o gumă, ține de:",
+      "optiuni": [
+        "utilitatea economică, care e subiectivă",
+        "utilitatea intrinsecă, care derivă din proprietățile bunului",
+        "legea utilității marginale descrescânde",
+        "criteriul de eficiență în consum"
+      ],
+      "corect": 1,
+      "explicatie": "Utilitatea intrinsecă (în sens general) derivă din proprietățile proprii ale bunului, fiind aceeași pentru toți consumatorii raționali - de-asta poți scrie cu un creion, dar nu cu o gumă."
+    },
+    {
+      "intrebare": "Pe măsură ce consumi în mod neîntrerupt dintr-un bun, utilitatea marginală:",
+      "optiuni": [
+        "crește",
+        "scade",
+        "rămâne constantă",
+        "devine întotdeauna negativă"
+      ],
+      "corect": 1,
+      "explicatie": "Aceasta e legea utilității marginale descrescânde (Gossen): intensitatea unei plăceri scade progresiv, dacă e satisfăcută în mod continuu și neîntrerupt."
+    },
+    {
+      "intrebare": "Utilitatea totală este maximă atunci când:",
+      "optiuni": [
+        "utilitatea marginală este maximă",
+        "utilitatea marginală este zero",
+        "utilitatea marginală este negativă",
+        "prețul bunului scade"
+      ],
+      "corect": 1,
+      "explicatie": "La pragul de saturație, utilitatea marginală devine zero, iar utilitatea totală atinge maximul - orice consum suplimentar ar scădea UT (comportament irațional)."
+    },
+    {
+      "intrebare": "Un consumator care alege între bunurile X și Y este în echilibru (rațional) dacă:",
+      "optiuni": [
+        "cumpără doar bunul cu prețul cel mai mic",
+        "Umg(x)/Px = Umg(y)/Py, iar UT este maximă",
+        "Umg(x) = Umg(y), indiferent de preț",
+        "cheltuiește tot venitul pe un singur bun"
+      ],
+      "corect": 1,
+      "explicatie": "Condiția de echilibru a consumatorului cere ca satisfacția marginală pe unitatea de cheltuială să fie egală pentru toate bunurile cumpărate."
+    },
+    {
+      "intrebare": "Un buget în care cheltuielile depășesc veniturile este:",
+      "optiuni": [
+        "echilibrat",
+        "excedentar",
+        "deficitar",
+        "neutru"
+      ],
+      "corect": 2,
+      "explicatie": "Bugetul deficitar apare când cheltuielile propuse sunt mai mari decât veniturile obținute."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Utilitatea economică are o determinare obiectivă, fiind aceeași pentru toți consumatorii.",
+      "corect": false,
+      "explicatie": "Utilitatea economică are determinare subiectivă - depinde de preferințele, gusturile și veniturile fiecărui consumator. Utilitatea intrinsecă (nu cea economică) e cea cu determinare obiectivă."
+    },
+    {
+      "enunt": "Utilitatea totală se obține însumând utilitățile marginale ale tuturor unităților consumate.",
+      "corect": true,
+      "explicatie": "UT = ΣUmg = Umg1 + Umg2 + ... + Umgn - exact așa cum apare și în centralizatorul de formule."
+    },
+    {
+      "enunt": "Dacă utilitatea marginală devine negativă, înseamnă că bunul respectiv a provocat consumatorului o insatisfacție.",
+      "corect": true,
+      "explicatie": "Dincolo de pragul de saturație, consumul suplimentar reduce utilitatea totală, ceea ce reflectă un comportament irațional."
+    },
+    {
+      "enunt": "Un buget de familie este completat obligatoriu de toate familiile dintr-o țară.",
+      "corect": false,
+      "explicatie": "Bugetul de familie e completat voluntar, doar de familiile selectate ca reprezentative de autoritatea statistică (în România, Institutul Național de Statistică)."
+    },
+    {
+      "enunt": "Venitul disponibil al unui consumator care cumpără două bunuri X și Y se calculează ca VD = Qx x Px + Qy x Py.",
+      "corect": true,
+      "explicatie": "Da, aceasta e ecuația bugetului - venitul disponibil reprezintă limita cheltuielilor totale pe cele două bunuri."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Ioana consumă succesiv câte un pahar cu apă. La al treilea pahar, ea își mărește satisfacția totală de la 15 u.u. la 18 u.u. Care este utilitatea marginală a celui de-al treilea pahar (Umg.3)?",
+      "unitate": "u.u.",
+      "corect": 3,
+      "toleranta": 0.1,
+      "explicatie": "Umg.3 = UT3 - UT2 = 18 - 15 = 3 u.u."
+    },
+    {
+      "enunt": "Funcția utilității totale este UT = 15 + 5Qx, unde Qx e cantitatea consumată din bunul X. Care este utilitatea marginală, când se consumă succesiv câte o unitate din X?",
+      "unitate": "u.u.",
+      "corect": 5,
+      "toleranta": 0.1,
+      "explicatie": "Fiind o funcție liniară, fiecare unitate suplimentară adaugă exact panta funcției: Umg = 5 u.u., constant."
+    },
+    {
+      "enunt": "Pentru consumul a 5 unități dintr-un bun, se știe: UT2 = 60, Umg2 = 10, Umg3 = 8, UT4 = 75, Umg5 = 5. De câte ori este utilitatea totală (UT5) mai mare decât utilitatea marginală (Umg5), la a 5-a unitate?",
+      "unitate": "ori",
+      "corect": 16,
+      "toleranta": 0.1,
+      "explicatie": "UT1 = UT2 - Umg2 = 50; UT3 = UT2 + Umg3 = 68; UT5 = UT4 + Umg5 = 80. UT5/Umg5 = 80/5 = 16 ori."
+    },
+    {
+      "enunt": "Satisfacția ultimei unități consumate din bunul A (preț 45 u.m.) este de 60 u.u., iar din bunul B este de 20 u.u. Pentru ce preț al bunului B (PB) consumatorul este în echilibru?",
+      "unitate": "u.m.",
+      "corect": 15,
+      "toleranta": 0.1,
+      "explicatie": "Din Umg(A)/PA = Umg(B)/PB: 60/45 = 20/PB, deci PB = 20 x 45/60 = 15 u.m."
+    },
+    {
+      "enunt": "Utilitatea marginală, la consumul a 5 bucăți dintr-un bun X, evoluează astfel: 15, 10, 6, 0, -2 (pentru Q = 1..5). Care este utilitatea totală (UT) în condiții de optim pentru consumator?",
+      "unitate": "u.u.",
+      "corect": 31,
+      "toleranta": 0.1,
+      "explicatie": "Optimul (pragul de saturație) e atins quando Umg = 0, la Q = 4. UT = 15+10+6+0 = 31 u.u."
+    },
+    {
+      "enunt": "Dan alege între bunurile X și Y, cu un venit de 100 u.m. Prețurile sunt Px=Py=10 u.m., iar utilitățile marginale sunt UmgX=10-x și UmgY=12-y. Care este cantitatea optimă din bunul X (x), în programul optim de consum?",
+      "unitate": "buc.",
+      "corect": 4,
+      "toleranta": 0.1,
+      "explicatie": "Din condiția de echilibru: (10-x)/10=(12-y)/10, deci y=x+2. Din buget: 10x+10y=100, deci x+y=10. Rezolvând: x=4, y=6."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Utilitatea individuală"
+        },
+        {
+          "id": "t2",
+          "text": "Utilitatea marginală"
+        },
+        {
+          "id": "t3",
+          "text": "Utilitatea totală"
+        },
+        {
+          "id": "t4",
+          "text": "Buget deficitar"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Satisfacția resimțită la consumarea fiecărei unități dintr-o serie de bunuri omogene"
+        },
+        {
+          "id": "o_b",
+          "text": "Sporul de satisfacție obținut prin creșterea cu o unitate a cantității consumate"
+        },
+        {
+          "id": "o_c",
+          "text": "Satisfacția totală obținută prin consumul succesiv al unei cantități dintr-un bun"
+        },
+        {
+          "id": "o_d",
+          "text": "Buget în care cheltuielile depășesc veniturile"
+        },
+        {
+          "id": "o_e",
+          "text": "Buget în care veniturile depășesc cheltuielile"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, bugetul excedentar - opusul lui buget deficitar, nu un termen din coloana din stânga."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "gt01",
+    "title": "Depreciere valutară",
+    "difficulty": "easy",
+    "initial": {
+      "exports": 100,
+      "imports": 110,
+      "fx_index": 100,
+      "competitiveness": 50
+    },
+    "shock": "currency_depreciation"
+  },
+  {
+    "id": "gt02",
+    "title": "Apreciere valutară",
+    "difficulty": "easy",
+    "initial": {
+      "exports": 105,
+      "imports": 100,
+      "fx_index": 100,
+      "competitiveness": 52
+    },
+    "shock": "currency_appreciation"
+  },
+  {
+    "id": "gt03",
+    "title": "Cerere externă crește",
+    "difficulty": "easy",
+    "initial": {
+      "exports": 90,
+      "imports": 100,
+      "fx_index": 100,
+      "competitiveness": 48
+    },
+    "shock": "foreign_demand_up"
+  },
+  {
+    "id": "gt04",
+    "title": "Cerere externă scade",
+    "difficulty": "medium",
+    "initial": {
+      "exports": 120,
+      "imports": 105,
+      "fx_index": 100,
+      "competitiveness": 55
+    },
+    "shock": "foreign_demand_down"
+  },
+  {
+    "id": "gt05",
+    "title": "Logistică mai bună",
+    "difficulty": "medium",
+    "initial": {
+      "exports": 100,
+      "imports": 100,
+      "fx_index": 100,
+      "competitiveness": 50
+    },
+    "shock": "logistics_upgrade"
+  },
+  {
+    "id": "gt06",
+    "title": "Importuri energetice scumpe",
+    "difficulty": "medium",
+    "initial": {
+      "exports": 110,
+      "imports": 115,
+      "fx_index": 100,
+      "competitiveness": 52
+    },
+    "shock": "import_cost_up"
+  },
+  {
+    "id": "gt07",
+    "title": "Diversificare furnizori",
+    "difficulty": "medium",
+    "initial": {
+      "exports": 100,
+      "imports": 120,
+      "fx_index": 100,
+      "competitiveness": 50
+    },
+    "shock": "supplier_diversification"
+  },
+  {
+    "id": "gt08",
+    "title": "Protecționism extern",
+    "difficulty": "hard",
+    "initial": {
+      "exports": 130,
+      "imports": 110,
+      "fx_index": 100,
+      "competitiveness": 58
+    },
+    "shock": "foreign_barriers"
+  },
+  {
+    "id": "gt09",
+    "title": "Productivitate internă",
+    "difficulty": "hard",
+    "initial": {
+      "exports": 95,
+      "imports": 105,
+      "fx_index": 100,
+      "competitiveness": 47
+    },
+    "shock": "productivity_up"
+  },
+  {
+    "id": "gt10",
+    "title": "Șoc comercial mixt",
+    "difficulty": "hard",
+    "initial": {
+      "exports": 115,
+      "imports": 125,
+      "fx_index": 100,
+      "competitiveness": 51
+    },
+    "shock": "mixed_shock"
+  }
+]

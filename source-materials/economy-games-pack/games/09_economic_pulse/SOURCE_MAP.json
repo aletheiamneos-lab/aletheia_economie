@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "file": "Capitolul 17 - Ciclicitatea economica_ex.pdf",
+      "topics": [
+        "criză",
+        "depresiune",
+        "reluare",
+        "expansiune",
+        "politici anticiclice"
+      ]
+    },
+    {
+      "file": "Capitolul 15 - Venitul, consumul si investitiile_ex.pdf",
+      "topics": [
+        "echilibru macroeconomic",
+        "investiții",
+        "consum"
+      ]
+    },
+    {
+      "file": "Capitolul 16 - Crestere, dezvoltare si progres economic_ex.pdf",
+      "topics": [
+        "creștere economică",
+        "PIB"
+      ]
+    },
+    {
+      "file": "Capitolul 18 - Statul in economia de piata_ex.pdf",
+      "topics": [
+        "politici economice",
+        "buget",
+        "intervenție"
+      ]
+    }
+  ]
+}

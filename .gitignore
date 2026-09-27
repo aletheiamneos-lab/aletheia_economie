@@ -1,0 +1,41 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+build/
+.vite/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local configuration and secrets
+.env
+.env.*
+CONECTEAZA GMAIL.cmd
+
+# Test, coverage and local inspection output
+coverage/
+test-results/
+playwright-report/
+artifacts/
+.visual-check/
+
+# Archives, executables and temporary files
+*.exe
+*.zip
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.log
+
+# Operating-system and editor metadata
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

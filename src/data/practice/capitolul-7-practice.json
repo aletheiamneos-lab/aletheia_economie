@@ -1,0 +1,1288 @@
+{
+  "capitol": 7,
+  "titlu_capitol": "Profitul",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (esenta si functiile profitului, formele profitului, rata profitului). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (Pr.T=VT-CT, Pr/up=P-CMT, Pr.mg=DeltaPrT/DeltaQ, Pr.N=C.op. al FP proprii, RPr.T(CT)=(Pr.T/CT)x100, RPr.T(CA)=(Pr.T/CA)x100).",
+  "intrebari": [
+    {
+      "id": "C7_T01",
+      "capitol": 7,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Din punct de vedere etimologic, profitul reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Câștigul sau avantajul în formă bănească obținut de unitățile economice ce desfășoară eficient activități cu scop lucrativ (comercial)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Excedentul veniturilor peste costurile efectuate de un agent economic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sporul de producție determinat de creșterea cu o unitate a unui factor de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Suma încasărilor totale obținute din vânzarea unui bun economic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Privit etimologic, profitul este pur și simplu câștigul sau avantajul în formă bănească obținut de unitățile economice care desfășoară eficient activități cu scop lucrativ — sensul „generic” (excedent al veniturilor peste costuri) este o abordare distinctă, mai tehnică. Prin urmare, răspunsul corect este: Câștigul sau avantajul în formă bănească obținut de unitățile economice ce desfășoară eficient activități cu scop lucrativ (comercial)."
+    },
+    {
+      "id": "C7_T02",
+      "capitol": 7,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Din punct de vedere generic, profitul reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Câștigul obținut exclusiv din activități speculative pe piața de capital",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Totalitatea cheltuielilor necesare desfășurării unei activități economice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Excedentul veniturilor, încasate de un agent economic prin vânzarea bunurilor economice, peste costurile efectuate",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Diferența dintre costul mediu total și costul mediu variabil",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Abordarea generică a profitului este cea folosită efectiv în calcule economice: excedentul veniturilor încasate din vânzarea bunurilor economice peste costurile efectuate — de unde formula Pr.T = VT – CT. Prin urmare, răspunsul corect este: Excedentul veniturilor, încasate de un agent economic prin vânzarea bunurilor economice, peste costurile efectuate."
+    },
+    {
+      "id": "C7_T03",
+      "capitol": 7,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Maximizarea profitului reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un obiectiv secundar, fără nicio legătură cu deciziile firmei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un obiectiv (scop) major al unităților economice, producătorului, întreprinzătorului, proprietarului de capital investit",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Un obiectiv interzis prin lege în economia de piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O funcție exclusivă a statului, în economia de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Prima funcție a profitului este chiar aceasta: maximizarea lui reprezintă un obiectiv major — nu secundar — al unităților economice, al producătorului, întreprinzătorului și proprietarului de capital investit într-o activitate economică. Prin urmare, răspunsul corect este: Un obiectiv (scop) major al unităților economice, producătorului, întreprinzătorului, proprietarului de capital investit."
+    },
+    {
+      "id": "C7_T04",
+      "capitol": 7,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul este considerat o recompensă („prețul”) pentru:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Riscul asumat, inovațiile efectuate și abilitățile antreprenoriale manifestate de întreprinzător",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Vechimea în muncă a proprietarului firmei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Timpul liber al angajaților firmei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Numărul de ore lucrate de personalul administrativ",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Profitul recompensează exact ceea ce întreprinzătorul aduce în plus față de ceilalți factori de producție: riscul pe care și-l asumă, inovațiile pe care le realizează și abilitățile lui antreprenoriale, nu timpul lucrat sau vechimea. Prin urmare, răspunsul corect este: Riscul asumat, inovațiile efectuate și abilitățile antreprenoriale manifestate de întreprinzător."
+    },
+    {
+      "id": "C7_T05",
+      "capitol": 7,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre efectele stimulative ale profitului se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Descurajarea oricărei investiții noi în activități economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Stimularea investițiilor, a eficienței economice și a concurenței dintre agenții economici",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Reducerea automată a concurenței de pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a procesului de economisire",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Perspectiva unui profit atrăgător este exact ceea ce stimulează investițiile noi, sporirea eficienței economice, procesul economisirii și concurența dintre agenții economici — nu efectele opuse. Prin urmare, răspunsul corect este: Stimularea investițiilor, a eficienței economice și a concurenței dintre agenții economici."
+    },
+    {
+      "id": "C7_T06",
+      "capitol": 7,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul reprezintă o sursă principală de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Cheltuieli neproductive, fără nicio utilitate economică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Finanțare a propriei afaceri (autofinanțare) și de finanțare a altor activități economice",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Blocare a dezvoltării altor activități economice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Impozitare exclusivă, fără posibilitate de reinvestire",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Profitul reinvestit finanțează chiar propria afacere (autofinanțare), dar poate finanța și alte activități economice sau social-culturale — este departe de a fi o cheltuială neproductivă sau un blocaj. Prin urmare, răspunsul corect este: Finanțare a propriei afaceri (autofinanțare) și de finanțare a altor activități economice."
+    },
+    {
+      "id": "C7_T07",
+      "capitol": 7,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul este considerat, printre altele, un mijloc (instrument) de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Limitare artificială a concurenței dintre firme",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminare completă a riscului economic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Blocare a investițiilor în activități economice noi",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Alocare și utilizare eficientă a resurselor de producție și de selecție a agenților economici pe piață",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Firmele care obțin profit demonstrează o alocare eficientă a resurselor — de aceea profitul funcționează și ca instrument de selecție a agenților economici pe piață, favorizându-i pe cei eficienți. Prin urmare, răspunsul corect este: Alocare și utilizare eficientă a resurselor de producție și de selecție a agenților economici pe piață."
+    },
+    {
+      "id": "C7_T08",
+      "capitol": 7,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul total (brut), obținut la nivelul întregii activități a firmei, reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Diferența dintre costul mediu total și costul mediu variabil",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Profitul suplimentar obținut prin vânzarea ultimei unități de produs",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Excedentul de profit peste cheltuielile firmei, care va fi impozitat",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Profitul obținut prin vânzarea unei singure unități de produs",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Profitul total (brut) se calculează la nivelul întregii activități a firmei, nu pe unitate de produs: Pr.T = VT – CT, iar acest excedent va fi supus impozitării. Prin urmare, răspunsul corect este: Excedentul de profit peste cheltuielile firmei, care va fi impozitat."
+    },
+    {
+      "id": "C7_T09",
+      "capitol": 7,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul mediu (pe unitate de produs) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Profitul total obținut la nivelul întregii activități a firmei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Profitul obținut prin producerea și vânzarea unei unități de produs dintr-un bun economic",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Profitul suplimentar încasat la creșterea cu o unitate a vânzărilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Diferența dintre venitul total și profitul brut",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Spre deosebire de profitul total (la nivelul întregii firme), profitul mediu se raportează strict la o singură unitate de produs: Pr/u.p = P – CMT = Pr.T/Q. Prin urmare, răspunsul corect este: Profitul obținut prin producerea și vânzarea unei unități de produs dintr-un bun economic."
+    },
+    {
+      "id": "C7_T10",
+      "capitol": 7,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul marginal reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Profitul obținut prin vânzarea ultimei unități de produs, respectiv profitul suplimentar încasat la creșterea cu o unitate a vânzărilor",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Nivelul minim al profitului care stimulează continuarea activității firmei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Profitul rămas după plata impozitului pe profitul brut",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Profitul obținut la nivelul întregii activități a firmei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Profitul marginal privește strict ultima unitate vândută: Pr.mg = ΔPr.T/ΔQ = V.mg – C.mg, adică sporul de profit adus de o vânzare suplimentară, nu profitul total sau cel net. Prin urmare, răspunsul corect este: Profitul obținut prin vânzarea ultimei unități de produs, respectiv profitul suplimentar încasat la creșterea cu o unitate a vânzărilor."
+    },
+    {
+      "id": "C7_T11",
+      "capitol": 7,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul net (admis) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Suma de bani care rămâne firmei după plata impozitului pe profitul brut și a altor scăzăminte legale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Profitul obținut înainte de plata oricăror impozite sau taxe",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre costul total și venitul total",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Profitul minim care stimulează continuarea activității firmei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Profitul net este ceea ce rămâne efectiv la dispoziția firmei: Pr.n = Pr.b – Iz.(Pr.b), adică profitul brut din care s-a scăzut impozitul pe profit și alte scăzăminte legale. Prin urmare, răspunsul corect este: Suma de bani care rămâne firmei după plata impozitului pe profitul brut și a altor scăzăminte legale."
+    },
+    {
+      "id": "C7_T12",
+      "capitol": 7,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul normal (obișnuit, ordinar) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Profitul obținut exclusiv din situații favorabile, întâmplătoare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Excedentul de profit peste profitul normal",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Profitul încasat de o firmă cu putere de monopol pe piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nivelul minim al profitului care stimulează continuarea activității firmei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Profitul normal este pragul minim sub care întreprinzătorul nu ar mai avea motive să continue afacerea — reflectă exact nivelul minim al profitului care stimulează continuarea activității firmei, spre deosebire de supraprofit (care este excedentul peste acest nivel). Prin urmare, răspunsul corect este: Nivelul minim al profitului care stimulează continuarea activității firmei."
+    },
+    {
+      "id": "C7_T13",
+      "capitol": 7,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dacă întreprinzătorul este proprietarul tuturor factorilor de producție utilizați în firmă, profitul normal (Pr.N) este echivalent cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Diferența dintre venitul total și costul marginal",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Profitul de monopol încasat de firmă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Costul de oportunitate al factorilor de producție aflați în proprietatea întreprinzătorului (salariul de manager, renta, chiriile, dobânda)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Profitul suplimentar obținut din situații economice favorabile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dacă întreprinzătorul deține el însuși toți factorii de producție, el ar fi încasat, oricum, salariul ca manager, renta pentru pământul propriu, chiriile pentru clădirile proprii și dobânda pentru capitalul propriu — deci profitul normal reprezintă exact costul de oportunitate al acestor factori proprii. Prin urmare, răspunsul corect este: Costul de oportunitate al factorilor de producție aflați în proprietatea întreprinzătorului (salariul de manager, renta, chiriile, dobânda)."
+    },
+    {
+      "id": "C7_T14",
+      "capitol": 7,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Supraprofitul (profitul suplimentar) reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nivelul minim al profitului care stimulează continuarea activității firmei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Profitul obținut înainte de plata oricărui impozit",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre costul mediu total și costul mediu variabil",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Excedentul de profit peste profitul normal",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Supraprofitul este definit tocmai prin raportare la profitul normal: el reprezintă excedentul de profit peste acest nivel minim, calculat ca Pr.s = Pr.n – Pr.N. Prin urmare, răspunsul corect este: Excedentul de profit peste profitul normal."
+    },
+    {
+      "id": "C7_T15",
+      "capitol": 7,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul economic (pur), ca formă a supraprofitului, este determinat de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Puterea economică de monopol a unei firme pe piață",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Anumite împrejurări economice, sociale, naturale favorabile unor întreprinzători",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Reducerea artificială a prețurilor sub nivelul costurilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Respectarea strictă a reglementărilor legale, fără nicio contribuție suplimentară",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Profitul economic (pur) apare din împrejurări economice, sociale sau naturale favorabile — spre deosebire de profitul de monopol, care este determinat specific de puterea de piață a firmei. Prin urmare, răspunsul corect este: Anumite împrejurări economice, sociale, naturale favorabile unor întreprinzători."
+    },
+    {
+      "id": "C7_T16",
+      "capitol": 7,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul de monopol (supraprofitul de monopol) este încasat de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv firmele care operează pe piețe cu concurență perfectă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar firmele nou-înființate, în primul an de activitate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Orice firmă, indiferent de puterea ei economică de piață",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Firma care are o putere economică mare de piață, de exemplu de monopol, în condițiile concurenței imperfecte",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Profitul de monopol este specific firmelor cu putere economică mare de piață, care pot influența prețul — pe o piață cu concurență perfectă, unde nimeni nu poate influența prețul, acest tip de supraprofit nu apare. Prin urmare, răspunsul corect este: Firma care are o putere economică mare de piață, de exemplu de monopol, în condițiile concurenței imperfecte."
+    },
+    {
+      "id": "C7_T17",
+      "capitol": 7,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Profitul nelegitim (venitul nemeritat) este obținut prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Contribuția efectivă a întreprinzătorului la sporirea eficienței economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Respectarea strictă a legislației economice în vigoare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nerespectarea reglementărilor legale în vigoare, fără o contribuție efectivă la sporirea eficienței activității firmei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Reinvestirea profitului în activități economice legale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Profitul nelegitim apare exact atunci când reglementările legale nu sunt respectate și întreprinzătorul nu contribuie efectiv la sporirea eficienței firmei — de exemplu, prin muncă la negru sau practicarea unor prețuri nejustificat de mari. Prin urmare, răspunsul corect este: Nerespectarea reglementărilor legale în vigoare, fără o contribuție efectivă la sporirea eficienței activității firmei."
+    },
+    {
+      "id": "C7_T18",
+      "capitol": 7,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata profitului la cifra de afaceri [RPr.T(C.A)] se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul procentual dintre profitul total și costul marginal",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Raportul procentual dintre costul total și capitalul tehnic utilizat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre venitul total și costul total, exprimată direct în procente",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Raportul procentual dintre profitul total și cifra de afaceri",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rata profitului la cifra de afaceri este una dintre cele trei forme relative ale ratei profitului (alături de cea față de cost și cea față de capitalul tehnic): RPr.T(C.A) = (Pr.T/C.A) × 100. Prin urmare, răspunsul corect este: Raportul procentual dintre profitul total și cifra de afaceri."
+    },
+    {
+      "id": "C7_T19",
+      "capitol": 7,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Viteza de rotație a capitalului, factor care influențează nivelul profitului, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nivelul absolut al costurilor fixe ale firmei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Rata inflației dintr-o anumită perioadă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Rapiditatea cu care capitalul avansat într-o afacere economică trece dintr-o formă funcțională în alta, finalizându-se în obținerea unui profit",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Numărul total de angajați ai unei firme",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Viteza de rotație a capitalului măsoară cât de repede capitalul avansat parcurge ciclul complet (bani → mărfuri → bani) și se transformă, în final, în profit — cu cât rotația este mai rapidă, cu atât profitul obținut într-o perioadă dată este mai mare. Prin urmare, răspunsul corect este: Rapiditatea cu care capitalul avansat într-o afacere economică trece dintr-o formă funcțională în alta, finalizându-se în obținerea unui profit."
+    },
+    {
+      "id": "C7_T20",
+      "capitol": 7,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pragul de rentabilitate, în relație cu profitul unei firme, reflectă nivelul producției la care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Venitul total este egal cu costul total, iar profitul este zero (nul)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Costurile fixe devin egale cu costurile variabile",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Profitul total atinge nivelul maxim posibil",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Costul marginal este egal cu zero",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pragul de rentabilitate marchează exact granița dintre pierdere și profit: nivelul producției la care VT = CT (respectiv P = CMT), iar profitul total sau unitar este zero. Prin urmare, răspunsul corect este: Venitul total este egal cu costul total, iar profitul este zero (nul)."
+    },
+    {
+      "id": "C7_E01",
+      "capitol": 7,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă cifra de afaceri = 3.500 u.m., iar costul total este 80% din încasările totale, rata rentabilității (față de cost) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "10%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "CT = 80% × 3.500 = 2.800 u.m. → Pr.T = 3.500 – 2.800 = 700 u.m. ⇒ RPr.T(CT) = (700/2.800) × 100 = 25%."
+    },
+    {
+      "id": "C7_E02",
+      "capitol": 7,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Profitul reprezintă 25% din încasări, iar costurile 60% din profit, atunci rata profitului la cifra de afaceri [RPr.T(C.A)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "40%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "60%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "62,5%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pr.T = 25%C.A, CT = 60%Pr.T = 15%C.A → RPr.T(C.A) = [25%C.A : (25%C.A + 15%C.A)] × 100 = (25/40) × 100 = 62,5%."
+    },
+    {
+      "id": "C7_E03",
+      "capitol": 7,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În t0, rata profitului față de veniturile totale era 20%. Dacă profitul sporește cu 26%, iar cifra de afaceri cu 5%, atunci rata profitului față de cifra de afaceri în perioada curentă [RPr.T(C.A)1] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "24%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "21%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "26%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "19%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "IPr.T = 126%, iar ICA = 105% → IRPr.T(CA) = (126/105) × 100 = 120% ⇒ RPr.T(C.A)1 = 120% × 20% = 24%."
+    },
+    {
+      "id": "C7_E04",
+      "capitol": 7,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Vânzând produsele sale, o firmă obține un venit total de 90 mil. u.m., realizând un CMF = 60.000 u.m. și cheltuieli fixe totale de 3 mil. u.m. Volumul producției (Q) de la care începe să crească profitul (pragul de rentabilitate) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1.500 buc.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1.600 buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1.450 buc.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1.000 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pr.T = 0 → VT = CT = 3 mil. + 60.000 × Q = 90 mil. ⇒ Q = (90 mil. – 3 mil.)/60.000 = 87 mil./60.000 = 1.450 buc."
+    },
+    {
+      "id": "C7_E05",
+      "capitol": 7,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Cifra de afaceri a unei firme = 360 mil. u.m., iar rata profitului față de cost este 50%. În aceste condiții, cheltuielile totale (CT) efectuate de firmă sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "240 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "180 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "300 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "200 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "C.A = CT + Pr.T = CT + 50%CT = 1,5CT ⇒ CT = 360 mil./1,5 = 240 mil. u.m."
+    },
+    {
+      "id": "C7_E06",
+      "capitol": 7,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă rata rentabilității (față de cost) este 25%, atunci rata profitului față de cifra de afaceri [RPr.T(C.A)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "125%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pr.T = 25%CT → C.A = CT + 25%CT = 1,25CT ⇒ RPr.T(C.A) = (25%CT : 1,25CT) × 100 = 20%."
+    },
+    {
+      "id": "C7_E07",
+      "capitol": 7,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă obține anual un profit total de 8.800 u.m. în condițiile unui CMT = 550 u.m. și a unei rate a profitului față de cost de 20%. Volumul anual al vânzărilor (Q) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "160 buc.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "44 buc.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "80 buc.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "8 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pr.T = 8.800 = 20%CT ⇒ CT = 44.000 u.m. ⇒ Q = CT/CMT = 44.000/550 = 80 buc."
+    },
+    {
+      "id": "C7_E08",
+      "capitol": 7,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În condițiile unui profit = 4.000 u.m. și a unei rate a rentabilității = 20%, pentru ca profitul să crească cu 15%, costul se va reduce (–ΔC) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4.600 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "24.000 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "600 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "200 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pr.T0 = 20%CT0 = 4.000 → CT0 = 20.000 u.m. → C.A = CT0 + Pr.T0 = 24.000 u.m. (rămâne constantă). Pr.T1 = 1,15 × 4.000 = 4.600 u.m. → CT1 = 24.000 – 4.600 = 19.400 u.m. ⇒ ΔC = 19.400 – 20.000 = –600 u.m."
+    },
+    {
+      "id": "C7_E09",
+      "capitol": 7,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Din vânzarea producției sale, o firmă încasează 300.000 u.m., din care 240.000 u.m. este profitul. Dacă CF = 40.000 u.m. și CMV = 250 u.m., atunci prețul (P) la care se vinde producția este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3.750 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "2.500 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "750 u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4.000 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "CT = 300.000 – 240.000 = 60.000 u.m. = CF + CMV×Q = 40.000 + 250Q ⇒ Q = 20.000/250 = 80 buc. → P = VT/Q = 300.000/80 = 3.750 u.m."
+    },
+    {
+      "id": "C7_E10",
+      "capitol": 7,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un agent economic vinde producția de 2.000 buc./an la un preț de 3.000 lei/buc., în condițiile realizării unor cheltuieli totale de 4,5 mil. lei. În anul următor, la același nivel al prețului, se decide sporirea producției cu 20%, în condițiile unui cost marginal de 2.500 lei/buc. Modificarea procentuală a ratei profitului la venitul total încasat [Δ% RPr.T (C.A)] este mai apropiată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "– 5,56%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "– 25%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "5,56%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "VT0 = 2.000 × 3.000 = 6 mil. lei, iar CT0 = 4,5 mil. lei → Pr.T0 = 1,5 mil. lei ⇒ RPr.T(C.A)0 = (1,5/6) × 100 = 25%. Q1 = 2.400 buc. → ΔQ = 400 buc. → ΔCT = 400 × 2.500 = 1 mil. lei → CT1 = 5,5 mil. lei. VT1 = 2.400 × 3.000 = 7,2 mil. lei → Pr.T1 = 1,7 mil. lei ⇒ RPr.T(C.A)1 = (1,7/7,2) × 100 ≈ 23,61% ⇒ Δ%RPr.T(C.A) = (23,61/25) × 100 – 100 ≈ –5,56%."
+    },
+    {
+      "id": "C7_E11",
+      "capitol": 7,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Funcția costului total este de tipul: CT = 200 + 20Q. În condițiile în care profitul încasat din vânzarea a 10 produse este 400 lei, atunci rata rentabilității față de cost este mai mare decât rata profitului față de cifra de afaceri cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "25 p.p.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "200%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "100 p.p.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "50 p.p.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "CT = 200 + 20×10 = 400 lei → C.A = CT + Pr.T = 400 + 400 = 800 lei ⇒ RPr.T(CT) = (400/400) × 100 = 100%, RPr.T(C.A) = (400/800) × 100 = 50% → Diferența = 100% – 50% = 50 p.p."
+    },
+    {
+      "id": "C7_E12",
+      "capitol": 7,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În t0, raportul dintre profit și cost a fost de 1/3. În t1, costul scade cu 50%, iar profitul sporește de 1,5 ori. Rata profitului la cifra de afaceri în perioada curentă [RPr.T(C.A)1] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "33,33%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "50%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "25%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "75%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "CT0 = 3Pr.T0. Pr.T1 = 1,5Pr.T0 și CT1 = 0,5 × 3Pr.T0 = 1,5Pr.T0 → C.A1 = Pr.T1 + CT1 = 1,5Pr.T0 + 1,5Pr.T0 = 3Pr.T0 ⇒ RPr.T(C.A)1 = (1,5Pr.T0/3Pr.T0) × 100 = 50%."
+    },
+    {
+      "id": "C7_E13",
+      "capitol": 7,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un întreprinzător individual agricol, de pe urma derulării unei afaceri în care investește 30 mil. lei, încasează anual o cifră de afaceri de 18 mil. lei, la 8 mil. lei costuri de producție. Pe an, el încasează: un salariu de 0,3 mil. lei pentru munca de manager, chiriile pentru clădirile proprii puse la dispoziția firmei = 1,5 mil. lei. El nu se împrumută la bancă, unde rata dobânzii pe piața monetară = 12%, iar renta funciară cuvenită este de 0,6 mil. lei. Dacă impozitul pe profit este de 10%, atunci supraprofitul (Pr.s) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "9 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4,5 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 mil. lei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pr.T (brut) = 18 – 8 = 10 mil. lei, Pr.n = 90% × 10 mil. = 9 mil. lei. Dobânda neîncasată la cei 30 mil. investiți = 12% × 30 mil. = 3,6 mil. lei. Pr.N = salariu + rentă + dobândă + chirii = 0,3 + 0,6 + 3,6 + 1,5 = 6 mil. lei ⇒ Pr.s = Pr.n – Pr.N = 9 – 6 = 3 mil. lei."
+    },
+    {
+      "id": "C7_E14",
+      "capitol": 7,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La o firmă, KF = 40 mil. u.m., deprecierea lui anuală fiind de 15% și Kc = 8 mil. u.m. Ea obține, într-un ciclu de producție de 60 de zile, o producție de 200 de piese. Lunar, costurile salariale sunt 1/3 din cele materiale, iar rata anuală a profitului la cost este 25%. Masa anuală unitară a profitului (Pr.an./u.p) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,018 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "15.000 u.m.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "0,15 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "18.000 u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "A = 15% × 40 mil. = 6 mil. u.m./an. Ciclul de producție e de 2 luni (60 zile) → 6 cicluri/an. C.mat./lună = A/lună + Kc/lună = 6 mil./12 + 8 mil./2 = 0,5 mil. + 4 mil. = 4,5 mil. u.m. → CS/lună = 1/3 × 4,5 mil. = 1,5 mil. u.m. → CS/an = 18 mil. u.m., iar C.mat./an = A/an + 6 cicluri × Kc = 6 mil. + 6 × 8 mil. = 54 mil. u.m. → CT/an = (54 + 18) mil. = 72 mil. u.m. → Pr.T = 25% × 72 mil. = 18 mil. u.m.; Q/an = 200 × 6 cicluri = 1.200 piese ⇒ Pr./u.p = 18 mil./1.200 = 15.000 u.m."
+    },
+    {
+      "id": "C7_E15",
+      "capitol": 7,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă face investiții diferite pentru a produce trei produse D, E, F, despre care se cunosc următorii indicatori (D: VT=25 mil., KT=25 mil., RPr.T(KT)=40%; E: VT=22 mil., KT=44 mil., RPr.T(KT)=25%; F: VT=20 mil., KT=10 mil., RPr.T(KT)=60%). Cel mai rentabil produs în raport de costuri este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "toate au aceeași rentabilitate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "produsul F",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "produsul E",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "produsul D",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Produsul D: Pr.T = 40% × 25 mil. = 10 mil. → CT = 25 – 10 = 15 mil. → RPr.T(CT) = (10/15) × 100 ≈ 66,66%. Produsul E: Pr.T = 25% × 44 mil. = 11 mil. → CT = 22 – 11 = 11 mil. → RPr.T(CT) = (11/11) × 100 = 100%. Produsul F: Pr.T = 60% × 10 mil. = 6 mil. → CT = 20 – 6 = 14 mil. → RPr.T(CT) = (6/14) × 100 ≈ 42,85% → Produsul E este cel mai rentabil, cu cea mai mare rată a rentabilității (100%)."
+    },
+    {
+      "id": "C7_E16",
+      "capitol": 7,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rata profitului la încasări este 25% și este mai mică decât rata profitului la costuri de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4 ori",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1,25 ori",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2,2 ori",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "1,33 ori",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pr.T = 25%C.A → CT = 75%C.A → RPr.T(CT) = (25%C.A : 75%C.A) × 100 ≈ 33,33% ⇒ 33,33% : 25% ≈ 1,33 ori."
+    },
+    {
+      "id": "C7_E17",
+      "capitol": 7,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă o firmă sporește mijloacele de producție cu 25%, determinând creșterea profitului cu 15%, atunci variația relativă a ratei profitului la capitalul real [Δ%RPrT.(KT)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "92%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "– 8%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "– 92%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "8%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "IKt = 125% și IPr.T = 115% → IRPrT(Kt) = (IPr.T : IKt) × 100 = (115/125) × 100 = 92% ⇒ Δ%RPr.T(KT) = 92% – 100% = – 8%."
+    },
+    {
+      "id": "C7_E18",
+      "capitol": 7,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rata profitului la cifra de afaceri era 20%. În viitor, cifra de afaceri crește cu 50%, iar rata profitului la cifra de afaceri scade cu 4 puncte procentuale (p.p). Profitul în viitor (Pr.1):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "crește cu 4%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "scade cu 20%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Pr.1 = Pr.0",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "crește cu 20%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "RPr.T(C.A)1 = 20% – 4 p.p. = 16% → IRPr.T(C.A) = (16/20) × 100 = 80%, iar ICA = 150% → IPr.T = (0,80 × 1,50) × 100 = 120% ⇒ Δ%Pr.T = 20% (creștere)."
+    },
+    {
+      "id": "C7_E19",
+      "capitol": 7,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "În prezent, rata profitului la capitalul tehnic utilizat este 20% și ea a înregistrat o scădere față de perioada anterioară cu 25%. Rata profitului la capitalul tehnic utilizat [RPr(KT)0] era:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "15%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "5%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "26,66%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "125%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "IRPr.(KT) = 75% = [20% : RPr.(KT)0] × 100 ⇒ RPr.(KT)0 = (20%/75%) × 100 ≈ 26,66%."
+    },
+    {
+      "id": "C7_E20",
+      "capitol": 7,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O firmă poate produce cantități diferite din bunul X, la nivelul cărora se cunosc următorii indicatori economici: la Q = 30 buc., profitul total este 600 u.m., iar costul total este 1.500 u.m.; la Q = 45 buc., profitul mediu este 20 u.m./buc., iar costul total este 2.000 u.m.; la Q = 70 buc., profitul net este 1.800 u.m. (impozit pe profit 10%), iar venitul total este 5.000 u.m. În raport de rata profitului față de cifra de afaceri, în condiții de eficiență, firma va produce (Q):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "îi este indiferent cât produce, rata fiind aceeași",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "70 buc.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "30 buc.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "45 buc.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "La Q=30: VT = 1.500+600 = 2.100 → RPr.T(C.A) = (600/2.100) × 100 ≈ 28,57%. La Q=45: Pr.T = 20×45 = 900 → VT = 2.000+900 = 2.900 → RPr.T(C.A) = (900/2.900) × 100 ≈ 31,03%. La Q=70: Pr.T = 1.800/0,90 = 2.000 → RPr.T(C.A) = (2.000/5.000) × 100 = 40% → cea mai mare rată se obține la Q = 70 buc., deci firma va produce această cantitate."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

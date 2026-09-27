@@ -1,0 +1,359 @@
+[
+  {
+    "id": "cl01",
+    "title": "Gustare și suc",
+    "difficulty": "easy",
+    "budget": 30,
+    "products": [
+      {
+        "name": "Gustare",
+        "price": 8,
+        "mu": [
+          24,
+          18,
+          12,
+          6
+        ]
+      },
+      {
+        "name": "Suc",
+        "price": 5,
+        "mu": [
+          16,
+          12,
+          8,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl02",
+    "title": "Carte și cinema",
+    "difficulty": "easy",
+    "budget": 60,
+    "products": [
+      {
+        "name": "Carte",
+        "price": 20,
+        "mu": [
+          45,
+          30,
+          18
+        ]
+      },
+      {
+        "name": "Cinema",
+        "price": 15,
+        "mu": [
+          34,
+          24,
+          14,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl03",
+    "title": "Cafea și sandviș",
+    "difficulty": "easy",
+    "budget": 35,
+    "products": [
+      {
+        "name": "Cafea",
+        "price": 7,
+        "mu": [
+          18,
+          12,
+          8,
+          4
+        ]
+      },
+      {
+        "name": "Sandviș",
+        "price": 12,
+        "mu": [
+          30,
+          20,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl04",
+    "title": "Transport și divertisment",
+    "difficulty": "medium",
+    "budget": 80,
+    "products": [
+      {
+        "name": "Transport",
+        "price": 10,
+        "mu": [
+          30,
+          25,
+          20,
+          15,
+          10,
+          5
+        ]
+      },
+      {
+        "name": "Divertisment",
+        "price": 20,
+        "mu": [
+          50,
+          32,
+          18,
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl05",
+    "title": "Manual și streaming",
+    "difficulty": "medium",
+    "budget": 90,
+    "products": [
+      {
+        "name": "Manual",
+        "price": 30,
+        "mu": [
+          70,
+          45,
+          20
+        ]
+      },
+      {
+        "name": "Streaming",
+        "price": 15,
+        "mu": [
+          28,
+          20,
+          14,
+          8,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl06",
+    "title": "Fructe și desert",
+    "difficulty": "medium",
+    "budget": 40,
+    "products": [
+      {
+        "name": "Fructe",
+        "price": 5,
+        "mu": [
+          18,
+          16,
+          13,
+          10,
+          7,
+          4
+        ]
+      },
+      {
+        "name": "Desert",
+        "price": 10,
+        "mu": [
+          28,
+          18,
+          8,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl07",
+    "title": "Joc și snack",
+    "difficulty": "medium",
+    "budget": 75,
+    "products": [
+      {
+        "name": "Joc",
+        "price": 35,
+        "mu": [
+          75,
+          42
+        ]
+      },
+      {
+        "name": "Snack",
+        "price": 8,
+        "mu": [
+          20,
+          16,
+          12,
+          8,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl08",
+    "title": "Abonament și ieșire",
+    "difficulty": "medium",
+    "budget": 100,
+    "products": [
+      {
+        "name": "Abonament",
+        "price": 40,
+        "mu": [
+          90,
+          35
+        ]
+      },
+      {
+        "name": "Ieșire",
+        "price": 25,
+        "mu": [
+          54,
+          34,
+          20
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl09",
+    "title": "Trei bunuri",
+    "difficulty": "hard",
+    "budget": 100,
+    "products": [
+      {
+        "name": "A",
+        "price": 20,
+        "mu": [
+          50,
+          35,
+          20,
+          10
+        ]
+      },
+      {
+        "name": "B",
+        "price": 15,
+        "mu": [
+          38,
+          28,
+          18,
+          8
+        ]
+      },
+      {
+        "name": "C",
+        "price": 10,
+        "mu": [
+          25,
+          18,
+          12,
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl10",
+    "title": "Saturație",
+    "difficulty": "hard",
+    "budget": 50,
+    "products": [
+      {
+        "name": "X",
+        "price": 5,
+        "mu": [
+          20,
+          12,
+          7,
+          1,
+          -4,
+          -8
+        ]
+      },
+      {
+        "name": "Y",
+        "price": 10,
+        "mu": [
+          30,
+          18,
+          8,
+          2
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl11",
+    "title": "Prețul bunului X crește",
+    "difficulty": "hard",
+    "budget": 80,
+    "products": [
+      {
+        "name": "X",
+        "price": 20,
+        "mu": [
+          48,
+          32,
+          18,
+          8
+        ]
+      },
+      {
+        "name": "Y",
+        "price": 10,
+        "mu": [
+          28,
+          20,
+          14,
+          8,
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cl12",
+    "title": "Venitul crește",
+    "difficulty": "hard",
+    "budget": 120,
+    "products": [
+      {
+        "name": "A",
+        "price": 25,
+        "mu": [
+          60,
+          45,
+          30,
+          18
+        ]
+      },
+      {
+        "name": "B",
+        "price": 20,
+        "mu": [
+          48,
+          34,
+          24,
+          14
+        ]
+      },
+      {
+        "name": "C",
+        "price": 15,
+        "mu": [
+          35,
+          25,
+          16,
+          9
+        ]
+      }
+    ]
+  }
+]

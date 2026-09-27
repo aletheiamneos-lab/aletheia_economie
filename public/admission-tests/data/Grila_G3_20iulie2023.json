@@ -1,0 +1,493 @@
+{
+  "an": 2023,
+  "sesiune": "20 iulie 2023",
+  "varianta": "G3",
+  "sursa_subiecte": "Subiecte_Grila_320_07_2023.pdf",
+  "sursa_barem": "Raspunsuri_Grila_320_07_2023.pdf",
+  "interval_economie_in_test": "51-80",
+  "nota": "Aceleasi 30 de exercitii de economie ca la Grila G1 (20 iulie 2023), reordonate. Verificate integral pe baremul propriu al Grilei G3.",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 13,
+      "exercitii": [
+        {
+          "numar_in_test": 51,
+          "capitol": "Factorii de producție — capitalul tehnic",
+          "dificultate": "usor",
+          "enunt": "Prin capital tehnic înțelegem:",
+          "optiuni": {
+            "a": "suma economisită de gospodării",
+            "b": "o categorie reprezentativă a factorilor de producție",
+            "c": "experiența dobândită la angajați la locul de muncă",
+            "d": "un element din gama bunurilor libere"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Capitalul tehnic (format din capital fix și capital circulant) este o categorie reprezentativă a factorului de producție \"capital\", alături de muncă și natură/pământ."
+        },
+        {
+          "numar_in_test": 52,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "usor",
+          "enunt": "Creșterea productivității muncii poate determina:",
+          "optiuni": {
+            "a": "sporirea costului total mediu",
+            "b": "scăderea competitivității producătorului",
+            "c": "scăderea nivelului de trai",
+            "d": "majorarea justificată a salariilor"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Productivitatea muncii determină direct nivelul și dinamica salariului — o productivitate mai mare justifică economic o creștere a salariilor, fără a genera inflație sau a afecta competitivitatea firmei (dimpotrivă, reduce costul unitar)."
+        },
+        {
+          "numar_in_test": 57,
+          "capitol": "Profitul",
+          "dificultate": "usor",
+          "enunt": "La nivel de produs (pe bucată) profitul se calculează astfel:",
+          "optiuni": {
+            "a": "costul unitar + prețul de vânzare",
+            "b": "prețul de vânzare + costul fix mediu",
+            "c": "venitul total al agentului economic - costul unitar",
+            "d": "prețul unitar - costul mediu unitar"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Pr/u.p = P – CMT",
+          "rezolvare": "Profitul unitar (pe bucată) se calculează ca diferență între prețul de vânzare unitar și costul total mediu (unitar): Pr/u.p = P – CMT, corespunzător variantei d."
+        },
+        {
+          "numar_in_test": 58,
+          "capitol": "Piața factorilor de producție",
+          "dificultate": "usor",
+          "enunt": "Posesorul unui factor de producție pe care îl comercializează poate obține un venit mai mare în condiții de ofertă elastică atunci când, pe piața acestui factor de producție:",
+          "optiuni": {
+            "a": "oferta crește și cererea scade",
+            "b": "oferta este mai mare decât cererea",
+            "c": "oferta este mai mică decât cererea",
+            "d": "oferta nu se modifică"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Ca pe orice piață, atunci când oferta unui factor de producție este mai mică decât cererea pentru el (exces de cerere), prețul/venitul obținut de posesorul factorului crește."
+        },
+        {
+          "numar_in_test": 59,
+          "capitol": "Statul în economia de piață — politica liberală",
+          "dificultate": "usor",
+          "enunt": "Care este elementul principal al politicii liberale?:",
+          "optiuni": {
+            "a": "promovarea politicii dirijiste",
+            "b": "susținere liberei inițiative prin măsuri bugetare",
+            "c": "promovarea economiei de piață",
+            "d": "susținerea intervenției statului în economie"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Politica liberală (liberalismul economic) promovează economia de piață liberă, cu intervenție minimă a statului — opusul politicilor dirijiste/intervenționiste."
+        },
+        {
+          "numar_in_test": 61,
+          "capitol": "Piața mondială — cursul valutar",
+          "dificultate": "usor",
+          "enunt": "Ce este cursul flotant (flexibil)?:",
+          "optiuni": {
+            "a": "cursul oficial al monedei naționale",
+            "b": "cursul ce se formează în mod liber pe piață, în funcție de raportul dintre cerere și ofertă",
+            "c": "cursul neoficial pe piața de capital",
+            "d": "raportul de schimb între două valute pe o terță piață"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Cursul flotant (flexibil) este cel care se formează liber, pe piața valutară, exclusiv pe baza raportului dintre cererea și oferta de valută — spre deosebire de cursul fix/oficial, stabilit administrativ."
+        },
+        {
+          "numar_in_test": 62,
+          "capitol": "Piața monetară — puterea de cumpărare",
+          "dificultate": "usor",
+          "enunt": "Cum se manifestă scăderea puterii de cumpărare a banilor?:",
+          "optiuni": {
+            "a": "prin aprecierea cursului monedei naționale",
+            "b": "prin creșterea cantității de bunuri și servicii ce pot fi cumpărate cu o unitate monetară",
+            "c": "prin reducerea cantității de bunuri și servicii ce pot fi cumpărate cu o unitate monetară",
+            "d": "prin reducerea taxelor și impozitelor pe muncă și capital"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "PCB = 1/P",
+          "rezolvare": "Puterea de cumpărare a banilor este invers proporțională cu nivelul prețurilor. Scăderea ei se manifestă prin faptul că, cu aceeași unitate monetară, se pot cumpăra mai puține bunuri și servicii decât înainte."
+        },
+        {
+          "numar_in_test": 63,
+          "capitol": "Piața mondială",
+          "dificultate": "usor",
+          "enunt": "Ce este piața valutară?:",
+          "optiuni": {
+            "a": "cuprinde doar plățile în monedă străină",
+            "b": "cuprinde doar sumele de bani încasate pentru exporturi",
+            "c": "cuprinde valoarea exporturilor și importurilor mondiale",
+            "d": "reprezintă o componentă a pieței mondiale ce cuprinde ansamblul tranzacțiilor cu monede"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Piața valutară este acea componentă a pieței mondiale care reunește ansamblul tranzacțiilor de vânzare-cumpărare de monede naționale (valute), nu doar plățile pentru exporturi sau doar sumele în monedă străină."
+        },
+        {
+          "numar_in_test": 64,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Utilitatea unui fular:",
+          "optiuni": {
+            "a": "nu se poate măsura",
+            "b": "este identică pentru toți cei care au achiziționat fulare",
+            "c": "decurge din necesitatea și preferințele manifestate de către cumpărătorul care utilizează fularul",
+            "d": "depinde exclusiv de venitul cumpărătorului"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Utilitatea este o mărime subiectivă — depinde de necesitățile și preferințele fiecărui consumator în parte, nu este identică pentru toți cumpărătorii și nu depinde exclusiv de venit (deși venitul influențează programul de consum, nu utilitatea resimțită în sine)."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Factorii de producție — capitalul fix",
+          "dificultate": "usor",
+          "enunt": "Care din următoarele elemente sunt incluse în capitalul fix?:",
+          "optiuni": {
+            "a": "energia pentru producție",
+            "b": "instalațiile",
+            "c": "materiile prime",
+            "d": "combustibilul"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Capitalul fix cuprinde clădirile, utilajele și instalațiile — bunuri durabile, folosite în mai multe cicluri de producție. Energia, materiile prime și combustibilul sunt elemente ale capitalului circulant, consumate integral într-un singur ciclu."
+        },
+        {
+          "numar_in_test": 70,
+          "capitol": "Costul producției — costul marginal",
+          "dificultate": "usor",
+          "enunt": "Producția a 3 creioane automate costă 60 u.m., iar producția a 4 asemenea bunuri costă 64 u.m. Costul marginal al fabricării celui de-al patrulea creion este (în u.m.):",
+          "optiuni": {
+            "a": "12",
+            "b": "4",
+            "c": "1,33",
+            "d": "1"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "C.mg = ΔCT/ΔQ",
+          "rezolvare": "C.mg = ΔCT/ΔQ = (64 – 60)/(4 – 3) = 4/1 = 4 u.m."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Inflația — măsuri antiinflaționiste",
+          "dificultate": "usor",
+          "enunt": "Ca măsură antiinflaționistă, creșterea ratei dobânzii la credite are ca efect:",
+          "optiuni": {
+            "a": "scăderea masei monetare în circulație",
+            "b": "reducerea șomajului",
+            "c": "încurajarea investițiilor",
+            "d": "corelarea salariilor cu productivitatea muncii"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "O rată a dobânzii mai mare descurajează contractarea de credite noi, reducând astfel volumul creditării și, implicit, masa monetară în circulație — o măsură clasică de combatere a inflației."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Factorii de producție — informația",
+          "dificultate": "usor",
+          "enunt": "Ce este informația?:",
+          "optiuni": {
+            "a": "o sinteză a tuturor celorlalte grupe de factori de producție",
+            "b": "sumă a cunoștințelor veridice, ordonate, însușite și folosite",
+            "c": "factorul pasiv al dinamicii producției de bunuri și servicii",
+            "d": "un mod eficient de folosire a factorilor de producție"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Informația este definită ca suma cunoștințelor veridice, ordonate, însușite și efectiv folosite în activitatea economică — un factor de producție modern, distinct de ceilalți."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 13,
+      "exercitii": [
+        {
+          "numar_in_test": 53,
+          "capitol": "Profitul / Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Pentru un agent economic, mărimea profitului este egală cu a cincea parte din costul total. Costurile materiale ale producătorului reprezintă 20% din costul total, iar cheltuielile salariale înseamnă 500 u.m. Masa profitului este (în u.m.):",
+          "optiuni": {
+            "a": "200",
+            "b": "675",
+            "c": "125",
+            "d": "50"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "CT = Cmat + CS; Pr.T = CT/5",
+          "rezolvare": "Pr.T = CT/5 = 0,2 x CT. Cmat = 0,2 x CT. Cum CT = Cmat + CS, rezultă: CT = 0,2CT + 500 → 0,8CT = 500 → CT = 625 u.m. Masa profitului: Pr.T = 0,2 x 625 = 125 u.m."
+        },
+        {
+          "numar_in_test": 54,
+          "capitol": "Costul producției — indici",
+          "dificultate": "mediu",
+          "enunt": "Un indice al producției egal cu 116% într-o perioadă dată (fără a dispune de alte informații) înseamnă:",
+          "optiuni": {
+            "a": "creșterea costurilor de producție cu 16%",
+            "b": "scăderea costurilor de producție cu 16%",
+            "c": "majorarea output-ului cu 116%",
+            "d": "creșterea producției de 1,16 ori"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "IQ = (Q1/Q0) x 100",
+          "rezolvare": "Un indice de 116% înseamnă Q1 = 1,16 x Q0, adică producția a crescut de 1,16 ori (cu 16%, nu cu 116% — atenție la diferența dintre indice/de câte ori și sporul procentual). Indicele producției nu ne oferă informații despre costuri, deci variantele a și b nu pot fi deduse."
+        },
+        {
+          "numar_in_test": 55,
+          "capitol": "Piața monetară — dobânda compusă",
+          "dificultate": "mediu",
+          "enunt": "Persoana Y depune o sumă de 10.000 u.m. la bancă, pe termen de 3 ani. În condițiile capitalizării dobânzii, la o rată anuală a dobânzii egală cu 10%, suma totală pe care Y o va prelua la termen de la bancă este (în u.m.):",
+          "optiuni": {
+            "a": "13.000",
+            "b": "13.310",
+            "c": "11.000",
+            "d": "13.100"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "St = Cr(1+d')ⁿ",
+          "rezolvare": "St = Cr x (1+d')ⁿ = 10.000 x (1,1)³ = 10.000 x 1,331 = 13.310 u.m."
+        },
+        {
+          "numar_in_test": 56,
+          "capitol": "Piața și echilibrul pieței — elasticitatea cererii",
+          "dificultate": "mediu",
+          "enunt": "Taxa de școlarizare a colegiului C, majorată cu 20% față de anul precedent, are ca efect scăderea cu 10% a numărului de candidaților în anul curent. Dacă restul condițiilor pieței rămân neschimbate, este vorba despre o cerere:",
+          "optiuni": {
+            "a": "cu elasticitate redusă (inelastică)",
+            "b": "cu elasticitate perfectă",
+            "c": "cu elasticitate unitară",
+            "d": "cu elasticitate pozitivă"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Kc/p = Δ%Cerere / Δ%Preț",
+          "rezolvare": "Δ%Preț = +20%, Δ%Cerere = -10%. Mărimea (absolută) a coeficientului de elasticitate: |Kc/p| = 10/20 = 0,5 < 1, deci cererea este inelastică (cu elasticitate redusă) — reacționează proporțional mai puțin decât variația taxei."
+        },
+        {
+          "numar_in_test": 60,
+          "capitol": "Piața monetară — rata dobânzii",
+          "dificultate": "mediu",
+          "enunt": "O rată lunară a dobânzii (fără capitalizare) egală cu 0,3% înseamnă o rată trimestrială a dobânzii egală cu:",
+          "optiuni": {
+            "a": "0,009",
+            "b": "9%",
+            "c": "1,2%",
+            "d": "9"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "Rata trimestrială = Rata lunară x 3",
+          "rezolvare": "Rata trimestrială (fără capitalizare) = rata lunară x 3 luni = 0,3% x 3 = 0,9%. Exprimat ca fracție zecimală (precum varianta a), 0,9% = 0,009 — acesta este formatul corect al răspunsului."
+        },
+        {
+          "numar_in_test": 65,
+          "capitol": "Creșterea economică — indicatori macroeconomici",
+          "dificultate": "mediu",
+          "enunt": "Venitul național este o altă denumire pentru:",
+          "optiuni": {
+            "a": "Produsul Național Brut exprimat în prețurile pieței",
+            "b": "Produsul Național Net exprimat în prețurile pieței",
+            "c": "Produsul Național Net exprimat în prețurile factorilor",
+            "d": "Produsul Național Brut exprimat în prețurile factorilor"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "VN = PNN_Pf",
+          "rezolvare": "Venitul Național (VN) reprezintă Produsul Național Net, exprimat în prețurile factorilor de producție (nu în prețurile pieței, care includ impozitele indirecte nete): VN = PNN_Pf = PNN_Pp – Iz.i.n."
+        },
+        {
+          "numar_in_test": 66,
+          "capitol": "Piața și echilibrul pieței — cerere și ofertă",
+          "dificultate": "mediu",
+          "enunt": "Pe piața unui bun, dependența cererii C și a ofertei O față de prețul bunului denotă că la prețul de echilibru Pe = 2 u.m., cantitatea de echilibru Qe = 34 bucăți. Dacă funcția cererii este C = 40 – 3·P, funcția ofertei are forma:",
+          "optiuni": {
+            "a": "O = 34 + P",
+            "b": "O = 40 + 3·P",
+            "c": "O = 22 + 6·P",
+            "d": "O = 20 + 8·P"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "La echilibru: C(Pe) = O(Pe) = Qe",
+          "rezolvare": "Se verifică mai întâi cererea: C(2) = 40 – 3x2 = 34 = Qe ✓ (consistent cu datele). Funcția ofertei corectă trebuie să satisfacă, la rândul ei, O(2) = 34. Testând variantele: a) 34+2=36 (nu); b) 40+6=46 (nu); c) 22+6x2=22+12=34 (da!); d) 20+8x2=36 (nu). Singura funcție a ofertei compatibilă cu echilibrul dat este O = 22 + 6·P."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Costul producției — costul marginal",
+          "dificultate": "mediu",
+          "enunt": "În cazul producătorului X, output-ul crește \"bucată cu bucată\". La 100 bunuri fabricate, costul total mediu este 5 u.m. / bucată, iar majorarea producției cu o unitate determină costul unitar să devină 6 u.m. / bucată. Costul marginal înregistrat va fi (în u.m.):",
+          "optiuni": {
+            "a": "100",
+            "b": "106",
+            "c": "1",
+            "d": "600"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "C.mg = ΔCT/ΔQ; CT = CMT x Q",
+          "rezolvare": "CT0 = CMT0 x Q0 = 5 x 100 = 500 u.m. La Q1 = 101 bucăți, CMT1 = 6 u.m./bucată, deci CT1 = 6 x 101 = 606 u.m. C.mg = ΔCT/ΔQ = (606 – 500)/(101 – 100) = 106/1 = 106 u.m."
+        },
+        {
+          "numar_in_test": 73,
+          "capitol": "Profitul — pierderi",
+          "dificultate": "mediu",
+          "enunt": "Într-o perioadă de timp, mărimea cifrei de afaceri a unui producător este 900 u.m., iar fabricantul înregistrează pierderi de 100 u.m. pe întreaga producție Q (unde Q > 1). În acest caz putem afirma doar că:",
+          "optiuni": {
+            "a": "nivelul costurilor de producție a fost mai mic cu 100 u.m. decât cifra de afaceri",
+            "b": "agentul economic realizează economii totale egale cu 1.000 u.m.",
+            "c": "costurile totale au depășit cu 100 u.m. volumul încasărilor din vânzări",
+            "d": "prețul de vânzare pe bucată a fost cu 100 u.m. mai mic decât costul unitar"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Pierdere: CT > VT",
+          "rezolvare": "O pierdere de 100 u.m. pe întreaga producție înseamnă CT = CA + 100 = 900 + 100 = 1.000 u.m., adică exact opusul variantei a (costurile nu sunt mai mici, ci mai mari decât cifra de afaceri). Varianta c descrie corect acest fapt: costurile totale au depășit încasările cu 100 u.m. Varianta d ar fi corectă doar dacă Q = 1 (pierderea totală ar coincide cu cea unitară), dar enunțul specifică Q > 1, deci pierderea pe bucată este 100/Q, nu neapărat 100 u.m."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Piața mondială — forme de integrare economică",
+          "dificultate": "mediu",
+          "enunt": "În care dintre următoarele forme de integrare economică țările membre adoptă o politică comercială comună în relațiile cu terții?:",
+          "optiuni": {
+            "a": "zona de comerț preferențial",
+            "b": "zona de liber schimb",
+            "c": "uniune vamală",
+            "d": "zona de comerț liber organizat"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Uniunea vamală presupune, pe lângă eliminarea barierelor comerciale dintre membri, și adoptarea unei politici comerciale comune (tarif vamal comun) față de țările terțe — element care o distinge de zona de liber schimb, unde fiecare membru își păstrează propria politică comercială externă."
+        },
+        {
+          "numar_in_test": 76,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Pe termen scurt, pentru un agent economic înregistrăm situația în care costurile totale CT sunt egale cu cele fixe CF. Notând cu CV costurile variabile, înseamnă că:",
+          "optiuni": {
+            "a": "CV = -CF",
+            "b": "Q = 0",
+            "c": "CV·Q = CF·Q",
+            "d": "CV = CT = CF"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "CT = CF + CV",
+          "rezolvare": "Din CT = CF + CV și CT = CF (dat), rezultă CV = 0. Cum costul variabil este nul doar atunci când nu se produce nimic (nu există cheltuieli materiale/salariale asociate producției), înseamnă că Q = 0."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Costul producției — costul marginal",
+          "dificultate": "mediu",
+          "enunt": "Pe termen scurt, în cazul unui producător de bumbac, output-ul crește de 1,6 ori, iar costul variabil sporește cu 30%. Dacă în perioada de bază, mărimea costului variabil mediu reprezintă 60 u.m. / bucată, costul marginal aferent perioadei de calcul este:",
+          "optiuni": {
+            "a": "60 u.m.",
+            "b": "1,3/1,6 u.m.",
+            "c": "120 u.m.",
+            "d": "30 u.m."
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "C.mg = ΔCV/ΔQ; CV = CMV x Q",
+          "rezolvare": "Notăm Q0 = x. Atunci Q1 = 1,6x. CV0 = CMV0 x Q0 = 60x. CV1 = CV0 x 1,3 = 78x (creștere cu 30%). C.mg = ΔCV/ΔQ = (78x – 60x)/(1,6x – x) = 18x/0,6x = 30 u.m."
+        },
+        {
+          "numar_in_test": 80,
+          "capitol": "Piața monetară",
+          "dificultate": "mediu",
+          "enunt": "Însumând profitul bancar anual și cheltuielile de funcționare înregistrate de o bancă pe parcursul aceluiași an, obținem mărimea:",
+          "optiuni": {
+            "a": "capitalului social al unității bancare",
+            "b": "câștigului bancar",
+            "c": "dobânzilor încasate de către bancă pe parcursul anului respectiv",
+            "d": "creditelor posibil de acordat de către bancă, celor care au nevoie de capital de împrumut"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Cș.B = Pr.B.b + Cf.B",
+          "rezolvare": "Câștigul bancar (Cș.B) se obține însumând profitul bancar brut (Pr.B.b) cu cheltuielile de funcționare ale băncii (Cf.B): Cș.B = Pr.B.b + Cf.B."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 3,
+      "exercitii": [
+        {
+          "numar_in_test": 69,
+          "capitol": "Piața muncii — salariul nominal",
+          "dificultate": "greu",
+          "enunt": "Într-o perioadă de timp, indicele salariului nominal este 120%. În același interval, prețurile bunurilor de consum sporesc cu jumătate din creșterea procentuală a salariului nominal. Astfel, indicele prețurilor bunurilor de consum este:",
+          "optiuni": {
+            "a": "60%",
+            "b": "110%",
+            "c": "20%",
+            "d": "10%"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Indicele = 100% + sporul procentual",
+          "rezolvare": "Indicele salariului nominal de 120% înseamnă un spor de 20%. Prețurile cresc cu jumătate din acest spor: 20%/2 = 10%. Indicele prețurilor bunurilor de consum: 100% + 10% = 110%."
+        },
+        {
+          "numar_in_test": 75,
+          "capitol": "Profitul / Costul producției",
+          "dificultate": "greu",
+          "enunt": "Pe termen scurt, la nivel de agent economic, cifra de afaceri atinge 14.000 u.m., iar raportul dintre costul variabil și cel fix este 2/3. Dacă mărimea profitului egalizează nivelul costului variabil, masa profitului (în u.m.) este:",
+          "optiuni": {
+            "a": "6.000",
+            "b": "2.000",
+            "c": "10.000",
+            "d": "4.000"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "CA = CT + Pr.T; CT = CF + CV",
+          "rezolvare": "CV/CF = 2/3 → CV = (2/3) x CF. Pr.T = CV (dat). CA = CT + Pr.T = (CF + CV) + CV = CF + 2CV = CF + (4/3)CF = (7/3)CF. 14.000 = (7/3)CF → CF = 14.000 x 3/7 = 6.000 u.m. CV = (2/3) x 6.000 = 4.000 u.m. Masa profitului: Pr.T = CV = 4.000 u.m."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Inflația — puterea de cumpărare",
+          "dificultate": "greu",
+          "enunt": "Într-un interval de timp, într-o țară, rata inflației (determinată exclusiv de creșterea generalizată a prețurilor în economie) este egală cu 150%. Rezultă că în perioada dată, pe fondul unei mase monetare constante, puterea de cumpărare a banilor scade:",
+          "optiuni": {
+            "a": "cu 33,3%",
+            "b": "cu 50%",
+            "c": "la 66,7%",
+            "d": "cu 60%"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "I_PCM = (I_M/I_P) x 100",
+          "rezolvare": "Rata inflației de 150% înseamnă că indicele general al prețurilor I_GP = 100% + 150% = 250% (prețurile devin de 2,5 ori mai mari). Cu masa monetară constantă (I_M = 100%), indicele puterii de cumpărare: I_PCM = (I_M/I_GP) x 100 = (100/250) x 100 = 40%. Puterea de cumpărare a scăzut la 40% din nivelul inițial, adică s-a redus cu 100% – 40% = 60%."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 1,
+      "exercitii": [
+        {
+          "numar_in_test": 79,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "foarte_greu",
+          "enunt": "Despre o economie națională cunoaștem următoarele informații: în perioada de bază, nivelul economiilor a fost 1.000 u.m., iar în perioada actuală se dublează; rata (medie a) consumului este 3/4, în întregul interval analizat. Înclinația marginală spre consum a perioadei este:",
+          "optiuni": {
+            "a": "1/4",
+            "b": "4/3",
+            "c": "3/4",
+            "d": "4/1"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "c̄ = C/V_D; c' = ΔC/ΔV_D",
+          "rezolvare": "E0 = 1.000 u.m.; E1 = 2 x 1.000 = 2.000 u.m. Rata medie a consumului fiind constantă (3/4) pe tot intervalul, rata medie a economiilor este și ea constantă: ē = 1 – 3/4 = 1/4, în ambele perioade. Din ē = E/V_D = 1/4, rezultă V_D0 = 4 x E0 = 4.000 u.m. și V_D1 = 4 x E1 = 8.000 u.m. Sporurile: ΔV_D = 8.000 – 4.000 = 4.000 u.m.; ΔE = 2.000 – 1.000 = 1.000 u.m.; ΔC = ΔV_D – ΔE = 4.000 – 1.000 = 3.000 u.m. Înclinația marginală spre consum: c' = ΔC/ΔV_D = 3.000/4.000 = 3/4 (egală, în acest caz particular, cu rata medie, tocmai pentru că aceasta este constantă pe tot intervalul)."
+        }
+      ]
+    }
+  ]
+}

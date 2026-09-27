@@ -1,0 +1,157 @@
+[
+  {
+    "id": "jm01",
+    "title": "Calculează șomajul",
+    "difficulty": "easy",
+    "population": {
+      "PAM": 1000,
+      "inactive_available": 100,
+      "employed": 820
+    },
+    "shock": null,
+    "unemployment_type": null
+  },
+  {
+    "id": "jm02",
+    "title": "Absolvenți caută primul loc",
+    "difficulty": "easy",
+    "population": {
+      "PAM": 1200,
+      "inactive_available": 100,
+      "employed": 950
+    },
+    "shock": "50 absolvenți intră în PAD și caută muncă",
+    "shock_unemployed": 50,
+    "unemployment_type": "frictional"
+  },
+  {
+    "id": "jm03",
+    "title": "Fabrica se închide",
+    "difficulty": "easy",
+    "population": {
+      "PAM": 1500,
+      "inactive_available": 120,
+      "employed": 1200
+    },
+    "shock": "100 de persoane își pierd locul de muncă",
+    "shock_unemployed": 100,
+    "unemployment_type": "cyclical"
+  },
+  {
+    "id": "jm04",
+    "title": "Tehnologie nouă",
+    "difficulty": "medium",
+    "population": {
+      "PAM": 1800,
+      "inactive_available": 150,
+      "employed": 1450
+    },
+    "shock": "automatizarea elimină 80 de posturi vechi",
+    "shock_unemployed": 80,
+    "unemployment_type": "technological"
+  },
+  {
+    "id": "jm05",
+    "title": "Turism în extrasezon",
+    "difficulty": "medium",
+    "population": {
+      "PAM": 1300,
+      "inactive_available": 100,
+      "employed": 1050
+    },
+    "shock": "se închid 70 de locuri sezoniere",
+    "shock_unemployed": 70,
+    "unemployment_type": "seasonal"
+  },
+  {
+    "id": "jm06",
+    "title": "Nepotrivire competențe",
+    "difficulty": "medium",
+    "population": {
+      "PAM": 1600,
+      "inactive_available": 130,
+      "employed": 1250
+    },
+    "shock": "există posturi noi IT, dar șomerii nu au competențele cerute",
+    "shock_unemployed": 0,
+    "unemployment_type": "structural"
+  },
+  {
+    "id": "jm07",
+    "title": "Recalificare",
+    "difficulty": "medium",
+    "population": {
+      "PAM": 1700,
+      "inactive_available": 120,
+      "employed": 1300
+    },
+    "shock": "60 de șomeri finalizează recalificarea și 40 se angajează",
+    "shock_unemployed": -40,
+    "unemployment_type": "structural"
+  },
+  {
+    "id": "jm08",
+    "title": "Recesiune",
+    "difficulty": "hard",
+    "population": {
+      "PAM": 2000,
+      "inactive_available": 200,
+      "employed": 1600
+    },
+    "shock": "cererea scade și 150 de posturi dispar",
+    "shock_unemployed": 150,
+    "unemployment_type": "cyclical"
+  },
+  {
+    "id": "jm09",
+    "title": "Mobilitate între regiuni",
+    "difficulty": "hard",
+    "population": {
+      "PAM": 1400,
+      "inactive_available": 110,
+      "employed": 1120
+    },
+    "shock": "40 de persoane părăsesc voluntar jobul pentru a căuta altul",
+    "shock_unemployed": 40,
+    "unemployment_type": "frictional"
+  },
+  {
+    "id": "jm10",
+    "title": "Construcții iarna",
+    "difficulty": "hard",
+    "population": {
+      "PAM": 1250,
+      "inactive_available": 90,
+      "employed": 1000
+    },
+    "shock": "90 de lucrători rămân temporar fără lucru",
+    "shock_unemployed": 90,
+    "unemployment_type": "seasonal"
+  },
+  {
+    "id": "jm11",
+    "title": "Industrie depășită",
+    "difficulty": "hard",
+    "population": {
+      "PAM": 2200,
+      "inactive_available": 200,
+      "employed": 1700
+    },
+    "shock": "120 de posturi dispar într-o ramură în declin",
+    "shock_unemployed": 120,
+    "unemployment_type": "structural"
+  },
+  {
+    "id": "jm12",
+    "title": "Eveniment tehnic",
+    "difficulty": "hard",
+    "population": {
+      "PAM": 1000,
+      "inactive_available": 80,
+      "employed": 790
+    },
+    "shock": "50 de posturi sunt suspendate temporar din cauza unei defecțiuni",
+    "shock_unemployed": 50,
+    "unemployment_type": "technical"
+  }
+]

@@ -1,0 +1,1288 @@
+{
+  "capitol": 14,
+  "titlu_capitol": "Șomajul",
+  "schema_versiune": "2.0",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (definitia somajului, formele, cauzele, efectele si masurile de combatere). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (Ș=PAD-P.O, Rs(PAD)=(Ș/PAD)x100, Rs(P.O)=(Ș/P.O)x100).",
+  "intrebari": [
+    {
+      "id": "C14_T01",
+      "capitol": 14,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul este o stare negativă a economiei, care are loc pe piața muncii, caracterizată prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un exces de locuri de muncă vacante față de numărul de candidați",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O creștere generalizată a salariilor reale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "O utilizare parțială a ofertei de muncă, datorită neasigurării locurilor de muncă pentru o parte a populației active disponibile",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "O utilizare integrală a ofertei de muncă existente",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Șomajul apare exact atunci când o parte a populației active disponibile nu găsește un loc de muncă — o utilizare parțială, nu integrală, a ofertei de muncă. Prin urmare, răspunsul corect este: O utilizare parțială a ofertei de muncă, datorită neasigurării locurilor de muncă pentru o parte a populației active disponibile."
+    },
+    {
+      "id": "C14_T02",
+      "capitol": 14,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Numărul de șomeri (Ș) se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ș = PAD + P.O",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ș = PAD – P.O, unde PAD este populația activă disponibilă, iar P.O este populația ocupată",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Ș = P.O – PAD",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ș = PAM – PAD",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Numărul de șomeri reprezintă exact diferența dintre populația activă disponibilă (cei care s-ar putea angaja) și populația efectiv ocupată: Ș = PAD – P.O. Prin urmare, răspunsul corect este: Ș = PAD – P.O, unde PAD este populația activă disponibilă, iar P.O este populația ocupată."
+    },
+    {
+      "id": "C14_T03",
+      "capitol": 14,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata șomajului față de populația activă disponibilă [Rș(PAD)] se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul procentual dintre numărul de șomeri și populația totală a țării",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Produsul dintre numărul de șomeri și rata ocupării",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre populația ocupată și numărul de șomeri",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Raportul procentual dintre numărul de șomeri și populația activă disponibilă",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rata șomajului față de PAD arată ce pondere din resursele de muncă disponibile rămâne neocupată: Rș(PAD) = (Ș/PAD) × 100 — nu se raportează la populația totală a țării. Prin urmare, răspunsul corect este: Raportul procentual dintre numărul de șomeri și populația activă disponibilă."
+    },
+    {
+      "id": "C14_T04",
+      "capitol": 14,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Durata șomajului reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata dobânzii practicate pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Numărul total de șomeri dintr-o țară la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre PAD și PAM",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Perioada de la pierderea locului de muncă (diminuarea activității depuse) până la reangajare",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Durata șomajului este un indicator temporal, distinct de nivelul (numărul) șomerilor: ea măsoară intervalul scurs din momentul pierderii locului de muncă până la reangajare. Prin urmare, răspunsul corect este: Perioada de la pierderea locului de muncă (diminuarea activității depuse) până la reangajare."
+    },
+    {
+      "id": "C14_T05",
+      "capitol": 14,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Structura șomajului se analizează, printre altele, în funcție de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Categoria de vârstă, sex, rasă și nivelul de pregătire al șomerilor",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv volumul exporturilor unei țări",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv rata dobânzii de pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv nivelul prețurilor bunurilor de consum",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Structura șomajului dezagregă fenomenul pe categorii relevante social și economic — vârstă, sex, rasă, nivel de pregătire — nu pe indicatori financiari sau comerciali, care nu descriu structura șomerilor. Prin urmare, răspunsul corect este: Categoria de vârstă, sex, rasă și nivelul de pregătire al șomerilor."
+    },
+    {
+      "id": "C14_T06",
+      "capitol": 14,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În funcție de intensitatea cu care se manifestă, șomajul poate fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv voluntar, fără nicio formă involuntară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv total, fără nicio altă formă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv sezonier",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Total (pierderea locului de muncă) sau parțial (scăderea activității depuse, a săptămânii de lucru și a salariului)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "În funcție de intensitate, șomajul poate fi total (pierderea completă a locului de muncă) sau parțial (doar o diminuare a activității, a săptămânii de lucru sau a salariului) — o clasificare distinctă de cea după cauze (voluntar/involuntar) sau după formă (sezonier etc.). Prin urmare, răspunsul corect este: Total (pierderea locului de muncă) sau parțial (scăderea activității depuse, a săptămânii de lucru și a salariului)."
+    },
+    {
+      "id": "C14_T07",
+      "capitol": 14,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Conform Biroului Internațional al Muncii (B.I.M), o persoană are statutul de șomer dacă îndeplinește simultan, printre altele, condițiile:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Are loc de muncă, dar dorește un salariu mai mare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este în limitele legale de muncă, este aptă de muncă, nu are loc de muncă și caută activ un loc de muncă",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Este casnică, indiferent dacă caută sau nu un loc de muncă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este elev sau student la cursuri de zi, indiferent de alte condiții",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Statutul de șomer, conform B.I.M., presupune întrunirea simultană a mai multor condiții: vârstă legală de muncă, aptitudine de muncă, absența unui loc de muncă și căutarea activă a unuia — o persoană angajată sau una care nu caută de lucru nu se califică. Prin urmare, răspunsul corect este: Este în limitele legale de muncă, este aptă de muncă, nu are loc de muncă și caută activ un loc de muncă."
+    },
+    {
+      "id": "C14_T08",
+      "capitol": 14,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul redus (Rș < 3-4%) este considerat „un rău necesar” deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Permite utilizatorilor forței de muncă să facă selecția acesteia pe criterii de competență, iar posesorilor de muncă le crește disciplina și interesul pentru perfecționare",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Determină automat creșterea nelimitată a salariilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Elimină complet nevoia de forță de muncă calificată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu are nicio legătură cu competitivitatea economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Un șomaj scăzut, dar nenul, menține o presiune sănătoasă asupra pieței muncii: firmele pot selecta personalul pe criterii de competență, iar salariații sunt stimulați să-și mențină disciplina și să se perfecționeze. Prin urmare, răspunsul corect este: Permite utilizatorilor forței de muncă să facă selecția acesteia pe criterii de competență, iar posesorilor de muncă le crește disciplina și interesul pentru perfecționare."
+    },
+    {
+      "id": "C14_T09",
+      "capitol": 14,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe piața muncii, șomajul apare atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Oferta de muncă este mai mică decât cererea de muncă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu există nicio relație între cerere și ofertă pe piața muncii",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Oferta de muncă este mai mare decât cererea de muncă",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Cererea de muncă este întotdeauna egală cu oferta de muncă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Șomajul reflectă exact un dezechilibru pe piața muncii: oferta de muncă (cei dispuși să muncească) depășește cererea de muncă (locurile de muncă disponibile), lăsând un surplus de forță de muncă neocupată. Prin urmare, răspunsul corect este: Oferta de muncă este mai mare decât cererea de muncă."
+    },
+    {
+      "id": "C14_T10",
+      "capitol": 14,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul voluntar apare, printre altele, datorită:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Evoluțiilor nefavorabile din faza de recesiune a ciclului economic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Neconcordanței dintre cererea și oferta de muncă la nivel de ramuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Refuzului populației apte de muncă de a se angaja la nivelul considerat mic al salariului real de pe piață",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Înlocuirii vechilor tehnologii cu altele noi, mai performante",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Șomajul voluntar reflectă o alegere: persoana aptă de muncă refuză un loc de muncă la salariul oferit, considerându-l prea mic — spre deosebire de formele involuntare (tehnologic, ciclic, structural), unde persoana ar accepta un loc de muncă, dar nu găsește unul. Prin urmare, răspunsul corect este: Refuzului populației apte de muncă de a se angaja la nivelul considerat mic al salariului real de pe piață."
+    },
+    {
+      "id": "C14_T11",
+      "capitol": 14,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul fricțional (tranzitoriu) este determinat, printre altele, de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Evenimente accidentale la nivelul procesului tehnic de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Mișcarea normală (fluctuantă) a forței de muncă de la o regiune la alta sau de la un loc de muncă la altul",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Înlocuirea vechilor tehnologii cu altele noi, mai performante",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Restrângerea activității economice în anumite anotimpuri ale anului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Șomajul fricțional este o formă normală, tranzitorie: apare din simpla mișcare a forței de muncă între locuri de muncă sau regiuni, sau din timpul necesar absolvenților pentru a-și găsi primul loc de muncă — nu din motive tehnologice, sezoniere sau tehnice. Prin urmare, răspunsul corect este: Mișcarea normală (fluctuantă) a forței de muncă de la o regiune la alta sau de la un loc de muncă la altul."
+    },
+    {
+      "id": "C14_T12",
+      "capitol": 14,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul structural apare, printre altele, datorită:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Restrângerii sezoniere a activității în turism sau agricultură",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Neconcordanței dintre cererea și oferta de muncă la nivel de activități, ramuri și regiuni, sub influența evoluției nevoilor sau a crizei energetice",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Negocierilor sindicale pentru mărirea salariilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Mișcării normale a forței de muncă între locuri de muncă similare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Șomajul structural are rădăcini mai profunde decât simpla fluctuație normală a forței de muncă: apare din neconcordanța structurală dintre cerere și ofertă la nivel de ramuri, regiuni sau activități, adesea sub influența unor crize (de exemplu, cea energetică). Prin urmare, răspunsul corect este: Neconcordanței dintre cererea și oferta de muncă la nivel de activități, ramuri și regiuni, sub influența evoluției nevoilor sau a crizei energetice."
+    },
+    {
+      "id": "C14_T13",
+      "capitol": 14,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul tehnologic apare atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Vechile tehnologii sunt înlocuite cu altele noi, mai performante",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Absolvenții nu își găsesc primul loc de muncă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Au loc evenimente accidentale în procesul de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Se restrânge activitatea economică în anumite anotimpuri",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Progresul tehnic, deși benefic pe termen lung, poate lăsa temporar fără loc de muncă acei angajați ale căror competențe sunt înlocuite de noile tehnologii — aceasta este chiar esența șomajului tehnologic. Prin urmare, răspunsul corect este: Vechile tehnologii sunt înlocuite cu altele noi, mai performante."
+    },
+    {
+      "id": "C14_T14",
+      "capitol": 14,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul ciclic (conjunctural) este determinat de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Restrângerea sezonieră a activității în agricultură sau construcții",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Introducerea de tehnologii noi, mai performante",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Evoluțiile nefavorabile care au loc în faza de recesiune a ciclului economic",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Migrația internațională a forței de muncă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Șomajul ciclic urmează fidel evoluția ciclului economic: se amplifică în perioadele de recesiune, când activitatea economică generală scade, nu din motive tehnologice sau sezoniere. Prin urmare, răspunsul corect este: Evoluțiile nefavorabile care au loc în faza de recesiune a ciclului economic."
+    },
+    {
+      "id": "C14_T15",
+      "capitol": 14,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul sezonier apare, în principal, datorită:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Introducerii de tehnologii noi, mai performante",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Neconcordanței structurale dintre cerere și ofertă la nivel de ramuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Restrângerii activității economice în anumite anotimpuri ale anului (în turism, agricultură, construcții)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Evoluțiilor nefavorabile din faza de recesiune economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Șomajul sezonier este previzibil și repetitiv: apare acolo unde activitatea economică depinde de anotimp — turism, agricultură, construcții — și nu are legătură cu ciclul economic general sau cu schimbările tehnologice. Prin urmare, răspunsul corect este: Restrângerii activității economice în anumite anotimpuri ale anului (în turism, agricultură, construcții)."
+    },
+    {
+      "id": "C14_T16",
+      "capitol": 14,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Șomajul tehnic este determinat de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dorința salariaților de a se informa mai bine asupra pieței muncii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Negocierile sindicale pentru mărirea salariilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Refuzul populației apte de muncă de a se angaja la salariul oferit",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Evenimente accidentale care au loc la nivelul procesului tehnic de producție (lipsa comenzilor, aprovizionare necorespunzătoare, greve)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Șomajul tehnic apare din perturbări punctuale, adesea neprevăzute, ale procesului de producție — lipsa comenzilor, aprovizionare deficitară, greve — și nu dintr-o decizie voluntară a salariatului sau din negocieri salariale. Prin urmare, răspunsul corect este: Evenimente accidentale care au loc la nivelul procesului tehnic de producție (lipsa comenzilor, aprovizionare necorespunzătoare, greve)."
+    },
+    {
+      "id": "C14_T17",
+      "capitol": 14,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre efectele economice ale șomajului se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sporirea automată a resurselor de muncă disponibile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Scăderea cheltuielilor societății cu protecția socială",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Creșterea nelimitată a veniturilor individuale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea produsului intern brut și a eficienței muncii",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Șomajul lovește direct economia: reduce produsul intern brut (resurse de muncă neutilizate), scade eficiența muncii și veniturile, în timp ce cheltuielile societății cu protecția socială a șomerilor, de fapt, cresc, nu scad. Prin urmare, răspunsul corect este: Reducerea produsului intern brut și a eficienței muncii."
+    },
+    {
+      "id": "C14_T18",
+      "capitol": 14,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre efectele sociale ale șomajului se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Degradarea sănătății psihice și apariția sentimentului de marginalizare socială",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Scăderea automată a criminalității",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Îmbunătățirea automată a vieții de familie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Creșterea generalizată a nivelului de trai al populației",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dincolo de efectele economice, șomajul are un cost uman ridicat: stres, stări depresive, degradarea vieții de familie și sentimentul de inutilitate sau marginalizare socială — exact opusul efectelor descrise în celelalte variante. Prin urmare, răspunsul corect este: Degradarea sănătății psihice și apariția sentimentului de marginalizare socială."
+    },
+    {
+      "id": "C14_T19",
+      "capitol": 14,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe termen scurt, problema majoră legată de șomaj este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Eliminarea completă a fenomenului economic al șomajului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Garantarea unui venit minim pentru șomeri",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Asigurarea locurilor de muncă pentru toată populația activă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea la zero a duratei șomajului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Pe termen scurt, prioritatea realistă este garantarea unui venit minim pentru cei rămași fără loc de muncă — asigurarea de noi locuri de muncă pentru toți este, prin natura ei, un obiectiv de termen mediu și lung. Prin urmare, răspunsul corect este: Garantarea unui venit minim pentru șomeri."
+    },
+    {
+      "id": "C14_T20",
+      "capitol": 14,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pe termen mediu și lung, problema majoră legată de șomaj este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Asigurarea locurilor de muncă",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Garantarea exclusiv a unui venit minim pentru șomeri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Eliminarea completă a proceselor de restructurare economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea numărului total al populației active",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dincolo de sprijinul imediat (venitul minim), soluția durabilă a șomajului constă în crearea de noi locuri de muncă — un proces care necesită investiții, timp și politici economice consistente, pe termen mediu și lung. Prin urmare, răspunsul corect este: Asigurarea locurilor de muncă."
+    },
+    {
+      "id": "C14_E01",
+      "capitol": 14,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La nivelul economiei naționale, sporirea ofertei locurilor de muncă determină reducerea șomajului cu 25%, de la nivelul de 2,5 mil. persoane, și creșterea populației efectiv active cu 20%. Indicele ratei șomajului la populația ocupată [I_Rș(P.O)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "80%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "62,5%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "60%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "125%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_Ș = 75% și I_P.O = 120% → I_Rș(P.O) = (I_Ș/I_P.O) × 100 = (75/120) × 100 = 62,5%."
+    },
+    {
+      "id": "C14_E02",
+      "capitol": 14,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rș(P.O) = 20% și PAD = 12 mil. persoane. Numărul de șomeri (Ș) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,8 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1,2 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "2,4 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Ș = 20%P.O și PAD = P.O + 20%P.O = 1,2P.O = 12 mil. pers. → P.O = 10 mil. pers. ⇒ Ș = (12 – 10) mil. pers. = 2 mil. pers."
+    },
+    {
+      "id": "C14_E03",
+      "capitol": 14,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rș(P.O) = 8%, PAM = 18 mil. persoane, iar gradul ei de ocupare = 75%. Rata șomajului în raport de populația activă disponibilă [Rș(PAD)] este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "8%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6,75%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "9%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "7,4%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "P.O = 75% × 18 mil. = 13,5 mil. pers. → Ș = 8% × 13,5 mil. = 1,08 mil. pers. → PAD = (13,5 + 1,08) mil. = 14,58 mil. pers. ⇒ Rș(PAD) = (1,08/14,58) × 100 ≈ 7,4%."
+    },
+    {
+      "id": "C14_E04",
+      "capitol": 14,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Ș/P.O = 1/6, iar P.O = 9 mil. persoane. Numărul de șomeri (Ș) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,05 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "0,9 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "1,5 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "1,2 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "P.O = 6Ș → Ș = P.O : 6 = 9 mil. pers. : 6 = 1,5 mil. pers."
+    },
+    {
+      "id": "C14_E05",
+      "capitol": 14,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă rata șomajului a fost de 25% și a scăzut cu 20%, atunci rata șomajului în perioada curentă (Rș₁) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "22%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "5%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "18%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_Rș = 80% = (Rș₁ : 25%) × 100 → Rș₁ = (80% × 25%) : 100% = 20%."
+    },
+    {
+      "id": "C14_E06",
+      "capitol": 14,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o țară, la un moment dat, s-a înregistrat o creștere a numărului de șomeri în mărimi relative de 12% și în mărimi absolute de 60.000 de persoane. Numărul de șomeri în perioada curentă (Ș₁) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,6 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "0,5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,45 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,56 mil. pers.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_Ș = 112% → Ș₁ = 1,12Ș₀; ΔȘ = Ș₁ – Ș₀ = 60.000 = 0,12Ș₀ → Ș₀ = 500.000 pers. ⇒ Ș₁ = 1,12 × 500.000 = 560.000 pers."
+    },
+    {
+      "id": "C14_E07",
+      "capitol": 14,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Numărul de șomeri a sporit cu 25%, în condițiile reducerii populației ocupate cu 25%. Rata șomajului a crescut (Δ%Rș) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "100%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "50%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "66,66%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "25%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_Ș = 125% și I_P.O = 75% ⇒ Δ%Rș(P.O) = I_Rș(P.O) – 100% = (I_Ș/I_P.O) × 100 – 100% = (125/75) × 100 – 100% ≈ 66,66%."
+    },
+    {
+      "id": "C14_E08",
+      "capitol": 14,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Populația totală a unei țări este 25 mil. persoane, din care 20% este inaptă de muncă (PIM), populația ocupată este 15 mil. persoane, iar populația aptă de muncă dar nedisponibilă este 2 mil. persoane. Rata șomajului față de populația activă disponibilă este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10,25%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "16,66%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "12%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "PAM = 80% × 25 mil. = 20 mil. pers. = P.O + Ș + PAM.nd. → Ș = 20 mil. – (15 + 2) mil. = 3 mil. pers., iar PAD = P.O + Ș = 18 mil. pers. ⇒ Rș(PAD) = (3 : 18) × 100 ≈ 16,66%."
+    },
+    {
+      "id": "C14_E09",
+      "capitol": 14,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Diferența dintre populația aptă de muncă (PAM) și cea aptă dar nedisponibilă (PAM.nd) este de 15 mil. persoane, iar populația efectiv activă este de 4 ori mai mare decât numărul șomerilor. Rata șomajului față de populația ocupată [Rș(P.O)], este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "16,66%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "25%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "10%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "PAM – PAM.nd = PAD = 15 mil. pers. = P.O + Ș = 5Ș → Ș = 3 mil. pers. și P.O = 4 × 3 mil. pers. = 12 mil. pers. → Rș(P.O) = (3/12) × 100 = 25%."
+    },
+    {
+      "id": "C14_E10",
+      "capitol": 14,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Populația totală a unei țări este 25 milioane de persoane, din care 40% reprezintă populația activă disponibilă, față de care populația aptă de muncă este cu un sfert mai mare. Dacă rata ocupării forței de muncă este 75%, atunci numărul de șomeri (Ș) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "2 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,5 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1,5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "PAD = 40% × 25 mil. pers. = 10 mil. pers., PAM = PAD + 1/4PAD = 12,5 mil. pers. → P.O = 75% × 10 mil. pers. = 7,5 mil. pers. ⇒ Ș = PAD – P.O = (10 – 7,5) mil. = 2,5 mil. pers."
+    },
+    {
+      "id": "C14_E11",
+      "capitol": 14,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o țară, PAD era 25 mil. pers., iar rata șomajului față de PAD = 8%. În anul următor, numărul de șomeri crește cu 0,5 mil. pers., în condițiile scăderii PAD cu 20%. Rata șomajului față de populația ocupată în al doilea an [Rș(P.O)₁] va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "14,28%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "8%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "10%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Ș₀ = 8% × 25 mil. = 2 mil. pers., Ș₁ = (2 + 0,5) mil. = 2,5 mil. pers., PAD₁ = 80% × 25 mil. = 20 mil. pers. → P.O₁ = (20 – 2,5) mil. = 17,5 mil. pers. ⇒ Rș(P.O)₁ = (2,5/17,5) × 100 ≈ 14,28%."
+    },
+    {
+      "id": "C14_E12",
+      "capitol": 14,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Numărul șomerilor dintr-o țară este 0,6 mil. pers., iar rata șomajului la populația ocupată este 6%, atunci populația activă disponibilă (PAD) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10,6 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "10 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "11 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "9,4 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "P.O = 0,6 mil./0,06 = 10 mil. pers. → PAD = (10 + 0,6) mil. = 10,6 mil. pers."
+    },
+    {
+      "id": "C14_E13",
+      "capitol": 14,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Se cunosc următorii indicatori: populația totală (PT) = 24 mil. pers., populația ocupată (P.O) = 15 mil. pers., populația activă disponibilă (PAD) = 18 mil. pers., iar rata ocupării populației apte de muncă [R.oc.(PAM)] este 75%. Numărul de șomeri (Ș) și rata șomajului față de populația aptă de muncă [Rș(PAM)] sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 mil. pers. și 15%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "3,6 mil. pers. și 18%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2 mil. pers. și 10%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 mil. pers. și 16,66%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "PAM = P.O/R.oc.(PAM) = 15/0,75 = 20 mil. pers. ⇒ Ș = PAD – P.O = (18 – 15) mil. = 3 mil. pers. ⇒ Rș(PAM) = (3/20) × 100 = 15%."
+    },
+    {
+      "id": "C14_E14",
+      "capitol": 14,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Rș(PO)/Rș(PAD) = 6/5 și PO = 15 mil. persoane. Numărul de șomeri (Ș) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "4 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "1,5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2,5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "3 mil. pers.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rș(PO) : Rș(PAD) = PAD/PO = 6/5 → PAD = (6/5) × 15 = 18 mil. pers. ⇒ Ș = PAD – PO = (18 – 15) mil. pers. = 3 mil. pers."
+    },
+    {
+      "id": "C14_E15",
+      "capitol": 14,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă rata șomajului sporește cu 30%, iar populația ocupată scade cu 30%, atunci numărul de șomeri (Δ%Ș):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "crește cu 9%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "scade cu 60%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "scade cu 9%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "rămâne constant",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_Rș = 130% și I_P.O = 70% → I_Ș = (I_Rș × I_P.O)/100 = (1,30 × 0,70) × 100 = 91% ⇒ Δ%Ș = –9%."
+    },
+    {
+      "id": "C14_E16",
+      "capitol": 14,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Numărul de șomeri a sporit cu 40%, în condițiile reducerii populației ocupate cu 30%. Rata șomajului a crescut (Δ%Rș) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "40%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "70%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "100%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_Ș = 140% și I_P.O = 70% ⇒ Δ%Rș(P.O) = (I_Ș/I_P.O) × 100 – 100% = (140/70) × 100 – 100% = 100%."
+    },
+    {
+      "id": "C14_E17",
+      "capitol": 14,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Numărul șomerilor dintr-o țară este 0,45 mil. pers., iar rata șomajului la populația ocupată este 9%. Populația activă disponibilă (PAD) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5,45 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "5 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4,55 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "5,9 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "P.O = 0,45 mil./0,09 = 5 mil. pers. → PAD = (5 + 0,45) mil. = 5,45 mil. pers."
+    },
+    {
+      "id": "C14_E18",
+      "capitol": 14,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Populația aptă de muncă (PAM) a unei țări este 20 mil. pers., gradul de ocupare a PAM este 60%, iar rata șomajului față de populația activă disponibilă este 20%. Numărul de șomeri (Ș) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "2,4 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "4 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "P.O = 60% × 20 mil. = 12 mil. pers. Rș(PAD) = 20% = Ș/PAD → P.O = PAD – Ș = 80%PAD → PAD = 12/0,8 = 15 mil. pers. ⇒ Ș = (15 – 12) mil. pers. = 3 mil. pers."
+    },
+    {
+      "id": "C14_E19",
+      "capitol": 14,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-o țară, la un moment dat, s-a înregistrat o creștere a numărului de șomeri în mărimi relative de 15% și în mărimi absolute de 45.000 de persoane. Numărul de șomeri în perioada curentă (Ș₁) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,3 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "0,255 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "0,45 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "0,345 mil. pers.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_Ș = 115% → ΔȘ = Ș₁ – Ș₀ = 45.000 = 0,15Ș₀ → Ș₀ = 300.000 pers. ⇒ Ș₁ = 300.000 + 45.000 = 345.000 pers. = 0,345 mil. pers."
+    },
+    {
+      "id": "C14_E20",
+      "capitol": 14,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Ș/P.O = 3/20 (unde Ș = numărul de șomeri, iar P.O = populația ocupată), iar P.O = 16 mil. persoane. Numărul de șomeri (Ș) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "2,4 mil. pers.",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "1,6 mil. pers.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "2 mil. pers.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Ș = P.O × (3/20) = 16 mil. × 0,15 = 2,4 mil. pers."
+    }
+  ]
+}

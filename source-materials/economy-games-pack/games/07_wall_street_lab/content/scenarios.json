@@ -1,0 +1,126 @@
+[
+  {
+    "id": "ws01",
+    "mode": "bond_yield",
+    "difficulty": "easy",
+    "nominal": 1000,
+    "coupon_rate": 0.08,
+    "market_price": 800
+  },
+  {
+    "id": "ws02",
+    "mode": "bond_yield",
+    "difficulty": "easy",
+    "nominal": 1000,
+    "coupon_rate": 0.06,
+    "market_price": 1200
+  },
+  {
+    "id": "ws03",
+    "mode": "share_yield",
+    "difficulty": "easy",
+    "market_price": 200,
+    "dividend": 20
+  },
+  {
+    "id": "ws04",
+    "mode": "share_yield",
+    "difficulty": "easy",
+    "market_price": 150,
+    "dividend": 18
+  },
+  {
+    "id": "ws05",
+    "mode": "bond_price",
+    "difficulty": "medium",
+    "coupon": 100,
+    "market_rate": 0.1
+  },
+  {
+    "id": "ws06",
+    "mode": "bond_price",
+    "difficulty": "medium",
+    "coupon": 80,
+    "market_rate": 0.08
+  },
+  {
+    "id": "ws07",
+    "mode": "identify",
+    "difficulty": "easy",
+    "features": [
+      "drept de proprietate",
+      "dividend variabil",
+      "drepturi ale acționarului"
+    ],
+    "answer": "share"
+  },
+  {
+    "id": "ws08",
+    "mode": "identify",
+    "difficulty": "easy",
+    "features": [
+      "titlu de credit",
+      "cupon",
+      "scadență"
+    ],
+    "answer": "bond"
+  },
+  {
+    "id": "ws09",
+    "mode": "market_type",
+    "difficulty": "medium",
+    "description": "titluri nou emise sunt vândute pentru finanțarea emitentului",
+    "answer": "primary"
+  },
+  {
+    "id": "ws10",
+    "mode": "market_type",
+    "difficulty": "medium",
+    "description": "titluri emise anterior sunt tranzacționate între investitori",
+    "answer": "secondary"
+  },
+  {
+    "id": "ws11",
+    "mode": "bond_yield",
+    "difficulty": "hard",
+    "nominal": 5000,
+    "coupon_rate": 0.07,
+    "market_price": 4375
+  },
+  {
+    "id": "ws12",
+    "mode": "share_yield",
+    "difficulty": "hard",
+    "market_price": 320,
+    "dividend": 28
+  },
+  {
+    "id": "ws13",
+    "mode": "bond_price",
+    "difficulty": "hard",
+    "coupon": 120,
+    "market_rate": 0.12
+  },
+  {
+    "id": "ws14",
+    "mode": "identify",
+    "difficulty": "hard",
+    "features": [
+      "venit fix contractual",
+      "creditor al emitentului",
+      "fără drept de vot"
+    ],
+    "answer": "bond"
+  },
+  {
+    "id": "ws15",
+    "mode": "identify",
+    "difficulty": "hard",
+    "features": [
+      "venit variabil",
+      "risc mai mare",
+      "poate participa la adunarea generală"
+    ],
+    "answer": "share"
+  }
+]

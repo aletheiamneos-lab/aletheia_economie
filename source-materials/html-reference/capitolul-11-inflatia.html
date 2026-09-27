@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 11 · Inflația</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+.buton.activ { background: var(--accent); color: var(--surface); }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__toggle { display: flex; gap: 10px; margin-top: 14px; }
+.simulator__citire { display: flex; gap: 20px; margin-top: 16px; font-family: var(--font-mono); flex-wrap: wrap; }
+.simulator__citire strong { color: var(--accent); font-size: 18px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 11.5px; }
+.legenda { display: flex; gap: 18px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  capitol: {
+    numar: 11,
+    titlu: 'Inflația',
+    obiective: [
+      'Să explici ce este inflația și cum se măsoară',
+      'Să calculezi indicele prețurilor, rata inflației și venitul real',
+      'Să distingi inflația prin cerere de inflația prin ofertă',
+      'Să distingi între efectele pozitive și cele negative ale inflației',
+      'Să înțelegi măsurile de protecție socială și politicile antiinflaționiste'
+    ]
+  },
+  teorie: [
+    {
+      id: 'ce-este-inflatia', nr: '1', titlu: 'Ce este inflația și cum se măsoară',
+      text: [
+        'Inflația este un dezechilibru macroeconomic caracterizat printr-o masă monetară aflată în circulație mai mare decât cantitatea de bunuri și servicii de pe piață (o ofertă monetară prea mare în raport cu cererea de monedă). Are două tendințe majore: creșterea generalizată și rapidă a prețurilor, și deprecierea valorii banilor (scăderea puterii lor de cumpărare).',
+        'Pentru a măsura modificarea prețurilor, se folosește indicele prețurilor bunurilor de consum (IPC), calculat pe baza unui "coș de bunuri și servicii" consumate frecvent. Rata inflației arată exact cu cât cresc prețurile.'
+      ],
+      puncteCheie: [
+        'Este un fenomen negativ, dar în forma moderată e considerat "un rău necesar" al creșterii economice - deblochează anumite mecanisme economice, dacă e corect anticipată și controlată',
+        'Este un dezechilibru mondoeconomic (are loc, cu intensități diferite, în toate țările), macroeconomic-structural, monetar (are loc pe piața monetară) și macrosocial (efecte asupra majorității agenților economici)',
+        'Premisa fundamentală: existența unei mase monetare excedentare față de oferta de bunuri economice'
+      ],
+      exemple: [
+        'Dacă în 2005 nivelul mediu al prețurilor era 50 RON, iar în 2006 devine 60 RON: IPC=(60/50)×100=120%, iar rata inflației=120%-100%=20%. Cu un venit lunar de 600 RON, în 2005 puteai cumpăra 12 bunuri (la 50 RON/bun); în 2006, cu același venit, doar 10 bunuri (600/60). Venitul real Vr=Vn/IPC=600/1,2=500 RON, iar indicele puterii de cumpărare a banilor IPCB=1/IPC=83,33%.'
+      ],
+      formule: [
+        { nume: 'Indicele prețurilor de consum', formula: 'IPC = (P1/P0) x 100' },
+        { nume: 'Rata inflației', formula: 'r.i = IPC - 100%' },
+        { nume: 'Venitul real (puterea de cumpărare)', formula: 'Vr = Vn / IPC' },
+        { nume: 'Indicele puterii de cumpărare a banilor', formula: 'IPCB = 1 / IPC' }
+      ],
+      calculator: 'inflatie'
+    },
+    {
+      id: 'cauze-forme', nr: '2', titlu: 'Cauzele și formele inflației',
+      text: [
+        'Inflația prin cerere este determinată de creșterea cererii globale de bunuri și servicii, în condițiile în care oferta nu se modifică sau crește mai lent - unitățile economice doresc să cumpere mai mult decât poate produce economia. Principalele cauze: creșterea cheltuielilor de consum (venituri mai mari), creșterea cheltuielilor publice (deficit bugetar), creșterea excesivă a creditului, emisiunea monetară fără acoperire.',
+        'Inflația prin ofertă (costuri) este determinată de creșterea costurilor de producție și reducerea ofertei de bunuri și servicii - firmele produc mai puțin cu aceleași resurse, dacă cheltuiesc mai mult pentru fiecare bun. Cauze: creșterea salariilor fără acoperire în productivitate, creșterea prețurilor factorilor de producție importați (inflație importată), "șocul ofertei" (ex. energie electrică), creșterea fiscalității.',
+        'Spirala inflaționistă apare când cele două forme (prin cerere și prin ofertă) se întrepătrund, chiar dacă procesul e determinat inițial de o singură cauză. Atunci când indicele general al prețurilor (IGP) trebuie calculat pentru un întreg "coș de bunuri" (nu pentru un singur preț), se folosește o medie ponderată a indicilor de preț ai fiecărui bun, cu ponderea lui în consumul total.',
+        'Nu orice mișcare a prețurilor e inflație: deflația reprezintă reducerea nivelului general al prețurilor (rata inflației negativă), iar dezinflația reprezintă scăderea ratei inflației, care rămâne însă pozitivă - prețurile tot cresc, dar mai încet decât înainte.'
+      ],
+      clasificari: [
+        { criteriu: 'Formele inflației, după intensitatea manifestării', categorii: [
+          { nume: 'Moderată', definitie: 'rata inflației sub 10%, cu relativă stabilitate a banilor și încredere în moneda națională' },
+          { nume: 'Galopantă', definitie: 'rata inflației cu 2-3 cifre, care destabilizează economia' },
+          { nume: 'Hiperinflație', definitie: 'rata inflației de 4-5 cifre sau mai mult, care distruge bogăția unei țări' }
+        ] }
+      ],
+      exemple: [
+        'Coșul de bunuri al unei familii conține 3 bunuri, cu următorii indici de preț și ponderi în consum: A (Ip=110%, Z=70%), B (Ip=125%, Z=5%), C (Ip=90%, Z=25%). IGP = 110×0,70 + 125×0,05 + 90×0,25 = 77+6,25+22,5 = 105,75%, deci rata inflației e r.i.=5,75% - mult mai mică decât ar părea dacă te-ai uita doar la bunul B (al cărui preț a crescut cel mai mult), tocmai pentru că ponderea lui în consum e mică.'
+      ],
+      formule: [
+        { nume: 'Indicele general al prețurilor (coș ponderat)', formula: 'IGP = Σ(Ip x Z), unde Z = ponderea bunului în consumul total' }
+      ],
+      notaLegatura: { href: '#sect-explorator-inflatie', text: 'Explorează interactiv graficele inflației prin cerere și prin ofertă în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'efectele-inflatiei', nr: '3', titlu: 'Efectele inflației',
+      text: [
+        'Deși efectele negative sunt preponderente, inflația moderată poate avea și efecte pozitive - motiv pentru care e privită, adesea, ca "un rău necesar" al creșterii economice.'
+      ],
+      clasificari: [
+        { criteriu: 'Efectele inflației', categorii: [
+          { nume: 'Negative (preponderente)', definitie: 'deprecierea banilor, descurajarea economisirii și a investițiilor productive, accentuarea deficitului bugetar - dezavantajează cumpărătorii, creditorii, pensionarii, persoanele cu venituri mici și fixe' },
+          { nume: 'Pozitive', definitie: 'stimulează consumul și exporturile, elimină firmele necompetitive - avantajează vânzătorii, debitorii, persoanele cu venituri mari și ajustabile' }
+        ] }
+      ],
+      exemple: [],
+      formule: []
+    },
+    {
+      id: 'masuri-combatere', nr: '4', titlu: 'Măsurile de combatere a efectelor negative ale inflației',
+      text: [
+        'Statul și partenerii sociali pot acționa prin două tipuri principale de măsuri, complementare: unele care protejează populația de efectele deja resimțite, altele care atacă direct cauzele inflației.'
+      ],
+      clasificari: [
+        { criteriu: 'Măsurile de combatere a inflației', categorii: [
+          { nume: 'De protecție socială', definitie: 'indexarea salariilor și a altor venituri (cea mai importantă), creșterea dobânzilor la economii, compensații pentru salariați/pensionari, subvenționarea prețurilor unor produse de bază' },
+          { nume: 'Antiinflaționiste - de reducere a masei monetare', definitie: 'creșterea ratei dobânzii la credite, echilibrarea bugetului de stat, încetinirea emisiunii monetare, creșterea fiscalității, controlul (înghețarea) prețurilor și salariilor' },
+          { nume: 'Antiinflaționiste - de sporire a ofertei', definitie: 'reducerea fiscalității asupra firmelor, facilități pentru producători, creșterea productivității factorilor de producție' }
+        ], orientare: 'vertical' }
+      ],
+      exemple: [], formule: []
+    }
+  ],
+  grila: [
+    { intrebare: 'Inflația prin ofertă este determinată de:', optiuni: ['creșterea cheltuielilor statului pentru infrastructură', 'creșterea prețurilor la factorii de producție importați', 'scăderea impozitului pe salariu', 'scăderea impozitului pe profit'], corect: 1, explicatie: 'Creșterea prețurilor factorilor de producție importați (inflație importată) crește costurile de producție, reducând oferta - exact mecanismul inflației prin ofertă. Celelalte 3 variante ar stimula, dacă ceva, cererea.' },
+    { intrebare: 'Efectele negative ale inflației sunt resimțite, în principal, de:', optiuni: ['debitori, pentru că banii se devalorizează', 'creditori, pentru că la scadență primesc bani cu putere de cumpărare mai mică', 'creditori și debitori în aceeași proporție', 'debitori, pentru că trebuie să ramburseze mai mult'], corect: 1, explicatie: 'Creditorii sunt dezavantajați: banii primiți înapoi, la scadență, au o putere de cumpărare mai mică decât atunci când au acordat împrumutul. Debitorii sunt, dimpotrivă, avantajați.' },
+    { intrebare: 'Care dintre următorii factori determină inflația prin cerere:', optiuni: ['creșterea salariilor fără acoperire în productivitate', 'creșterea impozitării', 'creșterea excesivă a creditului', 'diminuarea cheltuielilor bugetare'], corect: 2, explicatie: 'Creșterea excesivă a creditului sporește cererea de bunuri fără o creștere corespunzătoare a ofertei - un mecanism clasic al inflației prin cerere.' },
+    { intrebare: 'Rata inflației se calculează astfel:', optiuni: ['r.i = IPC + 100%', 'r.i = IPC - 100%', 'r.i = IPC x 100%', 'r.i = 100% - IPC'], corect: 1, explicatie: 'r.i = IPC - 100% (sau IGP - 100%) - arată cu cât au crescut prețurile față de perioada de referință.' },
+    { intrebare: 'Hiperinflația se caracterizează prin:', optiuni: ['o rată a inflației sub 10%', 'o rată a inflației peste 10%, dar sub 100%', 'o rată a inflației de 4-5 cifre sau mai mult', 'absența oricărei creșteri de preț'], corect: 2, explicatie: 'Hiperinflația e forma extremă, cu o rată a inflației de 4-5 cifre (sute sau mii la sută) sau chiar mai mult - spre deosebire de inflația moderată (sub 10%) sau galopantă (peste 10%).' }
+  ],
+  af: [
+    { enunt: 'Orice creștere a prețurilor unor bunuri de consum reprezintă inflație.', corect: false, explicatie: 'Nu - inflația înseamnă o creștere GENERALIZATĂ a prețurilor, nu creșterea prețului unui bun izolat (care poate avea cauze proprii, ex. o recoltă slabă).' },
+    { enunt: 'Creșterea salariilor nu conduce niciodată la inflație.', corect: false, explicatie: 'Dacă salariile cresc fără acoperire în sporirea productivității muncii, costurile de producție cresc, ceea ce poate declanșa inflație prin ofertă.' },
+    { enunt: 'Inflația dezavantajează creditorii.', corect: true, explicatie: 'Da - creditorii primesc, la scadență, o sumă cu putere de cumpărare mai mică decât cea acordată inițial.' },
+    { enunt: 'Inflația prin ofertă este cauzată de creșterea prețurilor factorilor de producție.', corect: true, explicatie: 'Da - printre cauzele inflației prin ofertă (costuri) se numără creșterea prețurilor factorilor de producție importați și a celorlalți factori ("șoc al ofertei").' },
+    { enunt: 'Inflația moderată, corect anticipată și controlată, poate avea și efecte pozitive asupra economiei.', corect: true, explicatie: 'Da - inflația moderată e considerată "un rău necesar" al creșterii economice, deblocând anumite mecanisme economice.' }
+  ],
+  probleme: [
+    { enunt: 'Dacă în intervalul t1 față de t0 prețurile au crescut de 3 ori, iar în t2 față de t1, de 2 ori, care este rata inflației (%) în perioada t2 față de t0?', unitate: '%', corect: 500, toleranta: 2, explicatie: 'Indicele total = 3 x 2 = 6 (600%). Rata inflației = 600% - 100% = 500%.' },
+    { enunt: 'Salariul minim pe economie a fost 320 RON. Dacă prețurile au crescut cu 10%, care este valoarea reală a acestui salariu, la noul nivel al prețurilor?', unitate: 'RON', corect: 290.9, toleranta: 1, explicatie: 'Vr = Vn/IPC = 320/1,10 = 290,9 RON.' },
+    { enunt: 'Coșul de bunuri al unei familii conține 3 bunuri: A (indice de preț 110%, pondere în consum 70%), B (indice de preț 125%, pondere 5%) și C (indice de preț 90%, pondere 25%). Calculați rata inflației (%), folosind indicele general al prețurilor ponderat.', unitate: '%', corect: 5.75, toleranta: 0.2, explicatie: 'IGP = 110x0,70 + 125x0,05 + 90x0,25 = 77+6,25+22,5 = 105,75%. Rata inflației = 105,75% - 100% = 5,75%.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Inflația prin cerere' },
+        { id: 't2', text: 'Inflația prin ofertă' },
+        { id: 't3', text: 'Rata inflației' },
+        { id: 't4', text: 'Puterea de cumpărare a banilor' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Determinată de creșterea cererii globale, în condițiile în care oferta nu ține pasul' },
+        { id: 'o_b', text: 'Determinată de creșterea costurilor de producție și reducerea ofertei' },
+        { id: 'o_c', text: 'IPC - 100%' },
+        { id: 'o_d', text: 'Cantitatea de bunuri ce poate fi cumpărată cu o unitate monetară' },
+        { id: 'o_e', text: 'Suma de bani plătită pentru folosirea unui împrumut' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, dobânda - un concept diferit, care nu apare în coloana din stânga.'
+    }
+  ]
+};
+
+function calculeazaInflatie(P0, P1, Vn) {
+  const IPC = (P1 / P0) * 100;
+  const ri = IPC - 100;
+  const Vr = Vn / (IPC / 100);
+  const IPCB = (1 / (IPC / 100)) * 100;
+  return { IPC, ri, Vr, IPCB };
+}
+
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildGaugeChart(valoare, maxDisplay, zone) {
+  const size = 260, cx = size / 2, cy = size / 2 + 4, radius = size * 0.38, grosime = 22;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size * 0.62), role: 'img', 'aria-label': 'Cadran: nivelul valorii ' + valoare + ' pe scala 0-' + maxDisplay });
+
+  function unghiPe(v) { return Math.PI - (Math.min(Math.max(v, 0), maxDisplay) / maxDisplay) * Math.PI; }
+  function punctPe(v, r) { const u = unghiPe(v); return { x: cx + r * Math.cos(u), y: cy - r * Math.sin(u) }; }
+  function arc(v0, v1, r) {
+    const p0 = punctPe(v0, r), p1 = punctPe(v1, r);
+    const mareArc = (v1 - v0) / maxDisplay > 0.5 ? 1 : 0;
+    return 'M ' + p0.x + ' ' + p0.y + ' A ' + r + ' ' + r + ' 0 ' + mareArc + ' 1 ' + p1.x + ' ' + p1.y;
+  }
+
+  zone.forEach(z => {
+    svg.appendChild(elNS('path', { d: arc(z.de, z.pana, radius), fill: 'none', stroke: z.culoare, 'stroke-width': grosime }));
+  });
+
+  const valAfisat = Math.min(valoare, maxDisplay);
+  const acUnghi = unghiPe(valAfisat);
+  const acLungime = radius - grosime / 2 - 4;
+  const acX = cx + acLungime * Math.cos(acUnghi), acY = cy - acLungime * Math.sin(acUnghi);
+  svg.appendChild(elNS('line', { x1: cx, y1: cy, x2: acX, y2: acY, stroke: 'var(--text)', 'stroke-width': 3, 'stroke-linecap': 'round' }));
+  svg.appendChild(elNS('circle', { cx: cx, cy: cy, r: 6, fill: 'var(--text)' }));
+
+  zone.forEach(z => {
+    const mid = (z.de + z.pana) / 2;
+    const p = punctPe(mid, radius + 18);
+    const t = elNS('text', { x: p.x, y: p.y, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)', 'font-family': 'var(--font-body)' });
+    t.textContent = z.eticheta;
+    svg.appendChild(t);
+  });
+
+  const labelVal = elNS('text', { x: cx, y: cy - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 20, fill: 'var(--text)', 'font-weight': 700 });
+  labelVal.textContent = (valoare > maxDisplay ? '>' : '') + Math.round(valAfisat) + '%';
+  svg.appendChild(labelVal);
+
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 20, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+function campInput(randuri, labelTxt, placeholder, valInitial) {
+  const label = document.createElement('label');
+  label.appendChild(document.createTextNode(labelTxt));
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+  label.appendChild(input);
+  randuri.appendChild(label);
+  return input;
+}
+
+function buildInflatieCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: IPC, rata inflației și venitul real'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputP0 = campInput(randuri, 'Preț mediu inițial (P0)', 'ex. 50', 50);
+  const inputP1 = campInput(randuri, 'Preț mediu curent (P1)', 'ex. 60', 60);
+  const inputVn = campInput(randuri, 'Venit nominal (Vn)', 'ex. 600', 600);
+  box.appendChild(randuri);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const P0 = Number(inputP0.value), P1 = Number(inputP1.value), Vn = Number(inputVn.value);
+    if ([inputP0, inputP1, inputVn].some(i => i.value === '') || [P0, P1, Vn].some(isNaN) || P0 === 0) {
+      rezultat.textContent = 'Completează toate valorile (P0 diferit de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const r = calculeazaInflatie(P0, P1, Vn);
+    rezultat.innerHTML = '';
+    [['IPC (%)', r.IPC], ['Rata inflației (%)', r.ri], ['Venit real (Vr)', r.Vr], ['IPCB (%)', r.IPCB]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+    chartWrap.innerHTML = '';
+    chartWrap.appendChild(buildGaugeChart(r.ri, 120, [
+      { de: 0, pana: 10, culoare: 'var(--good)', eticheta: 'Moderată' },
+      { de: 10, pana: 60, culoare: 'var(--mark)', eticheta: 'Galopantă' },
+      { de: 60, pana: 120, culoare: 'var(--bad)', eticheta: 'Spre hiperinflație' }
+    ]));
+  }
+  [inputP0, inputP1, inputVn].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii)));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'inflatie') body.appendChild(buildInflatieCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// -----------------------------------------------------------------
+// V. Explorator: inflatia prin cerere vs prin oferta (graficele 11.1/11.2)
+// -----------------------------------------------------------------
+function buildExploratorInflatie() {
+  const width = 380, height = 260, left = 46, right = 14, top = 18, bottom = 32;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const maxQ = 80, maxP = 40;
+  const sx = q => left + (q / maxQ) * chartW;
+  const sy = p => top + chartH - (p / maxP) * chartH;
+
+  function cerere(P, a) { return a - 2 * P; }
+  function oferta(P, c) { return c + 2 * P; }
+  function echilibru(a, c) { const P = (a - c) / 4; return { P, Q: cerere(P, a) }; }
+
+  const e0 = echilibru(100, 0);
+  const eCerere = echilibru(130, 0);
+  const eOferta = echilibru(100, -30);
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Alege tipul de inflație și vezi cum se deplasează curbele - și, esențial, ce se întâmplă cu producția (Q): crește la inflația prin cerere, dar scade la inflația prin ofertă.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Graficele inflatiei prin cerere si prin oferta' });
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Cerere'));
+  legenda.appendChild(legendItem('var(--mark)', 'Ofertă'));
+  legenda.appendChild(legendItem('var(--bad)', 'Curba deplasată'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxP = document.createElement('div'); const sP = document.createElement('strong'); boxP.appendChild(sP); boxP.appendChild(el('span', '', 'Preț (P0 → P1)'));
+  const boxQ = document.createElement('div'); const sQ = document.createElement('strong'); boxQ.appendChild(sQ); boxQ.appendChild(el('span', '', 'Producție (Q0 → Q1)'));
+  citire.appendChild(boxP); citire.appendChild(boxQ);
+  wrap.appendChild(citire);
+
+  const interpretare = document.createElement('div');
+  interpretare.style.marginTop = '10px'; interpretare.style.fontSize = '13.5px'; interpretare.style.color = 'var(--text-muted)';
+  wrap.appendChild(interpretare);
+
+  const toggle = el('div', 'simulator__toggle');
+  const btnCerere = el('button', 'buton activ', 'Inflație prin cerere');
+  const btnOferta = el('button', 'buton', 'Inflație prin ofertă');
+  toggle.appendChild(btnCerere); toggle.appendChild(btnOferta);
+  wrap.appendChild(toggle);
+
+  function deseneazaAxe() {
+    svg.innerHTML = '';
+    svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+    svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+    const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' }); labelY.textContent = 'Preț (P)';
+    const labelX = elNS('text', { x: left + chartW, y: height - 8, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' }); labelX.textContent = 'Cantitate (Q)';
+    svg.appendChild(labelY); svg.appendChild(labelX);
+  }
+
+  function curbaCerere(a, culoare) {
+    const puncte = [];
+    for (let P = 0; P <= maxP; P += 2) {
+      const Q = cerere(P, a);
+      if (Q >= 0 && Q <= maxQ) puncte.push(sx(Q) + ',' + sy(P));
+    }
+    return elNS('polyline', { fill: 'none', stroke: culoare, 'stroke-width': 2.2, points: puncte.join(' ') });
+  }
+  function curbaOferta(c, culoare) {
+    const puncte = [];
+    for (let P = 0; P <= maxP; P += 2) {
+      const Q = oferta(P, c);
+      if (Q >= 0 && Q <= maxQ) puncte.push(sx(Q) + ',' + sy(P));
+    }
+    return elNS('polyline', { fill: 'none', stroke: culoare, 'stroke-width': 2.2, points: puncte.join(' ') });
+  }
+
+  function afiseazaCerere() {
+    deseneazaAxe();
+    svg.appendChild(curbaCerere(100, 'var(--accent)'));
+    svg.appendChild(curbaCerere(130, 'var(--bad)'));
+    svg.appendChild(curbaOferta(0, 'var(--mark)'));
+    svg.appendChild(elNS('circle', { cx: sx(e0.Q), cy: sy(e0.P), r: 4, fill: 'var(--text-muted)' }));
+    svg.appendChild(elNS('circle', { cx: sx(eCerere.Q), cy: sy(eCerere.P), r: 5, fill: 'var(--bad)' }));
+    sP.textContent = e0.P.toFixed(1) + ' → ' + eCerere.P.toFixed(1);
+    sQ.textContent = e0.Q.toFixed(0) + ' → ' + eCerere.Q.toFixed(0);
+    interpretare.textContent = 'Cererea crește (se deplasează spre dreapta) - la aceeași ofertă, atât prețul, cât și cantitatea (producția) cresc.';
+    btnCerere.classList.add('activ'); btnOferta.classList.remove('activ');
+  }
+  function afiseazaOferta() {
+    deseneazaAxe();
+    svg.appendChild(curbaCerere(100, 'var(--accent)'));
+    svg.appendChild(curbaOferta(0, 'var(--mark)'));
+    svg.appendChild(curbaOferta(-30, 'var(--bad)'));
+    svg.appendChild(elNS('circle', { cx: sx(e0.Q), cy: sy(e0.P), r: 4, fill: 'var(--text-muted)' }));
+    svg.appendChild(elNS('circle', { cx: sx(eOferta.Q), cy: sy(eOferta.P), r: 5, fill: 'var(--bad)' }));
+    sP.textContent = e0.P.toFixed(1) + ' → ' + eOferta.P.toFixed(1);
+    sQ.textContent = e0.Q.toFixed(0) + ' → ' + eOferta.Q.toFixed(0);
+    interpretare.textContent = 'Oferta scade (se deplasează spre stânga, din cauza costurilor mai mari) - prețul crește, dar producția SCADE. Aceasta e diferența esențială față de inflația prin cerere.';
+    btnOferta.classList.add('activ'); btnCerere.classList.remove('activ');
+  }
+  btnCerere.addEventListener('click', afiseazaCerere);
+  btnOferta.addEventListener('click', afiseazaOferta);
+  afiseazaCerere();
+  return wrap;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: inflația prin cerere vs. prin ofertă');
+  eyebrowExp.id = 'sect-explorator-inflatie';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Recreează graficele 11.1 și 11.2 din manual, acum interactive.'));
+  root.appendChild(buildExploratorInflatie());
+});
+</script>
+</body>
+</html>

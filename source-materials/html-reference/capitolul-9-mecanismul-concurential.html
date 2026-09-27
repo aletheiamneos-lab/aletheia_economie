@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 9 · Mecanismul concurențial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.legenda { display: flex; gap: 16px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+
+.toggle-grid { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.toggle-chip { display: flex; align-items: center; gap: 7px; padding: 7px 12px; border-radius: 20px; border: 1.5px solid var(--border); font-size: 13px; cursor: pointer; user-select: none; background: var(--surface); }
+.toggle-chip.activ { border-color: var(--chip-color, var(--accent)); background: var(--chip-bg, var(--accent-soft)); }
+.toggle-chip__dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.radar-wrap { display: flex; justify-content: center; margin-top: 14px; }
+.radar-wrap svg { max-width: 320px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+.spectru-trasaturi { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+.spectru-trasatura { display: flex; gap: 12px; padding: 10px 14px; background: var(--surface-2); border-radius: 8px; }
+.spectru-trasatura__eticheta { font-family: var(--font-mono); font-size: 11.5px; color: var(--text-muted); min-width: 130px; flex-shrink: 0; }
+.spectru-trasatura__valoare { font-size: 14px; color: var(--text); font-weight: 500; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+  .spectru-trasatura { flex-direction: column; gap: 2px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  capitol: {
+    numar: 9,
+    titlu: 'Mecanismul concurențial',
+    obiective: [
+      'Să explici ce este concurența și care este rolul ei în economia de piață',
+      'Să distingi premisele și factorii care determină amploarea concurenței',
+      'Să înțelegi diferitele structuri de piață: concurență perfectă, monopolistică, oligopol, monopol',
+      'Să explici formarea prețurilor pe fiecare structură de piață',
+      'Să identifici instrumentele și strategiile concurențiale folosite de firme'
+    ]
+  },
+  teorie: [
+    {
+      id: 'caracterizare-concurenta', nr: '1', titlu: 'Caracterizarea generală a concurenței',
+      text: [
+        'Concurența - "mâna invizibilă" a pieței - reflectă relațiile dintre agenții economici care acționează pe piața aceluiași bun economic, fiecare urmărind realizarea propriilor interese, în condiții de libertate economică.',
+        'Vorbim de concurență directă între agenții economici care acționează pe piața aceluiași bun (de ex. telefoane mobile) sau în cazul bunurilor substituibile (zahăr și zaharină). Nu se află în concurență directă agenții de pe piețe diferite sau cei care produc bunuri complementare (stilouri - cerneală).'
+      ],
+      puncteCheie: [
+        'Premise: formarea liberă a prețului, numeroși participanți la tranzacții, libertatea decizională a agenților economici, apărată și garantată legal',
+        'Factori care determină amploarea concurenței: numărul vânzătorilor și cumpărătorilor, gradul de diferențiere a ofertei și preferințelor, capacitatea societății de a stimula inițiativa și spiritul de competiție'
+      ],
+      clasificari: [
+        { criteriu: 'Formele concurenței, după respectarea reglementărilor legale', categorii: [
+          { nume: 'Concurență loială (corectă)', definitie: 'respectă legile și reglementările în vigoare' },
+          { nume: 'Concurență neloială (incorectă)', definitie: 'încalcă aceste reglementări (spionaj economic, șantaj etc.)' }
+        ] }
+      ],
+      exemple: [
+        'Rolul concurenței: stimulează progresul științific/tehnic/economic/social; selectează agenții economici după eficiență; asigură alocarea eficientă a resurselor; reglează piața prin adaptarea ofertei la cerere; oferă cele mai bune răspunsuri la ce, cât, cum, pentru cine să se producă; stimulează reducerea costurilor și a prețurilor.'
+      ],
+      formule: []
+    },
+    {
+      id: 'concurenta-perfecta', nr: '2', titlu: 'Concurența perfectă (pură)',
+      text: [
+        'Concurența perfectă reprezintă acel tip de concurență în care vânzătorii și cumpărătorii își realizează propriile interese, dar nu pot influența, prin acțiuni individuale, raportul cerere-ofertă și deci prețul. E un model teoretic, ideal, dar util ca reper de comparare a piețelor reale (piața muncitorilor necalificați și piețele bursiere tind spre acest model).',
+        'Pe piața cu concurență perfectă, prețul se formează liber, prin confruntarea cererii cu oferta. Nicio firmă nu are putere de decizie asupra prețului - fiind obligată să practice prețul stabilit pe piață, firma e "primitoare de preț" (price-taker).'
+      ],
+      puncteCheie: [
+        { termen: 'Atomicitatea cererii și ofertei', descriere: 'numeroși producători și consumatori, niciunul capabil să influențeze piața' },
+        { termen: 'Absența barierelor de intrare/ieșire', descriere: 'orice producător/consumator poate intra sau ieși oricând de pe piață' },
+        { termen: 'Omogenitatea perfectă a produselor', descriere: 'produsele oferite sunt identice' },
+        { termen: 'Transparența perfectă', descriere: 'toți participanții dispun de aceeași informație despre piață' },
+        { termen: 'Perfecta mobilitate a factorilor de producție', descriere: 'munca și capitalul se deplasează ușor de la o firmă la alta' }
+      ],
+      exemple: [],
+      formule: []
+    },
+    {
+      id: 'concurenta-monopolistica', nr: '3', titlu: 'Concurența imperfectă: piața cu concurență monopolistică',
+      text: [
+        'Concurența imperfectă apare prin absența uneia sau mai multor condiții ale concurenței perfecte. Piața cu concurență monopolistică se apropie cel mai mult de concurența perfectă: are aceleași trăsături, cu o excepție esențială - diferențierea produsului.',
+        'Fiind diferențiate, firmele dețin, pe termen scurt, o putere de monopol limitată - dar cererea la nivelul unei firme e mult mai elastică decât la monopolul propriu-zis (produsele fiind ușor substituibile). Pe termen lung, intrarea de noi firme reduce cererea, prețul și profitul fiecărei firme, apropiindu-le de zero.'
+      ],
+      puncteCheie: [
+        'Atomicitatea cererii și ofertei - fiecare ofertant deține o cotă mică din piață',
+        'Intrarea și ieșirea de pe piață sunt relativ libere (cheltuieli mici de acces)',
+        'Diferențierea produselor - permite concurență prin preț, dar și prin reclamă, garanție etc.',
+        'Transparență mare, dar nu perfectă - există cheltuieli de informare pentru cumpărători'
+      ],
+      exemple: [],
+      formule: []
+    },
+    {
+      id: 'oligopol', nr: '4', titlu: 'Concurența imperfectă: piața cu concurență de oligopol',
+      text: [
+        'Piața cu concurență de oligopol reflectă acel tip de piață în care puține firme, dar mari și puternice economic, produc bunuri diferențiate sau omogene și determină formarea prețului (prețuri administrate). Este cel mai răspândit tip de piață în economiile moderne.',
+        'Firmele care acționează pe această piață încheie fie înțelegeri de tip cartel (păstrează autonomia decizională, dar se înțeleg asupra prețului și segmentului de piață), fie de tip trust (pierd autonomia decizională). Concurența se desfășoară prin preț, publicitate, facilități acordate cumpărătorilor.'
+      ],
+      puncteCheie: [
+        'Numărul firmelor este mic (de regulă, 3-10), dar puternic economic',
+        'Interdependența decizională dintre firme este mare - fiecare ține cont de reacțiile așteptate ale concurenților',
+        'Accesul pe piață este dificil (bariere de intrare mari)',
+        'Prețul se formează în funcție de cerere și de cantitatea produsă, pornind de la costul total mediu (CTM)'
+      ],
+      exemple: [],
+      formule: []
+    },
+    {
+      id: 'monopol-monopson', nr: '5', titlu: 'Monopolul, monopsonul și oligopsonul',
+      text: [
+        'Piața de monopol reflectă acel tip de piață în care unicul producător (vânzător) domină oferta unor bunuri omogene (pe termen scurt, nesubstituibile) prin preț și cantitate. Monopolul practică cel mai mare preț de pe piață, obținând profit de monopol - de unde și legile antimonopol/antitrust, menite să protejeze un grad rezonabil de satisfacere a cumpărătorilor. În realitate, monopolul absolut (pur) nu există pe termen lung.',
+        'Monopsonul și oligopsonul sunt, în esență, "oglinda" monopolului și oligopolului - dar concentrarea puterii economice se manifestă pe partea cumpărătorilor, nu a vânzătorilor. Piața de monopson reflectă acel tip de piață în care un singur cumpărător determină stabilirea prețului unui bun economic omogen, oferit de un număr mare de vânzători (ofertă atomizată). Piața cu concurență de oligopson e acel tip de piață în care un număr mic de cumpărători dispun de o putere economică destul de mare în influențarea pieței, tot în condițiile atomicității ofertei.',
+        'Profitul firmei cu putere de piață (monopolistă, de oligopol) este maxim, pe termen scurt, atunci când costul marginal (Cmg) este cel mult egal cu venitul marginal (Vmg), care e mai mic decât prețul: Cmg ≤ Vmg < P.'
+      ],
+      clasificari: [
+        { criteriu: 'Tipurile de monopol, după cauzele care îl generează', categorii: ['Legal', 'Inovațional', 'Natural', 'Bilateral (sindicat-patronat)'] }
+      ],
+      exemple: [
+        'Un lanț mare de retail care cumpără roșii de la sute de mici producători agricoli locali se apropie de o poziție de oligopson (sau chiar monopson, dacă e singurul cumpărător en-gros din zonă): puterea sa de negociere îi permite să impună prețul de achiziție, deși oferta (fermierii) rămâne atomizată.'
+      ],
+      formule: [
+        { nume: 'Condiția profitului maxim (piață cu putere)', formula: 'Cmg ≤ Vmg < P' }
+      ],
+      calculator: 'profitMaxim',
+      notaLegatura: { href: '#sect-explorator-spectru', text: 'Explorează interactiv toate cele 6 structuri de piață, comparativ, în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'instrumente-strategii', nr: '6', titlu: 'Instrumente și strategii concurențiale',
+      text: [
+        'Firmele folosesc diverse instrumente pentru a câștiga avantaj competitiv - unele legitime, altele nu - și își aleg o strategie concurențială potrivită resurselor și pieței pe care activează.'
+      ],
+      clasificari: [
+        { criteriu: 'Instrumentele concurențiale', categorii: [
+          { nume: 'De natură economică', definitie: 'reducerea costului și prețului, îmbunătățirea calității, diversificarea sortimentală, avantaje pentru cumpărători' },
+          { nume: 'De natură extraeconomică', definitie: 'spionajul economic, șantajul, presiuni morale asupra cumpărătorilor (concurență neloială)' }
+        ] },
+        { criteriu: 'Strategiile (politicile) concurențiale', categorii: [
+          { nume: 'Strategia costurilor ("japoneză")', definitie: 'se bazează pe reducerea costurilor și prețurilor, fără afectarea calității' },
+          { nume: 'Strategia elitei ("Mercedes")', definitie: 'se bazează pe o calitate deosebită, cu performanțe superioare' },
+          { nume: 'Strategia efortului concentrat', definitie: 'are la bază preferințele unei anumite clientele și zone geografice' }
+        ] }
+      ],
+      exemple: [],
+      formule: []
+    }
+  ],
+  grila: [
+    { intrebare: 'Concurența monopolistică se deosebește de concurența perfectă, în principal, prin:', optiuni: ['libera intrare și ieșire de pe piață', 'atomicitatea cererii', 'atomicitatea ofertei', 'diferențierea produselor'], corect: 3, explicatie: 'Piața cu concurență monopolistică păstrează, în esență, trăsăturile concurenței perfecte - excepția principală fiind diferențierea produsului.' },
+    { intrebare: 'Pe piața cu concurență perfectă, prețul:', optiuni: ['se formează liber, prin confruntarea cererii cu oferta', 'este stabilit de producător', 'este stabilit de stat', 'este mai mare decât pe piața de monopol'], corect: 0, explicatie: 'Pe piața cu concurență perfectă, nicio firmă nu are putere de decizie asupra prețului - firmele sunt "primitoare de preț" (price-taker).' },
+    { intrebare: 'Piața de monopol se caracterizează prin:', optiuni: ['atomicitatea ofertei', 'un singur producător', 'lipsa oricăror bariere de intrare pe piață', 'o foarte bună satisfacere a cererii'], corect: 1, explicatie: 'La monopol, un singur producător domină oferta unui bun (de regulă) nesubstituibil - opusul atomicității ofertei specifice concurenței perfecte.' },
+    { intrebare: 'Piața de oligopol NU se caracterizează prin:', optiuni: ['un număr mic de firme, mari și puternice economic', 'existența unor înțelegeri de tip cartel', 'comportamentul strategic al firmelor', 'absența barierelor de intrare pe piață'], corect: 3, explicatie: 'La oligopol, accesul pe piață este dificil (bariere mari de intrare) - tocmai opusul absenței barierelor, care descrie mai degrabă concurența perfectă sau monopolistică.' },
+    { intrebare: 'Instrumentele concurențiale de natură extraeconomică includ:', optiuni: ['reducerea costului și a prețului', 'îmbunătățirea calității bunurilor', 'spionajul economic', 'diversificarea structurii sortimentale'], corect: 2, explicatie: 'Spionajul economic, șantajul și presiunile morale sunt instrumente extraeconomice (neloiale); celelalte trei sunt instrumente economice, legitime.' }
+  ],
+  af: [
+    { enunt: 'Diferențierea produselor este specifică pieței cu concurență monopolistică.', corect: true, explicatie: 'Da - este exact trăsătura care o diferențiază de concurența perfectă (unde produsele sunt omogene).' },
+    { enunt: 'În condiții de monopol, cererea pieței coincide cu cererea la nivelul firmei.', corect: true, explicatie: 'Da - fiind unicul ofertant, întreaga cerere a pieței se îndreaptă către firma monopolistă.' },
+    { enunt: 'Pe piața de oligopol, firmele nu au un comportament strategic.', corect: false, explicatie: 'Dimpotrivă - la oligopol, fiecare firmă își fundamentează deciziile ținând cont de reacțiile așteptate ale concurenților.' },
+    { enunt: 'Pe piața de monopson există un singur producător.', corect: false, explicatie: 'La monopson există un singur CUMPĂRĂTOR (nu producător), în fața unui număr mare de vânzători.' },
+    { enunt: 'Concurența neloială include acțiuni precum spionajul economic sau șantajul.', corect: true, explicatie: 'Da - acestea sunt instrumente concurențiale de natură extraeconomică, specifice concurenței neloiale.' }
+  ],
+  probleme: [],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare structură de piață cu trăsătura ei definitorie (atenție - sunt mai multe definiții decât structuri).',
+      coloanaA: [
+        { id: 't1', text: 'Concurența monopolistică' },
+        { id: 't2', text: 'Oligopolul' },
+        { id: 't3', text: 'Monopolul' },
+        { id: 't4', text: 'Monopsonul' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Multe firme, produse diferențiate, bariere de intrare relativ reduse' },
+        { id: 'o_b', text: 'Puține firme mari, interdependență decizională puternică' },
+        { id: 'o_c', text: 'Un singur producător domină oferta unui bun nesubstituibil' },
+        { id: 'o_d', text: 'Un singur cumpărător stabilește prețul, în fața multor vânzători' },
+        { id: 'o_e', text: 'Mulți cumpărători și mulți vânzători, produse omogene, fără putere de piață' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, concurența perfectă - un model teoretic care nu apare printre cele 4 structuri din coloana din stânga.'
+    }
+  ]
+};
+
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildRadarChart(axe, serii, options) {
+  options = options || {};
+  const size = options.size || 300;
+  const cx = size / 2, cy = size / 2 + 6;
+  const radius = size * 0.32;
+  const maxVal = options.maxVal || 4;
+  const n = axe.length;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 10), role: 'img', 'aria-label': 'Grafic radar comparativ: ' + axe.join(', ') });
+
+  function punctPe(axaIdx, valoare) {
+    const unghi = (2 * Math.PI * axaIdx / n) - Math.PI / 2;
+    const r = (valoare / maxVal) * radius;
+    return { x: cx + r * Math.cos(unghi), y: cy + r * Math.sin(unghi) };
+  }
+
+  [0.25, 0.5, 0.75, 1].forEach(frac => {
+    const puncte = [];
+    for (let i = 0; i < n; i++) puncte.push(punctPe(i, maxVal * frac));
+    svg.appendChild(elNS('polygon', { points: puncte.map(p => p.x + ',' + p.y).join(' '), fill: 'none', stroke: 'var(--border)', 'stroke-width': 1 }));
+  });
+
+  for (let i = 0; i < n; i++) {
+    const p = punctPe(i, maxVal);
+    svg.appendChild(elNS('line', { x1: cx, y1: cy, x2: p.x, y2: p.y, stroke: 'var(--border)', 'stroke-width': 1 }));
+    const labelR = radius + 22;
+    const unghi = (2 * Math.PI * i / n) - Math.PI / 2;
+    const lx = cx + labelR * Math.cos(unghi), ly = cy + labelR * Math.sin(unghi);
+    const t = elNS('text', { x: lx, y: ly, 'text-anchor': 'middle', 'font-size': 10.5, fill: 'var(--text-muted)', 'font-family': 'var(--font-body)' });
+    t.textContent = axe[i];
+    svg.appendChild(t);
+  }
+
+  serii.forEach(s => {
+    const puncte = [];
+    for (let i = 0; i < n; i++) puncte.push(punctPe(i, s.valori[i]));
+    svg.appendChild(elNS('polygon', { points: puncte.map(p => p.x + ',' + p.y).join(' '), fill: s.culoare, 'fill-opacity': 0.18, stroke: s.culoare, 'stroke-width': 2.2 }));
+    puncte.forEach(p => svg.appendChild(elNS('circle', { cx: p.x, cy: p.y, r: 3, fill: s.culoare })));
+  });
+
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 20, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'profitMaxim') body.appendChild(buildProfitMaximCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function campInput(randuri, labelTxt, placeholder, valInitial) {
+  const label = document.createElement('label');
+  label.appendChild(document.createTextNode(labelTxt));
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+  label.appendChild(input);
+  randuri.appendChild(label);
+  return input;
+}
+
+function buildProfitMaximCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: condiția profitului maxim (Cmg ≤ Vmg < P)'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputCmg = campInput(randuri, 'Cost marginal (Cmg)', 'ex. 20', 20);
+  const inputVmg = campInput(randuri, 'Venit marginal (Vmg)', 'ex. 25', 25);
+  const inputP = campInput(randuri, 'Preț (P)', 'ex. 30', 30);
+  box.appendChild(randuri);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const Cmg = Number(inputCmg.value), Vmg = Number(inputVmg.value), P = Number(inputP.value);
+    if ([inputCmg, inputVmg, inputP].some(i => i.value === '') || [Cmg, Vmg, P].some(isNaN)) {
+      rezultat.textContent = 'Completează toate cele 3 valori.';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const respecta = Cmg <= Vmg && Vmg < P;
+    rezultat.innerHTML = '';
+    rezultat.className = 'mini-calc__rezultat';
+    const verdict = document.createElement('div');
+    verdict.style.marginBottom = '6px';
+    verdict.style.fontWeight = '600';
+    verdict.style.color = respecta ? 'var(--good)' : 'var(--bad)';
+    verdict.textContent = respecta ? 'Condiția e respectată - firma e la (sau aproape de) profitul maxim.' : 'Condiția NU e respectată - firma nu maximizează profitul cu acești parametri.';
+    rezultat.appendChild(verdict);
+    chartWrap.innerHTML = '';
+    const maxV = Math.max(Cmg, Vmg, P, 1) * 1.15;
+    const width = 240, left = 20, right = 20, y = 40;
+    const scale = (width - left - right) / maxV;
+    const xCmg = left + Cmg * scale, xVmg = left + Vmg * scale, xP = left + P * scale;
+    const svgSec = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' 76', role: 'img', 'aria-label': 'Secventa Cmg, Vmg, P pe o axa numerica' });
+    svgSec.appendChild(elNS('line', { x1: left, y1: y, x2: width - right, y2: y, stroke: 'var(--border)', 'stroke-width': 2 }));
+    [['Cmg', xCmg, 'var(--bad)'], ['Vmg', xVmg, 'var(--mark)'], ['P', xP, 'var(--accent)']].forEach(([nume, x, culoare]) => {
+      svgSec.appendChild(elNS('circle', { cx: x, cy: y, r: 7, fill: culoare, stroke: 'var(--surface)', 'stroke-width': 2 }));
+      const lv = elNS('text', { x: x, y: y - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11, fill: culoare, 'font-weight': 600 });
+      lv.textContent = Math.round(([['Cmg', Cmg], ['Vmg', Vmg], ['P', P]].find(p => p[0] === nume))[1] * 100) / 100;
+      svgSec.appendChild(lv);
+      const ll = elNS('text', { x: x, y: y + 24, 'text-anchor': 'middle', 'font-size': 10.5, fill: 'var(--text-muted)' });
+      ll.textContent = nume;
+      svgSec.appendChild(ll);
+    });
+    chartWrap.appendChild(svgSec);
+  }
+  [inputCmg, inputVmg, inputP].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// -----------------------------------------------------------------
+// V. Explorator: spectrul structurilor de piata (graficul-semnatura),
+// bazat pe Tabelul 9.1 din manual.
+// -----------------------------------------------------------------
+function buildExploratorSpectru() {
+  const structuri = [
+    { nume: 'Concurența perfectă', concentrare: 4, numarFirme: 'Multe firme independente. Niciuna nu poate controla piața.', pret: 'Nu există control. Piața stabilește prețul.', diferentiere: 'Nu există - produse omogene', intrare: 'Ușoară', exemplu: 'Bursa de valori' },
+    { nume: 'Concurența monopolistică', concentrare: 3, numarFirme: 'Multe firme', pret: 'Pe termen scurt, îl stabilește producătorul; pe termen lung, piața.', diferentiere: 'Există - produse diferențiate', intrare: 'Relativă', exemplu: 'Țăranii din piață' },
+    { nume: 'Oligopolul', concentrare: 2, numarFirme: 'Câteva firme (vânzători)', pret: 'Decizie comună la nivelul firmelor', diferentiere: 'Există - omogene sau eterogene', intrare: 'Dificilă', exemplu: 'Industria de autoturisme' },
+    { nume: 'Monopolul', concentrare: 1, numarFirme: 'Un singur ofertant (vânzător)', pret: 'Mult control din partea unicului vânzător', diferentiere: 'Nu există - produs unicat', intrare: 'Foarte dificilă', exemplu: 'Microsoft (în trecut, pe piața sistemelor de operare)' },
+    { nume: 'Oligopsonul', concentrare: 2, mirror: true, numarFirme: 'Câțiva cumpărători mari (oferta rămâne atomizată)', pret: 'Cumpărătorii, prin puterea lor economică, influențează prețul', diferentiere: 'Oferta e atomizată - mulți vânzători, produse adesea similare', intrare: 'Dificil pentru un cumpărător nou să obțină aceeași putere de negociere', exemplu: 'Marile lanțuri de retail, în relația cu micii producători agricoli' },
+    { nume: 'Monopsonul', concentrare: 1, mirror: true, numarFirme: 'Un singur cumpărător (oferta rămâne atomizată)', pret: 'Cumpărătorul unic stabilește prețul unui bun omogen', diferentiere: 'Oferta e atomizată - mulți vânzători', intrare: 'Foarte dificilă - alternative de vânzare limitate pentru ofertanți', exemplu: 'Statul, ca unic cumpărător de echipament militar de la producători interni' }
+  ];
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Mișcă slider-ul de-a lungul spectrului - de la concurența perfectă (mulți vânzători, fără control) până la monopol (un singur vânzător, mult control) - și vezi cum se schimbă fiecare trăsătură.'));
+
+  const width = 360, height = 130, barW = 38, gap = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom;
+  const baseY = top + chartH;
+  const maxConcentrare = 4;
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Concentrarea pietei, de la concurenta perfecta la monopol' });
+  svg.appendChild(elNS('line', { x1: 20, y1: baseY, x2: width - 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+
+  const bare = [];
+  structuri.forEach((s, i) => {
+    const x = 30 + i * (barW + gap);
+    const h = (s.concentrare / maxConcentrare) * chartH;
+    const rect = elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: 'var(--surface-2)', stroke: 'var(--accent)', 'stroke-width': 1.5, rx: 4 });
+    svg.appendChild(rect);
+    const label = elNS('text', { x: x + barW / 2, y: baseY + 14, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    label.textContent = 'Q' + (i + 1);
+    svg.appendChild(label);
+    bare.push(rect);
+  });
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Q1-Q4: concentrare pe partea vânzătorilor; Q5-Q6: concentrare pe partea cumpărătorilor'));
+  wrap.appendChild(legenda);
+
+  const titluStructura = el('div');
+  titluStructura.style.fontFamily = 'var(--font-display)';
+  titluStructura.style.fontWeight = '600';
+  titluStructura.style.fontSize = '17px';
+  titluStructura.style.marginTop = '16px';
+  titluStructura.style.color = 'var(--accent)';
+  wrap.appendChild(titluStructura);
+
+  const trasaturi = el('div', 'spectru-trasaturi');
+  function randTrasatura(eticheta) {
+    const row = el('div', 'spectru-trasatura');
+    row.appendChild(el('div', 'spectru-trasatura__eticheta', eticheta));
+    const val = el('div', 'spectru-trasatura__valoare', '');
+    row.appendChild(val);
+    trasaturi.appendChild(row);
+    return val;
+  }
+  const vNrFirme = randTrasatura('Numărul firmelor');
+  const vPret = randTrasatura('Controlul prețului');
+  const vDiferentiere = randTrasatura('Diferențierea produsului');
+  const vIntrare = randTrasatura('Ușurința intrării pe piață');
+  const vExemplu = randTrasatura('Exemplu');
+  wrap.appendChild(trasaturi);
+
+  const sliderWrap = el('div', 'simulator__sliders');
+  const row = el('div', 'slider-row');
+  const label = document.createElement('label');
+  label.appendChild(el('span', '', 'Structura de piață'));
+  const labelVal = el('span', '', structuri[0].nume);
+  label.appendChild(labelVal);
+  row.appendChild(label);
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '0'; slider.max = '5'; slider.step = '1'; slider.value = '0';
+  row.appendChild(slider);
+  sliderWrap.appendChild(row);
+  wrap.appendChild(sliderWrap);
+
+  const notaOglinda = document.createElement('div');
+  notaOglinda.style.marginTop = '10px';
+  notaOglinda.style.fontSize = '13px';
+  notaOglinda.style.fontStyle = 'italic';
+  notaOglinda.style.color = 'var(--mark)';
+  wrap.appendChild(notaOglinda);
+
+  function recalc(idx) {
+    const s = structuri[idx];
+    labelVal.textContent = s.nume;
+    titluStructura.textContent = s.nume;
+    bare.forEach((b, i) => b.setAttribute('fill', i === idx ? 'var(--accent)' : 'var(--surface-2)'));
+    vNrFirme.textContent = s.numarFirme;
+    vPret.textContent = s.pret;
+    vDiferentiere.textContent = s.diferentiere;
+    vIntrare.textContent = s.intrare;
+    vExemplu.textContent = s.exemplu;
+    notaOglinda.textContent = s.mirror ? 'Notă: aici bara arată concentrarea pe partea CUMPĂRĂTORILOR, nu a vânzătorilor - exact oglinda structurii cu același nivel de concentrare, de mai devreme.' : '';
+  }
+  slider.addEventListener('input', () => recalc(Number(slider.value)));
+  recalc(0);
+  return wrap;
+}
+
+// -----------------------------------------------------------------
+// VI. Explorator: radar comparativ - suprapune 2+ structuri de piata
+// -----------------------------------------------------------------
+function buildExploratorRadar() {
+  const axe = ['Concentrarea pieței', 'Controlul prețului', 'Bariere de intrare', 'Diferențierea produsului'];
+  const structuri = [
+    { nume: 'Concurența perfectă', culoare: '#1e3a5f', valori: [1, 1, 1, 1], activ: true },
+    { nume: 'Concurența monopolistică', culoare: '#1f7a4d', valori: [2, 2, 2, 4], activ: true },
+    { nume: 'Oligopolul', culoare: '#a8790f', valori: [3, 3, 3, 3], activ: false },
+    { nume: 'Monopolul', culoare: '#b23a2e', valori: [4, 4, 4, 2], activ: false },
+    { nume: 'Oligopsonul', culoare: '#7d5ba6', valori: [3, 3, 3, 1], activ: false },
+    { nume: 'Monopsonul', culoare: '#c9679a', valori: [4, 4, 4, 1], activ: false }
+  ];
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Bifează 2 sau mai multe structuri și vezi-le suprapuse, pe 4 criterii deodată - un poligon mai "umflat" înseamnă mai multă putere de piață pe acel criteriu.'));
+
+  const radarWrap = el('div', 'radar-wrap');
+  wrap.appendChild(radarWrap);
+
+  const toggleGrid = el('div', 'toggle-grid');
+  wrap.appendChild(toggleGrid);
+
+  function redeseneaza() {
+    radarWrap.innerHTML = '';
+    const active = structuri.filter(s => s.activ);
+    radarWrap.appendChild(buildRadarChart(axe, active.map(s => ({ culoare: s.culoare, valori: s.valori })), { maxVal: 4 }));
+  }
+
+  structuri.forEach(s => {
+    const chip = el('div', 'toggle-chip' + (s.activ ? ' activ' : ''));
+    chip.style.setProperty('--chip-color', s.culoare);
+    chip.style.setProperty('--chip-bg', s.culoare + '22');
+    const dot = el('span', 'toggle-chip__dot');
+    dot.style.background = s.culoare;
+    chip.appendChild(dot);
+    chip.appendChild(document.createTextNode(s.nume));
+    chip.addEventListener('click', () => {
+      s.activ = !s.activ;
+      chip.classList.toggle('activ', s.activ);
+      redeseneaza();
+    });
+    toggleGrid.appendChild(chip);
+  });
+
+  redeseneaza();
+  return wrap;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă o structură de piață din stânga, apoi trăsătura potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: spectrul structurilor de piață');
+  eyebrowExp.id = 'sect-explorator-spectru';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Bazat pe tabelul comparativ din teorie (secțiunea 5) - acum interactiv.'));
+  root.appendChild(buildExploratorSpectru());
+
+  const eyebrowRadar = el('div', 'exercitiu-eyebrow', 'VI. Explorator: radar comparativ al structurilor de piață');
+  root.appendChild(eyebrowRadar);
+  root.appendChild(el('div', 'exercitiu-sub', 'Un tip de grafic diferit - vezi mai multe structuri deodată, suprapuse pe aceleași 4 criterii.'));
+  root.appendChild(buildExploratorRadar());
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "name": "economia-interactiva",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/run-tool.mjs vite",
+    "build": "tsc -b && node scripts/run-tool.mjs vite build",
+    "preview": "node scripts/run-tool.mjs vite preview",
+    "test": "node scripts/run-tool.mjs vitest run --pool=threads",
+    "test:mobile": "playwright test --config=playwright.mobile.config.ts",
+    "verify": "npm run test && npm run test:games && npm run audit:games && npm run test:graphs && npm run build",
+    "test:graphs": "node scripts/verify-graph-lab.mjs",
+    "test:games": "cd source-materials/economy-games-pack && python -m pytest -q",
+    "audit:games": "python scripts/audit-games.py",
+    "games:api": "python -m uvicorn api.app:app --app-dir source-materials/economy-games-pack --host 127.0.0.1 --port 8000",
+    "import:admission": "node scripts/import-admission-tests.mjs",
+    "import:library": "node scripts/import-library.mjs",
+    "test:watch": "node scripts/run-tool.mjs vitest"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.545.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.4",
+    "jsdom": "^29.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.6",
+    "vitest": "^4.0.18"
+  }
+}

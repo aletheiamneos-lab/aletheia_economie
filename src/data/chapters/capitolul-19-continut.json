@@ -1,0 +1,352 @@
+{
+  "capitol": {
+    "numar": 19,
+    "titlu": "Piața mondială",
+    "obiective": [
+      "Să explici ce este piața mondială și ce forme îmbracă",
+      "Să calculezi cursul de revenire la export și la import",
+      "Să analizezi avantajele și dezavantajele comerțului internațional",
+      "Să explici conceptele de convertibilitate și curs de schimb",
+      "Să calculezi profitul și eficiența unei activități de comerț exterior"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "formele-pietei-mondiale",
+      "nr": "1",
+      "titlu": "Piața mondială: forme",
+      "text": [
+        "Economia mondială reprezintă ansamblul economiilor naționale ale statelor lumii, privite în interdependența legăturilor dintre ele. Piața mondială reprezintă ansamblul relațiilor de schimb care se stabilesc între unitățile economice aparținând diferitelor țări.",
+        "Toate țările lumii, indiferent de mărime sau forță economică, participă la schimburile internaționale și sunt afectate de evoluțiile economice mondiale."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele pieței mondiale, după natura tranzacțiilor",
+          "orientare": "vertical",
+          "categorii": [
+            {
+              "nume": "Comerțul internațional",
+              "definitie": "schimbul de bunuri și servicii nefinanciare (altele decât munca) între țări"
+            },
+            {
+              "nume": "Piața internațională a muncii",
+              "definitie": "migrația internațională a forței de muncă, pentru condiții mai bune"
+            },
+            {
+              "nume": "Piața internațională a capitalurilor",
+              "definitie": "împrumuturi externe, investiții directe și de portofoliu - cele mai dinamice tranzacții actuale"
+            },
+            {
+              "nume": "Piața internațională valutară",
+              "definitie": "tranzacțiile cu monede convertibile ale diferitelor țări"
+            },
+            {
+              "nume": "Piața produselor și tehnologiilor de vârf",
+              "definitie": "invenții, programe, know-how - tinde să devanseze dinamica comerțului internațional"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "comertul-international",
+      "nr": "2",
+      "titlu": "Comerțul internațional",
+      "text": [
+        "Comerțul internațional reflectă totalitatea schimburilor de bunuri și servicii care se desfășoară între toate țările de pe glob. Atenție: nu se identifică cu comerțul exterior, care reflectă doar schimburile unei anumite țări cu restul lumii.",
+        "Exportul reprezintă vânzarea peste graniță de bunuri economice naționale, contra unei sume în valută. Importul reprezintă cumpărarea de bunuri economice din străinătate, contra unei sume în valută.",
+        "Balanța de plăți externe reflectă încasările și plățile unei țări în relațiile cu exteriorul, pe un an - cuprinde contul curent (care evidențiază, în principal, comerțul exterior, prin balanța comercială) și contul de capital și financiar (investițiile directe și de portofoliu, creditele externe, modificarea rezervelor valutare). Deficitul de cont curent se acoperă din excedentul contului de capital, sau invers - suma soldurilor trebuie să fie, teoretic, zero."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Comerțul internațional, după obiectul tranzacțiilor",
+          "categorii": [
+            {
+              "nume": "Comerț vizibil",
+              "definitie": "fluxuri internaționale de mărfuri materiale, tangibile (textile, petrol, alimente)"
+            },
+            {
+              "nume": "Comerț invizibil",
+              "definitie": "fluxuri cu servicii - transporturi, turism, asigurări, brevete, licențe"
+            }
+          ]
+        },
+        {
+          "criteriu": "Politicile comerciale de reglementare",
+          "categorii": [
+            {
+              "nume": "Protecționismul",
+              "definitie": "protejarea pieței interne prin taxe vamale și bariere netarifare (plafoane, norme de calitate)"
+            },
+            {
+              "nume": "Liberul schimb",
+              "definitie": "libera circulație a mărfurilor, fără restricții tarifare sau netarifare"
+            }
+          ]
+        },
+        {
+          "criteriu": "Balanța comercială, după raportul export-import",
+          "categorii": [
+            {
+              "nume": "Excedentară (activă)",
+              "definitie": "Export > Import - din competitivitatea ridicată a produselor"
+            },
+            {
+              "nume": "Deficitară (pasivă)",
+              "definitie": "Export < Import - formează datoria externă a țării"
+            },
+            {
+              "nume": "Echilibrată",
+              "definitie": "Export = Import, realizat cumulativ pe mai mulți ani"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Avantajele comerțului exterior: diversificarea ofertei, extinderea pieței (economii de scară), accentuarea concurenței, modernizarea economiei, mai multe locuri de muncă",
+        "Dezavantajele comerțului exterior: falimentul firmelor necompetitive, creșterea decalajelor între țări dezvoltate și cele slab dezvoltate",
+        "Balanța comercială este componenta principală a balanței de plăți externe (relație parte-întreg)",
+        {
+          "termen": "Turismul internațional",
+          "descriere": "ansamblul deplasărilor efectuate de persoane în alte țări decât cea de reședință, în alt scop decât prestarea unei activități remunerate - o formă importantă a comerțului invizibil, care aduce încasări valutare din serviciile turistice"
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "eficienta-comert-exterior",
+      "nr": "3",
+      "titlu": "Eficiența comerțului exterior",
+      "text": [
+        "Eficiența comerțului exterior reflectă relația dintre efecte cât mai mari și eforturi cât mai mici, la export-import. Cursul de revenire la export (CRE) exprimă cheltuiala internă necesară pentru a obține o unitate valutară - exportul e eficient când CRE este mai mic decât cursul de schimb (Cs.V).",
+        "Cursul de revenire la import (CRI) exprimă suma în monedă națională obținută prin vânzarea internă a unei unități de marfă importată - importul e eficient când CRI este mai mare decât cursul de schimb."
+      ],
+      "exemple": [
+        "Firma Ana S.A. exportă 100 de rochii în Franța, pentru 10.000 euro, cu cheltuieli de 10.000 RON: CRE = 10.000/10.000 = 1 RON/euro (export eficient, sub cursul de schimb). Cu banii obținuți, importă portocale, plătește 5.000 RON taxe vamale și le vinde cu 50.000 RON: CRI = (50.000-5.000)/10.000 = 4,5 RON/euro (import eficient, peste cursul de schimb). Profitul e Pr = 4,5-1 = 3,5 RON/euro, adică 35.000 RON în total."
+      ],
+      "formule": [
+        {
+          "nume": "Cursul de revenire la export",
+          "formula": "CRE = Pie/Pve  (trebuie CRE < Cs.V)"
+        },
+        {
+          "nume": "Cursul de revenire la import",
+          "formula": "CRI = (Pii-Ti)/Pvi  (trebuie CRI > Cs.V)"
+        },
+        {
+          "nume": "Profitul pe unitate valutară",
+          "formula": "Pr = CRI - CRE"
+        }
+      ],
+      "calculator": "eficientaComertExterior",
+      "notaLegatura": {
+        "href": "#sect-explorator-comert",
+        "text": "Explorează interactiv zonele de eficiență ale exportului și importului, în secțiunea V, mai jos."
+      }
+    },
+    {
+      "id": "piata-valutara",
+      "nr": "4",
+      "titlu": "Piața valutară",
+      "text": [
+        "Convertibilitatea exprimă capacitatea unei monede de a se schimba pe alte monede, în mod liber, pe piață. Piața valutară este piața pe care se întâlnesc cererea și oferta de valută, prin confruntarea cărora se formează cursul de schimb (prețul unei monede, exprimat prin altă monedă).",
+        "Cursul de schimb nominal este cel la care au loc efectiv tranzacțiile pe piață. Cursul de schimb real are la bază paritatea puterii de cumpărare a monedelor - de exemplu, dacă un coș de bunuri costă 100$ în SUA și 290 RON în România, cursul la paritatea puterii de cumpărare e 2,9 RON/$. Acesta e util mai ales pentru compararea standardelor de viață între țări, pentru că elimină distorsiunile fluctuațiilor de piață.",
+        "Cursul de schimb este influențat, pe lângă cererea și oferta de valută, și de intervențiile băncii centrale, rata dobânzii, așteptările agenților economici și rata inflației."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele cursului de schimb, după modul de formare",
+          "categorii": [
+            {
+              "nume": "Flexibil (flotant)",
+              "definitie": "se formează liber pe piață, prin cerere și ofertă"
+            },
+            {
+              "nume": "Fix",
+              "definitie": "guvernul intervine și stabilește un alt curs decât cel de piață"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Avantajul cursului flotant",
+          "descriere": "ajustare automată a balanței de plăți - o depreciere face exporturile mai competitive și frânează importurile"
+        },
+        {
+          "termen": "Dezavantajul cursului flotant",
+          "descriere": "incertitudine în comerțul internațional și posibile presiuni inflaționiste"
+        }
+      ],
+      "exemple": [],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Cursul de revenire la export desemnează:",
+      "optiuni": [
+        "cheltuiala internă care se realizează pentru a obține o unitate valutară",
+        "câștigul din realizarea unei operațiuni de import",
+        "câștigul din realizarea unei operațiuni de export",
+        "eficiența activității de import-export"
+      ],
+      "corect": 0,
+      "explicatie": "CRE = Pie/Pve - cheltuiala internă (în monedă națională) făcută pentru a obține o unitate valutară prin export."
+    },
+    {
+      "intrebare": "Când cererea de euro pe piața valutară din România crește, iar oferta nu se modifică, euro:",
+      "optiuni": [
+        "se apreciază",
+        "se depreciază",
+        "nu își modifică valoarea",
+        "devine mai puternic decât dolarul, întotdeauna"
+      ],
+      "corect": 0,
+      "explicatie": "Ca pe orice piață, o cerere mai mare la aceeași ofertă determină creșterea prețului - aici, prețul monedei (cursul), deci euro se apreciază."
+    },
+    {
+      "intrebare": "Cumpărătorul la termen mizează pe:",
+      "optiuni": [
+        "creșterea cursului valutar",
+        "scăderea cursului valutar",
+        "rămânerea constantă a cursului valutar",
+        "câștigul lui nu depinde de evoluția cursului"
+      ],
+      "corect": 0,
+      "explicatie": "La fel ca la bursă, cumpărătorul la termen (\"à la hausse\") mizează pe creșterea prețului - aici, a cursului valutar."
+    },
+    {
+      "intrebare": "Balanța comercială și balanța de plăți sunt:",
+      "optiuni": [
+        "în relație parte-întreg",
+        "în relație întreg-parte",
+        "sinonime",
+        "fără nicio relație determinabilă"
+      ],
+      "corect": 0,
+      "explicatie": "Balanța comercială (exporturi-importuri de bunuri) este o componentă (parte) a balanței de plăți externe (întreg), care include și alte tranzacții."
+    },
+    {
+      "intrebare": "Exportul unei firme este eficient atunci când:",
+      "optiuni": [
+        "CRE > Cs.V",
+        "CRE < Cs.V",
+        "CRE = 0",
+        "CRE nu poate fi comparat cu Cs.V"
+      ],
+      "corect": 1,
+      "explicatie": "Exportul e eficient când cursul de revenire la export (CRE) e mai mic decât cursul de schimb (Cs.V) - firma cheltuiește mai puțin decât valorează, în monedă națională, fiecare unitate valutară obținută."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "O țară poate să nu participe la piața mondială.",
+      "corect": false,
+      "explicatie": "Nu - toate țările lumii, indiferent de mărime, participă la schimburile internaționale și sunt afectate de evoluțiile economice mondiale."
+    },
+    {
+      "enunt": "Participarea unei țări la comerțul internațional conduce la creșterea productivității interne.",
+      "corect": true,
+      "explicatie": "Da - extinderea pieței permite reducerea costurilor pe produs (economii de scară) și stimulează productivitatea."
+    },
+    {
+      "enunt": "Comerțul internațional generează la nivelul economiei naționale numai efecte pozitive.",
+      "corect": false,
+      "explicatie": "Nu - alături de avantaje (diversificare, concurență, productivitate), există și dezavantaje (falimentul firmelor necompetitive, decalaje între țări)."
+    },
+    {
+      "enunt": "Participarea unei țări la comerțul internațional poate determina reducerea cererii interne de muncă.",
+      "corect": true,
+      "explicatie": "Da - firmele care nu fac față concurenței externe pot da faliment, reducând cererea de muncă în acele sectoare."
+    },
+    {
+      "enunt": "Balanța de plăți externe este întotdeauna echilibrată, per ansamblu.",
+      "corect": true,
+      "explicatie": "Da - orice tranzacție internațională trebuie să aibă o sursă de finanțare, deci suma soldurilor (cont curent, cont de capital, cont de rezerve) e, teoretic, zero."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "Firma \"Ana S.A.\" exportă 100 de rochii în Franța, pentru 10.000 euro, cu cheltuieli de producție și export de 10.000 RON. Cu banii obținuți, importă portocale, plătește 5.000 RON taxe vamale și le vinde cu 50.000 RON. Calculați profitul total al afacerii (RON).",
+      "unitate": "RON",
+      "corect": 35000,
+      "toleranta": 300,
+      "explicatie": "CRE = 10.000/10.000 = 1 RON/euro. CRI = (50.000-5.000)/10.000 = 4,5 RON/euro. Pr = 4,5-1 = 3,5 RON/euro. Profit total = 3,5 x 10.000 = 35.000 RON."
+    },
+    {
+      "enunt": "O firmă începe o activitate de comerț exterior cu un capital de 10 milioane lei. Într-un an, face 3 operații de export-import, cu CRE=5 lei/euro și CRI=10 lei/euro. Care este profitul total, la sfârșitul anului (milioane lei)?",
+      "unitate": "mil. lei",
+      "corect": 70,
+      "toleranta": 2,
+      "explicatie": "VT = Ki x (CRI/CRE)^n = 10 x (10/5)³ = 10 x 8 = 80 mil. lei. Profitul = VT - Ki = 80-10 = 70 mil. lei."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Exportul"
+        },
+        {
+          "id": "t2",
+          "text": "Importul"
+        },
+        {
+          "id": "t3",
+          "text": "Cursul de revenire la export (CRE)"
+        },
+        {
+          "id": "t4",
+          "text": "Cursul de revenire la import (CRI)"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Vânzarea peste graniță de bunuri economice naționale, contra unei sume în valută"
+        },
+        {
+          "id": "o_b",
+          "text": "Cumpărarea de bunuri economice din străinătate, contra unei sume în valută"
+        },
+        {
+          "id": "o_c",
+          "text": "Cheltuiala internă necesară pentru a obține o unitate valutară, prin vânzare"
+        },
+        {
+          "id": "o_d",
+          "text": "Suma în monedă națională obținută prin vânzarea internă a unei unități de marfă importată"
+        },
+        {
+          "id": "o_e",
+          "text": "Diferența dintre cursul de revenire la import și cel la export"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, profitul pe unitate valutară (Pr=CRI-CRE) - un concept diferit, care nu apare în coloana din stânga."
+    }
+  ]
+}

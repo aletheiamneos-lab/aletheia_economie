@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Capitolul 13 · Piața muncii. Salariul</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --bg: #f5f6f4;
+  --surface: #ffffff;
+  --surface-2: #eef1ed;
+  --border: #d8dcd6;
+  --text: #1b2420;
+  --text-muted: #5c6660;
+  --accent: #1e3a5f;
+  --accent-soft: #e7edf3;
+  --good: #1f7a4d;
+  --good-bg: #e8f5ee;
+  --bad: #b23a2e;
+  --bad-bg: #fbeae8;
+  --mark: #a8790f;
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font-body); }
+#app { max-width: 800px; margin: 0 auto; padding: 0 20px 90px; }
+h1, h2, h3 { font-weight: 600; color: var(--text); margin: 0; }
+p { line-height: 1.7; color: var(--text); margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+
+.toc { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-top: 20px; background: var(--surface); }
+.toc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 8px; }
+.toc ol { margin: 0; padding-left: 18px; columns: 2; column-gap: 24px; }
+.toc li { font-size: 13.5px; margin-bottom: 5px; break-inside: avoid; }
+.toc a { color: var(--accent); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+@media (max-width: 560px) { .toc ol { columns: 1; } }
+
+.scor-bar { position: sticky; top: 0; z-index: 10; padding: 10px 16px 12px; margin: 0 -20px; background: rgba(245, 246, 244, 0.95); backdrop-filter: blur(4px); border-bottom: 1px solid var(--border); }
+.scor-bar__row { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 6px; }
+.scor-bar__label { font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted); white-space: nowrap; }
+.scor-bar__track { height: 5px; border-radius: 3px; background: var(--surface-2); overflow: hidden; display: flex; }
+.scor-bar__fill-good { background: var(--good); height: 100%; }
+.scor-bar__fill-bad { background: var(--bad); height: 100%; }
+
+.header { padding: 30px 0 6px; }
+.header__eyebrow { font-family: var(--font-mono); font-size: 12.5px; color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
+.header__titlu { font-family: var(--font-display); font-weight: 600; font-size: 30px; line-height: 1.3; margin-top: 6px; }
+
+.obiective { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 20px; background: var(--surface); }
+.obiective__titlu { font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--accent); margin-bottom: 10px; }
+.obiective ul { margin: 0; padding-left: 18px; }
+.obiective li { color: var(--text-muted); margin-bottom: 6px; font-size: 14.5px; }
+
+.sectiune-titlu { font-family: var(--font-display); font-weight: 600; font-size: 22px; color: var(--text); margin: 44px 0 4px; padding-bottom: 8px; border-bottom: 2px solid var(--accent); }
+
+.teorie-box { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 16px; background: var(--surface); scroll-margin-top: 76px; }
+.teorie-box__titlu { font-family: var(--font-display); font-weight: 600; font-size: 17px; color: var(--text); cursor: pointer; display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.teorie-box__nr { font-family: var(--font-mono); font-size: 13px; color: var(--accent); font-weight: 500; }
+.teorie-box__chevron { font-family: var(--font-mono); color: var(--text-muted); font-size: 14px; }
+.teorie-box__body { margin-top: 12px; }
+.teorie-box ul { margin: 8px 0 12px; padding-left: 18px; }
+.teorie-box li { margin-bottom: 6px; font-size: 14.5px; color: var(--text); }
+
+.exemplu { font-family: var(--font-body); font-style: italic; background: var(--accent-soft); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 16px; margin-top: 10px; font-size: 14px; color: var(--text); }
+.exemplu__eticheta { display: block; font-style: normal; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 3px; }
+
+.formula { font-family: var(--font-mono); background: var(--surface-2); border-radius: 8px; padding: 9px 14px; margin-top: 10px; font-size: 13.5px; }
+.formula__nume { display: block; font-family: var(--font-body); font-size: 12px; color: var(--text-muted); margin-bottom: 2px; }
+
+.clasificare { margin-top: 16px; }
+.clasificare__criteriu { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.clasificare__definitii { margin-top: 10px; }
+.clasificare__definitii p { font-size: 13.5px; margin: 0 0 6px; color: var(--text); }
+.clasificare__definitii p:last-child { margin-bottom: 0; }
+.clasificare__definitii strong { color: var(--accent); }
+
+.mini-calc { margin-top: 14px; padding: 14px 16px; border: 1px dashed var(--accent); border-radius: 8px; background: var(--accent-soft); }
+.mini-calc__titlu { font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--accent); margin-bottom: 10px; }
+.mini-calc__randuri { display: flex; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+.mini-calc__randuri label { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; color: var(--text-muted); font-family: var(--font-mono); }
+.mini-calc__randuri input { font-family: var(--font-mono); font-size: 14px; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100px; background: var(--surface); color: var(--text); }
+.mini-calc__rezultat { font-family: var(--font-mono); font-size: 13.5px; color: var(--text); line-height: 1.8; }
+.mini-calc__rezultat strong { color: var(--accent); }
+
+.diagrama { margin-top: 12px; }
+
+.nota-legatura { font-size: 13.5px; color: var(--text-muted); margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--border); }
+.nota-legatura a { color: var(--accent); }
+
+.exercitiu-eyebrow { font-family: var(--font-display); font-weight: 600; font-size: 20px; color: var(--accent); margin-top: 44px; margin-bottom: 4px; scroll-margin-top: 76px; }
+.exercitiu-sub { color: var(--text-muted); font-size: 13.5px; margin-bottom: 6px; }
+
+.card { border: 1px solid var(--border); border-radius: 10px; padding: 18px 22px; margin-top: 14px; background: var(--surface); }
+.card__intrebare { font-size: 15px; margin-bottom: 14px; margin-top: 0; font-weight: 500; }
+
+.optiuni { display: flex; flex-direction: column; gap: 8px; }
+.optiune { display: flex; align-items: center; gap: 10px; padding: 9px 12px; border: 1px solid var(--border); border-radius: 8px; cursor: pointer; font-size: 14.5px; background: transparent; color: var(--text); text-align: left; font-family: var(--font-body); }
+.optiune:hover:not(:disabled) { border-color: var(--accent); }
+.optiune.selectata { border-color: var(--accent); background: var(--accent-soft); }
+.optiune.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.optiune.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.buton { font-family: var(--font-body); font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 8px; border: 1.5px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; margin-top: 14px; }
+.buton:hover:not(:disabled) { background: var(--accent-soft); }
+.buton:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.af-butoane { display: flex; gap: 10px; }
+.af-buton { flex: 1; padding: 10px; border-radius: 8px; border: 1px solid var(--border); background: transparent; color: var(--text); font-family: var(--font-body); font-size: 14px; cursor: pointer; }
+.af-buton.corecta { border-color: var(--good); background: var(--good-bg); color: var(--good); }
+.af-buton.gresita { border-color: var(--bad); background: var(--bad-bg); color: var(--bad); }
+
+.problema-input { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.problema-input input { font-family: var(--font-mono); font-size: 15px; padding: 8px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-2); color: var(--text); width: 120px; }
+.problema-input input:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+.unitate { color: var(--text-muted); font-family: var(--font-mono); font-size: 13px; }
+
+.feedback { margin-top: 12px; padding: 10px 14px; border-radius: 8px; font-size: 14px; line-height: 1.55; }
+.feedback.corect { background: var(--good-bg); color: var(--good); }
+.feedback.gresit { background: var(--bad-bg); color: var(--bad); }
+
+.asociere-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+.asociere-coloana { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 480px) { .asociere-grid { grid-template-columns: 1fr; } }
+
+.simulator { border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; margin-top: 14px; background: var(--surface); }
+.simulator__nota { margin-top: 0; color: var(--text-muted); font-size: 14px; }
+.simulator__sliders { display: flex; flex-direction: column; gap: 16px; margin-top: 16px; }
+.slider-row label { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.slider-row input[type="range"] { width: 100%; accent-color: var(--accent); }
+.simulator__citire { display: flex; gap: 20px; margin-top: 16px; font-family: var(--font-mono); flex-wrap: wrap; }
+.simulator__citire strong { color: var(--accent); font-size: 18px; display: block; }
+.simulator__citire span { color: var(--text-muted); font-size: 11.5px; }
+.legenda { display: flex; gap: 18px; margin-top: 10px; font-size: 12.5px; color: var(--text-muted); flex-wrap: wrap; }
+.legenda span.item { display: inline-flex; align-items: center; gap: 6px; }
+.punct-legenda { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 480px) {
+  .header__titlu { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {
+  capitol: {
+    numar: 13,
+    titlu: 'Piața muncii. Salariul',
+    obiective: [
+      'Să explici cererea de muncă și oferta de muncă, și factorii care le influențează',
+      'Să înțelegi de ce salariul trebuie corelat cu productivitatea muncii',
+      'Să calculezi salariul net, salariul real și dinamica lor',
+      'Să calculezi rata ocupării și principalii indicatori ai populației active',
+      'Să înțelegi particularitățile pieței muncii'
+    ]
+  },
+  teorie: [
+    {
+      id: 'caracterizare-piata-muncii', nr: '1', titlu: 'Piața muncii: caracterizare generală',
+      text: [
+        'Piața muncii reflectă spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de muncă, formându-se prețul muncii, numit salariu. Din punct de vedere economic, munca e considerată o "marfă specială" (Samuelson), deși juridic munca nu este o marfă.',
+        'Piața muncii se formează în două faze: la nivelul economiei naționale (unde se conturează condițiile generale de angajare și principiile de salarizare) și la nivel microeconomic (unde are loc confruntarea concretă dintre cerere și ofertă, în fiecare firmă).'
+      ],
+      clasificari: [
+        { criteriu: 'Participanții la piața muncii', categorii: [
+          { nume: 'Cererea de muncă', definitie: 'firmele, băncile, administrațiile - utilizatorii resurselor de muncă' },
+          { nume: 'Oferta de muncă', definitie: 'posesorii resurselor de muncă disponibile' },
+          { nume: 'Intermediarii', definitie: 'sindicatele, guvernul, oficiile de plasare a forței de muncă' }
+        ] }
+      ],
+      puncteCheie: [
+        'Este o piață derivată - depinde de dezvoltarea economică (sursa cererii) și de fenomenele demografice (sursa ofertei)',
+        'Este o piață contractuală, eterogenă și segmentată (piața celor cu studii superioare, medii, fără calificare etc.)',
+        'Are un grad ridicat de rigiditate și o mobilitate limitată a laturilor sale',
+        'Este o piață cu concurență imperfectă (oligopol, monopson, monopol bilateral)'
+      ],
+      exemple: [], formule: []
+    },
+    {
+      id: 'cererea-de-munca', nr: '2', titlu: 'Cererea de muncă',
+      text: [
+        'Cererea de muncă reprezintă nevoia de muncă salariată care se formează în economie într-o anumită perioadă de timp - vine din partea firmelor și se exprimă prin numărul locurilor de muncă din economie, indiferent dacă sunt sau nu ocupate.',
+        'Firma va continua să angajeze lucrători atâta timp cât productivitatea marginală a muncii (Wmg) este mai mare decât salariul - fiecare lucrător nou aduce firmei mai mult decât o costă. Numărul optim de angajați, la un salariu dat, este atins atunci când Wmg(L) = Salariul.'
+      ],
+      puncteCheie: [
+        { termen: 'Cererea de bunuri și servicii', descriere: 'cu cât se dorește mai mult consum, cu atât crește nevoia de muncă pentru a-l produce' },
+        { termen: 'Salariul', descriere: 'relație inversă - cu cât salariul e mai mare, cu atât firmele pot cumpăra mai puțină muncă' },
+        { termen: 'Productivitatea marginală a muncii', descriere: 'relație directă - crește cererea de muncă atunci când Wmg crește, la același nivel al salariului' }
+      ],
+      exemple: [
+        'O firmă produce 100 de cămăși/zi, cu 80 de ore de muncă (10 muncitori, 8h/zi fiecare). Dacă cererea crește la 120 de cămăși, la aceeași productivitate, firma are nevoie de 96 de ore de muncă, deci de 12 muncitori.',
+        'Dacă firma plătește muncitorii cu 400 RON/lună, iar Wmg e 600 RON/lună, câștigul pentru ultimul angajat e 200 RON. Dacă Wmg crește la 800 RON, câștigul crește la 400 RON - firma poate crește salariul la 500 RON (câștigul scade la 300 RON, dar rămâne pozitiv) și tot îi convine să angajeze.'
+      ],
+      formule: [
+        { nume: 'Numărul optim de angajați (la salariu constant)', formula: 'Wmg(L) = Salariul' }
+      ],
+      notaLegatura: { href: '#sect-explorator-cerere-munca', text: 'Explorează interactiv relația Wmg-Salariu în secțiunea V, mai jos.' }
+    },
+    {
+      id: 'oferta-de-munca', nr: '3', titlu: 'Oferta de muncă',
+      text: [
+        'Oferta de muncă reprezintă cantitatea de muncă pe care o pot depune membrii societății, în condiții salariale, într-o anumită perioadă de timp - provine de la populația activă disponibilă a unei țări.'
+      ],
+      puncteCheie: [
+        { termen: 'Salariul', descriere: 'cu cât e mai mare, cu atât mai multe persoane doresc să lucreze' },
+        { termen: 'Preferințele pentru timp liber vs. timp de muncă', descriere: 'timpul liber e costul de oportunitate al salariului - dacă salariul crește, oferta de muncă crește, dar există un prag peste care creșterea nu mai are efect' },
+        { termen: 'Acțiunile sindicatelor', descriere: 'sindicatele pot bloca accesul persoanelor nesindicalizate, reducând oferta și crescând salariul' },
+        { termen: 'Demografia', descriere: 'creșterea sau reducerea populației determină creșterea sau reducerea ofertei de muncă' }
+      ],
+      exemple: [
+        'Dan muncește 12 ore/zi pentru 2.000 RON/lună. Chiar dacă firma i-ar oferi 3.000 RON pentru 15 ore/zi, e puțin probabil să accepte - nu i-ar mai rămâne timp nici să se odihnească. Există un prag peste care creșterea salariului nu mai determină creșterea ofertei de muncă.'
+      ],
+      formule: []
+    },
+    {
+      id: 'salariul-forme', nr: '4', titlu: 'Salariul: forme și factori',
+      text: [
+        'Salariul este suma de bani pe care o primește posesorul factorului de producție muncă pentru activitatea desfășurată într-o unitate economică - un cost pentru întreprinzător, dar un venit principal pentru salariat.'
+      ],
+      clasificari: [
+        { criteriu: 'Formele salariului', orientare: 'vertical', categorii: [
+          { nume: 'Salariul nominal (brut/net)', definitie: 'suma de bani încasată pentru munca depusă, înainte sau după impozitare' },
+          { nume: 'Salariul real', definitie: 'cantitatea de bunuri și servicii ce poate fi cumpărată cu salariul nominal' },
+          { nume: 'Salariul colectiv', definitie: 'sume acordate tuturor salariaților unei firme (facilități, cantine, tabere)' },
+          { nume: 'Salariul social', definitie: 'sume acordate celor afectați de accidente, boli profesionale etc.' },
+          { nume: 'Salariul familial', definitie: 'ajutoare pentru căsătorie, nașteri etc.' }
+        ] }
+      ],
+      exemple: [
+        'Ioana primește un salariu brut de 1.500 RON. Dacă impozitul e 40% din brut, salariul net e 1.500 - 40%×1.500 = 900 RON.'
+      ],
+      formule: [
+        { nume: 'Salariul nominal net', formula: 'SN.n = SN.b - Iz(SN.b)' }
+      ]
+    },
+    {
+      id: 'salariul-real-ocupare', nr: '5', titlu: 'Salariul real, câștigul salarial și ocuparea',
+      text: [
+        'Salariul real exprimă cantitatea de bunuri și servicii ce poate fi cumpărată cu salariul nominal - depinde de nivelul salariului nominal, dar și de dinamica prețurilor bunurilor de consum. Câștigul salarial include, pe lângă salariu, și alte venituri (ore suplimentare, prime, sporuri).',
+        'Prin confruntarea cererii cu oferta de muncă rezultă gradul de ocupare a populației active disponibile (PAD).'
+      ],
+      exemple: [
+        'Ion primește 400 RON/lună; la un preț mediu de 10 RON/bun, poate cumpăra 40 de bunuri - acesta e salariul lui real.'
+      ],
+      formule: [
+        { nume: 'Salariul real', formula: 'SR = SN / Pc' },
+        { nume: 'Dinamica salariului real', formula: 'I_SR = (I_SN / I_Pc) x 100' },
+        { nume: 'Câștigul salarial real', formula: 'Cș.R = Cș.N.n / Pc' },
+        { nume: 'Populația activă disponibilă', formula: 'PAD = P.O + Ș = PAM - PAM.nd' },
+        { nume: 'Rata ocupării', formula: 'R.oc(PAD) = (P.O/PAD) x 100' }
+      ],
+      calculator: 'salariuReal'
+    }
+  ],
+  grila: [
+    { intrebare: 'Când prețurile cresc mai repede decât salariul nominal, salariul real:', optiuni: ['crește', 'scade', 'nu se modifică', 'nu există nicio legătură între ele'], corect: 1, explicatie: 'Salariul real (SR=SN/Pc) scade dacă prețurile (Pc) cresc mai repede decât salariul nominal (SN) - puterea de cumpărare a salariului se erodează.' },
+    { intrebare: 'Creșterea fiscalității pe salarii, neînsoțită de creșterea salariilor brute, determină:', optiuni: ['reducerea salariului net', 'creșterea salariului net', 'creșterea salariului real', 'nemodificarea salariului net'], corect: 0, explicatie: 'SN.n = SN.b - impozit. Dacă impozitul crește, iar SN.b rămâne constant, SN.n scade.' },
+    { intrebare: 'Dacă cererea de muncă scade și oferta de muncă crește, salariul pe piața muncii:', optiuni: ['crește', 'scade', 'nu se modifică', 'crește peste nivelul productivității muncii'], corect: 1, explicatie: 'Ambele mișcări (cerere mai mică, ofertă mai mare) apasă salariul în jos - la fel ca la orice piață, cu prețul (aici, salariul) format prin cerere-ofertă.' },
+    { intrebare: 'O firmă va continua să angajeze lucrători atâta timp cât:', optiuni: ['salariul este constant', 'productivitatea marginală a muncii e mai mare decât salariul', 'oferta de muncă scade', 'prețul bunurilor produse scade'], corect: 1, explicatie: 'Cât timp Wmg(L) > Salariul, fiecare lucrător nou aduce firmei mai mult decât o costă - deci merită angajat.' },
+    { intrebare: 'Sindicatele puternice, care limitează accesul persoanelor nesindicalizate pe piața muncii dintr-o ramură, determină:', optiuni: ['creșterea ofertei de muncă și scăderea salariului', 'scăderea ofertei de muncă și creșterea salariului', 'nicio schimbare', 'scăderea cererii de muncă'], corect: 1, explicatie: 'Prin limitarea accesului, oferta de muncă în acea ramură scade, ceea ce - la cerere constantă - determină creșterea salariului.' }
+  ],
+  af: [
+    { enunt: 'Cererea de muncă se exprimă prin numărul locurilor de muncă (ocupate sau nu) din economie.', corect: true, explicatie: 'Da - cererea de muncă reflectă nevoia de muncă salariată formată în economie, indiferent dacă locurile sunt ocupate.' },
+    { enunt: 'Oferta de muncă se află în relație directă cu salariul.', corect: true, explicatie: 'Da - conform legii ofertei, un salariu mai mare determină, în general, o ofertă de muncă mai mare (până la un anumit prag).' },
+    { enunt: 'Când cererea de muncă crește, iar oferta de muncă nu se modifică, salariul crește.', corect: true, explicatie: 'Da - o cerere mai mare, la ofertă constantă, împinge salariul (prețul muncii) în sus.' },
+    { enunt: 'Când productivitatea muncii crește, cererea de muncă scade.', corect: false, explicatie: 'Dimpotrivă - creșterea productivității marginale a muncii, la același salariu, determină creșterea cererii de muncă (firma câștigă mai mult cu fiecare lucrător).' },
+    { enunt: 'Piața muncii este o piață cu concurență perfectă.', corect: false, explicatie: 'Nu - piața muncii se caracterizează prin concurență imperfectă, sub forme precum oligopolul, monopsonul sau monopolul bilateral.' }
+  ],
+  probleme: [
+    { enunt: 'Andrei primește lunar un salariu brut de 1.000 RON. Impozitul pe salariu este 35%. Care este salariul net?', unitate: 'RON', corect: 650, toleranta: 5, explicatie: 'SN.n = 1.000 - 35%x1.000 = 650 RON.' },
+    { enunt: 'Salariul minim pe economie a fost 2.500.000 lei în 2003. Dacă în 2004 prețurile au crescut în medie cu 10%, iar salariul nominal a crescut cu 5%, cu cât s-a modificat salariul real (%)?', unitate: '%', corect: -4.54, toleranta: 0.2, explicatie: 'I_SR = (I_SN/I_Pc)x100 = (105/110)x100 = 95,45%. Δ%SR = 95,45-100 = -4,54%.' },
+    { enunt: 'La o populație activă disponibilă de 15 milioane persoane și 3 milioane de șomeri, care este rata șomajului (%)?', unitate: '%', corect: 20, toleranta: 0.5, explicatie: 'Rș(PAD) = (Ș/PAD)x100 = (3/15)x100 = 20%.' }
+  ],
+  asociere: [
+    {
+      instructiune: 'Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).',
+      coloanaA: [
+        { id: 't1', text: 'Salariul nominal' },
+        { id: 't2', text: 'Salariul real' },
+        { id: 't3', text: 'Cererea de muncă' },
+        { id: 't4', text: 'Oferta de muncă' }
+      ],
+      coloanaB: [
+        { id: 'o_a', text: 'Suma de bani încasată de salariat pentru munca depusă' },
+        { id: 'o_b', text: 'Cantitatea de bunuri și servicii ce poate fi cumpărată cu salariul nominal' },
+        { id: 'o_c', text: 'Nevoia de muncă salariată formată în economie, exprimată prin numărul locurilor de muncă' },
+        { id: 'o_d', text: 'Cantitatea de muncă pe care o pot depune membrii societății, în condiții salariale' },
+        { id: 'o_e', text: 'Suma primită de deținătorul unei obligațiuni pentru împrumutul acordat' }
+      ],
+      perechi: [
+        { stanga: 't1', dreapta: 'o_a' },
+        { stanga: 't2', dreapta: 'o_b' },
+        { stanga: 't3', dreapta: 'o_c' },
+        { stanga: 't4', dreapta: 'o_d' }
+      ],
+      explicatie: 'Observă cum o_e descrie, de fapt, dobânda unei obligațiuni - un concept dintr-un alt capitol, care nu apare aici.'
+    }
+  ]
+};
+
+function calculeazaSalariuReal(SN, Pc) { return SN / Pc; }
+function calculeazaRataOcupare(PO, PAD) { return (PO / PAD) * 100; }
+
+function el(tag, className, text) {
+  const e = document.createElement(tag);
+  if (className) e.className = className;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+const SVGNS = 'http://www.w3.org/2000/svg';
+function elNS(tag, attrs) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+function legendItem(color, text) {
+  const span = el('span', 'item');
+  const dot = el('span', 'punct-legenda');
+  dot.style.background = color;
+  span.appendChild(dot);
+  span.appendChild(document.createTextNode(' ' + text));
+  return span;
+}
+function buildDumbbellChart(label0, val0, label1, val1, maxVal, culoare0, culoare1) {
+  const width = 240, height = 100, left = 16, right = 16, midY = 46;
+  const usableW = width - left - right;
+  const scale = usableW / maxVal;
+  const x0 = left + Math.max(0, Math.min(val0, maxVal)) * scale;
+  const x1 = left + Math.max(0, Math.min(val1, maxVal)) * scale;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': label0 + ': ' + val0 + ', ' + label1 + ': ' + val1 });
+  svg.appendChild(elNS('line', { x1: left, y1: midY, x2: width - right, y2: midY, stroke: 'var(--border)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('line', { x1: x0, y1: midY, x2: x1, y2: midY, stroke: 'var(--text-muted)', 'stroke-width': 3 }));
+  svg.appendChild(elNS('circle', { cx: x0, cy: midY, r: 7, fill: culoare0, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  svg.appendChild(elNS('circle', { cx: x1, cy: midY, r: 7, fill: culoare1, stroke: 'var(--surface)', 'stroke-width': 2 }));
+  const t0 = elNS('text', { x: x0, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare0, 'font-weight': 600 });
+  t0.textContent = Math.round(val0 * 100) / 100;
+  const t1 = elNS('text', { x: x1, y: midY - 14, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: culoare1, 'font-weight': 600 });
+  t1.textContent = Math.round(val1 * 100) / 100;
+  svg.appendChild(t0); svg.appendChild(t1);
+  const l0 = elNS('text', { x: left, y: midY + 30, 'text-anchor': 'start', 'font-size': 10, fill: 'var(--text-muted)' });
+  l0.textContent = label0;
+  const l1 = elNS('text', { x: width - right, y: midY + 30, 'text-anchor': 'end', 'font-size': 10, fill: 'var(--text-muted)' });
+  l1.textContent = label1;
+  svg.appendChild(l0); svg.appendChild(l1);
+  return svg;
+}
+function buildWaterfallChart(componente) {
+  const width = 260, height = 150, left = 14, right = 14, top = 14, bottom = 30;
+  const chartH = height - top - bottom, chartW = width - left - right;
+  const total = componente.reduce((a, c) => a + c.val, 0);
+  const barW = chartW / (componente.length + 1) * 0.72;
+  const gap = chartW / (componente.length + 1) * 0.28;
+  const scale = chartH / (total * 1.1);
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Cascada: ' + componente.map(c => c.label + '=' + c.val).join(', ') + ', total=' + total });
+  svg.appendChild(elNS('line', { x1: left, y1: baseY, x2: width - right, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  let yCursor = baseY, x = left;
+  componente.forEach(c => {
+    const h = Math.max(2, c.val * scale);
+    svg.appendChild(elNS('rect', { x, y: yCursor - h, width: barW, height: h, fill: c.culoare, rx: 2 }));
+    const lv = elNS('text', { x: x + barW / 2, y: yCursor - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--text)', 'font-weight': 600 });
+    lv.textContent = Math.round(c.val * 100) / 100;
+    svg.appendChild(lv);
+    const ll = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--text-muted)' });
+    ll.textContent = c.label;
+    svg.appendChild(ll);
+    if (yCursor < baseY) svg.appendChild(elNS('line', { x1: x - gap * 0.4, y1: yCursor, x2: x, y2: yCursor, stroke: 'var(--border)', 'stroke-width': 1, 'stroke-dasharray': '2 2' }));
+    yCursor -= h;
+    x += barW + gap;
+  });
+  const hTotal = Math.max(2, total * scale);
+  svg.appendChild(elNS('rect', { x, y: baseY - hTotal, width: barW, height: hTotal, fill: 'var(--accent)', rx: 2 }));
+  const lvT = elNS('text', { x: x + barW / 2, y: baseY - hTotal - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 10.5, fill: 'var(--accent)', 'font-weight': 700 });
+  lvT.textContent = Math.round(total * 100) / 100;
+  svg.appendChild(lvT);
+  const llT = elNS('text', { x: x + barW / 2, y: height - 10, 'text-anchor': 'middle', 'font-size': 9.5, fill: 'var(--accent)', 'font-weight': 600 });
+  llT.textContent = 'Total';
+  svg.appendChild(llT);
+  return svg;
+}
+function buildDonutChart(componente) {
+  const size = 200, cx = size / 2, cy = size / 2 - 6, rOut = 70, rIn = 42;
+  const total = componente.reduce((a, c) => a + Math.max(0, c.val), 0) || 1;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + size + ' ' + (size + 34), role: 'img', 'aria-label': 'Compozitie: ' + componente.map(c => c.label + '=' + c.val).join(', ') });
+  let unghiStart = -Math.PI / 2;
+  componente.forEach(c => {
+    const frac = Math.max(0, c.val) / total;
+    const unghiEnd = unghiStart + frac * 2 * Math.PI;
+    const x0o = cx + rOut * Math.cos(unghiStart), y0o = cy + rOut * Math.sin(unghiStart);
+    const x1o = cx + rOut * Math.cos(unghiEnd), y1o = cy + rOut * Math.sin(unghiEnd);
+    const x0i = cx + rIn * Math.cos(unghiEnd), y0i = cy + rIn * Math.sin(unghiEnd);
+    const x1i = cx + rIn * Math.cos(unghiStart), y1i = cy + rIn * Math.sin(unghiStart);
+    const mare = frac > 0.5 ? 1 : 0;
+    const d = 'M ' + x0o + ' ' + y0o + ' A ' + rOut + ' ' + rOut + ' 0 ' + mare + ' 1 ' + x1o + ' ' + y1o + ' L ' + x0i + ' ' + y0i + ' A ' + rIn + ' ' + rIn + ' 0 ' + mare + ' 0 ' + x1i + ' ' + y1i + ' Z';
+    if (frac > 0.001) svg.appendChild(elNS('path', { d, fill: c.culoare }));
+    unghiStart = unghiEnd;
+  });
+  const legenda = elNS('g', {});
+  componente.forEach((c, i) => {
+    const ly = size + 12 + Math.floor(i / 2) * 16;
+    const lx = 10 + (i % 2) * (size / 2);
+    legenda.appendChild(elNS('rect', { x: lx, y: ly - 8, width: 9, height: 9, fill: c.culoare, rx: 2 }));
+    const t = elNS('text', { x: lx + 13, y: ly, 'font-size': 9.5, fill: 'var(--text-muted)' });
+    t.textContent = c.label + ' (' + Math.round(c.val / total * 1000) / 10 + '%)';
+    legenda.appendChild(t);
+  });
+  svg.appendChild(legenda);
+  return svg;
+}
+
+function buildMiniBarPair(items, maxVal) {
+  const width = 220, height = 130, barW = 46, gap = 20, top = 10, bottom = 32;
+  const chartH = height - top - bottom;
+  const scale = maxVal > 0 ? chartH / maxVal : 0;
+  const totalW = items.length * barW + (items.length - 1) * gap;
+  const startX = (width - totalW) / 2;
+  const baseY = top + chartH;
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': items.map(i => i.label + ': ' + i.val).join(', ') });
+  svg.appendChild(elNS('line', { x1: startX - 10, y1: baseY, x2: startX + totalW + 10, y2: baseY, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  items.forEach((it, i) => {
+    const x = startX + i * (barW + gap);
+    const valAbs = Math.max(0, Math.min(Math.abs(it.val), maxVal));
+    const h = Math.max(2, valAbs * scale);
+    svg.appendChild(elNS('rect', { x: x, y: baseY - h, width: barW, height: h, fill: it.color, rx: 3 }));
+    const labelVal = elNS('text', { x: x + barW / 2, y: baseY - h - 6, 'text-anchor': 'middle', 'font-family': 'var(--font-mono)', 'font-size': 11.5, fill: 'var(--text)', 'font-weight': 600 });
+    labelVal.textContent = Math.round(it.val * 100) / 100;
+    svg.appendChild(labelVal);
+    const labelName = elNS('text', { x: x + barW / 2, y: baseY + 16, 'text-anchor': 'middle', 'font-size': 10, fill: 'var(--text-muted)' });
+    labelName.textContent = it.label;
+    svg.appendChild(labelName);
+  });
+  return svg;
+}
+function buildArboreOrizontal(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 30, gap = 10;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const totalW = widths.reduce((a, b) => a + b, 0) + gap * (nume.length - 1);
+  const height = 56;
+  const topY = 4, boxY = 26;
+  const rootX = totalW / 2;
+  const svg = elNS('svg', { width: totalW, height: height, viewBox: '0 0 ' + totalW + ' ' + height, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  svg.appendChild(elNS('circle', { cx: rootX, cy: topY, r: 3, fill: 'var(--accent)' }));
+  let x = 0;
+  widths.forEach((w, i) => {
+    const cx = x + w / 2;
+    svg.appendChild(elNS('line', { x1: rootX, y1: topY + 3, x2: cx, y2: boxY, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: x, y: boxY, width: w, height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: cx, y: boxY + boxH / 2 + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = nume[i];
+    svg.appendChild(t);
+    x += w + gap;
+  });
+  return svg;
+}
+function buildArboreVertical(nume) {
+  const charW = 6.3, padX = 18, minW = 64, boxH = 28, gapV = 10, stubLen = 16, trunkX = 4, topPad = 4;
+  const widths = nume.map(c => Math.max(minW, Math.round(c.length * charW) + padX));
+  const maxW = Math.max.apply(null, widths);
+  const boxX = trunkX + stubLen;
+  const totalW = boxX + maxW + 6;
+  const totalH = topPad + nume.length * boxH + (nume.length - 1) * gapV + topPad;
+  const svg = elNS('svg', { width: totalW, height: totalH, viewBox: '0 0 ' + totalW + ' ' + totalH, role: 'img', 'aria-label': nume.join(', '), style: 'max-width: 100%; display: block;' });
+  const firstCy = topPad + boxH / 2;
+  const lastCy = topPad + (nume.length - 1) * (boxH + gapV) + boxH / 2;
+  svg.appendChild(elNS('line', { x1: trunkX, y1: firstCy, x2: trunkX, y2: lastCy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+  svg.appendChild(elNS('circle', { cx: trunkX, cy: (firstCy + lastCy) / 2, r: 3, fill: 'var(--accent)' }));
+  nume.forEach((n, i) => {
+    const cy = topPad + i * (boxH + gapV) + boxH / 2;
+    svg.appendChild(elNS('line', { x1: trunkX, y1: cy, x2: boxX, y2: cy, stroke: 'var(--border)', 'stroke-width': 1.5 }));
+    svg.appendChild(elNS('rect', { x: boxX, y: cy - boxH / 2, width: widths[i], height: boxH, rx: 7, fill: 'var(--accent-soft)', stroke: 'var(--accent)', 'stroke-width': 1 }));
+    const t = elNS('text', { x: boxX + widths[i] / 2, y: cy + 4, 'text-anchor': 'middle', 'font-family': 'var(--font-body)', 'font-size': 11.5, fill: 'var(--text)' });
+    t.textContent = n;
+    svg.appendChild(t);
+  });
+  return svg;
+}
+function buildClasificareTree(criteriu, categorii, optiuni) {
+  optiuni = optiuni || {};
+  const orientare = optiuni.orientare || 'orizontal';
+  const nume = categorii.map(c => (typeof c === 'object' && c !== null) ? c.nume : c);
+  const definitii = categorii.map(c => (typeof c === 'object' && c !== null) ? c.definitie : null);
+  const wrap = el('div', 'clasificare');
+  wrap.appendChild(el('div', 'clasificare__criteriu', criteriu));
+  wrap.appendChild(orientare === 'vertical' ? buildArboreVertical(nume) : buildArboreOrizontal(nume));
+  if (definitii.some(d => d)) {
+    const listaDef = el('div', 'clasificare__definitii');
+    nume.forEach((n, i) => {
+      if (definitii[i]) {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = n;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(' - ' + definitii[i]));
+        listaDef.appendChild(p);
+      }
+    });
+    wrap.appendChild(listaDef);
+  }
+  return wrap;
+}
+
+function campInput(randuri, labelTxt, placeholder, valInitial) {
+  const label = document.createElement('label');
+  label.appendChild(document.createTextNode(labelTxt));
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = placeholder; input.value = valInitial;
+  label.appendChild(input);
+  randuri.appendChild(label);
+  return input;
+}
+
+function buildSalariuRealCalc() {
+  const box = el('div', 'mini-calc');
+  box.appendChild(el('div', 'mini-calc__titlu', 'Calculator rapid: salariul real și rata ocupării'));
+  const randuri = el('div', 'mini-calc__randuri');
+  const inputSN = campInput(randuri, 'Salariu nominal (SN)', 'ex. 400', 400);
+  const inputPc = campInput(randuri, 'Preț mediu bunuri (Pc)', 'ex. 10', 10);
+  box.appendChild(randuri);
+  const randuri2 = el('div', 'mini-calc__randuri');
+  const inputPO = campInput(randuri2, 'Populație ocupată (PO)', 'ex. 12', 12);
+  const inputPAD = campInput(randuri2, 'Populație activă disponibilă (PAD)', 'ex. 15', 15);
+  box.appendChild(randuri2);
+  const chartWrap = el('div', 'diagrama');
+  box.appendChild(chartWrap);
+  const rezultat = el('div', 'mini-calc__rezultat');
+  box.appendChild(rezultat);
+
+  function recalc() {
+    const SN = Number(inputSN.value), Pc = Number(inputPc.value), PO = Number(inputPO.value), PAD = Number(inputPAD.value);
+    if ([inputSN, inputPc, inputPO, inputPAD].some(i => i.value === '') || [SN, Pc, PO, PAD].some(isNaN) || Pc === 0 || PAD === 0) {
+      rezultat.textContent = 'Completează toate valorile (Pc și PAD diferite de 0).';
+      chartWrap.innerHTML = '';
+      return;
+    }
+    const SR = calculeazaSalariuReal(SN, Pc);
+    const Roc = calculeazaRataOcupare(PO, PAD);
+    const S = PAD - PO;
+    rezultat.innerHTML = '';
+    [['Salariu real (SR)', SR], ['Rata ocupării (%)', Roc], ['Șomeri (PAD-PO)', S]].forEach(pair => {
+      const div = document.createElement('div');
+      div.appendChild(document.createTextNode(pair[0] + ' = '));
+      const strong = document.createElement('strong');
+      strong.textContent = Math.round(pair[1] * 100) / 100;
+      div.appendChild(strong);
+      rezultat.appendChild(div);
+    });
+    chartWrap.innerHTML = '';
+    chartWrap.appendChild(buildDonutChart([
+      { label: 'Populație ocupată', val: PO, culoare: 'var(--good)' },
+      { label: 'Șomeri', val: S, culoare: 'var(--bad)' }
+    ]));
+  }
+  [inputSN, inputPc, inputPO, inputPAD].forEach(inp => inp.addEventListener('input', recalc));
+  recalc();
+  return box;
+}
+
+let scorCorecte = 0, scorTotal = 0;
+const TOTAL_EXERCITII = DATA.grila.length + DATA.af.length + DATA.probleme.length;
+function inregistreazaScor(corect) {
+  scorTotal++;
+  if (corect) scorCorecte++;
+  updateScorBar();
+}
+function updateScorBar() {
+  document.getElementById('scor-label').textContent = scorCorecte + ' corecte din ' + scorTotal + ' încercate (din ' + TOTAL_EXERCITII + ' exerciții)';
+  const good = document.getElementById('scor-fill-good');
+  const bad = document.getElementById('scor-fill-bad');
+  good.style.width = (TOTAL_EXERCITII ? (scorCorecte / TOTAL_EXERCITII * 100) : 0) + '%';
+  bad.style.width = (TOTAL_EXERCITII ? ((scorTotal - scorCorecte) / TOTAL_EXERCITII * 100) : 0) + '%';
+}
+
+function buildTeorieBox(item) {
+  const box = el('div', 'teorie-box');
+  box.id = 'sect-' + item.id;
+  const titlu = el('div', 'teorie-box__titlu');
+  const titluText = el('span');
+  titluText.appendChild(el('span', 'teorie-box__nr', item.nr + '. '));
+  titluText.appendChild(document.createTextNode(item.titlu));
+  titlu.appendChild(titluText);
+  const chevron = el('span', 'teorie-box__chevron', '\u2013');
+  titlu.appendChild(chevron);
+  box.appendChild(titlu);
+
+  const body = el('div', 'teorie-box__body');
+  (item.text || []).forEach(par => body.appendChild(el('p', '', par)));
+  if (item.puncteCheie && item.puncteCheie.length) {
+    const ul = document.createElement('ul');
+    item.puncteCheie.forEach(pc => {
+      const li = document.createElement('li');
+      if (typeof pc === 'object' && pc.termen) {
+        const strong = document.createElement('strong');
+        strong.textContent = pc.termen;
+        li.appendChild(strong);
+        li.appendChild(document.createTextNode(' - ' + pc.descriere));
+      } else {
+        li.textContent = pc;
+      }
+      ul.appendChild(li);
+    });
+    body.appendChild(ul);
+  }
+  (item.clasificari || []).forEach(cl => body.appendChild(buildClasificareTree(cl.criteriu, cl.categorii, { orientare: cl.orientare })));
+  (item.exemple || []).forEach(ex => {
+    const div = el('div', 'exemplu');
+    div.appendChild(el('span', 'exemplu__eticheta', 'Exemplu'));
+    div.appendChild(document.createTextNode(ex));
+    body.appendChild(div);
+  });
+  (item.formule || []).forEach(f => {
+    const fdiv = el('div', 'formula');
+    fdiv.appendChild(el('span', 'formula__nume', f.nume));
+    fdiv.appendChild(document.createTextNode(f.formula));
+    body.appendChild(fdiv);
+  });
+  if (item.calculator === 'salariuReal') body.appendChild(buildSalariuRealCalc());
+  if (item.notaLegatura) {
+    const nota = el('div', 'nota-legatura');
+    const link = document.createElement('a');
+    link.href = item.notaLegatura.href;
+    link.textContent = item.notaLegatura.text;
+    nota.appendChild(link);
+    body.appendChild(nota);
+  }
+  box.appendChild(body);
+
+  let deschis = true;
+  titlu.addEventListener('click', () => {
+    deschis = !deschis;
+    body.style.display = deschis ? '' : 'none';
+    chevron.textContent = deschis ? '\u2013' : '+';
+  });
+  return box;
+}
+
+function buildToc() {
+  const box = el('div', 'toc');
+  box.appendChild(el('div', 'toc__titlu', 'Cuprins teorie'));
+  const ol = document.createElement('ol');
+  DATA.teorie.forEach(item => {
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#sect-' + item.id;
+    a.textContent = item.titlu;
+    li.appendChild(a);
+    ol.appendChild(li);
+  });
+  box.appendChild(ol);
+  return box;
+}
+
+function buildQuizGrila(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.intrebare));
+  const optWrap = el('div', 'optiuni');
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.disabled = true;
+  const feedback = document.createElement('div');
+  let selectat = null, rezolvat = false;
+  const butoane = [];
+  item.optiuni.forEach((text, i) => {
+    const btn = el('button', 'optiune', String.fromCharCode(97 + i) + ') ' + text);
+    btn.addEventListener('click', () => {
+      if (rezolvat) return;
+      selectat = i;
+      butoane.forEach((b, j) => b.classList.toggle('selectata', j === i));
+      verifBtn.disabled = false;
+    });
+    butoane.push(btn);
+    optWrap.appendChild(btn);
+  });
+  verifBtn.addEventListener('click', () => {
+    if (selectat === null || rezolvat) return;
+    rezolvat = true;
+    const corect = selectat === item.corect;
+    butoane.forEach((b, i) => {
+      b.disabled = true;
+      if (i === item.corect) b.classList.add('corecta');
+      else if (i === selectat) b.classList.add('gresita');
+    });
+    verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(optWrap); card.appendChild(verifBtn); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAF(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'af-butoane');
+  const btnA = el('button', 'af-buton', 'Adevărat');
+  const btnF = el('button', 'af-buton', 'Fals');
+  wrap.appendChild(btnA); wrap.appendChild(btnF);
+  const feedback = document.createElement('div');
+  let rezolvat = false;
+  function raspunde(valoare, btnAles) {
+    if (rezolvat) return;
+    rezolvat = true;
+    const corect = valoare === item.corect;
+    btnA.disabled = true; btnF.disabled = true;
+    (item.corect ? btnA : btnF).classList.add('corecta');
+    if (!corect) btnAles.classList.add('gresita');
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : 'Nu e chiar așa. ') + item.explicatie;
+    inregistreazaScor(corect);
+  }
+  btnA.addEventListener('click', () => raspunde(true, btnA));
+  btnF.addEventListener('click', () => raspunde(false, btnF));
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizProblema(item, idx) {
+  const card = el('div', 'card');
+  card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.enunt));
+  const wrap = el('div', 'problema-input');
+  const input = document.createElement('input');
+  input.type = 'number'; input.step = 'any'; input.placeholder = 'răspuns';
+  wrap.appendChild(input);
+  if (item.unitate) wrap.appendChild(el('span', 'unitate', item.unitate));
+  const verifBtn = el('button', 'buton', 'Verifică');
+  verifBtn.style.marginTop = '0'; verifBtn.disabled = true;
+  wrap.appendChild(verifBtn);
+  const feedback = document.createElement('div');
+  input.addEventListener('input', () => { verifBtn.disabled = input.value === ''; });
+  let rezolvat = false;
+  verifBtn.addEventListener('click', () => {
+    if (rezolvat || input.value === '') return;
+    rezolvat = true;
+    const val = Number(input.value);
+    const corect = Math.abs(val - item.corect) <= item.toleranta;
+    input.disabled = true; verifBtn.disabled = true;
+    feedback.className = 'feedback ' + (corect ? 'corect' : 'gresit');
+    feedback.textContent = (corect ? 'Corect. ' : ('Răspunsul corect este ' + item.corect + ' ' + item.unitate + '. ')) + item.explicatie;
+    inregistreazaScor(corect);
+  });
+  card.appendChild(wrap); card.appendChild(feedback);
+  return card;
+}
+
+function buildQuizAsociere(item, idx) {
+  const card = el('div', 'card');
+  if (item.instructiune) card.appendChild(el('p', 'card__intrebare', (idx + 1) + '. ' + item.instructiune));
+  const grid = el('div', 'asociere-grid');
+  const colA = el('div', 'asociere-coloana');
+  const colB = el('div', 'asociere-coloana');
+  grid.appendChild(colA); grid.appendChild(colB);
+  card.appendChild(grid);
+  const stare = document.createElement('div');
+  card.appendChild(stare);
+  let selectatId = null, rezolvate = 0;
+  const total = item.perechi.length;
+  const butoaneA = {};
+  function verificaFinal() {
+    if (rezolvate === total) {
+      stare.className = 'feedback corect';
+      stare.textContent = 'Ai asociat corect toate cele ' + total + ' perechi.' + (item.explicatie ? ' ' + item.explicatie : '');
+    }
+  }
+  item.coloanaA.forEach(termen => {
+    const btn = el('button', 'optiune', termen.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled) return;
+      Object.values(butoaneA).forEach(b => b.classList.remove('selectata'));
+      selectatId = termen.id;
+      btn.classList.add('selectata');
+    });
+    butoaneA[termen.id] = btn;
+    colA.appendChild(btn);
+  });
+  item.coloanaB.forEach(definitie => {
+    const btn = el('button', 'optiune', definitie.text);
+    btn.addEventListener('click', () => {
+      if (btn.disabled || selectatId === null) return;
+      const btnA = butoaneA[selectatId];
+      const perecheCorecta = item.perechi.some(p => p.stanga === selectatId && p.dreapta === definitie.id);
+      if (perecheCorecta) {
+        btnA.classList.remove('selectata'); btnA.classList.add('corecta'); btnA.disabled = true;
+        btn.classList.add('corecta'); btn.disabled = true;
+        rezolvate++; selectatId = null;
+        verificaFinal();
+      } else {
+        btnA.classList.add('gresita'); btn.classList.add('gresita');
+        setTimeout(() => { btnA.classList.remove('selectata', 'gresita'); btn.classList.remove('gresita'); }, 600);
+        selectatId = null;
+      }
+    });
+    colB.appendChild(btn);
+  });
+  return card;
+}
+
+// -----------------------------------------------------------------
+// V. Explorator: cererea de munca - Wmg vs Salariu (numarul optim de angajati)
+// -----------------------------------------------------------------
+function buildExploratorCerereMunca() {
+  const puncte = [];
+  for (let L = 1; L <= 10; L++) puncte.push({ L, Wmg: 1100 - L * 100 });
+
+  const width = 380, height = 260, left = 46, right = 14, top = 18, bottom = 32;
+  const chartW = width - left - right, chartH = height - top - bottom;
+  const maxL = 10, maxWmg = 1100;
+  const sx = l => left + (l / maxL) * chartW;
+  const sy = w => top + chartH - (w / maxWmg) * chartH;
+
+  const wrap = el('div', 'simulator');
+  wrap.appendChild(el('p', 'simulator__nota', 'Firma angajează lucrători cât timp productivitatea marginală (Wmg) e mai mare decât salariul practicat. Alege salariul și vezi câți lucrători e optim să angajeze firma.'));
+
+  const svg = elNS('svg', { width: '100%', viewBox: '0 0 ' + width + ' ' + height, role: 'img', 'aria-label': 'Productivitatea marginala a muncii si numarul optim de angajati' });
+  svg.appendChild(elNS('line', { x1: left, y1: top, x2: left, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  svg.appendChild(elNS('line', { x1: left, y1: top + chartH, x2: left + chartW, y2: top + chartH, stroke: 'var(--text-muted)', 'stroke-width': 1 }));
+  const labelY = elNS('text', { x: left, y: 12, 'font-size': 10.5, fill: 'var(--text-muted)' }); labelY.textContent = 'RON/lună';
+  const labelX = elNS('text', { x: left + chartW, y: height - 8, 'font-size': 10.5, fill: 'var(--text-muted)', 'text-anchor': 'end' }); labelX.textContent = 'Lucrători (L)';
+  svg.appendChild(labelY); svg.appendChild(labelX);
+
+  svg.appendChild(elNS('polyline', { fill: 'none', stroke: 'var(--accent)', 'stroke-width': 2.5, points: puncte.map(p => sx(p.L) + ',' + sy(p.Wmg)).join(' ') }));
+  puncte.forEach(p => svg.appendChild(elNS('circle', { cx: sx(p.L), cy: sy(p.Wmg), r: 3, fill: 'var(--accent)' })));
+
+  const linieSalariu = elNS('line', { stroke: 'var(--mark)', 'stroke-width': 2, 'stroke-dasharray': '4 3' });
+  svg.appendChild(linieSalariu);
+  const punctOptim = elNS('circle', { r: 6, fill: 'var(--good)' });
+  svg.appendChild(punctOptim);
+  wrap.appendChild(svg);
+
+  const legenda = el('div', 'legenda');
+  legenda.appendChild(legendItem('var(--accent)', 'Productivitatea marginală Wmg(L)'));
+  legenda.appendChild(legendItem('var(--mark)', 'Salariul practicat'));
+  legenda.appendChild(legendItem('var(--good)', 'Numărul optim de angajați'));
+  wrap.appendChild(legenda);
+
+  const citire = el('div', 'simulator__citire');
+  const boxL = document.createElement('div'); const sL = document.createElement('strong'); boxL.appendChild(sL); boxL.appendChild(el('span', '', 'Nr. optim de angajați'));
+  const boxCastig = document.createElement('div'); const sCastig = document.createElement('strong'); boxCastig.appendChild(sCastig); boxCastig.appendChild(el('span', '', 'Câștigul total al firmei'));
+  citire.appendChild(boxL); citire.appendChild(boxCastig);
+  wrap.appendChild(citire);
+
+  const sliders = el('div', 'simulator__sliders');
+  const row = el('div', 'slider-row');
+  const label = document.createElement('label');
+  label.appendChild(el('span', '', 'Salariul practicat (RON/lună)'));
+  const labelVal = el('span', '', '400');
+  label.appendChild(labelVal);
+  row.appendChild(label);
+  const slider = document.createElement('input');
+  slider.type = 'range'; slider.min = '100'; slider.max = '1000'; slider.step = '50'; slider.value = '400';
+  row.appendChild(slider);
+  sliders.appendChild(row);
+  wrap.appendChild(sliders);
+
+  function recalc() {
+    const salariu = Number(slider.value);
+    labelVal.textContent = salariu;
+    linieSalariu.setAttribute('x1', left); linieSalariu.setAttribute('y1', sy(salariu));
+    linieSalariu.setAttribute('x2', left + chartW); linieSalariu.setAttribute('y2', sy(salariu));
+
+    let Loptim = 0, castig = 0;
+    puncte.forEach(p => {
+      if (p.Wmg >= salariu) { Loptim = p.L; castig += (p.Wmg - salariu); }
+    });
+    const pOptim = puncte[Math.max(0, Loptim - 1)];
+    punctOptim.setAttribute('cx', sx(pOptim.L)); punctOptim.setAttribute('cy', sy(salariu));
+    sL.textContent = Loptim;
+    sCastig.textContent = castig + ' RON';
+  }
+  slider.addEventListener('input', recalc);
+  recalc();
+  return wrap;
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('app');
+
+  const scorBar = el('div', 'scor-bar');
+  const row = el('div', 'scor-bar__row');
+  const scorLabel = el('span', 'scor-bar__label', '0 corecte din 0 încercate (din ' + TOTAL_EXERCITII + ' exerciții)');
+  scorLabel.id = 'scor-label';
+  row.appendChild(scorLabel);
+  scorBar.appendChild(row);
+  const track = el('div', 'scor-bar__track');
+  const fillGood = el('div', 'scor-bar__fill-good'); fillGood.id = 'scor-fill-good'; fillGood.style.width = '0%';
+  const fillBad = el('div', 'scor-bar__fill-bad'); fillBad.id = 'scor-fill-bad'; fillBad.style.width = '0%';
+  track.appendChild(fillGood); track.appendChild(fillBad);
+  scorBar.appendChild(track);
+  root.appendChild(scorBar);
+
+  const header = el('div', 'header');
+  header.appendChild(el('div', 'header__eyebrow', 'Capitolul ' + DATA.capitol.numar));
+  header.appendChild(el('h1', 'header__titlu', DATA.capitol.titlu));
+  root.appendChild(header);
+
+  const obiective = el('div', 'obiective');
+  obiective.appendChild(el('div', 'obiective__titlu', 'Ce vei ști să faci'));
+  const ul = document.createElement('ul');
+  DATA.capitol.obiective.forEach(o => ul.appendChild(el('li', '', o)));
+  obiective.appendChild(ul);
+  root.appendChild(obiective);
+
+  root.appendChild(buildToc());
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Teorie'));
+  DATA.teorie.forEach(item => root.appendChild(buildTeorieBox(item)));
+
+  root.appendChild(el('div', 'sectiune-titlu', 'Exerciții'));
+
+  if (DATA.grila && DATA.grila.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'I. Teste grilă'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Alege varianta corectă și apasă Verifică.'));
+    DATA.grila.forEach((item, idx) => root.appendChild(buildQuizGrila(item, idx)));
+  }
+  if (DATA.af && DATA.af.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'II. Adevărat sau fals'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Notează dacă enunțul e adevărat sau fals.'));
+    DATA.af.forEach((item, idx) => root.appendChild(buildQuizAF(item, idx)));
+  }
+  if (DATA.probleme && DATA.probleme.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'III. Probleme'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Calculează și introdu rezultatul numeric.'));
+    DATA.probleme.forEach((item, idx) => root.appendChild(buildQuizProblema(item, idx)));
+  }
+  if (DATA.asociere && DATA.asociere.length) {
+    root.appendChild(el('div', 'exercitiu-eyebrow', 'IV. Asociază noțiunile'));
+    root.appendChild(el('div', 'exercitiu-sub', 'Apasă un termen din stânga, apoi definiția potrivită din dreapta.'));
+    DATA.asociere.forEach((item, idx) => root.appendChild(buildQuizAsociere(item, idx)));
+  }
+
+  const eyebrowExp = el('div', 'exercitiu-eyebrow', 'V. Explorator: cererea de muncă și numărul optim de angajați');
+  eyebrowExp.id = 'sect-explorator-cerere-munca';
+  root.appendChild(eyebrowExp);
+  root.appendChild(el('div', 'exercitiu-sub', 'Aceeași logică ca în teorie (secțiunea 2) - Wmg(L) vs. Salariu - dar acum interactivă.'));
+  root.appendChild(buildExploratorCerereMunca());
+});
+</script>
+</body>
+</html>

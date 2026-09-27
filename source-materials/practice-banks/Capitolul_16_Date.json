@@ -1,0 +1,1288 @@
+{
+  "capitol": 16,
+  "titlu_capitol": "Creștere, dezvoltare și progres economic",
+  "nota_metodologica": "Capitolul este pur conceptual in sursa (fara formule sau probleme numerice), asemenea Capitolelor 2, 9, 17, 18 - prin urmare, toate cele 40 de intrebari sunt de teorie (definitiile si trasaturile cresterii, dezvoltarii si progresului economic, factorii, tipologia, dezvoltarea umana durabila).",
+  "intrebari": [
+    {
+      "id": "C16_T01",
+      "capitol": 16,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv creșterea nominală a prețurilor bunurilor economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Evoluția ascendentă pe termen lung a potențialului productiv al unei țări, respectiv a unui indicator macroeconomic real pe locuitor",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Reducerea permanentă a potențialului productiv al unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O evoluție strict pe termen scurt a producției naționale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Creșterea economică nu se măsoară pe termen scurt și nici prin simpla creștere a prețurilor: ea reflectă evoluția ascendentă, pe termen lung, a potențialului productiv al țării — exprimată printr-un indicator macroeconomic real pe locuitor. Prin urmare, răspunsul corect este: Evoluția ascendentă pe termen lung a potențialului productiv al unei țări, respectiv a unui indicator macroeconomic real pe locuitor."
+    },
+    {
+      "id": "C16_T02",
+      "capitol": 16,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Cel mai important indicator de exprimare a creșterii economice este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "PIB real pe locuitor, calculat ca PIB nominal pe locuitor împărțit la indicele general al prețurilor",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Rata șomajului la nivel național",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Volumul exporturilor unei țări, indiferent de nivelul prețurilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "PIB nominal pe total populație, fără raportare la indicele prețurilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pentru a reflecta corect evoluția reală a potențialului productiv, PIB-ul trebuie exprimat pe locuitor și corectat cu inflația: PIB.r/loc. = (PIB.n/loc.) : I_GP — nu pur și simplu PIB nominal, care ar include și efectul creșterii prețurilor. Prin urmare, răspunsul corect este: PIB real pe locuitor, calculat ca PIB nominal pe locuitor împărțit la indicele general al prețurilor."
+    },
+    {
+      "id": "C16_T03",
+      "capitol": 16,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică este considerată un proces:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv microeconomic, la nivelul unei singure firme",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Macroeconomic, care se circumscrie economiei naționale în ansamblul ei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv sectorial, limitat la o singură ramură economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Complet independent de nivelul economiei naționale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Creșterea economică nu privește o firmă sau o ramură izolată, ci se manifestă la nivelul întregii economii naționale — o trăsătură esențială pe care o are în comun și cu dezvoltarea și progresul economic. Prin urmare, răspunsul corect este: Macroeconomic, care se circumscrie economiei naționale în ansamblul ei."
+    },
+    {
+      "id": "C16_T04",
+      "capitol": 16,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică este un proces evolutiv, dar nu liniar, ceea ce înseamnă că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Se desfășoară exclusiv pe termen scurt, an de an, fără fluctuații",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu poate include niciodată o perioadă de regres economic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Poate implica perioade de regres și oscilații conjuncturale, nu doar evoluții ascendente continue",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Evoluează întotdeauna în linie dreaptă, fără nicio abatere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Deși tendința generală, pe termen lung, este ascendentă, creșterea economică nu urmează o traiectorie perfect liniară: pot apărea perioade de regres sau oscilații conjuncturale în cadrul acestei evoluții de ansamblu. Prin urmare, răspunsul corect este: Poate implica perioade de regres și oscilații conjuncturale, nu doar evoluții ascendente continue."
+    },
+    {
+      "id": "C16_T05",
+      "capitol": 16,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică presupune:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stagnarea completă a producției naționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Reducerea sistematică a producției naționale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv creșteri nominale ale producției, indiferent de inflație",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Creșteri reale, nu doar nominale, ale producției naționale",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "O simplă creștere nominală a producției, generată doar de inflație, nu reprezintă creștere economică reală — aceasta din urmă presupune un spor efectiv, real, al producției naționale. Prin urmare, răspunsul corect este: Creșteri reale, nu doar nominale, ale producției naționale."
+    },
+    {
+      "id": "C16_T06",
+      "capitol": 16,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică este un proces preponderent cantitativ, dar care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclude complet orice transformare structurală",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Se referă exclusiv la aspectele calitative ale economiei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu are nicio legătură cu structura economiei naționale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu exclude și transformări structurale în economia națională",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Deși dominanta creșterii economice este cantitativă (sporirea volumului producției), acest proces nu exclude complet și anumite transformări structurale în economia națională — distincția netă cantitativ/calitativ aparține mai degrabă dezvoltării economice. Prin urmare, răspunsul corect este: Nu exclude și transformări structurale în economia națională."
+    },
+    {
+      "id": "C16_T07",
+      "capitol": 16,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În sens larg, creșterea economică:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Se opune întotdeauna dezvoltării economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Este mai complexă decât dezvoltarea economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Se identifică cu dezvoltarea economică, fiind o componentă, o premisă a acesteia",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Este complet independentă de dezvoltarea economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Creșterea economică nu este un fenomen separat de dezvoltarea economică: în sens larg, ea se identifică cu aceasta, fiind componenta și premisa ei — nu opusul sau ceva mai complex decât dezvoltarea. Prin urmare, răspunsul corect este: Se identifică cu dezvoltarea economică, fiind o componentă, o premisă a acesteia."
+    },
+    {
+      "id": "C16_T08",
+      "capitol": 16,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea economică exprimă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv schimbările cantitative ale producției naționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Stagnarea nivelurilor indicatorilor macroeconomici față de perioadele anterioare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Ansamblul schimbărilor preponderent pozitive, cantitative, calitative și structurale la nivel economic, social, tehnic, științific, cultural, ecologic etc.",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv schimbările petrecute în sectorul agricol",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dezvoltarea economică este mult mai cuprinzătoare decât o simplă schimbare cantitativă: ea reunește schimbări pozitive, cantitative, calitative și structurale, pe multiple planuri — economic, social, tehnic, cultural, ecologic. Prin urmare, răspunsul corect este: Ansamblul schimbărilor preponderent pozitive, cantitative, calitative și structurale la nivel economic, social, tehnic, științific, cultural, ecologic etc."
+    },
+    {
+      "id": "C16_T09",
+      "capitol": 16,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre indicatorii de exprimare a dezvoltării economice se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv rata inflației dintr-o țară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv volumul rezervelor valutare ale băncii centrale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv numărul de firme înființate într-un an",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "PIB real pe locuitor, modificările structurale și teritoriale ale economiei naționale, nivelul de trai al populației",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dezvoltarea economică se exprimă printr-un set mai bogat de indicatori decât simpla producție: PIB real pe locuitor, schimbările structurale și teritoriale, nivelul de trai și eficiența utilizării factorilor de producție. Prin urmare, răspunsul corect este: PIB real pe locuitor, modificările structurale și teritoriale ale economiei naționale, nivelul de trai al populației."
+    },
+    {
+      "id": "C16_T10",
+      "capitol": 16,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea economică, spre deosebire de creșterea economică, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Schimbări nu numai cantitative, ci și calitative și structurale în economie",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "O evoluție strict liniară, fără oscilații conjuncturale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv schimbări cantitative, la fel ca și creșterea economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un proces exclusiv microeconomic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Elementul distinctiv al dezvoltării economice, față de creșterea economică (preponderent cantitativă), este tocmai includerea explicită a schimbărilor calitative și structurale, nu doar a celor cantitative. Prin urmare, răspunsul corect este: Schimbări nu numai cantitative, ci și calitative și structurale în economie."
+    },
+    {
+      "id": "C16_T11",
+      "capitol": 16,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea economică are un caracter deschis, ceea ce înseamnă că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Este posibilă doar în economiile complet autarhice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclude orice formă de relație economică internațională",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Se manifestă în condițiile creșterii interdependențelor economice pe glob",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Se desfășoară complet izolat de restul economiei mondiale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Caracterul deschis al dezvoltării economice reflectă tocmai faptul că ea are loc în condițiile unor interdependențe economice tot mai strânse la nivel mondial, nu în izolare sau autarhie. Prin urmare, răspunsul corect este: Se manifestă în condițiile creșterii interdependențelor economice pe glob."
+    },
+    {
+      "id": "C16_T12",
+      "capitol": 16,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea economică:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Se bazează pe creșterea economică, dar este mai complexă decât aceasta",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Este complet independentă de creșterea economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Este întotdeauna mai simplă decât creșterea economică",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclude complet componenta de creștere economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dezvoltarea economică nu se poate produce fără creșterea economică, dar nu se rezumă la ea: este un proces mai amplu și mai complex, care include și schimbări calitative și structurale. Prin urmare, răspunsul corect este: Se bazează pe creșterea economică, dar este mai complexă decât aceasta."
+    },
+    {
+      "id": "C16_T13",
+      "capitol": 16,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea economică este considerată:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Baza, premisa progresului economic",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Opusul progresului economic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un fenomen complet separat de progresul economic",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "O consecință exclusivă a progresului economic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Progresul economic nu apare din senin: el se sprijină pe dezvoltarea economică, aceasta din urmă fiind baza și premisa lui — nu invers, și nici un fenomen izolat sau opus. Prin urmare, răspunsul corect este: Baza, premisa progresului economic."
+    },
+    {
+      "id": "C16_T14",
+      "capitol": 16,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Progresul economic reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stagnarea calității vieții populației, indiferent de evoluția economiei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un proces complet independent de creșterea și dezvoltarea economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Esența evoluției unei economii naționale, respectiv ameliorarea performanțelor globale, ca urmare a efectelor pozitive ale creșterii și dezvoltării economice",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv creșterea nominală a prețurilor dintr-o economie",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Progresul economic este definit tocmai ca rezultatul, esența evoluției unei economii — ameliorarea performanțelor globale (economice, ale calității vieții, ale nivelului de civilizație) generată de efectele pozitive, dominante, ale creșterii și dezvoltării economice. Prin urmare, răspunsul corect este: Esența evoluției unei economii naționale, respectiv ameliorarea performanțelor globale, ca urmare a efectelor pozitive ale creșterii și dezvoltării economice."
+    },
+    {
+      "id": "C16_T15",
+      "capitol": 16,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre indicatorii de exprimare a progresului economic se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dinamica productivității factorilor de producție la nivelul economiei naționale și modernizarea structurii acesteia",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv volumul rezervelor de aur ale unei țări",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv rata natalității dintr-o țară",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv numărul de kilometri de autostradă construiți într-un an",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Progresul economic se exprimă prin indicatori care surprind chiar esența evoluției economiei: dinamica productivității factorilor de producție, dinamica potențialului productiv și modernizarea structurii economiei naționale. Prin urmare, răspunsul corect este: Dinamica productivității factorilor de producție la nivelul economiei naționale și modernizarea structurii acesteia."
+    },
+    {
+      "id": "C16_T16",
+      "capitol": 16,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Progresul economic este considerat:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sinteza și finalitatea rezultatelor creșterii și dezvoltării economice, dar și premisa viitoare a acestora",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Un fenomen complet separat, fără nicio legătură cu creșterea și dezvoltarea economică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv o cauză a creșterii economice, niciodată un efect al ei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Identic, sub toate aspectele, cu creșterea economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Progresul economic închide și, în același timp, redeschide ciclul: el sintetizează rezultatele creșterii și dezvoltării economice anterioare, dar devine, la rândul lui, premisa pentru creșterea și dezvoltarea viitoare. Prin urmare, răspunsul corect este: Sinteza și finalitatea rezultatelor creșterii și dezvoltării economice, dar și premisa viitoare a acestora."
+    },
+    {
+      "id": "C16_T17",
+      "capitol": 16,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre factorii cu acțiune directă asupra creșterii (dezvoltării) economice se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv cererea agregată și creditul",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv mediul internațional",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv exportul și importul",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Resursele umane, resursele naturale, stocul de capital tehnic și progresul tehnic",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Factorii direcți sunt cei clasici, tradiționali, ai producției — resursele umane, resursele naturale, stocul de capital tehnic și progresul tehnic — spre deosebire de factorii indirecți, precum cererea agregată, creditul sau mediul internațional. Prin urmare, răspunsul corect este: Resursele umane, resursele naturale, stocul de capital tehnic și progresul tehnic."
+    },
+    {
+      "id": "C16_T18",
+      "capitol": 16,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre factorii cu acțiune indirectă asupra creșterii (dezvoltării) economice se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv progresul tehnic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cererea agregată, economiile și investițiile agenților economici, mediul internațional, exportul și importul, creditul",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv resursele umane și resursele naturale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv stocul de capital tehnic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Factorii indirecți influențează creșterea economică fără a fi ei înșiși factori de producție clasici: cererea agregată, economiile și investițiile, mediul internațional, exportul-importul și creditul acționează prin intermediul factorilor direcți. Prin urmare, răspunsul corect este: Cererea agregată, economiile și investițiile agenților economici, mediul internațional, exportul și importul, creditul."
+    },
+    {
+      "id": "C16_T19",
+      "capitol": 16,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică pozitivă se înregistrează atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Indicele PIB real pe locuitor este mai mare decât indicele populației (I_PIBr/loc > I_POP)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "PIB-ul nominal scade, indiferent de evoluția populației",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Indicele PIB este exact egal cu indicele populației",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Indicele PIB real pe locuitor este mai mic decât indicele populației",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Pentru ca fiecare locuitor să beneficieze, în medie, de mai multă producție, PIB-ul real trebuie să crească mai repede decât populația — condiția I_PIBr/loc > I_POP definește exact creșterea economică pozitivă. Prin urmare, răspunsul corect este: Indicele PIB real pe locuitor este mai mare decât indicele populației (I_PIBr/loc > I_POP)."
+    },
+    {
+      "id": "C16_T20",
+      "capitol": 16,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică negativă se înregistrează atunci când:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Indicele PIB real pe locuitor este mai mare decât indicele populației",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Indicele PIB real pe locuitor este mai mic decât indicele populației (I_PIBr/loc < I_POP)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "PIB-ul real crește mai repede decât populația",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Populația unei țări scade la zero",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Chiar dacă PIB-ul real total crește, dacă populația crește și mai repede, PIB-ul real pe locuitor scade efectiv — această situație, I_PIBr/loc < I_POP, definește creșterea economică negativă. Prin urmare, răspunsul corect este: Indicele PIB real pe locuitor este mai mic decât indicele populației (I_PIBr/loc < I_POP)."
+    },
+    {
+      "id": "C16_T21",
+      "capitol": 16,
+      "numar": 21,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică extensivă se caracterizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Contribuția preponderent calitativă a factorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Contribuția preponderent cantitativă a factorilor de producție",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Absența completă a oricărei contribuții a factorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Contribuția relativ egală, cantitativă și calitativă, a factorilor de producție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Creșterea extensivă se bazează pe sporirea cantității factorilor de producție utilizați (mai multă muncă, mai mult capital) — spre deosebire de creșterea intensivă, bazată pe îmbunătățirea calitativă a acestora. Prin urmare, răspunsul corect este: Contribuția preponderent cantitativă a factorilor de producție."
+    },
+    {
+      "id": "C16_T22",
+      "capitol": 16,
+      "numar": 22,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică intensivă se caracterizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Contribuția preponderent cantitativă a factorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Contribuția preponderent calitativă a factorilor de producție",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărei contribuții a progresului tehnic",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea sistematică a productivității muncii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Creșterea intensivă se bazează pe îmbunătățirea calității factorilor de producție — eficiență, productivitate, progres tehnic — nu pe simpla sporire a cantității lor, ca în cazul creșterii extensive. Prin urmare, răspunsul corect este: Contribuția preponderent calitativă a factorilor de producție."
+    },
+    {
+      "id": "C16_T23",
+      "capitol": 16,
+      "numar": 23,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică intermediară se caracterizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Contribuția exclusiv calitativă a factorilor de producție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Absența totală a factorilor de producție din procesul de creștere",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Contribuția relativ egală, cantitativă și calitativă, a factorilor de producție",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Contribuția exclusiv cantitativă a factorilor de producție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Creșterea intermediară reprezintă un caz de mijloc, în care nici contribuția cantitativă, nici cea calitativă a factorilor de producție nu domină clar, cele două fiind relativ echilibrate. Prin urmare, răspunsul corect este: Contribuția relativ egală, cantitativă și calitativă, a factorilor de producție."
+    },
+    {
+      "id": "C16_T24",
+      "capitol": 16,
+      "numar": 24,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea umană durabilă este un proces complex mondial care presupune:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ignorarea completă a protecției mediului înconjurător, în favoarea creșterii producției",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Satisfacerea maximă a nevoilor prezente, indiferent de efectele asupra generațiilor viitoare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Limitarea strictă a nevoilor generațiilor prezente, fără nicio legătură cu mediul",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Satisfacerea nevoilor umane curente fără a compromite satisfacerea nevoilor generațiilor viitoare, în condițiile protecției mediului înconjurător",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dezvoltarea umană durabilă introduce o responsabilitate intergenerațională: satisfacerea nevoilor de azi nu trebuie să compromită șansele generațiilor viitoare de a-și satisface propriile nevoi, iar protecția mediului este o condiție esențială a acestui echilibru. Prin urmare, răspunsul corect este: Satisfacerea nevoilor umane curente fără a compromite satisfacerea nevoilor generațiilor viitoare, în condițiile protecției mediului înconjurător."
+    },
+    {
+      "id": "C16_T25",
+      "capitol": 16,
+      "numar": 25,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dezvoltarea umană durabilă pune în centrul preocupărilor sale:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Omul și protecția mediului natural",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv creșterea producției industriale, indiferent de costuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv extinderea teritorială a unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv maximizarea profitului firmelor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Spre deosebire de o viziune axată exclusiv pe indicatori economici bruți, dezvoltarea umană durabilă pune omul și protecția mediului natural în centrul atenției, ca finalitate a oricărui proces economic. Prin urmare, răspunsul corect este: Omul și protecția mediului natural."
+    },
+    {
+      "id": "C16_T26",
+      "capitol": 16,
+      "numar": 26,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre indicatorii de exprimare a dezvoltării umane durabile se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv numărul de firme multinaționale prezente într-o țară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv rata dobânzii practicate pe piața monetară",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv volumul exporturilor unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Indicatorul compozit al dezvoltării umane (I.D.U.), speranța medie de viață la naștere și rata de instruire a populației",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dezvoltarea umană durabilă se măsoară printr-un indicator compozit (I.D.U.), care combină speranța medie de viață, rata de instruire a populației și PIB-ul real pe locuitor — nu prin indicatori strict financiari sau comerciali. Prin urmare, răspunsul corect este: Indicatorul compozit al dezvoltării umane (I.D.U.), speranța medie de viață la naștere și rata de instruire a populației."
+    },
+    {
+      "id": "C16_T27",
+      "capitol": 16,
+      "numar": 27,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea, dezvoltarea și progresul economic:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sunt noțiuni perfect identice, fără nicio deosebire între ele",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Se exclud reciproc, fiind fenomene complet opuse",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Nu au nicio legătură unele cu altele",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu se opun și nici nu se suprapun sub aspectul laturilor cantitative și calitative",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cele trei noțiuni sunt distincte, dar complementare: nu se opun (nu sunt fenomene contrare), dar nici nu se suprapun perfect (fiecare are propria sferă de cuprindere și complexitate). Prin urmare, răspunsul corect este: Nu se opun și nici nu se suprapun sub aspectul laturilor cantitative și calitative."
+    },
+    {
+      "id": "C16_T28",
+      "capitol": 16,
+      "numar": 28,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea, dezvoltarea și progresul economic se află într-o legătură:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Inexistentă, cele trei procese fiind total independente",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "De subordonare strictă, unidirecțională, fără nicio influență inversă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Organică, interferându-se, influențându-se și chiar condiționându-se reciproc",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Complet întâmplătoare, fără nicio regularitate",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Relația dintre creștere, dezvoltare și progres economic nu este una simplă, liniară sau întâmplătoare, ci una organică: cele trei procese se interferează, se influențează reciproc și chiar se condiționează unele pe altele. Prin urmare, răspunsul corect este: Organică, interferându-se, influențându-se și chiar condiționându-se reciproc."
+    },
+    {
+      "id": "C16_T29",
+      "capitol": 16,
+      "numar": 29,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Diferențierea dintre creșterea, dezvoltarea și progresul economic vizează, printre altele:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv perioada istorică în care au fost teoretizate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu există nicio diferențiere reală între cele trei noțiuni",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Sfera de cuprindere, complexitatea și sensul contribuției factorilor de influență",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv limba în care au fost formulate definițiile lor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Deși strâns legate, cele trei procese diferă prin sfera de cuprindere (de la strict cantitativ, la creștere, până la sinteza calitativă a progresului), prin complexitate și prin sensul contribuției factorilor de influență. Prin urmare, răspunsul corect este: Sfera de cuprindere, complexitatea și sensul contribuției factorilor de influență."
+    },
+    {
+      "id": "C16_T30",
+      "capitol": 16,
+      "numar": 30,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre elementele comune ale creșterii, dezvoltării și progresului economic, legate de originea lor, se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv reglementările juridice ale unei țări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Principiul economicității, al raționalității economice",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Absența oricărui principiu economic comun",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv tradițiile culturale ale unei națiuni",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Toate cele trei procese își au originea în același principiu fundamental al economiei: economicitatea, raționalitatea economică — dorința de a obține maximum de efecte cu minimum de eforturi. Prin urmare, răspunsul corect este: Principiul economicității, al raționalității economice."
+    },
+    {
+      "id": "C16_T31",
+      "capitol": 16,
+      "numar": 31,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre elementele comune ale creșterii, dezvoltării și progresului economic, legate de finalitatea lor, se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv creșterea numărului de locuitori ai unei țări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Îmbunătățirea calității vieții",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv sporirea rezervelor valutare ale statului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Reducerea sistematică a nivelului de trai al populației",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Indiferent de diferențele dintre ele, creșterea, dezvoltarea și progresul economic converg spre aceeași finalitate: îmbunătățirea calității vieții oamenilor, nu simpla acumulare de indicatori demografici sau financiari. Prin urmare, răspunsul corect este: Îmbunătățirea calității vieții."
+    },
+    {
+      "id": "C16_T32",
+      "capitol": 16,
+      "numar": 32,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea, dezvoltarea și progresul economic sunt procese care presupun:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stagnarea completă a producției naționale pe locuitor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv modificări nominale, indiferent de inflație",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Modificări exclusiv în structura demografică a populației",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Modificări (schimbări) reale, nu nominale, ale producției naționale pe locuitor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Toate cele trei procese au în comun această cerință fundamentală: schimbările pe care le presupun trebuie să fie reale, efective, nu doar nominale, generate artificial de inflație. Prin urmare, răspunsul corect este: Modificări (schimbări) reale, nu nominale, ale producției naționale pe locuitor."
+    },
+    {
+      "id": "C16_T33",
+      "capitol": 16,
+      "numar": 33,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea, dezvoltarea și progresul economic sunt considerate procese:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Macroeconomice, care se circumscriu economiei naționale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv microeconomice, la nivelul unei singure firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv sectoriale, limitate la un singur domeniu de activitate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Fără nicio legătură cu economia națională",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Toate cele trei procese sunt, prin definiție, macroeconomice — ele se circumscriu economiei naționale în ansamblul ei, nu unei singure firme sau ramuri izolate. Prin urmare, răspunsul corect este: Macroeconomice, care se circumscriu economiei naționale."
+    },
+    {
+      "id": "C16_T34",
+      "capitol": 16,
+      "numar": 34,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea, dezvoltarea și progresul economic sunt procese evolutive, dar nu liniare, deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Se desfășoară întotdeauna într-o linie perfect ascendentă, fără excepție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu pot înregistra niciodată vreo perioadă de regres",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Pot înregistra regrese și oscilații conjuncturale, nu doar evoluții ascendente",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Sunt procese complet aleatorii, fără nicio direcție generală",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Caracterul „evolutiv, dar nu liniar” înseamnă că, deși tendința generală este ascendentă, aceste procese pot include perioade de regres sau oscilații conjuncturale, nu o traiectorie perfect dreaptă. Prin urmare, răspunsul corect este: Pot înregistra regrese și oscilații conjuncturale, nu doar evoluții ascendente."
+    },
+    {
+      "id": "C16_T35",
+      "capitol": 16,
+      "numar": 35,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea, dezvoltarea și progresul economic sunt procese care au loc:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar în timpul unei singure generații, fără continuitate",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Pe termen lung, având astfel semnificații reale economico-sociale",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Instantaneu, printr-o singură decizie administrativă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv pe termen foarte scurt, de câteva zile",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Pentru ca aceste procese să aibă semnificații economico-sociale reale, ele trebuie urmărite pe termen lung — nu ca fenomene instantanee sau limitate la intervale foarte scurte de timp. Prin urmare, răspunsul corect este: Pe termen lung, având astfel semnificații reale economico-sociale."
+    },
+    {
+      "id": "C16_T36",
+      "capitol": 16,
+      "numar": 36,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Formula de calcul a PIB real pe locuitor este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "PIB.r/loc. = I_GP : (PIB.n/loc.)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "PIB.r/loc. = (PIB.n/loc.) × I_GP",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "PIB.r/loc. = PIB.n/loc., fără nicio ajustare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "PIB.r/loc. = (PIB.n/loc.) : I_GP",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Pentru a elimina efectul inflației din PIB-ul nominal pe locuitor, acesta se împarte la indicele general al prețurilor, nu se înmulțește cu el și nici nu rămâne neajustat. Prin urmare, răspunsul corect este: PIB.r/loc. = (PIB.n/loc.) : I_GP."
+    },
+    {
+      "id": "C16_T37",
+      "capitol": 16,
+      "numar": 37,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Progresul economic reflectă, în esență:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stagnarea nivelului de civilizație al unei societăți",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ameliorarea performanțelor globale ale unei economii — viața economică, calitatea vieții și nivelul de civilizație",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv creșterea volumului producției industriale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv reducerea numărului de angajați dintr-o economie",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Progresul economic nu se rezumă la un singur indicator (producția industrială sau ocuparea): el reflectă ameliorarea de ansamblu a performanțelor unei economii, incluzând calitatea vieții și nivelul de civilizație. Prin urmare, răspunsul corect este: Ameliorarea performanțelor globale ale unei economii — viața economică, calitatea vieții și nivelul de civilizație."
+    },
+    {
+      "id": "C16_T38",
+      "capitol": 16,
+      "numar": 38,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Legătura organică dintre creșterea, dezvoltarea și progresul economic înseamnă, printre altele, că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Creșterea economică poate influența dezvoltarea, iar aceasta, la rândul ei, poate condiționa progresul economic viitor",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Doar progresul economic influențează creșterea, niciodată invers",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Fiecare dintre cele trei procese se desfășoară complet izolat, fără nicio interacțiune",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cele trei procese sunt reciproc excluzive, neputând coexista",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Interdependența dintre cele trei noțiuni funcționează în ambele sensuri: creșterea alimentează dezvoltarea, dezvoltarea condiționează progresul, dar progresul, la rândul lui, devine premisa creșterii și dezvoltării viitoare — un ciclu, nu o relație izolată sau unidirecțională. Prin urmare, răspunsul corect este: Creșterea economică poate influența dezvoltarea, iar aceasta, la rândul ei, poate condiționa progresul economic viitor."
+    },
+    {
+      "id": "C16_T39",
+      "capitol": 16,
+      "numar": 39,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Creșterea economică este considerată un proces foarte complex, deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Depinde exclusiv de condițiile climatice ale unei țări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu necesită nicio politică economică specifică",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Se realizează prin politici economice complexe și adecvate, nu printr-o singură măsură izolată",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Se poate realiza instantaneu, printr-o singură decizie administrativă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Complexitatea creșterii economice se reflectă și în modul în care este susținută: prin politici economice complexe, adecvate contextului, nu printr-o măsură administrativă unică sau factori exclusiv naturali. Prin urmare, răspunsul corect este: Se realizează prin politici economice complexe și adecvate, nu printr-o singură măsură izolată."
+    },
+    {
+      "id": "C16_T40",
+      "capitol": 16,
+      "numar": 40,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Eficiența utilizării factorilor de producție este considerată, alături de PIB real pe locuitor și modificările structurale, un indicator al:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv al cursului valutar",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv al soldului balanței comerciale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv al ratei inflației",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Dezvoltării economice",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dezvoltarea economică se măsoară printr-un ansamblu de indicatori care depășesc simpla producție: alături de PIB real pe locuitor și modificările structural-teritoriale, eficiența utilizării factorilor de producție arată cât de bine este folosit potențialul economic al țării. Prin urmare, răspunsul corect este: Dezvoltării economice."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

@@ -1,0 +1,641 @@
+{
+  "an": 2005,
+  "sesiune": "Concurs de admitere 2005",
+  "varianta": "G1",
+  "sursa_subiecte": "Grile_2005.pdf",
+  "sursa_barem": "Grile_2005.pdf (barem)",
+  "interval_economie_in_test": "61-100",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 25,
+      "exercitii": [
+        {
+          "numar_in_test": 61,
+          "capitol": "Costul producției",
+          "dificultate": "usor",
+          "enunt": "Cum evoluează costul variabil mediu, atunci când costul variabil total rămâne constant, iar cantitatea produsă sporește:",
+          "optiuni": {
+            "a": "se reduce",
+            "b": "crește",
+            "c": "devine egal cu zero",
+            "d": "crește, apoi scade până la zero"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "CMV = CV/Q",
+          "rezolvare": "Cu CV constant și Q în creștere, CMV=CV/Q scade."
+        },
+        {
+          "numar_in_test": 63,
+          "capitol": "Factorii de producție — uzura fizică",
+          "dificultate": "usor",
+          "enunt": "În ce constă uzura fizică:",
+          "optiuni": {
+            "a": "în deprecierea treptată a capacității de funcționare a capitalului fix, ca urmare a folosirii lui în procesul de producție sau a acțiunii distructive a agenților naturali",
+            "b": "în acțiunea progresului tehnic și a condițiilor pieței",
+            "c": "în deprecierea morală a capitalului fix",
+            "d": "în scăderea calității producției"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a uzurii fizice."
+        },
+        {
+          "numar_in_test": 64,
+          "capitol": "Creșterea economică",
+          "dificultate": "usor",
+          "enunt": "Un indicator macroeconomic apare în expresie netă atunci când în calculul său:",
+          "optiuni": {
+            "a": "se elimină consumul de capital circulant",
+            "b": "se include consumul de capital fix",
+            "c": "se adaugă valoarea netă a capitalului fix",
+            "d": "se exclude consumul capitalului fix"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Indicatorii \"neți\" se obțin excluzând (scăzând) consumul de capital fix (amortizarea)."
+        },
+        {
+          "numar_in_test": 65,
+          "capitol": "Costul de oportunitate",
+          "dificultate": "usor",
+          "enunt": "Costul de oportunitate are în vedere:",
+          "optiuni": {
+            "a": "numărul alternativelor eliminate din calculele decidentului",
+            "b": "valoarea tuturor alternativelor luate în calcule de agentul economic, prin acțiunile sale curente",
+            "c": "câștigul unui agent economic în urma unui plasament corect",
+            "d": "valoarea alternativelor eliminate de decident, respectiv ceea ce pierde el prin alegerea făcută"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a costului de oportunitate."
+        },
+        {
+          "numar_in_test": 66,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "usor",
+          "enunt": "Venitul disponibil se deduce din:",
+          "optiuni": {
+            "a": "mărimea venitului personal, diminuat cu impozitele și taxele plătite de fiecare individ",
+            "b": "mărimea venitului național, diminuat cu valoarea amortizării capitalului fix",
+            "c": "mărimea venitului național, diminuat cu taxele indirecte",
+            "d": "produsul intern brut, diminuat cu mărimea venitului personal"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "VD = Venit personal – impozite/taxe",
+          "rezolvare": "Definiția standard a venitului disponibil."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Piața de capital — tranzacții la termen",
+          "dificultate": "usor",
+          "enunt": "Când un contract se încheie la un moment dat, iar livrarea bunului tranzacționat (executarea contractului) are loc ulterior, se operează pe piața:",
+          "optiuni": {
+            "a": "la vedere",
+            "b": "forței de muncă",
+            "c": "la termen",
+            "d": "vânzătorului"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a pieței la termen."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Piața și echilibrul pieței — elasticitate",
+          "dificultate": "usor",
+          "enunt": "Cererea elastică în raport cu prețul presupune:",
+          "optiuni": {
+            "a": "o variație procentuală a cantității cerute, mai mare decât cea a prețului",
+            "b": "o variație a cererii egală cu variația prețului",
+            "c": "o variație a cererii mai mică decât variația prețului",
+            "d": "că variația cererii este pozitivă"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "|Kc/p| > 1",
+          "rezolvare": "Cerere elastică: variația procentuală a cererii este mai mare decât cea a prețului."
+        },
+        {
+          "numar_in_test": 69,
+          "capitol": "Inflația",
+          "dificultate": "usor",
+          "enunt": "În urma inflației, sunt afectați:",
+          "optiuni": {
+            "a": "agenții economici ce-și convertesc disponibilitățile bănești în monedele mai stabile ale altor țări",
+            "b": "agenții care iau bani cu împrumut",
+            "c": "agenții economici aflați în ipostaza de cumpărători – mai ales cei cu venituri mici și fixe",
+            "d": "agenții economici publici"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Inflația afectează cel mai mult cumpărătorii cu venituri mici și fixe, a căror putere de cumpărare scade."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Ce reprezintă utilitatea economică:",
+          "optiuni": {
+            "a": "talentul unui consumator de a-și aloca veniturile pentru achiziția diferitelor bunuri existente pe piață, în condițiile unui venit nelimitat",
+            "b": "satisfacția adusă consumatorului de utilizarea unui bun sau serviciu, exprimând capacitatea acestuia de a satisface o anumită nevoie",
+            "c": "proprietățile pe care le posedă fiecare bun",
+            "d": "capacitatea unui bun liber de a fi resursă regenerabilă"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a utilității economice."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Piața de capital — speculatori",
+          "dificultate": "usor",
+          "enunt": "În tranzacțiile la termen, vânzătorul:",
+          "optiuni": {
+            "a": "știe de la început că va câștiga",
+            "b": "știe de la început că va pierde",
+            "c": "este un speculator \"à la baisse\"",
+            "d": "este un speculator \"à la hausse\""
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Vânzătorul la termen mizează pe scăderea cursului (\"à la baisse\")."
+        },
+        {
+          "numar_in_test": 73,
+          "capitol": "Factorii de producție — capitalul",
+          "dificultate": "usor",
+          "enunt": "Componentele capitalului se deosebesc din punct de vedere:",
+          "optiuni": {
+            "a": "al vitezei de circulație",
+            "b": "al gradului de prelucrare",
+            "c": "al modului în care se consumă și sunt înlocuite",
+            "d": "al gradului de progres tehnic încorporat"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Capitalul fix și cel circulant se deosebesc, în esență, prin modul de consum și înlocuire (mai multe cicluri vs. un singur ciclu)."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Piața mondială — piața valutară",
+          "dificultate": "usor",
+          "enunt": "Între componentele pieței valutare se numără:",
+          "optiuni": {
+            "a": "investițiile",
+            "b": "rata inflației",
+            "c": "convertibilitatea monedei",
+            "d": "băncile care efectuează tranzacții pe piața interbancară"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Băncile care efectuează tranzacții pe piața interbancară sunt participanți direcți ai pieței valutare."
+        },
+        {
+          "numar_in_test": 76,
+          "capitol": "Piața monetară — puterea de cumpărare",
+          "dificultate": "usor",
+          "enunt": "Indicatorul care arată câte bunuri și servicii se pot achiziționa cu cantitatea de bani existentă la un moment dat în economie (respectiv cu o unitate monetară), la un nivel dat al prețurilor, reflectă:",
+          "optiuni": {
+            "a": "viteza de rotație a banilor",
+            "b": "cursul de schimb al monedei naționale",
+            "c": "puterea de cumpărare a banilor",
+            "d": "rata dobânzii"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a puterii de cumpărare a banilor."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Piața muncii — salariul real",
+          "dificultate": "usor",
+          "enunt": "Ce reflectă salariul real:",
+          "optiuni": {
+            "a": "forma bănească a salariului",
+            "b": "expresia bănească a prețului bunurilor ce pot fi achiziționate la un moment dat într-o economie",
+            "c": "expresia valorică a salariului anual",
+            "d": "cantitatea de bunuri și servicii care poate fi cumpărată la un moment dat cu salariul nominal"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Definiția standard a salariului real."
+        },
+        {
+          "numar_in_test": 81,
+          "capitol": "Costul producției",
+          "dificultate": "usor",
+          "enunt": "Costul total cuprinde:",
+          "optiuni": {
+            "a": "costurile fixe și variabile",
+            "b": "totalul costurilor variabile și o parte a costurilor fixe",
+            "c": "uzura fizică și costurile variabile",
+            "d": "salariile și profiturile"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "CT = CF + CV",
+          "rezolvare": "Costul total este suma costurilor fixe și variabile."
+        },
+        {
+          "numar_in_test": 82,
+          "capitol": "Profitul — profitul normal",
+          "dificultate": "usor",
+          "enunt": "Suma minimă de bani, care, obținută de întreprinzător, îl motivează pe acesta și îi este suficientă pentru a-și continua activitatea, se numește:",
+          "optiuni": {
+            "a": "cifră de afaceri",
+            "b": "profit normal",
+            "c": "superprofit",
+            "d": "venit implicit"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Profitul normal este suma minimă care motivează întreprinzătorul să continue activitatea."
+        },
+        {
+          "numar_in_test": 83,
+          "capitol": "Mecanismul concurențial — oligopolul",
+          "dificultate": "usor",
+          "enunt": "Oligopolul reflectă:",
+          "optiuni": {
+            "a": "situația în care numărul firmelor concurente e foarte mare, dar între produse există deosebiri",
+            "b": "situația în care numărul firmelor producătoare (vânzătoare), concurente, e mic",
+            "c": "situația în care numărul cumpărătorilor pe piață e mic",
+            "d": "situația în care numai câteva produse sunt comercializate pe o piață"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Oligopolul se caracterizează printr-un număr mic de producători."
+        },
+        {
+          "numar_in_test": 86,
+          "capitol": "Costul producției — amortizarea",
+          "dificultate": "usor",
+          "enunt": "Expresia bănească a uzurii capitalului fix este generată de:",
+          "optiuni": {
+            "a": "costul total",
+            "b": "cifra de afaceri",
+            "c": "cheltuiala cu capitalul circulant",
+            "d": "amortizare"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Amortizarea este expresia bănească a uzurii (deprecierii) capitalului fix."
+        },
+        {
+          "numar_in_test": 87,
+          "capitol": "Utilitatea bunurilor economice — legea lui Gossen",
+          "dificultate": "usor",
+          "enunt": "Legea lui Gossen este legată de:",
+          "optiuni": {
+            "a": "descreșterea, întotdeauna, a utilității totale datorate consumului unui bun",
+            "b": "descreșterea utilității marginale, în urma consumului succesiv de unități dintr-un bun omogen",
+            "c": "faptul că mărimea unităților adiționale consumate din fiecare bun economic crește în progresie aritmetică până la saturare, dacă respectiva necesitate este satisfăcută în mod continuu și neîntrerupt",
+            "d": "faptul că interesul unei persoane descrește progresiv până la saturare, dacă acesta este satisfăcut o singură dată"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Legea lui Gossen este identică cu legea utilității marginale descrescânde."
+        },
+        {
+          "numar_in_test": 90,
+          "capitol": "Utilitatea bunurilor economice — utilitatea totală",
+          "dificultate": "usor",
+          "enunt": "Relația dintre numărul unităților consumate dintr-un bun economic omogen și utilitatea totală:",
+          "optiuni": {
+            "a": "se exprimă sub forma utilității totale descrescătoare",
+            "b": "se reprezintă grafic, în principiu, printr-o curbă ascendentă",
+            "c": "apare în legătură cu suma dintre utilitatea totală și utilitatea marginală",
+            "d": "nu se poate reprezenta grafic"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Utilitatea totală crește, în general, pe măsura consumului — reprezentată grafic printr-o curbă ascendentă (cu pantă descrescândă)."
+        },
+        {
+          "numar_in_test": 93,
+          "capitol": "Utilitatea bunurilor economice — utilitatea marginală",
+          "dificultate": "usor",
+          "enunt": "Utilitatea marginală reprezintă:",
+          "optiuni": {
+            "a": "utilitatea primei unități consumate dintr-o serie de bunuri similare",
+            "b": "creșterea cu o unitate a cantității cumpărate dintr-un bun",
+            "c": "satisfacția resimțită de un consumator prin utilizarea unei doze oarecare dintr-un bun economic",
+            "d": "sporul utilității totale obținut prin creșterea cu o unitate a cantității consumate dintr-un bun"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Umg = ΔUT/ΔQ",
+          "rezolvare": "Definiția standard a utilității marginale."
+        },
+        {
+          "numar_in_test": 95,
+          "capitol": "Piața monetară",
+          "dificultate": "usor",
+          "enunt": "Între ofertanții de monedă remarcăm:",
+          "optiuni": {
+            "a": "agenții economici publici – ca debitori",
+            "b": "Banca Centrală și băncile comerciale",
+            "c": "cetățenii unei țări – ca debitori",
+            "d": "fie creditorii, fie debitorii"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Banca Centrală și băncile comerciale sunt ofertanții de monedă în economie."
+        },
+        {
+          "numar_in_test": 97,
+          "capitol": "Piața monetară — funcțiile banilor",
+          "dificultate": "usor",
+          "enunt": "Între funcțiile banilor, precizăm:",
+          "optiuni": {
+            "a": "funcția de corelare a cererii cu oferta",
+            "b": "funcția de recuperare a costurilor",
+            "c": "funcția de distribuire a veniturilor",
+            "d": "funcția de mijloc de schimb"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Mijlocul de schimb este funcția fundamentală a banilor."
+        },
+        {
+          "numar_in_test": 99,
+          "capitol": "Profitul",
+          "dificultate": "usor",
+          "enunt": "Între funcțiile profitului se numără aceea că:",
+          "optiuni": {
+            "a": "frânează creșterea economică",
+            "b": "stimulează creșterea costurilor de producție",
+            "c": "stimulează inițiativa agenților economici",
+            "d": "determină restrângerea ofertei"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Profitul este un stimulent fundamental pentru inițiativa antreprenorială."
+        },
+        {
+          "numar_in_test": 100,
+          "capitol": "Mecanismul concurențial — concurența monopolistică",
+          "dificultate": "usor",
+          "enunt": "Ce tip de piață se caracterizează prin atomicitatea cererii și ofertei, prin lipsa de omogenitate a produselor și posibilitatea unei bune satisfaceri a cererii:",
+          "optiuni": {
+            "a": "piața cu concurență monopolistică",
+            "b": "piața cu concurență oligopol",
+            "c": "monopsonul",
+            "d": "oligopsonul"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Concurența monopolistică păstrează atomicitatea (numeroși participanți), dar produsele sunt diferențiate (nu omogene)."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 8,
+      "exercitii": [
+        {
+          "numar_in_test": 62,
+          "capitol": "Piața și echilibrul pieței",
+          "dificultate": "mediu",
+          "enunt": "Când cererea este mai mică decât oferta, este cazul:",
+          "optiuni": {
+            "a": "unei piețe a vânzătorilor – care își cresc producția în mod corespunzător",
+            "b": "unei piețe pe care se acționează pentru mărirea prețurilor",
+            "c": "unei piețe a cumpărătorilor",
+            "d": "unei piețe pe care se fac presiuni pentru descurajarea exporturilor"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Excesul de ofertă (cerere<ofertă) avantajează cumpărătorii — este o piață a cumpărătorilor."
+        },
+        {
+          "numar_in_test": 70,
+          "capitol": "Creșterea economică",
+          "dificultate": "mediu",
+          "enunt": "Care este relația existentă între prețurile pieței (PP) și prețurile factorilor de producție (PF):",
+          "optiuni": {
+            "a": "PP < PF",
+            "b": "PP > PF",
+            "c": "PP = PF",
+            "d": "niciunul din răspunsurile anterioare nu este corect"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Prețurile pieței includ, de regulă, impozitele indirecte peste prețurile factorilor de producție — deci PP>PF."
+        },
+        {
+          "numar_in_test": 80,
+          "capitol": "Costul producției",
+          "dificultate": "mediu",
+          "enunt": "Identificați care din următoarele afirmații este adevărată:",
+          "optiuni": {
+            "a": "amortizarea se referă la expresia fizică a gradului de uzură în privința capitalului fix",
+            "b": "pe perioadă scurtă, mărimea costului fix mediu nu depinde de nivelul producției",
+            "c": "mărimea costului total mediu nu este egală cu cea a costului variabil mediu",
+            "d": "costul variabil poate fi egal cu costul total"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "CMT = CMF + CMV",
+          "rezolvare": "În condiții normale (CF>0), CMT>CMV întotdeauna — afirmația c este adevărată. Celelalte sunt false: amortizarea e expresia valorică (nu fizică) a uzurii; CMF depinde de Q; CV=CT doar dacă CF=0, caz special."
+        },
+        {
+          "numar_in_test": 88,
+          "capitol": "Piața și echilibrul pieței — curba cererii",
+          "dificultate": "mediu",
+          "enunt": "Când crește cererea pentru un bun ca urmare a majorării venitului consumatorului (celelalte condiții ale pieței rămânând neschimbate), curba cererii:",
+          "optiuni": {
+            "a": "se translatează spre stânga față de poziția ei precedentă",
+            "b": "se deplasează spre dreapta, în raport cu aliniamentul ei anterior",
+            "c": "nu-și modifică poziția",
+            "d": "se deplasează în jos și scade"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Creșterea cererii (pentru un bun normal, cu venit mai mare) se reflectă printr-o deplasare a curbei spre dreapta."
+        },
+        {
+          "numar_in_test": 91,
+          "capitol": "Piața și echilibrul pieței — factorii cererii",
+          "dificultate": "mediu",
+          "enunt": "Între factorii care influențează cererea pentru un bun pe piață, menționăm:",
+          "optiuni": {
+            "a": "modificarea prețurilor altor bunuri (aflate în legătură cu cel vizat)",
+            "b": "modificarea veniturilor producătorilor",
+            "c": "modificarea costurilor de producție și de distribuție",
+            "d": "elasticitatea ofertei"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Prețurile bunurilor conexe (substitute/complementare) influențează cererea pentru bunul vizat."
+        },
+        {
+          "numar_in_test": 94,
+          "capitol": "Piața și echilibrul pieței — elasticitate",
+          "dificultate": "mediu",
+          "enunt": "Cum se determină coeficientul de elasticitate a cererii în funcție de preț:",
+          "optiuni": {
+            "a": "ca diferență între variația procentuală a prețului și cea a cererii",
+            "b": "ca raport între modificarea procentuală a ofertei și cea a cererii",
+            "c": "ca raport între modificarea procentuală a cantității cerute și modificarea procentuală a prețului",
+            "d": "ca raport între variația cererii și prețul de referință al unui bun"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "Kc/p = Δ%Cerere/Δ%Preț",
+          "rezolvare": "Formula standard a coeficientului de elasticitate."
+        },
+        {
+          "numar_in_test": 96,
+          "capitol": "Piața muncii",
+          "dificultate": "mediu",
+          "enunt": "Care este condiția ca nevoia de muncă să fie considerată cerere de muncă:",
+          "optiuni": {
+            "a": "să fie egală cu oferta de muncă",
+            "b": "să fie cuantificabilă",
+            "c": "să fie făcută o cerere în acest sens, către Oficiul forței de muncă",
+            "d": "să fie salarizată"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "O nevoie de muncă devine cerere efectivă doar dacă este susținută de capacitatea de a plăti (salariza) postul respectiv — similar cererii solvabile."
+        },
+        {
+          "numar_in_test": 98,
+          "capitol": "Piața mondială — cursul de revenire",
+          "dificultate": "mediu",
+          "enunt": "O operațiune de export este eficientă când:",
+          "optiuni": {
+            "a": "cursul de revenire la import este mai mic sau cel mult egal cu cursul de schimb",
+            "b": "cursul de revenire la export se stabilește de către stat",
+            "c": "cursul de revenire la export este egal cu cursul de revenire la import",
+            "d": "cursul de revenire la export este mai mic sau cel mult egal cu nivelul cursului de schimb"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Pentru ca exportul să fie eficient, costul intern al obținerii unei unități de valută prin export trebuie să fie mai mic sau egal cu cursul de schimb oficial."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 7,
+      "exercitii": [
+        {
+          "numar_in_test": 75,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "greu",
+          "enunt": "Cât reprezintă sporul venitului, în condițiile în care creșterea investițiilor este 316 miliarde u.m., iar sporul consumului 582 miliarde u.m. (în ipoteza în care presupunem că mărimea investițiilor este egală cu cea a economiilor):",
+          "optiuni": {
+            "a": "266 miliarde u.m.",
+            "b": "84%",
+            "c": "898 miliarde u.m.",
+            "d": "nu se poate determina pe baza datelor oferite"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "ΔV = ΔC + ΔI (cu I=E)",
+          "rezolvare": "ΔV=ΔC+ΔI=582+316=898 miliarde u.m."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "greu",
+          "enunt": "Multiplicatorul investițiilor (K) arată că atunci când are loc o majorare a investițiilor față de situația inițială, se constată:",
+          "optiuni": {
+            "a": "creșterea de K ori a investițiilor nete determinate de sporirea venitului",
+            "b": "că venitul va spori de K ori mai mult față de sporul investițiilor",
+            "c": "scăderea ritmului investițiilor la nivel național",
+            "d": "că evoluția ritmului K al creșterii investițiilor va fi pe măsura scăderii venitului"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "ΔV = K x ΔI",
+          "rezolvare": "Definiția multiplicatorului: sporul venitului este de K ori sporul investițiilor."
+        },
+        {
+          "numar_in_test": 79,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "greu",
+          "enunt": "Producția zilnică a unei firme este de 400 bucăți din bunul X, iar productivitatea medie a muncii este 20 bucăți / lucrător. Câți salariați (având aceeași productivitate) trebuie angajați în plus, pentru a crește producția la 660 bucăți:",
+          "optiuni": {
+            "a": "33 lucrători",
+            "b": "16 lucrători",
+            "c": "13 lucrători",
+            "d": "66 lucrători"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "L = Q/W̄L",
+          "rezolvare": "L0=400/20=20. L1=660/20=33. ΔL=33-20=13 lucrători."
+        },
+        {
+          "numar_in_test": 84,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "greu",
+          "enunt": "Dacă sporul venitului este 60 milioane u.m., iar sporul consumului 45 milioane u.m., rezultă că înclinația marginală spre economii are valoarea:",
+          "optiuni": {
+            "a": "0,75",
+            "b": "1,33",
+            "c": "1,25",
+            "d": "0,25"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "e' = ΔE/ΔV = (ΔV-ΔC)/ΔV",
+          "rezolvare": "ΔE=60-45=15. e'=15/60=0,25."
+        },
+        {
+          "numar_in_test": 85,
+          "capitol": "Profitul",
+          "dificultate": "greu",
+          "enunt": "Dacă masa profitului sporește, iar cifra de afaceri a agentului economic productiv rămâne constantă, rata profitului la cifra de afaceri:",
+          "optiuni": {
+            "a": "nu se modifică",
+            "b": "scade",
+            "c": "este egală cu rata profitului calculată la costurile totale",
+            "d": "crește"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "RPr(CA) = (Pr.T/CA) x 100",
+          "rezolvare": "Cu CA constant și Pr.T în creștere, raportul Pr.T/CA crește."
+        },
+        {
+          "numar_in_test": 89,
+          "capitol": "Piața monetară — masa monetară",
+          "dificultate": "greu",
+          "enunt": "Dacă masa monetară este de 50 de miliarde u.m., cantitatea de bunuri aflate în circulație de 200.000 bucăți, iar viteza de rotație a banilor este egală cu 4, prețul mediu (unitar) al bunurilor va fi:",
+          "optiuni": {
+            "a": "1.000.000 u.m.",
+            "b": "10.000.000 u.m.",
+            "c": "100.000 u.m.",
+            "d": "100.000.000 u.m."
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "M = (P x Q)/V → P = (M x V)/Q",
+          "rezolvare": "P=(50.000.000.000 x 4)/200.000=1.000.000 u.m."
+        },
+        {
+          "numar_in_test": 92,
+          "capitol": "Costul producției",
+          "dificultate": "greu",
+          "enunt": "Să se determine costul variabil mediu știind că producția obținută (Q) este 50 bucăți și costul variabil global (CV) este 5.000 u.m.:",
+          "optiuni": {
+            "a": "200 u.m.",
+            "b": "300 u.m.",
+            "c": "100 u.m.",
+            "d": "nu se poate determina, doar pe baza datelor deținute"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "CMV = CV/Q",
+          "rezolvare": "CMV=5.000/50=100 u.m."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 0,
+      "exercitii": []
+    }
+  ]
+}

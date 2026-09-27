@@ -1,0 +1,32 @@
+{
+  "visual_quality": "premium academic-modern",
+  "desktop_layout": "scenario/context + central interactive world + indicators",
+  "mobile_layout": "single column + sticky critical indicators + bottom sheet actions",
+  "required_controls": [
+    "restart",
+    "why",
+    "continue"
+  ],
+  "accessibility": [
+    "keyboard",
+    "tap alternative to drag",
+    "reduced motion",
+    "text fallback for charts"
+  ],
+  "game": "Market Maker",
+  "required_visual_components": [
+    "animated_supply_demand_svg",
+    "equilibrium_marker",
+    "market_city",
+    "shortage_surplus_overlay",
+    "price_tags"
+  ],
+  "micro_interactions": [
+    "animated number transitions",
+    "meaningful state changes after decisions",
+    "persistent selected state",
+    "tooltips/tap details",
+    "short explanation drawer",
+    "success/partial/incorrect feedback where applicable"
+  ]
+}

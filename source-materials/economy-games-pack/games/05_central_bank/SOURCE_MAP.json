@@ -1,0 +1,35 @@
+{
+  "sources": [
+    {
+      "file": "Capitolul 10 - Paiață Monetara_ex.pdf",
+      "topics": [
+        "piață monetară",
+        "dobândă",
+        "credit",
+        "masă monetară",
+        "reglarea masei monetare"
+      ]
+    },
+    {
+      "file": "Capitolul 11 - Inflația_ex.pdf",
+      "topics": [
+        "inflație",
+        "măsuri antiinflaționiste"
+      ]
+    },
+    {
+      "file": "Capitolul 15 - Venitul, consumul si investitiile_ex.pdf",
+      "topics": [
+        "consum",
+        "investiții",
+        "multiplicator"
+      ]
+    },
+    {
+      "file": "Capitolul 17 - Ciclicitatea economica_ex.pdf",
+      "topics": [
+        "politică monetară anticiclică"
+      ]
+    }
+  ]
+}

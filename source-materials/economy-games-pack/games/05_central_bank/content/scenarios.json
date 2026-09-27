@@ -1,0 +1,98 @@
+[
+  {
+    "id": "cb01",
+    "title": "Inflație peste țintă",
+    "difficulty": "easy",
+    "initial": {
+      "inflation": 8.0,
+      "growth": 3.0,
+      "unemployment": 5.5,
+      "rate": 5.0,
+      "credit_growth": 12.0
+    }
+  },
+  {
+    "id": "cb02",
+    "title": "Recesiune",
+    "difficulty": "easy",
+    "initial": {
+      "inflation": 2.5,
+      "growth": -1.5,
+      "unemployment": 9.0,
+      "rate": 6.0,
+      "credit_growth": -2.0
+    }
+  },
+  {
+    "id": "cb03",
+    "title": "Economia se supraîncălzește",
+    "difficulty": "medium",
+    "initial": {
+      "inflation": 7.0,
+      "growth": 6.0,
+      "unemployment": 3.5,
+      "rate": 4.0,
+      "credit_growth": 16.0
+    }
+  },
+  {
+    "id": "cb04",
+    "title": "Stagflație",
+    "difficulty": "hard",
+    "initial": {
+      "inflation": 10.0,
+      "growth": -0.5,
+      "unemployment": 8.0,
+      "rate": 7.0,
+      "credit_growth": 3.0
+    }
+  },
+  {
+    "id": "cb05",
+    "title": "Credit foarte rapid",
+    "difficulty": "medium",
+    "initial": {
+      "inflation": 5.5,
+      "growth": 4.0,
+      "unemployment": 4.8,
+      "rate": 3.5,
+      "credit_growth": 20.0
+    }
+  },
+  {
+    "id": "cb06",
+    "title": "Cerere slabă",
+    "difficulty": "medium",
+    "initial": {
+      "inflation": 1.0,
+      "growth": 0.2,
+      "unemployment": 8.5,
+      "rate": 5.5,
+      "credit_growth": 0.0
+    }
+  },
+  {
+    "id": "cb07",
+    "title": "Inflație moderată, creștere bună",
+    "difficulty": "medium",
+    "initial": {
+      "inflation": 4.0,
+      "growth": 3.5,
+      "unemployment": 5.0,
+      "rate": 5.0,
+      "credit_growth": 8.0
+    }
+  },
+  {
+    "id": "cb08",
+    "title": "Șoc de ofertă",
+    "difficulty": "hard",
+    "initial": {
+      "inflation": 9.0,
+      "growth": 1.0,
+      "unemployment": 6.5,
+      "rate": 6.0,
+      "credit_growth": 6.0
+    }
+  }
+]

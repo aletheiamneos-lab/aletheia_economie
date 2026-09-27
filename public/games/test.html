@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Test jocuri Economy Lab</title>
+<style>body{margin:0;font-family:system-ui,sans-serif;background:#DCE6F2;color:#1B2440}
+.bar{display:flex;gap:8px;padding:10px;flex-wrap:wrap}select,button{font:inherit;padding:8px}
+.wrap{display:grid;grid-template-columns:420px 1fr;gap:10px;padding:0 10px 10px}iframe{width:100%;height:85vh;border:2px solid #1B2440;border-radius:12px;background:#fff}
+pre{background:#fff;border:2px solid #1B2440;border-radius:12px;padding:10px;height:85vh;overflow:auto;margin:0;font-size:12px}
+@media(max-width:800px){.wrap{grid-template-columns:1fr}}</style></head>
+<body><div class="bar"><b>Pagină de test (nu face parte din aplicație)</b><select id="sel"></select></div>
+<div class="wrap"><iframe id="f" title="Joc"></iframe><pre id="log">Evenimente primite de la joc:
+</pre></div>
+<script>
+fetch("games.json").then(r=>r.json()).then(m=>{const s=document.getElementById("sel");
+ m.games.forEach(g=>s.add(new Option(g.title+" ("+g.id+")",g.file)));
+ s.onchange=()=>{document.getElementById("f").src=s.value;document.getElementById("log").textContent="Evenimente primite de la joc:\n"};s.onchange()});
+addEventListener("message",e=>{if(e.origin!==location.origin||!e.data||e.data.source!=="economy-lab")return;
+ document.getElementById("log").textContent+=JSON.stringify(e.data)+"\n"});
+</script></body></html>

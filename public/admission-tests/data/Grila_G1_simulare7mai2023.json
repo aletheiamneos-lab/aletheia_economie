@@ -1,0 +1,492 @@
+{
+  "an": 2023,
+  "sesiune": "Simulare 7 mai 2023",
+  "varianta": "G1",
+  "sursa_subiecte": "Simulare__Subiecte_Grila_17_05_2023.pdf",
+  "sursa_barem": "Simulare__Grila_17_05_2023.pdf",
+  "interval_economie_in_test": "51-80",
+  "grupe": [
+    {
+      "grupa": 1,
+      "nivel_dificultate": "usor",
+      "titlu_grupa": "Grupa 1 — Ușor",
+      "numar_exercitii": 13,
+      "exercitii": [
+        {
+          "numar_in_test": 51,
+          "capitol": "Utilitatea bunurilor economice",
+          "dificultate": "usor",
+          "enunt": "Serviciile sunt:",
+          "optiuni": {
+            "a": "obiecte economice cu existență necorporală",
+            "b": "bunuri cu existență condiționată de cea a bunurilor de consum",
+            "c": "factori de producție",
+            "d": "bunuri libere"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Serviciile sunt bunuri economice (rare, produse prin efort, satisfac o nevoie), dar spre deosebire de bunurile materiale nu au formă tangibilă — sunt bunuri cu existență necorporală (imaterială)."
+        },
+        {
+          "numar_in_test": 52,
+          "capitol": "Introducere în economie — bunuri libere",
+          "dificultate": "usor",
+          "enunt": "Are caracter de bun liber:",
+          "optiuni": {
+            "a": "apa îmbuteliată",
+            "b": "marfa cu preț redus",
+            "c": "lumina solară",
+            "d": "transportul public"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Bunurile libere (neeconomice) există în cantități nelimitate, nu presupun efort de producție și nu fac obiectul unei tranzacții de piață — lumina solară este exemplul clasic. Apa îmbuteliată, transportul public și marfa (chiar la preț redus) sunt toate bunuri economice, obținute prin efort și tranzacționate pe piață."
+        },
+        {
+          "numar_in_test": 53,
+          "capitol": "Utilitatea bunurilor economice — bunuri complementare",
+          "dificultate": "usor",
+          "enunt": "Constituie bunuri complementare:",
+          "optiuni": {
+            "a": "stiloul și cerneala",
+            "b": "ochelarii și lentilele de contact",
+            "c": "mierea și zahărul",
+            "d": "untul și margarina"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Bunurile complementare se consumă/utilizează împreună, satisfăcând o nevoie comună (stiloul are nevoie de cerneală pentru a funcționa). Celelalte perechi (ochelari/lentile, miere/zahăr, unt/margarină) sunt bunuri substituibile — oricare poate înlocui, la nevoie, pe celălalt."
+        },
+        {
+          "numar_in_test": 54,
+          "capitol": "Economia de piață și proprietatea",
+          "dificultate": "usor",
+          "enunt": "Indicați situația care nu implică înstrăinarea integrală a atributelor proprietății:",
+          "optiuni": {
+            "a": "vânzare-cumpărare",
+            "b": "moștenire",
+            "c": "donație",
+            "d": "închiriere"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": null,
+          "rezolvare": "Închirierea transferă doar dreptul de folosință (usus) al bunului, temporar, păstrând celelalte atribute ale proprietății (posesia definitivă, dispoziția) la proprietarul inițial. Vânzarea, moștenirea și donația transferă integral toate atributele proprietății către noul titular."
+        },
+        {
+          "numar_in_test": 56,
+          "capitol": "Factorii de producție — munca",
+          "dificultate": "usor",
+          "enunt": "Ce este munca?:",
+          "optiuni": {
+            "a": "modul de afirmare a abilităților intelectuale ale omului",
+            "b": "activitatea conștientă, specific umană, îndreptată spre un anumit scop lucrativ",
+            "c": "modalitatea de afirmare a progresului tehnic",
+            "d": "o parte a capitalului circulant"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Munca este definită ca activitatea conștientă, specific umană, desfășurată în vederea obținerii unui scop lucrativ (venit) — factorul de producție originar, alături de natură."
+        },
+        {
+          "numar_in_test": 57,
+          "capitol": "Factorii de producție — capitalul circulant",
+          "dificultate": "usor",
+          "enunt": "Care din următoarele elemente sunt incluse în capitalul circulant?:",
+          "optiuni": {
+            "a": "clădirile administrative",
+            "b": "energia",
+            "c": "metodele de fabricație",
+            "d": "niciunul dintre elementele de mai sus"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Energia se consumă integral într-un singur ciclu de producție, fiind element al capitalului circulant. Clădirile administrative aparțin capitalului fix, iar metodele de fabricație nu sunt un bun material, ci mai degrabă know-how/informație."
+        },
+        {
+          "numar_in_test": 58,
+          "capitol": "Eficiența economică și productivitatea",
+          "dificultate": "usor",
+          "enunt": "În termeni generali, raportul efect economic (rezultate economice, output) / efort economic (resurse, input) ia forma:",
+          "optiuni": {
+            "a": "prețului unui bun",
+            "b": "productivității",
+            "c": "cantității cerute dintr-un bun",
+            "d": "banilor"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Ee = Efecte/Eforturi",
+          "rezolvare": "Eficiența economică (Ee), definită generic ca raportul efecte/eforturi (output/input), ia forma particulară a productivității atunci când efectul este cantitatea de bunuri produsă, iar efortul este cantitatea de factori de producție consumată."
+        },
+        {
+          "numar_in_test": 59,
+          "capitol": "Mecanismul concurențial — concurența perfectă",
+          "dificultate": "usor",
+          "enunt": "Informarea completă a producătorilor și consumatorilor pe piața cu concurență perfectă este relevată de:",
+          "optiuni": {
+            "a": "omogenitatea produsului",
+            "b": "transparența perfectă",
+            "c": "atomicitatea pieței",
+            "d": "perfecta mobilitate a factorilor de producție"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": null,
+          "rezolvare": "Transparența perfectă este, prin definiție, condiția de concurență perfectă care presupune informarea completă și gratuită a tuturor participanților la piață cu privire la prețuri, calitate și condiții de tranzacționare."
+        },
+        {
+          "numar_in_test": 61,
+          "capitol": "Inflația — deflația",
+          "dificultate": "usor",
+          "enunt": "Deflația reprezintă:",
+          "optiuni": {
+            "a": "sinonimul inflației",
+            "b": "vechea denumire a inflației (din secolele trecute)",
+            "c": "procesul de scădere generalizată a prețurilor",
+            "d": "procesul de creștere a ratei dobânzii la depozitele bancare"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Deflația este procesul opus inflației: o scădere generalizată și susținută a nivelului prețurilor în economie."
+        },
+        {
+          "numar_in_test": 62,
+          "capitol": "Piața de capital",
+          "dificultate": "usor",
+          "enunt": "Venitul variabil obținut în urma plasării capitalului în titluri de valoare de tipul acțiunilor se numește:",
+          "optiuni": {
+            "a": "dividend",
+            "b": "salariu",
+            "c": "curs",
+            "d": "profit"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Dividendul este venitul variabil (dependent de profitul obținut de societate) cuvenit deținătorilor de acțiuni, ca urmare a plasării capitalului în acest tip de titluri de valoare."
+        },
+        {
+          "numar_in_test": 66,
+          "capitol": "Piața mondială",
+          "dificultate": "usor",
+          "enunt": "Ce este economia mondială:",
+          "optiuni": {
+            "a": "ansamblul economiilor naționale privite în interdependența legăturilor dintre ele",
+            "b": "este doar mulțimea statelor membre ONU",
+            "c": "cuprinde numai statele membre ale Organizației Mondiale a Comerțului",
+            "d": "cuprinde numai statele cu economie de piață"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Economia mondială este definită ca ansamblul economiilor naționale, privite în interdependența relațiilor dintre ele — nu se limitează la un anumit grup de state sau organizație internațională."
+        },
+        {
+          "numar_in_test": 67,
+          "capitol": "Piața mondială — forme de integrare economică",
+          "dificultate": "usor",
+          "enunt": "Zona de liber schimb se caracterizează și prin:",
+          "optiuni": {
+            "a": "eliminarea taxelor vamale",
+            "b": "instituirea unui regim comercial unic în relațiile reciproce",
+            "c": "liberalizarea completă a schimburilor comerciale cu terții",
+            "d": "excluderea măsurilor protecționiste din relațiile reciproce"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Zona de liber schimb presupune eliminarea taxelor vamale (și a altor bariere comerciale) în relațiile dintre țările membre, dar fiecare membru își păstrează propria politică comercială față de state terțe — spre deosebire de uniunea vamală, unde există și o politică comercială externă comună."
+        },
+        {
+          "numar_in_test": 68,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "usor",
+          "enunt": "Dacă înclinația marginală spre economii este 1/9, iar economiile sunt egale cu investițiile, multiplicatorul investițiilor este:",
+          "optiuni": {
+            "a": "egal cu 11,11%",
+            "b": "egal cu 9",
+            "c": "egal cu 1/9",
+            "d": "informațiile oferite sunt insuficiente pentru determinarea lui"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "K = 1/e'",
+          "rezolvare": "Multiplicatorul investițiilor: K = 1/e' = 1/(1/9) = 9."
+        }
+      ]
+    },
+    {
+      "grupa": 2,
+      "nivel_dificultate": "mediu",
+      "titlu_grupa": "Grupa 2 — Mediu",
+      "numar_exercitii": 13,
+      "exercitii": [
+        {
+          "numar_in_test": 55,
+          "capitol": "Piața factorilor de producție",
+          "dificultate": "mediu",
+          "enunt": "Posesorul unui factor de producție pe care îl comercializează poate obține un venit mai mare în condiții de ofertă elastică atunci când, pe piața acestui factor de producție:",
+          "optiuni": {
+            "a": "oferta crește și cererea scade",
+            "b": "oferta este mai mare decât cererea",
+            "c": "oferta este mai mică decât cererea",
+            "d": "oferta nu se modifică"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": null,
+          "rezolvare": "Ca pe orice piață, atunci când oferta unui factor de producție este mai mică decât cererea pentru el (exces de cerere), prețul/venitul obținut de posesorul factorului crește."
+        },
+        {
+          "numar_in_test": 60,
+          "capitol": "Piața monetară — rata dobânzii",
+          "dificultate": "mediu",
+          "enunt": "O rată lunară a dobânzii (fără capitalizare) egală cu 0,3% înseamnă o rată trimestrială a dobânzii egală cu:",
+          "optiuni": {
+            "a": "9%",
+            "b": "0,009",
+            "c": "1,2%",
+            "d": "9"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Rata trimestrială = Rata lunară x 3",
+          "rezolvare": "Rata trimestrială (fără capitalizare) = 0,3% x 3 luni = 0,9%. Exprimat ca fracție zecimală (formatul variantei b), 0,9% = 0,009 — acesta este răspunsul corect (atenție, aici varianta a, 9%, este o capcană din cauza formatului diferit față de alte variante ale grilei)."
+        },
+        {
+          "numar_in_test": 63,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "mediu",
+          "enunt": "Indicatorul economic care arată ponderea economiilor destinate investițiilor în totalul venitului (disponibil) se numește:",
+          "optiuni": {
+            "a": "accelerator",
+            "b": "investiție netă",
+            "c": "înclinație marginală spre economisire",
+            "d": "rată medie de economisire"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "ē = E/V_D",
+          "rezolvare": "Rata medie de economisire (ē) se definește exact ca ponderea economiilor (E) în totalul venitului disponibil (V_D): ē = E/V_D. Înclinația marginală spre economisire, în schimb, se referă la sporuri (ΔE/ΔV_D), nu la nivelul total."
+        },
+        {
+          "numar_in_test": 64,
+          "capitol": "Ciclicitatea economică",
+          "dificultate": "mediu",
+          "enunt": "În faza de depresiune a ciclului economic:",
+          "optiuni": {
+            "a": "oferta agregată depășește cererea agregată",
+            "b": "oferta agregată este depășită de cererea agregată",
+            "c": "scăderea ofertei și creșterea corespunzătoare a ofertei",
+            "d": "crește puterea de cumpărare a populației"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Depresiunea se caracterizează prin supraproducție relativă — oferta agregată (bunurile deja produse) depășește cererea agregată (capacitatea de absorbție a pieței), ceea ce menține prețurile și producția la un nivel scăzut."
+        },
+        {
+          "numar_in_test": 65,
+          "capitol": "Cererea agregată",
+          "dificultate": "mediu",
+          "enunt": "Ce este cererea agregată?:",
+          "optiuni": {
+            "a": "este expresia monetară a cheltuielilor totale, globale din economie",
+            "b": "este diferența dintre încasările și cheltuielile bugetului de stat",
+            "c": "este diferența dintre încasările din exporturi și plățile pentru importuri pe o perioadă de timp",
+            "d": "este situația de excedent a comerțului exterior"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": null,
+          "rezolvare": "Cererea agregată reprezintă expresia monetară a tuturor cheltuielilor efectuate în economie (de consum, investiționale, guvernamentale, nete de export) într-o perioadă dată."
+        },
+        {
+          "numar_in_test": 69,
+          "capitol": "Piața de capital — acțiuni",
+          "dificultate": "mediu",
+          "enunt": "Un acționar deține 30 din cele 30.000 acțiuni de tip A existente pe piață. Ponderea titlurilor aflate în posesia lui în totalul titlurilor de acest tip este:",
+          "optiuni": {
+            "a": "1%",
+            "b": "0,1%",
+            "c": "0,01%",
+            "d": "10%"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "Pondere = (nr. acțiuni deținute / total acțiuni) x 100",
+          "rezolvare": "Pondere = (30/30.000) x 100 = 0,1%."
+        },
+        {
+          "numar_in_test": 70,
+          "capitol": "Utilitatea bunurilor economice — optimul de consum",
+          "dificultate": "mediu",
+          "enunt": "Prețurile unitare ale bunurilor A și B, achiziționate de un consumator rațional, sunt PA = 6 u.m. și PB = 2 u.m. Rezultă că în cazul optimului de consum, raportul utilităților marginale UmgA / UmgB este egal cu:",
+          "optiuni": {
+            "a": "1/6",
+            "b": "12",
+            "c": "1/3",
+            "d": "3"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Umg(A)/Umg(B) = PA/PB",
+          "rezolvare": "La optimul de consum, Umg(A)/PA = Umg(B)/PB, deci Umg(A)/Umg(B) = PA/PB = 6/2 = 3."
+        },
+        {
+          "numar_in_test": 71,
+          "capitol": "Costul producției — costul marginal",
+          "dificultate": "mediu",
+          "enunt": "Producția a 3 creioane automate costă 60 u.m., iar producția a 4 asemenea bunuri costă 64 u.m. Costul marginal al fabricării celui de-al patrulea creion este (în u.m.):",
+          "optiuni": {
+            "a": "12",
+            "b": "1,33",
+            "c": "1",
+            "d": "4"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "C.mg = ΔCT/ΔQ",
+          "rezolvare": "C.mg = ΔCT/ΔQ = (64 – 60)/(4 – 3) = 4/1 = 4 u.m."
+        },
+        {
+          "numar_in_test": 72,
+          "capitol": "Utilitatea bunurilor economice — utilitatea marginală",
+          "dificultate": "mediu",
+          "enunt": "Prin consumul celei de-a 7-a unități dintr-un bun economic, utilitatea totală crește de la 35 la 43 unități de utilitate. Utilitatea marginală determinată de cea de-a 7-a unitate consumată este (în unități de utilitate):",
+          "optiuni": {
+            "a": "43",
+            "b": "35",
+            "c": "1",
+            "d": "8"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "Umg = ΔUT/ΔQ",
+          "rezolvare": "Umg = ΔUT = UT7 – UT6 = 43 – 35 = 8 unități de utilitate."
+        },
+        {
+          "numar_in_test": 75,
+          "capitol": "Costul producției / Profitul",
+          "dificultate": "mediu",
+          "enunt": "Pentru o producție de 500 bunuri B, se înregistrează costuri totale medii de 10 u.m. / bucată. La o rată a profitului de 10% în raport cu costurile totale, prețul unui bun B (în u.m. / bucată) va fi:",
+          "optiuni": {
+            "a": "50",
+            "b": "10",
+            "c": "0,5",
+            "d": "11"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "RPr(CT) = (Pr/u.p / CMT) x 100; P = CMT + Pr/u.p",
+          "rezolvare": "Profitul unitar: Pr/u.p = 10% x CMT = 0,1 x 10 = 1 u.m. Prețul: P = CMT + Pr/u.p = 10 + 1 = 11 u.m."
+        },
+        {
+          "numar_in_test": 76,
+          "capitol": "Piața muncii — salariul real și nominal",
+          "dificultate": "mediu",
+          "enunt": "La o reducere cu 1/4 a salariului real ca urmare a creșterii cu 20% a prețurilor bunurilor de consum, rezultă că față de nivelul său inițial, salariul nominal:",
+          "optiuni": {
+            "a": "a crescut cu 10%",
+            "b": "a scăzut cu 10%",
+            "c": "a scăzut cu 90%",
+            "d": "a scăzut cu 0,9%"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "I_SR = (I_SN/I_P) x 100",
+          "rezolvare": "Salariul real scade cu 1/4 (25%), deci indicele său este 75%. Indicele prețurilor: 120% (creștere cu 20%). Din I_SR = (I_SN/I_P) x 100: 75 = (I_SN/120) x 100 → I_SN = 75 x 120/100 = 90%. Salariul nominal a scăzut, așadar, cu 10% (100% – 90%)."
+        },
+        {
+          "numar_in_test": 77,
+          "capitol": "Venitul, consumul și investițiile",
+          "dificultate": "mediu",
+          "enunt": "Într-un interval de timp, venitul se majorează cu 2.000 milioane u.m., iar economiile cresc cu 1/4 din sporul venitului. Așadar, mărimea înclinației marginale spre consum a perioadei este egală cu:",
+          "optiuni": {
+            "a": "4",
+            "b": "2500",
+            "c": "0,25",
+            "d": "0,75"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "c' = ΔC/ΔV_D",
+          "rezolvare": "ΔV_D = 2.000. ΔE = (1/4) x 2.000 = 500. ΔC = ΔV_D – ΔE = 2.000 – 500 = 1.500. c' = 1.500/2.000 = 0,75."
+        },
+        {
+          "numar_in_test": 78,
+          "capitol": "Venitul, consumul și investițiile — multiplicatorul",
+          "dificultate": "mediu",
+          "enunt": "În ipoteza în care investițiile sunt egale cu economiile, iar multiplicatorul investițiilor este 4, înclinația marginală spre economisire va fi:",
+          "optiuni": {
+            "a": "0,25",
+            "b": "4",
+            "c": "3/4",
+            "d": "4/3"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "K = 1/e'",
+          "rezolvare": "Din K = 1/e', rezultă e' = 1/K = 1/4 = 0,25."
+        }
+      ]
+    },
+    {
+      "grupa": 3,
+      "nivel_dificultate": "greu",
+      "titlu_grupa": "Grupa 3 — Greu",
+      "numar_exercitii": 3,
+      "exercitii": [
+        {
+          "numar_in_test": 73,
+          "capitol": "Piața și echilibrul pieței — prețuri",
+          "dificultate": "greu",
+          "enunt": "În anul curent, prețul P1 al unui bun este 1.225 u.m., ceea ce arată o creștere cu 250% față de anul precedent. Înseamnă că în anul de bază, prețul P0 al bunului a fost:",
+          "optiuni": {
+            "a": "490 u.m.",
+            "b": "350 u.m.",
+            "c": "250 u.m.",
+            "d": "25% din nivelul lui P1"
+          },
+          "raspuns_corect": "b",
+          "formula_utilizata": "P1 = P0 x (1 + creșterea procentuală)",
+          "rezolvare": "O creștere cu 250% înseamnă P1 = P0 x (1 + 2,5) = P0 x 3,5 (nu P0 x 2,5 — atenție, prețul nou este cel vechi PLUS creșterea de 250% din el). Rezultă P0 = P1/3,5 = 1.225/3,5 = 350 u.m."
+        },
+        {
+          "numar_in_test": 74,
+          "capitol": "Piața și echilibrul pieței — cerere și ofertă",
+          "dificultate": "greu",
+          "enunt": "Pe piața unui bun, dependența cererii C și a ofertei O față de prețul bunului denotă că la prețul de echilibru Pe = 2 u.m., cantitatea de echilibru Qe = 34 bucăți. Dacă funcția cererii este C = 40 – 3·P, funcția ofertei are forma:",
+          "optiuni": {
+            "a": "O = 34 + P",
+            "b": "O = 40 + 3·P",
+            "c": "O = 22 + 6·P",
+            "d": "O = 20 + 8·P"
+          },
+          "raspuns_corect": "c",
+          "formula_utilizata": "La echilibru: C(Pe) = O(Pe) = Qe",
+          "rezolvare": "Se verifică cererea: C(2) = 40 – 6 = 34 = Qe ✓. Funcția ofertei trebuie să satisfacă O(2) = 34. Testând: a) 36; b) 46; c) 22+12=34 ✓; d) 36. Singura variantă compatibilă este O = 22 + 6·P."
+        },
+        {
+          "numar_in_test": 79,
+          "capitol": "Inflația — puterea de cumpărare",
+          "dificultate": "greu",
+          "enunt": "Într-un interval de timp, într-o țară, rata inflației (determinată exclusiv de creșterea generalizată a prețurilor în economie) este egală cu 150%. Rezultă că în perioada dată, pe fondul unei mase monetare constante, puterea de cumpărare a banilor scade:",
+          "optiuni": {
+            "a": "cu 33,3%",
+            "b": "cu 50%",
+            "c": "la 66,7%",
+            "d": "cu 60%"
+          },
+          "raspuns_corect": "d",
+          "formula_utilizata": "I_PCM = (I_M/I_GP) x 100",
+          "rezolvare": "Rata inflației de 150% înseamnă I_GP = 250%. Cu masa monetară constantă (I_M=100%): I_PCM = (100/250) x 100 = 40%. Puterea de cumpărare scade cu 100% – 40% = 60%."
+        }
+      ]
+    },
+    {
+      "grupa": 4,
+      "nivel_dificultate": "foarte_greu",
+      "titlu_grupa": "Grupa 4 — Foarte greu",
+      "numar_exercitii": 1,
+      "exercitii": [
+        {
+          "numar_in_test": 80,
+          "capitol": "Piața monetară — dobânda compusă",
+          "dificultate": "foarte_greu",
+          "enunt": "Suma de 5.000 u.m., depusă la bancă pe principiul dobânzii compuse, în condițiile unei rate anuale a dobânzii de 10%, a generat o sumă finală – deținută de către deponent la sfârșitul perioadei contractuale – egală cu 6.050 u.m. Înseamnă că termenul pentru care a fost depusă suma a fost:",
+          "optiuni": {
+            "a": "2 ani",
+            "b": "10 ani",
+            "c": "5 ani",
+            "d": "1,1 ani"
+          },
+          "raspuns_corect": "a",
+          "formula_utilizata": "St = Cr(1+d')ⁿ",
+          "rezolvare": "6.050 = 5.000 x (1,1)ⁿ → (1,1)ⁿ = 1,21 = 1,1² → n = 2 ani."
+        }
+      ]
+    }
+  ]
+}

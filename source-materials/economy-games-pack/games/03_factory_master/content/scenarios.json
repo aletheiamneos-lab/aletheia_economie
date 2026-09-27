@@ -1,0 +1,232 @@
+[
+  {
+    "id": "fm01",
+    "title": "Misiunea fabricii 1",
+    "difficulty": "easy",
+    "price": 50,
+    "fixed_cost": 120,
+    "wage": 25,
+    "material_unit": 10,
+    "output_by_workers": [
+      0,
+      8,
+      18,
+      30,
+      41,
+      50,
+      57
+    ],
+    "objective": "max_profit"
+  },
+  {
+    "id": "fm02",
+    "title": "Misiunea fabricii 2",
+    "difficulty": "easy",
+    "price": 55,
+    "fixed_cost": 140,
+    "wage": 24,
+    "material_unit": 11,
+    "output_by_workers": [
+      0,
+      7,
+      17,
+      29,
+      40,
+      49,
+      55
+    ],
+    "objective": "max_profit"
+  },
+  {
+    "id": "fm03",
+    "title": "Misiunea fabricii 3",
+    "difficulty": "easy",
+    "price": 45,
+    "fixed_cost": 100,
+    "wage": 20,
+    "material_unit": 9,
+    "output_by_workers": [
+      0,
+      9,
+      20,
+      32,
+      43,
+      52,
+      59
+    ],
+    "objective": "max_profit"
+  },
+  {
+    "id": "fm04",
+    "title": "Misiunea fabricii 4",
+    "difficulty": "easy",
+    "price": 60,
+    "fixed_cost": 180,
+    "wage": 28,
+    "material_unit": 12,
+    "output_by_workers": [
+      0,
+      8,
+      19,
+      31,
+      42,
+      51,
+      58
+    ],
+    "objective": "max_profit"
+  },
+  {
+    "id": "fm05",
+    "title": "Misiunea fabricii 5",
+    "difficulty": "medium",
+    "price": 48,
+    "fixed_cost": 150,
+    "wage": 22,
+    "material_unit": 10,
+    "output_by_workers": [
+      0,
+      6,
+      15,
+      27,
+      39,
+      49,
+      56
+    ],
+    "objective": "min_cost_target",
+    "target_q": 35
+  },
+  {
+    "id": "fm06",
+    "title": "Misiunea fabricii 6",
+    "difficulty": "medium",
+    "price": 52,
+    "fixed_cost": 160,
+    "wage": 26,
+    "material_unit": 9,
+    "output_by_workers": [
+      0,
+      10,
+      22,
+      34,
+      45,
+      54,
+      61
+    ],
+    "objective": "min_cost_target",
+    "target_q": 35
+  },
+  {
+    "id": "fm07",
+    "title": "Misiunea fabricii 7",
+    "difficulty": "medium",
+    "price": 65,
+    "fixed_cost": 220,
+    "wage": 30,
+    "material_unit": 14,
+    "output_by_workers": [
+      0,
+      9,
+      21,
+      35,
+      48,
+      58,
+      66
+    ],
+    "objective": "break_even"
+  },
+  {
+    "id": "fm08",
+    "title": "Misiunea fabricii 8",
+    "difficulty": "medium",
+    "price": 40,
+    "fixed_cost": 90,
+    "wage": 18,
+    "material_unit": 8,
+    "output_by_workers": [
+      0,
+      7,
+      16,
+      26,
+      35,
+      42,
+      47
+    ],
+    "objective": "break_even"
+  },
+  {
+    "id": "fm09",
+    "title": "Misiunea fabricii 9",
+    "difficulty": "hard",
+    "price": 58,
+    "fixed_cost": 170,
+    "wage": 25,
+    "material_unit": 13,
+    "output_by_workers": [
+      0,
+      8,
+      20,
+      33,
+      45,
+      55,
+      63
+    ],
+    "objective": "optimal_workers"
+  },
+  {
+    "id": "fm10",
+    "title": "Misiunea fabricii 10",
+    "difficulty": "hard",
+    "price": 62,
+    "fixed_cost": 210,
+    "wage": 29,
+    "material_unit": 12,
+    "output_by_workers": [
+      0,
+      9,
+      23,
+      38,
+      52,
+      63,
+      71
+    ],
+    "objective": "optimal_workers"
+  },
+  {
+    "id": "fm11",
+    "title": "Misiunea fabricii 11",
+    "difficulty": "hard",
+    "price": 50,
+    "fixed_cost": 130,
+    "wage": 27,
+    "material_unit": 9,
+    "output_by_workers": [
+      0,
+      11,
+      24,
+      38,
+      51,
+      62,
+      70
+    ],
+    "objective": "max_profit"
+  },
+  {
+    "id": "fm12",
+    "title": "Misiunea fabricii 12",
+    "difficulty": "hard",
+    "price": 54,
+    "fixed_cost": 150,
+    "wage": 23,
+    "material_unit": 12,
+    "output_by_workers": [
+      0,
+      8,
+      18,
+      29,
+      39,
+      47,
+      53
+    ],
+    "objective": "max_profit"
+  }
+]

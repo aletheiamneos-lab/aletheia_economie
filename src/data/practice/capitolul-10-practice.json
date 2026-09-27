@@ -1,0 +1,1288 @@
+{
+  "capitol": 10,
+  "titlu_capitol": "Piața monetară. Dobânda",
+  "nota_metodologica": "Partea de teorie testeaza notiunile din capitol (piata monetara, banii, masa monetara, dobanda). Partea de exercitii este alcatuita din probleme noi, originale, care folosesc exclusiv formulele din 'Centralizatorul de formule' al capitolului (M=PxQ/V, M=B.N+B.S, PCB=1/Ip, PCM=M/Ip, Ds=Cr.d'.n, Dc=Cr.(1+d')^n-Cr., Cs.B=D.a-D.p, d'a, d'p, d'n=d'r+r.i).",
+  "intrebari": [
+    {
+      "id": "C10_T01",
+      "capitol": 10,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Piața monetară reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de monedă, formându-se prețul tranzacțiilor, numit rata dobânzii",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Locul unde se stabilesc exclusiv salariile angajaților",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Spațiul economic exclusiv rezervat tranzacțiilor cu bunuri de consum final",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ansamblul resurselor naturale ale unei economii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Piața monetară funcționează după aceleași principii ca orice piață, doar că obiectul tranzacționat este moneda: cererea și oferta de bani se confruntă, iar prețul rezultat este chiar rata dobânzii. Prin urmare, răspunsul corect este: Spațiul economic în care se întâlnesc și se confruntă cererea cu oferta de monedă, formându-se prețul tranzacțiilor, numit rata dobânzii."
+    },
+    {
+      "id": "C10_T02",
+      "capitol": 10,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Obiectul tranzacțiilor de pe piața monetară îl reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Terenurile agricole și clădirile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv acțiunile tranzacționate la bursă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Masa monetară (banii naționali), supusă în principal operațiilor de creditare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv bunurile de larg consum",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Ceea ce circulă efectiv pe piața monetară este masa monetară (banii naționali), fie sub forma disponibilităților plasate în depozite, fie supusă operațiilor de creditare — nu bunuri de consum, acțiuni sau proprietăți imobiliare. Prin urmare, răspunsul corect este: Masa monetară (banii naționali), supusă în principal operațiilor de creditare."
+    },
+    {
+      "id": "C10_T03",
+      "capitol": 10,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Prețul tranzacțiilor de pe piața monetară este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Rata profitului",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Rata inflației",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Cursul valutar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Rata dobânzii",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Fiecare piață are propriul „preț”: pe piața monetară, acest preț al tranzacțiilor cu monedă este chiar rata dobânzii — nu rata inflației, a profitului sau cursul valutar, care sunt indicatori distincți. Prin urmare, răspunsul corect este: Rata dobânzii."
+    },
+    {
+      "id": "C10_T04",
+      "capitol": 10,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Laturile pieței monetare sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar oferta de forță de muncă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Cererea de monedă (credite) și oferta de monedă (credite)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv rezervele de aur ale băncii centrale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar cererea de bunuri de consum",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "La fel ca orice piață, piața monetară are două laturi complementare: cererea de monedă (nevoile de bani ale agenților economici) și oferta de monedă (cantitatea pusă la dispoziție de sistemul bancar-financiar). Prin urmare, răspunsul corect este: Cererea de monedă (credite) și oferta de monedă (credite)."
+    },
+    {
+      "id": "C10_T05",
+      "capitol": 10,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Exponenții cererii de monedă (debitorii) de pe piața monetară sunt, printre alții:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv băncile comerciale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Firmele, populația și trezoreria statului, care au temporar deficite de monedă",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv banca centrală",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv societățile de asigurări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Debitorii sunt cei care au, temporar, nevoie de bani suplimentari: firmele, populația, trezoreria statului și chiar băncile — nu instituțiile financiare care, de regulă, oferă monedă, precum banca centrală. Prin urmare, răspunsul corect este: Firmele, populația și trezoreria statului, care au temporar deficite de monedă."
+    },
+    {
+      "id": "C10_T06",
+      "capitol": 10,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre rolurile pieței monetare se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Acoperirea deficitului de monedă al unor agenți economici cu excedentul de monedă al altora, de regulă pe termen scurt",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Reglementarea exclusivă a pieței muncii",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Stabilirea directă a prețurilor bunurilor de consum",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a nevoii de credite din economie",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Piața monetară funcționează ca un mecanism de compensare: excedentul de monedă al unora acoperă deficitul temporar al altora, iar acest proces reglează, totodată, masa monetară existentă în economie. Prin urmare, răspunsul corect este: Acoperirea deficitului de monedă al unor agenți economici cu excedentul de monedă al altora, de regulă pe termen scurt."
+    },
+    {
+      "id": "C10_T07",
+      "capitol": 10,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Schimbul indirect (mijlocit de bani) al mărfurilor, spre deosebire de trocul (schimbul direct), presupune:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Absența completă a oricărei forme de schimb",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Schimbul exclusiv al bunurilor identice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Trecerea de la marfă la bani, apoi de la bani la o altă marfă",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Schimbul direct al unei mărfi contra alteia, fără niciun intermediar",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Trocul presupune schimbul direct marfă contra marfă, fără intermediar, în timp ce schimbul monetar (indirect) introduce banii ca verigă intermediară: marfă → bani → altă marfă. Prin urmare, răspunsul corect este: Trecerea de la marfă la bani, apoi de la bani la o altă marfă."
+    },
+    {
+      "id": "C10_T08",
+      "capitol": 10,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Banii reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar bancnotele emise de banca centrală",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Instrumentul social, general acceptat ca etalon al valorii, ca mijloc de plată, de schimb și de rezervă într-un spațiu economic dat",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv metalele prețioase, precum aurul și argintul",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un bun economic destinat exclusiv consumului final",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Definiția banilor este mult mai largă decât o singură formă istorică a lor (metale prețioase sau bancnote): ei reprezintă instrumentul social, general acceptat, care servește drept etalon al valorii și mijloc de plată, schimb și rezervă. Prin urmare, răspunsul corect este: Instrumentul social, general acceptat ca etalon al valorii, ca mijloc de plată, de schimb și de rezervă într-un spațiu economic dat."
+    },
+    {
+      "id": "C10_T09",
+      "capitol": 10,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Din punct de vedere istoric, prima formă de existență a banilor a fost reprezentată de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Bunurile materiale marfare (animale, blănuri, sare, bucăți de metal etc.), cu rol de intermediar al schimbului",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Banii scripturali (înscrisurile în conturile bancare)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Bancnotele convertibile în aur",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Banii electronici (cardul, cecul magnetic)",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Evoluția istorică a banilor a pornit de la bunuri materiale marfare (animale, blănuri, sare, bucăți de metal), a continuat cu metalele prețioase, monedele, bancnotele, banii scripturali și, abia la final, banii electronici. Prin urmare, răspunsul corect este: Bunurile materiale marfare (animale, blănuri, sare, bucăți de metal etc.), cu rol de intermediar al schimbului."
+    },
+    {
+      "id": "C10_T10",
+      "capitol": 10,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre funcțiile banilor se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mijloc (etalon) general de măsurare și comparare a valorii mărfurilor, prin intermediul prețului",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv funcția de a înlocui munca umană",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv funcția de a genera profit garantat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv funcția de a stabili rata inflației",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Banii îndeplinesc mai multe funcții — etalon de măsurare a valorii, mijloc de schimb, de plată și de economisire — niciuna dintre acestea nefiind cea descrisă în celelalte variante (garantarea unui profit, înlocuirea muncii sau stabilirea inflației). Prin urmare, răspunsul corect este: Mijloc (etalon) general de măsurare și comparare a valorii mărfurilor, prin intermediul prețului."
+    },
+    {
+      "id": "C10_T11",
+      "capitol": 10,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Puterea de cumpărare a unei unități monetare (PCB) se calculează ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Raportul dintre profitul bancar și capitalul propriu al băncii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Produsul dintre masa monetară și viteza de rotație a banilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Diferența dintre rata dobânzii active și cea pasivă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Inversul indicelui prețurilor (PCB = 1/I_P)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Puterea de cumpărare a unei unități monetare este invers legată de nivelul prețurilor: cu cât prețurile cresc, cu atât aceeași sumă de bani cumpără mai puțin — de unde formula PCB = 1/I_P. Prin urmare, răspunsul corect este: Inversul indicelui prețurilor (PCB = 1/I_P)."
+    },
+    {
+      "id": "C10_T12",
+      "capitol": 10,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Convertibilitatea banilor (monedei) reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Obligativitatea folosirii exclusive a monedei naționale, în orice tranzacție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Absența completă a unui curs de schimb definit",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Însușirea legală a unei monede naționale de a putea fi schimbată cu moneda altei țări în mod liber, la un preț numit curs valutar",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Interzicerea legală a oricărui schimb valutar",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Convertibilitatea este exact opusul interzicerii schimbului valutar: ea reprezintă dreptul legal al unei monede naționale de a fi schimbată liber cu moneda altei țări, la un preț numit curs valutar. Prin urmare, răspunsul corect este: Însușirea legală a unei monede naționale de a putea fi schimbată cu moneda altei țări în mod liber, la un preț numit curs valutar."
+    },
+    {
+      "id": "C10_T13",
+      "capitol": 10,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Masa monetară reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Totalitatea profiturilor obținute de firme",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv suma creditelor acordate de bănci într-un an",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv rezervele de aur ale băncii centrale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cantitatea de bani existentă în circulație, în posesia agenților economici, la un moment dat, într-o țară",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Masa monetară privește strict banii aflați efectiv în circulație, în posesia agenților economici la un moment dat — nu rezervele de aur, creditele acordate într-o perioadă sau profiturile firmelor. Prin urmare, răspunsul corect este: Cantitatea de bani existentă în circulație, în posesia agenților economici, la un moment dat, într-o țară."
+    },
+    {
+      "id": "C10_T14",
+      "capitol": 10,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Componentele principale ale masei monetare sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv acțiunile tranzacționate la bursă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv rezervele valutare ale statului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Banii numerar (B.N.) și banii scripturali sau de cont (B.S.)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv obligațiunile emise de stat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Masa monetară se compune din două elemente complementare: banii numerar (bancnote și monede metalice) și banii scripturali/de cont (sume înscrise în conturile bancare) — nu din instrumente financiare precum acțiunile sau obligațiunile. Prin urmare, răspunsul corect este: Banii numerar (B.N.) și banii scripturali sau de cont (B.S.)."
+    },
+    {
+      "id": "C10_T15",
+      "capitol": 10,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Spre deosebire de banii numerar, banii scripturali (de cont):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dețin întotdeauna ponderea cea mai mică în circulație, într-o țară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Nu au o existență materială, fizică, dar dețin ponderea cea mai mare în circulație",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Nu pot fi niciodată transformați în bani numerar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Au întotdeauna o existență materială, sub formă de bancnote",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Banii scripturali există doar ca înscrisuri în conturile bancare, fără o formă materială — și, contrar intuiției, dețin ponderea cea mai mare (de regulă 3/4 până la 9/10) din masa monetară totală a unei țări. Prin urmare, răspunsul corect este: Nu au o existență materială, fizică, dar dețin ponderea cea mai mare în circulație."
+    },
+    {
+      "id": "C10_T16",
+      "capitol": 10,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre factorii principali care influențează masa monetară se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv numărul de bănci comerciale existente",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv rata natalității dintr-o țară",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Volumul valoric al schimburilor mijlocite de bani, printr-o relație direct proporțională",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv suprafața agricolă a unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Masa monetară necesară economiei crește odată cu volumul valoric al schimburilor mijlocite de bani (P×Q) — relație direct proporțională — și scade odată cu creșterea vitezei de rotație a banilor, nu în funcție de natalitate sau suprafața agricolă. Prin urmare, răspunsul corect este: Volumul valoric al schimburilor mijlocite de bani, printr-o relație direct proporțională."
+    },
+    {
+      "id": "C10_T17",
+      "capitol": 10,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Reglarea banilor numerar aflați în circulație se realizează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Numai de către Banca Națională (Centrală), prin emisiune sau retragere de numerar",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv de către populație, prin economisire",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv de către băncile comerciale, prin operații de creditare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv de către firmele private, prin decizii proprii",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Spre deosebire de banii scripturali (reglați atât de Banca Națională, cât și de băncile comerciale), banii numerar sunt reglați exclusiv de Banca Națională, prin emisiune sau retragere de numerar din circulație. Prin urmare, răspunsul corect este: Numai de către Banca Națională (Centrală), prin emisiune sau retragere de numerar."
+    },
+    {
+      "id": "C10_T18",
+      "capitol": 10,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dobânda reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Suma totală a impozitelor plătite de un agent economic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Diferența dintre venitul total și costul total al unei firme",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Prețul unui bun economic la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Suma de bani pe care debitorul o plătește creditorului pentru folosirea banilor împrumutați până la scadență",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Dobânda este exact prețul folosirii banilor împrumutați: suma pe care debitorul o plătește creditorului pentru acest privilegiu, până la scadență — un venit pentru creditor și, în același timp, un cost pentru debitor. Prin urmare, răspunsul corect este: Suma de bani pe care debitorul o plătește creditorului pentru folosirea banilor împrumutați până la scadență."
+    },
+    {
+      "id": "C10_T19",
+      "capitol": 10,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dobânda simplă (Ds) se calculează, pentru o durată de acordare a creditului de cel mult un an, ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ds = Cr.(1 + d')ⁿ – Cr.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ds = Cr. × d' × n",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Ds = PCM/I_P",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Ds = D.a – D.p",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Dobânda simplă, specifică perioadelor de cel mult un an, se calculează direct proporțional cu volumul creditului, rata dobânzii și durata acordării: Ds = Cr. × d' × n — formula compusă (cu exponent) se aplică doar pentru perioade multianuale. Prin urmare, răspunsul corect este: Ds = Cr. × d' × n."
+    },
+    {
+      "id": "C10_T20",
+      "capitol": 10,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata nominală a dobânzii (d'n), spre deosebire de rata reală a dobânzii (d'r), este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Calculată exclusiv pentru creditele pe termen foarte scurt",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Întotdeauna mai mică decât rata reală a dobânzii",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Complet independentă de rata inflației, prin definiție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Influențată de rata inflației, conform relației d'n = d'r + r.i.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Rata reală a dobânzii este rata nominală „scuturată de zgura inflației” — relația dintre ele este d'n = d'r + r.i., ceea ce înseamnă că rata nominală include, spre deosebire de cea reală, efectul inflației. Prin urmare, răspunsul corect este: Influențată de rata inflației, conform relației d'n = d'r + r.i."
+    },
+    {
+      "id": "C10_E01",
+      "capitol": 10,
+      "numar": 1,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă prețurile din economie sporesc cu 20%, volumul mărfurilor tranzacționate pe piață scade cu 10%, iar viteza de rotație a banilor se reduce cu 10%, atunci masa monetară sporește (Δ%M) cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "10%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "8%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "30%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20%",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_P = 120%, I_Q = 90%, I_V = 90% → I_M = (I_P × I_Q)/I_V = (1,2 × 0,9)/0,9 × 100 = 120% ⇒ Δ%M = 20%."
+    },
+    {
+      "id": "C10_E02",
+      "capitol": 10,
+      "numar": 2,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă PCB crește cu 20%, în condițiile reducerii vitezei de rotație a banilor cu 20%, iar masa monetară crește de 1,25 ori, atunci indicele volumului de mărfuri tranzacționate (I_Q) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "120%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "90%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "125%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "12,5%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_PCB = 120% → I_P = (1/1,2) × 100 = 83,33%, I_M = 125%, I_V = 80% ⇒ I_Q = (I_M × I_V) : I_P = (1,25 × 0,8) : 0,8333 × 100 = 120%."
+    },
+    {
+      "id": "C10_E03",
+      "capitol": 10,
+      "numar": 3,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă masa monetară sporește cu 32%, iar prețurile cu 10%, atunci valoarea reală a masei monetare (PCM) va spori cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "20%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "10%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "22%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "32%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "I_M = 132%, iar I_P = 110% → I_PCM = (I_M/I_P) × 100 = (132/110) × 100 = 120% ⇒ Δ%PCM = 20%."
+    },
+    {
+      "id": "C10_E04",
+      "capitol": 10,
+      "numar": 4,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Valoarea tranzacțiilor dintr-un an este 2.400 mld. u.m., iar masa monetară care mijlocește schimburile este 800 mld. u.m. Durata unei rotații a monedei (D_R) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "3 luni",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "6 luni",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4 luni",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "2 luni",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "V = (P×Q)/M = 2.400/800 = 3 operații/an ⇒ D_R = 12 luni/3 = 4 luni."
+    },
+    {
+      "id": "C10_E05",
+      "capitol": 10,
+      "numar": 5,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Un elev primește lunar o alocație de 95 de lei. Dacă prețurile bunurilor de consum, în luna respectivă, scad cu 5%, atunci valoarea bunurilor care pot fi cumpărate la sfârșitul lunii (PCM):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a crescut cu 95 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "a rămas neschimbată",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a scăzut cu 5 lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "a crescut cu 5 lei",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_P = 95%. PCM (95 lei) = M/I_Pc = 95 : 0,95 = 100 lei ⇒ Δ(PCM) = 100 – 95 = 5 lei (creștere)."
+    },
+    {
+      "id": "C10_E06",
+      "capitol": 10,
+      "numar": 6,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Dacă masa monetară scade într-un an de 1,6 ori, în condițiile în care, cu excepția prețurilor, ceilalți factori care o influențează rămân constanți, atunci puterea de cumpărare a unei unități monetare (Δ%PCB):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "crește cu 37,5%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "scade cu 60%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "crește cu 60%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "scade cu 37,5%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "I_M = 1/1,6 = 62,5% = I_P (întrucât ceilalți factori rămân constanți) ⇒ I_PCB = (1/0,625) × 100 = 160% ⇒ Δ%PCB = 60%."
+    },
+    {
+      "id": "C10_E07",
+      "capitol": 10,
+      "numar": 7,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La un depozit bancar de 5.000 lei, rata dobânzii pasivă este 8%. În condițiile creșterii prețurilor cu 20% pe an și a lichidării depozitului, valoarea reală totală a masei monetare, la sfârșitul anului (PCM₁), va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5.400 lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "5.000 lei",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "4.500 lei",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "4.000 lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "S.t (nominală) = Cr. + D = 5.000 + 8% × 5.000 = 5.400 lei, I_P = 120% ⇒ Valoarea reală a S.t (PCM) = 5.400/1,2 = 4.500 lei."
+    },
+    {
+      "id": "C10_E08",
+      "capitol": 10,
+      "numar": 8,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "M₀ = 750 mld. u.m., iar prețurile într-un an cresc cu 20%, ceea ce determină reducerea puterii ei de cumpărare de 1,25 ori. Masa monetară la sfârșitul anului (M₁) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "937,5 mld. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "750 mld. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "600 mld. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "720 mld. u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "I_P = 120% → I_PCM = 1/1,25 × 100 = 80% = (I_M : I_P) × 100 ⇒ I_M = (0,8 × 1,2) × 100 = 96% = (M₁ : 750 mld.) × 100 ⇒ M₁ = 720 mld. u.m."
+    },
+    {
+      "id": "C10_E09",
+      "capitol": 10,
+      "numar": 9,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, masa monetară a fost 300 mld. u.m., din care numerarul reprezintă 25%. Dacă în anul următor s-au constituit depozite bancare noi de 15 mld. u.m., atunci valoarea banilor numerar (B.N) și a celor scripturali (B.S), în mld. u.m., va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "75 și 225",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "90 și 210",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "60 și 240",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "240 și 60",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "B.N₀ = 25% × 300 mld. = 75 mld. u.m., iar B.S₀ = (300 – 75) mld. = 225 mld. u.m. → B.S₁ = B.S₀ + 15 mld. = 240 mld. u.m. și B.N₁ = B.N₀ – 15 mld. = 60 mld. u.m."
+    },
+    {
+      "id": "C10_E10",
+      "capitol": 10,
+      "numar": 10,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Prețul mediu al unui bun = 1.000 u.m., iar masa monetară din economie = 0,4 mil. u.m. Dacă volumul mărfurilor tranzacționate este 8.000 buc., atunci viteza de rotație a banilor (V) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "0,2",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "200",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "2",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "20",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "V = (P×Q) : M = (1.000 × 8.000)/400.000 = 8.000.000/400.000 = 20 operații."
+    },
+    {
+      "id": "C10_E11",
+      "capitol": 10,
+      "numar": 11,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O persoană se împrumută la bancă cu 1.200 lei pe o perioadă de 1 an. Ea restituie la scadență 1.560 lei, iar prețurile cresc cu 25% în această perioadă. Rata nominală a dobânzii (d'n) și rata reală a dobânzii (d'r) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "5% și 30%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "30% și 5%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "ambele sunt 25%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "30% și 25%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Ds = St – Cr. = 1.560 – 1.200 = 360 lei = 1.200 × d'n × 1 ⇒ d'n = 360/1.200 = 30%, iar d'r = d'n – r.i. = 30% – 25% = 5%."
+    },
+    {
+      "id": "C10_E12",
+      "capitol": 10,
+      "numar": 12,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Câștigul anual al unei instituții bancare este 350 mld. u.m. la un capital rulat de 1.750 mld. u.m. Dobânda plătită de bancă deținătorilor de depozite bancare este 525 mld. u.m. Rata dobânzii active (d'a) față de rata dobânzii pasivă (d'p) este mai mare cu:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "50 puncte procentuale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "20 puncte procentuale",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "20%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "66,66%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Cș.B = 350 mld. = D.a – D.p ⇒ D.a = (350 + 525) mld. = 875 mld. K_B = Cr. = Dep.B = 1.750 mld. → d'p = (525/1.750) × 100 = 30%, d'a = (875/1.750) × 100 = 50% ⇒ d'a – d'p = 50% – 30% = 20 puncte procentuale."
+    },
+    {
+      "id": "C10_E13",
+      "capitol": 10,
+      "numar": 13,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Profitul bancar anual realizat de o bancă este 720 mil. u.m., el reprezentând 80% din câștigul său bancar. Pentru creditele acordate, banca încasează o rată a dobânzii de 10% și plătește deponenților o rată a dobânzii de 7%. Capitalul bănesc utilizat de bancă (K_B) și cheltuielile bancare de funcționare (Cf.B) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "30 mil. u.m. și 180 mld. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "30 mld. u.m. și 900 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "900 mil. u.m. și 180 mld. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "30 mld. u.m. și 180 mil. u.m.",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cș.B = 720 mil./0,8 = 900 mil. u.m., Cf.B = (900 – 720) mil. = 180 mil. u.m., iar K_B = Cr. = Dep.B → Cș.B = D.a – D.p = K_B × (d'a – d'p) = K_B × 3% ⇒ K_B = 900 mil. : 3% = 30.000 mil. = 30 mld. u.m."
+    },
+    {
+      "id": "C10_E14",
+      "capitol": 10,
+      "numar": 14,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Creditele acordate pe 5 luni, din depunerile bancare, sunt de 600 mil. u.m. Dacă rata dobânzii active este 15%, iar cea pasivă este 12%, atunci câștigul bancar (Cș.B) va fi:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "7,5 mil. u.m.",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "3 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "37,5 mil. u.m.",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "30 mil. u.m.",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "n = 5 luni = 5/12 ani. D.a = 600 mil. × 5/12 × 15% = 37,5 mil. u.m., D.p = 600 mil. × 5/12 × 12% = 30 mil. u.m. ⇒ Cș.B = (37,5 – 30) mil. = 7,5 mil. u.m."
+    },
+    {
+      "id": "C10_E15",
+      "capitol": 10,
+      "numar": 15,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "La începutul unui an, rata dobânzii la credite practicată pe piața monetară a fost 10% în condițiile unei rate a inflației de 6%. La sfârșitul anului, rata dobânzii a crescut cu 10% în condițiile reducerii ratei inflației cu 20%. Indicele ratei dobânzii reale (I_d'r) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "155%",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "110%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "120%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "55%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "d'r₀ = 10% – 6% = 4%. d'n₁ = 1,10 × 10% = 11%, r.i₁ = 0,80 × 6% = 4,8% → d'r₁ = 11% – 4,8% = 6,2% ⇒ I_d'r = (6,2/4) × 100 = 155%."
+    },
+    {
+      "id": "C10_E16",
+      "capitol": 10,
+      "numar": 16,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un an, cantitatea nominală de bani din economie crește cu 4%, viteza de rotație a banilor cu 8%, iar volumul tranzacțiilor scade cu 4%. Dacă rata dobânzii nominale este de 20%, atunci rata reală a dobânzii (d'r) este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "13,84%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "3%",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "17%",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "23%",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "I_M = 104%, I_V = 108%, I_Q = 96% → I_P = [(1,04 × 1,08)/0,96] × 100 = 117% → Δ%P = r.i = 17% ⇒ d'r = d'n – r.i = 20% – 17% = 3%."
+    },
+    {
+      "id": "C10_E17",
+      "capitol": 10,
+      "numar": 17,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Într-un t₀, B.S = 60% din masa monetară de 250 mld. u.m. Retragerea din depozitele bancare de către agenții economici a unei sume în valoare de 25 mld. u.m. a determinat ca ponderea numerarului în masa monetară [(B.N₁/M₁) × 100] să fie de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "40%",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "60%",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "50%",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "nu s-a modificat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "B.S₀ = 60% × 250 mld. = 150 mld. u.m. → B.N₀ = (250 – 150) mld. = 100 mld. u.m., B.N₁ = B.N₀ + 25 mld. = 125 mld. u.m. M₁ = M₀ = 250 mld. u.m. ⇒ (B.N₁/M₁) × 100 = (125/250) × 100 = 50%."
+    },
+    {
+      "id": "C10_E18",
+      "capitol": 10,
+      "numar": 18,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Creditul de care beneficiază un agent economic este de 500 mil. u.m., pe 10 ani, rambursabil în tranșe anuale egale și cu o rată anuală a dobânzii de 6%. Dobânda plătită în primii 3 ani și suma rămasă din credit ce urmează a fi plătită (exprimate în milioane u.m.) sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "6 și 490",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "81 și 350",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "500 și 81",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "27 și 350",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Tranșa anuală = 500/10 = 50 mil. u.m. D(an 1) = 500 × 6% = 30 mil., D(an 2) = 450 × 6% = 27 mil., D(an 3) = 400 × 6% = 24 mil. → D(în trei ani) = (30+27+24) mil. = 81 mil. u.m. Credit rămas = 500 – 3×50 = 350 mil. u.m."
+    },
+    {
+      "id": "C10_E19",
+      "capitol": 10,
+      "numar": 19,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "Volumul tranzacțiilor anuale din economie (Q) a fost de 3.000 buc., viteza de rotație a banilor V = 6 și prețul unitar al mărfurilor P = 500 u.m. În anul următor, masa monetară a scăzut cu 25% în condițiile unei cereri constante de bani pe piața monetară (P×Q neschimbat). Viteza de rotație a banilor (V):",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "a crescut de 1,33 ori",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "V₁ = V₀",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "a crescut de 1,25 ori",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "a scăzut de 1,33 ori",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "M₀ = (500 × 3.000)/6 = 250.000 u.m., I_M = 75% → M₁ = 0,75 × 250.000 = 187.500 u.m. Cererea de bani: (P×Q)₁ = (P×Q)₀ = 1.500.000 u.m. → V₁ = 1.500.000/187.500 = 8 ⇒ V₁/V₀ = 8/6 ≈ 1,33 ori."
+    },
+    {
+      "id": "C10_E20",
+      "capitol": 10,
+      "numar": 20,
+      "tip": "exercitiu",
+      "punctaj": 1,
+      "enunt": "O bancă acordă un credit de 25 mil. lei pe 3 ani, cu o rată a dobânzii de 8% pe an. Știind că 50% din sumele acordate ca împrumuturi reprezintă capitalul propriu al băncii, iar restul provine din depozitele bancare ale agenților economici cărora le plătește anual o dobândă de 4%, cheltuielile totale ale băncii fiind de 250.000 lei/an, atunci profitul bancar (Pr.B), aproximativ, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "1,56 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "4,18 mil. lei",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "2,63 mil. lei",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "6,49 mil. lei",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "D.a (compusă) = 25 mil. × (1,08)³ – 25 mil. ≈ 6,49 mil. lei. Dep.B = 50% × 25 mil. = 12,5 mil. lei → D.p (compusă) = 12,5 mil. × (1,04)³ – 12,5 mil. ≈ 1,56 mil. lei → Cș.B ≈ (6,49 – 1,56) mil. = 4,93 mil. lei. Cheltuieli totale (3 ani) = 0,25 mil. × 3 = 0,75 mil. lei ⇒ Pr.B ≈ (4,93 – 0,75) mil. ≈ 4,18 mil. lei."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

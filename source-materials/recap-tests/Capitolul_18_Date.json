@@ -1,0 +1,1288 @@
+{
+  "capitol": 18,
+  "titlu_capitol": "Statul în economia de piață",
+  "nota_metodologica": "Capitolul este pur conceptual in sursa (fara formule sau probleme numerice), asemenea Capitolelor 2, 9, 16, 17 - prin urmare, toate cele 40 de intrebari sunt de teorie (caracteristicile implicarii statului, bugetul de stat, programarea economica).",
+  "intrebari": [
+    {
+      "id": "C18_T01",
+      "capitol": 18,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Statul (administrațiile publice), în sens larg, include:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ansamblul instituțiilor politice și de guvernare, autoritatea centrală și locală, precum și instituțiile publice necesare bunei funcționări a activităților economico-sociale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv firmele private din economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv Banca Națională a țării",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv organizațiile non-guvernamentale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Statul, în sensul folosit aici, nu se reduce la o singură instituție: el include ansamblul instituțiilor politice, de guvernare, autoritatea centrală și locală, alături de instituțiile publice care asigură funcționarea vieții economico-sociale. Prin urmare, răspunsul corect este: Ansamblul instituțiilor politice și de guvernare, autoritatea centrală și locală, precum și instituțiile publice necesare bunei funcționări a activităților economico-sociale."
+    },
+    {
+      "id": "C18_T02",
+      "capitol": 18,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Implicarea statului în economia de piață este limitată, printre altele, din cauza:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Libertății de acțiune a agenților economici, bazată pe dominația proprietății private",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Faptului că piața poate rezolva singură toate problemele economico-sociale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absenței complete a oricărei nevoi colective de interes național",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Inexistenței vreunei reglementări legale privind activitatea economică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Într-o economie de piață, proprietatea privată domină, iar statul nu poate dicta agenților economici ce, cât și cum să producă — aceasta este una dintre cauzele care limitează implicarea statului, spre deosebire de o eventuală absență a nevoilor colective, care nu este cazul real. Prin urmare, răspunsul corect este: Libertății de acțiune a agenților economici, bazată pe dominația proprietății private."
+    },
+    {
+      "id": "C18_T03",
+      "capitol": 18,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Implicarea statului în economia de piață este necesară, printre altele, deoarece:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu există nicio categorie a populației care să necesite protecție socială",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Agenții economici privați nu au nevoie de niciun cadru legal de funcționare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Piața nu poate, singură, să rezolve problemele complexe economico-sociale dintr-o țară",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Proprietatea privată este complet interzisă în economia de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Piața, prin mecanismele proprii de preț și concurență, nu poate acoperi singură toate nevoile societății — educația, protecția socială, reglementarea — motiv pentru care intervenția statului devine necesară, nu opțională. Prin urmare, răspunsul corect este: Piața nu poate, singură, să rezolve problemele complexe economico-sociale dintr-o țară."
+    },
+    {
+      "id": "C18_T04",
+      "capitol": 18,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre cauzele care fac necesară implicarea statului în economie se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv necesitatea de a controla toate prețurile din economie",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv interesul statului de a deveni unicul angajator din economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv dorința statului de a elimina complet proprietatea privată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Protecția socială a unor categorii ale populației (copii, bătrâni, persoane bolnave, pensionari)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Protecția categoriilor vulnerabile ale populației — copii, bătrâni, bolnavi, pensionari — este una dintre cauzele fundamentale ale necesității intervenției statului, nu eliminarea proprietății private sau controlul total al prețurilor, care ar caracteriza alt tip de economie. Prin urmare, răspunsul corect este: Protecția socială a unor categorii ale populației (copii, bătrâni, persoane bolnave, pensionari)."
+    },
+    {
+      "id": "C18_T05",
+      "capitol": 18,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Implicarea directă a statului în economie se manifestă atunci când acesta acționează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv prin redistribuirea veniturilor între diferite categorii sociale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv prin prestarea de servicii sociale nemarfare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Ca proprietar de factori de producție, întreprinzător, investitor, agent economic (producător, consumator, vânzător, cumpărător)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv prin elaborarea de legi, fără nicio participare economică directă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Implicarea directă înseamnă participarea efectivă a statului la activitatea economică — ca proprietar, investitor, producător sau consumator — spre deosebire de implicarea indirectă, care se realizează prin servicii nemarfare și redistribuire. Prin urmare, răspunsul corect este: Ca proprietar de factori de producție, întreprinzător, investitor, agent economic (producător, consumator, vânzător, cumpărător)."
+    },
+    {
+      "id": "C18_T06",
+      "capitol": 18,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Implicarea indirectă a statului în economie se realizează prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv exportul de bunuri economice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Prestarea de servicii sociale nemarfare și prin redistribuirea veniturilor",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv participarea directă la producția industrială",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv deținerea de acțiuni la firme private",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Spre deosebire de implicarea directă (statul ca agent economic propriu-zis), implicarea indirectă se manifestă prin prestarea de servicii sociale nemarfare (educație, sănătate) și prin redistribuirea veniturilor între diferite categorii ale populației. Prin urmare, răspunsul corect este: Prestarea de servicii sociale nemarfare și prin redistribuirea veniturilor."
+    },
+    {
+      "id": "C18_T07",
+      "capitol": 18,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "La nivel macroeconomic, implicarea statului în economie este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Redusă la simpla colectare a impozitelor, fără nicio altă funcție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Complet nesemnificativă, statul neavând niciun rol la acest nivel",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Foarte importantă, realizându-se prin crearea cadrului juridic-legislativ, redistribuirea veniturilor, protecția socială și dezvoltarea economică a țării",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Limitată exclusiv la nivelul administrației publice locale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "La nivel macroeconomic, rolul statului este esențial: el creează cadrul juridic-legislativ, redistribuie veniturile, asigură protecția socială, securitatea și dezvoltarea economică a întregii țări — un rol mult mai amplu decât simpla colectare de impozite. Prin urmare, răspunsul corect este: Foarte importantă, realizându-se prin crearea cadrului juridic-legislativ, redistribuirea veniturilor, protecția socială și dezvoltarea economică a țării."
+    },
+    {
+      "id": "C18_T08",
+      "capitol": 18,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "La nivel microeconomic, implicarea statului în economie este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Identică, sub toate aspectele, cu implicarea sa la nivel macroeconomic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Mai importantă decât implicarea sa la nivel macroeconomic",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Relativ redusă, realizându-se prin intermediul organelor administrației publice locale (primării, prefecturi)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Complet absentă, statul neavând nicio prezență la nivel local",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "La nivel microeconomic, rolul statului este mai restrâns — prin primării și prefecturi, prestează servicii nemarfare și oferă bunuri de folosință colectivă locală — spre deosebire de rolul amplu, esențial, de la nivel macroeconomic. Prin urmare, răspunsul corect este: Relativ redusă, realizându-se prin intermediul organelor administrației publice locale (primării, prefecturi)."
+    },
+    {
+      "id": "C18_T09",
+      "capitol": 18,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Sistemul prin care se realizează, în mod organizat și coerent, implicarea statului în economie include:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv programele culturale naționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv legile penale ale statului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv tratatele militare internaționale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Strategii economice, politici economice și instrumente economice",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Implicarea statului este structurată pe trei niveluri complementare — strategiile (obiective pe termen mediu-lung), politicile (țintele și acțiunile concrete) și instrumentele (mijloacele efective de acțiune) — nu prin domenii complet neeconomice. Prin urmare, răspunsul corect este: Strategii economice, politici economice și instrumente economice."
+    },
+    {
+      "id": "C18_T10",
+      "capitol": 18,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Strategiile economice reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Obiective strategice complexe pe termen mediu și lung, care vizează realizarea unor interese vitale",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Mijloacele și resursele concrete utilizate zilnic de agenții economici",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv deciziile de zi cu zi ale unei firme private",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv legile votate de parlament într-un singur an",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Strategiile economice se situează la nivelul cel mai general și mai îndelungat: obiective complexe, pe termen mediu și lung, care vizează interesele vitale ale țării — nu mijloace zilnice sau decizii punctuale. Prin urmare, răspunsul corect este: Obiective strategice complexe pe termen mediu și lung, care vizează realizarea unor interese vitale."
+    },
+    {
+      "id": "C18_T11",
+      "capitol": 18,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Politicile economice reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Țintele, acțiunile și modalitățile de înfăptuire a strategiilor urmărite",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv resursele financiare disponibile la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv obiectivele pe termen foarte lung ale unei națiuni",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv deciziile individuale ale consumatorilor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Politicile economice sunt intermediarul dintre strategie și implementare: ele stabilesc țintele, acțiunile și modalitățile concrete prin care se înfăptuiesc strategiile economice, la un nivel mai operațional. Prin urmare, răspunsul corect este: Țintele, acțiunile și modalitățile de înfăptuire a strategiilor urmărite."
+    },
+    {
+      "id": "C18_T12",
+      "capitol": 18,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Instrumentele economice reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Mijloacele, resursele și procedeele utilizate pentru atingerea obiectivelor și politicilor economice (bugetul de stat, rata dobânzii, creditul, impozitele etc.)",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv structurile administrative ale unui minister",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv documentele strategice pe termen de 20-30 de ani",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv legile constituționale ale unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Instrumentele economice sunt cele mai concrete elemente ale acțiunii statului: bugetul de stat, rata dobânzii, creditul, masa monetară, impozitele, taxele, subvențiile — mijloacele efective prin care se realizează politicile economice. Prin urmare, răspunsul corect este: Mijloacele, resursele și procedeele utilizate pentru atingerea obiectivelor și politicilor economice (bugetul de stat, rata dobânzii, creditul, impozitele etc.)."
+    },
+    {
+      "id": "C18_T13",
+      "capitol": 18,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bugetul de stat este considerat:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un instrument complet secundar, fără nicio relevanță economică",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Identic, sub toate aspectele, cu bugetul unei firme private",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Principalul instrument al intervenției statului în economie",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv un document contabil intern al unei singure firme",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dintre toate instrumentele economice ale statului, bugetul de stat este considerat cel principal — el reflectă, prin veniturile și cheltuielile sale, direcția și amploarea intervenției statului în economie. Prin urmare, răspunsul corect este: Principalul instrument al intervenției statului în economie."
+    },
+    {
+      "id": "C18_T14",
+      "capitol": 18,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bugetul de stat este definit ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un document, o balanță care include veniturile detaliate pe surse de constituire și cheltuielile evidențiate pe obiective de destinație, prevăzute pe an",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv o listă a firmelor private dintr-o economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv un plan de producție industrială pe cinci ani",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv un raport statistic privind populația unei țări",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Bugetul de stat este, în esență, o balanță financiară anuală: pe o parte veniturile, detaliate pe surse, pe cealaltă parte cheltuielile, detaliate pe destinații — un instrument financiar, nu statistic sau de planificare industrială. Prin urmare, răspunsul corect este: Un document, o balanță care include veniturile detaliate pe surse de constituire și cheltuielile evidențiate pe obiective de destinație, prevăzute pe an."
+    },
+    {
+      "id": "C18_T15",
+      "capitol": 18,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre principalele capitole de venituri bugetare se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv veniturile din donații și sponsorizări",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Veniturile fiscale (impozite directe și indirecte) și veniturile nefiscale",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv veniturile din vânzarea de acțiuni la firme private",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv veniturile din activitatea agricolă a statului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Cea mai importantă sursă a veniturilor bugetare o constituie veniturile fiscale — impozitele directe (pe veniturile fundamentale) și indirecte (TVA, accize, taxe vamale) — alături de veniturile nefiscale, nu donațiile sau vânzarea de acțiuni, care sunt surse marginale. Prin urmare, răspunsul corect este: Veniturile fiscale (impozite directe și indirecte) și veniturile nefiscale."
+    },
+    {
+      "id": "C18_T16",
+      "capitol": 18,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre principalele destinații ale cheltuielilor bugetare se numără:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Serviciile publice generale (apărare, ordine publică), educația, sănătatea și acțiunile economice",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv finanțarea firmelor private profitabile",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv achitarea salariilor angajaților din sectorul privat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv cheltuielile de protocol ale funcționarilor publici",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Cheltuielile bugetare finanțează funcțiile esențiale ale statului — apărare, ordine publică, educație, sănătate, acțiuni social-culturale și economice — nu firme private profitabile sau cheltuieli marginale, care nu constituie destinații principale. Prin urmare, răspunsul corect este: Serviciile publice generale (apărare, ordine publică), educația, sănătatea și acțiunile economice."
+    },
+    {
+      "id": "C18_T17",
+      "capitol": 18,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un buget de stat echilibrat, în care veniturile sunt egale cu cheltuielile (V = C), are asupra economiei un efect:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Puternic inflaționist, întotdeauna",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Neutru",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "De accentuare automată a datoriei publice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Puternic stimulativ, indiferent de contextul economic",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Atunci când veniturile bugetare egalează cheltuielile, bugetul nu injectează și nici nu retrage resurse nete din economie — efectul asupra economiei este, prin definiție, neutru, spre deosebire de un buget excedentar sau deficitar. Prin urmare, răspunsul corect este: Neutru."
+    },
+    {
+      "id": "C18_T18",
+      "capitol": 18,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un buget de stat excedentar (V > C), dacă depășește un anumit nivel minim, poate avea asupra economiei:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Niciun efect asupra economiei, indiferent de amploare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Întotdeauna efecte exclusiv pozitive, fără nicio excepție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un efect identic cu cel al unui buget deficitar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Efecte negative",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Chiar un buget excedentar nu este lipsit de riscuri: dacă excedentul depășește un nivel minim rezonabil, el poate retrage prea multe resurse din economie, generând efecte negative — nu un efect exclusiv pozitiv sau neutru. Prin urmare, răspunsul corect este: Efecte negative."
+    },
+    {
+      "id": "C18_T19",
+      "capitol": 18,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Acoperirea deficitului bugetului de stat (C > V) se poate realiza prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv prin creșterea nelimitată a exporturilor",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv prin eliminarea completă a impozitelor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Emisiune monetară fără acoperire în bunuri economice sau prin împrumuturi (interne și externe)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv prin reducerea totală a cheltuielilor publice la zero",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Statul are, în principal, două căi de acoperire a deficitului bugetar — emisiunea monetară (cu risc inflaționist) sau împrumuturile (cu risc de datorie publică) — nu eliminarea completă a cheltuielilor sau a impozitelor, care ar fi contraproductive. Prin urmare, răspunsul corect este: Emisiune monetară fără acoperire în bunuri economice sau prin împrumuturi (interne și externe)."
+    },
+    {
+      "id": "C18_T20",
+      "capitol": 18,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Acoperirea deficitului bugetar prin emisiune monetară fără acoperire în bunuri economice conduce la:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O scădere garantată a prețurilor din economie",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Inflație",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Stabilitate monetară perfectă, pe termen nelimitat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a datoriei publice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Emiterea de bani fără o creștere corespunzătoare a bunurilor economice disponibile sporește masa monetară față de oferta reală — mecanismul clasic al inflației, nu al stabilității sau al scăderii prețurilor. Prin urmare, răspunsul corect este: Inflație."
+    },
+    {
+      "id": "C18_T21",
+      "capitol": 18,
+      "numar": 21,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Acoperirea deficitului bugetar prin împrumuturi (interne și externe) conduce la:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Datoria publică",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Anularea completă a nevoii de a colecta impozite",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Eliminarea completă a inflației din economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un excedent bugetar automat în anul următor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Împrumuturile contractate de stat pentru a acoperi deficitul se acumulează sub forma datoriei publice — o alternativă la inflație, dar cu propriile ei riscuri și costuri (dobânzi de plătit în viitor). Prin urmare, răspunsul corect este: Datoria publică."
+    },
+    {
+      "id": "C18_T22",
+      "capitol": 18,
+      "numar": 22,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Deficitul bugetului de stat, pe termen scurt și cu dimensiuni nu prea mari, poate avea asupra economiei:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Niciun efect, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Întotdeauna efecte exclusiv catastrofale, indiferent de dimensiune",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Efecte stimulative",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un efect identic cu cel al unui buget excedentar mare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Un deficit bugetar moderat, pe termen scurt, poate injecta resurse suplimentare în economie, având un efect stimulativ — spre deosebire de un deficit necontrolat, pe termen lung, care ar deveni problematic. Prin urmare, răspunsul corect este: Efecte stimulative."
+    },
+    {
+      "id": "C18_T23",
+      "capitol": 18,
+      "numar": 23,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Programarea economică constă în:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Interzicerea completă a inițiativei private în economie",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Stabilirea obligatorie a prețurilor pentru toate bunurile economice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Eliminarea completă a proprietății private din economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Elaborarea și realizarea unor programe economice, la nivel național, zonal sau sectorial, pentru dezvoltarea economică sau rezolvarea unor probleme economico-sociale dificile",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Programarea economică nu înseamnă interzicerea inițiativei private sau controlul total al prețurilor: ea constă în elaborarea de programe economice — la diverse niveluri — menite să sprijine dezvoltarea sau să rezolve probleme economico-sociale complexe. Prin urmare, răspunsul corect este: Elaborarea și realizarea unor programe economice, la nivel național, zonal sau sectorial, pentru dezvoltarea economică sau rezolvarea unor probleme economico-sociale dificile."
+    },
+    {
+      "id": "C18_T24",
+      "capitol": 18,
+      "numar": 24,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Programarea economică este considerată:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "O alternativă completă la mecanismul economiei de piață, care îl înlocuiește total",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Un element complementar al pieței, și nu o alternativă a mecanismului economiei de piață",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Un fenomen incompatibil cu proprietatea privată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un instrument specific exclusiv economiilor de comandă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Programarea economică nu înlocuiește piața, ci o completează: ea funcționează alături de mecanismele pieței, nu ca o alternativă la acestea — o trăsătură esențială care o distinge de planificarea centralizată din economiile de comandă. Prin urmare, răspunsul corect este: Un element complementar al pieței, și nu o alternativă a mecanismului economiei de piață."
+    },
+    {
+      "id": "C18_T25",
+      "capitol": 18,
+      "numar": 25,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Programarea economică are caracter:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Complet arbitrar, fără nicio bază informațională",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv secret, inaccesibil agenților economici",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Strict obligatoriu, sub sancțiuni legale severe pentru neîndeplinire",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Orientativ-informativ, și nu obligatoriu pentru acțiunile agenților economici",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Programele economice formulează recomandări și oferă informații utile agenților economici, dar nu le impun obligații legale stricte — caracterul este orientativ-informativ, nu obligatoriu, spre deosebire de planificarea centralizată. Prin urmare, răspunsul corect este: Orientativ-informativ, și nu obligatoriu pentru acțiunile agenților economici."
+    },
+    {
+      "id": "C18_T26",
+      "capitol": 18,
+      "numar": 26,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Programarea economică formulează recomandări și oferă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv ordine administrative obligatorii pentru toate firmele",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Mijloace/pârghii economice specifice economiei de piață (preț, credit, dobândă, cost, profit)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv un plan fix de producție pentru fiecare firmă din economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv sancțiuni penale pentru cei care nu respectă programul",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Programarea economică folosește exact pârghiile specifice economiei de piață — preț, credit, dobândă, cost, profit — nu ordine administrative obligatorii sau planuri fixe de producție, specifice unei economii centralizate. Prin urmare, răspunsul corect este: Mijloace/pârghii economice specifice economiei de piață (preț, credit, dobândă, cost, profit)."
+    },
+    {
+      "id": "C18_T27",
+      "capitol": 18,
+      "numar": 27,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Programarea economică vizează, în principal:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv activitatea unei singure familii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv activitățile culturale dintr-o localitate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv o singură firmă privată, aleasă arbitrar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Economia națională, dar și domenii de mare importanță",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Programarea economică are o sferă largă de acțiune — economia națională în ansamblu, precum și domenii sectoriale de mare importanță — nu entități izolate, precum o singură firmă sau familie. Prin urmare, răspunsul corect este: Economia națională, dar și domenii de mare importanță."
+    },
+    {
+      "id": "C18_T28",
+      "capitol": 18,
+      "numar": 28,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bugetul general consolidat include, printre altele:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv bugetul unei singure primării",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv bugetele firmelor private din economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Bugetul de stat, bugetul Asigurărilor Sociale de Stat, bugetele locale și bugetele fondurilor speciale",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv bugetele familiilor dintr-o țară",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Bugetul general consolidat este o structură amplă, care reunește bugetul de stat propriu-zis cu bugetul Asigurărilor Sociale, bugetele locale, ale fondurilor speciale, ale Trezoreriei și ale instituțiilor publice — nu bugete private sau individuale. Prin urmare, răspunsul corect este: Bugetul de stat, bugetul Asigurărilor Sociale de Stat, bugetele locale și bugetele fondurilor speciale."
+    },
+    {
+      "id": "C18_T29",
+      "capitol": 18,
+      "numar": 29,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Veniturile fiscale ale bugetului de stat includ, printre altele:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv rambursările de împrumuturi acordate de stat",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv donațiile primite de la persoane fizice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv veniturile din vânzarea patrimoniului statului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Impozitele directe (pe veniturile fundamentale) și impozitele indirecte (TVA, accize, taxe vamale)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Veniturile fiscale, sursa principală a bugetului, se împart în impozite directe — aplicate direct veniturilor fundamentale (salarii, profituri) — și impozite indirecte — precum TVA, accizele și taxele vamale, percepute la tranzacții. Prin urmare, răspunsul corect este: Impozitele directe (pe veniturile fundamentale) și impozitele indirecte (TVA, accize, taxe vamale)."
+    },
+    {
+      "id": "C18_T30",
+      "capitol": 18,
+      "numar": 30,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Veniturile nefiscale ale bugetului de stat provin, printre altele, din:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv impozitele pe veniturile persoanelor fizice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Profitul Băncii Naționale și al regiilor autonome",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv taxa pe valoarea adăugată",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv accizele la produsele petroliere",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Veniturile nefiscale se disting clar de cele fiscale: ele provin din profitul unor instituții precum Banca Națională sau regiile autonome, nu din impozite directe sau indirecte, care constituie veniturile fiscale. Prin urmare, răspunsul corect este: Profitul Băncii Naționale și al regiilor autonome."
+    },
+    {
+      "id": "C18_T31",
+      "capitol": 18,
+      "numar": 31,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Raportul de interese, diferit în timp, dintre cei pro și contra intervenției statului în economie, reprezintă una dintre cauzele care fac ca implicarea statului să fie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nelimitată și absolută, în orice moment",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Identică în toate țările lumii, fără nicio variație",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Limitată",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Complet inexistentă, în toate economiile de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Existența unor tabere cu interese diferite privind amploarea intervenției statului este exact unul dintre motivele pentru care implicarea statului rămâne limitată, nu una absolută sau universal identică. Prin urmare, răspunsul corect este: Limitată."
+    },
+    {
+      "id": "C18_T32",
+      "capitol": 18,
+      "numar": 32,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Autonomia limitată de acțiune a organelor administrației de stat, impusă de lege, este o cauză care face ca implicarea statului în economie să fie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Limitată",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Identică, indiferent de cadrul legal existent",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv discreționară, la latitudinea fiecărui funcționar",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Complet nelimitată, fără nicio constrângere legală",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Chiar organele administrației de stat sunt constrânse de lege în privința autonomiei lor decizionale — o altă cauză structurală care limitează, per ansamblu, implicarea statului în economie. Prin urmare, răspunsul corect este: Limitată."
+    },
+    {
+      "id": "C18_T33",
+      "capitol": 18,
+      "numar": 33,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Necesitatea reglementării activității economice reprezintă una dintre cauzele care fac ca implicarea statului în economie să fie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Limitată doar la nivelul administrației locale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Complet inutilă, într-o economie de piață funcțională",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Interzisă prin lege, în orice circumstanțe",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Necesară",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "O economie de piață funcțională are nevoie de un cadru de reglementare — concurență loială, protecția consumatorilor, standarde — motiv pentru care implicarea statului devine necesară, nu inutilă sau interzisă. Prin urmare, răspunsul corect este: Necesară."
+    },
+    {
+      "id": "C18_T34",
+      "capitol": 18,
+      "numar": 34,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Asigurarea veniturilor pentru unele categorii socio-profesionale (învățământ, artă, cultură, sănătate) reprezintă o cauză care face ca implicarea statului să fie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Limitată exclusiv la nivelul microeconomic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Necesară",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Identică, sub toate aspectele, cu implicarea directă a statului ca întreprinzător",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Complet interzisă în orice economie de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Domenii precum învățământul, cultura sau sănătatea publică nu se pot autofinanța întotdeauna exclusiv prin mecanismele pieței — motiv pentru care statul intervine pentru a asigura veniturile necesare acestor categorii socio-profesionale, o intervenție necesară, nu interzisă. Prin urmare, răspunsul corect este: Necesară."
+    },
+    {
+      "id": "C18_T35",
+      "capitol": 18,
+      "numar": 35,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Sporirea unor nevoi colective de interes național, cu caracter nemarfar (educație, urbanizare), reprezintă o cauză care face ca implicarea statului în economie să fie:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Necesară",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Complet interzisă prin lege",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Limitată exclusiv la nivelul unei singure firme",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Identică cu implicarea sa directă, ca întreprinzător privat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Nevoile colective cu caracter nemarfar — precum educația sau urbanizarea — nu pot fi satisfăcute eficient exclusiv prin mecanismele pieței, ceea ce face necesară, nu interzisă, implicarea statului în acoperirea lor. Prin urmare, răspunsul corect este: Necesară."
+    },
+    {
+      "id": "C18_T36",
+      "capitol": 18,
+      "numar": 36,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Printre veniturile bugetare ale statului, alături de cele fiscale și nefiscale, se numără și:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv impozitele pe salarii",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Veniturile din capital (valorificarea bunurilor statului) și încasările din rambursarea împrumuturilor acordate",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv profitul firmelor private",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exclusiv taxa pe valoarea adăugată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Bugetul de stat nu se limitează la veniturile fiscale și nefiscale curente: el include și venituri din capital (valorificarea bunurilor statului), încasări din rambursarea împrumuturilor acordate, precum și donații și sponsorizări. Prin urmare, răspunsul corect este: Veniturile din capital (valorificarea bunurilor statului) și încasările din rambursarea împrumuturilor acordate."
+    },
+    {
+      "id": "C18_T37",
+      "capitol": 18,
+      "numar": 37,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Bugetul general consolidat include, pe lângă bugetul de stat și cele locale, și:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exclusiv bugetele firmelor multinaționale prezente în țară",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exclusiv bugetele personale ale funcționarilor publici",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv bugetul unei singure bănci comerciale",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Bugetul Trezoreriei statului și bugetul instituțiilor publice finanțate integral din venituri proprii",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Bugetul general consolidat este o structură cuprinzătoare, care include, alături de bugetul de stat și bugetele locale, și bugetul Trezoreriei statului, al instituțiilor publice, inclusiv al celor finanțate integral din venituri proprii, precum și fondurile din credite externe. Prin urmare, răspunsul corect este: Bugetul Trezoreriei statului și bugetul instituțiilor publice finanțate integral din venituri proprii."
+    },
+    {
+      "id": "C18_T38",
+      "capitol": 18,
+      "numar": 38,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Comparând cele trei tipuri de buget de stat (echilibrat, excedentar, deficitar), se poate afirma că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Bugetul excedentar este întotdeauna mai bun decât cel echilibrat, fără nicio excepție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Toate cele trei tipuri au exact același efect asupra economiei, indiferent de context",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Doar bugetul deficitar poate exista în realitate, celelalte fiind imposibile",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Fiecare are un efect distinct asupra economiei — neutru, respectiv posibil negativ dacă depășește anumite limite",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Cele trei forme ale bugetului de stat nu sunt echivalente ca efect: bugetul echilibrat are un efect neutru, în timp ce excedentul (peste un nivel minim) sau deficitul (necontrolat) pot genera efecte negative — nuanțe esențiale, nu simple variații fără consecințe. Prin urmare, răspunsul corect este: Fiecare are un efect distinct asupra economiei — neutru, respectiv posibil negativ dacă depășește anumite limite."
+    },
+    {
+      "id": "C18_T39",
+      "capitol": 18,
+      "numar": 39,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Relația dintre stat și piață, într-o economie de piață funcțională, poate fi caracterizată ca fiind una de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Indiferență totală, cele două neavând nicio influență una asupra celeilalte",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Substituire completă, statul înlocuind integral mecanismele pieței",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Completare reciprocă, statul intervenind acolo unde piața, singură, nu poate acoperi eficient nevoile economico-sociale",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Excludere totală, statul și piața neputând coexista niciodată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Statul nu înlocuiește piața și nici nu este complet separat de ea: relația este una de completare — statul intervine tocmai acolo unde piața, prin mecanismele proprii, nu poate satisface eficient toate nevoile economico-sociale. Prin urmare, răspunsul corect este: Completare reciprocă, statul intervenind acolo unde piața, singură, nu poate acoperi eficient nevoile economico-sociale."
+    },
+    {
+      "id": "C18_T40",
+      "capitol": 18,
+      "numar": 40,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Rata dobânzii, creditul, masa monetară, impozitele, taxele și subvențiile sunt considerate, în raport cu strategiile și politicile economice, elemente aflate la nivelul:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Politicilor externe, fără nicio relevanță economică internă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Instrumentelor economice, cel mai concret și operațional nivel de acțiune al statului",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Unui domeniu complet separat, fără nicio legătură cu implicarea statului în economie",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Strategiilor economice, cel mai general nivel de acțiune al statului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Aceste elemente concrete — rata dobânzii, creditul, impozitele, subvențiile — nu sunt strategii sau politici în sine, ci instrumentele economice prin care strategiile și politicile statului se transpun efectiv în practică. Prin urmare, răspunsul corect este: Instrumentelor economice, cel mai concret și operațional nivel de acțiune al statului."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

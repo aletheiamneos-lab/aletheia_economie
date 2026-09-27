@@ -1,0 +1,46 @@
+{
+  "sources": [
+    {
+      "file": "Capitolul 18 - Statul in economia de piata_ex.pdf",
+      "topics": [
+        "buget de stat",
+        "politici economice",
+        "instrumente",
+        "intervenția statului"
+      ]
+    },
+    {
+      "file": "Capitolul 17 - Ciclicitatea economica_ex.pdf",
+      "topics": [
+        "politici anticiclice"
+      ]
+    },
+    {
+      "file": "Capitolul 11 - Inflația_ex.pdf",
+      "topics": [
+        "inflație"
+      ]
+    },
+    {
+      "file": "Capitolul 14 - Somajul_ex.pdf",
+      "topics": [
+        "șomaj"
+      ]
+    },
+    {
+      "file": "Capitolul 15 - Venitul, consumul si investitiile_ex.pdf",
+      "topics": [
+        "consum",
+        "investiții",
+        "PIB"
+      ]
+    },
+    {
+      "file": "Capitolul 19 - Piata Mondiala_ex.pdf",
+      "topics": [
+        "comerț exterior",
+        "curs valutar"
+      ]
+    }
+  ]
+}

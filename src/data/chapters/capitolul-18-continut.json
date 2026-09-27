@@ -1,0 +1,315 @@
+{
+  "capitol": {
+    "numar": 18,
+    "titlu": "Statul în economia de piață",
+    "obiective": [
+      "Să identifici diferite modalități prin care statul poate interveni în economia de piață",
+      "Să distingi strategiile, politicile și instrumentele economice",
+      "Să analizezi sursele de venituri și destinația cheltuielilor bugetare",
+      "Să distingi bugetul echilibrat, excedentar și deficitar",
+      "Să înțelegi căile de acoperire a deficitului bugetar și rolul datoriei publice"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "caracteristici-implicare-stat",
+      "nr": "1",
+      "titlu": "Caracteristicile implicării statului în economie",
+      "text": [
+        "Statul (administrațiile publice) include, în sens larg, ansamblul instituțiilor politice și de guvernare, autoritatea centrală și locală, precum și instituțiile publice necesare bunei funcționări a activităților economico-sociale dintr-o țară.",
+        "Implicarea statului în economia de piață este, în același timp, limitată și necesară - limitată, pentru că libertatea agenților economici și proprietatea privată dominantă restrâng ce poate dicta statul; necesară, pentru că piața singură nu poate rezolva toate problemele economico-sociale (educație, protecție socială, reglementare)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Sensurile implicării statului în economie",
+          "categorii": [
+            {
+              "nume": "Directă",
+              "definitie": "ca proprietar de factori de producție, întreprinzător, investitor, agent economic"
+            },
+            {
+              "nume": "Indirectă",
+              "definitie": "prin prestarea de servicii sociale nemarfare și prin redistribuirea veniturilor"
+            }
+          ]
+        },
+        {
+          "criteriu": "Nivelele implicării statului",
+          "categorii": [
+            {
+              "nume": "Macroeconomic (foarte importantă)",
+              "definitie": "crearea cadrului juridic, redistribuirea veniturilor, protecția socială, securitatea și apărarea țării"
+            },
+            {
+              "nume": "Microeconomic (relativ redusă)",
+              "definitie": "prin administrațiile publice locale - servicii nemarfare, bunuri de folosință colectivă locală"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Funcțiile de bază ale statului (Adam Smith): apărare națională, administrarea justiției, crearea și întreținerea lucrărilor publice",
+        "Funcțiile actuale ale statului: protecția țării, ordinea internă, cadrul juridic-legislativ, alocarea optimă a resurselor, redistribuirea veniturilor, echilibrul macroeconomic, orientarea agenților economici"
+      ],
+      "exemple": [],
+      "formule": []
+    },
+    {
+      "id": "strategii-politici-instrumente",
+      "nr": "2",
+      "titlu": "Strategii, politici și instrumente economice",
+      "text": [
+        "Intervenția statului în economie nu trebuie să fie întâmplătoare sau haotică - de aceea se stabilesc strategii, bazate pe un sistem unitar de politici economice.",
+        "Strategia economică definește ansamblul obiectivelor privind economia unei țări, pe termen mediu și lung. Politica economică este componenta strategiei prin care se stabilesc acțiunile concrete și modalitățile de realizare. Instrumentele economice sunt variabilele (mijloacele, resursele) folosite pentru atingerea obiectivelor."
+      ],
+      "puncteCheie": [
+        "Obiectivele politicilor economice: menținerea unui nivel stabil al inflației, asigurarea creșterii economice, creșterea gradului de ocupare, echilibrul balanței de plăți",
+        "Instrumentele politicilor economice: cheltuielile guvernamentale, impozitele și taxele, rata dobânzii, creditul, masa monetară, taxele vamale, subvențiile pentru cercetare"
+      ],
+      "exemple": [
+        "Programarea (planificarea) economică este un element complementar pieței, nu o alternativă la ea - are caracter orientativ, nu obligatoriu, și folosește stimulente economice (condiții favorabile de creditare, scutiri de impozite) pentru a coordona acțiunile agenților economici."
+      ],
+      "formule": []
+    },
+    {
+      "id": "bugetul-de-stat",
+      "nr": "3",
+      "titlu": "Bugetul de stat: venituri și cheltuieli",
+      "text": [
+        "Bugetul de stat este cel mai important instrument al intervenției statului în economie - un document care prevede anual fluxurile financiare legate de formarea resurselor și efectuarea cheltuielilor publice, în scopul îndeplinirii funcțiilor statului. Este o componentă principală a bugetului general consolidat (alături de bugetul asigurărilor sociale, bugetele locale, bugetele fondurilor speciale etc.)."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Veniturile bugetare",
+          "categorii": [
+            {
+              "nume": "Fiscale",
+              "definitie": "impozite directe (pe profit, pe venit) și impozite indirecte (TVA, accize, taxe vamale)"
+            },
+            {
+              "nume": "Nefiscale",
+              "definitie": "din profitul băncii centrale, al regiilor autonome"
+            },
+            {
+              "nume": "Din capital",
+              "definitie": "din valorificarea unor bunuri ale statului"
+            }
+          ]
+        },
+        {
+          "criteriu": "Tipurile de buget, după relația venituri-cheltuieli",
+          "categorii": [
+            {
+              "nume": "Echilibrat",
+              "definitie": "venituri = cheltuieli; efect neutru asupra economiei"
+            },
+            {
+              "nume": "Excedentar",
+              "definitie": "venituri > cheltuieli; peste un anumit nivel, poate avea efecte negative"
+            },
+            {
+              "nume": "Deficitar",
+              "definitie": "cheltuieli > venituri; pe termen scurt poate stimula economia"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Principalele destinații ale cheltuielilor bugetare: servicii publice generale, apărare, educație, sănătate, protecție socială, locuințe, cultură"
+      ],
+      "exemple": [],
+      "formule": [],
+      "calculator": "soldBugetar"
+    },
+    {
+      "id": "deficit-datorie-publica",
+      "nr": "4",
+      "titlu": "Deficitul bugetar și datoria publică",
+      "text": [
+        "Deficitul bugetar este una dintre cele mai dezbătute probleme macroeconomice. Pe termen scurt, un deficit moderat poate stimula economia (mai ales prin cheltuieli pentru educație, care cresc productivitatea, sau prin stimularea cererii în recesiune); pe termen lung, se impune însă echilibrarea lui."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Căile de acoperire a deficitului bugetar",
+          "categorii": [
+            {
+              "nume": "Emisiune de monedă",
+              "definitie": "cea mai inflaționistă măsură"
+            },
+            {
+              "nume": "Împrumuturi (interne/externe)",
+              "definitie": "formează datoria publică"
+            },
+            {
+              "nume": "Majorarea veniturilor fiscale",
+              "definitie": "creșterea impozitelor și taxelor"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        {
+          "termen": "Argumente pro (deficit)",
+          "descriere": "cheltuielile pentru educație cresc productivitatea; în recesiune, cheltuielile bugetare stimulează economia"
+        },
+        {
+          "termen": "Argumente contra (deficit)",
+          "descriere": "împovărează generațiile viitoare, diminuează economisirea și investițiile, poate reduce salariul și producția"
+        }
+      ],
+      "exemple": [
+        "Pe plan internațional, se remarcă o tendință de creștere continuă a datoriei publice, cu o pondere tot mai mare a datoriei externe - ceea ce adâncește interdependențele economice internaționale."
+      ],
+      "formule": []
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "Intervenția statului în economie:",
+      "optiuni": [
+        "este necesară doar în economiile de comandă",
+        "are întotdeauna efecte negative",
+        "a fost privită în mod distinct de diferite curente de gândire economică",
+        "nu este compatibilă cu economia de piață"
+      ],
+      "corect": 2,
+      "explicatie": "Diverse curente economice (keynesism, economia ofertei etc.) au opinii diferite despre rolul și amploarea intervenției statului."
+    },
+    {
+      "intrebare": "Programarea economică:",
+      "optiuni": [
+        "are un caracter obligatoriu",
+        "se aplică doar la nivel național",
+        "presupune acțiuni coordonate ale agenților economici",
+        "nu este compatibilă cu economia de piață"
+      ],
+      "corect": 2,
+      "explicatie": "Programarea economică are caracter orientativ (nu obligatoriu) și presupune coordonarea acțiunilor agenților economici prin stimulente economice."
+    },
+    {
+      "intrebare": "Un buget deficitar presupune:",
+      "optiuni": [
+        "o echilibrare a veniturilor și cheltuielilor bugetare",
+        "o previziune pesimistă asupra colectării veniturilor",
+        "o relaxare a politicii fiscale",
+        "un nivel al cheltuielilor bugetare ce îl depășește pe cel al veniturilor"
+      ],
+      "corect": 3,
+      "explicatie": "Bugetul deficitar înseamnă, prin definiție, cheltuieli mai mari decât veniturile bugetare."
+    },
+    {
+      "intrebare": "Cea mai inflaționistă cale de acoperire a deficitului bugetar este:",
+      "optiuni": [
+        "majorarea veniturilor fiscale",
+        "emisiunea de monedă fără acoperire",
+        "împrumuturile externe",
+        "reducerea cheltuielilor publice"
+      ],
+      "corect": 1,
+      "explicatie": "Emisiunea de monedă fără acoperire în bunuri economice sporește masa monetară fără o creștere corespunzătoare a ofertei - cea mai inflaționistă măsură."
+    },
+    {
+      "intrebare": "Creșterea gradului de ocupare reprezintă:",
+      "optiuni": [
+        "un instrument al politicii economice",
+        "un obiectiv al politicii economice",
+        "o formă de intervenție directă a statului",
+        "o cauză a deficitului bugetar"
+      ],
+      "corect": 1,
+      "explicatie": "Creșterea gradului de ocupare e unul dintre obiectivele principale ale politicilor economice, nu un instrument."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "În prezent, într-o economie de piață, funcțiile statului se rezumă la apărare, administrare și asigurarea cadrului legislativ.",
+      "corect": false,
+      "explicatie": "Nu - statul modern îndeplinește funcții mult mai largi: alocarea resurselor, redistribuirea veniturilor, echilibrul macroeconomic, protecția socială etc."
+    },
+    {
+      "enunt": "Programarea economică se manifestă, cu precădere, în economiile planificate (de comandă).",
+      "corect": false,
+      "explicatie": "Nu - programarea economică, așa cum e discutată aici, e un element complementar economiei DE PIAȚĂ, cu caracter orientativ, nu obligatoriu ca în economiile de comandă."
+    },
+    {
+      "enunt": "Creșterea economică reprezintă un instrument al politicilor economice.",
+      "corect": false,
+      "explicatie": "Nu - creșterea economică e un OBIECTIV al politicilor economice, nu un instrument (mijloc) de atingere a lui."
+    },
+    {
+      "enunt": "Cea mai inflaționistă cale de acoperire a deficitului bugetar este emisiunea de monedă.",
+      "corect": true,
+      "explicatie": "Da - emisiunea de monedă fără acoperire e considerată cea mai inflaționistă măsură de acoperire a deficitului."
+    },
+    {
+      "enunt": "Creșterea gradului de ocupare reprezintă un obiectiv al politicii economice.",
+      "corect": true,
+      "explicatie": "Da - alături de stabilitatea prețurilor, creșterea economică și echilibrul balanței de plăți."
+    }
+  ],
+  "probleme": [],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "Strategia economică"
+        },
+        {
+          "id": "t2",
+          "text": "Politica economică"
+        },
+        {
+          "id": "t3",
+          "text": "Bugetul deficitar"
+        },
+        {
+          "id": "t4",
+          "text": "Datoria publică"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Ansamblul obiectivelor privind economia unei țări, pe termen mediu și lung"
+        },
+        {
+          "id": "o_b",
+          "text": "Componenta strategiei prin care se stabilesc acțiunile concrete de realizare a obiectivelor"
+        },
+        {
+          "id": "o_c",
+          "text": "Buget în care cheltuielile depășesc veniturile"
+        },
+        {
+          "id": "o_d",
+          "text": "Suma împrumuturilor contractate de stat, interne sau externe"
+        },
+        {
+          "id": "o_e",
+          "text": "Mijloacele și resursele folosite pentru atingerea obiectivelor de politică economică"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, instrumentele economice - un concept înrudit, dar diferit de strategie sau politică."
+    }
+  ]
+}

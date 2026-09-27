@@ -1,0 +1,332 @@
+{
+  "capitol": {
+    "numar": 15,
+    "titlu": "Venitul, consumul și investițiile",
+    "obiective": [
+      "Să înțelegi conținutul indicatorilor macroeconomici și relațiile dintre aceștia",
+      "Să calculezi ratele medii și marginale ale consumului și economisirii",
+      "Să explici legea psihologică fundamentală a lui Keynes",
+      "Să evidențiezi rolul investițiilor și al multiplicatorului investițiilor în economie",
+      "Să rezolvi aplicații practice privind acești indicatori"
+    ]
+  },
+  "teorie": [
+    {
+      "id": "indicatori-macroeconomici",
+      "nr": "1",
+      "titlu": "Indicatorii macroeconomici",
+      "text": [
+        "Indicatorii macroeconomici (agregați) reflectă locul unei economii naționale în economia mondială - se calculează prin însumarea valorii bunurilor economice finale produse la nivel micro și mezoeconomic. Principalii indicatori: PGB, PIB, PIN, PNB, PNN, venitul național, venitul personal, venitul disponibil.",
+        "Prețurile pieței (Pp), suportate de consumatori, diferă de prețurile factorilor (Pf), suportate de producători: Pp = Pf + Izin, unde Izin (impozitele indirecte nete) = impozitele indirecte totale - subvențiile de exploatare."
+      ],
+      "puncteCheie": [
+        {
+          "termen": "PGB (produsul global brut)",
+          "descriere": "valoarea totală a bunurilor economice obținute într-o țară, într-un an"
+        },
+        {
+          "termen": "PIB (produsul intern brut)",
+          "descriere": "PIB = PGB - CI (consumul intermediar); valoarea bunurilor finale produse în interiorul țării"
+        },
+        {
+          "termen": "PIN (produsul intern net)",
+          "descriere": "PIN = PIB - A (amortizarea)"
+        },
+        {
+          "termen": "PNB (produsul național brut)",
+          "descriere": "PNB = PIB ± SREI (soldul relațiilor economice internaționale)"
+        }
+      ],
+      "exemple": [
+        "Structura PIB, după destinația bunurilor finale: PIB = CP + CG + IB + Exn, unde CP=consum privat, CG=consum guvernamental, IB=investiția brută, Exn=exportul net (export-import)."
+      ],
+      "formule": [
+        {
+          "nume": "Produsul intern brut",
+          "formula": "PIB = PGB - CI"
+        },
+        {
+          "nume": "Structura PIB",
+          "formula": "PIB = CP + CG + IB + Exn"
+        },
+        {
+          "nume": "Deflatorul PIB",
+          "formula": "Deflator PIB = (PIB nominal/PIB real) x 100"
+        }
+      ]
+    },
+    {
+      "id": "venit-consum-economisire",
+      "nr": "2",
+      "titlu": "Venitul, consumul și economisirea",
+      "text": [
+        "Consumul (C) reprezintă cheltuielile agenților economici pentru achiziționarea de bunuri și servicii destinate satisfacerii nevoilor. Economiile (E) reprezintă excedentul de venit peste cheltuielile de consum: E = VD - C.",
+        "J.M. Keynes a formulat legea psihologică fundamentală privind înclinația spre consum și economisire: pe măsură ce venitul disponibil (VD) crește, atât consumul, cât și economiile cresc, dar economiile cresc mai repede decât venitul, iar venitul mai repede decât consumul: Δ%E > Δ%VD > Δ%C."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Factorii care influențează consumul și economiile",
+          "categorii": [
+            {
+              "nume": "Obiectivi",
+              "definitie": "mărimea venitului real, așteptările privind venitul viitor, creditul de consum, politica fiscală"
+            },
+            {
+              "nume": "Subiectivi (psihologici)",
+              "definitie": "dorința de rezerve pentru situații neprevăzute, dorința de a beneficia de dobânzi, dorința de a investi, dorința de a lăsa moștenire"
+            }
+          ]
+        }
+      ],
+      "exemple": [],
+      "formule": [
+        {
+          "nume": "Rata medie a consumului",
+          "formula": "c = (C/VD) x 100"
+        },
+        {
+          "nume": "Rata marginală spre consum",
+          "formula": "c’ = ΔC/ΔVD"
+        },
+        {
+          "nume": "Rata medie a economiilor",
+          "formula": "e = (E/VD) x 100"
+        },
+        {
+          "nume": "Rata marginală spre economii",
+          "formula": "e’ = ΔE/ΔVD"
+        },
+        {
+          "nume": "Relația fundamentală",
+          "formula": "c + e = 1 (100%)   și   c’ + e’ = 1"
+        }
+      ],
+      "calculator": "consumEconomii"
+    },
+    {
+      "id": "investitiile",
+      "nr": "3",
+      "titlu": "Investițiile și multiplicatorul lor",
+      "text": [
+        "Investițiile reprezintă partea din venitul disponibil cheltuită pentru achiziționarea bunurilor de capital, în scopul formării și creșterii dimensiunilor capitalului existent, precum și modernizării lui.",
+        "Multiplicatorul investițiilor (K) reflectă cu cât sporește venitul disponibil (ΔVD) în viitor, la creșterea cu o unitate a investițiilor (ΔI) - practic, de câte ori se multiplică o investiție inițială, pe măsură ce banii cheltuiți circulă prin economie, în runde succesive."
+      ],
+      "clasificari": [
+        {
+          "criteriu": "Formele investițiilor, după destinație și sursă",
+          "categorii": [
+            {
+              "nume": "Investiții nete (IN)",
+              "definitie": "contribuie la formarea netă a capitalului - sporirea capitalului fix și a stocurilor; sursă: venit, profit, economii"
+            },
+            {
+              "nume": "Investiții de înlocuire (II)",
+              "definitie": "înlocuiesc capitalul fix uzat; sursă: fondul de amortizare"
+            },
+            {
+              "nume": "Investiții brute (IB)",
+              "definitie": "IB = IN + II - contribuie la formarea brută a capitalului"
+            }
+          ]
+        }
+      ],
+      "puncteCheie": [
+        "Factorii care influențează investițiile: volumul venitului și al economiilor, cererea de bunuri, rata dobânzii, rata rentabilității firmei, așteptările întreprinzătorilor",
+        "Efectele creșterii investițiilor, la nivelul firmei: mai multe locuri de muncă, modernizare, productivitate mai mare",
+        "Efectele creșterii investițiilor, la nivelul economiei naționale: reducerea șomajului și a inflației, creștere economică, calitate a vieții mai bună"
+      ],
+      "exemple": [
+        "Într-o economie închisă, fără intervenția statului, economiile (E) sunt egale, teoretic, cu investițiile (I): VD = C + I, iar în dinamică, ΔVD = ΔC + ΔI."
+      ],
+      "formule": [
+        {
+          "nume": "Investițiile brute",
+          "formula": "IB = IN + II"
+        },
+        {
+          "nume": "Multiplicatorul investițiilor",
+          "formula": "K = ΔVD/ΔI = 1/e’ = 1/(1-c’)"
+        },
+        {
+          "nume": "Sporul venitului disponibil",
+          "formula": "ΔVD = K x ΔI"
+        }
+      ],
+      "notaLegatura": {
+        "href": "#sect-explorator-multiplicator",
+        "text": "Explorează interactiv cum funcționează multiplicatorul, rundă cu rundă, în secțiunea V, mai jos."
+      }
+    }
+  ],
+  "grila": [
+    {
+      "intrebare": "PIB include:",
+      "optiuni": [
+        "amortizarea",
+        "consumul intermediar de materii prime",
+        "bunurile destinate autoconsumului",
+        "comerțul cu droguri (economia subterană)"
+      ],
+      "corect": 0,
+      "explicatie": "PIB e un indicator BRUT (include amortizarea); consumul intermediar, autoconsumul și activitățile ilegale nu se includ în PIB."
+    },
+    {
+      "intrebare": "Reprezintă o investiție, în sens economic:",
+      "optiuni": [
+        "cumpărarea unei case de locuit, pentru uz propriu",
+        "achiziționarea de acțiuni la bursă, ca simplu plasament financiar",
+        "cumpărarea unui teren neconstruit",
+        "achiziționarea de utilaje necesare producției"
+      ],
+      "corect": 3,
+      "explicatie": "Investiția, în sens economic, înseamnă achiziționarea de bunuri de capital tehnic pentru producție - nu simple plasamente financiare sau achiziții de bunuri deja existente."
+    },
+    {
+      "intrebare": "Multiplicatorul investițiilor (K) este:",
+      "optiuni": [
+        "direct proporțional cu înclinația marginală spre economii",
+        "invers proporțional cu înclinația marginală spre economii",
+        "independent de înclinația marginală spre economii sau consum",
+        "egal întotdeauna cu 1"
+      ],
+      "corect": 1,
+      "explicatie": "K = 1/e’ - cu cât înclinația marginală spre economii (e’) e mai mică, cu atât multiplicatorul K e mai mare (relație inversă)."
+    },
+    {
+      "intrebare": "Legea psihologică fundamentală a lui Keynes arată că, atunci când venitul crește:",
+      "optiuni": [
+        "consumul crește mai repede decât venitul",
+        "economiile cresc mai repede decât venitul, iar acesta mai repede decât consumul",
+        "consumul și economiile cresc în aceeași proporție cu venitul",
+        "doar consumul crește, economiile rămân constante"
+      ],
+      "corect": 1,
+      "explicatie": "Δ%E > Δ%VD > Δ%C - economiile cresc proporțional mai mult decât venitul, iar venitul mai mult decât consumul."
+    },
+    {
+      "intrebare": "Investițiile de înlocuire au ca sursă principală:",
+      "optiuni": [
+        "profitul reinvestit",
+        "amortizarea",
+        "creditul bancar",
+        "emisiunea de acțiuni"
+      ],
+      "corect": 1,
+      "explicatie": "Investițiile de înlocuire sunt destinate înlocuirii capitalului fix uzat, iar sursa lor principală este fondul de amortizare."
+    }
+  ],
+  "af": [
+    {
+      "enunt": "Multiplicatorul investițiilor este invers proporțional cu înclinația marginală spre economii.",
+      "corect": true,
+      "explicatie": "Da - K = 1/e’."
+    },
+    {
+      "enunt": "Când venitul depășește cheltuielile de consum, există fenomenul de dezeconomisire.",
+      "corect": false,
+      "explicatie": "Dimpotrivă - când venitul depășește consumul, apare economisirea (E=VD-C>0). Dezeconomisirea ar însemna consum mai mare decât venitul."
+    },
+    {
+      "enunt": "Politica fiscală este un factor obiectiv care influențează consumul și economiile.",
+      "corect": true,
+      "explicatie": "Da - politica fiscală (impozitele) e un factor obiectiv, alături de venitul real, creditul de consum etc."
+    },
+    {
+      "enunt": "Prețurile curente de piață sunt influențate de fenomenele inflaționiste.",
+      "corect": true,
+      "explicatie": "Da - de aceea se face distincția între prețuri nominale (curente, afectate de inflație) și prețuri reale (constante, neafectate)."
+    },
+    {
+      "enunt": "Investițiile brute sunt egale cu suma dintre investițiile nete și cele de înlocuire.",
+      "corect": true,
+      "explicatie": "Da - IB = IN + II."
+    }
+  ],
+  "probleme": [
+    {
+      "enunt": "În condițiile unei rate a inflației de 25%, PIB nominal crește cu 50%. Dacă PIBr(0) este 80.000 u.m., cât este PIBr(1)?",
+      "unitate": "u.m.",
+      "corect": 96000,
+      "toleranta": 500,
+      "explicatie": "I(PIB nominal)=150%, Deflator=I(Ip)=125%. I(PIBreal)=(150/125)x100=120%. PIBr(1)=80.000x1,20=96.000 u.m."
+    },
+    {
+      "enunt": "Venitul personal este 800 u.m., iar impozitul pe venitul personal este 200 u.m. Dacă s-au economisit 200 u.m., care este rata medie a consumului (c)?",
+      "unitate": "",
+      "corect": 0.667,
+      "toleranta": 0.02,
+      "explicatie": "VD = 800-200 = 600 u.m. C = VD-E = 600-200 = 400 u.m. c = C/VD = 400/600 = 2/3 ≈ 0,667."
+    },
+    {
+      "enunt": "Venitul disponibil sporește cu 5.000 u.m., iar cheltuielile de consum cresc de 1,5 ori, ajungând la 6.000 u.m. Care este multiplicatorul investițiilor (K)?",
+      "unitate": "",
+      "corect": 1.667,
+      "toleranta": 0.05,
+      "explicatie": "C0 = 6.000/1,5 = 4.000 u.m. ΔC = 6.000-4.000 = 2.000 u.m. c’ = ΔC/ΔVD = 2.000/5.000 = 0,4. e’ = 1-0,4 = 0,6. K = 1/e’ = 1/0,6 ≈ 1,667."
+    }
+  ],
+  "asociere": [
+    {
+      "instructiune": "Asociază fiecare termen cu definiția corectă (atenție - sunt mai multe definiții decât termeni).",
+      "coloanaA": [
+        {
+          "id": "t1",
+          "text": "PIB"
+        },
+        {
+          "id": "t2",
+          "text": "PIN"
+        },
+        {
+          "id": "t3",
+          "text": "PNB"
+        },
+        {
+          "id": "t4",
+          "text": "Multiplicatorul investițiilor (K)"
+        }
+      ],
+      "coloanaB": [
+        {
+          "id": "o_a",
+          "text": "Valoarea tuturor bunurilor economice finale produse în interiorul unei țări"
+        },
+        {
+          "id": "o_b",
+          "text": "PIB, din care se scade amortizarea capitalului fix"
+        },
+        {
+          "id": "o_c",
+          "text": "PIB, corectat cu soldul relațiilor economice internaționale"
+        },
+        {
+          "id": "o_d",
+          "text": "Arată de câte ori se multiplică o creștere a investițiilor, în venitul disponibil viitor"
+        },
+        {
+          "id": "o_e",
+          "text": "Rata la care cresc economiile, atunci când venitul crește cu o unitate"
+        }
+      ],
+      "perechi": [
+        {
+          "stanga": "t1",
+          "dreapta": "o_a"
+        },
+        {
+          "stanga": "t2",
+          "dreapta": "o_b"
+        },
+        {
+          "stanga": "t3",
+          "dreapta": "o_c"
+        },
+        {
+          "stanga": "t4",
+          "dreapta": "o_d"
+        }
+      ],
+      "explicatie": "Observă cum o_e descrie, de fapt, înclinația marginală spre economii (e’) - un concept înrudit, dar diferit de multiplicator."
+    }
+  ]
+}

@@ -1,0 +1,1288 @@
+{
+  "capitol": 2,
+  "titlu_capitol": "Economia de piață și proprietatea",
+  "nota_metodologica": "Acest capitol nu contine formule de calcul sau probleme numerice in sursa originala (este un capitol conceptual: activitatea economica, agentii economici, proprietatea si libera initiativa). De aceea, toate cele 40 de intrebari sunt de teorie, in acelasi format cu argumentare unica pentru fiecare intrebare.",
+  "intrebari": [
+    {
+      "id": "C2_T01",
+      "capitol": 2,
+      "numar": 1,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Activitatea economică (A.E), în general, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ansamblul acțiunilor întreprinse de agenții economici pentru a obține bunuri materiale și servicii cu resurse economice limitate, în scopul satisfacerii nevoilor umane nelimitate numeric",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Ansamblul nevoilor umane nesatisfăcute la un moment dat",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Totalitatea bunurilor libere existente într-o societate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar tranzacțiile de pe piața de capital",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Activitatea economică este definită, în sens larg, ca ansamblul acțiunilor agenților economici pentru a obține bunuri materiale și servicii, folosind resurse limitate, cu scopul satisfacerii nevoilor umane nelimitate numeric — ea trebuie subordonată principiului raționalității și eficienței economice. Prin urmare, răspunsul corect este: Ansamblul acțiunilor întreprinse de agenții economici pentru a obține bunuri materiale și servicii cu resurse economice limitate, în scopul satisfacerii nevoilor umane nelimitate numeric."
+    },
+    {
+      "id": "C2_T02",
+      "capitol": 2,
+      "numar": 2,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Fazele principale ale activității economice sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Producția, repartiția, schimbul și consumul",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Proprietatea, libera inițiativă și concurența",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Microeconomia, mezoeconomia și macroeconomia",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Cererea, oferta și prețul de echilibru",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul enumeră explicit cele patru faze principale prin care trece orice activitate economică: producția (obținerea bunurilor), repartiția (distribuirea veniturilor), schimbul (circulația bunurilor) și consumul (utilizarea lor finală). Prin urmare, răspunsul corect este: Producția, repartiția, schimbul și consumul."
+    },
+    {
+      "id": "C2_T03",
+      "capitol": 2,
+      "numar": 3,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Nivelul organizatoric structural care privește economia la nivelul unei firme, al unui producător sau consumator individual se numește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Economia naturală",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Mezoeconomia",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Macroeconomia",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Microeconomia",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul distinge trei niveluri organizatorice structurale ale economiei: microeconomia (nivel de firmă, producător sau consumator individual), mezoeconomia (nivel de ramură, subramură, unități teritorial-administrative) și macroeconomia (nivelul economiei naționale). Prin urmare, răspunsul corect este: Microeconomia."
+    },
+    {
+      "id": "C2_T04",
+      "capitol": 2,
+      "numar": 4,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Modul de organizare a economiei bazat pe accesul direct la bunurile economice sau pe autoconsum (fiecare își produce bunurile de care are nevoie) se numește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Economia naturală",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Economia de piață",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Economia de schimb (marfară)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Economia de comandă",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul definește economia naturală drept acel mod de organizare a activității economice bazat pe accesul direct la bunurile economice, prin autoconsum — spre deosebire de economia de schimb, unde accesul la bunuri este, în principal, indirect, prin intermediul pieței. Prin urmare, răspunsul corect este: Economia naturală."
+    },
+    {
+      "id": "C2_T05",
+      "capitol": 2,
+      "numar": 5,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele reprezintă o condiție (premisă) a trecerii de la economia naturală la economia de schimb?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Eliminarea totală a schimbului dintre producători",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Diviziunea muncii, care determină specializarea producătorilor",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Renunțarea completă la autonomia decizională a producătorilor",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Interzicerea proprietății private",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul indică explicit două condiții ale trecerii de la economia naturală la cea de schimb: diviziunea muncii (care determină specializarea producătorilor) și autonomia/independența producătorilor (libertatea lor decizională privind bunurile economice produse). Prin urmare, răspunsul corect este: Diviziunea muncii, care determină specializarea producătorilor."
+    },
+    {
+      "id": "C2_T06",
+      "capitol": 2,
+      "numar": 6,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Forma economiei de schimb în care instituțiile statului decid modul de alocare a resurselor economice, iar proprietatea publică domină în economie, se numește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Economia naturală",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Economia concurențială",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Economia de comandă (planificată-centralizată)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Economia de piață",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul distinge, în cadrul economiei de schimb, două forme principale: economia de comandă (planificată-centralizată), în care instituțiile statului decid alocarea resurselor și domină proprietatea publică, și economia de piață, în care piața și firmele private decid alocarea resurselor, proprietatea privată fiind dominantă. Prin urmare, răspunsul corect este: Economia de comandă (planificată-centralizată)."
+    },
+    {
+      "id": "C2_T07",
+      "capitol": 2,
+      "numar": 7,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Economia de piață reprezintă acel tip de economie în care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Fiecare individ își produce singur toate bunurile de care are nevoie",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Alocarea resurselor se face, în principal, prin mecanismele pieței (preț, concurență)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Alocarea resurselor se face exclusiv prin decizii ale instituțiilor statului",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Nu există niciun fel de proprietate privată",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Definiția economiei de piață, așa cum apare în manual, este centrată tocmai pe mecanismul de alocare a resurselor: acesta se realizează, în principal, prin intermediul pieței — prin preț și concurență — spre deosebire de economia de comandă, unde alocarea e decisă de stat. Prin urmare, răspunsul corect este: Alocarea resurselor se face, în principal, prin mecanismele pieței (preț, concurență)."
+    },
+    {
+      "id": "C2_T08",
+      "capitol": 2,
+      "numar": 8,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele NU se numără printre trăsăturile principale ale economiei de piață, conform manualului?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Formarea liberă a prețurilor la piață",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Libertatea de decizie și de acțiune a agenților economici, în limite legale",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Dominația proprietății private, în condițiile pluralismului formelor de proprietate",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Intervenția nelimitată și totală a statului în toate deciziile economice ale firmelor",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul precizează explicit că economia de piață presupune intervenția LIMITATĂ a statului democratic în economie, nu o intervenție nelimitată și totală — aceasta din urmă ar caracteriza, de fapt, economia de comandă. Prin urmare, răspunsul corect este: Intervenția nelimitată și totală a statului în toate deciziile economice ale firmelor."
+    },
+    {
+      "id": "C2_T09",
+      "capitol": 2,
+      "numar": 9,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Scopul principal al participării la activitatea economică, conform trăsăturilor economiei de piață, este:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Maximizarea profitului pentru producători/vânzători și a satisfacției pentru cumpărători/consumatori",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Limitarea strictă a libertății de alegere a consumatorilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Egalizarea forțată a veniturilor tuturor agenților economici",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eliminarea completă a concurenței dintre firme",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul indică drept scop principal al participării la activitatea economică, în economia de piață, maximizarea profitului — pentru producători și vânzători — și, respectiv, maximizarea satisfacției — pentru cumpărători și consumatori. Prin urmare, răspunsul corect este: Maximizarea profitului pentru producători/vânzători și a satisfacției pentru cumpărători/consumatori."
+    },
+    {
+      "id": "C2_T10",
+      "capitol": 2,
+      "numar": 10,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Agenții economici (individuali sau în grup) sunt definiți ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Persoane fizice și/sau juridice care îndeplinesc funcții bine determinate în activitatea economică și dispun de o anumită autonomie decizională",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Doar instituțiile statului implicate în economie",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Ansamblul resurselor naturale ale unei țări",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar persoanele fizice care lucrează în sectorul privat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Definiția agenților economici din manual este generală: persoane fizice și/sau juridice — individuale sau în grup — care îndeplinesc funcții economice bine determinate și dispun de o anumită autonomie decizională, indiferent dacă aparțin sectorului public sau privat. Prin urmare, răspunsul corect este: Persoane fizice și/sau juridice care îndeplinesc funcții bine determinate în activitatea economică și dispun de o anumită autonomie decizională."
+    },
+    {
+      "id": "C2_T11",
+      "capitol": 2,
+      "numar": 11,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Totalitatea unităților economice sau instituționale care au un comportament analog (aceeași funcție economică principală și resurse principale) formează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Un circuit economic",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "O formă de proprietate mixtă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Un sector instituțional",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "O piață de capital",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul atrage atenția explicit asupra acestei definiții: agenții economici cu aceeași funcție principală și aceleași resurse principale sunt grupați într-un sector instituțional (de exemplu, societăți nefinanciare, instituții financiare, administrații publice etc.). Prin urmare, răspunsul corect este: Un sector instituțional."
+    },
+    {
+      "id": "C2_T12",
+      "capitol": 2,
+      "numar": 12,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Societățile comerciale nefinanciare, firmele și întreprinderile fac parte din sectorul instituțional care:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Prestează exclusiv servicii financiare celorlalți agenți economici",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Produce bunuri economice nefinanciare destinate pieței",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Consumă bunuri și servicii, fără a produce nimic",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Redistribuie veniturile și bogăția la nivelul întregii societăți",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul definește societățile comerciale nefinanciare (firmele, întreprinderile) drept sectorul instituțional care produce bunuri economice nefinanciare destinate pieței — spre deosebire de instituțiile financiare (care prestează servicii financiare) sau administrațiile publice (care redistribuie venituri). Prin urmare, răspunsul corect este: Produce bunuri economice nefinanciare destinate pieței."
+    },
+    {
+      "id": "C2_T13",
+      "capitol": 2,
+      "numar": 13,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Banca centrală, băncile comerciale și bursele fac parte din sectorul instituțional al:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Societăților de asigurare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Administrațiilor publice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Administrațiilor private",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Instituțiilor financiare și de credit",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul include explicit banca centrală, băncile comerciale și bursele în categoria instituțiilor financiare și de credit, care prestează servicii financiare comerciale celorlalți agenți economici — distincte de administrațiile publice sau de societățile de asigurare. Prin urmare, răspunsul corect este: Instituțiilor financiare și de credit."
+    },
+    {
+      "id": "C2_T14",
+      "capitol": 2,
+      "numar": 14,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Statul, ministerele, primăriile, armata, poliția și instituțiile publice de sănătate, cultură și învățământ formează sectorul instituțional al:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Exteriorului (restul lumii)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Administrațiilor publice",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Societăților comerciale nefinanciare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Menajelor colective",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul definește administrațiile publice drept sectorul instituțional care prestează servicii nemarfare colectivităților și efectuează operații de redistribuire a veniturilor și a bogăției — incluzând explicit statul, ministerele, primăriile, armata, poliția și instituțiile publice de sănătate, cultură și învățământ. Prin urmare, răspunsul corect este: Administrațiilor publice."
+    },
+    {
+      "id": "C2_T15",
+      "capitol": 2,
+      "numar": 15,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Organizațiile religioase, partidele politice, asociațiile sportive și culturale, sindicatele, Crucea Roșie și fundațiile fac parte din sectorul instituțional al:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Administrațiilor private",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Instituțiilor financiare și de credit",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Societăților de asigurare",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Menajelor individuale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul include organizațiile religioase, partidele politice, asociațiile sportive și culturale, sindicatele, Crucea Roșie și fundațiile în categoria administrațiilor private, care prestează, de regulă, servicii nemarfare pentru anumite categorii de populație. Prin urmare, răspunsul corect este: Administrațiilor private."
+    },
+    {
+      "id": "C2_T16",
+      "capitol": 2,
+      "numar": 16,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Sectorul instituțional în care riscurile individuale sunt transformate în riscuri colective se numește:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Administrații publice",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Exteriorul (restul lumii)",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Societăți de asigurare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Menaje individuale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul definește societățile de asigurare drept sectorul instituțional care realizează activități de asigurare, prin care riscurile individuale sunt transformate în riscuri colective — o funcție distinctă de toate celelalte sectoare instituționale. Prin urmare, răspunsul corect este: Societăți de asigurare."
+    },
+    {
+      "id": "C2_T17",
+      "capitol": 2,
+      "numar": 17,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un celibatar, o familie, un salariat, un șomer sau un pensionar reprezintă, din perspectiva sectoarelor instituționale, exemple de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Administrații private",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Societăți de asigurare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Agenți economici „fictivi”",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Menaje individuale",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul dă explicit aceste exemple (celibatar, familie, salariat, șomer, pensionar, liber profesionist) ca fiind menaje individuale — o subcategorie a sectorului instituțional al menajelor, alături de menajele colective (cantine, mânăstiri, internate). Prin urmare, răspunsul corect este: Menaje individuale."
+    },
+    {
+      "id": "C2_T18",
+      "capitol": 2,
+      "numar": 18,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Turiștii străini, imigranții, reședințele ambasadelor și sediile firmelor străine de pe teritoriul unei țări sunt incluși în sectorul instituțional numit, generic:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Menaje colective",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Societăți comerciale nefinanciare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Administrații publice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Exteriorul (restul lumii, străinătatea)",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul denumește acest sector „exteriorul”, „restul lumii” sau „străinătatea” — unitățile nerezidente care efectuează operații cu cele rezidente. I se spune agent economic „fictiv” tocmai pentru că nu are o funcție economică principală și nici resurse principale specifice, ca celelalte sectoare. Prin urmare, răspunsul corect este: Exteriorul (restul lumii, străinătatea)."
+    },
+    {
+      "id": "C2_T19",
+      "capitol": 2,
+      "numar": 19,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Totalitatea fluxurilor economice (reale și monetare) dintre agenții economici ai unei țări, în strânsa lor interdependență, formează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Sectorul instituțional",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Proprietatea mixtă",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Libera inițiativă",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Circuitul economic",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul definește circuitul economic drept totalitatea fluxurilor economice — reale și monetare — care au loc între agenții economici ai unei țări, în strânsa lor interdependență, nu doar o simplă listă de tranzacții izolate. Prin urmare, răspunsul corect este: Circuitul economic."
+    },
+    {
+      "id": "C2_T20",
+      "capitol": 2,
+      "numar": 20,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Proprietatea, din punct de vedere economic, reflectă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar dreptul de a folosi temporar un bun, fără nicio altă implicație",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Ansamblul resurselor naturale ale unei țări, indiferent de subiect",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Exclusiv bunurile deținute de stat",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Un contract social, o relație între oameni (unități economice) cu privire la bunuri materiale, spirituale sau de altă natură existente în societate sau produse prin activitatea umană/economică",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Proprietatea nu se rezumă la simpla deținere fizică a unui bun: manualul o definește ca un contract social, o relație între oameni (unități economice) cu privire la bunuri materiale, spirituale sau de altă natură, existente în societate sau produse prin activitate umană/economică. Prin urmare, răspunsul corect este: Un contract social, o relație între oameni (unități economice) cu privire la bunuri materiale, spirituale sau de altă natură existente în societate sau produse prin activitatea umană/economică."
+    },
+    {
+      "id": "C2_T21",
+      "capitol": 2,
+      "numar": 21,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Obiectul proprietății, conform teoriei economice, îl reprezintă:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar resursele naturale neregenerabile",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar agenții economici individuali",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Bunurile materiale și serviciile (bunurile economice)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Doar instituțiile statului",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul distinge clar subiecții proprietății (agenții economici) de obiectul ei — bunurile materiale și serviciile, adică bunurile economice asupra cărora se exercită drepturile de proprietate. Prin urmare, răspunsul corect este: Bunurile materiale și serviciile (bunurile economice)."
+    },
+    {
+      "id": "C2_T22",
+      "capitol": 2,
+      "numar": 22,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Subiecții proprietății, conform teoriei economice, sunt:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Doar resursele economice naturale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Agenții economici (indivizii, familia, sociogrupurile, organizațiile naționale și internaționale etc.)",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Doar statul și instituțiile publice",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Doar bunurile materiale existente în societate",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Subiecții proprietății sunt cei care exercită drepturile asupra bunurilor — agenții economici, indivizii, familia, sociogrupurile, precum și organizațiile naționale și internaționale — și nu bunurile în sine (acestea fiind obiectul proprietății). Prin urmare, răspunsul corect este: Agenții economici (indivizii, familia, sociogrupurile, organizațiile naționale și internaționale etc.)."
+    },
+    {
+      "id": "C2_T23",
+      "capitol": 2,
+      "numar": 23,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dreptul proprietarului de a decide soarta bunului său, conform propriilor interese — să-l vândă, să-l închirieze, să-l arendeze — reprezintă atributul (dreptul) de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Utilizare",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Uzufruct",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Dispoziție",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Posesiune",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Dintre cele patru atribute ale proprietății, dreptul de dispoziție este cel care privește puterea proprietarului de a decide soarta bunului conform propriilor sale interese (vânzare, închiriere, arendare) — celelalte atribute (posesiune, utilizare, uzufruct) privesc alte aspecte ale relației cu bunul. Prin urmare, răspunsul corect este: Dispoziție."
+    },
+    {
+      "id": "C2_T24",
+      "capitol": 2,
+      "numar": 24,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dreptul proprietarului de a stăpâni în fapt, direct și nemijlocit, obiectul proprietății (de exemplu, de a purta un inel de aur) reprezintă atributul de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dispoziție",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Posesiune",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Uzufruct",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Utilizare",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Dreptul de posesiune este cel care privește stăpânirea în fapt, directă și nemijlocită, a obiectului proprietății — manualul dă exact exemplul persoanei care poartă un inel de aur, drept de care poate renunța temporar (de exemplu, depunând inelul într-un seif) fără a ceda și dreptul de dispoziție. Prin urmare, răspunsul corect este: Posesiune."
+    },
+    {
+      "id": "C2_T25",
+      "capitol": 2,
+      "numar": 25,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Posibilitatea de a folosi obiectul proprietății conform interesului proprietarului, de către el însuși sau de către o altă persoană delegată, dar în folosul proprietarului, reprezintă atributul de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Utilizare",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Dispoziție",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Posesiune",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Uzufruct",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dreptul de utilizare privește exact posibilitatea folosirii obiectului proprietății conform interesului proprietarului — fie de către proprietarul însuși, fie de către o altă persoană delegată de el, dar întotdeauna în folosul proprietarului. Prin urmare, răspunsul corect este: Utilizare."
+    },
+    {
+      "id": "C2_T26",
+      "capitol": 2,
+      "numar": 26,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Dreptul de a beneficia de roadele/veniturile aduse de obiectul proprietății reprezintă atributul de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Uzufruct",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Utilizare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Posesiune",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Dispoziție",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Dintre cele patru atribute ale proprietății, uzufructul este cel care privește strict beneficiul/veniturile aduse de obiectul proprietății — de exemplu, chiria încasată pentru o locuință închiriată, distinctă de dreptul de a decide soarta bunului (dispoziție) sau de a-l stăpâni în fapt (posesiune). Prin urmare, răspunsul corect este: Uzufruct."
+    },
+    {
+      "id": "C2_T27",
+      "capitol": 2,
+      "numar": 27,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un proprietar care își utilizează singur proprietatea, fără a ceda niciun atribut altcuiva:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Nu mai poate beneficia de uzufruct",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Beneficiază de toate atributele proprietății",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Pierde automat dreptul de dispoziție",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Este obligat să cedeze dreptul de posesiune",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul precizează explicit, ca primă concluzie privind atributele proprietății, că proprietarul care își utilizează singur proprietatea (fără a o ceda, integral sau parțial, altcuiva) beneficiază de toate cele patru atribute simultan: dispoziție, posesiune, utilizare și uzufruct. Prin urmare, răspunsul corect este: Beneficiază de toate atributele proprietății."
+    },
+    {
+      "id": "C2_T28",
+      "capitol": 2,
+      "numar": 28,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Un proprietar care închiriază o casă sau angajează salariați pentru a-i lucra o afacere:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Renunță definitiv și ireversibil la toate atributele proprietății",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Poate renunța, temporar, la dreptul de posesiune, de folosire și la o parte din uzufruct, păstrându-și însă dreptul de dispoziție",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Este obligat prin lege să vândă bunul în cel mult un an",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Pierde automat orice drept asupra bunului respectiv",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul precizează, ca a doua concluzie privind atributele proprietății, că proprietarul care nu-și utilizează singur proprietatea (de exemplu, prin închiriere sau angajare de salariați) poate renunța doar temporar la posesiune, folosire și la o parte din uzufruct — fără a pierde dreptul fundamental de dispoziție asupra bunului. Prin urmare, răspunsul corect este: Poate renunța, temporar, la dreptul de posesiune, de folosire și la o parte din uzufruct, păstrându-și însă dreptul de dispoziție."
+    },
+    {
+      "id": "C2_T29",
+      "capitol": 2,
+      "numar": 29,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Atributele proprietății pot fi înstrăinate total prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Donație, vânzare și moștenire",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Închiriere și arendare",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Concesionare exclusiv",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Simpla trecere a timpului, fără nicio operațiune juridică",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul distinge clar cele două moduri de înstrăinare a atributelor proprietății: total, prin donație, vânzare și moștenire, și parțial, prin închiriere, arendare și concesionare. Prin urmare, răspunsul corect este: Donație, vânzare și moștenire."
+    },
+    {
+      "id": "C2_T30",
+      "capitol": 2,
+      "numar": 30,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele reprezintă o formă de proprietate privată asociativă, conform clasificării formelor de proprietate după subiect?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Proprietatea publică (de stat)",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Societățile pe acțiuni și cooperativele de producție, de consum sau de credit",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Proprietatea individuală (personală)",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Proprietatea mixtă la nivel internațional",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Manualul clasifică proprietatea privată în două forme: individuală (personală) și asociativă — aceasta din urmă incluzând explicit societățile pe acțiuni și cooperativele de producție, de consum sau de credit. Prin urmare, răspunsul corect este: Societățile pe acțiuni și cooperativele de producție, de consum sau de credit."
+    },
+    {
+      "id": "C2_T31",
+      "capitol": 2,
+      "numar": 31,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "În economia de piață, formele de proprietate care coexistă (privată, publică, mixtă) sunt caracterizate, conform manualului, prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Interzicerea explicită a proprietății private prin lege",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Izolare totală, fără nicio legătură între ele",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Egalitate perfectă și imuabilă, fără nicio schimbare posibilă în timp",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Interdependență, continuă transformare și permanentă competiție pentru supremație, câștigând cea mai eficientă/rentabilă în utilizarea obiectului proprietății",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul subliniază, ca primă concluzie privind formele de proprietate, că acestea coexistă în economia de piață fiind interdependente, aflate într-o continuă transformare și într-o permanentă competiție pentru supremație — câștigând, în cele din urmă, forma cea mai eficientă/rentabilă în utilizarea obiectului proprietății. Prin urmare, răspunsul corect este: Interdependență, continuă transformare și permanentă competiție pentru supremație, câștigând cea mai eficientă/rentabilă în utilizarea obiectului proprietății."
+    },
+    {
+      "id": "C2_T32",
+      "capitol": 2,
+      "numar": 32,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pluralismul formelor de proprietate, conform manualului, generează:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Dispariția completă a proprietății private",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea automată a proprietății publice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Competiția dintre formele de proprietate, dar și libera inițiativă a agenților economici",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Interzicerea legală a proprietății mixte",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul leagă explicit pluralismul formelor de proprietate de două efecte: competiția dintre ele pentru supremație și, totodată, libera inițiativă a agenților economici, care se poate manifesta tocmai datorită acestei diversități de forme de proprietate. Prin urmare, răspunsul corect este: Competiția dintre formele de proprietate, dar și libera inițiativă a agenților economici."
+    },
+    {
+      "id": "C2_T33",
+      "capitol": 2,
+      "numar": 33,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Libera inițiativă este definită, în manual, ca:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Absența oricărei limite legale asupra acțiunilor agenților economici",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Obligația legală de a acționa exclusiv conform deciziilor centralizate ale statului",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Expresia libertății economice bazată pe proprietatea privată, reflectând libertatea agenților economici de a acționa conform propriilor interese, în limitele impuse de legile juridice în vigoare",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Dreptul statului de a decide singur toate deciziile economice ale firmelor",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Libera inițiativă nu înseamnă absența oricărei reguli, ci expresia libertății economice bazată pe proprietatea privată: libertatea agenților economici de a acționa conform propriilor interese, așa cum consideră că este mai bine, dar întotdeauna în limitele impuse de legile juridice în vigoare. Prin urmare, răspunsul corect este: Expresia libertății economice bazată pe proprietatea privată, reflectând libertatea agenților economici de a acționa conform propriilor interese, în limitele impuse de legile juridice în vigoare."
+    },
+    {
+      "id": "C2_T34",
+      "capitol": 2,
+      "numar": 34,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Libera inițiativă (libertatea de acțiune) se concretizează, printre altele, în libertatea agenților economici de a:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stabili prețurile bunurilor economice și de a-și alege furnizorii, clienții și piețele",
+          "corect": true
+        },
+        {
+          "litera": "B",
+          "text": "Anula orice contract încheiat de alți agenți economici, fără acordul lor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Impune prin lege prețurile pentru toți ceilalți agenți economici",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Decide unilateral politica monetară a băncii centrale",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "A",
+      "explicatie": "Manualul enumeră explicit componentele liberei inițiative: libertatea de a-și exercita atributele proprietății, de a-și alege obiectul și dimensiunile afacerilor, furnizorii, clienții, piețele, de a stabili prețurile bunurilor economice și de a acționa ca întreprinzător în administrarea propriei afaceri. Prin urmare, răspunsul corect este: Stabili prețurile bunurilor economice și de a-și alege furnizorii, clienții și piețele."
+    },
+    {
+      "id": "C2_T35",
+      "capitol": 2,
+      "numar": 35,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Libera inițiativă cunoaște cea mai mare dezvoltare în condițiile:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Interzicerii totale a pieței",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Economiei de comandă centralizate",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Proprietății private (particulare-individuale)",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Proprietății exclusiv publice/de stat",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Manualul precizează explicit că libera inițiativă cunoaște cea mai mare dezvoltare tocmai în condițiile proprietății private (particulare-individuale), fiind, de altfel, expresia libertății economice bazată pe această formă de proprietate. Prin urmare, răspunsul corect este: Proprietății private (particulare-individuale)."
+    },
+    {
+      "id": "C2_T36",
+      "capitol": 2,
+      "numar": 36,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Conform manualului, libera inițiativă reprezintă o sursă de:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Ineficiență generalizată în economie",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Blocaje administrative la nivelul firmelor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Scădere constantă a productivității muncii",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Eficiență și rentabilitate, atât la nivel microeconomic, cât și macroeconomic",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Manualul afirmă explicit că libera inițiativă este o sursă de eficiență și rentabilitate, atât la nivel microeconomic (al firmei), cât și la nivel macroeconomic (al economiei naționale) — ea implică, totodată, restructurarea și funcționarea normală a economiei. Prin urmare, răspunsul corect este: Eficiență și rentabilitate, atât la nivel microeconomic, cât și macroeconomic."
+    },
+    {
+      "id": "C2_T37",
+      "capitol": 2,
+      "numar": 37,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Care dintre următoarele este o trăsătură a economiei de piață legată de modul de finanțare a economiei?",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Finanțarea economiei exclusiv prin troc, fără monedă",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Finanțarea economiei printr-un sistem bancar-financiar complex, modern",
+          "corect": true
+        },
+        {
+          "litera": "C",
+          "text": "Finanțarea exclusivă a economiei direct de la bugetul de stat, fără intermediari",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Interzicerea oricărui împrumut bancar pentru firme",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "B",
+      "explicatie": "Printre trăsăturile principale ale economiei de piață, manualul menționează explicit finanțarea economiei printr-un sistem bancar-financiar complex și modern — nu finanțare directă de la buget sau prin troc, ceea ce ar caracteriza alte tipuri de organizare economică. Prin urmare, răspunsul corect este: Finanțarea economiei printr-un sistem bancar-financiar complex, modern."
+    },
+    {
+      "id": "C2_T38",
+      "capitol": 2,
+      "numar": 38,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Pluralismul centrelor de decizie economică, ca trăsătură a economiei de piață, înseamnă că:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Deciziile economice sunt luate exclusiv de organizații internaționale",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Doar statul are dreptul de a lua decizii economice",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Deciziile economice sunt luate de o multitudine de agenți economici autonomi, nu de un singur centru unic de decizie",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Toate deciziile economice sunt centralizate la nivelul unui singur minister",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Pluralismul centrelor de decizie economică este exact opusul centralizării: în economia de piață, deciziile sunt luate de o multitudine de agenți economici autonomi (firme, consumatori, instituții), nu de un singur centru unic, precum în economia de comandă. Prin urmare, răspunsul corect este: Deciziile economice sunt luate de o multitudine de agenți economici autonomi, nu de un singur centru unic de decizie."
+    },
+    {
+      "id": "C2_T39",
+      "capitol": 2,
+      "numar": 39,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Relațiile economice concurențiale, ca trăsătură a economiei de piață, presupun:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Stabilirea prin lege a unui singur furnizor pentru fiecare produs",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Eliminarea legală a libertății de alegere a consumatorilor",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Absența completă a oricărei forme de rivalitate între firme",
+          "corect": false
+        },
+        {
+          "litera": "D",
+          "text": "Existența unei rivalități între agenții economici, care îi stimulează să acționeze mai eficient",
+          "corect": true
+        }
+      ],
+      "raspuns_corect": "D",
+      "explicatie": "Relațiile economice de piață concurențiale, enumerate explicit printre trăsăturile economiei de piață, presupun tocmai existența rivalității dintre agenții economici — un mecanism care îi stimulează pe aceștia să acționeze cât mai eficient pentru a atrage clienți și a obține profit. Prin urmare, răspunsul corect este: Existența unei rivalități între agenții economici, care îi stimulează să acționeze mai eficient."
+    },
+    {
+      "id": "C2_T40",
+      "capitol": 2,
+      "numar": 40,
+      "tip": "teorie",
+      "punctaj": 1,
+      "enunt": "Formarea liberă a prețurilor la piață, ca trăsătură a economiei de piață, înseamnă că prețurile se stabilesc, în principal, prin:",
+      "optiuni": [
+        {
+          "litera": "A",
+          "text": "Negocieri secrete între toate firmele dintr-o ramură, interzise prin lege",
+          "corect": false
+        },
+        {
+          "litera": "B",
+          "text": "Decizia exclusivă și obligatorie a unui minister central de prețuri",
+          "corect": false
+        },
+        {
+          "litera": "C",
+          "text": "Confruntarea liberă dintre cerere și ofertă, fără a fi impuse administrativ de stat",
+          "corect": true
+        },
+        {
+          "litera": "D",
+          "text": "Un plan național de prețuri valabil pentru toate bunurile economice",
+          "corect": false
+        }
+      ],
+      "raspuns_corect": "C",
+      "explicatie": "Formarea liberă a prețurilor este chiar opusul stabilirii lor administrative: în economia de piață, prețurile rezultă din confruntarea liberă a cererii cu oferta, fără a fi impuse de un centru unic de decizie precum statul. Prin urmare, răspunsul corect este: Confruntarea liberă dintre cerere și ofertă, fără a fi impuse administrativ de stat."
+    }
+  ],
+  "schema_versiune": "2.0"
+}

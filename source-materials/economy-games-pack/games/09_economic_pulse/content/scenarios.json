@@ -1,0 +1,245 @@
+[
+  {
+    "id": "ep01",
+    "difficulty": "easy",
+    "indicators": {
+      "growth": -3.0,
+      "unemployment": 10.0,
+      "investment": -12,
+      "profits": -15,
+      "inflation": 4.0
+    },
+    "phase": "crisis",
+    "policies": [
+      "monetary_ease",
+      "public_spending"
+    ]
+  },
+  {
+    "id": "ep02",
+    "difficulty": "easy",
+    "indicators": {
+      "growth": -0.5,
+      "unemployment": 12.0,
+      "investment": -5,
+      "profits": -4,
+      "inflation": 2.0
+    },
+    "phase": "depression",
+    "policies": [
+      "public_spending",
+      "tax_relief"
+    ]
+  },
+  {
+    "id": "ep03",
+    "difficulty": "easy",
+    "indicators": {
+      "growth": 2.0,
+      "unemployment": 9.0,
+      "investment": 8,
+      "profits": 6,
+      "inflation": 3.0
+    },
+    "phase": "recovery",
+    "policies": [
+      "support_investment"
+    ]
+  },
+  {
+    "id": "ep04",
+    "difficulty": "easy",
+    "indicators": {
+      "growth": 5.0,
+      "unemployment": 4.5,
+      "investment": 14,
+      "profits": 12,
+      "inflation": 5.0
+    },
+    "phase": "expansion",
+    "policies": [
+      "neutral_or_tighten"
+    ]
+  },
+  {
+    "id": "ep05",
+    "difficulty": "medium",
+    "indicators": {
+      "growth": -4.0,
+      "unemployment": 11.5,
+      "investment": -18,
+      "profits": -20,
+      "inflation": 6.0
+    },
+    "phase": "crisis",
+    "policies": [
+      "targeted_support"
+    ]
+  },
+  {
+    "id": "ep06",
+    "difficulty": "medium",
+    "indicators": {
+      "growth": 0.2,
+      "unemployment": 10.5,
+      "investment": -1,
+      "profits": 0,
+      "inflation": 1.5
+    },
+    "phase": "depression",
+    "policies": [
+      "public_spending"
+    ]
+  },
+  {
+    "id": "ep07",
+    "difficulty": "medium",
+    "indicators": {
+      "growth": 2.8,
+      "unemployment": 7.5,
+      "investment": 10,
+      "profits": 8,
+      "inflation": 3.2
+    },
+    "phase": "recovery",
+    "policies": [
+      "support_investment"
+    ]
+  },
+  {
+    "id": "ep08",
+    "difficulty": "medium",
+    "indicators": {
+      "growth": 6.2,
+      "unemployment": 3.8,
+      "investment": 18,
+      "profits": 15,
+      "inflation": 7.0
+    },
+    "phase": "expansion",
+    "policies": [
+      "tighten"
+    ]
+  },
+  {
+    "id": "ep09",
+    "difficulty": "hard",
+    "indicators": {
+      "growth": -2.2,
+      "unemployment": 9.5,
+      "investment": -10,
+      "profits": -12,
+      "inflation": 9.0
+    },
+    "phase": "crisis",
+    "policies": [
+      "balanced_anti_crisis"
+    ]
+  },
+  {
+    "id": "ep10",
+    "difficulty": "hard",
+    "indicators": {
+      "growth": 0.8,
+      "unemployment": 11.0,
+      "investment": 2,
+      "profits": 1,
+      "inflation": 2.5
+    },
+    "phase": "depression",
+    "policies": [
+      "targeted_support"
+    ]
+  },
+  {
+    "id": "ep11",
+    "difficulty": "hard",
+    "indicators": {
+      "growth": 3.2,
+      "unemployment": 6.8,
+      "investment": 12,
+      "profits": 9,
+      "inflation": 4.0
+    },
+    "phase": "recovery",
+    "policies": [
+      "support_investment"
+    ]
+  },
+  {
+    "id": "ep12",
+    "difficulty": "hard",
+    "indicators": {
+      "growth": 5.8,
+      "unemployment": 4.0,
+      "investment": 17,
+      "profits": 14,
+      "inflation": 8.0
+    },
+    "phase": "expansion",
+    "policies": [
+      "tighten"
+    ]
+  },
+  {
+    "id": "ep13",
+    "difficulty": "mastery",
+    "indicators": {
+      "growth": -1.5,
+      "unemployment": 8.8,
+      "investment": -8,
+      "profits": -6,
+      "inflation": 10.0
+    },
+    "phase": "crisis",
+    "policies": [
+      "balanced_anti_crisis"
+    ]
+  },
+  {
+    "id": "ep14",
+    "difficulty": "mastery",
+    "indicators": {
+      "growth": 1.0,
+      "unemployment": 9.8,
+      "investment": 3,
+      "profits": 2,
+      "inflation": 3.0
+    },
+    "phase": "recovery",
+    "policies": [
+      "support_investment"
+    ]
+  },
+  {
+    "id": "ep15",
+    "difficulty": "mastery",
+    "indicators": {
+      "growth": 4.8,
+      "unemployment": 4.2,
+      "investment": 15,
+      "profits": 13,
+      "inflation": 6.5
+    },
+    "phase": "expansion",
+    "policies": [
+      "neutral_or_tighten"
+    ]
+  },
+  {
+    "id": "ep16",
+    "difficulty": "mastery",
+    "indicators": {
+      "growth": -0.2,
+      "unemployment": 12.5,
+      "investment": -3,
+      "profits": -2,
+      "inflation": 1.0
+    },
+    "phase": "depression",
+    "policies": [
+      "public_spending",
+      "tax_relief"
+    ]
+  }
+]
