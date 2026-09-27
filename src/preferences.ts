@@ -1,11 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-export const DEFAULT_ADMIN_PASSWORD = 'admin123'
-export const ADMIN_QUICK_ACCESS_ENABLED = true
-export const DEMO_ADMIN_EMAIL = 'admin@exemplu.ro'
-
 const APPEARANCE_STORAGE_KEY = 'economia-appearance-v1'
-const ADMIN_PASSWORD_STORAGE_KEY = 'economia-admin-password-v1'
 
 export type ThemeId = 'navy' | 'graphite' | 'forest' | 'blue-amber' | 'teal-coral' | 'plum-mint'
 export type FontId = 'editorial' | 'inter' | 'ibm-plex' | 'source' | 'lora' | 'newsreader' | 'space'
@@ -115,32 +110,3 @@ export function useAppearance() {
 }
 
 export type AppearanceApi = ReturnType<typeof useAppearance>
-
-export function hasCustomAdminPassword() {
-  try {
-    return Boolean(window.localStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY))
-  } catch {
-    return false
-  }
-}
-
-export function getAdminPassword() {
-  try {
-    return window.localStorage.getItem(ADMIN_PASSWORD_STORAGE_KEY) || DEFAULT_ADMIN_PASSWORD
-  } catch {
-    return DEFAULT_ADMIN_PASSWORD
-  }
-}
-
-export function changeAdminPassword(currentPassword: string, nextPassword: string) {
-  if (currentPassword !== getAdminPassword()) return 'Parola curentă nu este corectă.'
-  if (nextPassword.length < 8) return 'Parola nouă trebuie să aibă cel puțin 8 caractere.'
-  if (!/[A-Za-zĂÂÎȘȚăâîșț]/.test(nextPassword) || !/\d/.test(nextPassword)) return 'Folosește cel puțin o literă și o cifră.'
-  if (nextPassword === currentPassword) return 'Parola nouă trebuie să fie diferită de cea curentă.'
-  try {
-    window.localStorage.setItem(ADMIN_PASSWORD_STORAGE_KEY, nextPassword)
-    return null
-  } catch {
-    return 'Parola nu a putut fi salvată pe acest dispozitiv.'
-  }
-}

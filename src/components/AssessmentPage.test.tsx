@@ -1,10 +1,17 @@
 /** @vitest-environment jsdom */
 import '@testing-library/jest-dom/vitest'
-import { cleanup, fireEvent, render, screen } from '@testing-library/react'
+import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { submitReport, trackActivity } from '../api'
 import type { SessionApi } from '../session'
 import type { NormalizedQuestion } from '../types'
 import { AssessmentPage } from './AssessmentPage'
+
+vi.mock('../api', () => ({
+  submitReport: vi.fn(async () => ({ id: 'r1', archiveCode: 'CAP01-ABC123' })),
+  trackActivity: vi.fn(async () => ({ ok: true })),
+  sessionHeaders: () => ({}),
+}))
 
 const questions: NormalizedQuestion[] = [
   {
@@ -113,6 +120,31 @@ describe('assessment experience', () => {
     expect(screen.getByRole('button', { name: /descarcă raportul/i })).toBeInTheDocument()
     expect(screen.getByRole('textbox', { name: /e-mailul elevului/i })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /trimite pe e-mail/i })).toBeInTheDocument()
+  })
+
+  it('saves a student final test on the server with the real answers', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({ ok: false, status: 503, json: async () => ({ detail: 'x' }) } as Response)))
+    const studentSession = {
+      session: { completedRecapTests: [], userRole: 'student', userName: 'Ana Popescu', userEmail: 'ana@exemplu.ro' },
+      toggleRecapCompletion: vi.fn(),
+    } as unknown as SessionApi
+    render(<AssessmentPage chapterNumber={1} chapterTitle="Introducere în economie" mode="final" questions={questions} sessionApi={studentSession} onNavigate={vi.fn()} />)
+    fireEvent.click(screen.getByRole('button', { name: /începe testul/i }))
+    await waitFor(() => expect(trackActivity).toHaveBeenCalledWith(expect.objectContaining({ activity_key: 'final-1', progress: 0 })))
+    fireEvent.click(screen.getByRole('button', { name: /varianta a$/i }))
+    fireEvent.click(screen.getByRole('button', { name: /următoarea/i }))
+    fireEvent.click(screen.getByRole('button', { name: /varianta a2/i }))
+    fireEvent.click(screen.getByRole('button', { name: /finalizează/i }))
+    fireEvent.click(screen.getByRole('button', { name: /trimite acum/i }))
+    await waitFor(() => expect(submitReport).toHaveBeenCalledTimes(1))
+    expect(submitReport).toHaveBeenCalledWith(expect.objectContaining({
+      report_type: 'final', chapter_number: 1, score: 1, total: 2,
+      question_ids: ['q1', 'q2'], answers: { q1: 'a', q2: 'a' },
+    }))
+    expect(trackActivity).toHaveBeenCalledWith(expect.objectContaining({ state: 'finished', progress: 100, score: 1, total: 2 }))
+    expect(await screen.findByText('CAP01-ABC123')).toBeInTheDocument()
+    expect(screen.getByRole('textbox', { name: /e-mailul elevului/i })).toHaveAttribute('readonly')
+    vi.unstubAllGlobals()
   })
 
   it('shows the email delivery action to the teacher role', () => {

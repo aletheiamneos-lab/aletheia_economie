@@ -1,45 +1,58 @@
 import { useState, type FormEvent } from 'react'
 import { ArrowRight, BookOpenText, ChartNoAxesCombined, Eye, EyeOff, Folder, GraduationCap, LockKeyhole, Mail, ShieldCheck, UserRound } from 'lucide-react'
 import type { UserRole } from '../types'
-import { ADMIN_QUICK_ACCESS_ENABLED, DEFAULT_ADMIN_PASSWORD, DEMO_ADMIN_EMAIL, getAdminPassword, hasCustomAdminPassword } from '../preferences'
+
+export interface LoginRequest {
+  role: UserRole
+  name: string
+  email: string
+  password: string
+}
 
 interface LoginPageProps {
-  onLogin: (user: { name: string; email: string; role: UserRole }) => string | null
+  onLogin: (request: LoginRequest) => Promise<string | null>
+  notice?: string
 }
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-export function LoginPage({ onLogin }: LoginPageProps) {
+export function LoginPage({ onLogin, notice }: LoginPageProps) {
   const [role, setRole] = useState<UserRole>('student')
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [showPassword, setShowPassword] = useState(false)
   const [error, setError] = useState('')
-  const customAdminPassword = hasCustomAdminPassword()
+  const [busy, setBusy] = useState(false)
 
   const selectRole = (nextRole: UserRole) => {
     setRole(nextRole)
-    if (nextRole === 'admin' && !ADMIN_QUICK_ACCESS_ENABLED && !password && !customAdminPassword) setPassword(DEFAULT_ADMIN_PASSWORD)
     setError('')
   }
 
-  const submit = (event: FormEvent<HTMLFormElement>) => {
+  const submit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const safeEmail = role === 'admin' && ADMIN_QUICK_ACCESS_ENABLED ? DEMO_ADMIN_EMAIL : email.trim()
-    if (role === 'student' && name.trim().length < 3) {
-      setError('Introdu numele complet pentru a continua.')
+    if (busy) return
+    if (role === 'student') {
+      if (name.trim().length < 3) {
+        setError('Introdu numele complet pentru a continua.')
+        return
+      }
+      if (!emailPattern.test(email.trim())) {
+        setError('Introdu o adresă de e-mail validă.')
+        return
+      }
+    } else if (!password) {
+      setError('Introdu parola de administrator.')
       return
     }
-    if (!emailPattern.test(safeEmail)) {
-      setError('Introdu o adresă de e-mail validă.')
-      return
+    setBusy(true)
+    setError('')
+    try {
+      const loginError = await onLogin({ role, name: name.trim(), email: email.trim().toLowerCase(), password })
+      setError(loginError ?? '')
+    } finally {
+      setBusy(false)
     }
-    if (role === 'admin' && !ADMIN_QUICK_ACCESS_ENABLED && password !== getAdminPassword()) {
-      setError(customAdminPassword ? 'Parola de administrator nu este corectă.' : `Parola demo este ${DEFAULT_ADMIN_PASSWORD}.`)
-      return
-    }
-    const loginError = onLogin({ name: role === 'student' ? name : 'Administrator', email: safeEmail, role })
-    setError(loginError ?? '')
   }
 
   const isAdmin = role === 'admin'
@@ -99,28 +112,29 @@ export function LoginPage({ onLogin }: LoginPageProps) {
                 <div className="login-input-shell"><UserRound size={16}/><input value={name} onChange={(event) => setName(event.target.value)} placeholder="Ex.: Andrei Popescu" autoComplete="name" autoFocus/></div>
               </label>
             )}
-            {(!isAdmin || !ADMIN_QUICK_ACCESS_ENABLED) && <label>
+            {!isAdmin && <label>
               <span>Adresă de e-mail</span>
-              <div className="login-input-shell"><Mail size={16}/><input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder={isAdmin ? DEMO_ADMIN_EMAIL : 'elev@exemplu.ro'} autoComplete="email" autoFocus={isAdmin}/></div>
+              <div className="login-input-shell"><Mail size={16}/><input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="elev@exemplu.ro" autoComplete="email"/></div>
             </label>}
-            {isAdmin && !ADMIN_QUICK_ACCESS_ENABLED && (
+            {isAdmin && (
               <label>
-                <span className="login-field-heading">Parolă <small>{customAdminPassword ? 'Parolă personalizată' : <>Demo: <b>{DEFAULT_ADMIN_PASSWORD}</b></>}</small></span>
-                <div className="login-input-shell"><LockKeyhole size={16}/><input aria-label="Parolă" type={showPassword ? 'text' : 'password'} value={password} onChange={(event) => setPassword(event.target.value)} placeholder={customAdminPassword ? 'Introdu parola' : DEFAULT_ADMIN_PASSWORD} autoComplete="current-password"/><button type="button" onClick={() => setShowPassword((value) => !value)} aria-label={showPassword ? 'Ascunde parola' : 'Arată parola'}>{showPassword ? <EyeOff size={16}/> : <Eye size={16}/>}</button></div>
+                <span>Parolă</span>
+                <div className="login-input-shell"><LockKeyhole size={16}/><input aria-label="Parolă" type={showPassword ? 'text' : 'password'} value={password} onChange={(event) => setPassword(event.target.value)} placeholder="Introdu parola" autoComplete="current-password" autoFocus/><button type="button" onClick={() => setShowPassword((value) => !value)} aria-label={showPassword ? 'Ascunde parola' : 'Arată parola'}>{showPassword ? <EyeOff size={16}/> : <Eye size={16}/>}</button></div>
               </label>
             )}
 
+            {notice && !error && <p className="login-error" role="status">{notice}</p>}
             {error && <p className="login-error" role="alert">{error}</p>}
 
-            <button className="login-submit" type="submit">
-              <span>{isAdmin ? 'Intră ca administrator' : 'Intră în spațiul de studiu'}</span>
+            <button className="login-submit" type="submit" disabled={busy} aria-busy={busy}>
+              <span>{busy ? 'Se verifică accesul…' : isAdmin ? 'Intră ca administrator' : 'Intră în spațiul de studiu'}</span>
               <ArrowRight size={17}/>
             </button>
           </form>
 
           <footer className="login-access-note">
             {isAdmin ? <LockKeyhole size={14}/> : <ShieldCheck size={14}/>}
-            <span>{isAdmin ? (ADMIN_QUICK_ACCESS_ENABLED ? 'Acces rapid temporar pentru etapa de prototip · fără e-mail și fără parolă.' : customAdminPassword ? 'Folosește parola administrativă salvată pe acest dispozitiv.' : `Prototip local · parola demo este ${DEFAULT_ADMIN_PASSWORD}.`) : 'Datele rămân doar în sesiunea curentă pe acest dispozitiv.'}</span>
+            <span>{isAdmin ? 'Accesul administratorului este verificat pe server.' : 'Intră cu adresa de e-mail aprobată de profesor.'}</span>
           </footer>
         </section>
       </section>

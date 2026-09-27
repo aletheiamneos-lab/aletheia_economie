@@ -1,7 +1,8 @@
 import { lazy, Suspense, useEffect, useState } from 'react'
 import { AppShell } from './components/AppShell'
 import { Dashboard } from './components/Dashboard'
-import { LoginPage } from './components/LoginPage'
+import { LoginPage, type LoginRequest } from './components/LoginPage'
+import { ApiError, loginAdmin, loginStudent, logoutSession, restoreSession, SESSION_EXPIRED_EVENT, type ApiUser } from './api'
 import { NotesDrawer } from './components/NotesDrawer'
 import { ProfilePage } from './components/ProfilePage'
 import { chapters } from './data/catalog'
@@ -76,8 +77,11 @@ export function App() {
   const [route, setRoute] = useState<Route>(() => parseRoute(window.location.hash))
   const [notesOpen, setNotesOpen] = useState(false)
   const sessionApi = useSessionState()
-  const adminDataApi = useAdminData()
+  const isAdminSession = sessionApi.session.isAuthenticated && sessionApi.session.userRole === 'admin'
+  const adminDataApi = useAdminData(isAdminSession)
   const appearanceApi = useAppearance()
+  const [authChecked, setAuthChecked] = useState(false)
+  const [loginNotice, setLoginNotice] = useState('')
 
   const activeChapterNumber = route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment'
     ? route.chapter
@@ -99,14 +103,40 @@ export function App() {
     }
   }, [route.page, sessionApi.session.isAuthenticated, sessionApi.session.userRole])
 
+  // Restaurează sesiunea salvată (după reîncărcarea paginii).
   useEffect(() => {
-    if (!sessionApi.session.isAuthenticated || sessionApi.session.userRole !== 'student') return
-    const access = adminDataApi.authorizeStudent(sessionApi.session.userEmail)
-    if (access?.status === 'blocked') {
+    let active = true
+    restoreSession()
+      .then((user) => {
+        if (active && user) sessionApi.login(user)
+      })
+      .catch(() => {
+        if (active) setLoginNotice('Serverul nu răspunde momentan. Încearcă din nou peste câteva momente.')
+      })
+      .finally(() => {
+        if (active) setAuthChecked(true)
+      })
+    return () => { active = false }
+  }, [sessionApi.login])
+
+  // Sesiune expirată, cont blocat sau deconectare forțată de administrator.
+  useEffect(() => {
+    const expire = (event: Event) => {
+      const detail = (event as CustomEvent<string>).detail
       sessionApi.logout()
+      setLoginNotice(detail || 'Sesiunea a expirat. Autentifică-te din nou.')
       window.location.hash = '#/'
     }
-  }, [adminDataApi.authorizeStudent, sessionApi.logout, sessionApi.session.isAuthenticated, sessionApi.session.userEmail, sessionApi.session.userRole])
+    window.addEventListener(SESSION_EXPIRED_EVENT, expire)
+    return () => window.removeEventListener(SESSION_EXPIRED_EVENT, expire)
+  }, [sessionApi.logout])
+
+  // Semnal periodic: menține elevul „online” și detectează blocarea/deconectarea.
+  useEffect(() => {
+    if (!sessionApi.session.isAuthenticated) return
+    const timer = window.setInterval(() => { void restoreSession().catch(() => null) }, 60_000)
+    return () => window.clearInterval(timer)
+  }, [sessionApi.session.isAuthenticated])
 
   useEffect(() => {
     if (route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment') sessionApi.selectChapter(route.chapter)
@@ -160,22 +190,22 @@ export function App() {
     if (window.location.hash !== path) window.location.hash = path
   }
 
-  const login = (user: Parameters<typeof sessionApi.login>[0]) => {
-    if (user.role === 'student') {
-      const registeredStudent = adminDataApi.authorizeStudent(user.email)
-      if (registeredStudent?.status === 'blocked') return 'Accesul acestui cont este blocat. Contactează administratorul.'
-      const identity = { name: user.name.trim(), email: registeredStudent?.email ?? user.email.trim().toLowerCase() }
-      sessionApi.login({ ...user, name: identity.name, email: identity.email })
-      adminDataApi.registerAndConnectStudent(identity.name, identity.email)
-      if (window.location.hash === '#/admin/rapoarte') navigate('#/')
-      return null
+  const login = async (request: LoginRequest) => {
+    let user: ApiUser
+    try {
+      user = request.role === 'admin' ? await loginAdmin(request.password) : await loginStudent(request.name, request.email)
+    } catch (reason) {
+      return reason instanceof ApiError || reason instanceof Error ? reason.message : 'Autentificarea nu a reușit.'
     }
+    setLoginNotice('')
     sessionApi.login(user)
-    if (route.page === 'dashboard') navigate('#/admin/rapoarte')
+    if (user.role === 'student' && window.location.hash === '#/admin/rapoarte') navigate('#/')
+    if (user.role === 'admin' && route.page === 'dashboard') navigate('#/admin/rapoarte')
     return null
   }
 
-  if (!sessionApi.session.isAuthenticated) return <LoginPage onLogin={login} />
+  if (!authChecked) return <div className="route-loading" role="status"><span />Se verifică sesiunea…</div>
+  if (!sessionApi.session.isAuthenticated) return <LoginPage onLogin={login} notice={loginNotice} />
 
   return (
     <AppShell
@@ -183,7 +213,7 @@ export function App() {
       sessionApi={sessionApi}
       onNavigate={navigate}
       onLogout={() => {
-        if (sessionApi.session.userRole === 'student') adminDataApi.disconnectStudentByEmail(sessionApi.session.userEmail)
+        void logoutSession()
         sessionApi.logout()
         navigate('#/')
       }}

@@ -5,9 +5,15 @@ from shared.models import Session
 from shared.registry import get_engine, GAME_DIRS
 from api.economy_games import InvalidGameResult, parse_game_result
 from api.report_email import router as report_email_router
+from api.auth import router as auth_router
+from api.platform_routes import admin_router, library_router, student_router
 
-app = FastAPI(title="Economie Games — 10 Games", version="1.0.0")
+app = FastAPI(title="Economie by A mentor — API", version="1.1.0")
 app.include_router(report_email_router)
+app.include_router(auth_router)
+app.include_router(admin_router)
+app.include_router(student_router)
+app.include_router(library_router)
 SESSIONS: Dict[str, Session] = {}
 GAME_RESULTS: list[dict] = []
 API_PREFIX = "/api/game-service"
@@ -26,6 +32,10 @@ def save_game_result(payload: Dict[str, Any]):
         raise HTTPException(status_code=400, detail=str(error)) from error
     GAME_RESULTS.append(result.to_dict())
     return {"ok": True, "result": result.to_dict()}
+
+@app.get("/health")
+def service_health():
+    return {"ok": True}
 
 @app.get(f"{API_PREFIX}/health")
 def health():

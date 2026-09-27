@@ -1,5 +1,6 @@
-import { Download, Eye, EyeOff, FileText, LibraryBig, Maximize2, X } from 'lucide-react'
+import { Download, Eye, EyeOff, FileText, LibraryBig, LoaderCircle, Maximize2, X } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
+import { apiRequest, getLibraryLink } from '../api'
 
 interface LibraryResource {
   id: string
@@ -8,7 +9,7 @@ interface LibraryResource {
   label?: string
   title: string
   fileName: string
-  url: string
+  url?: string
   size: number
 }
 
@@ -16,44 +17,35 @@ interface LibraryManifest {
   resources: LibraryResource[]
 }
 
-const hiddenStorageKey = 'economia-library-hidden-resources'
-
 function formatSize(bytes: number) {
   const megabytes = bytes / 1024 / 1024
   return megabytes >= 10 ? `${megabytes.toFixed(0)} MB` : `${megabytes.toFixed(1)} MB`
 }
 
-function getInitialHiddenResources() {
-  try {
-    const parsed = JSON.parse(window.localStorage.getItem(hiddenStorageKey) ?? '[]')
-    return Array.isArray(parsed) ? parsed.filter((id): id is string => typeof id === 'string') : []
-  } catch {
-    return []
-  }
+function withDownload(url: string, fileName: string) {
+  return `${url}${url.includes('?') ? '&' : '?'}download=${encodeURIComponent(fileName)}`
 }
 
 function ResourceCard({
   resource,
   hidden,
   isAdmin,
+  busy,
   onPreview,
+  onDownload,
   onToggleVisibility,
 }: {
   resource: LibraryResource
   hidden: boolean
   isAdmin: boolean
+  busy: boolean
   onPreview: () => void
+  onDownload: () => void
   onToggleVisibility: () => void
 }) {
   return (
     <article className={`library-resource ${hidden ? 'is-hidden' : ''}`}>
       <button className="library-cover" onClick={onPreview} aria-label={`Previzualizează ${resource.title}`}>
-        <iframe
-          src={`${resource.url}#page=1&view=FitH&toolbar=0&navpanes=0&scrollbar=0`}
-          title={`Coperta ${resource.title}`}
-          loading="lazy"
-          tabIndex={-1}
-        />
         <span className="library-cover-fallback"><FileText size={34}/><b>PDF</b></span>
         <span className="library-cover-hover"><Maximize2 size={18}/> Deschide</span>
       </button>
@@ -66,8 +58,8 @@ function ResourceCard({
       <p>Document PDF · {formatSize(resource.size)}</p>
 
       <div className="library-card-actions">
-        <button onClick={onPreview}><Eye size={14}/> Preview</button>
-        <a href={resource.url} download={resource.fileName}><Download size={14}/> Descarcă</a>
+        <button onClick={onPreview} disabled={busy}><Eye size={14}/> Preview</button>
+        <button onClick={onDownload} disabled={busy}>{busy ? <LoaderCircle size={14}/> : <Download size={14}/>} Descarcă</button>
       </div>
       {isAdmin && <button className={`library-visibility ${hidden ? 'show' : ''}`} onClick={onToggleVisibility}>
           {hidden ? <Eye size={14}/> : <EyeOff size={14}/>}
@@ -79,9 +71,11 @@ function ResourceCard({
 
 export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
   const [resources, setResources] = useState<LibraryResource[]>([])
-  const [hiddenResources, setHiddenResources] = useState<string[]>(getInitialHiddenResources)
-  const [preview, setPreview] = useState<LibraryResource | null>(null)
+  const [hiddenFiles, setHiddenFiles] = useState<string[]>([])
+  const [preview, setPreview] = useState<(LibraryResource & { url: string }) | null>(null)
+  const [busyFile, setBusyFile] = useState<string | null>(null)
   const [error, setError] = useState('')
+  const [actionError, setActionError] = useState('')
 
   useEffect(() => {
     let active = true
@@ -100,8 +94,31 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
   }, [])
 
   useEffect(() => {
-    window.localStorage.setItem(hiddenStorageKey, JSON.stringify(hiddenResources))
-  }, [hiddenResources])
+    let active = true
+    apiRequest<{ hidden: string[] }>('/api/library/settings/visibility')
+      .then((settings) => { if (active) setHiddenFiles(settings.hidden) })
+      .catch(() => null)
+    return () => { active = false }
+  }, [])
+
+  const hiddenResources = useMemo(
+    () => resources.filter((resource) => hiddenFiles.includes(resource.fileName)).map((resource) => resource.id),
+    [hiddenFiles, resources],
+  )
+
+  const openResource = async (resource: LibraryResource, action: 'preview' | 'download') => {
+    setBusyFile(resource.fileName)
+    setActionError('')
+    try {
+      const url = await getLibraryLink(resource.fileName)
+      if (action === 'preview') setPreview({ ...resource, url })
+      else window.location.assign(withDownload(url, resource.fileName))
+    } catch (reason) {
+      setActionError(reason instanceof Error ? reason.message : 'Documentul nu a putut fi deschis.')
+    } finally {
+      setBusyFile(null)
+    }
+  }
 
   useEffect(() => {
     if (!preview) return undefined
@@ -129,10 +146,18 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
     },
   ], [hiddenResources, isAdmin, resources])
 
-  const toggleVisibility = (resourceId: string) => {
-    setHiddenResources((current) => current.includes(resourceId)
-      ? current.filter((id) => id !== resourceId)
-      : [...current, resourceId])
+  const toggleVisibility = async (resource: LibraryResource) => {
+    const next = hiddenFiles.includes(resource.fileName)
+      ? hiddenFiles.filter((name) => name !== resource.fileName)
+      : [...hiddenFiles, resource.fileName]
+    setHiddenFiles(next)
+    try {
+      const saved = await apiRequest<{ hidden: string[] }>('/api/admin/library/visibility', { method: 'PUT', body: { hidden: next } })
+      setHiddenFiles(saved.hidden)
+    } catch (reason) {
+      setHiddenFiles(hiddenFiles)
+      setActionError(reason instanceof Error ? reason.message : 'Vizibilitatea nu a putut fi salvată.')
+    }
   }
 
   return (
@@ -149,6 +174,7 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
       </header>
 
       {error && <div className="library-error">{error}</div>}
+      {actionError && <div className="library-error" role="alert">{actionError}</div>}
 
       {groups.map((group) => (
         <section className="library-group" key={group.id}>
@@ -163,8 +189,10 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
                 resource={resource}
                 hidden={hiddenResources.includes(resource.id)}
                 isAdmin={isAdmin}
-                onPreview={() => setPreview(resource)}
-                onToggleVisibility={() => toggleVisibility(resource.id)}
+                busy={busyFile === resource.fileName}
+                onPreview={() => void openResource(resource, 'preview')}
+                onDownload={() => void openResource(resource, 'download')}
+                onToggleVisibility={() => void toggleVisibility(resource)}
               />
             ))}
           </div>
@@ -181,7 +209,7 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
             <header>
               <div><span>Document PDF</span><h2 id="library-preview-title">{preview.title}</h2></div>
               <div>
-                <a href={preview.url} download={preview.fileName}><Download size={15}/> Descarcă</a>
+                <a href={withDownload(preview.url, preview.fileName)}><Download size={15}/> Descarcă</a>
                 <button onClick={() => setPreview(null)} aria-label="Închide previzualizarea"><X size={19}/></button>
               </div>
             </header>

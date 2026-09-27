@@ -1,5 +1,6 @@
 import { buildImagePdf } from './graphExport'
 import type { NormalizedQuestion } from './types'
+import { sessionHeaders } from './api'
 
 export interface AdmissionReportTest {
   kind?: 'admission' | 'chapter' | 'recap'
@@ -653,7 +654,7 @@ export async function emailAdmissionReport(data: AdmissionReportData): Promise<A
   }
   const response = await fetch('/api/report-service/emails/test-report', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', ...sessionHeaders() },
     body: JSON.stringify({
       recipient_email: data.studentEmail,
       student_name: data.studentName,

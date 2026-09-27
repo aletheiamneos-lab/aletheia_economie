@@ -8,6 +8,7 @@ import {
   type GameManifestEntry,
 } from '../economy-games/economyGames'
 import { getGamePresentation } from '../games/catalog'
+import { sessionHeaders } from '../api'
 
 interface GameStudioPageProps {
   gameId: string
@@ -29,7 +30,7 @@ function rememberResult(event: FinishedEvent) {
 async function saveResult(event: FinishedEvent) {
   const response = await fetch('/api/game-results', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: { 'Content-Type': 'application/json', ...sessionHeaders() },
     body: JSON.stringify(event),
   })
   if (!response.ok) throw new Error(`Rezultatul nu a putut fi salvat (${response.status}).`)

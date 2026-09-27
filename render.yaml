@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: aletheia-economie-api
+    runtime: python
+    plan: free
+    region: frankfurt
+    rootDir: source-materials/economy-games-pack
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SUPABASE_URL
+        value: https://bxmajqxhybjvkcobdyxf.supabase.co
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: ECONOMIE_ADMIN_PASSWORD
+        sync: false
+      - key: SUPABASE_LIBRARY_BUCKET
+        value: library

@@ -1,8 +1,5 @@
 import base64
 
-from fastapi.testclient import TestClient
-
-from api.app import app
 from api.report_email import ReportEmailRequest, build_email_content, decode_pdf
 
 
@@ -57,23 +54,37 @@ def test_email_preserves_romanian_diacritics():
     assert "Bună, Elev cu diacritice!" in text
 
 
-def test_pdf_validation_rejects_non_pdf_content():
-    client = TestClient(app)
+def test_pdf_validation_rejects_non_pdf_content(client, student_headers):
     response = client.post(
         "/api/report-service/emails/test-report",
         json=request_payload(pdf_base64=base64.b64encode(b"not a pdf").decode("ascii")),
+        headers=student_headers,
     )
 
     assert response.status_code == 422
     assert response.json()["detail"]["code"] == "INVALID_PDF"
 
 
-def test_service_explains_when_delivery_is_not_configured(monkeypatch):
+def test_service_explains_when_delivery_is_not_configured(monkeypatch, client, student_headers):
     monkeypatch.setenv("REPORT_EMAIL_PROVIDER", "resend")
     monkeypatch.delenv("RESEND_API_KEY", raising=False)
-    client = TestClient(app)
-    response = client.post("/api/report-service/emails/test-report", json=request_payload())
+    response = client.post("/api/report-service/emails/test-report", json=request_payload(), headers=student_headers)
 
     assert response.status_code == 503
     assert response.json()["detail"]["code"] == "EMAIL_NOT_CONFIGURED"
     assert decode_pdf(request_payload()["pdf_base64"]).startswith(b"%PDF")
+
+
+def test_report_email_requires_a_session(client):
+    response = client.post("/api/report-service/emails/test-report", json=request_payload())
+    assert response.status_code == 401
+
+
+def test_student_cannot_send_report_to_another_address(client, student_headers):
+    response = client.post(
+        "/api/report-service/emails/test-report",
+        json=request_payload(recipient_email="altcineva@example.com"),
+        headers=student_headers,
+    )
+    assert response.status_code == 403
+    assert response.json()["detail"]["code"] == "RECIPIENT_NOT_ALLOWED"

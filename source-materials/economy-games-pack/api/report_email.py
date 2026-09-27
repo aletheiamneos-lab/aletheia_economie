@@ -10,11 +10,14 @@ import ssl
 from email.message import EmailMessage
 from email.utils import formataddr, make_msgid
 from pathlib import Path
-from typing import Literal
+from typing import Annotated, Literal
 
 import httpx
-from fastapi import APIRouter, HTTPException
+
+from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field, field_validator, model_validator
+
+from api.auth import get_current_session
 
 
 router = APIRouter(prefix="/api/report-service", tags=["test reports"])
@@ -324,7 +327,10 @@ def report_service_health():
 
 
 @router.post("/emails/test-report")
-async def send_test_report(payload: ReportEmailRequest):
+async def send_test_report(payload: ReportEmailRequest, session: Annotated[dict, Depends(get_current_session)]):
+    # Elevii pot trimite rapoarte doar către propria adresă; administratorul poate retrimite oricui.
+    if session["role"] == "student" and payload.recipient_email != (session.get("email") or "").lower():
+        raise HTTPException(status_code=403, detail={"code": "RECIPIENT_NOT_ALLOWED", "message": "Raportul poate fi trimis doar la adresa ta de e-mail."})
     pdf = decode_pdf(payload.pdf_base64)
     message_id = await deliver_report(payload, pdf)
     return {"status": "sent", "message_id": message_id, "recipient": payload.recipient_email}

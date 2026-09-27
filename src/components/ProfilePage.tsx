@@ -21,7 +21,8 @@ import {
   UsersRound,
 } from 'lucide-react'
 import type { SessionApi } from '../session'
-import { changeAdminPassword, fontOptions, themeOptions, type AppearanceApi } from '../preferences'
+import { changeAdminPassword } from '../api'
+import { fontOptions, themeOptions, type AppearanceApi } from '../preferences'
 
 interface ProfilePageProps {
   sessionApi: SessionApi
@@ -70,15 +71,20 @@ export function ProfilePage({ sessionApi, appearanceApi, adminStats, onNavigate 
   const [confirmPassword, setConfirmPassword] = useState('')
   const [passwordMessage, setPasswordMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null)
 
-  const updatePassword = (event: FormEvent<HTMLFormElement>) => {
+  const updatePassword = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     if (newPassword !== confirmPassword) {
       setPasswordMessage({ type: 'error', text: 'Confirmarea nu coincide cu parola nouă.' })
       return
     }
-    const error = changeAdminPassword(currentPassword, newPassword)
-    if (error) {
-      setPasswordMessage({ type: 'error', text: error })
+    if (newPassword.length < 8) {
+      setPasswordMessage({ type: 'error', text: 'Parola nouă trebuie să aibă cel puțin 8 caractere.' })
+      return
+    }
+    try {
+      await changeAdminPassword(currentPassword, newPassword)
+    } catch (reason) {
+      setPasswordMessage({ type: 'error', text: reason instanceof Error ? reason.message : 'Parola nu a putut fi schimbată.' })
       return
     }
     setCurrentPassword('')

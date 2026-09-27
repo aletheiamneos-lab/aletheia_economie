@@ -24,6 +24,7 @@ import {
 } from 'lucide-react'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { downloadAdmissionReport, emailAdmissionReport, type AdmissionReportData } from '../admissionReport'
+import { submitReport, trackActivity } from '../api'
 import type { SessionApi } from '../session'
 import type { NormalizedQuestion } from '../types'
 
@@ -34,6 +35,7 @@ interface AssessmentPageProps {
   questions: NormalizedQuestion[]
   sessionApi: SessionApi
   onNavigate: (path: string) => void
+  testId?: string
   admissionContext?: {
     variant: string
     session: string
@@ -68,7 +70,7 @@ function ScoreRing({ score, total }: { score: number; total: number }) {
   )
 }
 
-export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, sessionApi, onNavigate, admissionContext }: AssessmentPageProps) {
+export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, sessionApi, onNavigate, testId, admissionContext }: AssessmentPageProps) {
   const isFinal = mode === 'final'
   const isRecap = mode === 'recap'
   const isAdmission = mode === 'admission'
@@ -93,6 +95,14 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
   const [reportMessage, setReportMessage] = useState('')
   const [reportError, setReportError] = useState('')
   const autoEmailAttempted = useRef(false)
+  const reportSaved = useRef(false)
+  const [archiveCode, setArchiveCode] = useState('')
+  const isStudent = sessionApi.session.userRole === 'student'
+  const isGraded = isAdmission || isFinal || isRecap
+  const activityKey = isAdmission ? `admission-${testId ?? `${chapterNumber}-${admissionContext?.variant ?? ''}`}` : `${mode}-${chapterNumber}`
+  const activityName = isAdmission
+    ? `Admitere ${chapterNumber} · ${admissionContext?.variant ?? ''}`.trim()
+    : `${isRecap ? 'Test recapitulativ' : 'Test final'} · Capitolul ${String(chapterNumber).padStart(2, '0')}`
 
   const current = sessionQuestions[currentIndex]
   const answeredCount = Object.keys(answers).length
@@ -107,6 +117,39 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
     return () => window.clearInterval(timer)
   }, [phase])
 
+  useEffect(() => {
+    if (phase !== 'taking' || !isStudent || !isGraded || sessionQuestions.length === 0) return
+    const progress = Math.round((answeredCount / sessionQuestions.length) * 100)
+    const timer = window.setTimeout(() => {
+      void trackActivity({ activity_key: activityKey, test_name: activityName, progress: Math.min(progress, 99) })
+    }, answeredCount === 0 ? 0 : 3000)
+    return () => window.clearTimeout(timer)
+  }, [phase, answeredCount])
+
+  useEffect(() => {
+    if (phase !== 'results' || !isStudent || !isGraded || reportSaved.current) return
+    reportSaved.current = true
+    const total = sessionQuestions.length
+    void trackActivity({ activity_key: activityKey, test_name: activityName, progress: 100, state: 'finished', score, total })
+    submitReport({
+      report_type: isAdmission ? 'admission' : isRecap ? 'recap' : 'final',
+      test_name: isAdmission ? activityName : `${isRecap ? 'Test recapitulativ' : 'Test final'} · ${chapterTitle}`,
+      test_id: isAdmission ? testId : undefined,
+      chapter_number: isAdmission ? undefined : chapterNumber,
+      year: isAdmission ? chapterNumber : undefined,
+      session_label: isAdmission ? admissionContext?.session : undefined,
+      variant: isAdmission ? admissionContext?.variant : undefined,
+      economy_range: isAdmission ? admissionContext?.economyRange : undefined,
+      score,
+      total,
+      elapsed_seconds: elapsed,
+      question_ids: sessionQuestions.map((question) => question.id),
+      answers,
+    })
+      .then((result) => setArchiveCode(result.archiveCode))
+      .catch((reason: unknown) => setReportError(`Rezultatul nu a putut fi salvat pe server: ${reason instanceof Error ? reason.message : 'eroare necunoscută'}.`))
+  }, [phase])
+
   const start = () => {
     const selectedQuestions = hidesFeedbackUntilSubmit || filter === 'all' ? questions : questions.filter((question) => question.kind === filter)
     setSessionQuestions(selectedQuestions)
@@ -117,6 +160,8 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
     setReportMessage('')
     setReportError('')
     autoEmailAttempted.current = false
+    reportSaved.current = false
+    setArchiveCode('')
     setPhase('taking')
   }
 
@@ -310,13 +355,14 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
             </div>
             <div className="admission-report-form">
               <label><span>Numele elevului</span><input value={studentName} onChange={(event) => setStudentName(event.target.value)} placeholder="Ex.: Andrei Popescu" autoComplete="name"/></label>
-              <label><span>E-mailul elevului</span><input type="email" value={studentEmail} onChange={(event) => setStudentEmail(event.target.value)} placeholder="elev@exemplu.ro" autoComplete="email"/></label>
+              <label><span>E-mailul elevului</span><input type="email" value={studentEmail} onChange={(event) => setStudentEmail(event.target.value)} placeholder="elev@exemplu.ro" autoComplete="email" readOnly={isStudent}/></label>
               <div className="admission-report-actions">
                 <button className="button button-primary" disabled={reportBusy !== null} onClick={downloadReport}>{reportBusy === 'download' ? <LoaderCircle className="admission-spinner" size={17}/> : <Download size={17}/>} Descarcă raportul</button>
                 <button className="button admission-email-button" disabled={reportBusy !== null} onClick={() => void sendReportByEmail(false)}>{reportBusy === 'email' ? <LoaderCircle className="admission-spinner" size={17}/> : <Mail size={17}/>} {reportMessage ? 'Retrimite pe e-mail' : 'Trimite pe e-mail'}</button>
               </div>
               {reportError && <p className="admission-report-feedback error" role="alert">{reportError}</p>}
               {reportMessage && <p className="admission-report-feedback success" role="status">{reportMessage}</p>}
+              {archiveCode && <p className="admission-report-feedback success">Rezultatul a fost salvat în arhiva profesorului · cod <b>{archiveCode}</b></p>}
               <small className="admission-email-note">Pentru elev, trimiterea pornește automat la finalizarea testului. Adresa poate fi verificată aici, iar raportul poate fi retrimis oricând.</small>
             </div>
           </section>

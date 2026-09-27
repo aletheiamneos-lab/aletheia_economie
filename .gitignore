@@ -39,3 +39,6 @@ artifacts/
 Thumbs.db
 .idea/
 .vscode/
+public/library/*.pdf
+!.env.example
+!**/.env.example

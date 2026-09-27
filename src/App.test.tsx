@@ -8,22 +8,37 @@ import lessonOneIntegration from '../public/graph-lab/integration/lesson_01.inte
 import admissionManifest from '../public/admission-tests/manifest.json'
 import admissionTest2025 from '../public/admission-tests/data/Grila_G1_23iulie2025.json'
 import libraryManifest from '../public/library/manifest.json'
+import { resetFakeBackend, TEST_ADMIN_PASSWORD } from './test/fakeApi'
 
-function renderStudentApp() {
-  render(<App />)
-  fireEvent.change(screen.getByRole('textbox', { name: /nume complet/i }), { target: { value: 'Andrei Popescu' } })
-  fireEvent.change(screen.getByRole('textbox', { name: /adresă de e-mail/i }), { target: { value: 'andrei@exemplu.ro' } })
+vi.mock('./api', () => import('./test/fakeApi'))
+
+async function loginAsStudent(email = 'andrei@exemplu.ro', name = 'Andrei Popescu') {
+  fireEvent.change(await screen.findByRole('textbox', { name: /nume complet/i }), { target: { value: name } })
+  fireEvent.change(screen.getByRole('textbox', { name: /adresă de e-mail/i }), { target: { value: email } })
   fireEvent.click(screen.getByRole('button', { name: /intră în spațiul de studiu/i }))
 }
 
-function renderAdminApp() {
-  render(<App />)
-  fireEvent.click(screen.getByRole('tab', { name: /administrator/i }))
+async function loginAsAdmin(password = TEST_ADMIN_PASSWORD) {
+  fireEvent.click(await screen.findByRole('tab', { name: /administrator/i }))
+  fireEvent.change(screen.getByLabelText('Parolă'), { target: { value: password } })
   fireEvent.click(screen.getByRole('button', { name: /intră ca administrator/i }))
+}
+
+async function renderStudentApp() {
+  render(<App />)
+  await loginAsStudent()
+  await screen.findByRole('navigation', { name: 'Navigare principală' })
+}
+
+async function renderAdminApp() {
+  render(<App />)
+  await loginAsAdmin()
+  await screen.findByRole('navigation', { name: 'Navigare principală' })
 }
 
 describe('application flow', () => {
   beforeEach(() => {
+    resetFakeBackend()
     window.localStorage.clear()
     window.location.hash = '#/'
     window.scrollTo = vi.fn()
@@ -34,26 +49,34 @@ describe('application flow', () => {
     vi.unstubAllGlobals()
   })
 
-  it('starts with separate student and administrator access', () => {
+  it('starts with separate student and administrator access', async () => {
     render(<App />)
-    expect(screen.getByLabelText('Economie by A mentor')).toBeInTheDocument()
+    expect(await screen.findByLabelText('Economie by A mentor')).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'Elev' })).toHaveAttribute('aria-selected', 'true')
     fireEvent.click(screen.getByRole('tab', { name: 'Administrator' }))
     expect(screen.getByRole('heading', { name: 'Spațiul administratorului' })).toBeInTheDocument()
     expect(screen.queryByRole('textbox', { name: /adresă de e-mail/i })).not.toBeInTheDocument()
-    expect(screen.queryByLabelText('Parolă')).not.toBeInTheDocument()
+    expect(screen.getByLabelText('Parolă')).toHaveValue('')
+    expect(document.body.textContent).not.toMatch(/admin123|demo/i)
     expect(screen.getByRole('button', { name: /intră ca administrator/i })).toBeInTheDocument()
   })
 
-  it('returns to the access page after logout', () => {
-    renderStudentApp()
+  it('rejects a wrong administrator password', async () => {
+    render(<App />)
+    await loginAsAdmin('gresit')
+    expect(await screen.findByRole('alert')).toHaveTextContent('Parola de administrator nu este corectă.')
+    expect(screen.queryByRole('navigation', { name: 'Navigare principală' })).not.toBeInTheDocument()
+  })
+
+  it('returns to the access page after logout', async () => {
+    await renderStudentApp()
     fireEvent.click(screen.getByRole('button', { name: 'Deconectare' }))
-    expect(screen.getByRole('heading', { name: 'Bun venit la studiu' })).toBeInTheDocument()
+    expect(await screen.findByRole('heading', { name: 'Bun venit la studiu' })).toBeInTheDocument()
     expect(screen.queryByRole('navigation', { name: 'Navigare principală' })).not.toBeInTheDocument()
   })
 
   it('opens the real chapter from the dashboard', async () => {
-    renderStudentApp()
+    await renderStudentApp()
     expect(screen.getByRole('heading', { name: 'Bun venit, Andrei.' })).toBeInTheDocument()
     fireEvent.click(screen.getByRole('button', { name: /deschide capitolul 1:/i }))
     await waitFor(
@@ -64,7 +87,7 @@ describe('application flow', () => {
   })
 
   it('lists every chapter under Lessons and opens its selected activity', async () => {
-    renderStudentApp()
+    await renderStudentApp()
     fireEvent.click(screen.getByRole('button', { name: 'Lecții' }))
 
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Lecții', level: 1 })).toBeInTheDocument(), { timeout: 10000 })
@@ -99,7 +122,7 @@ describe('application flow', () => {
       })),
     }
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => flashcardDeck } as Response)))
-    renderStudentApp()
+    await renderStudentApp()
 
     fireEvent.click(screen.getByRole('button', { name: 'Flashcarduri' }))
     expect(window.location.hash).toBe('#/flashcarduri')
@@ -119,7 +142,7 @@ describe('application flow', () => {
 
   it('opens the PDF library and supports preview, download and visibility controls', async () => {
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => libraryManifest } as Response)))
-    renderStudentApp()
+    await renderStudentApp()
 
     expect(screen.getByText('Economie')).toBeInTheDocument()
     expect(screen.getByText('by A mentor')).toBeInTheDocument()
@@ -129,19 +152,20 @@ describe('application flow', () => {
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Manuale și suporturi', level: 1 })).toBeInTheDocument())
     expect(window.location.hash).toBe('#/biblioteca')
     await waitFor(() => expect(document.querySelectorAll('.library-resource')).toHaveLength(26))
-    expect(screen.getAllByRole('link', { name: /descarcă/i })).toHaveLength(26)
+    expect(screen.getAllByRole('button', { name: /descarcă/i })).toHaveLength(26)
+    expect(document.querySelectorAll('.library-resource iframe')).toHaveLength(0)
 
     expect(screen.queryByRole('button', { name: 'Ascunde elevilor' })).not.toBeInTheDocument()
 
     fireEvent.click(screen.getAllByRole('button', { name: 'Preview' })[0])
-    expect(screen.getByRole('dialog', { name: 'Introducere în economie' })).toBeInTheDocument()
-    expect(screen.getByTitle('Previzualizare Introducere în economie')).toHaveAttribute('src', '/library/capitol-01.pdf#view=FitH')
+    expect(await screen.findByRole('dialog', { name: 'Introducere în economie' })).toBeInTheDocument()
+    expect(screen.getByTitle('Previzualizare Introducere în economie')).toHaveAttribute('src', 'https://storage.test/library/capitol-01.pdf#view=FitH')
     fireEvent.click(screen.getByRole('button', { name: 'Închide previzualizarea' }))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
 
   it('keeps personal notes only in the current session', async () => {
-    renderStudentApp()
+    await renderStudentApp()
     fireEvent.click(screen.getByRole('button', { name: /deschide capitolul 1:/i }))
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Introducere în economie', level: 1 })).toBeInTheDocument())
     fireEvent.click(screen.getByRole('button', { name: 'Notițe' }))
@@ -155,7 +179,7 @@ describe('application flow', () => {
 
   it('opens a later chapter and its own final test', async () => {
     window.location.hash = '#/capitol/19'
-    renderStudentApp()
+    await renderStudentApp()
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Piața mondială', level: 1 })).toBeInTheDocument())
     fireEvent.click(screen.getAllByRole('button', { name: /test final/i })[0])
     await waitFor(() => expect(window.location.hash).toBe('#/capitol/19/test-final'))
@@ -164,7 +188,7 @@ describe('application flow', () => {
 
   it('lists the 19 recap tests with chapter titles and opens the selected test', async () => {
     window.location.hash = '#/teste-recapitulative'
-    renderStudentApp()
+    await renderStudentApp()
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Teste recapitulative', level: 1 })).toBeInTheDocument())
     expect(document.querySelectorAll('.recap-test-card')).toHaveLength(19)
     expect(screen.getAllByText('Piața mondială').length).toBeGreaterThan(0)
@@ -184,7 +208,7 @@ describe('application flow', () => {
     })
     vi.stubGlobal('fetch', fetchMock)
 
-    renderStudentApp()
+    await renderStudentApp()
     fireEvent.click(screen.getByRole('button', { name: /teste de admitere/i }))
 
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Teste de admitere', level: 1 })).toBeInTheDocument())
@@ -201,17 +225,16 @@ describe('application flow', () => {
 
   it('opens the administrator profile only through administrator access', async () => {
     window.location.hash = '#/profil'
-    renderAdminApp()
+    await renderAdminApp()
     expect(await screen.findByRole('heading', { name: 'Panou administrativ', level: 1 })).toBeInTheDocument()
     expect(screen.getByText('Activitatea elevilor')).toBeInTheDocument()
-    expect(screen.getByText('admin@exemplu.ro')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Personalizează experiența aplicației' })).toBeInTheDocument()
     expect(document.querySelectorAll('.theme-option')).toHaveLength(6)
     expect(document.querySelectorAll('.font-option')).toHaveLength(7)
   })
 
   it('persists the administrator theme, font and changed password', async () => {
-    renderAdminApp()
+    await renderAdminApp()
     fireEvent.click(screen.getByTitle('Deschide profilul'))
     await screen.findByRole('heading', { name: 'Panou administrativ', level: 1 })
 
@@ -225,21 +248,20 @@ describe('application flow', () => {
 
     const passwordFields = document.querySelectorAll<HTMLInputElement>('.password-settings input')
     expect(passwordFields).toHaveLength(3)
-    fireEvent.change(passwordFields[0], { target: { value: 'admin123' } })
+    fireEvent.change(passwordFields[0], { target: { value: TEST_ADMIN_PASSWORD } })
     fireEvent.change(passwordFields[1], { target: { value: 'NouaParola9' } })
     fireEvent.change(passwordFields[2], { target: { value: 'NouaParola9' } })
     fireEvent.click(screen.getByRole('button', { name: /salvează parola/i }))
-    expect(screen.getByRole('status')).toHaveTextContent(/a fost actualizată/i)
+    expect(await screen.findByText(/a fost actualizată/i)).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: 'Deconectare' }))
-    fireEvent.click(screen.getByRole('tab', { name: 'Administrator' }))
-    fireEvent.click(screen.getByRole('button', { name: /intră ca administrator/i }))
+    await loginAsAdmin('NouaParola9')
     expect(await screen.findByRole('heading', { name: 'Rapoarte și activitate', level: 1 })).toBeInTheDocument()
   })
 
-  it('shows the student progress and study shortcuts in the student profile', () => {
+  it('shows the student progress and study shortcuts in the student profile', async () => {
     window.location.hash = '#/profil'
-    renderStudentApp()
+    await renderStudentApp()
     expect(screen.getByRole('heading', { name: 'Profilul meu', level: 1 })).toBeInTheDocument()
     expect(screen.getByText('capitole finalizate')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /deschide jocurile/i })).toBeInTheDocument()
@@ -247,17 +269,17 @@ describe('application flow', () => {
     expect(screen.getByRole('heading', { name: 'Studiul tău este pregătit' })).toBeInTheDocument()
   })
 
-  it('allows a new student to enter with any valid email address', async () => {
+  it('only lets approved and unblocked students in', async () => {
     render(<App />)
-    fireEvent.change(screen.getByRole('textbox', { name: /nume complet/i }), { target: { value: 'Elev Necunoscut' } })
-    fireEvent.change(screen.getByRole('textbox', { name: /adresă de e-mail/i }), { target: { value: 'necunoscut@exemplu.ro' } })
-    fireEvent.click(screen.getByRole('button', { name: /intră în spațiul de studiu/i }))
-    expect(await screen.findByRole('heading', { name: /bun venit/i })).toBeInTheDocument()
-    expect(screen.getByRole('navigation', { name: /navigare principală/i })).toBeInTheDocument()
+    await loginAsStudent('necunoscut@exemplu.ro', 'Elev Necunoscut')
+    expect(await screen.findByRole('alert')).toHaveTextContent(/nu are acces/i)
+    await loginAsStudent('radu@exemplu.ro', 'Radu Pavel')
+    await waitFor(() => expect(screen.getByRole('alert')).toHaveTextContent(/blocat/i))
+    expect(screen.queryByRole('navigation', { name: /navigare principală/i })).not.toBeInTheDocument()
   })
 
   it('opens the admin reporting workspace and manages approved students', async () => {
-    renderAdminApp()
+    await renderAdminApp()
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Rapoarte și activitate', level: 1 })).toBeInTheDocument())
     expect(window.location.hash).toBe('#/admin/rapoarte')
     expect(screen.getByRole('heading', { name: 'Activitatea elevilor' })).toBeInTheDocument()
@@ -267,10 +289,10 @@ describe('application flow', () => {
     fireEvent.change(screen.getByRole('textbox', { name: 'Nume elev' }), { target: { value: 'Ioana Marinescu' } })
     fireEvent.change(screen.getByRole('textbox', { name: 'Adresă de e-mail' }), { target: { value: 'ioana@exemplu.ro' } })
     fireEvent.click(screen.getByRole('button', { name: /adaugă elev/i }))
-    expect(screen.getByText('Ioana Marinescu')).toBeInTheDocument()
+    expect(await screen.findByText('Ioana Marinescu')).toBeInTheDocument()
     expect(screen.getByText('ioana@exemplu.ro')).toBeInTheDocument()
 
-    fireEvent.click(screen.getAllByRole('button', { name: /preview test final/i })[0])
+    fireEvent.click((await screen.findAllByRole('button', { name: /preview test final/i }))[0])
     expect(screen.getByRole('dialog', { name: /test final/i })).toBeInTheDocument()
     fireEvent.click(screen.getAllByRole('button', { name: 'Închide' })[1])
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
@@ -278,14 +300,14 @@ describe('application flow', () => {
 
   it('shows library visibility controls only to the administrator', async () => {
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => libraryManifest } as Response)))
-    renderAdminApp()
+    await renderAdminApp()
     fireEvent.click(screen.getByRole('button', { name: 'Biblioteca' }))
     await waitFor(() => expect(document.querySelectorAll('.library-resource')).toHaveLength(26))
     expect(screen.getAllByRole('button', { name: 'Ascunde elevilor' })).toHaveLength(26)
   })
 
   it('uses manual progress inside the interactive concept map', async () => {
-    renderStudentApp()
+    await renderStudentApp()
     fireEvent.click(screen.getByRole('button', { name: /deschide capitolul 1:/i }))
     await waitFor(() => expect(screen.getByRole('button', { name: 'Marchează parcurs' })).toBeInTheDocument())
     fireEvent.click(screen.getByRole('button', { name: 'Marchează parcurs' }))
@@ -308,7 +330,7 @@ describe('application flow', () => {
     })
     vi.stubGlobal('fetch', fetchMock)
 
-    renderStudentApp()
+    await renderStudentApp()
     fireEvent.click(screen.getByRole('button', { name: /grafice interactive/i }))
 
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Grafice interactive', level: 1 })).toBeInTheDocument())
@@ -349,7 +371,7 @@ describe('application flow', () => {
     vi.stubGlobal('fetch', fetchMock)
 
     window.location.hash = '#/profil'
-    renderAdminApp()
+    await renderAdminApp()
     fireEvent.click(screen.getByRole('button', { name: /grafice interactive/i }))
 
     const openControls = await screen.findByRole('button', { name: 'Control profesor' })

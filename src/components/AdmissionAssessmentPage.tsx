@@ -69,6 +69,7 @@ export function AdmissionAssessmentPage({ testId, sessionApi, onNavigate }: Admi
       chapterNumber={entry.year}
       chapterTitle={`${entry.session} · ${entry.variant}`}
       mode="admission"
+      testId={entry.id}
       questions={questions}
       sessionApi={sessionApi}
       onNavigate={onNavigate}
