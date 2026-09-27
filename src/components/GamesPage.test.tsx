@@ -33,6 +33,7 @@ afterEach(() => {
   cleanup()
   vi.unstubAllGlobals()
   window.localStorage.clear()
+  window.sessionStorage.clear()
 })
 
 describe('Economy Lab games integration', () => {
@@ -52,6 +53,18 @@ describe('Economy Lab games integration', () => {
     render(<GamesPage onNavigate={onNavigate} />)
 
     fireEvent.click((await screen.findAllByRole('button', { name: /deschide jocul/i }))[0])
+    expect(onNavigate).toHaveBeenCalledWith('#/jocuri/01_market_maker')
+  })
+
+  it('keeps every game visible in Demo and marks all but the first as locked', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => response(manifest)))
+    const onNavigate = vi.fn()
+    render(<GamesPage isDemo onNavigate={onNavigate} />)
+
+    expect(await screen.findByRole('heading', { name: 'Piața cafelei' })).toBeInTheDocument()
+    expect(document.querySelectorAll('.game-card')).toHaveLength(10)
+    expect(screen.getAllByRole('button', { name: /blocat în demo/i })).toHaveLength(9)
+    fireEvent.click(screen.getByRole('button', { name: 'Deschide jocul Piața cafelei' }))
     expect(onNavigate).toHaveBeenCalledWith('#/jocuri/01_market_maker')
   })
 
@@ -84,6 +97,20 @@ describe('Economy Lab games integration', () => {
     expect(fetchMock.mock.calls[1][0]).toBe('/api/game-results')
     expect(JSON.parse((fetchMock.mock.calls[1][1] as RequestInit).body as string)).toEqual(finishedEvent)
     expect(screen.getByText('3/3')).toBeInTheDocument()
+  })
+
+  it('does not persist or send a finished game result in Demo', async () => {
+    const fetchMock = vi.fn(async () => response(manifest))
+    vi.stubGlobal('fetch', fetchMock)
+    render(<GameStudioPage gameId="01_market_maker" isDemo onNavigate={vi.fn()} />)
+    await screen.findByTitle('Piața cafelei')
+
+    const finishedEvent: GameEvent = { source: 'economy-lab', version: 1, gameId: '01_market_maker', type: 'finished', coins: 20, maxCoins: 23, stars: 3 }
+    act(() => window.dispatchEvent(new MessageEvent('message', { origin: window.location.origin, data: finishedEvent })))
+
+    expect(fetchMock).toHaveBeenCalledTimes(1)
+    expect(window.localStorage.getItem('economia-game-results')).toBeNull()
+    expect(screen.queryByText('Rezultat salvat')).not.toBeInTheDocument()
   })
 
   it('rejects a game id that is absent from the official manifest', async () => {

@@ -204,3 +204,4 @@
   .games-page .game-card-top{display:none}
   .games-page .game-card h3{font-size:9.5px}
 }
+.demo-lock-badge{display:inline-flex;align-items:center;gap:4px;margin-left:7px;padding:3px 6px;border-radius:999px;color:#a34f3f;background:#fff0ec;text-transform:uppercase;letter-spacing:.07em;font:700 6px "DM Mono";font-style:normal;white-space:nowrap}.is-demo-locked{background:linear-gradient(145deg,#fff,#fbfbfc)}.is-demo-locked>*:not(button){opacity:.72}.is-demo-locked>button{color:#9a5c4e!important;border-color:#ecd6cf!important;background:#fff7f4!important}

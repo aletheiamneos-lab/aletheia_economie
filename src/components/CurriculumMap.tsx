@@ -7,18 +7,21 @@ import {
   CircleDot,
   FunctionSquare,
   Map as MapIcon,
+  LockKeyhole,
   Search,
   Sparkles,
 } from 'lucide-react'
 import { useEffect, useMemo, useState, type CSSProperties } from 'react'
 import { categories } from '../data/catalog'
 import { loadAllLessons } from '../data/lessonData'
+import { isDemoChapter } from '../demoAccess'
 import type { ChapterMeta, Formula, KeyPointObject, LessonData } from '../types'
 import type { SessionApi } from '../session'
 
 interface CurriculumMapProps {
   sessionApi: SessionApi
   onNavigate: (path: string) => void
+  isDemo?: boolean
 }
 
 interface ConceptNode {
@@ -68,7 +71,7 @@ function chapterKnowledge(chapter: ChapterMeta, lesson: LessonData): ChapterKnow
   return { chapter, concepts: allConcepts, formulas, searchText }
 }
 
-export function CurriculumMap({ sessionApi, onNavigate }: CurriculumMapProps) {
+export function CurriculumMap({ sessionApi, onNavigate, isDemo = false }: CurriculumMapProps) {
   const activeCategory = categories.find((category) => category.chapters.some((chapter) => chapter.number === sessionApi.session.lastChapter)) ?? categories[0]
   const [expandedModules, setExpandedModules] = useState<Set<string>>(() => new Set([activeCategory.id]))
   const [expandedChapter, setExpandedChapter] = useState<number | null>(sessionApi.session.lastChapter)
@@ -166,9 +169,10 @@ export function CurriculumMap({ sessionApi, onNavigate }: CurriculumMapProps) {
                       const knowledge = knowledgeByChapter.get(chapter.number)!
                       const chapterState = sessionApi.getChapterState(chapter.number)
                       const chapterOpen = Boolean(normalizedQuery) || expandedChapter === chapter.number
+                      const demoLocked = isDemo && !isDemoChapter(chapter.number)
                       return (
-                        <article className={`mind-chapter ${chapterOpen ? 'is-open' : ''}`} key={chapter.number}>
-                          <button className="mind-chapter-heading" onClick={() => setExpandedChapter(chapterOpen && !normalizedQuery ? null : chapter.number)} aria-expanded={chapterOpen}>
+                        <article className={`mind-chapter ${chapterOpen ? 'is-open' : ''} ${demoLocked ? 'is-demo-locked' : ''}`} key={chapter.number}>
+                          <button className="mind-chapter-heading" onClick={() => demoLocked ? onNavigate(`#/capitol/${chapter.number}`) : setExpandedChapter(chapterOpen && !normalizedQuery ? null : chapter.number)} aria-expanded={demoLocked ? false : chapterOpen}>
                             <span className={`mind-chapter-index ${chapterState.completed ? 'is-complete' : ''}`}>
                               {chapterState.completed ? <Check size={15}/> : String(chapter.number).padStart(2, '0')}
                             </span>
@@ -176,10 +180,10 @@ export function CurriculumMap({ sessionApi, onNavigate }: CurriculumMapProps) {
                               <b>{chapter.shortTitle}</b>
                               <small>{knowledge.concepts.length} concepte · {knowledge.formulas.length ? `${knowledge.formulas.length} formule` : 'fără formule'}</small>
                             </span>
-                            {chapterOpen ? <ChevronDown size={17}/> : <ChevronRight size={17}/>} 
+                            {demoLocked ? <LockKeyhole size={17}/> : chapterOpen ? <ChevronDown size={17}/> : <ChevronRight size={17}/>}
                           </button>
 
-                          {chapterOpen && (
+                          {chapterOpen && !demoLocked && (
                             <div className="mind-chapter-knowledge">
                               <div className="mind-knowledge-section">
                                 <div className="mind-knowledge-title"><CircleDot size={15}/><b>Concepte esențiale</b><span>{knowledge.concepts.length}</span></div>

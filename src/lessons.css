@@ -237,3 +237,4 @@
   .lessons-module-heading h2{font-size:24px}
   .lessons-module-heading>svg{display:none}
 }
+.lesson-list-row.is-demo-locked{border-color:#e7d9d4;background:linear-gradient(145deg,#fff,#fdf9f8)}.lesson-list-actions .is-demo-action-locked{color:#965849!important;border-color:#ead2ca!important;background:#fff7f4!important}.lesson-list-tags .demo-lock-badge{color:#a34f3f;background:#fff0ec}

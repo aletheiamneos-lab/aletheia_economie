@@ -50,6 +50,7 @@ interface LessonIntegration {
 interface GraphLabPageProps {
   initialLesson: number
   isAdmin: boolean
+  isDemo?: boolean
   onNavigate: (path: string) => void
 }
 
@@ -216,7 +217,7 @@ function integrationDocument(integration: LessonIntegration, isAdmin: boolean) {
 <div class="toast" id="toast"></div><script>window.LESSON_CONFIG=${safeConfig};<\/script><script src="${graphRoot}/assets/graph-engine.js"><\/script><script>${bridgeScript}<\/script></body></html>`
 }
 
-export function GraphLabPage({ initialLesson, isAdmin, onNavigate }: GraphLabPageProps) {
+export function GraphLabPage({ initialLesson, isAdmin, isDemo = false, onNavigate }: GraphLabPageProps) {
   const [manifest, setManifest] = useState<GraphManifest | null>(null)
   const [selectedLesson, setSelectedLesson] = useState(initialLesson)
   const [integration, setIntegration] = useState<LessonIntegration | null>(null)
@@ -353,7 +354,7 @@ export function GraphLabPage({ initialLesson, isAdmin, onNavigate }: GraphLabPag
             onChange={(event) => chooseLesson(Number(event.target.value))}
           >
             {(manifest?.lessons ?? []).map((lesson) => (
-              <option key={lesson.lesson} value={lesson.lesson}>Capitolul {String(lesson.lesson).padStart(2, '0')} · {lesson.title}</option>
+              <option key={lesson.lesson} value={lesson.lesson}>{isDemo && lesson.lesson > 2 ? '🔒 ' : ''}Capitolul {String(lesson.lesson).padStart(2, '0')} · {lesson.title}</option>
             ))}
           </select>
         </div>

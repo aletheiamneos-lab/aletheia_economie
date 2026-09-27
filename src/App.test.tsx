@@ -77,6 +77,16 @@ describe('application flow', () => {
     fireEvent.click(await screen.findByRole('tab', { name: 'Demo' }))
     fireEvent.click(screen.getByRole('button', { name: /intră în modul demo/i }))
     expect(await screen.findByRole('navigation', { name: 'Navigare principală' })).toBeInTheDocument()
+    expect(screen.getByText('Bun venit în modul Demo')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Explorează economia fără cont' })).toBeInTheDocument()
+    expect(screen.getByText('Ai acces la o selecție complet funcțională. Rezultatele nu se salvează și dispar când închizi fila.')).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Începe Capitolul 1' })).toBeInTheDocument()
+    expect(screen.getByRole('button', { name: 'Deschide testul demo' })).toBeInTheDocument()
+    expect(document.querySelectorAll('.demo-home-card')).toHaveLength(6)
+    expect(document.querySelector('.sidebar-demo-badge')).toHaveTextContent('Demo')
+    window.location.hash = '#/jocuri/02_consumer_lab'
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    expect(await screen.findByRole('heading', { name: 'Disponibil cu cont de elev' })).toBeInTheDocument()
     window.location.hash = '#/capitol/5'
     window.dispatchEvent(new HashChangeEvent('hashchange'))
     expect(await screen.findByRole('heading', { name: 'Disponibil cu cont de elev' })).toBeInTheDocument()

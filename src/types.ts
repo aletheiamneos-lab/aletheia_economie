@@ -128,7 +128,7 @@ export type Route =
   | { page: 'assessment'; chapter: number; mode: 'final' | 'practice' }
   | { page: 'graph-lab'; lesson?: number }
   | { page: 'math-workspace' }
-  | { page: 'flashcards' }
+  | { page: 'flashcards'; openDemoDeck?: boolean }
   | { page: 'recap-tests' }
   | { page: 'recap-assessment'; chapter: number }
   | { page: 'admission-tests' }

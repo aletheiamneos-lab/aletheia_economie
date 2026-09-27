@@ -12,6 +12,7 @@ import {
   Flame,
   GalleryHorizontalEnd,
   Gamepad2,
+  GraduationCap,
   LibraryBig,
   Play,
   Sparkles,
@@ -36,6 +37,50 @@ interface PlannerTask {
   path: string
   icon: LucideIcon
   tone: 'blue' | 'violet' | 'teal' | 'green' | 'gold' | 'coral'
+}
+
+const demoSelections = [
+  { title: 'Capitolul 1', copy: 'Introducere în economie · teorie, antrenament și test final', path: '#/capitol/1', icon: BookOpen, tone: 'blue' },
+  { title: 'Capitolul 2', copy: 'Economia de piață și proprietatea · parcurs complet', path: '#/capitol/2', icon: BookOpen, tone: 'teal' },
+  { title: 'Joc economic', copy: 'Market Maker · primul laborator de decizii', path: '#/jocuri/01_market_maker', icon: Gamepad2, tone: 'green' },
+  { title: 'Grafice interactive', copy: 'Laboratorul vizual pentru lecțiile 1–2', path: '#/grafice/1', icon: ChartNoAxesCombined, tone: 'gold' },
+  { title: 'Flashcarduri', copy: 'Nivel Ușor · setul 01 cu 30 de întrebări', path: '#/flashcarduri?dificultate=usor&set=1', icon: GalleryHorizontalEnd, tone: 'violet' },
+  { title: 'Test de admitere', copy: '23 iulie 2025 · varianta G1', path: '#/teste-admitere/g1-23iulie2025', icon: GraduationCap, tone: 'coral' },
+] as const
+
+function DemoDashboard({ onNavigate }: Pick<DashboardProps, 'onNavigate'>) {
+  return (
+    <div className="dashboard demo-dashboard page-enter">
+      <section className="demo-home-hero">
+        <div>
+          <span className="page-kicker"><Sparkles size={14}/> Bun venit în modul Demo</span>
+          <h1>Explorează economia fără cont</h1>
+          <p>Ai acces la o selecție complet funcțională. Rezultatele nu se salvează și dispar când închizi fila.</p>
+          <div className="demo-home-actions">
+            <button className="button button-primary" onClick={() => onNavigate('#/capitol/1')}><Play size={16} fill="currentColor"/> Începe Capitolul 1</button>
+            <button className="button button-ghost" onClick={() => onNavigate('#/capitol/1/test-final')}><ClipboardCheck size={16}/> Deschide testul demo</button>
+          </div>
+        </div>
+        <div className="demo-home-mark" aria-hidden="true"><span>DEMO</span><b>2</b><small>capitole deschise</small></div>
+      </section>
+
+      <section className="demo-home-selection" aria-labelledby="demo-selection-title">
+        <header><span className="page-kicker">Selecție demonstrativă</span><h2 id="demo-selection-title">Încearcă experiențele esențiale</h2></header>
+        <div className="demo-home-grid">
+          {demoSelections.map((item) => {
+            const Icon = item.icon
+            return (
+              <button key={item.title} className={`demo-home-card ${item.tone}`} onClick={() => onNavigate(item.path)}>
+                <span><Icon size={20}/></span>
+                <div><b>{item.title}</b><small>{item.copy}</small></div>
+                <ArrowRight size={17}/>
+              </button>
+            )
+          })}
+        </div>
+      </section>
+    </div>
+  )
 }
 
 const dayMilliseconds = 86_400_000
@@ -122,7 +167,12 @@ function MarketSketch() {
   )
 }
 
-export function Dashboard({ sessionApi, onNavigate }: DashboardProps) {
+export function Dashboard(props: DashboardProps) {
+  if (props.sessionApi.session.isDemo) return <DemoDashboard onNavigate={props.onNavigate} />
+  return <StandardDashboard {...props} />
+}
+
+function StandardDashboard({ sessionApi, onNavigate }: DashboardProps) {
   const { session } = sessionApi
   const activeChapter = chapters.find((chapter) => chapter.number === session.lastChapter) ?? chapters[0]
   const firstName = session.userName.trim().split(/\s+/)[0] || 'exploratorule'

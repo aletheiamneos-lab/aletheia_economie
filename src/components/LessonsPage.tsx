@@ -1,11 +1,13 @@
-import { ArrowRight, BookMarked, BookOpenText, BrainCircuit, ChartNoAxesCombined, Check, ClipboardCheck, Clock3, Compass, Globe2, Landmark, Layers3, Store } from 'lucide-react'
+import { ArrowRight, BookMarked, BookOpenText, BrainCircuit, ChartNoAxesCombined, Check, ClipboardCheck, Clock3, Compass, Globe2, Landmark, Layers3, LockKeyhole, Store } from 'lucide-react'
 import { categories } from '../data/catalog'
 import { chapterObjectives, finalQuestionCount, practiceQuestionCount } from '../data/courseMeta'
+import { isDemoChapter } from '../demoAccess'
 import type { SessionApi } from '../session'
 
 interface LessonsPageProps {
   sessionApi: SessionApi
   onNavigate: (path: string) => void
+  isDemo?: boolean
 }
 
 const moduleIcons = [Compass, Store, Landmark, ChartNoAxesCombined, Globe2]
@@ -17,6 +19,7 @@ function LessonAction({
   tooltipId,
   onClick,
   icon: Icon,
+  locked = false,
 }: {
   tone: 'theory' | 'practice' | 'final'
   label: string
@@ -24,16 +27,17 @@ function LessonAction({
   tooltipId: string
   onClick: () => void
   icon: typeof BookOpenText
+  locked?: boolean
 }) {
   return (
     <span className="lesson-list-action">
-      <button className={tone} onClick={onClick} aria-describedby={tooltipId}><Icon size={16}/><span>{label}</span><ArrowRight size={14}/></button>
+      <button className={`${tone} ${locked ? 'is-demo-action-locked' : ''}`} onClick={onClick} aria-describedby={tooltipId}>{locked ? <LockKeyhole size={15}/> : <Icon size={16}/>}<span>{locked ? `${label} · Demo` : label}</span>{locked ? <LockKeyhole size={12}/> : <ArrowRight size={14}/>}</button>
       <span className="lesson-action-tooltip" role="tooltip" id={tooltipId}><b>{label}</b><small>{tooltip}</small></span>
     </span>
   )
 }
 
-export function LessonsPage({ sessionApi, onNavigate }: LessonsPageProps) {
+export function LessonsPage({ sessionApi, onNavigate, isDemo = false }: LessonsPageProps) {
   return (
     <div className="lessons-page page-enter">
       <header className="lessons-hero">
@@ -67,13 +71,15 @@ export function LessonsPage({ sessionApi, onNavigate }: LessonsPageProps) {
             <div className="lessons-list">
               {category.chapters.map((chapter) => {
                 const completed = sessionApi.getChapterState(chapter.number).completed
+                const demoLocked = isDemo && !isDemoChapter(chapter.number)
                 return (
-                  <article className={`lesson-list-row ${completed ? 'completed' : ''}`} key={chapter.number}>
+                  <article className={`lesson-list-row ${completed ? 'completed' : ''} ${demoLocked ? 'is-demo-locked' : ''}`} key={chapter.number}>
                     <div className="lesson-list-number">{String(chapter.number).padStart(2, '0')}</div>
                     <div className="lesson-list-content">
                       <div className="lesson-list-tags">
                         <span><BookMarked size={11}/> Capitolul {chapter.number}</span>
                         <span><BrainCircuit size={11}/> Teorie + practică</span>
+                        {demoLocked && <span className="demo-lock-badge"><LockKeyhole size={10}/> Demo</span>}
                         {completed && <span className="completed"><Check size={11}/> Parcurs</span>}
                       </div>
                       <h3>{chapter.title}</h3>
@@ -85,9 +91,9 @@ export function LessonsPage({ sessionApi, onNavigate }: LessonsPageProps) {
                       </div>
                     </div>
                     <div className="lesson-list-actions" aria-label={`Acțiuni pentru capitolul ${chapter.number}`}>
-                      <LessonAction tone="theory" label="Teorie" tooltipId={`lesson-${chapter.number}-theory-tip`} tooltip="Explicații, exemple și formulele capitolului." icon={BookOpenText} onClick={() => onNavigate(`#/capitol/${chapter.number}`)}/>
-                      <LessonAction tone="practice" label="Practică" tooltipId={`lesson-${chapter.number}-practice-tip`} tooltip="Întrebări cu feedback și rezolvare imediată." icon={BrainCircuit} onClick={() => onNavigate(`#/capitol/${chapter.number}/antrenament`)}/>
-                      <LessonAction tone="final" label="Test final" tooltipId={`lesson-${chapter.number}-final-tip`} tooltip="Evaluare completă; răspunsurile apar după trimitere." icon={ClipboardCheck} onClick={() => onNavigate(`#/capitol/${chapter.number}/test-final`)}/>
+                      <LessonAction tone="theory" label="Teorie" locked={demoLocked} tooltipId={`lesson-${chapter.number}-theory-tip`} tooltip="Explicații, exemple și formulele capitolului." icon={BookOpenText} onClick={() => onNavigate(`#/capitol/${chapter.number}`)}/>
+                      <LessonAction tone="practice" label="Practică" locked={demoLocked} tooltipId={`lesson-${chapter.number}-practice-tip`} tooltip="Întrebări cu feedback și rezolvare imediată." icon={BrainCircuit} onClick={() => onNavigate(`#/capitol/${chapter.number}/antrenament`)}/>
+                      <LessonAction tone="final" label="Test final" locked={demoLocked} tooltipId={`lesson-${chapter.number}-final-tip`} tooltip="Evaluare completă; răspunsurile apar după trimitere." icon={ClipboardCheck} onClick={() => onNavigate(`#/capitol/${chapter.number}/test-final`)}/>
                     </div>
                   </article>
                 )

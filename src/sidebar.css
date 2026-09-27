@@ -72,3 +72,5 @@
   .primary-nav button{min-height:49px}
   .nav-copy b{font-size:11px}.nav-copy small{font-size:8px}
 }
+.sidebar-demo-badge{display:inline-flex;align-items:center;margin-left:5px;padding:2px 5px;border-radius:999px;color:#a84e3c;background:#fff0ec;text-transform:uppercase;letter-spacing:.08em;font:700 6px "DM Mono";font-style:normal}
+.nav-demo-lock{display:inline-block;vertical-align:-2px;margin-left:3px;color:#aa5a49}

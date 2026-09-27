@@ -74,3 +74,4 @@
 }
 @media(max-width:380px){.flashcards-catalog-grid{grid-template-columns:1fr}.flashcard-level{display:none}.flashcard-card>header{grid-template-columns:36px minmax(0,1fr)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.flashcards-deck-tile.is-demo-locked{border-color:#eadbd6;background:linear-gradient(145deg,#fff,#fdf9f8)}.flashcards-deck-tile.is-demo-locked>button{color:#9a5c4e;border-color:#ecd6cf;background:#fff7f4}.flashcards-deck-tile.is-demo-locked>button:hover{color:#8e493b;border-color:#dfc1b8;background:#fff0ec}.flashcards-deck-topline>span{display:inline-flex;align-items:center}.flashcards-deck-topline .demo-lock-badge{margin-left:4px;padding:2px 4px;font-size:5px}

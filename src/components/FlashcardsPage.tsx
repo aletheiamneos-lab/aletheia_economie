@@ -7,12 +7,15 @@ import {
   CircleCheck,
   Eye,
   LibraryBig,
+  LockKeyhole,
   Play,
   RefreshCcw,
   RotateCcw,
 } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { flashcardDifficulties, loadFlashcardDeck, type FlashcardDeck, type FlashcardDifficulty } from '../data/flashcards'
+import { isDemoFlashcardDeck } from '../demoAccess'
+import { DemoLockPage } from './DemoLockPage'
 
 const progressStorageKey = 'economia-flashcards-progress-v1'
 const cardsPerDeck = 30
@@ -30,9 +33,13 @@ function deckKey(difficulty: FlashcardDifficulty, slot: number) {
   return `${difficulty}:${slot}`
 }
 
-function readStoredProgress(key: string, total: number): DeckProgress {
+function progressStorage(isDemo: boolean) {
+  return isDemo ? window.sessionStorage : window.localStorage
+}
+
+function readStoredProgress(key: string, total: number, isDemo = false): DeckProgress {
   try {
-    const all = JSON.parse(window.localStorage.getItem(progressStorageKey) ?? '{}') as StoredProgress
+    const all = JSON.parse(progressStorage(isDemo).getItem(progressStorageKey) ?? '{}') as StoredProgress
     const saved = all[key]
     if (!saved) return { index: 0, reviewed: [], mastered: [] }
     return {
@@ -45,10 +52,11 @@ function readStoredProgress(key: string, total: number): DeckProgress {
   }
 }
 
-function storeProgress(key: string, progress: DeckProgress) {
+function storeProgress(key: string, progress: DeckProgress, isDemo = false) {
   try {
-    const all = JSON.parse(window.localStorage.getItem(progressStorageKey) ?? '{}') as StoredProgress
-    window.localStorage.setItem(progressStorageKey, JSON.stringify({ ...all, [key]: progress }))
+    const storage = progressStorage(isDemo)
+    const all = JSON.parse(storage.getItem(progressStorageKey) ?? '{}') as StoredProgress
+    storage.setItem(progressStorageKey, JSON.stringify({ ...all, [key]: progress }))
   } catch {
     // Studiul rămâne funcțional și când stocarea locală nu este disponibilă.
   }
@@ -58,36 +66,45 @@ function unique(values: number[]) {
   return [...new Set(values)]
 }
 
-function DeckTile({ difficulty, label, slot, onOpen }: {
+function DeckTile({ difficulty, label, slot, onOpen, locked = false, isDemo = false }: {
   difficulty: FlashcardDifficulty
   label: string
   slot: number
   onOpen: () => void
+  locked?: boolean
+  isDemo?: boolean
 }) {
-  const progress = readStoredProgress(deckKey(difficulty, slot), cardsPerDeck)
+  const progress = readStoredProgress(deckKey(difficulty, slot), cardsPerDeck, isDemo)
   const reviewed = progress.reviewed.length
   const percent = Math.round((reviewed / cardsPerDeck) * 100)
   const finished = reviewed === cardsPerDeck
 
   return (
-    <article className={`flashcards-deck-tile difficulty-${difficulty} ${finished ? 'is-finished' : ''}`}>
+    <article className={`flashcards-deck-tile difficulty-${difficulty} ${finished ? 'is-finished' : ''} ${locked ? 'is-demo-locked' : ''}`}>
       <div className="flashcards-deck-topline">
-        <span>Setul</span>
+        <span>Setul {locked && <i className="demo-lock-badge"><LockKeyhole size={9}/> Demo</i>}</span>
         <b>{String(slot).padStart(2, '0')}</b>
       </div>
       <span className="flashcards-deck-level">{label}</span>
       <h3>30 de întrebări</h3>
       <p>{finished ? 'Set finalizat' : reviewed ? `${reviewed} carduri parcurse` : 'Set nou'}</p>
       <div className="flashcards-deck-progress" aria-label={`${percent}% parcurs`}><i style={{ width: `${percent}%` }}/></div>
-      <button type="button" onClick={onOpen} aria-label={`Deschide ${label}, setul ${String(slot).padStart(2, '0')}`}>
-        {finished ? <><RefreshCcw size={14}/> Reia setul</> : reviewed ? <><Play size={14}/> Continuă</> : <><Play size={14}/> Deschide</>}
+      <button type="button" onClick={onOpen} aria-label={locked ? `Blocat în Demo: ${label}, setul ${String(slot).padStart(2, '0')}` : `Deschide ${label}, setul ${String(slot).padStart(2, '0')}`}>
+        {locked ? <><LockKeyhole size={13}/> Disponibil cu cont</> : finished ? <><RefreshCcw size={14}/> Reia setul</> : reviewed ? <><Play size={14}/> Continuă</> : <><Play size={14}/> Deschide</>}
       </button>
     </article>
   )
 }
 
-export function FlashcardsPage() {
-  const [isStudying, setIsStudying] = useState(false)
+interface FlashcardsPageProps {
+  isDemo?: boolean
+  initialDemoDeck?: boolean
+  onDemoLogin?: () => void
+}
+
+export function FlashcardsPage({ isDemo = false, initialDemoDeck = false, onDemoLogin = () => undefined }: FlashcardsPageProps) {
+  const [isStudying, setIsStudying] = useState(isDemo && initialDemoDeck)
+  const [showDemoLock, setShowDemoLock] = useState(false)
   const [difficulty, setDifficulty] = useState<FlashcardDifficulty>('usor')
   const [slot, setSlot] = useState(1)
   const [deck, setDeck] = useState<FlashcardDeck | null>(null)
@@ -110,7 +127,7 @@ export function FlashcardsPage() {
     setRevealed(false)
     loadFlashcardDeck(difficulty, slot, controller.signal)
       .then((nextDeck) => {
-        const progress = readStoredProgress(deckKey(difficulty, slot), nextDeck.intrebari.length)
+        const progress = readStoredProgress(deckKey(difficulty, slot), nextDeck.intrebari.length, isDemo)
         setDeck(nextDeck)
         setCurrentIndex(progress.index)
         setReviewed(progress.reviewed)
@@ -124,7 +141,7 @@ export function FlashcardsPage() {
         if (!controller.signal.aborted) setLoading(false)
       })
     return () => controller.abort()
-  }, [difficulty, isStudying, retryToken, slot])
+  }, [difficulty, isDemo, isStudying, retryToken, slot])
 
   const total = deck?.intrebari.length ?? cardsPerDeck
   const finished = Boolean(deck && currentIndex >= deck.intrebari.length)
@@ -137,6 +154,10 @@ export function FlashcardsPage() {
   const longCopy = Boolean(current && (current.enunt.length > 420 || correctAnswer.length > 420))
 
   const openDeck = (nextDifficulty: FlashcardDifficulty, nextSlot: number) => {
+    if (isDemo && !isDemoFlashcardDeck(nextDifficulty, nextSlot)) {
+      setShowDemoLock(true)
+      return
+    }
     setDifficulty(nextDifficulty)
     setSlot(nextSlot)
     setIsStudying(true)
@@ -160,7 +181,7 @@ export function FlashcardsPage() {
     setMastered(nextMastered)
     setCurrentIndex(nextIndex)
     setRevealed(false)
-    storeProgress(currentDeckKey, { index: nextIndex, reviewed: nextReviewed, mastered: nextMastered })
+    storeProgress(currentDeckKey, { index: nextIndex, reviewed: nextReviewed, mastered: nextMastered }, isDemo)
   }
 
   const goBack = () => {
@@ -174,12 +195,18 @@ export function FlashcardsPage() {
     setReviewed([])
     setMastered([])
     setRevealed(false)
-    storeProgress(currentDeckKey, reset)
+    storeProgress(currentDeckKey, reset, isDemo)
   }
 
   const openNextSet = () => {
+    if (isDemo) {
+      setShowDemoLock(true)
+      return
+    }
     setSlot((value) => value === decksPerDifficulty ? 1 : value + 1)
   }
+
+  if (showDemoLock) return <DemoLockPage onBack={() => setShowDemoLock(false)} onLogin={onDemoLogin}/>
 
   if (!isStudying) {
     return (
@@ -214,6 +241,8 @@ export function FlashcardsPage() {
                   difficulty={item.id}
                   label={item.label}
                   slot={index + 1}
+                  isDemo={isDemo}
+                  locked={isDemo && !isDemoFlashcardDeck(item.id, index + 1)}
                   onOpen={() => openDeck(item.id, index + 1)}
                 />
               ))}

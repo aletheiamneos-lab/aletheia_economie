@@ -1,13 +1,14 @@
-import { ArrowRight, CircleAlert, Coins, Gamepad2, Layers3, LoaderCircle, ShieldCheck, Sparkles } from 'lucide-react'
+import { ArrowRight, CircleAlert, Coins, Gamepad2, Layers3, LoaderCircle, LockKeyhole, ShieldCheck, Sparkles } from 'lucide-react'
 import { useCallback, useEffect, useState, type CSSProperties } from 'react'
 import { loadGameManifest, type GameManifest } from '../economy-games/economyGames'
 import { getGamePresentation } from '../games/catalog'
 
 interface GamesPageProps {
   onNavigate: (path: string) => void
+  isDemo?: boolean
 }
 
-export function GamesPage({ onNavigate }: GamesPageProps) {
+export function GamesPage({ onNavigate, isDemo = false }: GamesPageProps) {
   const [manifest, setManifest] = useState<GameManifest | null>(null)
   const [error, setError] = useState('')
 
@@ -58,16 +59,17 @@ export function GamesPage({ onNavigate }: GamesPageProps) {
             const Icon = presentation?.icon ?? Gamepad2
             const accent = presentation?.accent ?? '#2f8792'
             const chapterLabel = game.chapters.length === 1 ? `Capitolul ${game.chapters[0]}` : `Capitolele ${game.chapters.join(', ')}`
+            const demoLocked = isDemo && position > 0
             return (
-              <article className="game-card" key={game.id} style={{ '--game-accent': accent } as CSSProperties}>
+              <article className={`game-card ${demoLocked ? 'is-demo-locked' : ''}`} key={game.id} style={{ '--game-accent': accent } as CSSProperties}>
                 <div className="game-card-top"><span className="game-card-index">{String(position + 1).padStart(2, '0')}</span><span className="game-card-icon"><Icon size={21}/></span></div>
-                <span className="game-card-chapter">{chapterLabel}</span>
+                <span className="game-card-chapter">{chapterLabel}{demoLocked && <i className="demo-lock-badge"><LockKeyhole size={10}/> Demo</i>}</span>
                 <h3>{game.title}</h3>
                 <strong>{game.topic}</strong>
                 <p>Parcurge cele {game.steps} etape și aplică noțiunile direct în situații economice.</p>
                 <div className="game-card-meta"><span>{game.steps} etape</span><span><Coins size={11}/> maximum {game.maxCoins} monede</span></div>
-                <button aria-label={`Deschide jocul ${game.title}`} onClick={() => onNavigate(`#/jocuri/${game.id}`)}>
-                  Joacă acum <ArrowRight size={15}/>
+                <button aria-label={demoLocked ? `Blocat în Demo: ${game.title}` : `Deschide jocul ${game.title}`} onClick={() => onNavigate(`#/jocuri/${game.id}`)}>
+                  {demoLocked ? <><LockKeyhole size={14}/> Disponibil cu cont</> : <>Joacă acum <ArrowRight size={15}/></>}
                 </button>
               </article>
             )

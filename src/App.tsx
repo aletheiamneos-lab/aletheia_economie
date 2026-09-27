@@ -11,7 +11,10 @@ import { useSessionState } from './session'
 import { useAdminData } from './adminData'
 import { getGameMeta } from './games/catalog'
 import { useAppearance } from './preferences'
+import { isLockedForDemo } from './demoAccess'
 import type { Route } from './types'
+
+export { DEMO_CHAPTERS, isLockedForDemo } from './demoAccess'
 
 const AdminReportsPage = lazy(() => import('./components/AdminReportsPage').then((module) => ({ default: module.AdminReportsPage })))
 const AdmissionAssessmentPage = lazy(() => import('./components/AdmissionAssessmentPage').then((module) => ({ default: module.AdmissionAssessmentPage })))
@@ -36,22 +39,16 @@ function validChapterNumber(value: string) {
     : null
 }
 
-export const DEMO_CHAPTERS = [1, 2]
-
-function isLockedForDemo(route: Route) {
-  if (route.page === 'library' || route.page === 'admin-reports' || route.page === 'admission-assessment') return true
-  if (route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment') return !DEMO_CHAPTERS.includes(route.chapter)
-  if (route.page === 'graph-lab') return Boolean(route.lesson && !DEMO_CHAPTERS.includes(route.lesson))
-  return false
-}
-
 function parseRoute(hash: string): Route {
   if (hash === '#/auth') return { page: 'admin-login' }
   if (hash === '#/admin/rapoarte') return { page: 'admin-reports' }
   if (hash === '#/biblioteca') return { page: 'library' }
   if (hash === '#/lectii') return { page: 'lessons' }
   if (hash === '#/caiet-matematic') return { page: 'math-workspace' }
-  if (hash === '#/flashcarduri') return { page: 'flashcards' }
+  if (hash === '#/flashcarduri' || hash.startsWith('#/flashcarduri?')) {
+    const params = new URLSearchParams(hash.split('?')[1] ?? '')
+    return { page: 'flashcards', openDemoDeck: params.get('dificultate') === 'usor' && params.get('set') === '1' }
+  }
   const gameMatch = hash.match(/^#\/jocuri\/([a-z0-9_]+)$/)
   if (gameMatch) return { page: 'game', gameId: gameMatch[1] }
   if (hash === '#/jocuri') return { page: 'games' }
@@ -109,10 +106,10 @@ export function App() {
   }, [])
 
   useEffect(() => {
-    if (sessionApi.session.isAuthenticated && sessionApi.session.userRole !== 'admin' && route.page === 'admin-reports') {
+    if (sessionApi.session.isAuthenticated && !sessionApi.session.isDemo && sessionApi.session.userRole !== 'admin' && route.page === 'admin-reports') {
       window.location.hash = '#/'
     }
-  }, [route.page, sessionApi.session.isAuthenticated, sessionApi.session.userRole])
+  }, [route.page, sessionApi.session.isAuthenticated, sessionApi.session.isDemo, sessionApi.session.userRole])
 
   // Restaurează sesiunea salvată (după reîncărcarea paginii).
   useEffect(() => {
@@ -144,14 +141,15 @@ export function App() {
 
   // Semnal periodic: menține elevul „online” și detectează blocarea/deconectarea.
   useEffect(() => {
-    if (!sessionApi.session.isAuthenticated) return
+    if (!sessionApi.session.isAuthenticated || sessionApi.session.isDemo) return
     const timer = window.setInterval(() => { void restoreSession().catch(() => null) }, 60_000)
     return () => window.clearInterval(timer)
-  }, [sessionApi.session.isAuthenticated])
+  }, [sessionApi.session.isAuthenticated, sessionApi.session.isDemo])
 
   useEffect(() => {
-    if (route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment') sessionApi.selectChapter(route.chapter)
-    if (route.page === 'graph-lab' && route.lesson) sessionApi.selectChapter(route.lesson)
+    const lockedForDemo = sessionApi.session.isDemo && isLockedForDemo(route)
+    if (!lockedForDemo && (route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment')) sessionApi.selectChapter(route.chapter)
+    if (!lockedForDemo && route.page === 'graph-lab' && route.lesson) sessionApi.selectChapter(route.lesson)
     if (!sessionApi.session.isAuthenticated) {
       document.title = 'Autentificare — Economie by A mentor'
       return
@@ -193,7 +191,7 @@ export function App() {
           : `${route.mode === 'final' ? 'Test final' : 'Antrenament'} — Capitolul ${route.chapter}`
     document.title = pageTitle
     window.scrollTo({ top: 0, behavior: 'instant' })
-  }, [route, activeChapter.title, sessionApi.selectChapter, sessionApi.session.isAuthenticated])
+  }, [route, activeChapter.title, sessionApi.selectChapter, sessionApi.session.isAuthenticated, sessionApi.session.isDemo])
 
   const navigate = (path: string) => {
     // Update the visible route immediately. The hashchange listener remains
@@ -234,7 +232,7 @@ export function App() {
       sessionApi={sessionApi}
       onNavigate={navigate}
       onLogout={() => {
-        void logoutSession()
+        if (!sessionApi.session.isDemo) void logoutSession()
         sessionApi.logout()
         navigate('#/')
       }}
@@ -243,11 +241,11 @@ export function App() {
         {demoLocked ? <DemoLockPage onBack={() => navigate('#/')} onLogin={() => { sessionApi.logout(); navigate('#/') }} /> : <>
         {(route.page === 'dashboard' || route.page === 'admin-login') && <Dashboard sessionApi={sessionApi} onNavigate={navigate} />}
         {route.page === 'library' && <LibraryPage isAdmin={sessionApi.session.userRole === 'admin'} />}
-        {route.page === 'lessons' && <LessonsPage sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'lessons' && <LessonsPage sessionApi={sessionApi} isDemo={sessionApi.session.isDemo} onNavigate={navigate} />}
         {route.page === 'math-workspace' && <MathWorkspacePage />}
-        {route.page === 'flashcards' && <FlashcardsPage />}
-        {route.page === 'games' && <GamesPage onNavigate={navigate} />}
-        {route.page === 'game' && <GameStudioPage key={route.gameId} gameId={route.gameId} onNavigate={navigate} />}
+        {route.page === 'flashcards' && <FlashcardsPage key={route.openDemoDeck ? 'demo-deck' : 'catalog'} isDemo={sessionApi.session.isDemo} initialDemoDeck={route.openDemoDeck} onDemoLogin={() => { sessionApi.logout(); navigate('#/') }} />}
+        {route.page === 'games' && <GamesPage isDemo={sessionApi.session.isDemo} onNavigate={navigate} />}
+        {route.page === 'game' && <GameStudioPage key={route.gameId} gameId={route.gameId} isDemo={sessionApi.session.isDemo} onNavigate={navigate} />}
         {route.page === 'lesson' && (
           <LessonRoutePage
             key={route.chapter}
@@ -272,16 +270,17 @@ export function App() {
             onNavigate={navigate}
           />
         )}
-        {route.page === 'map' && <CurriculumMap sessionApi={sessionApi} onNavigate={navigate} />}
+        {route.page === 'map' && <CurriculumMap sessionApi={sessionApi} isDemo={sessionApi.session.isDemo} onNavigate={navigate} />}
         {route.page === 'graph-lab' && (
           <GraphLabPage
-            initialLesson={route.lesson ?? sessionApi.session.lastChapter}
+            initialLesson={route.lesson ?? (sessionApi.session.isDemo ? 1 : sessionApi.session.lastChapter)}
             isAdmin={sessionApi.session.userRole === 'admin'}
+            isDemo={sessionApi.session.isDemo}
             onNavigate={navigate}
           />
         )}
-        {route.page === 'recap-tests' && <RecapTestsPage sessionApi={sessionApi} onNavigate={navigate} />}
-        {route.page === 'admission-tests' && <AdmissionTestsPage onNavigate={navigate} />}
+        {route.page === 'recap-tests' && <RecapTestsPage sessionApi={sessionApi} isDemo={sessionApi.session.isDemo} onNavigate={navigate} />}
+        {route.page === 'admission-tests' && <AdmissionTestsPage isDemo={sessionApi.session.isDemo} onNavigate={navigate} />}
         {route.page === 'admission-assessment' && <AdmissionAssessmentPage testId={route.testId} sessionApi={sessionApi} onNavigate={navigate} />}
         {route.page === 'admin-reports' && sessionApi.session.userRole === 'admin' && <AdminReportsPage adminDataApi={adminDataApi} />}
         {route.page === 'profile' && (

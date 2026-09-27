@@ -10,6 +10,7 @@ import {
   GraduationCap,
   GalleryHorizontalEnd,
   LibraryBig,
+  LockKeyhole,
   Home,
   LogOut,
   Map,
@@ -103,7 +104,7 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
             <Home size={17} /> <span className="nav-copy"><b>Acasă</b><small>Panoul general</small></span>
           </button>
           <button className={isLibrary ? 'active' : ''} onClick={() => onNavigate('#/biblioteca')} title={sidebarCollapsed ? 'Biblioteca' : undefined} aria-label="Biblioteca">
-            <LibraryBig size={17} /> <span className="nav-copy"><b>Biblioteca</b><small>Manuale PDF</small></span>
+            <LibraryBig size={17} /> <span className="nav-copy"><b>Biblioteca {session.isDemo && <LockKeyhole className="nav-demo-lock" size={11}/>}</b><small>Manuale PDF</small></span>
           </button>
           <span className="nav-segment-label">Studiu</span>
           <button className={isLearning ? 'active' : ''} onClick={() => onNavigate('#/lectii')} title={sidebarCollapsed ? 'Lecții' : undefined} aria-label="Lecții">
@@ -115,11 +116,11 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
           <button className={isFlashcards ? 'active' : ''} onClick={() => onNavigate('#/flashcarduri')} title={sidebarCollapsed ? 'Flashcarduri' : undefined} aria-label="Flashcarduri">
             <GalleryHorizontalEnd size={17} /> <span className="nav-copy"><b>Flashcarduri</b><small>3.600 de întrebări</small></span>
           </button>
-          <button className={isGraphLab ? 'active' : ''} onClick={() => onNavigate(`#/grafice/${activeChapter.number}`)} title={sidebarCollapsed ? 'Grafice interactive' : undefined} aria-label="Grafice interactive">
+          <button className={isGraphLab ? 'active' : ''} onClick={() => onNavigate(`#/grafice/${session.isDemo && activeChapter.number > 2 ? 1 : activeChapter.number}`)} title={sidebarCollapsed ? 'Grafice interactive' : undefined} aria-label="Grafice interactive">
             <ChartNoAxesCombined size={17} /> <span className="nav-copy"><b>Grafice</b><small>Laborator economic</small></span>
           </button>
           <button className={isMathWorkspace ? 'active' : ''} onClick={() => onNavigate('#/caiet-matematic')} title={sidebarCollapsed ? 'Ecuații' : undefined} aria-label="Ecuații">
-            <Sigma size={17} /> <span className="nav-copy"><b>Ecuații</b><small>Fracții, indici și puteri</small></span>
+            <Sigma size={17} /> <span className="nav-copy"><b>Ecuații {session.isDemo && <LockKeyhole className="nav-demo-lock" size={11}/>}</b><small>Fracții, indici și puteri</small></span>
           </button>
           <span className="nav-segment-label">Experiențe</span>
           <button className={isGames ? 'active' : ''} onClick={() => onNavigate('#/jocuri')} title={sidebarCollapsed ? 'Jocuri economice' : undefined} aria-label="Jocuri economice">
@@ -143,7 +144,7 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
         <div className="sidebar-footer">
           <button className={`sidebar-profile-card ${isProfile ? 'active' : ''}`} onClick={() => onNavigate('#/profil')} title="Deschide profilul">
             <span className="profile-avatar">{isAdmin ? <ShieldCheck size={19}/> : <CircleUserRound size={20}/>}</span>
-            <span className="sidebar-profile-copy"><b>{session.userName || (isAdmin ? 'Administrator' : 'Profil elev')}</b><small>{isAdmin ? 'Administrator' : 'Elev'}</small></span>
+            <span className="sidebar-profile-copy"><b>{session.userName || (isAdmin ? 'Administrator' : 'Profil elev')}{session.isDemo && <i className="sidebar-demo-badge">Demo</i>}</b><small>{isAdmin ? 'Administrator' : 'Elev'}</small></span>
             <ChevronLeft className="arrow-right" size={15}/>
           </button>
           <button className="sidebar-logout-button" onClick={onLogout} title="Deconectare" aria-label="Deconectare">

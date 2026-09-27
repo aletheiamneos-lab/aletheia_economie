@@ -13,6 +13,7 @@ import { sessionHeaders } from '../api'
 interface GameStudioPageProps {
   gameId: string
   onNavigate: (path: string) => void
+  isDemo?: boolean
 }
 
 type FinishedEvent = Extract<GameEvent, { type: 'finished' }>
@@ -36,7 +37,7 @@ async function saveResult(event: FinishedEvent) {
   if (!response.ok) throw new Error(`Rezultatul nu a putut fi salvat (${response.status}).`)
 }
 
-export function GameStudioPage({ gameId, onNavigate }: GameStudioPageProps) {
+export function GameStudioPage({ gameId, onNavigate, isDemo = false }: GameStudioPageProps) {
   const [game, setGame] = useState<GameManifestEntry | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
@@ -79,13 +80,17 @@ export function GameStudioPage({ gameId, onNavigate }: GameStudioPageProps) {
     if (event.type === 'finished') {
       setCoins(event.coins)
       setResult(event)
+      if (isDemo) {
+        setSaveStatus('idle')
+        return
+      }
       setSaveStatus('saving')
       rememberResult(event)
       void saveResult(event)
         .then(() => setSaveStatus('saved'))
         .catch(() => setSaveStatus('error'))
     }
-  }), [gameId])
+  }), [gameId, isDemo])
 
   const restart = useCallback(() => {
     setFrameKey((value) => value + 1)

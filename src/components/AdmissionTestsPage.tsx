@@ -1,20 +1,22 @@
-import { ArrowRight, BookOpenCheck, CalendarDays, FileCheck2, GraduationCap, Search } from 'lucide-react'
+import { ArrowRight, BookOpenCheck, CalendarDays, FileCheck2, GraduationCap, LockKeyhole, Search } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { loadAdmissionManifest, type AdmissionManifest, type AdmissionTestEntry } from '../data/admission'
+import { DEMO_ADMISSION_TEST_ID } from '../demoAccess'
 
 interface AdmissionTestsPageProps {
   onNavigate: (path: string) => void
+  isDemo?: boolean
 }
 
 const difficultyOrder = ['usor', 'mediu', 'greu', 'foarte_greu'] as const
 const difficultyLabels = { usor: 'Ușor', mediu: 'Mediu', greu: 'Greu', foarte_greu: 'Foarte greu' }
 
-function AdmissionCard({ test, onOpen }: { test: AdmissionTestEntry; onOpen: () => void }) {
+function AdmissionCard({ test, onOpen, locked = false }: { test: AdmissionTestEntry; onOpen: () => void; locked?: boolean }) {
   return (
-    <article className="admission-test-card">
+    <article className={`admission-test-card ${locked ? 'is-demo-locked' : ''}`}>
       <div className="admission-test-card-top">
         <span className="admission-variant">{test.variant}</span>
-        <span>{test.year}</span>
+        <span>{test.year}{locked && <i className="demo-lock-badge"><LockKeyhole size={10}/> Demo</i>}</span>
       </div>
       <h3>{test.session}</h3>
       <p>Întrebările de economie {test.economyRange}</p>
@@ -28,12 +30,12 @@ function AdmissionCard({ test, onOpen }: { test: AdmissionTestEntry; onOpen: () 
         <span><FileCheck2 size={14}/><b>{test.questionCount}</b> întrebări</span>
         <span><BookOpenCheck size={14}/> răspunsuri și rezolvări</span>
       </div>
-      <button className="admission-open-button" onClick={onOpen}>Deschide testul <ArrowRight size={16}/></button>
+      <button className="admission-open-button" aria-label={locked ? `Blocat în Demo: ${test.session} ${test.variant}` : undefined} onClick={onOpen}>{locked ? <><LockKeyhole size={14}/> Disponibil cu cont</> : <>Deschide testul <ArrowRight size={16}/></>}</button>
     </article>
   )
 }
 
-export function AdmissionTestsPage({ onNavigate }: AdmissionTestsPageProps) {
+export function AdmissionTestsPage({ onNavigate, isDemo = false }: AdmissionTestsPageProps) {
   const [manifest, setManifest] = useState<AdmissionManifest | null>(null)
   const [variant, setVariant] = useState('toate')
   const [query, setQuery] = useState('')
@@ -92,7 +94,7 @@ export function AdmissionTestsPage({ onNavigate }: AdmissionTestsPageProps) {
             <section className="admission-year" key={year}>
               <header><span><CalendarDays size={17}/></span><div><h2>{year}</h2><p>{tests.length} {tests.length === 1 ? 'test disponibil' : 'teste disponibile'}</p></div></header>
               <div className="admission-test-grid">
-                {tests.map((test) => <AdmissionCard key={test.id} test={test} onOpen={() => onNavigate(`#/teste-admitere/${test.id}`)}/>)}
+                {tests.map((test) => <AdmissionCard key={test.id} test={test} locked={isDemo && test.id !== DEMO_ADMISSION_TEST_ID} onOpen={() => onNavigate(`#/teste-admitere/${test.id}`)}/>)}
               </div>
             </section>
           )
