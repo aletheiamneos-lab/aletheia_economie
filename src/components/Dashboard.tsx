@@ -210,7 +210,15 @@ function StandardDashboard({ sessionApi, onNavigate }: DashboardProps) {
 
   useEffect(() => {
     if (window.matchMedia?.('(max-width: 680px)').matches) {
-      selectedDayRef.current?.scrollIntoView({ block: 'nearest', inline: 'center' })
+      // Centrează ziua doar pe orizontală, fără să derulăm toată pagina (pe telefon ajungeai direct la planificator).
+      const day = selectedDayRef.current
+      let strip = day?.parentElement ?? null
+      while (strip && strip.scrollWidth <= strip.clientWidth) strip = strip.parentElement
+      if (day && strip && strip !== document.body && strip !== document.documentElement) {
+        const dayBox = day.getBoundingClientRect()
+        const stripBox = strip.getBoundingClientRect()
+        strip.scrollLeft += dayBox.left - stripBox.left - (stripBox.width - dayBox.width) / 2
+      }
     }
   }, [selectedDate, weekStart])
 

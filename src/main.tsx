@@ -18,6 +18,7 @@ import './appearance.css'
 import './math-workspace.css'
 import './mind-map.css'
 import './flashcards.css'
+import './mobile.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

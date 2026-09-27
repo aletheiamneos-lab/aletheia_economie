@@ -1,0 +1,75 @@
+/* ===== Telefon și tabletă îngustă: bară de sus, meniu lateral și flashcarduri ===== */
+.mobile-topbar{display:none}
+
+@media (max-width:900px){
+  /* --- bara de sus --- */
+  .mobile-topbar{position:fixed;z-index:46;top:0;left:0;right:0;height:60px;display:grid;grid-template-columns:44px minmax(0,1fr) 44px;align-items:center;gap:10px;
+    padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top,0px));height:calc(60px + env(safe-area-inset-top,0px));
+    background:rgba(248,250,252,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
+    border-bottom:1px solid rgba(23,56,79,.08)}
+  .mobile-topbar .mobile-menu-button{position:static;width:44px;height:44px;border-radius:13px;box-shadow:0 6px 16px -8px rgba(10,40,48,.45)}
+  .mobile-topbar-brand{display:flex;align-items:center;justify-content:center;gap:9px;min-width:0;border:0;background:none;padding:0;color:#17384f;cursor:pointer}
+  .mobile-topbar-brand .brand-folder{width:30px;height:28px;flex:0 0 30px;color:#1d4560}
+  .mobile-topbar-brand .brand-folder>svg{width:30px;height:28px}
+  .mobile-topbar-brand .brand-folder>b{margin-top:6px;font-size:9px}
+  .mobile-topbar-brand strong{display:block;font:800 17px/1 Manrope,sans-serif;letter-spacing:-.4px;text-align:left}
+  .mobile-topbar-brand small{display:block;margin-top:2px;font:700 9.5px "DM Sans",sans-serif;color:#2f7f86;text-align:left;letter-spacing:.02em}
+  .mobile-topbar-profile{width:40px;height:40px;justify-self:end;border:1px solid #dbe5ea;border-radius:50%;background:#fff;color:#17384f;font:800 12.5px Manrope,sans-serif;cursor:pointer}
+
+  /* conținutul începe sub bară, nu sub un buton plutitor */
+  .app-main{padding-top:calc(60px + env(safe-area-inset-top,0px))}
+  .dashboard,.map-page,.profile-page,.graph-lab-page,.recap-page,.flashcards-catalog-page,.admin-report-page,.library-page,.lessons-page,.games-page{padding-top:18px!important}
+  .lesson-topbar{padding-left:0!important}.test-topbar{padding-left:0!important}
+
+  /* --- meniul lateral --- */
+  .nav-scrim{z-index:49;background:rgba(9,28,40,.42);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);animation:m-fade .25s ease}
+  .main-sidebar{z-index:50;width:min(330px,88vw)!important;height:100dvh;padding:calc(16px + env(safe-area-inset-top,0px)) 14px calc(14px + env(safe-area-inset-bottom,0px))!important;
+    border-radius:0 22px 22px 0;overflow-y:auto;overscroll-behavior:contain;box-shadow:24px 0 60px -20px rgba(5,25,30,.35)}
+  .main-sidebar .desktop-sidebar-toggle{display:none}
+  .main-sidebar .brand-row{padding:4px 4px 14px}
+  .main-sidebar .sidebar-close{width:42px;height:42px;border-radius:12px}
+  .main-sidebar .nav-segment-label{margin:14px 10px 6px;font-size:10px!important;letter-spacing:.16em}
+  .main-sidebar .primary-nav button{min-height:54px;gap:14px;padding:8px 14px!important;border-radius:14px}
+  .main-sidebar .primary-nav button svg{width:20px;height:20px;flex:0 0 auto}
+  .main-sidebar .nav-copy b{font-size:14.5px!important;line-height:1.2}
+  .main-sidebar .nav-copy small{font-size:11.5px!important;margin-top:2px}
+  .main-sidebar .sidebar-profile-card{min-height:58px;border-radius:14px}
+  .main-sidebar .sidebar-profile-copy b{font-size:14px}
+  .main-sidebar .sidebar-profile-copy small{font-size:11.5px}
+  .main-sidebar .sidebar-logout-button{min-height:46px;font-size:13px}
+  @keyframes m-fade{from{opacity:0}to{opacity:1}}
+
+  /* --- flashcarduri: card compact, text lizibil --- */
+  .flashcards-shell .app-main{min-height:100dvh}
+  .flashcards-study-page{height:calc(100dvh - 60px - env(safe-area-inset-top,0px));padding:10px 12px 12px!important;gap:10px}
+  .flashcards-study-title h1{font-size:20px!important}
+  .flashcards-study-stats span{font-size:12px;min-height:40px}
+  .flashcards-stage{place-items:start stretch;padding-top:4px}
+  .flashcard-card{width:100%;height:auto;max-height:100%;min-height:min(430px,100%);border-radius:18px;box-shadow:0 18px 40px -26px rgba(26,56,81,.45)}
+  .flashcard-card>header{min-height:54px;padding:6px 12px}
+  .flashcard-card>header div span{font-size:11px}
+  .flashcard-card>header div b{font-size:13px}
+  .flashcard-level{font-size:10px}
+  .flashcard-front,.flashcard-answer{min-height:0;padding:22px 20px}
+  .flashcard-front{justify-content:center;min-height:100%}
+  .flashcard-front h2{font-size:clamp(20px,5.6vw,24px)!important;line-height:1.35}
+  .flashcard-front p{font-size:12.5px;margin-top:14px}
+  .flashcard-symbol{transform:scale(1.1)}
+  .flashcard-answer>h2{font-size:clamp(18px,5vw,21px)!important;line-height:1.35}
+  .flashcard-answer small{font-size:10px}
+  .flashcard-answer p{font-size:14px!important;line-height:1.55}
+  .flashcard-card.has-long-copy .flashcard-front h2{font-size:18px!important}
+  .flashcard-card.has-long-copy .flashcard-answer>h2{font-size:16.5px!important}
+  .flashcard-card.has-long-copy .flashcard-answer p{font-size:13.5px!important}
+  .flashcard-card>footer{min-height:66px;padding:10px 12px}
+  .flashcard-primary,.flashcard-secondary{min-height:48px!important;font-size:14px;border-radius:12px}
+
+  /* catalogul de seturi: carduri mai aerisite */
+  .flashcards-catalog-header h1{font-size:30px}
+  .flashcards-deck-tile{border-radius:16px}
+}
+
+@media (max-width:380px){
+  .mobile-topbar-brand small{display:none}
+  .flashcard-front h2{font-size:18px!important}
+}

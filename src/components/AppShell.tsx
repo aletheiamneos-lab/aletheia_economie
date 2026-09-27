@@ -53,6 +53,19 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
 
   useEffect(() => setMobileOpen(false), [route])
 
+  // Pe telefon, pagina din spate nu se mai derulează cât timp meniul e deschis.
+  useEffect(() => {
+    if (!mobileOpen) return
+    const previous = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    const closeOnEscape = (event: KeyboardEvent) => { if (event.key === 'Escape') setMobileOpen(false) }
+    window.addEventListener('keydown', closeOnEscape)
+    return () => {
+      document.body.style.overflow = previous
+      window.removeEventListener('keydown', closeOnEscape)
+    }
+  }, [mobileOpen])
+
   useEffect(() => {
     try {
       window.localStorage.setItem('economia-sidebar-collapsed', String(sidebarCollapsed))
@@ -76,9 +89,18 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
 
   return (
     <div className={`app-shell ${sidebarCollapsed ? 'sidebar-collapsed' : ''} ${isMathWorkspace ? 'math-workspace-shell' : ''} ${isFlashcards ? 'flashcards-shell' : ''} ${route.page === 'game' ? 'game-player-shell' : ''}`}>
-      <button className="mobile-menu-button" onClick={() => setMobileOpen(true)} aria-label="Deschide meniul">
-        <Menu size={21} />
-      </button>
+      <header className="mobile-topbar">
+        <button className="mobile-menu-button" onClick={() => setMobileOpen(true)} aria-label="Deschide meniul" aria-expanded={mobileOpen}>
+          <Menu size={21} />
+        </button>
+        <button className="mobile-topbar-brand" onClick={() => onNavigate('#/')} aria-label="Economie — acasă">
+          <span className="brand-folder"><Folder size={26}/><b>E</b></span>
+          <span><strong>Economie</strong><small>{session.isDemo ? 'Mod Demo' : 'by A mentor'}</small></span>
+        </button>
+        <button className="mobile-topbar-profile" onClick={() => onNavigate('#/profil')} aria-label="Profil">
+          {(session.userName || (isAdmin ? 'Administrator' : 'Elev')).split(' ').filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase()}
+        </button>
+      </header>
       {mobileOpen && <button className="nav-scrim" onClick={() => setMobileOpen(false)} aria-label="Închide meniul" />}
 
       <aside className={`main-sidebar ${mobileOpen ? 'is-open' : ''}`}>
