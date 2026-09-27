@@ -49,6 +49,26 @@
     try { fetch(`${app.api}/health`, { mode: 'no-cors', cache: 'no-store' }).catch(() => {}) } catch { /* ignorat */ }
   })
 
+  // Telefon: ecranul rămâne împărțit în două; atingi o materie și formularul ei se deschide.
+  const focusSide = (appName) => {
+    if (appName) document.body.dataset.focus = appName
+    else delete document.body.dataset.focus
+  }
+  document.querySelectorAll('.side').forEach((side) => {
+    const card = side.querySelector('.card')
+    if (!card) return
+    side.querySelectorAll('[data-open]').forEach((button) => button.addEventListener('click', () => {
+      card.querySelector(`[role=tab][data-tab="${button.dataset.open}"]`)?.click()
+      focusSide(card.dataset.app)
+      setTimeout(() => card.querySelector('form:not([hidden]) input')?.focus(), 350)
+    }))
+    card.querySelector('.back')?.addEventListener('click', () => focusSide(null))
+    side.addEventListener('click', (event) => {
+      const focused = document.body.dataset.focus
+      if (focused && focused !== card.dataset.app && !event.target.closest('a')) focusSide(card.dataset.app)
+    })
+  })
+
   document.querySelectorAll('.card').forEach((card) => {
     const app = APPS[card.dataset.app]
     const msg = card.querySelector('.msg')

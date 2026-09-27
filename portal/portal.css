@@ -95,14 +95,52 @@ input{width:100%;padding:13px 14px;font-size:14.5px;color:#1f2937;outline:none;t
 /* pagina de administrare: fără ilustrații, mai sobru */
 [data-mode=admin] .side{gap:30px}
 
+.quick,.back{display:none}
 @media (max-width:900px){
-  .stage{flex-direction:column}
-  .side{padding:96px 20px 48px;align-items:stretch}
-  .side.econ{padding-top:48px}
+  html,body{height:100%;overflow:hidden}
+  .stage{flex-direction:column;height:100vh;height:100dvh;min-height:0}
+  .side{flex:1 1 50%;min-height:0;padding:20px 22px;gap:14px;justify-content:center;align-items:stretch;
+    transition:flex-basis .45s cubic-bezier(.2,.8,.2,1),flex-grow .45s cubic-bezier(.2,.8,.2,1),padding .3s}
+  .side.econ{padding-bottom:40px}
   .inner{max-width:none}
   .seam{display:none}
-  .brand{position:absolute}
-  .footer{position:static;transform:none;display:block;text-align:center;white-space:normal;margin:0;border-radius:0;padding:18px}
-  .art svg{opacity:.22}
+  .brand{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);padding:6px 12px 6px 6px;font-size:12.5px;gap:8px;transition:opacity .25s}
+  .brand i{width:24px;height:24px}.brand svg{width:13px;height:13px}.brand small{display:none}
+  .lockup{gap:12px}.folder{width:46px;height:38px}
+  .lockup h2{font-size:38px}.lockup small{font-size:12.5px;margin-top:3px}
+  .desc{font-size:13.5px;margin-top:8px;max-width:none}
+  .art svg{opacity:.2;width:420px}
+  .card{display:none}
+  .quick{display:flex;gap:10px}
+  .quick button{flex:1;padding:13px 10px;border-radius:11px;font:700 14px inherit;font-family:inherit;cursor:pointer}
+  .logic .q-main{background:#1f3a5f;color:#fff;border:0}.econ .q-main{background:#17384f;color:#fff;border:0}
+  .q-alt{background:rgba(255,255,255,.85);border:1px solid #d7dee8;color:#1f2937}
+  .footer{position:absolute;bottom:8px;left:0;right:0;transform:none;background:none;backdrop-filter:none;padding:0;font-size:11.5px;text-align:center;white-space:normal}
+  .footer{font-size:0}.footer a{font-size:11.5px}
+
+  /* o materie aleasă: se deschide formularul, cealaltă devine o bară subțire */
+  body[data-focus] .brand,body[data-focus] .footer{opacity:0;pointer-events:none}
+  body[data-focus] .side{flex:0 0 68px;padding:12px 22px;justify-content:center;cursor:pointer;overflow:hidden}
+  body[data-focus] .side .desc,body[data-focus] .side .quick,body[data-focus] .side .art{display:none}
+  body[data-focus] .side .lockup h2{font-size:24px}
+  body[data-focus] .side .folder{width:32px;height:27px}
+  body[data-focus] .side .lockup small{display:none}
+  body[data-focus] .side .lockup::after{content:"Atinge pentru a schimba";margin-left:auto;font-size:11px;color:#6b7686}
+  body[data-focus=logica] .logic,body[data-focus=economie] .econ{flex:1 1 auto;padding:22px;justify-content:flex-start;cursor:default;overflow-y:auto}
+  body[data-focus=logica] .logic .lockup::after,body[data-focus=economie] .econ .lockup::after{content:none}
+  body[data-focus=logica] .logic .card,body[data-focus=economie] .econ .card{display:block}
+  body[data-focus=logica] .logic .lockup h2,body[data-focus=economie] .econ .lockup h2{font-size:32px}
+  .back{display:block;margin:0 0 12px;padding:0;border:0;background:none;font:600 13px inherit;font-family:inherit;color:#5d6877;cursor:pointer}
+  .econ .card{padding:18px}
+  form{gap:11px;margin-top:14px}
+  input{padding:12px 13px}
+
+  /* administrare: ambele parole încap pe ecran */
+  [data-mode=admin] .side{flex:1 1 50%;justify-content:center}
+  [data-mode=admin] .card{display:block}
+  [data-mode=admin] .desc{display:none}
+  [data-mode=admin] .econ .card{padding:16px}
+  [data-mode=admin] form{margin-top:10px}
+  [data-mode=admin] .lockup h2{font-size:30px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.draw{stroke-dashoffset:0}.eq{opacity:1}}
