@@ -179,6 +179,10 @@ def test_admin_sees_usage_and_deletes_reports(client, admin_headers, student_hea
     usage = client.get("/api/admin/usage", headers=admin_headers).json()
     assert usage["database"]["limitBytes"] == 500 * 1024 * 1024
     assert usage["storage"]["limitBytes"] == 1024 * 1024 * 1024
+    total = usage["total"]
+    assert total["usedBytes"] == total["databaseBytes"] + total["storageBytes"]
+    assert [c["key"] for c in total["categories"]] == ["reports", "documents", "other", "system"]
+    assert total["categories"][0]["bytes"] > 0
     assert any(t["name"] == "test_reports" and t["rows"] == 2 and t["label"] == "Rapoarte teste" for t in usage["tables"])
     deleted = client.post("/api/admin/reports/delete", headers=admin_headers, json={"ids": [first["id"]]})
     assert deleted.json() == {"deleted": 1}

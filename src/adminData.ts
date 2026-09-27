@@ -59,11 +59,38 @@ export interface UsageMeter {
   percent: number
 }
 
+export interface UsageCategory {
+  key: 'reports' | 'documents' | 'other' | 'system'
+  label: string
+  bytes: number
+  files: number
+  sharePercent: number
+  limitPercent: number
+}
+
+/** Tot spațiul Supabase (bază de date + fișiere) — aceeași măsurătoare ca în aplicația de logică. */
+export interface TotalUsage {
+  usedBytes: number
+  limitBytes: number
+  remainingBytes: number
+  percent: number
+  databaseBytes: number
+  databaseLimitBytes: number
+  databasePercent: number
+  storageBytes: number
+  storageLimitBytes: number
+  storagePercent: number
+  storageFiles: number
+  categories: UsageCategory[]
+  exactCategories: boolean
+}
+
 export interface AdminUsage {
   plan: string
   database: UsageMeter & { activeDataBytes: number; rows: number }
   storage: UsageMeter & { files: number }
   tables: Array<{ name: string; label: string; rows: number; bytes: number }>
+  total?: TotalUsage
   measuredAt: string
 }
 

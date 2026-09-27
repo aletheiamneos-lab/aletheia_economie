@@ -194,10 +194,22 @@ export function AdminReportsPage({ adminDataApi }: AdminReportsPageProps) {
 
       <section className="admin-section admin-usage-section" aria-labelledby="usage-title">
         <header className="admin-section-head">
-          <div><span className="page-kicker">Supabase · plan gratuit</span><h2 id="usage-title">Spațiu folosit</h2><p>Baza de date a economiei, separată de cea a logicii. Șterge rapoartele vechi ca să eliberezi spațiu.</p></div>
+          <div><span className="page-kicker">Supabase · plan gratuit</span><h2 id="usage-title">Spațiu folosit</h2><p>Tot ce ocupă proiectul Supabase al economiei: rapoarte, documente, elevi și sistem. Șterge rapoartele vechi ca să eliberezi spațiu.</p></div>
           <button className="admin-quiet-button" onClick={() => { void adminDataApi.refreshUsage().then(() => notify('Utilizarea a fost recalculată.')) }}><RefreshCw size={14}/> Recalculează <small>{usage ? new Date(usage.measuredAt).toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit' }) : '—'}</small></button>
         </header>
         {usageError && <div className="admin-empty" role="alert">{usageError}</div>}
+        {usage?.total && (() => {
+          const total = usage.total
+          const level = total.percent >= 90 ? 'danger' : total.percent >= 70 ? 'warning' : 'ok'
+          return <article className={`admin-usage-card admin-usage-total ${level}`}>
+            <header><span className="admin-kpi-icon"><Database size={18}/></span><div><b>Tot spațiul ocupat în Supabase</b><small>bază de date + fișiere · aceeași măsurătoare ca la logică</small></div><strong>{total.percent.toFixed(1)}%</strong></header>
+            <div className="admin-usage-bar" role="progressbar" aria-label="Spațiu Supabase total folosit" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(total.percent)}><i style={{ width: `${Math.min(100, Math.max(1, total.percent))}%` }}/></div>
+            <p><b>{formatBytes(total.usedBytes)}</b> din {formatBytes(total.limitBytes)} · mai ai <b>{formatBytes(total.remainingBytes)}</b></p>
+            <div className="admin-usage-stack" role="img" aria-label="Împărțirea spațiului pe categorii">{total.categories.filter((category) => category.bytes > 0).map((category) => <i key={category.key} data-category={category.key} style={{ width: `${Math.max(1, category.sharePercent)}%` }} title={`${category.label}: ${category.sharePercent.toFixed(1)}%`}/>)}</div>
+            <ul className="admin-usage-categories">{total.categories.map((category) => <li key={category.key} data-category={category.key}><i aria-hidden="true"/><span>{category.label}{category.files > 0 && <small> · {category.files} fișiere</small>}</span><b>{formatBytes(category.bytes)}</b><strong>{category.sharePercent.toFixed(1)}%</strong></li>)}</ul>
+            <p className="admin-usage-note">{total.exactCategories ? '„Sistem Supabase” e spațiul de bază al oricărei baze de date, ocupat chiar și fără date.' : 'Împărțire estimată: rulează migrarea 20260927_supabase_total_usage.sql în Supabase pentru cifre exacte.'}</p>
+          </article>
+        })()}
         {usage && <div className="admin-usage-grid">
           {([
             { key: 'db', icon: <Database size={18}/>, title: 'Bază de date', meter: usage.database, detail: `${usage.database.rows} rânduri` },

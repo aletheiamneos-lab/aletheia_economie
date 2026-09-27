@@ -22,6 +22,7 @@ from api.auth import (
     get_current_session,
 )
 from api.store import utc_now
+from api.supabase_usage_breakdown import build_total_usage
 
 INACTIVE_AFTER = timedelta(minutes=30)
 LIBRARY_FILE_PATTERN = re.compile(r"^[a-z0-9][a-z0-9-]{0,80}\.pdf$")
@@ -218,6 +219,15 @@ def remove_student(student_id: str, _: AdminSession) -> dict:
 
 FREE_DATABASE_LIMIT_BYTES = 500 * 1024 * 1024
 FREE_STORAGE_LIMIT_BYTES = 1024 * 1024 * 1024
+
+
+def _camel(value: Any) -> Any:
+    if isinstance(value, list):
+        return [_camel(item) for item in value]
+    if isinstance(value, dict):
+        return {re.sub(r"_([a-z])", lambda m: m.group(1).upper(), key): _camel(item) for key, item in value.items()}
+    return value
+
 TABLE_LABELS = {
     "test_reports": "Rapoarte teste",
     "test_activity": "Activitate live",
@@ -267,6 +277,7 @@ def admin_usage(_: AdminSession) -> dict:
             "files": int(raw.get("storage_objects_count") or 0),
         },
         "tables": tables,
+        "total": _camel(build_total_usage(raw)),
         "measuredAt": utc_now(),
     }
 

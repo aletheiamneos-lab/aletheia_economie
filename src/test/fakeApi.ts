@@ -175,6 +175,18 @@ export async function apiRequest<T>(path: string, options: { method?: string; bo
       database: { usedBytes: 12 * 1024 * 1024, limitBytes: 500 * 1024 * 1024, remainingBytes: 488 * 1024 * 1024, percent: 2.4, activeDataBytes: 40960, rows: state.reports.length },
       storage: { usedBytes: 70 * 1024 * 1024, limitBytes: 1024 ** 3, remainingBytes: 954 * 1024 * 1024, percent: 6.84, files: 26 },
       tables: [{ name: 'test_reports', label: 'Rapoarte teste', rows: state.reports.length, bytes: state.reports.length * 900 }],
+      total: {
+        usedBytes: 82 * 1024 * 1024, limitBytes: 1524 * 1024 * 1024, remainingBytes: 1442 * 1024 * 1024, percent: 5.38,
+        databaseBytes: 12 * 1024 * 1024, databaseLimitBytes: 500 * 1024 * 1024, databasePercent: 2.4,
+        storageBytes: 70 * 1024 * 1024, storageLimitBytes: 1024 ** 3, storagePercent: 6.84, storageFiles: 26,
+        categories: [
+          { key: 'reports', label: 'Rapoarte și răspunsuri elevi', bytes: 1024 * 1024, files: 0, sharePercent: 1.22, limitPercent: 0.07 },
+          { key: 'documents', label: 'Documente și fișiere', bytes: 70 * 1024 * 1024, files: 26, sharePercent: 85.37, limitPercent: 4.59 },
+          { key: 'other', label: 'Elevi, sesiuni și setări', bytes: 512 * 1024, files: 0, sharePercent: 0.61, limitPercent: 0.03 },
+          { key: 'system', label: 'Sistem Supabase', bytes: 10.5 * 1024 * 1024, files: 0, sharePercent: 12.8, limitPercent: 0.69 },
+        ],
+        exactCategories: true,
+      },
       measuredAt: new Date().toISOString(),
     } as T
   }
