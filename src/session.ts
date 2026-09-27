@@ -13,6 +13,7 @@ export const defaultSession: SessionState = {
   lastVisitedSections: {},
   lastChapter: 1,
   userRole: 'student',
+  isDemo: false,
 }
 
 function namespacedKey(chapterNumber: number, id: string) {
@@ -76,13 +77,14 @@ export function useSessionState() {
     }))
   }, [])
 
-  const login = useCallback((user: { name: string; email: string; role: UserRole }) => {
+  const login = useCallback((user: { name: string; email: string; role: UserRole; demo?: boolean }) => {
     setSession((current) => ({
       ...current,
       isAuthenticated: true,
       userName: user.name.trim(),
       userEmail: user.email.trim().toLowerCase(),
       userRole: user.role,
+      isDemo: Boolean(user.demo),
     }))
   }, [])
 

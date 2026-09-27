@@ -117,6 +117,7 @@ export interface SessionState {
   lastVisitedSections: Record<string, string>
   lastChapter: number
   userRole: UserRole
+  isDemo: boolean
 }
 
 export type Route =
@@ -136,4 +137,5 @@ export type Route =
   | { page: 'game'; gameId: string }
   | { page: 'profile' }
   | { page: 'admin-reports' }
+  | { page: 'admin-login' }
   | { page: 'map' }

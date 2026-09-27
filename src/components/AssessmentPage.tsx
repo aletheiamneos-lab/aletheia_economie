@@ -97,7 +97,8 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
   const autoEmailAttempted = useRef(false)
   const reportSaved = useRef(false)
   const [archiveCode, setArchiveCode] = useState('')
-  const isStudent = sessionApi.session.userRole === 'student'
+  const isDemo = Boolean(sessionApi.session.isDemo)
+  const isStudent = sessionApi.session.userRole === 'student' && !isDemo
   const isGraded = isAdmission || isFinal || isRecap
   const activityKey = isAdmission ? `admission-${testId ?? `${chapterNumber}-${admissionContext?.variant ?? ''}`}` : `${mode}-${chapterNumber}`
   const activityName = isAdmission
@@ -268,7 +269,7 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
   }
 
   useEffect(() => {
-    if (phase !== 'results' || sessionApi.session.userRole !== 'student' || (!isAdmission && !isFinal && !isRecap) || autoEmailAttempted.current) return
+    if (phase !== 'results' || !isStudent || (!isAdmission && !isFinal && !isRecap) || autoEmailAttempted.current) return
     autoEmailAttempted.current = true
     void sendReportByEmail(true)
   }, [phase])
@@ -358,7 +359,7 @@ export function AssessmentPage({ chapterNumber, chapterTitle, mode, questions, s
               <label><span>E-mailul elevului</span><input type="email" value={studentEmail} onChange={(event) => setStudentEmail(event.target.value)} placeholder="elev@exemplu.ro" autoComplete="email" readOnly={isStudent}/></label>
               <div className="admission-report-actions">
                 <button className="button button-primary" disabled={reportBusy !== null} onClick={downloadReport}>{reportBusy === 'download' ? <LoaderCircle className="admission-spinner" size={17}/> : <Download size={17}/>} Descarcă raportul</button>
-                <button className="button admission-email-button" disabled={reportBusy !== null} onClick={() => void sendReportByEmail(false)}>{reportBusy === 'email' ? <LoaderCircle className="admission-spinner" size={17}/> : <Mail size={17}/>} {reportMessage ? 'Retrimite pe e-mail' : 'Trimite pe e-mail'}</button>
+{!isDemo &&                 <button className="button admission-email-button" disabled={reportBusy !== null} onClick={() => void sendReportByEmail(false)}>{reportBusy === 'email' ? <LoaderCircle className="admission-spinner" size={17}/> : <Mail size={17}/>} {reportMessage ? 'Retrimite pe e-mail' : 'Trimite pe e-mail'}</button>}
               </div>
               {reportError && <p className="admission-report-feedback error" role="alert">{reportError}</p>}
               {reportMessage && <p className="admission-report-feedback success" role="status">{reportMessage}</p>}

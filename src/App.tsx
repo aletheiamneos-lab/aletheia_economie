@@ -4,6 +4,7 @@ import { Dashboard } from './components/Dashboard'
 import { LoginPage, type LoginRequest } from './components/LoginPage'
 import { ApiError, loginAdmin, loginStudent, logoutSession, restoreSession, SESSION_EXPIRED_EVENT, type ApiUser } from './api'
 import { NotesDrawer } from './components/NotesDrawer'
+import { DemoLockPage } from './components/DemoLockPage'
 import { ProfilePage } from './components/ProfilePage'
 import { chapters } from './data/catalog'
 import { useSessionState } from './session'
@@ -35,7 +36,17 @@ function validChapterNumber(value: string) {
     : null
 }
 
+export const DEMO_CHAPTERS = [1, 2]
+
+function isLockedForDemo(route: Route) {
+  if (route.page === 'library' || route.page === 'admin-reports' || route.page === 'admission-assessment') return true
+  if (route.page === 'lesson' || route.page === 'assessment' || route.page === 'recap-assessment') return !DEMO_CHAPTERS.includes(route.chapter)
+  if (route.page === 'graph-lab') return Boolean(route.lesson && !DEMO_CHAPTERS.includes(route.lesson))
+  return false
+}
+
 function parseRoute(hash: string): Route {
+  if (hash === '#/auth') return { page: 'admin-login' }
   if (hash === '#/admin/rapoarte') return { page: 'admin-reports' }
   if (hash === '#/biblioteca') return { page: 'library' }
   if (hash === '#/lectii') return { page: 'lessons' }
@@ -175,6 +186,8 @@ export function App() {
             ? 'Rapoarte și acces — Economia'
           : route.page === 'profile'
             ? 'Profil — Economia'
+        : route.page === 'admin-login'
+          ? 'Economia — acasă'
         : route.page === 'lesson'
           ? `Capitolul ${route.chapter} — ${activeChapter.title}`
           : `${route.mode === 'final' ? 'Test final' : 'Antrenament'} — Capitolul ${route.chapter}`
@@ -191,6 +204,12 @@ export function App() {
   }
 
   const login = async (request: LoginRequest) => {
+    if (request.role === 'demo') {
+      setLoginNotice('')
+      sessionApi.login({ name: 'Vizitator Demo', email: '', role: 'student', demo: true })
+      navigate('#/')
+      return null
+    }
     let user: ApiUser
     try {
       user = request.role === 'admin' ? await loginAdmin(request.password) : await loginStudent(request.name, request.email)
@@ -200,12 +219,14 @@ export function App() {
     setLoginNotice('')
     sessionApi.login(user)
     if (user.role === 'student' && window.location.hash === '#/admin/rapoarte') navigate('#/')
-    if (user.role === 'admin' && route.page === 'dashboard') navigate('#/admin/rapoarte')
+    if (user.role === 'admin' && (route.page === 'dashboard' || route.page === 'admin-login')) navigate('#/admin/rapoarte')
+    else if (route.page === 'admin-login') navigate('#/')
     return null
   }
 
   if (!authChecked) return <div className="route-loading" role="status"><span />Se verifică sesiunea…</div>
-  if (!sessionApi.session.isAuthenticated) return <LoginPage onLogin={login} notice={loginNotice} />
+  if (!sessionApi.session.isAuthenticated) return <LoginPage key={route.page === 'admin-login' ? 'admin' : 'public'} onLogin={login} notice={loginNotice} adminOnly={route.page === 'admin-login'} />
+  const demoLocked = sessionApi.session.isDemo && isLockedForDemo(route)
 
   return (
     <AppShell
@@ -219,7 +240,8 @@ export function App() {
       }}
     >
       <Suspense fallback={<div className="route-loading" role="status"><span />Se pregătește secțiunea…</div>}>
-        {route.page === 'dashboard' && <Dashboard sessionApi={sessionApi} onNavigate={navigate} />}
+        {demoLocked ? <DemoLockPage onBack={() => navigate('#/')} onLogin={() => { sessionApi.logout(); navigate('#/') }} /> : <>
+        {(route.page === 'dashboard' || route.page === 'admin-login') && <Dashboard sessionApi={sessionApi} onNavigate={navigate} />}
         {route.page === 'library' && <LibraryPage isAdmin={sessionApi.session.userRole === 'admin'} />}
         {route.page === 'lessons' && <LessonsPage sessionApi={sessionApi} onNavigate={navigate} />}
         {route.page === 'math-workspace' && <MathWorkspacePage />}
@@ -283,6 +305,7 @@ export function App() {
             onNavigate={navigate}
           />
         )}
+        </>}
       </Suspense>
       <NotesDrawer
         open={notesOpen}

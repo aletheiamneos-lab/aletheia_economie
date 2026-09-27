@@ -235,16 +235,29 @@ def build_email_content(payload: ReportEmailRequest) -> tuple[str, str, str]:
     return subject, email_html, text
 
 
+def gmail_credentials() -> tuple[str, str]:
+    """Gmail address + app password; accepts the same variable names as the logic app."""
+    user = os.getenv("GMAIL_SMTP_USER", "").strip() or os.getenv("LOGICA_GMAIL_ADDRESS", "").strip()
+    password = os.getenv("GMAIL_SMTP_APP_PASSWORD", "") or os.getenv("LOGICA_GMAIL_APP_PASSWORD", "")
+    return user.lower(), password.replace(" ", "").strip()
+
+
+def email_provider() -> str:
+    configured = os.getenv("REPORT_EMAIL_PROVIDER", "").strip().lower()
+    if configured:
+        return configured
+    return "gmail" if all(gmail_credentials()) else "resend"
+
+
 async def deliver_report(payload: ReportEmailRequest, pdf: bytes) -> str:
-    provider = os.getenv("REPORT_EMAIL_PROVIDER", "resend").strip().lower()
+    provider = email_provider()
     if provider == "gmail":
         return await deliver_with_gmail(payload, pdf)
     return await deliver_with_resend(payload, pdf)
 
 
 async def deliver_with_gmail(payload: ReportEmailRequest, pdf: bytes) -> str:
-    gmail_user = os.getenv("GMAIL_SMTP_USER", "").strip().lower()
-    app_password = os.getenv("GMAIL_SMTP_APP_PASSWORD", "").replace(" ", "").strip()
+    gmail_user, app_password = gmail_credentials()
     if not gmail_user or not app_password:
         raise HTTPException(status_code=503, detail={
             "code": "EMAIL_NOT_CONFIGURED",
@@ -321,8 +334,8 @@ async def deliver_with_resend(payload: ReportEmailRequest, pdf: bytes) -> str:
 
 @router.get("/health")
 def report_service_health():
-    provider = os.getenv("REPORT_EMAIL_PROVIDER", "resend").strip().lower()
-    configured = bool(os.getenv("GMAIL_SMTP_USER", "").strip() and os.getenv("GMAIL_SMTP_APP_PASSWORD", "").strip()) if provider == "gmail" else bool(os.getenv("RESEND_API_KEY", "").strip())
+    provider = email_provider()
+    configured = all(gmail_credentials()) if provider == "gmail" else bool(os.getenv("RESEND_API_KEY", "").strip())
     return {"ok": True, "configured": configured, "provider": provider}
 
 

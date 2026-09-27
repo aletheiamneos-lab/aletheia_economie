@@ -1,9 +1,10 @@
 import { useState, type FormEvent } from 'react'
-import { ArrowRight, BookOpenText, ChartNoAxesCombined, Eye, EyeOff, Folder, GraduationCap, LockKeyhole, Mail, ShieldCheck, UserRound } from 'lucide-react'
-import type { UserRole } from '../types'
+import { ArrowRight, BookOpenText, ChartNoAxesCombined, Eye, EyeOff, Folder, GraduationCap, LockKeyhole, Mail, ShieldCheck, Sparkles, UserRound } from 'lucide-react'
+
+export type LoginMode = 'student' | 'demo' | 'admin'
 
 export interface LoginRequest {
-  role: UserRole
+  role: LoginMode
   name: string
   email: string
   password: string
@@ -12,11 +13,13 @@ export interface LoginRequest {
 interface LoginPageProps {
   onLogin: (request: LoginRequest) => Promise<string | null>
   notice?: string
+  adminOnly?: boolean
 }
 
 const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-export function LoginPage({ onLogin, notice }: LoginPageProps) {
-  const [role, setRole] = useState<UserRole>('student')
+export function LoginPage({ onLogin, notice, adminOnly = false }: LoginPageProps) {
+  const [chosenRole, setRole] = useState<LoginMode>('student')
+  const role: LoginMode = adminOnly ? 'admin' : chosenRole
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -24,7 +27,7 @@ export function LoginPage({ onLogin, notice }: LoginPageProps) {
   const [error, setError] = useState('')
   const [busy, setBusy] = useState(false)
 
-  const selectRole = (nextRole: UserRole) => {
+  const selectRole = (nextRole: LoginMode) => {
     setRole(nextRole)
     setError('')
   }
@@ -41,7 +44,7 @@ export function LoginPage({ onLogin, notice }: LoginPageProps) {
         setError('Introdu o adresă de e-mail validă.')
         return
       }
-    } else if (!password) {
+    } else if (role === 'admin' && !password) {
       setError('Introdu parola de administrator.')
       return
     }
@@ -56,6 +59,7 @@ export function LoginPage({ onLogin, notice }: LoginPageProps) {
   }
 
   const isAdmin = role === 'admin'
+  const isDemo = role === 'demo'
 
   return (
     <main className="login-page">
@@ -91,28 +95,28 @@ export function LoginPage({ onLogin, notice }: LoginPageProps) {
             <span className="login-access-icon">{isAdmin ? <ShieldCheck size={21}/> : <UserRound size={21}/>}</span>
             <div>
               <span className="login-kicker">Acces în platformă</span>
-              <h2 id="login-title">{isAdmin ? 'Spațiul administratorului' : 'Bun venit la studiu'}</h2>
-              <p>{isAdmin ? 'Un singur punct de acces pentru administrarea platformei.' : 'Completează datele și continuă de unde ai rămas.'}</p>
+              <h2 id="login-title">{isAdmin ? 'Spațiul administratorului' : isDemo ? 'Explorează în modul Demo' : 'Bun venit la studiu'}</h2>
+              <p>{isAdmin ? 'Un singur punct de acces pentru administrarea platformei.' : isDemo ? 'Primele două capitole, fără cont. Rezultatele nu se salvează.' : 'Completează datele și continuă de unde ai rămas.'}</p>
             </div>
           </header>
 
-          <div className="login-role-tabs" role="tablist" aria-label="Tipul contului">
-            <button type="button" role="tab" aria-selected={!isAdmin} className={!isAdmin ? 'active' : ''} onClick={() => selectRole('student')}>
+          {!adminOnly && <div className="login-role-tabs" role="tablist" aria-label="Tipul accesului">
+            <button type="button" role="tab" aria-selected={role === 'student'} className={role === 'student' ? 'active' : ''} onClick={() => selectRole('student')}>
               <GraduationCap size={16}/> Elev
             </button>
-            <button type="button" role="tab" aria-selected={isAdmin} className={isAdmin ? 'active' : ''} onClick={() => selectRole('admin')}>
-              <ShieldCheck size={16}/> Administrator
+            <button type="button" role="tab" aria-selected={isDemo} className={isDemo ? 'active' : ''} onClick={() => selectRole('demo')}>
+              <Sparkles size={16}/> Demo
             </button>
-          </div>
+          </div>}
 
           <form className="login-form" onSubmit={submit} noValidate>
-            {!isAdmin && (
+            {role === 'student' && (
               <label>
                 <span>Nume complet</span>
                 <div className="login-input-shell"><UserRound size={16}/><input value={name} onChange={(event) => setName(event.target.value)} placeholder="Ex.: Andrei Popescu" autoComplete="name" autoFocus/></div>
               </label>
             )}
-            {!isAdmin && <label>
+            {role === 'student' && <label>
               <span>Adresă de e-mail</span>
               <div className="login-input-shell"><Mail size={16}/><input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="elev@exemplu.ro" autoComplete="email"/></div>
             </label>}
@@ -127,14 +131,14 @@ export function LoginPage({ onLogin, notice }: LoginPageProps) {
             {error && <p className="login-error" role="alert">{error}</p>}
 
             <button className="login-submit" type="submit" disabled={busy} aria-busy={busy}>
-              <span>{busy ? 'Se verifică accesul…' : isAdmin ? 'Intră ca administrator' : 'Intră în spațiul de studiu'}</span>
+              <span>{busy ? 'Se verifică accesul… (prima conectare poate dura până la un minut)' : isAdmin ? 'Intră ca administrator' : isDemo ? 'Intră în modul Demo' : 'Intră în spațiul de studiu'}</span>
               <ArrowRight size={17}/>
             </button>
           </form>
 
           <footer className="login-access-note">
             {isAdmin ? <LockKeyhole size={14}/> : <ShieldCheck size={14}/>}
-            <span>{isAdmin ? 'Accesul administratorului este verificat pe server.' : 'Intră cu adresa de e-mail aprobată de profesor.'}</span>
+            <span>{isAdmin ? 'Accesul administratorului este verificat pe server.' : isDemo ? 'Pentru acces complet, cere profesorului aprobarea adresei tale de e-mail.' : 'Intră cu adresa de e-mail aprobată de profesor.'}</span>
           </footer>
         </section>
       </section>

@@ -2,6 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "redirects": [
-    { "source": "/:path((?!index$|index\\.html$).+)", "destination": "https://logica.amentor.ro/:path", "permanent": false }
+    { "source": "/:path((?!index$|index\\.html$|auth$|auth\\.html$).+)", "destination": "https://logica.amentor.ro/:path", "permanent": false }
   ]
 }

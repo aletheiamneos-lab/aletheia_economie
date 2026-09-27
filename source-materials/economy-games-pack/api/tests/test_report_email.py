@@ -88,3 +88,14 @@ def test_student_cannot_send_report_to_another_address(client, student_headers):
     )
     assert response.status_code == 403
     assert response.json()["detail"]["code"] == "RECIPIENT_NOT_ALLOWED"
+
+
+def test_gmail_is_used_with_the_logic_app_variable_names(monkeypatch):
+    from api.report_email import email_provider, gmail_credentials
+    monkeypatch.delenv("REPORT_EMAIL_PROVIDER", raising=False)
+    monkeypatch.delenv("GMAIL_SMTP_USER", raising=False)
+    monkeypatch.delenv("GMAIL_SMTP_APP_PASSWORD", raising=False)
+    monkeypatch.setenv("LOGICA_GMAIL_ADDRESS", "Profesor@Gmail.com")
+    monkeypatch.setenv("LOGICA_GMAIL_APP_PASSWORD", "abcd efgh ijkl mnop")
+    assert email_provider() == "gmail"
+    assert gmail_credentials() == ("profesor@gmail.com", "abcdefghijklmnop")

@@ -19,8 +19,7 @@ async function loginAsStudent(email = 'andrei@exemplu.ro', name = 'Andrei Popesc
 }
 
 async function loginAsAdmin(password = TEST_ADMIN_PASSWORD) {
-  fireEvent.click(await screen.findByRole('tab', { name: /administrator/i }))
-  fireEvent.change(screen.getByLabelText('Parolă'), { target: { value: password } })
+  fireEvent.change(await screen.findByLabelText('Parolă'), { target: { value: password } })
   fireEvent.click(screen.getByRole('button', { name: /intră ca administrator/i }))
 }
 
@@ -30,10 +29,15 @@ async function renderStudentApp() {
   await screen.findByRole('navigation', { name: 'Navigare principală' })
 }
 
-async function renderAdminApp() {
+async function renderAdminApp(targetHash?: string) {
+  window.location.hash = '#/auth'
   render(<App />)
   await loginAsAdmin()
   await screen.findByRole('navigation', { name: 'Navigare principală' })
+  if (targetHash) {
+    window.location.hash = targetHash
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+  }
 }
 
 describe('application flow', () => {
@@ -49,19 +53,43 @@ describe('application flow', () => {
     vi.unstubAllGlobals()
   })
 
-  it('starts with separate student and administrator access', async () => {
+  it('shows student and demo access publicly and the administrator only at #/auth', async () => {
     render(<App />)
     expect(await screen.findByLabelText('Economie by A mentor')).toBeInTheDocument()
     expect(screen.getByRole('tab', { name: 'Elev' })).toHaveAttribute('aria-selected', 'true')
-    fireEvent.click(screen.getByRole('tab', { name: 'Administrator' }))
-    expect(screen.getByRole('heading', { name: 'Spațiul administratorului' })).toBeInTheDocument()
+    expect(screen.getByRole('tab', { name: 'Demo' })).toBeInTheDocument()
+    expect(screen.queryByRole('tab', { name: /administrator/i })).not.toBeInTheDocument()
+    expect(screen.queryByLabelText('Parolă')).not.toBeInTheDocument()
+    cleanup()
+
+    window.location.hash = '#/auth'
+    render(<App />)
+    expect(await screen.findByRole('heading', { name: 'Spațiul administratorului' })).toBeInTheDocument()
+    expect(screen.queryByRole('tab', { name: 'Elev' })).not.toBeInTheDocument()
     expect(screen.queryByRole('textbox', { name: /adresă de e-mail/i })).not.toBeInTheDocument()
     expect(screen.getByLabelText('Parolă')).toHaveValue('')
-    expect(document.body.textContent).not.toMatch(/admin123|demo/i)
+    expect(document.body.textContent).not.toMatch(/admin123/i)
     expect(screen.getByRole('button', { name: /intră ca administrator/i })).toBeInTheDocument()
   })
 
+  it('opens demo mode without an account and locks later chapters', async () => {
+    render(<App />)
+    fireEvent.click(await screen.findByRole('tab', { name: 'Demo' }))
+    fireEvent.click(screen.getByRole('button', { name: /intră în modul demo/i }))
+    expect(await screen.findByRole('navigation', { name: 'Navigare principală' })).toBeInTheDocument()
+    window.location.hash = '#/capitol/5'
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    expect(await screen.findByRole('heading', { name: 'Disponibil cu cont de elev' })).toBeInTheDocument()
+    window.location.hash = '#/biblioteca'
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    expect(await screen.findByRole('heading', { name: 'Disponibil cu cont de elev' })).toBeInTheDocument()
+    window.location.hash = '#/capitol/1'
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
+    expect(await screen.findByRole('heading', { name: 'Introducere în economie', level: 1 }, { timeout: 5000 })).toBeInTheDocument()
+  })
+
   it('rejects a wrong administrator password', async () => {
+    window.location.hash = '#/auth'
     render(<App />)
     await loginAsAdmin('gresit')
     expect(await screen.findByRole('alert')).toHaveTextContent('Parola de administrator nu este corectă.')
@@ -224,8 +252,7 @@ describe('application flow', () => {
   })
 
   it('opens the administrator profile only through administrator access', async () => {
-    window.location.hash = '#/profil'
-    await renderAdminApp()
+    await renderAdminApp('#/profil')
     expect(await screen.findByRole('heading', { name: 'Panou administrativ', level: 1 })).toBeInTheDocument()
     expect(screen.getByText('Activitatea elevilor')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Personalizează experiența aplicației' })).toBeInTheDocument()
@@ -255,6 +282,8 @@ describe('application flow', () => {
     expect(await screen.findByText(/a fost actualizată/i)).toBeInTheDocument()
 
     fireEvent.click(screen.getByRole('button', { name: 'Deconectare' }))
+    window.location.hash = '#/auth'
+    window.dispatchEvent(new HashChangeEvent('hashchange'))
     await loginAsAdmin('NouaParola9')
     expect(await screen.findByRole('heading', { name: 'Rapoarte și activitate', level: 1 })).toBeInTheDocument()
   })
@@ -370,8 +399,7 @@ describe('application flow', () => {
     })
     vi.stubGlobal('fetch', fetchMock)
 
-    window.location.hash = '#/profil'
-    await renderAdminApp()
+    await renderAdminApp('#/profil')
     fireEvent.click(screen.getByRole('button', { name: /grafice interactive/i }))
 
     const openControls = await screen.findByRole('button', { name: 'Control profesor' })
