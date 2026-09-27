@@ -210,9 +210,11 @@ describe('application flow', () => {
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => libraryManifest } as Response)))
     await renderStudentApp()
 
-    expect(screen.getByText('Economie')).toBeInTheDocument()
-    expect(screen.getByText('by A mentor')).toBeInTheDocument()
-    expect(screen.getByText('E', { selector: '.brand-folder b' })).toBeInTheDocument()
+    const sidebarBrand = document.querySelector<HTMLElement>('.main-sidebar .brand')!
+    expect(sidebarBrand).toHaveTextContent('Economie')
+    expect(sidebarBrand).toHaveTextContent('by A mentor')
+    expect(screen.getByRole('button', { name: 'Economie — acasă' })).toBeInTheDocument()
+    expect(sidebarBrand.querySelector('.brand-folder b')).toHaveTextContent('E')
     fireEvent.click(screen.getByRole('button', { name: 'Biblioteca' }))
 
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Manuale și suporturi', level: 1 })).toBeInTheDocument())
