@@ -7,7 +7,10 @@
     padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top,0px));height:calc(60px + env(safe-area-inset-top,0px));
     background:rgba(248,250,252,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);
     border-bottom:1px solid rgba(23,56,79,.08)}
-  .mobile-topbar .mobile-menu-button{position:static;width:44px;height:44px;border-radius:13px;box-shadow:0 6px 16px -8px rgba(10,40,48,.45)}
+  /* butonul stă în afara barei (bara are backdrop-filter, care ar „prinde” un element fixed) */
+  .mobile-menu-button{position:fixed;z-index:60;left:12px;top:calc(8px + env(safe-area-inset-top,0px));width:44px;height:44px;border-radius:13px;box-shadow:0 6px 16px -8px rgba(10,40,48,.45)}
+  .mobile-topbar .mobile-topbar-brand{grid-column:2}
+  .mobile-topbar .mobile-topbar-profile{grid-column:3}
   .mobile-topbar-brand{display:flex;align-items:center;justify-content:center;gap:9px;min-width:0;border:0;background:none;padding:0;color:#17384f;cursor:pointer}
   .mobile-topbar-brand .brand-folder{width:30px;height:28px;flex:0 0 30px;color:#1d4560}
   .mobile-topbar-brand .brand-folder>svg{width:30px;height:28px}
@@ -98,4 +101,18 @@
 }
 @media (max-width:768px) and (prefers-reduced-motion:reduce){
   html .main-sidebar,html .main-sidebar.is-open{transition:none;transform:none}
+}
+
+/* ===== Telefon: butonul de meniu plutește jos în stânga, ca în aplicația de logică ===== */
+@media (max-width:768px){
+  .mobile-menu-button{
+    top:auto;
+    left:calc(16px + env(safe-area-inset-left,0px));
+    bottom:calc(16px + env(safe-area-inset-bottom,0px));
+    width:48px;height:48px;border-radius:16px;
+    box-shadow:0 10px 24px -8px rgba(10,40,48,.5),0 0 0 1px rgba(255,255,255,.12) inset;
+  }
+  .mobile-menu-button:active{transform:scale(.96)}
+  .main-sidebar .sidebar-footer{padding-bottom:64px}
+  .app-main{padding-bottom:84px}
 }

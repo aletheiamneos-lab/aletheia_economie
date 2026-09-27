@@ -308,3 +308,46 @@ html[data-theme] .profile-hero {
   .font-option { grid-template-columns: auto minmax(0, 1fr); }
   .settings-option-state { grid-column: 2; justify-self: start; }
 }
+
+/* ===== Paletă comună cu aplicația de logică (amentor.ro) =====
+   Aceleași 6 teme au acum aceleași culori de bază în ambele aplicații:
+   fundal, suprafețe, text și culoarea principală. Doar culori, nimic altceva. */
+:root[data-theme="navy"] {
+  --ink: #1f2937; --ink-2: #334155; --muted: #64748b;
+  --navy: #1e3a5f; --navy-2: #335f91;
+  --paper: #ffffff; --paper-2: #f3f6fa;
+  --line: #d7dee8; --line-soft: #e8edf4;
+  --teal-soft: #edf3fb;
+}
+:root[data-theme="graphite"] {
+  --ink: #2c2a28; --ink-2: #4b4640; --muted: #6b645d;
+  --navy: #4e4137; --navy-2: #6c5a4b;
+  --paper: #fffdf9; --paper-2: #f5f2ed;
+  --teal: #6c5a4b; --teal-soft: #f3eee7;
+}
+:root[data-theme="forest"] {
+  --ink: #1f2b27; --ink-2: #34463f; --muted: #64756d;
+  --navy: #233b32; --navy-2: #35594a;
+  --paper: #ffffff; --paper-2: #f1f5f3;
+  --teal: #35594a; --teal-soft: #eef3f0;
+}
+:root[data-theme="blue-amber"] {
+  --ink: #20323c; --ink-2: #3a4d57; --muted: #5f7079;
+  --navy: #173a52; --navy-2: #255b7d;
+  --paper: #fbfdfb; --paper-2: #edf5ef;
+  --coral: #e7885d; --coral-dark: #c96c42; --coral-soft: #fbeee6;
+  --teal-soft: #edf5ef;
+}
+:root[data-theme="teal-coral"] {
+  --ink: #2a2723; --ink-2: #4a433c; --muted: #6d6257;
+  --navy: #1f5c52; --navy-2: #216a6a;
+  --paper: #fffdf9; --paper-2: #f4efe7;
+  --teal: #216a6a; --teal-soft: #eaf1ef;
+  --coral: #e87a69; --coral-dark: #c95f4f; --coral-soft: #fcece9;
+}
+:root[data-theme="plum-mint"] {
+  --ink: #2f2634; --ink-2: #4c3f52; --muted: #6f6372;
+  --navy: #3f3048; --navy-2: #594364;
+  --paper: #fbfdfb; --paper-2: #eef7f2;
+  --gold: #d9a850; --teal-soft: #eef7f2;
+}

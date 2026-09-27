@@ -25,12 +25,12 @@ export interface FontOption {
 }
 
 export const themeOptions: ThemeOption[] = [
-  { id: 'navy', name: 'Slate / Navy Editorial', description: 'Echilibrat și academic', colors: ['#f6f8fc', '#318d9c', '#163a59'] },
-  { id: 'graphite', name: 'Stone / Graphite Luxury', description: 'Neutru și sobru', colors: ['#f4f1eb', '#76695d', '#262a2e'] },
-  { id: 'forest', name: 'Forest / Ink Executive', description: 'Profund și natural', colors: ['#edf3ef', '#427563', '#183b35'] },
-  { id: 'blue-amber', name: 'Blue Sage & Amber', description: 'Clar și energic', colors: ['#edf4f7', '#2e6f91', '#dc9a4d'] },
-  { id: 'teal-coral', name: 'Teal Sand & Coral', description: 'Cald și contemporan', colors: ['#f7f2e9', '#217c7c', '#df7561'] },
-  { id: 'plum-mint', name: 'Plum Mint & Gold', description: 'Distinct și rafinat', colors: ['#f3eff5', '#765c7c', '#d0a84e'] },
+  { id: 'navy', name: 'Slate / Navy Editorial', description: 'Echilibrat și academic', colors: ['#f3f6fa', '#335f91', '#1f2937'] },
+  { id: 'graphite', name: 'Stone / Graphite Luxury', description: 'Neutru și sobru', colors: ['#f5f2ed', '#6c5a4b', '#2c2a28'] },
+  { id: 'forest', name: 'Forest / Ink Executive', description: 'Profund și natural', colors: ['#f1f5f3', '#35594a', '#1f2b27'] },
+  { id: 'blue-amber', name: 'Blue Sage & Amber', description: 'Clar și energic', colors: ['#255b7d', '#d3e3d5', '#e7885d'] },
+  { id: 'teal-coral', name: 'Teal Sand & Coral', description: 'Cald și contemporan', colors: ['#216a6a', '#e8e0d3', '#e87a69'] },
+  { id: 'plum-mint', name: 'Plum Mint & Gold', description: 'Distinct și rafinat', colors: ['#594364', '#d9e9e1', '#d9a850'] },
 ]
 
 export const fontOptions: FontOption[] = [

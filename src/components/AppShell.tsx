@@ -90,9 +90,6 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
   return (
     <div className={`app-shell ${sidebarCollapsed ? 'sidebar-collapsed' : ''} ${isMathWorkspace ? 'math-workspace-shell' : ''} ${isFlashcards ? 'flashcards-shell' : ''} ${route.page === 'game' ? 'game-player-shell' : ''}`}>
       <header className="mobile-topbar">
-        <button className="mobile-menu-button" onClick={() => setMobileOpen(true)} aria-label="Deschide meniul" aria-expanded={mobileOpen}>
-          <Menu size={21} />
-        </button>
         <button className="mobile-topbar-brand" onClick={() => onNavigate('#/')} aria-label="Economie — acasă">
           <span className="brand-folder"><Folder size={26}/><b>E</b></span>
           <span><strong>Economie</strong><small>{session.isDemo ? 'Mod Demo' : 'by A mentor'}</small></span>
@@ -101,6 +98,9 @@ export function AppShell({ children, route, sessionApi, onNavigate, onLogout }: 
           {(session.userName || (isAdmin ? 'Administrator' : 'Elev')).split(' ').filter(Boolean).slice(0, 2).map((part) => part[0]).join('').toUpperCase()}
         </button>
       </header>
+      <button className={`mobile-menu-button ${mobileOpen ? 'is-open' : ''}`} onClick={() => setMobileOpen((open) => !open)} aria-label={mobileOpen ? 'Închide meniul' : 'Deschide meniul'} aria-expanded={mobileOpen}>
+        {mobileOpen ? <X size={21} /> : <Menu size={21} />}
+      </button>
       {mobileOpen && <button className="nav-scrim" onClick={() => setMobileOpen(false)} aria-label="Închide meniul" />}
 
       <aside className={`main-sidebar ${mobileOpen ? 'is-open' : ''}`}>
