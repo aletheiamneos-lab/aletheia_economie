@@ -73,3 +73,29 @@
   .mobile-topbar-brand small{display:none}
   .flashcard-front h2{font-size:18px!important}
 }
+
+/* ===== Telefon: meniul se deschide pe tot ecranul, ca în aplicația de logică ===== */
+@media (max-width:768px){
+  .nav-scrim{display:none}
+  html .main-sidebar,html[data-theme] .main-sidebar{
+    background:radial-gradient(circle at 8% 2%,color-mix(in srgb,var(--navy,#1d4560) 10%,transparent),transparent 31%),var(--paper,#fff);
+    inset:0;width:100vw!important;max-width:none;height:100dvh;
+    display:flex;flex-direction:column;
+    padding:calc(14px + env(safe-area-inset-top,0px)) calc(16px + env(safe-area-inset-right,0px)) calc(14px + env(safe-area-inset-bottom,0px)) calc(16px + env(safe-area-inset-left,0px))!important;
+    border:0;border-radius:0;box-shadow:none;overflow:hidden;
+    opacity:0;visibility:hidden;pointer-events:none;
+    transform:translate3d(-18px,14px,0) scale(.98);
+    transition:opacity .19s ease-out,transform .19s ease-out,visibility 0s linear .19s;
+  }
+  html .main-sidebar.is-open{
+    opacity:1;visibility:visible;pointer-events:auto;transform:none;
+    transition:opacity .19s ease-out,transform .19s ease-out;
+  }
+  .main-sidebar .brand-row{flex:0 0 auto;min-height:64px;align-items:center}
+  .main-sidebar .primary-nav{flex:1 1 auto;min-height:0;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+  .main-sidebar .primary-nav button{width:100%}
+  .main-sidebar .sidebar-footer{flex:0 0 auto}
+}
+@media (max-width:768px) and (prefers-reduced-motion:reduce){
+  html .main-sidebar,html .main-sidebar.is-open{transition:none;transform:none}
+}
