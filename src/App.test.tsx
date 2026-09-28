@@ -389,8 +389,9 @@ describe('application flow', () => {
     vi.stubGlobal('fetch', vi.fn(async () => ({ ok: true, json: async () => libraryManifest } as Response)))
     await renderAdminApp()
     fireEvent.click(screen.getByRole('button', { name: 'Biblioteca' }))
-    await waitFor(() => expect(document.querySelectorAll('.library-resource')).toHaveLength(26))
-    expect(screen.getAllByRole('button', { name: 'Ascunde elevilor' })).toHaveLength(26)
+    const available = libraryManifest.resources.filter((resource) => resource.available !== false).length
+    await waitFor(() => expect(document.querySelectorAll('.library-resource')).toHaveLength(available))
+    expect(screen.getAllByRole('button', { name: 'Ascunde elevilor' })).toHaveLength(available)
   })
 
   it('uses manual progress inside the interactive concept map', async () => {

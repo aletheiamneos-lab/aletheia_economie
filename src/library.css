@@ -173,15 +173,5 @@
   .library-preview-dialog{height:100vh;border-radius:0}
 }
 @media(max-width:440px){.library-grid{grid-template-columns:1fr}.library-cover{aspect-ratio:.85}.library-resource h3{min-height:0}}
-/* Încărcare documente (doar administrator) */
-.library-upload-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 18px;align-items:center;margin:18px 0 6px;padding:16px 18px;border:1px dashed color-mix(in srgb,var(--navy) 35%,transparent);border-radius:14px;background:color-mix(in srgb,var(--paper) 88%,var(--teal-soft))}
-.library-upload-panel b{display:block;color:var(--ink);font:800 14px Manrope,sans-serif}
-.library-upload-panel p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.5}
-.library-upload-panel>button{min-height:42px;display:inline-flex;align-items:center;gap:8px;padding:0 16px;border:0;border-radius:11px;color:#fff;background:var(--navy);font:700 13px Manrope,sans-serif;cursor:pointer}
-.library-upload-panel>button:disabled{opacity:.6;cursor:wait}
-.library-upload-results{grid-column:1/-1;display:grid;gap:6px;margin:4px 0 0;padding:0;list-style:none}
-.library-upload-results li{display:flex;gap:8px;align-items:flex-start;padding:8px 10px;border-radius:9px;background:#fff;font-size:12px}
-.library-upload-results li.ok{color:#287862}.library-upload-results li.fail{color:#a64f44}
-.library-upload-results li span{display:grid;gap:2px}.library-upload-results li b{color:var(--ink);font-weight:700}.library-upload-results li small{color:inherit;font-size:11.5px}
-.library-upload-one{margin-top:6px}
-@media(max-width:620px){.library-upload-panel{grid-template-columns:1fr}.library-upload-panel>button{width:100%;justify-content:center}}
+/* Coperta: prima pagină a documentului, ca în biblioteca de la logică */
+.library-cover-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;background:#fff}
