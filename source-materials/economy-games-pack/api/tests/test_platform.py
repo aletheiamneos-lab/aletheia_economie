@@ -204,3 +204,16 @@ def test_cors_allows_the_amentor_start_page(client):
     assert response.headers.get("access-control-allow-origin") == "https://amentor.ro"
     other = client.options("/api/auth/student-login", headers={"Origin": "https://rau.example", "Access-Control-Request-Method": "POST"})
     assert other.headers.get("access-control-allow-origin") is None
+
+
+def test_admin_gets_library_upload_url_and_file_becomes_available(client, admin_headers, student_headers):
+    response = client.post("/api/admin/library/upload-url", headers=admin_headers, json={"fileName": "capitol-06.pdf"})
+    assert response.status_code == 200
+    assert response.json()["uploadUrl"].startswith("https://storage.test/upload/library/capitol-06.pdf")
+    assert client.get("/api/library/capitol-06.pdf", headers=student_headers).status_code == 200
+
+
+def test_library_upload_url_is_admin_only_and_validates_names(client, admin_headers, student_headers):
+    assert client.post("/api/admin/library/upload-url", headers=student_headers, json={"fileName": "capitol-06.pdf"}).status_code == 403
+    bad = client.post("/api/admin/library/upload-url", headers=admin_headers, json={"fileName": "Capitolul 6 - Costurile.pdf"})
+    assert bad.status_code == 422

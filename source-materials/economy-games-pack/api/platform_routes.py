@@ -400,6 +400,33 @@ def set_library_visibility(payload: LibraryVisibilityRequest, _: AdminSession) -
     return {"hidden": payload.hidden}
 
 
+class LibraryUploadRequest(BaseModel):
+    fileName: str = Field(min_length=5, max_length=90)
+
+    @field_validator("fileName")
+    @classmethod
+    def valid_name(cls, value: str) -> str:
+        if not LIBRARY_FILE_PATTERN.match(value):
+            raise ValueError("Numele intern al fișierului nu este valid.")
+        return value
+
+
+@admin_router.post("/library/upload-url")
+def library_upload_url(payload: LibraryUploadRequest, _: AdminSession) -> dict:
+    """Administratorul primește un link de încărcare pentru un document din bibliotecă.
+
+    Numele intern (de ex. capitol-06.pdf) e ales de aplicație, deci fișierul poate avea
+    pe calculator orice nume, cu diacritice și spații.
+    """
+    try:
+        url = _store().library_upload_url(payload.fileName)
+    except Exception as error:  # noqa: BLE001 - erorile Supabase ajung la administrator
+        raise HTTPException(status_code=502, detail="Nu am putut pregăti încărcarea în Supabase Storage.") from error
+    if not url:
+        raise HTTPException(status_code=502, detail="Nu am putut pregăti încărcarea în Supabase Storage.")
+    return {"fileName": payload.fileName, "uploadUrl": url}
+
+
 @library_router.get("/{file_name}")
 def library_link(file_name: str, session: Annotated[dict, Depends(get_current_session)]) -> dict:
     if not LIBRARY_FILE_PATTERN.match(file_name):

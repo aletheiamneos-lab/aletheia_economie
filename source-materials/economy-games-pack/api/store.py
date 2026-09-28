@@ -51,6 +51,7 @@ class Store(Protocol):
     def delete_student_data(self, email: str) -> None: ...
     # storage
     def library_signed_url(self, file_name: str, expires_in: int) -> str | None: ...
+    def library_upload_url(self, file_name: str) -> str | None: ...
 
 
 class SupabaseStore:
@@ -189,6 +190,15 @@ class SupabaseStore:
             return None
         return result.get("signedURL") or result.get("signedUrl") or result.get("signed_url")
 
+    def library_upload_url(self, file_name: str) -> str | None:
+        """Link semnat de încărcare direct în Storage (browserul trimite fișierul, fără limită de proxy)."""
+        from storage3.types import CreateSignedUploadUrlOptions
+
+        result = self.client.storage.from_(self.library_bucket).create_signed_upload_url(
+            file_name, CreateSignedUploadUrlOptions(upsert="true")
+        )
+        return result.get("signedUrl") or result.get("signed_url")
+
 
 class MemoryStore:
     """In-memory store used by automated tests and local development without Supabase."""
@@ -308,6 +318,10 @@ class MemoryStore:
         if file_name not in self.library_files:
             return None
         return f"https://storage.test/library/{file_name}?expires={expires_in}"
+
+    def library_upload_url(self, file_name: str) -> str | None:
+        self.library_files.add(file_name)
+        return f"https://storage.test/upload/library/{file_name}?token=test"
 
 
 _override: Any = None

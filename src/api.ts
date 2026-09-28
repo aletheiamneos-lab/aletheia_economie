@@ -164,6 +164,21 @@ export function trackActivity(update: ActivityUpdate) {
   return apiRequest<{ ok: boolean }>('/api/student/activity', { body: update }).catch(() => null)
 }
 
+/** Administrator: urcă un PDF în bibliotecă sub numele intern cerut (ex. capitol-06.pdf). */
+export async function uploadLibraryFile(fileName: string, file: File) {
+  const { uploadUrl } = await apiRequest<{ uploadUrl: string }>('/api/admin/library/upload-url', { body: { fileName } })
+  let response: Response
+  try {
+    response = await fetch(uploadUrl, { method: 'PUT', headers: { 'Content-Type': 'application/pdf', 'x-upsert': 'true' }, body: file })
+  } catch {
+    throw new ApiError('Fișierul nu a putut fi trimis. Verifică internetul și reîncearcă.', 0)
+  }
+  if (!response.ok) {
+    const payload = await response.json().catch(() => null) as { message?: string; error?: string } | null
+    throw new ApiError(payload?.message || payload?.error || `Încărcarea a eșuat (${response.status}).`, response.status)
+  }
+}
+
 export async function getLibraryLink(fileName: string) {
   const result = await apiRequest<{ url: string }>(`/api/library/${encodeURIComponent(fileName)}`)
   return result.url
