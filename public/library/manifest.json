@@ -173,6 +173,16 @@
       "available": false
     },
     {
+      "id": "capitol-19-piata-mondiala",
+      "group": "capitole",
+      "chapter": 19,
+      "title": "Piața mondială",
+      "fileName": "capitol-19-piata-mondiala.pdf",
+      "size": 2735807,
+      "available": true,
+      "label": "Capitolul 19"
+    },
+    {
       "id": "manual-general-corint-2012",
       "group": "manuale",
       "title": "Manual de economie · Corint 2012",
@@ -219,7 +229,7 @@
       "title": "Breviar complet de formule",
       "fileName": "breviar-complet-formule.pdf",
       "size": 2271364,
-      "available": false
+      "available": true
     },
     {
       "id": "manual-exercitii-fara-rezolvari",
@@ -228,7 +238,7 @@
       "title": "Manual fără rezolvări, cu răspunsuri",
       "fileName": "manual-exercitii-fara-rezolvari.pdf",
       "size": 1435338,
-      "available": false
+      "available": true
     }
   ]
 }
