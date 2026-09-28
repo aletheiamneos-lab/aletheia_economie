@@ -56,9 +56,14 @@ class Store(Protocol):
 
 class SupabaseStore:
     def __init__(self, url: str, key: str, library_bucket: str = "library") -> None:
+        import httpx
         from supabase import create_client
+        from supabase.lib.client_options import SyncClientOptions
 
-        self.client = create_client(url, key)
+        # HTTP/1.1: clientul HTTP/2 comun se rupe când vin mai multe cereri simultan
+        # (eroare „Exception in ASGI application” / 500 în panoul de administrare).
+        options = SyncClientOptions(httpx_client=httpx.Client(http2=False, timeout=30))
+        self.client = create_client(url, key, options=options)
         self.library_bucket = library_bucket
 
     def _table(self, name: str):
