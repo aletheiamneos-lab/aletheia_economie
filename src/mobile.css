@@ -116,3 +116,33 @@
   .main-sidebar .sidebar-footer{padding-bottom:64px}
   .app-main{padding-bottom:84px}
 }
+
+/* ===== Audit telefon ===== */
+@media (max-width:900px){
+  /* schema de clasificare: categoriile una sub alta (înainte se înghesuiau pe un rând, cu litere pe verticală) */
+  .classification-grid,.classification-grid.is-list{display:grid;grid-template-columns:1fr}
+}
+@media (max-width:768px){
+  /* câmpuri și butoane mici: zonă de apăsare de cel puțin 40 px */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),select{min-height:40px}
+  .games-page .game-card>button{min-height:36px;font-size:12px}
+  .graph-lab-tool-button,.graph-lab-module-count{font-size:12px}
+  .graph-lab-page label{font-size:11.5px}
+}
+@media (max-width:768px){
+  /* filele de exerciții: pe două rânduri, fără derulare laterală de câțiva pixeli */
+  .lab-tabs{flex-wrap:wrap;overflow-x:visible}
+  .lab-tabs button{flex:1 1 calc(50% - 6px);min-width:0;justify-content:center}
+}
+@media (max-width:768px){
+  .admin-tabs button,.admin-access-toolbar button,.admin-row-actions button{min-height:36px}
+  .connection-note{min-height:36px;display:inline-flex;align-items:center}
+}
+@media (max-width:768px){
+  /* în jocuri și în studiul cu flashcarduri butoanele de acțiune stau jos: meniul urcă în bara de sus */
+  .game-player-shell .mobile-menu-button,
+  .flashcards-shell .mobile-menu-button{
+    top:calc(8px + env(safe-area-inset-top,0px));bottom:auto;left:12px;width:44px;height:44px;border-radius:13px;
+  }
+  .game-player-shell .app-main,.flashcards-shell .app-main{padding-bottom:0}
+}

@@ -1,0 +1,428 @@
+/* Generat de audit: pe telefon, niciun text al interfeței nu mai e sub 11 px.
+   Nu atinge graficele și fișele de tipar. */
+@media (max-width:768px){
+  .nav-segment-label{font-size:11px}
+  .sidebar-course-kicker{font-size:11.4px}
+  .sidebar-course-meta{font-size:11px}
+  .sidebar-profile-copy b{font-size:11.4px}
+  .sidebar-profile-copy small{font-size:11px}
+  .page-kicker, .eyebrow, .micro-label{font-size:12px}
+  .hero-tag{font-size:11.4px}
+  .hero-proof{font-size:12.6px}
+  .continue-number span{font-size:11px}
+  .category-chip{font-size:11px}
+  .module-index{font-size:12px}
+  .module-label small{font-size:11.4px}
+  .tile-number{font-size:11px}
+  .chapter-tile small{font-size:11px}
+  .drawer-actions>span{font-size:12px}
+  .path-module-heading>span{font-size:11px}
+  .path-module-heading p{font-size:12px}
+  .path-node-index{font-size:11px}
+  .path-node-copy small{font-size:11px}
+  .chapter-label{font-size:11px}
+  .lesson-meta{font-size:12.6px}
+  .objectives-heading small{font-size:11px}
+  .objectives-grid span{font-size:11px}
+  .lesson-toc nav button{font-size:11.4px}
+  .lesson-toc nav button span{font-size:11px}
+  .toc-lab-button,.toc-test-button{font-size:12.6px}
+  .theory-title small{font-size:11px}
+  .section-done{font-size:11px}
+  .key-point>span{font-size:11px}
+  .key-point p{font-size:12.6px}
+  .tree-item b{font-size:12.6px}
+  .tree-item p{font-size:11.4px}
+  .example-callout b{font-size:11px}
+  .formula-card span{font-size:11px}
+  .connection-note{font-size:12.6px}
+  .section-completion>span{font-size:12px}
+  .section-completion .button{font-size:12px}
+  .lab-title-row>div>span{font-size:11px}
+  .exchange-side>span{font-size:11px}
+  .exchange-side small{font-size:11px}
+  .lab-result>span{font-size:11px}
+  .lab-result p{font-size:11.4px}
+  .indicator-inputs label span{font-size:11px}
+  .indicator-results span{font-size:11px}
+  .readout-label{font-size:11px}
+  .production-stat span{font-size:11px}
+  .opportunity-stat span{font-size:11px}
+  .opportunity-stat small{font-size:11px}
+  .ppf-step-labels{font-size:11px}
+  .lab-tabs button{font-size:12px}
+  .lab-tabs button>span{font-size:11px}
+  .exercise-card-top{font-size:11px}
+  .exercise-options button>span,.test-options button>span{font-size:11px}
+  .exercise-options button>b{font-size:12.6px}
+  .small-button{font-size:12px}
+  .answer-feedback b{font-size:12.6px}
+  .answer-feedback p{font-size:12.6px}
+  .binary-options button{font-size:12.6px}
+  .numeric-answer-row label>span{font-size:11px}
+  .numeric-answer-row small{font-size:11px}
+  .matching-instruction{font-size:12px}
+  .matching-grid button{font-size:12px}
+  .matching-grid>div:first-child button>span{font-size:11px}
+  .finale-score small{font-size:11px}
+  .assessment-facts>div{font-size:11px}
+  .assessment-facts b{font-size:12px}
+  .practice-filter>span{font-size:11px}
+  .practice-filter button{font-size:11px}
+  .assessment-guide li>span{font-size:11px}
+  .assessment-guide li p{font-size:12.6px}
+  .source-note p{font-size:11.4px}
+  .test-timer{font-size:11px}
+  .navigator-heading{font-size:11px}
+  .question-grid button{font-size:11px}
+  .submit-sidebar{font-size:12px}
+  .question-meta-row{font-size:11px}
+  .question-meta-row button{font-size:11px}
+  .practice-feedback p{font-size:12.6px}
+  .unanswered-warning{font-size:11.4px}
+  .score-ring span{font-size:11px}
+  .result-stat-grid>div{font-size:11px}
+  .review-grid button{font-size:11px}
+  .review-options>div>span{font-size:11px}
+  .review-options p{font-size:12.6px}
+  .explanation-panel b{font-size:12.6px}
+  .explanation-panel p{font-size:12.6px}
+  .admission-hero-facts span{font-size:12px}
+  .admission-hero-mark small{font-size:11px}
+  .admission-variant-filter button{font-size:12px}
+  .admission-year header p{font-size:11px}
+  .admission-test-card-top{font-size:11px}
+  .admission-test-card>p{font-size:12px}
+  .admission-card-meta{font-size:11px}
+  .admission-source-list p{font-size:11px}
+  .solution-formula{font-size:12px}
+  .recap-facts > span{font-size:11px}
+  .recap-summary > span{font-size:11px}
+  .recap-summary p{font-size:11px}
+  .recap-module > header > span{font-size:11px}
+  .recap-module header p{font-size:11px}
+  .recap-test-number{font-size:11px}
+  .recap-test-meta{font-size:11px}
+  .recap-test-action{font-size:11px}
+  .recap-manual-toggle{font-size:11px}
+  .recap-open-button{font-size:11px}
+  .manual-status-button,.lesson-manual-status{font-size:11px}
+  .role-preview > span{font-size:11px}
+  .role-preview button{font-size:11px}
+  .role-preview small{font-size:11px}
+  .profile-account-summary>span{font-size:11px}
+  .profile-account-summary>small{font-size:11px}
+  .profile-panel p{font-size:12px}
+  .profile-feature-state{font-size:11px}
+  .admin-safety-note b{font-size:12px}
+  .admin-safety-note p{font-size:11px}
+  .classification-count{font-size:11.4px}
+  .classification-number{font-size:11px}
+  .classification-copy p{font-size:12.6px}
+  .calculator-fields label > span{font-size:11px}
+  .calculator-fields small{font-size:11px}
+  .calculator-results span{font-size:11px}
+  .calculator-results small{font-size:11px}
+  .market-checklist > div{font-size:12px}
+  .economic-circuit small{font-size:11px}
+  .economic-circuit > span{font-size:11px}
+  .budget-visual span{font-size:11px}
+  .budget-visual strong{font-size:11px}
+  .excess-control label{font-size:11px}
+  .excess-bars span{font-size:11px}
+  .market-reading{font-size:11px}
+  .explorer-slider > span{font-size:11px}
+  .explorer-slider b{font-size:12px}
+  .explorer-stat span{font-size:11px}
+  .explorer-pills button{font-size:11px}
+  .round-bars span, .round-bars b{font-size:11px}
+  .cycle-track button{font-size:11px}
+  .cycle-track button span{font-size:11px}
+  .explorer-reading span{font-size:11px}
+  .visual-section-heading p{font-size:12.6px}
+  .visual-control > span{font-size:11.4px}
+  .visual-control b{font-size:12px}
+  .visual-readouts span{font-size:11px}
+  .visual-insight{font-size:12.6px}
+  .visual-segmented button{font-size:11.4px}
+  .feature-grid dt{font-size:11px}
+  .feature-grid dd{font-size:12.6px}
+  .radar-label{font-size:11px}
+  .visual-toggle-grid button{font-size:11px}
+  .donut-label{font-size:11px}
+  .balance-bar-row{font-size:11px}
+  .balance-bar-row strong{font-size:12px}
+  .condition-list label{font-size:12px}
+  .mini-donut h5{font-size:12px}
+  .donut-key span{font-size:11px}
+  .visual-presets button{font-size:11px}
+  .home-welcome-copy>p{font-size:11.4px}
+  .home-progress-ring small{font-size:11px}
+  .home-course-progress>div:last-child>small{font-size:11px}
+  .home-course-progress>div:last-child>span{font-size:11px}
+  .home-hero-label{font-size:11px}
+  .home-secondary-action{font-size:12.6px}
+  .home-hero-facts{font-size:11px}
+  .home-sketch-heading span{font-size:11px}
+  .home-sketch-heading b{font-size:12px}
+  .home-market-sketch text{font-size:11px}
+  .home-market-sketch .home-e-label{font-size:12px}
+  .home-sketch-note span{font-size:11px}
+  .home-sketch-note p{font-size:11px}
+  .home-current-number small{font-size:11px}
+  .home-current-meta>span{font-size:11px}
+  .home-current-meta small{font-size:11px}
+  .home-status-button{font-size:11px}
+  .home-chapters-section .home-section-heading p{font-size:12px}
+  .home-chapters-count{font-size:11px}
+  .home-chapter-book-copy small{font-size:11px}
+  .home-chapter-book-copy i{font-size:11px}
+  .home-resource-top>i{font-size:11px}
+  .home-resource-card p{font-size:11.4px}
+  .home-resource-card>button{font-size:11.4px}
+  .home-guide-intro>p{font-size:12.6px}
+  .home-guide-steps li>span{font-size:11px}
+  .home-guide-steps p{font-size:11px}
+  .home-module-grid button>span{font-size:11px}
+  .home-module-grid button>small{font-size:11px}
+  .home-planner-heading>div:first-child>p{font-size:11.4px}
+  .home-planner-stats small{font-size:11px}
+  .home-planner-nav small{font-size:11px}
+  .home-planner-nav .home-today-button{font-size:11px}
+  .home-calendar-days small{font-size:11px}
+  .home-calendar-days span{font-size:11px}
+  .home-calendar-days i{font-size:11px}
+  .home-day-plan>aside>span{font-size:11px}
+  .home-day-plan>aside>p{font-size:11.4px}
+  .home-day-score>span>b{font-size:12px}
+  .home-day-score small{font-size:11px}
+  .home-day-score>div>b{font-size:12px}
+  .home-task-check span{font-size:11px}
+  .home-task-copy small{font-size:11px}
+  .home-task-copy p{font-size:11px}
+  .home-task-open{font-size:11px}
+  .home-shortcuts-section nav button{font-size:11px}
+  .home-planner-nav b{font-size:11px}
+  .demo-home-mark span{font-size:11px}
+  .demo-home-mark small{font-size:11px}
+  .demo-home-card small{font-size:11px}
+  .admission-report-copy p{font-size:12px}
+  .admission-report-form>label>span{font-size:11px}
+  .admission-report-feedback{font-size:11px}
+  .admission-email-note{font-size:11px}
+  .lessons-hero-facts span{font-size:11px}
+  .lessons-module-heading>span{font-size:11px}
+  .lessons-module-heading p{font-size:11px}
+  .lesson-list-number{font-size:11px}
+  .lesson-list-tags>span{font-size:11px}
+  .lesson-list-content>p{font-size:12px}
+  .lesson-list-details{font-size:11px}
+  .lesson-list-action>button{font-size:12px}
+  .lesson-list-action::after{font-size:11px}
+  .lesson-action-tooltip b{font-size:12px}
+  .lesson-action-tooltip small{font-size:11px}
+  .lessons-module-symbol small{font-size:11px}
+  .lessons-module-index{font-size:11px}
+  .library-header p{font-size:12.6px}
+  .library-visible-count,
+.library-group>header>b{font-size:11px}
+  .library-group>header>div>span{font-size:11px}
+  .library-group header p{font-size:11px}
+  .library-cover-fallback b{font-size:11px}
+  .library-cover-hover{font-size:11px}
+  .library-resource-tags span{font-size:11px}
+  .library-resource>p{font-size:11px}
+  .library-card-actions button,.library-card-actions a,.library-visibility{font-size:11px}
+  .library-loading,.library-error{font-size:12px}
+  .library-preview-dialog header span{font-size:11px}
+  .library-preview-dialog header a,.library-preview-dialog header button{font-size:11px}
+  .brand-copy small{font-size:11px}
+  .primary-nav button{font-size:12.6px}
+  .nav-copy small{font-size:11px}
+  .sidebar-logout-button{font-size:11px}
+  .sidebar-demo-badge{font-size:11px}
+  .login-kicker{font-size:11px}
+  .login-feature-row span{font-size:11px}
+  .login-feature-row b{font-size:12px}
+  .login-access-heading p{font-size:11px}
+  .login-role-tabs button{font-size:11px}
+  .login-form>label>span{font-size:11px}
+  .login-field-heading small{font-size:11px}
+  .login-error{font-size:11.4px}
+  .login-submit{font-size:12.6px}
+  .login-access-note{font-size:11px}
+  .login-footer{font-size:11px}
+  .login-brand-copy small{font-size:11px}
+  .games-kicker{font-size:11px}
+  .games-hero-points span{font-size:11px}
+  .games-hero-points b{font-size:12px}
+  .game-node{font-size:12px}
+  .game-card-chapter{font-size:11px}
+  .game-card>strong{font-size:12px}
+  .game-card>p{font-size:11.4px}
+  .game-card-meta span{font-size:11px}
+  .game-card>button{font-size:12px}
+  .game-back,.game-restart{font-size:11px}
+  .game-studio-identity small{font-size:11px}
+  .game-session-progress>span{font-size:11px}
+  .game-session-progress>b{font-size:11px}
+  .world-topline{font-size:11px}
+  .world-topline>b{font-size:11px}
+  .control-kicker{font-size:11px}
+  .scenario-copy{font-size:12.6px}
+  .game-choice-group button,.rate-presets button{font-size:11px}
+  .game-range>span{font-size:11px}
+  .game-range b{font-size:11px}
+  .game-submit{font-size:12px}
+  .game-data-list span{font-size:11px}
+  .game-data-list b{font-size:11px}
+  .game-formula{font-size:11px}
+  .game-metric span{font-size:11px}
+  .market-pressure>span{font-size:11px}
+  .market-pressure b{font-size:11px}
+  .product-shelf article>b{font-size:12px}
+  .product-shelf article>span{font-size:11px}
+  .product-shelf article>small{font-size:11px}
+  .basket-scene span{font-size:11px}
+  .budget-meter b{font-size:11px}
+  .budget-meter small{font-size:11px}
+  .utility-sketch span{font-size:11px}
+  .factory-bars span{font-size:11px}
+  .worker-stepper>span{font-size:11px}
+  .city-building{font-size:11px}
+  .evidence-board article span{font-size:11px}
+  .evidence-board p{font-size:11px}
+  .confidence-meter>span{font-size:11px}
+  .rate-dial small{font-size:11px}
+  .credit-pipes>b{font-size:11px}
+  .stability-gauge{font-size:11px}
+  .policy-lag,.maturity-line{font-size:11px}
+  .jobs-building{font-size:11px}
+  .shock-banner{font-size:11px}
+  .numeric-game-input>span{font-size:11px}
+  .numeric-game-input b{font-size:12px}
+  .asset-card>span{font-size:11px}
+  .asset-card>small{font-size:11px}
+  .asset-features span{font-size:11px}
+  .trade-country{font-size:11px}
+  .fx-gauge{font-size:11px}
+  .fx-gauge>strong{font-size:12px}
+  .macro-city span{font-size:11px}
+  .econia-city>span{font-size:11px}
+  .mandate-timeline i{font-size:11px}
+  .concept-tags span,.feedback-explanation span{font-size:11px}
+  .president-options button>span{font-size:11px}
+  .president-options p{font-size:11px}
+  .cabinet-note p{font-size:11px}
+  .game-processing{font-size:11px}
+  .game-inline-error{font-size:11px}
+  .feedback-result small{font-size:11px}
+  .feedback-result>strong small{font-size:11px}
+  .feedback-actions button{font-size:11px}
+  .feedback-explanation p{font-size:12px}
+  .game-state-page p,.game-state-page small,.game-completion p{font-size:12px}
+  .game-state-page button{font-size:11px}
+  .games-load-state>span{font-size:12px}
+  .games-load-state>button{font-size:11px}
+  .game-player-back,.game-player-restart{font-size:11px}
+  .game-player-identity small{font-size:11px}
+  .game-player-live{font-size:11px}
+  .game-player-live>b{font-size:11px}
+  .game-player-live>small{font-size:11px}
+  .game-player-state p{font-size:12px}
+  .game-player-state button{font-size:11px}
+  .games-page .games-kicker{font-size:11px}
+  .games-page .games-hero-copy>p{font-size:12px}
+  .games-page .games-hero-points span{font-size:11px}
+  .games-page .games-hero-points b{font-size:11px}
+  .games-page .game-node{font-size:11px}
+  .games-page .games-section-heading>p{font-size:11px}
+  .games-page .game-card-index{font-size:11px}
+  .games-page .game-card-chapter{font-size:11px}
+  .games-page .game-card>strong{font-size:11px}
+  .games-page .game-card>p{font-size:11px}
+  .games-page .game-card-meta span{font-size:11px}
+  .games-page .game-card>button{font-size:11px}
+  .games-page .games-hero-points span,.games-page .games-hero-points span:last-child{font-size:11px}
+  .games-page .games-section-heading .micro-label{font-size:11px}
+  .games-page .game-card h3{font-size:11.4px}
+  .demo-lock-badge{font-size:11px}
+  .lesson-manual-status{font-size:11px}
+  .question-actions .button{font-size:12px}
+  .admin-table td::before{font-size:11px}
+  .profile-stat-strip span{font-size:11px}
+  .profile-stat-strip b small{font-size:11px}
+  .profile-session-details small{font-size:11px}
+  .profile-session-details b{font-size:11px}
+  .admin-settings-header p{font-size:11.4px}
+  .settings-reset{font-size:11px}
+  .settings-column-title span{font-size:11px}
+  .settings-column-title small{font-size:11px}
+  .settings-option-copy b{font-size:11.4px}
+  .settings-option-copy small{font-size:11px}
+  .settings-option-state{font-size:11px}
+  .password-settings > p{font-size:11px}
+  .password-settings label > span{font-size:11px}
+  .password-message{font-size:11px}
+  .security-production-note span{font-size:11px}
+  .security-production-note b{font-size:11px}
+  .math-save-state{font-size:11px}
+  .math-composer-toolbar > span{font-size:11px}
+  .fraction-tool > span{font-size:11px}
+  .script-tool sub,
+.script-tool sup{font-size:11px}
+  .math-card-heading > div:first-child > span{font-size:11px}
+  .math-card-heading small{font-size:11px}
+  .math-syntax-hint{font-size:11px}
+  .math-title-field > span,
+.math-content-field > span{font-size:11px}
+  .math-editor-tip{font-size:11px}
+  .math-preview-actions button{font-size:11px}
+  .math-paper-mark{font-size:11px}
+  .math-paper-date{font-size:11px}
+  .math-prose-line{font-size:12.6px}
+  .math-explanation{font-size:11px}
+  .math-bullet{font-size:12.6px}
+  .math-paper footer{font-size:11px}
+  .mind-map-overview span{font-size:11px}
+  .mind-map-control-actions button{font-size:11px}
+  .mind-map-root small{font-size:11px}
+  .mind-map-root em{font-size:11px}
+  .mind-module-number{font-size:11px}
+  .mind-module-copy small{font-size:11px}
+  .mind-module-progress{font-size:11px}
+  .mind-chapter-index{font-size:11px}
+  .mind-chapter-copy small{font-size:11px}
+  .mind-knowledge-title b{font-size:11px}
+  .mind-knowledge-title span{font-size:11px}
+  .mind-concept-cloud button{font-size:11px}
+  .mind-formula-list span{font-size:11px}
+  .mind-formula-list code{font-size:11px}
+  .mind-open-lesson{font-size:11px}
+  .mind-map-empty p{font-size:12px}
+  .flashcards-catalog-header p{font-size:12px}
+  .flashcards-catalog-count,.flashcards-catalog-group>header>b{font-size:11px}
+  .flashcards-catalog-jumps button{font-size:11px}
+  .flashcards-catalog-jumps b{font-size:11px}
+  .flashcards-catalog-group>header>div>span{font-size:11px}
+  .flashcards-catalog-group header p{font-size:11px}
+  .flashcards-deck-topline{font-size:11px}
+  .flashcards-deck-level{font-size:11px}
+  .flashcards-deck-tile p{font-size:11px}
+  .flashcards-deck-tile>button{font-size:11px}
+  .flashcards-catalog-back{font-size:11px}
+  .flashcards-study-title span{font-size:11px}
+  .flashcards-study-stats b{font-size:11px}
+  .flashcards-study-progress>b{font-size:11px}
+  .flashcard-level{font-size:12px}
+  .flashcard-answer-label{font-size:11px}
+  .flashcard-answer small{font-size:12px}
+  .flashcards-state p{font-size:11px}
+  .flashcards-state button{font-size:11px}
+  .flashcards-finished>small{font-size:11px}
+  .flashcards-finished p{font-size:11px}
+  .flashcards-deck-topline .demo-lock-badge{font-size:11px}
+  .mobile-topbar-brand .brand-folder>b{font-size:11px}
+  .mobile-topbar-brand small{font-size:11.4px}
+  .main-sidebar .nav-segment-label{font-size:12px}
+}
