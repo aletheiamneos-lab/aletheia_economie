@@ -219,15 +219,17 @@ describe('application flow', () => {
 
     await waitFor(() => expect(screen.getByRole('heading', { name: 'Manuale și suporturi', level: 1 })).toBeInTheDocument())
     expect(window.location.hash).toBe('#/biblioteca')
-    await waitFor(() => expect(document.querySelectorAll('.library-resource')).toHaveLength(26))
-    expect(screen.getAllByRole('button', { name: /descarcă/i })).toHaveLength(26)
+    // elevii văd doar documentele incluse în aplicație (18 capitole acum)
+    const available = libraryManifest.resources.filter((resource) => resource.available !== false).length
+    await waitFor(() => expect(document.querySelectorAll('.library-resource')).toHaveLength(available))
+    expect(screen.getAllByRole('button', { name: /descarcă/i })).toHaveLength(available)
     expect(document.querySelectorAll('.library-resource iframe')).toHaveLength(0)
 
     expect(screen.queryByRole('button', { name: 'Ascunde elevilor' })).not.toBeInTheDocument()
 
     fireEvent.click(screen.getAllByRole('button', { name: 'Preview' })[0])
     expect(await screen.findByRole('dialog', { name: 'Introducere în economie' })).toBeInTheDocument()
-    expect(screen.getByTitle('Previzualizare Introducere în economie')).toHaveAttribute('src', 'https://storage.test/library/capitol-01.pdf#view=FitH')
+    expect(screen.getByTitle('Previzualizare Introducere în economie')).toHaveAttribute('src', '/library/capitol-01.pdf#view=FitH')
     fireEvent.click(screen.getByRole('button', { name: 'Închide previzualizarea' }))
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })

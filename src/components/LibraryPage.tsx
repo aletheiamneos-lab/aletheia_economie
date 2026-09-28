@@ -11,6 +11,8 @@ interface LibraryResource {
   fileName: string
   url?: string
   size: number
+  /** true = PDF-ul e inclus în aplicație (public/library), ca la logică */
+  available?: boolean
 }
 
 interface LibraryManifest {
@@ -80,6 +82,7 @@ function ResourceCard({
       <div className="library-resource-tags">
         <span>{resource.label ?? (resource.chapter ? `Capitolul ${resource.chapter}` : 'Manual integral')}</span>
         {hidden && <span className="hidden-label"><EyeOff size={10}/> Ascuns elevilor</span>}
+        {isAdmin && resource.available === false && <span className="hidden-label">Lipsește din aplicație</span>}
       </div>
       <h3>{resource.title}</h3>
       <p>Document PDF · {formatSize(resource.size)}</p>
@@ -150,7 +153,8 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
     setBusyFile(resource.fileName)
     setActionError('')
     try {
-      const url = await getLibraryLink(resource.fileName)
+      // Documentele incluse în aplicație se deschid direct; celelalte se caută în Supabase Storage.
+      const url = resource.available ? `/library/${resource.fileName}` : await getLibraryLink(resource.fileName)
       if (action === 'preview') setPreview({ ...resource, url })
       else window.location.assign(withDownload(url, resource.fileName))
     } catch (reason) {
@@ -175,14 +179,14 @@ export function LibraryPage({ isAdmin }: { isAdmin: boolean }) {
       kicker: 'Materiale PDF',
       title: 'Suporturi pe capitole',
       description: 'Materia structurată în 19 documente, în ordinea cursului.',
-      resources: resources.filter((resource) => resource.group === 'capitole' && (isAdmin || !hiddenResources.includes(resource.id))),
+      resources: resources.filter((resource) => resource.group === 'capitole' && (isAdmin || (resource.available !== false && !hiddenResources.includes(resource.id)))),
     },
     {
       id: 'manuale' as const,
       kicker: 'Manuale integrale',
       title: 'Manuale de economie',
       description: 'Manuale, formule și exerciții pentru aprofundare și recapitulare.',
-      resources: resources.filter((resource) => resource.group === 'manuale' && (isAdmin || !hiddenResources.includes(resource.id))),
+      resources: resources.filter((resource) => resource.group === 'manuale' && (isAdmin || (resource.available !== false && !hiddenResources.includes(resource.id)))),
     },
   ], [hiddenResources, isAdmin, resources])
 
